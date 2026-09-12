@@ -1,0 +1,51 @@
+{
+  "course": {
+    "id": "eng-b1",
+    "title": "English B1"
+  },
+  "units": [
+    {
+      "id": "eng-b1-u1",
+      "course_id": "eng-b1",
+      "title": "Unit 1",
+      "lessons": [
+        {
+          "id": "eng-b1-u1-l1",
+          "unit_id": "eng-b1-u1",
+          "title": "Introductions",
+          "activities": [
+            {
+              "id": "eng-b1-u1-l1-a1",
+              "lesson_id": "eng-b1-u1-l1",
+              "title": "Mixed practice",
+              "activity_type": "practice",
+              "questions": [
+                {
+                  "question": "Choose the best answer.",
+                  "question_type": "radio",
+                  "answers": [
+                    "A",
+                    "B"
+                  ],
+                  "correct_index": 1
+                },
+                {
+                  "question": "Rank the steps.",
+                  "question_type": "ranking",
+                  "items": [
+                    "One",
+                    "Two"
+                  ],
+                  "correctOrder": [
+                    "One",
+                    "Two"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  />
+  <title>Mylingo Admin</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- SheetJS -->
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
+  <!-- Tesseract OCR -->
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+
+  <!-- JSZip / FileSaver: production ZIP exporter -->
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: #f8fafc;
+      color: #0f172a;
+      font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
+
+    button {
+      min-height: 44px;
+      touch-action: manipulation;
+    }
+
+    .app-shell {
+      min-height: 100vh;
+    }
+
+    .grid-scroll {
+      overflow-x: auto;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      max-height: calc(100vh - 300px);
+    }
+
+    .data-grid {
+      border-collapse: separate;
+      border-spacing: 0;
+      min-width: 1700px;
+      width: max-content;
+    }
+
+    .data-grid th,
+    .data-grid td {
+      border-right: 1px solid #cbd5e1;
+      border-bottom: 1px solid #cbd5e1;
+    }
+
+    .data-grid th {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: #e2e8f0;
+      color: #0f172a;
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+      padding: 9px 8px;
+    }
+
+    .data-grid td {
+      background: white;
+      padding: 0;
+      vertical-align: top;
+    }
+
+    .data-grid td.row-number {
+      position: sticky;
+      left: 0;
+      z-index: 8;
+      background: #f1f5f9;
+      color: #475569;
+      font-weight: 700;
+      text-align: center;
+      width: 56px;
+      min-width: 56px;
+      padding: 9px 5px;
+      user-select: none;
+    }
+
+    .data-grid tr.row-invalid td.row-number {
+      background: #fef2f2;
+    }
+
+    .data-grid th.row-header {
+      position: sticky;
+      left: 0;
+      z-index: 20;
+      width: 56px;
+      min-width: 56px;
+    }
+
+    .data-grid input,
+    .data-grid textarea,
+    .data-grid select {
+      width: 100%;
+      border: 0;
+      outline: none;
+      background: transparent;
+      padding: 8px;
+      min-height: 42px;
+      color: #0f172a;
+    }
+
+    .data-grid textarea {
+      min-height: 58px;
+      resize: vertical;
+    }
+
+    .data-grid input:focus,
+    .data-grid textarea:focus,
+    .data-grid select:focus {
+      background: #eff6ff;
+      box-shadow: inset 0 0 0 2px #3b82f6;
+    }
+
+    .drop-zone {
+      border: 2px dashed #94a3b8;
+      transition:
+        border-color 0.15s ease,
+        background 0.15s ease;
+    }
+
+    .drop-zone.drag-over {
+      border-color: #2563eb;
+      background: #eff6ff;
+    }
+
+    .tab-active {
+      background: #0f172a !important;
+      color: white !important;
+    }
+
+    .mobile-scroll {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .toast {
+      animation: toast-in 0.2s ease-out;
+    }
+
+    @keyframes toast-in {
+      from {
+        transform: translateY(10px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .status-dot {
+      display: inline-block;
+      width: 9px;
+      height: 9px;
+      border-radius: 999px;
+      flex-shrink: 0;
+    }
+
+    .status-dot-pass {
+      background: #16a34a;
+    }
+
+    .status-dot-fail {
+      background: #dc2626;
+    }
+
+    .badge-pass {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: #dcfce7;
+      color: #166534;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 3px 9px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .badge-fail {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: #fee2e2;
+      color: #991b1b;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 3px 9px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .validation-scroll {
+      max-height: 260px;
+      overflow-y: auto;
+    }
+
+    @media (max-width: 640px) {
+      .grid-scroll {
+        max-height: 55vh;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app" class="app-shell">
+    <!-- Header -->
+    <header class="border-b border-slate-200 bg-white">
+      <div class="mx-auto max-w-[1800px] px-4 py-4 sm:px-6">
+        <div class="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
+          <div>
+            <h1 class="text-2xl font-black tracking-tight text-slate-900">
+              Mylingo Admin
+            </h1>
+            <p class="text-sm text-slate-500">
+              ESL / CEFR Quiz Management
+            </p>
+          </div>
+
+          <div class="flex flex-wrap gap-2">
+            <button
+              id="addRowBtn"
+              class="rounded-lg bg-blue-600 px-4 py-2 font-bold text-white hover:bg-blue-700"
+            >
+              + Add Row
+            </button>
+
+            <button
+              id="richQuestionBtn"
+              class="rounded-lg border border-violet-300 bg-violet-50 px-4 py-2 font-bold text-violet-800 hover:bg-violet-100"
+              title="Edit the selected row with richer question types, media, and answer rules"
+            >
+              Rich Question
+            </button>
+
+            <button
+              id="duplicateBtn"
+              class="rounded-lg border border-slate-300 bg-white px-4 py-2 font-bold text-slate-700 hover:bg-slate-50"
+            >
+              Duplicate
+            </button>
+
+            <button
+              id="deleteBtn"
+              class="rounded-lg border border-red-300 bg-white px-4 py-2 font-bold text-red-700 hover:bg-red-50"
+            >
+              Delete
+            </button>
+
+            <button
+              id="clearBtn"
+              class="rounded-lg border border-slate-300 bg-white px-4 py-2 font-bold text-slate-700 hover:bg-slate-50"
+            >
+              Clear
+            </button>
+
+            <button
+              id="downloadZipBtn"
+              class="rounded-lg bg-indigo-600 px-4 py-2 font-bold text-white hover:bg-indigo-700"
+            >
+              Download Production ZIP
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-[1800px] px-4 py-4 sm:px-6">
+      <!-- CEFR Tabs -->
+      <section class="mb-4">
+        <div class="mobile-scroll">
+          <div id="levelTabs" class="flex min-w-max gap-2">
+            <!-- generated by JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Import area -->
+      <section class="mb-4 grid gap-4 lg:grid-cols-3">
+        <!-- File import -->
+        <div
+          id="dropZone"
+          class="drop-zone rounded-xl bg-white p-4 shadow-sm"
+        >
+          <div class="mb-3">
+            <h2 class="font-bold text-slate-900">Raw Question Import</h2>
+            <p class="text-xs text-slate-500">
+              Give the app raw questions + answers. IDs, level, topic, tags, numbering, status and explanations are generated automatically.
+            </p>
+          </div>
+
+          <label
+            for="fileInput"
+            class="flex min-h-[44px] cursor-pointer items-center justify-center rounded-lg bg-slate-900 px-4 py-2 text-center font-bold text-white hover:bg-slate-800"
+          >
+            Choose CSV / XLSX
+          </label>
+
+          <input
+            id="fileInput"
+            type="file"
+            accept=".csv,.xlsx,.xls"
+            class="hidden"
+          />
+
+          <div id="fileStatus" class="mt-2 text-xs text-slate-500">
+            No file selected.
+          </div>
+        </div>
+
+        <!-- Paste -->
+        <div class="rounded-xl bg-white p-4 shadow-sm">
+          <div class="mb-3">
+            <h2 class="font-bold text-slate-900">Paste Raw Questions</h2>
+            <p class="text-xs text-slate-500">
+              Paste raw tab-separated questions; authoring metadata is auto-generated.
+            </p>
+          </div>
+
+          <textarea
+            id="pasteInput"
+            rows="5"
+            class="w-full rounded-lg border border-slate-300 p-3 text-sm outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+            placeholder="question_text	answer_1	answer_2	answer_3	answer_4	correct_index	explanation
+Choose the correct form: He ___ coffee.	drink	drinks	drinking	drank	2	"
+          ></textarea>
+
+          <button
+            id="parsePasteBtn"
+            class="mt-2 w-full rounded-lg bg-emerald-600 px-4 py-2 font-bold text-white hover:bg-emerald-700"
+          >
+            Parse & Append
+          </button>
+        </div>
+
+        <!-- OCR -->
+        <div class="rounded-xl bg-white p-4 shadow-sm">
+          <div class="mb-3">
+            <h2 class="font-bold text-slate-900">OCR Worksheet Scanner</h2>
+            <p class="text-xs text-slate-500">
+              Upload or capture a worksheet image and extract text.
+            </p>
+          </div>
+
+          <label
+            for="ocrInput"
+            class="flex min-h-[44px] cursor-pointer items-center justify-center rounded-lg bg-violet-600 px-4 py-2 text-center font-bold text-white hover:bg-violet-700"
+          >
+            Scan Worksheet
+          </label>
+
+          <input
+            id="ocrInput"
+            type="file"
+            accept="image/*"
+            capture="environment"
+            class="hidden"
+          />
+
+          <div class="mt-3">
+            <div
+              id="ocrProgress"
+              class="mb-1 hidden h-2 overflow-hidden rounded-full bg-slate-200"
+            >
+              <div
+                id="ocrProgressBar"
+                class="h-full w-0 bg-violet-600 transition-all"
+              ></div>
+            </div>
+
+            <div
+              id="ocrStatus"
+              class="max-h-24 overflow-auto whitespace-pre-wrap text-xs text-slate-500"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Toolbar / stats -->
+      <section class="mb-3 rounded-xl bg-white p-3 shadow-sm">
+        <div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+          <div class="flex flex-wrap items-center gap-3 text-sm">
+            <span class="font-bold text-slate-700">
+              Visible rows:
+              <span id="visibleCount" class="text-blue-600">0</span>
+            </span>
+
+            <span class="text-slate-300">|</span>
+
+            <span class="font-bold text-slate-700">
+              Total rows:
+              <span id="totalCount" class="text-slate-900">0</span>
+            </span>
+
+            <span class="text-slate-300">|</span>
+
+            <span class="font-bold text-slate-700">
+              Selected:
+              <span id="selectedCount" class="text-slate-900">0</span>
+            </span>
+
+            <span class="text-slate-300">|</span>
+
+            <span id="autosaveStatus" class="font-bold text-slate-500" aria-live="polite">
+              Autosave ready
+            </span>
+          </div>
+
+          <div class="flex flex-wrap gap-2">
+            <button
+              id="selectAllBtn"
+              class="rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm font-bold hover:bg-slate-50"
+            >
+              Select All
+            </button>
+
+            <button
+              id="deselectAllBtn"
+              class="rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm font-bold hover:bg-slate-50"
+            >
+              Deselect
+            </button>
+
+            <button
+              id="packQuizzesBtn"
+              class="rounded-lg border border-emerald-300 bg-emerald-50 px-3 py-2 text-sm font-bold text-emerald-800 hover:bg-emerald-100"
+              title="Group unassigned questions into valid quiz packs using the level+category production profiles, without renaming existing quiz IDs"
+            >
+              Pack Quizzes
+            </button>
+
+            <button
+              id="downloadCsvBtn"
+              class="rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm font-bold hover:bg-slate-50"
+            >
+              Download CSV
+            </button>
+
+            <button
+              id="restoreDraftBtn"
+              class="hidden rounded-lg border border-blue-300 bg-blue-50 px-3 py-2 text-sm font-bold text-blue-800 hover:bg-blue-100"
+            >
+              Restore Draft
+            </button>
+
+            <button
+              id="discardDraftBtn"
+              class="hidden rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm font-bold text-slate-700 hover:bg-slate-50"
+            >
+              Discard Draft
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Validation diagnostics panel -->
+      <section class="mb-3 rounded-xl border border-slate-300 bg-white p-3 shadow-sm">
+        <button
+          id="validationToggle"
+          type="button"
+          class="flex w-full items-center justify-between gap-3 text-left"
+        >
+          <div class="flex flex-wrap items-center gap-2">
+            <h2 class="font-bold text-slate-900">Validation</h2>
+            <span id="validationOverallBadge" class="badge-pass">
+              <span class="status-dot status-dot-pass"></span>
+              No data yet
+            </span>
+            <span id="validationCounts" class="text-xs text-slate-500"></span>
+          </div>
+          <span id="validationChevron" class="text-slate-400">&#9660;</span>
+        </button>
+
+        <div id="validationBody" class="mt-3">
+          <div id="validationEmpty" class="text-sm text-slate-500">
+            Add some rows to see per-quiz diagnostics here.
+          </div>
+
+          <div id="validationScroll" class="validation-scroll hidden">
+            <table class="w-full text-left text-sm">
+              <thead>
+                <tr class="border-b border-slate-200 text-xs font-bold uppercase tracking-wide text-slate-500">
+                  <th class="py-2 pr-3">Status</th>
+                  <th class="py-2 pr-3">Quiz ID</th>
+                  <th class="py-2 pr-3">Level</th>
+                  <th class="py-2 pr-3">Title</th>
+                  <th class="py-2 pr-3">Questions</th>
+                  <th class="py-2">Issues</th>
+                </tr>
+              </thead>
+              <tbody id="validationTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Grid -->
+      <section class="overflow-hidden rounded-xl border border-slate-300 bg-white shadow-sm">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200 bg-slate-50 px-3 py-2 text-sm">
+          <div id="gridPageSummary" class="text-xs font-semibold text-slate-600">Page 1</div>
+          <div class="flex items-center gap-2">
+            <label class="text-xs font-semibold text-slate-500" for="gridPageSize">Rows/page</label>
+            <select id="gridPageSize" class="rounded border border-slate-300 bg-white px-2 py-1 text-xs">
+              <option value="25">25</option>
+              <option value="50" selected>50</option>
+              <option value="100">100</option>
+            </select>
+            <button id="gridPrevPage" type="button" class="rounded border border-slate-300 bg-white px-2 py-1 text-xs font-bold disabled:opacity-40">Previous</button>
+            <button id="gridNextPage" type="button" class="rounded border border-slate-300 bg-white px-2 py-1 text-xs font-bold disabled:opacity-40">Next</button>
+          </div>
+        </div>
+        <div class="grid-scroll">
+          <table class="data-grid" id="dataGrid">
+            <thead>
+              <tr>
+                <th class="row-header">#</th>
+                <th>quiz_id</th>
+                <th>level</th>
+                <th>title</th>
+                <th>description</th>
+                <th>quiz_category</th>
+                <th>quiz_tags</th>
+                <th>version</th>
+                <th>status</th>
+                <th>question_number</th>
+                <th>question_text</th>
+                <th>question_category</th>
+                <th>question_tags</th>
+                <th>explanation</th>
+                <th>correct_index (1-based)</th>
+                <th>answer_1</th>
+                <th>answer_2</th>
+                <th>answer_3</th>
+                <th>answer_4</th>
+                <th>answer_5</th>
+                <th>answer_6</th>
+                <th>answer_7</th>
+                <th>answer_8</th>
+                <th>answer_9</th>
+                <th>date_added</th>
+                <th>date_updated</th>
+              </tr>
+            </thead>
+
+            <tbody id="gridBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <datalist id="tagVocabularyList"></datalist>
+
+      <!-- OCR extracted text -->
+      <section
+        id="ocrResultSection"
+        class="mt-4 hidden rounded-xl bg-white p-4 shadow-sm"
+      >
+        <div class="mb-2 flex items-center justify-between gap-2">
+          <div>
+            <h2 class="font-bold">OCR Extracted Text</h2>
+            <p class="text-xs text-slate-500">
+              Review and optionally copy this text into the paste importer.
+            </p>
+          </div>
+
+          <button
+            id="copyOcrBtn"
+            class="rounded-lg border border-slate-300 px-3 py-2 text-sm font-bold hover:bg-slate-50"
+          >
+            Copy
+          </button>
+        </div>
+
+        <textarea
+          id="ocrText"
+          rows="10"
+          class="w-full rounded-lg border border-slate-300 p-3 text-sm"
+        ></textarea>
+      </section>
+    </main>
+  </div>
+
+  <!-- Rich question authoring modal -->
+  <div id="richQuestionModal" class="fixed inset-0 z-[60] hidden items-center justify-center bg-slate-900/50 p-4">
+    <div class="max-h-[92vh] w-full max-w-4xl overflow-y-auto rounded-2xl bg-white shadow-2xl">
+      <div class="sticky top-0 z-10 flex items-center justify-between gap-3 border-b border-slate-200 bg-white px-5 py-4">
+        <div>
+          <h2 class="text-lg font-black text-slate-900">Rich Question Authoring</h2>
+          <p id="richQuestionMeta" class="text-xs text-slate-500"></p>
+        </div>
+        <button id="richQuestionClose" type="button" class="rounded-lg border border-slate-300 px-3 py-2 font-bold hover:bg-slate-50">Close</button>
+      </div>
+      <div class="space-y-4 p-5">
+        <div class="grid gap-4 md:grid-cols-2">
+          <label class="block">
+            <span class="mb-1 block text-xs font-bold uppercase tracking-wide text-slate-500">Question type</span>
+            <select id="richQuestionType" class="w-full rounded-lg border border-slate-300 px-3 py-2">
+              <option value="radio">Multiple choice</option>
+              <option value="short_text">Short text</option>
+              <option value="fill_in_the_blank">Fill in the blank</option>
+              <option value="number">Number</option>
+              <option value="date">Date</option>
+              <option value="matching">Matching</option>
+              <option value="ranking">Ranking</option>
+            </select>
+          </label>
+          <label class="block">
+            <span class="mb-1 block text-xs font-bold uppercase tracking-wide text-slate-500">Subprompt</span>
+            <input id="richSubprompt" class="w-full rounded-lg border border-slate-300 px-3 py-2" placeholder="e.g. Match each item." />
+          </label>
+        </div>
+
+        <div id="richAnswersPanel" class="rounded-xl border border-slate-200 bg-slate-50 p-4">
+          <div class="mb-2 flex items-center justify-between gap-3">
+            <div>
+              <h3 class="font-bold text-slate-900">Accepted answers</h3>
+              <p class="text-xs text-slate-500">One answer per line. Used for text, blank, number, and date questions.</p>
+            </div>
+            <input id="richTolerance" type="number" step="any" min="0" class="w-28 rounded-lg border border-slate-300 px-3 py-2" placeholder="Tolerance" />
+          </div>
+          <textarea id="richAcceptedAnswers" rows="4" class="w-full rounded-lg border border-slate-300 p-3" placeholder="because
+since"></textarea>
+        </div>
+
+        <div id="richMatchingPanel" class="hidden rounded-xl border border-slate-200 bg-slate-50 p-4">
+          <div class="mb-3 flex items-center justify-between gap-3">
+            <div>
+              <h3 class="font-bold text-slate-900">Matching pairs</h3>
+              <p class="text-xs text-slate-500">Each row is a left → right pair. Add at least two.</p>
+            </div>
+            <button id="addMatchPairBtn" type="button" class="rounded-lg bg-slate-900 px-3 py-2 text-sm font-bold text-white">+ Add pair</button>
+          </div>
+          <div id="matchingPairsEditor" class="space-y-2"></div>
+        </div>
+
+        <div id="richRankingPanel" class="hidden rounded-xl border border-slate-200 bg-slate-50 p-4">
+          <div class="mb-3">
+            <h3 class="font-bold text-slate-900">Ranking items</h3>
+            <p class="text-xs text-slate-500">One item per line. Correct order is optional; by default it matches the item order.</p>
+          </div>
+          <textarea id="richRankingItems" rows="6" class="w-full rounded-lg border border-slate-300 p-3" placeholder="First
+Second
+Third"></textarea>
+          <label class="mt-3 block">
+            <span class="mb-1 block text-xs font-bold text-slate-500">Correct order (one per line)</span>
+            <textarea id="richCorrectOrder" rows="6" class="w-full rounded-lg border border-slate-300 p-3" placeholder="First
+Second
+Third"></textarea>
+          </label>
+        </div>
+
+        <div class="grid gap-4 md:grid-cols-2">
+          <div class="rounded-xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="mb-3 font-bold text-slate-900">Image media</h3>
+            <input id="richImageUrl" class="mb-2 w-full rounded-lg border border-slate-300 px-3 py-2" placeholder="https://… or /assets/…" />
+            <input id="richImageAlt" class="w-full rounded-lg border border-slate-300 px-3 py-2" placeholder="Image alt text" />
+          </div>
+          <div class="rounded-xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="mb-3 font-bold text-slate-900">Audio media</h3>
+            <input id="richAudioUrl" class="mb-2 w-full rounded-lg border border-slate-300 px-3 py-2" placeholder="https://… or /assets/…" />
+            <input id="richAudioLabel" class="w-full rounded-lg border border-slate-300 px-3 py-2" placeholder="Audio label" />
+          </div>
+        </div>
+
+        <div class="flex flex-wrap justify-end gap-2 border-t border-slate-200 pt-4">
+          <button id="richQuestionCancel" type="button" class="rounded-lg border border-slate-300 px-4 py-2 font-bold text-slate-700">Cancel</button>
+          <button id="richQuestionSave" type="button" class="rounded-lg bg-violet-600 px-4 py-2 font-bold text-white">Save rich question</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div
+    id="toast"
+    class="pointer-events-none fixed bottom-4 left-1/2 z-50 hidden -translate-x-1/2 rounded-lg bg-slate-900 px-4 py-3 text-sm font-bold text-white shadow-xl"
+  ></div>
+
+  <script src="../site/shared/js/quiz-packer.js"></script>
+<script src="../site/shared/js/authoring-draft-autosave.js"></script>
+<script src="../site/shared/js/authoring-validation.js"></script>
+<script>
+    "use strict";
+
+    /*
+     * ============================================================
+     * MYLINGO DATA MODEL
+     * ============================================================
+     */
+
+    window.mylingoData = [];
+
+    /*
+     * Canonical authoring/source-of-truth schema.
+     * This exactly matches build.py/master_source.csv so the authoring app
+     * can be the upstream editor without a lossy conversion.
+     */
+    const DATA_FIELDS = [
+      "quiz_id",
+      "level",
+      "title",
+      "description",
+      "quiz_category",
+      "quiz_tags",
+      "version",
+      "status",
+      "question_number",
+      "question_text",
+      "question_category",
+      "question_tags",
+      "explanation",
+      "correct_index",
+      "answer_1",
+      "answer_2",
+      "answer_3",
+      "answer_4",
+      "answer_5",
+      "answer_6",
+      "answer_7",
+      "answer_8",
+      "answer_9",
+      "date_added",
+      "date_updated"
+    ];
+
+    // Content Schema v2 (07_CONTENT_SCHEMA_V2.md): optional, appended
+    // columns. Round-tripped through import/export like any other
+    // DATA_FIELDS entry, but rendered read-only in the grid (see
+    // renderGrid()) — nothing in this app invents a date for content it
+    // didn't itself just create, and edits to an existing row's
+    // date_updated are a generation/promotion-pipeline concern, not
+    // something a content author types by hand.
+    const DATE_FIELDS = ["date_added", "date_updated"];
+
+    // Rich Question Authoring MVP fields. These are optional extensions to the
+    // frozen canonical row shape and round-trip through CSV as JSON/text cells.
+    const RICH_FIELDS = [
+      "question_type",
+      "subprompt",
+      "accepted_answers",
+      "tolerance",
+      "pairs",
+      "items",
+      "correct_order",
+      "image_url",
+      "image_alt",
+      "audio_url",
+      "audio_label"
+    ];
+
+    const ALL_EXPORT_FIELDS = [...DATA_FIELDS, ...RICH_FIELDS];
+
+    // Controlled tag vocabulary (07_CONTENT_SCHEMA_V2.md). Mirrors
+    // tag_vocabulary.json at the repo root — kept as an inline copy here
+    // because this app is a standalone offline HTML file with no fetch()
+    // calls anywhere else. Used only for autocomplete suggestions on the
+    // quiz_tags/question_tags cells; it is advisory, not enforced client-
+    // side (content_qa.py's CQ-T01 is still the source of truth for
+    // review-time enforcement).
+    const TAG_VOCABULARY = {
+      levels: ["A1", "A2", "B1", "B2", "C1", "C2"],
+      skills: ["grammar", "vocabulary", "reading", "listening", "writing", "usage"],
+      categories: [
+        "Grammar",
+        "Vocabulary",
+        "Writing",
+        "Academic English",
+        "Reading",
+        "Listening",
+        "Speaking",
+        "Pronunciation",
+        "Idioms",
+        "Business English",
+        "Exam Prep"
+      ]
+    };
+
+    const TAG_AUTOCOMPLETE_VALUES = Array.from(
+      new Set([
+        ...TAG_VOCABULARY.levels,
+        ...TAG_VOCABULARY.skills,
+        ...TAG_VOCABULARY.categories
+      ])
+    ).sort((a, b) => a.localeCompare(b));
+
+    const ANSWER_FIELDS = Array.from(
+      { length: 9 },
+      (_, index) => `answer_${index + 1}`
+    );
+
+    // Headerless paste is a raw-content workflow, not a canonical master
+    // row. Keep this schema deliberately small so the first pasted value is
+    // always treated as question_text rather than accidentally becoming a
+    // quiz_id/title/bookkeeping field.
+    const RAW_IMPORT_FIELDS = [
+      "question_text",
+      "answer_1",
+      "answer_2",
+      "answer_3",
+      "answer_4",
+      "answer_5",
+      "answer_6",
+      "answer_7",
+      "answer_8",
+      "answer_9",
+      "correct_index",
+      "explanation"
+    ];
+
+    const LEGACY_FIELD_ALIASES = {
+      category: ["quiz_category", "question_category"],
+      prompt: ["question_text"],
+      question_num: ["question_number"],
+      option_0: ["answer_1"],
+      option_1: ["answer_2"],
+      option_2: ["answer_3"],
+      option_3: ["answer_4"]
+    };
+
+    const LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"];
+    const VALID_STATUSES = [
+      "draft",
+      "in_review",
+      "approved",
+      "published",
+      "retired"
+    ];
+    const MIN_QUESTIONS_PER_QUIZ = 5;
+    const MAX_QUESTIONS_PER_QUIZ = 150;
+
+    // Agent 16 — Production Quiz Profiles. Mirrors production_quiz_profiles.json
+    // at the repo root — kept as an inline copy here for the same reason
+    // TAG_VOCABULARY is inlined above: this app is a standalone offline HTML
+    // file with no fetch() calls. Drives per level+category packing bounds
+    // and title/description templates in packQuizGroups(); the global
+    // MIN/MAX_QUESTIONS_PER_QUIZ constants above remain the fallback for any
+    // level+category combination with no matching profile (e.g. deferred
+    // B1/Writing — see 08_PRODUCTION_QUIZ_PROFILES.md).
+    const PRODUCTION_QUIZ_PROFILES = [
+      { "id": "a1-grammar", "level": "A1", "quiz_category": "Grammar", "min_size": 5, "target_size": 10, "max_size": 15, "title_template": "${category} Practice", "description_template": "Practice ${category} at ${level} level." },
+      { "id": "a2-grammar", "level": "A2", "quiz_category": "Grammar", "min_size": 5, "target_size": 10, "max_size": 15, "title_template": "${category} Practice", "description_template": "Practice ${category} at ${level} level." },
+      { "id": "a1-vocabulary", "level": "A1", "quiz_category": "Vocabulary", "min_size": 5, "target_size": 10, "max_size": 15, "title_template": "${category} Practice", "description_template": "Practice ${category} at ${level} level." },
+      { "id": "a2-vocabulary", "level": "A2", "quiz_category": "Vocabulary", "min_size": 5, "target_size": 10, "max_size": 15, "title_template": "${category} Practice", "description_template": "Practice ${category} at ${level} level." },
+      { "id": "b1-grammar", "level": "B1", "quiz_category": "Grammar", "min_size": 8, "target_size": 12, "max_size": 20, "title_template": "${category} Practice", "description_template": "Practice ${category} at ${level} level." },
+      { "id": "b1-vocabulary", "level": "B1", "quiz_category": "Vocabulary", "min_size": 8, "target_size": 12, "max_size": 20, "title_template": "${category} Practice", "description_template": "Practice ${category} at ${level} level." },
+      { "id": "b2-grammar", "level": "B2", "quiz_category": "Grammar", "min_size": 8, "target_size": 15, "max_size": 25, "title_template": "${category} Practice", "description_template": "Practice ${category} at ${level} level." },
+      { "id": "b2-vocabulary", "level": "B2", "quiz_category": "Vocabulary", "min_size": 8, "target_size": 15, "max_size": 25, "title_template": "${category} Practice", "description_template": "Practice ${category} at ${level} level." },
+      { "id": "b2-writing", "level": "B2", "quiz_category": "Writing", "min_size": 5, "target_size": 8, "max_size": 12, "title_template": "${category} Practice", "description_template": "Practice ${category} at ${level} level." },
+      { "id": "b2-academic-english", "level": "B2", "quiz_category": "Academic English", "min_size": 8, "target_size": 15, "max_size": 25, "title_template": "${category} Practice", "description_template": "Practice ${category} at ${level} level." },
+      { "id": "c1-grammar", "level": "C1", "quiz_category": "Grammar", "min_size": 10, "target_size": 15, "max_size": 25, "title_template": "${category} Practice", "description_template": "Practice ${category} at ${level} level." },
+      { "id": "c1-vocabulary", "level": "C1", "quiz_category": "Vocabulary", "min_size": 10, "target_size": 15, "max_size": 25, "title_template": "${category} Practice", "description_template": "Practice ${category} at ${level} level." },
+      { "id": "c1-writing", "level": "C1", "quiz_category": "Writing", "min_size": 5, "target_size": 8, "max_size": 12, "title_template": "${category} Practice", "description_template": "Practice ${category} at ${level} level." },
+      { "id": "c1-academic-english", "level": "C1", "quiz_category": "Academic English", "min_size": 10, "target_size": 15, "max_size": 25, "title_template": "${category} Practice", "description_template": "Practice ${category} at ${level} level." },
+      { "id": "c2-grammar", "level": "C2", "quiz_category": "Grammar", "min_size": 10, "target_size": 15, "max_size": 30, "title_template": "${category} Practice", "description_template": "Practice ${category} at ${level} level." },
+      { "id": "c2-vocabulary", "level": "C2", "quiz_category": "Vocabulary", "min_size": 10, "target_size": 15, "max_size": 30, "title_template": "${category} Practice", "description_template": "Practice ${category} at ${level} level." },
+      { "id": "c2-writing", "level": "C2", "quiz_category": "Writing", "min_size": 5, "target_size": 8, "max_size": 12, "title_template": "${category} Practice", "description_template": "Practice ${category} at ${level} level." },
+      { "id": "c2-academic-english", "level": "C2", "quiz_category": "Academic English", "min_size": 10, "target_size": 15, "max_size": 30, "title_template": "${category} Practice", "description_template": "Practice ${category} at ${level} level." }
+    ];
+
+    let activeLevel = "ALL";
+    let selectedRows = new Set();
+    // Agent 51 — Authoring pagination/virtualization. Keep the DOM bounded: the
+    // authoring grid renders only one page of rows at a time, while the full
+    // dataset remains in the existing in-memory model for compatibility.
+    let gridPage = 1;
+    let gridPageSize = 50;
+    let nextInternalId = 1;
+    let validationExpanded = true;
+
+    // Milestone 23 — Authoring Scale + Incremental Validation. The engine
+    // owns the actual row/quiz validation state; rowIssuesMap/quizIssuesMap
+    // below are stable references into it (mutated in place by the engine,
+    // never reassigned), kept so the rest of this file can keep reading
+    // them exactly as before. See ../site/shared/js/authoring-validation.js
+    // and 14_AUTHORING_SCALE_INCREMENTAL_VALIDATION.md.
+    const validationEngine = window.MylingoAuthoringValidation.createEngine({
+      LEVELS,
+      VALID_STATUSES,
+      ANSWER_FIELDS,
+      MIN_QUESTIONS_PER_QUIZ,
+      MAX_QUESTIONS_PER_QUIZ
+    });
+    const rowIssuesMap = validationEngine.getRowIssuesMap(); // internalId -> string[]
+    const quizIssuesMap = validationEngine.getQuizIssuesMap(); // quiz_id -> { issues: string[], level, title, category, count }
+
+    /*
+     * ============================================================
+     * DOM
+     * ============================================================
+     */
+
+    const levelTabs = document.getElementById("levelTabs");
+    const gridBody = document.getElementById("gridBody");
+    const gridPageSummary = document.getElementById("gridPageSummary");
+    const gridPageSizeSelect = document.getElementById("gridPageSize");
+    const gridPrevPage = document.getElementById("gridPrevPage");
+    const gridNextPage = document.getElementById("gridNextPage");
+
+    const addRowBtn = document.getElementById("addRowBtn");
+    const richQuestionBtn = document.getElementById("richQuestionBtn");
+    const richQuestionModal = document.getElementById("richQuestionModal");
+    const richQuestionMeta = document.getElementById("richQuestionMeta");
+    const richQuestionClose = document.getElementById("richQuestionClose");
+    const richQuestionCancel = document.getElementById("richQuestionCancel");
+    const richQuestionSave = document.getElementById("richQuestionSave");
+    const richQuestionType = document.getElementById("richQuestionType");
+    const richSubprompt = document.getElementById("richSubprompt");
+    const richAnswersPanel = document.getElementById("richAnswersPanel");
+    const richAcceptedAnswers = document.getElementById("richAcceptedAnswers");
+    const richTolerance = document.getElementById("richTolerance");
+    const richMatchingPanel = document.getElementById("richMatchingPanel");
+    const matchingPairsEditor = document.getElementById("matchingPairsEditor");
+    const addMatchPairBtn = document.getElementById("addMatchPairBtn");
+    const richRankingPanel = document.getElementById("richRankingPanel");
+    const richRankingItems = document.getElementById("richRankingItems");
+    const richCorrectOrder = document.getElementById("richCorrectOrder");
+    const richImageUrl = document.getElementById("richImageUrl");
+    const richImageAlt = document.getElementById("richImageAlt");
+    const richAudioUrl = document.getElementById("richAudioUrl");
+    const richAudioLabel = document.getElementById("richAudioLabel");
+    const duplicateBtn = document.getElementById("duplicateBtn");
+    const deleteBtn = document.getElementById("deleteBtn");
+    const clearBtn = document.getElementById("clearBtn");
+    const downloadZipBtn = document.getElementById("downloadZipBtn");
+
+    const fileInput = document.getElementById("fileInput");
+    const dropZone = document.getElementById("dropZone");
+    const fileStatus = document.getElementById("fileStatus");
+
+    const pasteInput = document.getElementById("pasteInput");
+    const parsePasteBtn = document.getElementById("parsePasteBtn");
+
+    const ocrInput = document.getElementById("ocrInput");
+    const ocrProgress = document.getElementById("ocrProgress");
+    const ocrProgressBar = document.getElementById("ocrProgressBar");
+    const ocrStatus = document.getElementById("ocrStatus");
+    const ocrResultSection = document.getElementById("ocrResultSection");
+    const ocrText = document.getElementById("ocrText");
+    const copyOcrBtn = document.getElementById("copyOcrBtn");
+
+    const visibleCount = document.getElementById("visibleCount");
+    const totalCount = document.getElementById("totalCount");
+    const selectedCount = document.getElementById("selectedCount");
+    const autosaveStatus = document.getElementById("autosaveStatus");
+    const restoreDraftBtn = document.getElementById("restoreDraftBtn");
+    const discardDraftBtn = document.getElementById("discardDraftBtn");
+
+    const selectAllBtn = document.getElementById("selectAllBtn");
+    const deselectAllBtn = document.getElementById("deselectAllBtn");
+    const downloadCsvBtn = document.getElementById("downloadCsvBtn");
+    const packQuizzesBtn = document.getElementById("packQuizzesBtn");
+
+    const validationToggle = document.getElementById("validationToggle");
+    const validationBody = document.getElementById("validationBody");
+    const validationChevron = document.getElementById("validationChevron");
+    const validationOverallBadge = document.getElementById(
+      "validationOverallBadge"
+    );
+    const validationCounts = document.getElementById("validationCounts");
+    const validationEmpty = document.getElementById("validationEmpty");
+    const validationScroll = document.getElementById("validationScroll");
+    const validationTableBody = document.getElementById(
+      "validationTableBody"
+    );
+
+    const toast = document.getElementById("toast");
+
+    const draftAutosave =
+      window.MylingoAuthoringDraftAutosave?.create?.() || null;
+
+    function setAutosaveStatus(message, tone = "muted") {
+      if (!autosaveStatus) return;
+      autosaveStatus.textContent = message;
+      autosaveStatus.className = "font-bold";
+      const tones = {
+        muted: "text-slate-500",
+        saving: "text-blue-600",
+        saved: "text-emerald-600",
+        warn: "text-amber-700",
+        error: "text-red-600"
+      };
+      autosaveStatus.classList.add(tones[tone] || tones.muted);
+    }
+
+    function updateDraftButtons() {
+      const hasDraft = Boolean(draftAutosave?.hasDraft?.());
+      restoreDraftBtn?.classList.toggle("hidden", !hasDraft);
+      discardDraftBtn?.classList.toggle("hidden", !hasDraft);
+      return hasDraft;
+    }
+
+    function scheduleDraftAutosave() {
+      if (!draftAutosave) return;
+      setAutosaveStatus("Autosaving…", "saving");
+      draftAutosave.schedule(
+        window.mylingoData,
+        { activeLevel },
+        result => {
+          if (result?.ok) {
+            setAutosaveStatus(`Autosaved ${result.rowCount} row(s)`, "saved");
+            updateDraftButtons();
+          } else if (result?.reason === "quota") {
+            setAutosaveStatus("Autosave full — export a copy", "warn");
+          } else {
+            setAutosaveStatus("Autosave unavailable", "error");
+          }
+        }
+      );
+    }
+
+    function flushDraftAutosave() {
+      if (!draftAutosave) return;
+      const result = draftAutosave.flush(window.mylingoData, { activeLevel });
+      if (result?.ok) setAutosaveStatus(`Autosaved ${result.rowCount} row(s)`, "saved");
+    }
+
+    function restoreAutosavedDraft() {
+      if (!draftAutosave) return;
+      const envelope = draftAutosave.load();
+      if (!envelope) {
+        updateDraftButtons();
+        setAutosaveStatus("Autosave ready", "muted");
+        return;
+      }
+
+      const hasCurrentData = window.mylingoData.length > 0;
+      if (hasCurrentData && !window.confirm("Replace the current authoring data with the autosaved draft?")) {
+        return;
+      }
+
+      const restored = envelope.rows.map(row => cleanImportedRow(row));
+      window.mylingoData = restored;
+      nextInternalId = 1;
+      window.mylingoData.forEach(row => { row.__internalId = nextInternalId++; });
+      selectedRows.clear();
+      restored.forEach(row => selectedRows.add(row.__internalId));
+      activeLevel = LEVELS.includes(String(envelope.activeLevel || "").toUpperCase())
+        ? String(envelope.activeLevel).toUpperCase()
+        : "ALL";
+      renderLevelTabs();
+      renderGrid();
+      setAutosaveStatus(`Draft restored ${draftAutosave.formatSavedAt(envelope.savedAt)}`, "saved");
+      updateDraftButtons();
+    }
+
+    function discardAutosavedDraft() {
+      if (!draftAutosave) return;
+      if (!window.confirm("Discard the saved browser draft? The current grid will not be deleted.")) return;
+      if (draftAutosave.clear()) {
+        updateDraftButtons();
+        setAutosaveStatus("Draft discarded", "muted");
+      }
+    }
+
+    /*
+     * ============================================================
+     * HELPERS
+     * ============================================================
+     */
+
+    function showToast(message) {
+      toast.textContent = message;
+      toast.classList.remove("hidden");
+
+      clearTimeout(showToast.timer);
+
+      showToast.timer = setTimeout(() => {
+        toast.classList.add("hidden");
+      }, 2200);
+    }
+
+    function createEmptyRow(level = "A1") {
+      return {
+        __internalId: nextInternalId++,
+        quiz_id: "",
+        level,
+        title: "",
+        description: "",
+        quiz_category: "",
+        quiz_tags: "",
+        version: 1,
+        status: "draft",
+        question_number: "",
+        question_text: "",
+        question_category: "",
+        question_tags: "",
+        explanation: "",
+        correct_index: "",
+        answer_1: "",
+        answer_2: "",
+        answer_3: "",
+        answer_4: "",
+        answer_5: "",
+        answer_6: "",
+        answer_7: "",
+        answer_8: "",
+        answer_9: "",
+        // Content Schema v2: blank by default, never fabricated here.
+        // Imports of existing content that lack these columns must stay
+        // blank (see cleanImportedRow); only the explicit "Add row" flow
+        // (addRow()) stamps date_added, since that is the one action in
+        // this app unambiguous about minting a brand-new row rather than
+        // re-loading existing content for editing.
+        date_added: "",
+        date_updated: "",
+        question_type: "radio",
+        subprompt: "",
+        accepted_answers: [],
+        tolerance: "",
+        pairs: [],
+        items: [],
+        correct_order: [],
+        image_url: "",
+        image_alt: "",
+        audio_url: "",
+        audio_label: ""
+      };
+    }
+
+    function normalizeLevel(value) {
+      const normalized = String(value ?? "")
+        .trim()
+        .toUpperCase();
+
+      if (LEVELS.includes(normalized)) {
+        return normalized;
+      }
+
+      return normalized || "A1";
+    }
+
+    function normalizeFieldName(name) {
+      return String(name ?? "")
+        .trim()
+        .toLowerCase()
+        .replace(/\s+/g, "_")
+        .replace(/-/g, "_");
+    }
+
+    function parseRichCell(value, fallback) {
+      if (value === undefined || value === null || value === "") return fallback;
+      if (typeof value === "object") return value;
+      const text = String(value).trim();
+      if (!text) return fallback;
+      try { return JSON.parse(text); } catch { return text; }
+    }
+
+    function richArray(value) {
+      const parsed = parseRichCell(value, []);
+      if (Array.isArray(parsed)) return parsed.filter(v => v !== null && v !== undefined);
+      return String(parsed || "").split(/\r?\n/).map(v => v.trim()).filter(Boolean);
+    }
+
+    function syncRichCanonicalFields(row) {
+      const type = String(row.question_type || "radio").trim().toLowerCase().replace(/[\s-]+/g, "_") || "radio";
+      row.question_type = type;
+      if (["text", "short_text", "fill_in_the_blank", "number", "date"].includes(type)) {
+        const accepted = richArray(row.accepted_answers);
+        accepted.slice(0, 9).forEach((value, i) => { row[`answer_${i + 1}`] = String(value); });
+        for (let i = accepted.length; i < 9; i += 1) row[`answer_${i + 1}`] = "";
+        row.accepted_answers = accepted;
+        row.correct_index = accepted.length ? 1 : row.correct_index;
+      } else if (type === "matching") {
+        const pairs = Array.isArray(row.pairs) ? row.pairs : [];
+        row.pairs = pairs.map(p => ({ left: String(p?.left ?? "").trim(), right: String(p?.right ?? "").trim() })).filter(p => p.left || p.right);
+        row.pairs.slice(0, 9).forEach((p, i) => { row[`answer_${i + 1}`] = p.left || p.right; });
+        for (let i = row.pairs.length; i < 9; i += 1) row[`answer_${i + 1}`] = "";
+        row.correct_index = row.pairs.length ? 1 : row.correct_index;
+      } else if (type === "ranking") {
+        const items = richArray(row.items);
+        const order = richArray(row.correct_order);
+        row.items = items;
+        row.correct_order = order.length ? order : items.slice();
+        row.items.slice(0, 9).forEach((value, i) => { row[`answer_${i + 1}`] = String(value); });
+        for (let i = row.items.length; i < 9; i += 1) row[`answer_${i + 1}`] = "";
+        row.correct_index = row.items.length ? 1 : row.correct_index;
+      }
+      return row;
+    }
+
+    function richFieldForCsv(value) {
+      if (Array.isArray(value) || (value && typeof value === "object")) return JSON.stringify(value);
+      return value ?? "";
+    }
+
+    function cleanImportedRow(raw) {
+      const row = createEmptyRow();
+      const normalized = {};
+
+      Object.keys(raw || {}).forEach(key => {
+        normalized[normalizeFieldName(key)] = raw[key];
+      });
+
+      const hasLegacyOptions = [0, 1, 2, 3].some(index =>
+        Object.prototype.hasOwnProperty.call(normalized, `option_${index}`)
+      );
+
+      for (const field of ALL_EXPORT_FIELDS) {
+        if (Object.prototype.hasOwnProperty.call(normalized, field)) {
+          row[field] = normalized[field] ?? "";
+        }
+      }
+
+      Object.entries(LEGACY_FIELD_ALIASES).forEach(
+        ([legacyField, canonicalFields]) => {
+          const value = normalized[legacyField];
+          if (value === undefined) return;
+
+          canonicalFields.forEach(field => {
+            if (!String(row[field] ?? "").trim()) {
+              row[field] = value;
+            }
+          });
+        }
+      );
+
+      if (hasLegacyOptions) {
+        [0, 1, 2, 3].forEach(index => {
+          row[`answer_${index + 1}`] = normalized[`option_${index}`] ?? "";
+        });
+
+        if (Object.prototype.hasOwnProperty.call(normalized, "correct_index")) {
+          const legacyCorrect = Number(normalized.correct_index);
+          row.correct_index = Number.isInteger(legacyCorrect)
+            ? legacyCorrect + 1
+            : normalized.correct_index;
+        }
+      }
+
+      if (
+        !Object.prototype.hasOwnProperty.call(normalized, "quiz_category") &&
+        Object.prototype.hasOwnProperty.call(normalized, "category")
+      ) {
+        row.quiz_category = normalized.category ?? "";
+      }
+
+      if (
+        !Object.prototype.hasOwnProperty.call(normalized, "question_category") &&
+        Object.prototype.hasOwnProperty.call(normalized, "category")
+      ) {
+        row.question_category = normalized.category ?? "";
+      }
+
+      row.level = normalizeLevel(row.level);
+
+      if (!String(row.quiz_category || "").trim()) {
+        row.quiz_category = String(row.question_category || "").trim();
+      }
+      if (!String(row.question_category || "").trim()) {
+        row.question_category = String(row.quiz_category || "").trim();
+      }
+
+      const version = Number(row.version);
+      row.version = Number.isInteger(version) && version > 0 ? version : 1;
+
+      const status = String(row.status || "").trim().toLowerCase();
+      row.status = VALID_STATUSES.includes(status) ? status : "draft";
+
+      row.question_type = String(parseRichCell(normalized.question_type, row.question_type || "radio") || "radio").trim().toLowerCase().replace(/[\s-]+/g, "_");
+      row.subprompt = String(parseRichCell(normalized.subprompt, row.subprompt || "") || "").trim();
+      row.accepted_answers = richArray(normalized.accepted_answers ?? row.accepted_answers);
+      row.tolerance = parseRichCell(normalized.tolerance, row.tolerance || "");
+      row.pairs = Array.isArray(parseRichCell(normalized.pairs, row.pairs)) ? parseRichCell(normalized.pairs, row.pairs) : [];
+      row.items = richArray(normalized.items ?? row.items);
+      row.correct_order = richArray(normalized.correct_order ?? row.correct_order);
+      row.image_url = String(parseRichCell(normalized.image_url, row.image_url || "") || "").trim();
+      row.image_alt = String(parseRichCell(normalized.image_alt, row.image_alt || "") || "").trim();
+      row.audio_url = String(parseRichCell(normalized.audio_url, row.audio_url || "") || "").trim();
+      row.audio_label = String(parseRichCell(normalized.audio_label, row.audio_label || "") || "").trim();
+      syncRichCanonicalFields(row);
+
+      row.__autoHints = {
+        level: Object.prototype.hasOwnProperty.call(normalized, "level"),
+        title: Object.prototype.hasOwnProperty.call(normalized, "title"),
+        quizCategory: Object.prototype.hasOwnProperty.call(normalized, "quiz_category"),
+        questionCategory: Object.prototype.hasOwnProperty.call(normalized, "question_category"),
+        quizTags: Object.prototype.hasOwnProperty.call(normalized, "quiz_tags") || Object.prototype.hasOwnProperty.call(normalized, "question_tags")
+      };
+
+      return row;
+    }
+
+
+    /*
+     * ============================================================
+     * RAW-ONLY AUTO AUTHORING
+     * ============================================================
+     * Imported rows may contain only question content. Everything the
+     * production schema needs for bookkeeping is generated here.
+     */
+
+    const CATEGORY_ALIASES = {
+      grammar: "Grammar",
+      vocabulary: "Vocabulary",
+      vocab: "Vocabulary",
+      writing: "Writing",
+      "academic english": "Academic English",
+      "academic-english": "Academic English",
+      academic: "Academic English"
+    };
+
+    function normalizeCategory(value) {
+      return CATEGORY_ALIASES[String(value ?? "").trim().toLowerCase()] || "";
+    }
+
+    function inferQuizCategory(questionText) {
+      const text = String(questionText ?? "").trim().toLowerCase();
+      const writing = ["write an", "write a", "rewrite", "email", "paragraph", "essay", "letter", "formal message"];
+      const academic = ["academic", "research", "thesis", "cohesion", "citation", "paraphrase", "argument", "formal register"];
+      const vocab = ["synonym", "antonym", "closest meaning", "closest word", "meaning of", "definition of", "word that means", "vocabulary"];
+      const grammar = ["grammatically", "correct form", "tense", "subject-verb", "put the words in order", "word order", "article", "preposition", "modal", "plural", "comparative", "superlative", "passive voice", "conditional", "reported speech", "___"];
+      if (writing.some(m => text.includes(m))) return "Writing";
+      if (academic.some(m => text.includes(m))) return "Academic English";
+      if (vocab.some(m => text.includes(m))) return "Vocabulary";
+      if (grammar.some(m => text.includes(m))) return "Grammar";
+      return "Vocabulary";
+    }
+
+    function inferTitle(questionText, category, rawQuestionCategory) {
+      const supplied = String(rawQuestionCategory ?? "").trim();
+      if (supplied && !normalizeCategory(supplied)) return supplied;
+
+      const text = String(questionText ?? "").trim().toLowerCase();
+      const patterns = [
+        [["present continuous", "present progressive"], "Present Continuous"],
+        [["present simple", "simple present", "every day", "every morning"], "Present Simple"],
+        [["past continuous", "past progressive"], "Past Continuous"],
+        [["past simple", "simple past", "last year", "yesterday"], "Past Simple"],
+        [["future simple", "going to"], "Future Forms"],
+        [["irregular", "past form", "past tense"], "Irregular Verbs"],
+        [["synonym", "closest meaning"], "Synonyms"],
+        [["antonym", "opposite meaning"], "Antonyms"],
+        [["article", " an ", " a ", " the "], "Articles"],
+        [["preposition", "in / on / at", "at / on / in"], "Prepositions"],
+        [["comparative", "superlative"], "Comparatives & Superlatives"],
+        [["modal", "should", "must", "could"], "Modal Verbs"],
+        [["conditional", "if you"], "Conditionals"],
+        [["passive voice", "passive"], "Passive Voice"],
+        [["reported speech", "indirect speech"], "Reported Speech"],
+        [["word order", "put the words in order"], "Word Order"],
+        [["punctuation", "comma", "apostrophe", "question mark"], "Punctuation"],
+        [["phrasal verb"], "Phrasal Verbs"],
+        [["collocation"], "Collocations"]
+      ];
+      for (const [needles, title] of patterns) {
+        if (needles.some(n => text.includes(n))) return title;
+      }
+      if (category === "Writing") return "Writing Practice";
+      if (category === "Academic English") return "Academic English";
+      return "General Practice";
+    }
+
+    function inferLevel(questionText, answers) {
+      const text = String(questionText ?? "").trim().toLowerCase();
+      const words = text.split(/\s+/).filter(Boolean);
+      const joined = answers.map(a => String(a ?? "").toLowerCase()).join(" ");
+      const advanced = ["notwithstanding", "albeit", "insofar", "intrinsic", "subsequent", "counterargument", "nuance", "mitigate", "corroborate", "paradigm"];
+      const upper = ["however", "although", "whereas", "despite", "consequently", "nevertheless", "implication", "evaluate", "justify", "hypothesis", "sustainable", "significant"];
+      const mid = ["because", "although", "unless", "while", "since", "already", "yet", "instead", "rather"];
+      if (advanced.some(m => text.includes(m)) || words.length >= 28) return "C1";
+      if (upper.some(m => text.includes(m)) || words.length >= 22) return "B2";
+      if (mid.some(m => text.includes(m)) || words.length >= 16) return "B1";
+      if (words.length <= 12 && /(\bgo\b|\bbe\b|\bhave\b|\bhappy\b|\bbig\b|\bhome\b|\bschool\b|\bfood\b)/.test(text + " " + joined)) return "A1";
+      if (words.length <= 16) return "A2";
+      return "B1";
+    }
+
+    function autoExplanation(row, answers) {
+      const existing = String(row.explanation ?? "").trim();
+      if (existing) return existing;
+      const idx = Number(row.correct_index);
+      const answer = answers[idx - 1];
+      return Number.isInteger(idx) && answer
+        ? `The correct answer is "${answer}".`
+        : "The selected answer is the correct choice.";
+    }
+
+    function rawAnswers(row) {
+      const answers = [];
+      for (const field of ANSWER_FIELDS) {
+        const value = String(row[field] ?? "").trim();
+        if (!value) break;
+        answers.push(value);
+      }
+      return answers;
+    }
+
+    function generateNextQuizId(level, usedIds) {
+      let max = 0;
+      usedIds.forEach(id => {
+        const match = String(id).match(new RegExp(`^${level.toLowerCase()}-(\\d+)$`, "i"));
+        if (match) max = Math.max(max, Number(match[1]));
+      });
+      return `${level.toLowerCase()}-${String(max + 1).padStart(3, "0")}`;
+    }
+
+    function autoGenerateMetadata(rows) {
+      const usedIds = new Set(
+        window.mylingoData.map(row => String(row.quiz_id ?? "").trim()).filter(Boolean)
+      );
+      const usedNumbers = new Map();
+      window.mylingoData.forEach(row => {
+        const id = String(row.quiz_id ?? "").trim();
+        const num = Number(row.question_number);
+        if (id && Number.isInteger(num)) usedNumbers.set(id, Math.max(usedNumbers.get(id) || 0, num));
+      });
+
+      const prepared = rows.map(row => {
+        const answers = rawAnswers(row);
+        const rawTags = String(row.question_tags || row.quiz_tags || "").trim();
+        const parts = rawTags.split(",").map(v => v.trim()).filter(Boolean);
+        const tagLevel = LEVELS.includes(String(parts.find(v => LEVELS.includes(v.toUpperCase())) || "").toUpperCase())
+          ? String(parts.find(v => LEVELS.includes(v.toUpperCase()))).toUpperCase()
+          : "";
+        const tagCategory = parts.map(normalizeCategory).find(Boolean) || "";
+        const hints = row.__autoHints || {};
+        const category = (hints.quizCategory ? normalizeCategory(row.quiz_category) : "") ||
+          (hints.questionCategory ? normalizeCategory(row.question_category) : "") ||
+          tagCategory || inferQuizCategory(row.question_text);
+        const level = (hints.level && LEVELS.includes(normalizeLevel(row.level)))
+          ? normalizeLevel(row.level)
+          : tagLevel || inferLevel(row.question_text, answers);
+        const title = (hints.title ? String(row.title || "").trim() : "") ||
+          inferTitle(row.question_text, category, hints.questionCategory ? row.question_category : "");
+        row.level = level;
+        row.title = title;
+        row.description = String(row.description || "").trim() || `Practice ${title}.`;
+        row.quiz_category = category;
+        row.quiz_tags = `${category},${level}`;
+        row.question_category = category;
+        row.question_tags = `${category},${level}`;
+        row.version = Number.isInteger(Number(row.version)) && Number(row.version) > 0 ? Number(row.version) : 1;
+        row.status = VALID_STATUSES.includes(String(row.status || "").trim().toLowerCase()) ? String(row.status).trim().toLowerCase() : "draft";
+        row.correct_index = Number(row.correct_index);
+        row.explanation = autoExplanation(row, answers);
+        return row;
+      });
+
+      // Agent 15 Quiz Grouping/Packing: preserve existing IDs and pack only
+      // genuinely unassigned rows by level/category into deterministic groups.
+      // The reusable packer also provides the explicit authoring action.
+      const packResult = window.MylingoQuizPacker.packRows(prepared, {
+        minSize: MIN_QUESTIONS_PER_QUIZ,
+        targetSize: 20,
+        maxSize: MAX_QUESTIONS_PER_QUIZ,
+        profiles: PRODUCTION_QUIZ_PROFILES
+      });
+      prepared.splice(0, prepared.length, ...packResult.rows);
+
+      prepared.forEach(row => {
+        const id = String(row.quiz_id || "").trim();
+        if (!id) return;
+        const next = (usedNumbers.get(id) || 0) + 1;
+        row.question_number = Number.isInteger(Number(row.question_number)) && Number(row.question_number) > 0
+          ? Number(row.question_number)
+          : next;
+        usedNumbers.set(id, Math.max(usedNumbers.get(id) || 0, Number(row.question_number)));
+      });
+
+      return prepared;
+    }
+
+    function getVisibleRows() {
+      if (activeLevel === "ALL") {
+        return window.mylingoData;
+      }
+
+      return window.mylingoData.filter(
+        row => normalizeLevel(row.level) === activeLevel
+      );
+    }
+
+    function getGridPageRows(rows) {
+      const totalPages = Math.max(1, Math.ceil(rows.length / gridPageSize));
+      gridPage = Math.min(Math.max(1, gridPage), totalPages);
+      const start = (gridPage - 1) * gridPageSize;
+      return {
+        rows: rows.slice(start, start + gridPageSize),
+        start,
+        totalPages
+      };
+    }
+
+    function updateGridPagination(rowsLength, start, totalPages) {
+      const shownStart = rowsLength ? start + 1 : 0;
+      const shownEnd = rowsLength ? start + rowsLength : 0;
+      gridPageSummary.textContent = `Page ${gridPage} of ${totalPages} · ${shownStart}–${shownEnd}`;
+      gridPrevPage.disabled = gridPage <= 1;
+      gridNextPage.disabled = gridPage >= totalPages;
+    }
+
+    function getRowByInternalId(id) {
+      return window.mylingoData.find(row => row.__internalId === id);
+    }
+
+    function escapeCsv(value) {
+      const str = String(value ?? "");
+
+      if (
+        str.includes('"') ||
+        str.includes(",") ||
+        str.includes("\n") ||
+        str.includes("\r")
+      ) {
+        return '"' + str.replace(/"/g, '""') + '"';
+      }
+
+      return str;
+    }
+
+    function slugForFile(value) {
+      const slug = String(value ?? "")
+        .trim()
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, "");
+
+      return slug;
+    }
+
+    /*
+     * ============================================================
+     * CEFR TABS
+     * ============================================================
+     */
+
+    function renderLevelTabs() {
+      levelTabs.innerHTML = "";
+
+      const allButton = document.createElement("button");
+
+      allButton.type = "button";
+      allButton.textContent = "All Data";
+      allButton.className =
+        "rounded-lg border border-slate-300 bg-white px-4 py-2 font-bold text-slate-700 hover:bg-slate-50";
+
+      if (activeLevel === "ALL") {
+        allButton.classList.add("tab-active");
+      }
+
+      allButton.addEventListener("click", () => {
+        activeLevel = "ALL";
+        gridPage = 1;
+        renderLevelTabs();
+        renderGrid();
+      });
+
+      levelTabs.appendChild(allButton);
+
+      LEVELS.forEach(level => {
+        const button = document.createElement("button");
+
+        button.type = "button";
+        button.textContent = level;
+        button.className =
+          "rounded-lg border border-slate-300 bg-white px-4 py-2 font-bold text-slate-700 hover:bg-slate-50";
+
+        if (activeLevel === level) {
+          button.classList.add("tab-active");
+        }
+
+        button.addEventListener("click", () => {
+          activeLevel = level;
+          gridPage = 1;
+          renderLevelTabs();
+          renderGrid();
+          scheduleDraftAutosave();
+        });
+
+        levelTabs.appendChild(button);
+      });
+    }
+
+    /*
+     * ============================================================
+     * VALIDATION
+     * ============================================================
+     */
+
+    // Milestone 23 — Authoring Scale + Incremental Validation.
+    //
+    // getRowIssues/computeQuizGroupIssues now live in
+    // ../site/shared/js/authoring-validation.js so the exact same rules can
+    // be reused for a full rescan (bulk operations) AND for an incremental
+    // single-row/single-quiz recheck (the live-edit hot path below), without
+    // duplicating the rule set. Behavior/messages are unchanged.
+    function getRowIssues(row) {
+      return window.MylingoAuthoringValidation.getRowIssues(row, validationEngine.config);
+    }
+
+    // Full dataset rescan. Used after bulk operations (import, pack, bulk
+    // delete, undo/redo, initial load) that already touch every row, so an
+    // O(total rows) pass here is not a regression from before. The
+    // per-keystroke live-edit path no longer calls this — see the "input"
+    // listener in renderGrid(), which calls validationEngine.onFieldChanged()
+    // instead so a single edit only re-checks the one row and its one quiz
+    // group, not the whole dataset.
+    function computeValidation() {
+      validationEngine.fullRecompute(window.mylingoData);
+    }
+
+    function isRowValid(internalId) {
+      return validationEngine.isRowValid(internalId);
+    }
+
+
+    // Milestone 23 — Authoring Scale + Incremental Validation.
+    //
+    // validationRowElements/validationRowOrder/orphanRowElement let
+    // renderValidationPanel() patch just the quiz row(s) that changed
+    // instead of clearing and rebuilding the whole <tbody> on every
+    // keystroke. They are kept in sync with validationTableBody's actual
+    // children; a full rebuild (renderValidationPanel() with no args, used
+    // by bulk operations) resets and repopulates them from scratch.
+    const validationRowElements = new Map(); // quiz_id -> <tr>
+    let validationRowOrder = []; // quiz_ids currently rendered, kept sorted
+    let orphanRowElement = null;
+
+    function findValidationInsertIndex(quizId) {
+      let lo = 0;
+      let hi = validationRowOrder.length;
+      while (lo < hi) {
+        const mid = (lo + hi) >> 1;
+        if (validationRowOrder[mid].localeCompare(quizId) < 0) {
+          lo = mid + 1;
+        } else {
+          hi = mid;
+        }
+      }
+      return lo;
+    }
+
+    function buildValidationRow(quizId, entry) {
+      const tr = document.createElement("tr");
+      tr.className = "border-b border-slate-100 align-top";
+      tr.dataset.quizRowFor = quizId;
+
+      const statusTd = document.createElement("td");
+      statusTd.className = "py-2 pr-3";
+      statusTd.appendChild(document.createElement("span"));
+      tr.appendChild(statusTd);
+
+      const quizIdTd = document.createElement("td");
+      quizIdTd.className = "py-2 pr-3 font-bold text-slate-800";
+      quizIdTd.textContent = quizId;
+      tr.appendChild(quizIdTd);
+
+      const levelTd = document.createElement("td");
+      levelTd.className = "py-2 pr-3 text-slate-600";
+      tr.appendChild(levelTd);
+
+      const titleTd = document.createElement("td");
+      titleTd.className = "py-2 pr-3 text-slate-600";
+      tr.appendChild(titleTd);
+
+      const countTd = document.createElement("td");
+      countTd.className = "py-2 pr-3 text-slate-600";
+      tr.appendChild(countTd);
+
+      const issuesTd = document.createElement("td");
+      issuesTd.className = "py-2 text-slate-600";
+      tr.appendChild(issuesTd);
+
+      updateValidationRowContent(tr, entry);
+      return tr;
+    }
+
+    function updateValidationRowContent(tr, entry) {
+      const [statusTd, , levelTd, titleTd, countTd, issuesTd] = tr.children;
+      const badge = statusTd.firstChild;
+      badge.className = entry.issues.length ? "badge-fail" : "badge-pass";
+      badge.innerHTML = entry.issues.length
+        ? '<span class="status-dot status-dot-fail"></span>FAIL'
+        : '<span class="status-dot status-dot-pass"></span>PASS';
+      levelTd.textContent = entry.level;
+      titleTd.textContent = entry.title || "—";
+      countTd.textContent = String(entry.count);
+      issuesTd.textContent = entry.issues.length
+        ? entry.issues.join("; ")
+        : "—";
+    }
+
+    function insertValidationRow(quizId, tr) {
+      const idx = findValidationInsertIndex(quizId);
+      validationRowOrder.splice(idx, 0, quizId);
+      const nextQuizId = validationRowOrder[idx + 1];
+      const refNode = nextQuizId
+        ? validationRowElements.get(nextQuizId)
+        : orphanRowElement || null;
+      validationTableBody.insertBefore(tr, refNode || null);
+      validationRowElements.set(quizId, tr);
+    }
+
+    function removeValidationRow(quizId) {
+      const tr = validationRowElements.get(quizId);
+      if (!tr) return;
+      tr.remove();
+      validationRowElements.delete(quizId);
+      const idx = validationRowOrder.indexOf(quizId);
+      if (idx !== -1) validationRowOrder.splice(idx, 1);
+    }
+
+    function buildOrphanRow(count) {
+      const tr = document.createElement("tr");
+      tr.className = "border-b border-slate-100 align-top";
+
+      const statusTd = document.createElement("td");
+      statusTd.className = "py-2 pr-3";
+      statusTd.innerHTML =
+        '<span class="badge-fail"><span class="status-dot status-dot-fail"></span>FAIL</span>';
+      tr.appendChild(statusTd);
+
+      const quizIdTd = document.createElement("td");
+      quizIdTd.className = "py-2 pr-3 font-bold text-slate-800";
+      quizIdTd.textContent = "(no quiz_id)";
+      tr.appendChild(quizIdTd);
+
+      tr.appendChild(document.createElement("td"));
+      tr.appendChild(document.createElement("td"));
+
+      const countTd = document.createElement("td");
+      countTd.className = "py-2 pr-3 text-slate-600";
+      tr.appendChild(countTd);
+
+      const issuesTd = document.createElement("td");
+      issuesTd.className = "py-2 text-slate-600";
+      issuesTd.textContent =
+        "These rows have no quiz_id and won't be exported into a quiz file.";
+      tr.appendChild(issuesTd);
+
+      updateOrphanRowContent(tr, count);
+      return tr;
+    }
+
+    function updateOrphanRowContent(tr, count) {
+      const countTd = tr.children[4];
+      countTd.textContent = String(count);
+    }
+
+    // options.onlyQuizIds: when provided (the live-edit hot path), only the
+    // named quiz_id(s) — at most two, from validationEngine.onFieldChanged()
+    // — are patched in the DOM; everything else is left untouched. With no
+    // options (bulk operations: import/pack/delete/undo/redo/initial load),
+    // the whole table is rebuilt, matching the pre-Milestone-23 behavior.
+    function renderValidationPanel(options) {
+      const summary = validationEngine.getSummary();
+      const onlyQuizIds =
+        options && Array.isArray(options.onlyQuizIds) ? options.onlyQuizIds : null;
+
+      const overallPass =
+        summary.totalRows > 0 &&
+        summary.rowsWithIssues === 0 &&
+        summary.quizzesFailing === 0;
+
+      if (summary.totalRows === 0) {
+        validationOverallBadge.className = "badge-pass";
+        validationOverallBadge.innerHTML =
+          '<span class="status-dot status-dot-pass"></span>No data yet';
+      } else if (overallPass) {
+        validationOverallBadge.className = "badge-pass";
+        validationOverallBadge.innerHTML =
+          '<span class="status-dot status-dot-pass"></span>All checks pass';
+      } else {
+        validationOverallBadge.className = "badge-fail";
+        validationOverallBadge.innerHTML =
+          '<span class="status-dot status-dot-fail"></span>Needs fixes';
+      }
+
+      validationCounts.textContent =
+        summary.totalRows === 0
+          ? ""
+          : `${summary.totalQuizzes} quiz(zes), ${summary.quizzesFailing} failing · ${summary.totalRows} row(s), ${summary.rowsWithIssues} with issues`;
+
+      if (summary.totalRows === 0) {
+        validationEmpty.classList.remove("hidden");
+        validationScroll.classList.add("hidden");
+        validationTableBody.innerHTML = "";
+        validationRowElements.clear();
+        validationRowOrder = [];
+        orphanRowElement = null;
+        return;
+      }
+
+      validationEmpty.classList.add("hidden");
+      validationScroll.classList.remove("hidden");
+
+      if (!onlyQuizIds) {
+        validationTableBody.innerHTML = "";
+        validationRowElements.clear();
+        validationRowOrder = [];
+        orphanRowElement = null;
+
+        const quizIds = Array.from(quizIssuesMap.keys()).sort((a, b) =>
+          a.localeCompare(b)
+        );
+
+        quizIds.forEach(quizId => {
+          const tr = buildValidationRow(quizId, quizIssuesMap.get(quizId));
+          validationTableBody.appendChild(tr);
+          validationRowElements.set(quizId, tr);
+          validationRowOrder.push(quizId);
+        });
+
+        if (summary.orphanRows > 0) {
+          orphanRowElement = buildOrphanRow(summary.orphanRows);
+          validationTableBody.appendChild(orphanRowElement);
+        }
+      } else {
+        onlyQuizIds.forEach(quizId => {
+          const entry = quizIssuesMap.get(quizId);
+          if (!entry) {
+            removeValidationRow(quizId);
+            return;
+          }
+          const existingTr = validationRowElements.get(quizId);
+          if (existingTr) {
+            updateValidationRowContent(existingTr, entry);
+          } else {
+            insertValidationRow(quizId, buildValidationRow(quizId, entry));
+          }
+        });
+
+        if (summary.orphanRows > 0) {
+          if (orphanRowElement) {
+            updateOrphanRowContent(orphanRowElement, summary.orphanRows);
+          } else {
+            orphanRowElement = buildOrphanRow(summary.orphanRows);
+            validationTableBody.appendChild(orphanRowElement);
+          }
+        } else if (orphanRowElement) {
+          orphanRowElement.remove();
+          orphanRowElement = null;
+        }
+      }
+    }
+
+
+    gridPageSizeSelect.addEventListener("change", () => {
+      gridPageSize = Math.max(1, Number(gridPageSizeSelect.value) || 50);
+      gridPage = 1;
+      renderGrid();
+    });
+
+    gridPrevPage.addEventListener("click", () => {
+      if (gridPage > 1) {
+        gridPage -= 1;
+        renderGrid();
+      }
+    });
+
+    gridNextPage.addEventListener("click", () => {
+      const totalPages = Math.max(1, Math.ceil(getVisibleRows().length / gridPageSize));
+      if (gridPage < totalPages) {
+        gridPage += 1;
+        renderGrid();
+      }
+    });
+
+    validationToggle.addEventListener("click", () => {
+      validationExpanded = !validationExpanded;
+      validationBody.classList.toggle("hidden", !validationExpanded);
+      validationChevron.innerHTML = validationExpanded ? "&#9660;" : "&#9654;";
+    });
+
+    /*
+     * ============================================================
+     * GRID RENDERING
+     * ============================================================
+     */
+
+    function renderGrid() {
+      computeValidation();
+
+      gridBody.innerHTML = "";
+
+      const allVisibleRows = getVisibleRows();
+      const page = getGridPageRows(allVisibleRows);
+      const rows = page.rows;
+
+      rows.forEach((row, visibleIndex) => {
+        const tr = document.createElement("tr");
+        const rowValid = isRowValid(row.__internalId);
+
+        if (!rowValid) {
+          tr.classList.add("row-invalid");
+        }
+
+        /*
+         * Row number / selection cell
+         */
+        const numberCell = document.createElement("td");
+        numberCell.className = "row-number";
+
+        const wrapper = document.createElement("div");
+        wrapper.className = "flex flex-col items-center gap-1";
+
+        const checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.checked = selectedRows.has(row.__internalId);
+        checkbox.className = "h-4 w-4";
+
+        checkbox.addEventListener("change", event => {
+          if (event.target.checked) {
+            selectedRows.add(row.__internalId);
+          } else {
+            selectedRows.delete(row.__internalId);
+          }
+
+          updateStats();
+        });
+
+        const numberRow = document.createElement("div");
+        numberRow.className = "flex items-center gap-1";
+
+        const statusDot = document.createElement("span");
+        statusDot.className = `status-dot ${
+          rowValid ? "status-dot-pass" : "status-dot-fail"
+        }`;
+        statusDot.dataset.statusDotFor = row.__internalId;
+
+        const issuesForTitle = rowIssuesMap.get(row.__internalId) || [];
+        statusDot.title = rowValid
+          ? "Row passes validation"
+          : issuesForTitle.join("; ");
+
+        const number = document.createElement("span");
+        number.textContent = String(page.start + visibleIndex + 1);
+
+        numberRow.appendChild(statusDot);
+        numberRow.appendChild(number);
+
+        wrapper.appendChild(checkbox);
+        wrapper.appendChild(numberRow);
+        numberCell.appendChild(wrapper);
+        tr.appendChild(numberCell);
+
+        /*
+         * Editable data cells
+         */
+        DATA_FIELDS.forEach(field => {
+          const td = document.createElement("td");
+
+          // Content Schema v2: date_added/date_updated are read-only in
+          // this app. They are stamped by generate.py, promote.py, or a
+          // deliberate manual CSV edit — not typed by a content author —
+          // so render them as plain text instead of an editable control,
+          // matching AGENT_12's authoring-app handoff scope.
+          if (DATE_FIELDS.includes(field)) {
+            const span = document.createElement("span");
+            span.className = "text-xs text-slate-500";
+            span.textContent = row[field] ? String(row[field]) : "\u2014";
+            span.title = field === "date_added"
+              ? "Set once when the row is created. Not editable here."
+              : "Set by the promotion/generation pipeline on content edits. Not editable here.";
+            td.appendChild(span);
+            tr.appendChild(td);
+            return;
+          }
+
+          let control;
+
+          if (
+            field === "question_text" ||
+            field === "description" ||
+            field === "explanation"
+          ) {
+            control = document.createElement("textarea");
+            control.rows = field === "question_text" ? 3 : 2;
+          } else if (field === "level") {
+            control = document.createElement("select");
+
+            LEVELS.forEach(level => {
+              const option = document.createElement("option");
+              option.value = level;
+              option.textContent = level;
+              control.appendChild(option);
+            });
+          } else if (field === "status") {
+            control = document.createElement("select");
+            VALID_STATUSES.forEach(status => {
+              const option = document.createElement("option");
+              option.value = status;
+              option.textContent = status;
+              control.appendChild(option);
+            });
+          } else {
+            control = document.createElement("input");
+
+            if (
+              field === "question_number" ||
+              field === "version" ||
+              field === "correct_index"
+            ) {
+              control.type = "number";
+            } else {
+              control.type = "text";
+            }
+
+            // Content Schema v2: advisory autocomplete only (see
+            // TAG_VOCABULARY above) — content_qa.py's CQ-T01 remains the
+            // actual enforcement point, this just reduces free-text drift
+            // at the point of entry.
+            if (field === "quiz_tags" || field === "question_tags") {
+              control.setAttribute("list", "tagVocabularyList");
+            }
+          }
+
+          control.value =
+            row[field] === undefined || row[field] === null
+              ? ""
+              : String(row[field]);
+
+          control.dataset.field = field;
+          control.dataset.rowId = row.__internalId;
+
+          control.addEventListener("input", event => {
+            const targetRow = getRowByInternalId(row.__internalId);
+
+            if (!targetRow) {
+              return;
+            }
+
+            let value = event.target.value;
+
+            if (field === "level") {
+              value = normalizeLevel(value);
+            }
+
+            if (
+              field === "question_number" ||
+              field === "version" ||
+              field === "correct_index"
+            ) {
+              if (value !== "") {
+                value = Number(value);
+              }
+            }
+
+            targetRow[field] = value;
+            scheduleDraftAutosave();
+
+            // Live diagnostics: Milestone 23 — Authoring Scale + Incremental
+            // Validation. Only this row and its quiz group (at most two, if
+            // the edited field was quiz_id itself) are recomputed — never
+            // the whole dataset — so this stays cheap no matter how large
+            // the authored dataset grows. Still avoids a full grid
+            // re-render (which would steal focus from the input).
+            const touchedQuizIds = validationEngine.onFieldChanged(
+              row.__internalId
+            );
+
+            const dotEl = gridBody.querySelector(
+              `[data-status-dot-for="${row.__internalId}"]`
+            );
+
+            if (dotEl) {
+              const nowValid = isRowValid(row.__internalId);
+              dotEl.className = `status-dot ${
+                nowValid ? "status-dot-pass" : "status-dot-fail"
+              }`;
+
+              const currentIssues =
+                rowIssuesMap.get(row.__internalId) || [];
+              dotEl.title = nowValid
+                ? "Row passes validation"
+                : currentIssues.join("; ");
+
+              const parentTr = dotEl.closest("tr");
+              if (parentTr) {
+                parentTr.classList.toggle("row-invalid", !nowValid);
+              }
+            }
+
+            renderValidationPanel({ onlyQuizIds: touchedQuizIds });
+          });
+
+          td.appendChild(control);
+          tr.appendChild(td);
+        });
+
+        gridBody.appendChild(tr);
+      });
+
+      updateGridPagination(rows.length, page.start, page.totalPages);
+      updateStats();
+      renderValidationPanel();
+    }
+
+    function updateStats() {
+      visibleCount.textContent = String(getVisibleRows().length);
+      totalCount.textContent = String(window.mylingoData.length);
+      selectedCount.textContent = String(selectedRows.size);
+    }
+
+    /*
+     * ============================================================
+     * ROW OPERATIONS
+     * ============================================================
+     */
+
+    function addRow() {
+      const level = activeLevel === "ALL" ? "A1" : activeLevel;
+
+      const row = createEmptyRow(level);
+      // Content Schema v2: this is a genuine new row minted by the
+      // authoring app right now, so it gets a real date_added — unlike
+      // createEmptyRow()'s default blank, which exists so imports of
+      // pre-existing content never get a fabricated timestamp.
+      row.date_added = new Date().toISOString();
+
+      window.mylingoData.push(row);
+
+      selectedRows.clear();
+      selectedRows.add(row.__internalId);
+
+      renderGrid();
+      scheduleDraftAutosave();
+
+      showToast("Row added.");
+    }
+
+    function duplicateSelectedRows() {
+      const selected = window.mylingoData.filter(row =>
+        selectedRows.has(row.__internalId)
+      );
+
+      if (!selected.length) {
+        showToast("Select at least one row first.");
+        return;
+      }
+
+      const copies = selected.map(original => ({
+        ...original,
+        __internalId: nextInternalId++
+      }));
+
+      window.mylingoData.push(...copies);
+
+      selectedRows.clear();
+
+      copies.forEach(row => {
+        selectedRows.add(row.__internalId);
+      });
+
+      renderGrid();
+      scheduleDraftAutosave();
+
+      showToast(`${copies.length} row(s) duplicated.`);
+    }
+
+    function deleteSelectedRows() {
+      if (!selectedRows.size) {
+        showToast("Select at least one row first.");
+        return;
+      }
+
+      const before = window.mylingoData.length;
+
+      window.mylingoData = window.mylingoData.filter(
+        row => !selectedRows.has(row.__internalId)
+      );
+
+      const deleted = before - window.mylingoData.length;
+
+      selectedRows.clear();
+
+      renderGrid();
+      scheduleDraftAutosave();
+
+      showToast(`${deleted} row(s) deleted.`);
+    }
+
+    function clearAllData() {
+      if (!window.mylingoData.length) {
+        showToast("There is no data to clear.");
+        return;
+      }
+
+      const confirmed = window.confirm(
+        "Clear all quiz data? This cannot be undone."
+      );
+
+      if (!confirmed) {
+        return;
+      }
+
+      window.mylingoData = [];
+      selectedRows.clear();
+
+      renderGrid();
+      scheduleDraftAutosave();
+
+      showToast("All data cleared.");
+    }
+
+    /*
+     * ============================================================
+     * CSV / XLSX IMPORT
+     * ============================================================
+     */
+
+    async function importSpreadsheetFile(file) {
+      if (!file) {
+        return;
+      }
+
+      fileStatus.textContent = `Reading ${file.name}...`;
+
+      try {
+        const buffer = await file.arrayBuffer();
+
+        const workbook = XLSX.read(buffer, {
+          type: "array"
+        });
+
+        const sheetName = workbook.SheetNames[0];
+
+        if (!sheetName) {
+          throw new Error("The workbook contains no worksheets.");
+        }
+
+        const worksheet = workbook.Sheets[sheetName];
+
+        const rows = XLSX.utils.sheet_to_json(worksheet, {
+          defval: "",
+          raw: false
+        });
+
+        if (!rows.length) {
+          throw new Error("No data rows were found.");
+        }
+
+        const imported = autoGenerateMetadata(rows.map(cleanImportedRow));
+
+        window.mylingoData.push(...imported);
+
+        selectedRows.clear();
+
+        imported.forEach(row => {
+          selectedRows.add(row.__internalId);
+        });
+
+        renderGrid();
+        scheduleDraftAutosave();
+
+        fileStatus.textContent =
+          `Imported ${imported.length} row(s) from ${file.name}.`;
+
+        showToast(`${imported.length} row(s) imported.`);
+      } catch (error) {
+        console.error(error);
+
+        fileStatus.textContent =
+          `Import failed: ${error.message}`;
+
+        showToast("Spreadsheet import failed.");
+      } finally {
+        fileInput.value = "";
+      }
+    }
+
+    /*
+     * ============================================================
+     * TSV / PASTE IMPORT
+     * ============================================================
+     */
+
+    function parseTabSeparatedText(text) {
+      const normalized = String(text ?? "")
+        .replace(/\r\n/g, "\n")
+        .replace(/\r/g, "\n")
+        .trim();
+
+      if (!normalized) {
+        return [];
+      }
+
+      const lines = normalized
+        .split("\n")
+        .filter(line => line.trim() !== "");
+
+      if (!lines.length) {
+        return [];
+      }
+
+      const firstColumns = lines[0].split("\t");
+
+      const looksLikeHeader = firstColumns.some(
+        column =>
+          DATA_FIELDS.includes(normalizeFieldName(column))
+      );
+
+      let headers;
+      let startIndex;
+
+      if (looksLikeHeader) {
+        headers = firstColumns.map(normalizeFieldName);
+        startIndex = 1;
+      } else {
+        // Headerless input follows the raw-only contract. Do NOT fall back to
+        // DATA_FIELDS here: that would shift question text into quiz_id and
+        // answers into unrelated metadata columns.
+        headers = RAW_IMPORT_FIELDS;
+        startIndex = 0;
+      }
+
+      const output = [];
+
+      for (let i = startIndex; i < lines.length; i++) {
+        const columns = lines[i].split("\t");
+
+        if (
+          columns.length === 1 &&
+          columns[0].trim() === ""
+        ) {
+          continue;
+        }
+
+        const raw = {};
+
+        headers.forEach((header, index) => {
+          raw[header] = columns[index] ?? "";
+        });
+
+        output.push(cleanImportedRow(raw));
+      }
+
+      return output;
+    }
+
+    function appendPastedRows() {
+      const text = pasteInput.value;
+
+      if (!text.trim()) {
+        showToast("Paste some TSV data first.");
+        return;
+      }
+
+      try {
+        const imported = autoGenerateMetadata(parseTabSeparatedText(text));
+
+        if (!imported.length) {
+          showToast("No rows could be parsed.");
+          return;
+        }
+
+        window.mylingoData.push(...imported);
+
+        selectedRows.clear();
+
+        imported.forEach(row => {
+          selectedRows.add(row.__internalId);
+        });
+
+        renderGrid();
+        scheduleDraftAutosave();
+
+        pasteInput.value = "";
+
+        showToast(`${imported.length} row(s) appended.`);
+      } catch (error) {
+        console.error(error);
+        showToast("Could not parse pasted data.");
+      }
+    }
+
+    /*
+     * ============================================================
+     * OCR
+     * ============================================================
+     */
+
+    async function processOCR(file) {
+      if (!file) {
+        return;
+      }
+
+      if (
+        typeof Tesseract === "undefined" ||
+        !Tesseract.recognize
+      ) {
+        showToast("OCR library is unavailable.");
+        return;
+      }
+
+      ocrProgress.classList.remove("hidden");
+      ocrProgressBar.style.width = "0%";
+      ocrStatus.textContent = "Starting OCR...";
+      ocrResultSection.classList.remove("hidden");
+      ocrText.value = "";
+
+      try {
+        const result = await Tesseract.recognize(
+          file,
+          "eng",
+          {
+            logger: message => {
+              if (message.status) {
+                ocrStatus.textContent =
+                  `${message.status} ${
+                    typeof message.progress === "number"
+                      ? Math.round(message.progress * 100) + "%"
+                      : ""
+                  }`;
+
+                if (
+                  typeof message.progress === "number"
+                ) {
+                  ocrProgressBar.style.width =
+                    `${Math.round(message.progress * 100)}%`;
+                }
+              }
+            }
+          }
+        );
+
+        const text =
+          result?.data?.text ||
+          "";
+
+        ocrText.value = text;
+        ocrStatus.textContent =
+          `OCR complete — ${text.length} characters extracted.`;
+        ocrProgressBar.style.width = "100%";
+
+        showToast("OCR scan complete.");
+      } catch (error) {
+        console.error(error);
+
+        ocrStatus.textContent =
+          `OCR failed: ${error.message}`;
+
+        showToast("OCR scan failed.");
+      } finally {
+        setTimeout(() => {
+          ocrProgress.classList.add("hidden");
+        }, 800);
+
+        ocrInput.value = "";
+      }
+    }
+
+    /*
+     * ============================================================
+     * OCR COPY
+     * ============================================================
+     */
+
+    async function copyOCRText() {
+      const text = ocrText.value;
+
+      if (!text) {
+        showToast("There is no OCR text to copy.");
+        return;
+      }
+
+      try {
+        await navigator.clipboard.writeText(text);
+        showToast("OCR text copied.");
+      } catch (error) {
+        ocrText.select();
+        document.execCommand("copy");
+        showToast("OCR text copied.");
+      }
+    }
+
+    /*
+     * ============================================================
+     * SELECTION
+     * ============================================================
+     */
+
+    function selectAllVisible() {
+      getVisibleRows().forEach(row => {
+        selectedRows.add(row.__internalId);
+      });
+
+      renderGrid();
+    }
+
+    function deselectAll() {
+      selectedRows.clear();
+      renderGrid();
+    }
+
+    /*
+     * ============================================================
+     * CSV EXPORT (shared builder — used by both the quick CSV
+     * download and the production ZIP's master_source.csv)
+     * ============================================================
+     */
+
+    function buildMasterCsvString(rows) {
+      const lines = [];
+
+      lines.push(ALL_EXPORT_FIELDS.map(escapeCsv).join(","));
+
+      const sorted = [...rows].sort((a, b) => {
+        const levelCompare = normalizeLevel(a.level).localeCompare(
+          normalizeLevel(b.level)
+        );
+        if (levelCompare !== 0) return levelCompare;
+
+        const quizCompare = String(a.quiz_id ?? "").localeCompare(
+          String(b.quiz_id ?? "")
+        );
+        if (quizCompare !== 0) return quizCompare;
+
+        return Number(a.question_num || 0) - Number(b.question_num || 0);
+      });
+
+      sorted.forEach(row => {
+        lines.push(
+          ALL_EXPORT_FIELDS
+            .map(field => escapeCsv(richFieldForCsv(row[field])))
+            .join(",")
+        );
+      });
+
+      return lines.join("\r\n");
+    }
+
+    function downloadMasterCsv() {
+      if (!window.mylingoData.length) {
+        showToast("There is no data to export.");
+        return;
+      }
+
+      const csv = buildMasterCsvString(window.mylingoData);
+
+      const blob = new Blob(
+        [csv],
+        {
+          type: "text/csv;charset=utf-8;"
+        }
+      );
+
+      const url = URL.createObjectURL(blob);
+
+      const anchor = document.createElement("a");
+      anchor.href = url;
+      anchor.download = "master_source.csv";
+
+      document.body.appendChild(anchor);
+      anchor.click();
+      anchor.remove();
+
+      URL.revokeObjectURL(url);
+
+      showToast("CSV downloaded.");
+    }
+
+    /*
+     * ============================================================
+     * PRODUCTION ZIP EXPORT
+     *
+     * Builds:
+     *   master_source.csv                (root)
+     *   validation_report.json           (root)
+     *   site/{level}/{quiz-slug}.json     one file per quiz
+     *   site/{level}/quizzes.json         one manifest per level
+     *
+     * Agent 58 (browser export streaming): each quiz's JSON is written
+     * straight into the caller's JSZip instance as it's built, instead of
+     * first collecting every quiz's content into a `quizFiles` array (the
+     * previous behavior kept two full copies of the ~12,000-quiz export
+     * in memory at once — the array, then JSZip's own per-file storage —
+     * on top of `window.mylingoData` itself). Same for level manifests.
+     * downloadProductionZip() decides separately whether the ZIP itself
+     * is generated as one in-memory Blob or streamed to disk.
+     * ============================================================
+     */
+
+    function buildQuizExportFiles(zip) {
+      computeValidation();
+
+      const byQuiz = new Map();
+      window.mylingoData.forEach(row => {
+        const quizId = String(row.quiz_id ?? "").trim();
+        if (!quizId) return;
+        if (!byQuiz.has(quizId)) byQuiz.set(quizId, []);
+        byQuiz.get(quizId).push(row);
+      });
+
+      const manifestsByLevel = new Map();
+      LEVELS.forEach(level => manifestsByLevel.set(level, []));
+      let quizCount = 0;
+
+      byQuiz.forEach((rows, quizId) => {
+        const sortedRows = [...rows].sort(
+          (a, b) =>
+            Number(a.question_number || 0) - Number(b.question_number || 0)
+        );
+        const first = sortedRows[0];
+        const level = normalizeLevel(first.level);
+        const category = String(first.quiz_category || "").trim();
+        const tags = String(first.quiz_tags || "").trim();
+
+        const questions = sortedRows.map(row => {
+          const q = {
+            question: String(row.question_text || "").trim(),
+            category: String(row.question_category || category).trim(),
+            tags: String(row.question_tags || tags).trim(),
+            explanation: String(row.explanation || "").trim(),
+            correctIndex:
+              row.correct_index === "" || row.correct_index === null
+                ? null
+                : Number(row.correct_index),
+            answers: ANSWER_FIELDS
+              .map(field => String(row[field] ?? "").trim())
+              .filter(Boolean)
+          };
+          if (row.question_type && row.question_type !== "radio") q.question_type = row.question_type;
+          if (row.subprompt) q.subprompt = row.subprompt;
+          const accepted = richArray(row.accepted_answers);
+          if (accepted.length) q.acceptedAnswers = accepted;
+          if (row.tolerance !== "" && row.tolerance !== null && row.tolerance !== undefined) q.tolerance = Number(row.tolerance);
+          const pairs = Array.isArray(row.pairs) ? row.pairs.filter(p => p && p.left && p.right) : [];
+          if (pairs.length) q.pairs = pairs;
+          const items = richArray(row.items);
+          if (items.length) q.items = items;
+          const order = richArray(row.correct_order);
+          if (order.length) q.correctOrder = order;
+          if (row.image_url) q.media = { ...(q.media || {}), image: { src: row.image_url, alt: row.image_alt || "" } };
+          if (row.audio_url) q.media = { ...(q.media || {}), audio: { src: row.audio_url, label: row.audio_label || "" } };
+          return q;
+        });
+
+        const quizJson = {
+          id: quizId,
+          title: String(first.title || "").trim(),
+          description: String(first.description || "").trim(),
+          brand: "Mylingo",
+          category,
+          tags,
+          level,
+          version: Number(first.version || 1),
+          questions
+        };
+
+        const topicSlug = slugForFile(category) || "uncategorized";
+        const levelFolder = LEVELS.includes(level)
+          ? level.toLowerCase()
+          : "unsorted";
+
+        zip.file(
+          `site/${topicSlug}/${levelFolder}/${quizId}.json`,
+          JSON.stringify(quizJson, null, 2)
+        );
+        quizCount += 1;
+
+        manifestsByLevel.get(level)?.push({
+          file: `${topicSlug}/${levelFolder}/${quizId}.json`,
+          id: quizId,
+          title: quizJson.title,
+          description: quizJson.description,
+          category: quizJson.category,
+          tags: quizJson.tags,
+          level: quizJson.level,
+          questions: questions.length,
+          version: quizJson.version
+        });
+      });
+
+      manifestsByLevel.forEach((entries, level) => {
+        if (!entries.length) return;
+        zip.file(
+          `site/${level.toLowerCase()}/quizzes.json`,
+          JSON.stringify(
+            [...entries].sort((a, b) => a.id.localeCompare(b.id)),
+            null,
+            2
+          )
+        );
+      });
+
+      const rowIssueEntries = {};
+      rowIssuesMap.forEach((issues, internalId) => {
+        if (!issues.length) return;
+        const row = getRowByInternalId(internalId);
+        const label = row
+          ? `${row.quiz_id || "(no quiz_id)"} #${row.question_number || internalId}`
+          : `row-${internalId}`;
+        rowIssueEntries[label] = issues;
+      });
+
+      const quizIssueEntries = {};
+      quizIssuesMap.forEach((entry, quizId) => {
+        if (entry.issues.length) {
+          quizIssueEntries[quizId] = entry.issues;
+        }
+      });
+
+      const validationReport = {
+        generated_at: new Date().toISOString(),
+        schema: "mylingo.master_source.v1",
+        runtime_question_schema: "mylingo.quiz.v1",
+        total_rows: window.mylingoData.length,
+        total_quizzes: byQuiz.size,
+        rows_with_issues: Object.keys(rowIssueEntries).length,
+        quizzes_with_issues: Object.keys(quizIssueEntries).length,
+        row_issues: rowIssueEntries,
+        quiz_issues: quizIssueEntries
+      };
+
+      return {
+        quizCount,
+        masterCsv: buildMasterCsvString(window.mylingoData),
+        validationReport
+      };
+    }
+
+    async function downloadProductionZip() {
+      if (!window.mylingoData.length) {
+        showToast("There is no data to export.");
+        return;
+      }
+
+      if (typeof JSZip === "undefined" || typeof saveAs === "undefined") {
+        showToast("ZIP export libraries are unavailable.");
+        return;
+      }
+
+      computeValidation();
+
+      let rowsWithIssues = 0;
+      rowIssuesMap.forEach(issues => {
+        if (issues.length) rowsWithIssues += 1;
+      });
+
+      let quizzesWithIssues = 0;
+      quizIssuesMap.forEach(entry => {
+        if (entry.issues.length) quizzesWithIssues += 1;
+      });
+
+      if (rowsWithIssues > 0 || quizzesWithIssues > 0) {
+        const proceed = window.confirm(
+          `Validation found ${rowsWithIssues} row(s) and ${quizzesWithIssues} ` +
+            `quiz(zes) with issues. A validation_report.json will be included ` +
+            `in the ZIP. Export anyway?`
+        );
+
+        if (!proceed) {
+          return;
+        }
+      }
+
+      // Agent 58 (browser export streaming): at 12,000-quiz scale, the old
+      // path (collect every quiz file, hand them all to JSZip, then hold
+      // the ENTIRE compressed archive as one in-memory Blob for saveAs())
+      // could spike to hundreds of MB right as the download starts — on
+      // top of window.mylingoData already resident. Where the browser
+      // supports writing a stream straight to disk (File System Access
+      // API), request that file handle up front and stream the ZIP's
+      // bytes to it as JSZip produces them, so peak memory is bounded by
+      // a few buffered chunks rather than the whole archive. Everywhere
+      // else (Firefox, Safari, older Chromium), this falls back to the
+      // original generateAsync()+saveAs() behavior, unchanged.
+      let fileHandle = null;
+      if (typeof window.showSaveFilePicker === "function") {
+        try {
+          fileHandle = await window.showSaveFilePicker({
+            suggestedName: "mylingo_production.zip",
+            types: [
+              {
+                description: "ZIP archive",
+                accept: { "application/zip": [".zip"] }
+              }
+            ]
+          });
+        } catch (error) {
+          if (error && error.name === "AbortError") return; // user cancelled the save dialog
+          fileHandle = null; // picker unsupported/blocked mid-flight: fall back below
+        }
+      }
+
+      try {
+        const zip = new JSZip();
+        const { quizCount, masterCsv, validationReport } =
+          buildQuizExportFiles(zip);
+
+        zip.file("master_source.csv", masterCsv);
+        zip.file(
+          "validation_report.json",
+          JSON.stringify(validationReport, null, 2)
+        );
+
+        if (fileHandle) {
+          const writable = await fileHandle.createWritable();
+          try {
+            await new Promise((resolve, reject) => {
+              const helper = zip.generateInternalStream({
+                type: "uint8array",
+                streamFiles: true
+              });
+              helper
+                .on("data", chunk => {
+                  // Pause the ZIP stream while the disk write is in
+                  // flight so unwritten chunks never pile up in memory
+                  // (JSZip's own backpressure mechanism for exactly this).
+                  helper.pause();
+                  writable
+                    .write(chunk)
+                    .then(() => helper.resume())
+                    .catch(reject);
+                })
+                .on("error", reject)
+                .on("end", resolve)
+                .resume();
+            });
+          } finally {
+            await writable.close();
+          }
+        } else {
+          const blob = await zip.generateAsync({
+            type: "blob",
+            streamFiles: true
+          });
+          saveAs(blob, "mylingo_production.zip");
+        }
+
+        showToast(`Production ZIP downloaded (${quizCount} quiz file(s)).`);
+      } catch (error) {
+        console.error(error);
+        showToast("ZIP generation failed.");
+      }
+    }
+
+    /*
+     * ============================================================
+     * DRAG & DROP
+     * ============================================================
+     */
+
+    ["dragenter", "dragover"].forEach(eventName => {
+      dropZone.addEventListener(eventName, event => {
+        event.preventDefault();
+        event.stopPropagation();
+
+        dropZone.classList.add("drag-over");
+      });
+    });
+
+    ["dragleave", "drop"].forEach(eventName => {
+      dropZone.addEventListener(eventName, event => {
+        event.preventDefault();
+        event.stopPropagation();
+
+        dropZone.classList.remove("drag-over");
+      });
+    });
+
+    dropZone.addEventListener("drop", event => {
+      const files = event.dataTransfer.files;
+
+      if (!files || !files.length) {
+        return;
+      }
+
+      importSpreadsheetFile(files[0]);
+    });
+
+    /*
+     * ============================================================
+     * RICH QUESTION AUTHORING MVP
+     * ============================================================
+     */
+
+    let richEditingRowId = null;
+
+    function selectedAuthoringRow() {
+      const ids = Array.from(selectedRows);
+      return ids.length ? getRowByInternalId(ids[0]) : null;
+    }
+
+    function setRichPanelVisibility() {
+      const type = richQuestionType.value;
+      const textLike = ["text", "short_text", "fill_in_the_blank", "number", "date"].includes(type);
+      richAnswersPanel.classList.toggle("hidden", !textLike);
+      richMatchingPanel.classList.toggle("hidden", type !== "matching");
+      richRankingPanel.classList.toggle("hidden", type !== "ranking");
+      richTolerance.classList.toggle("hidden", !["number"].includes(type));
+    }
+
+    function renderMatchingEditors(pairs) {
+      matchingPairsEditor.innerHTML = "";
+      const values = Array.isArray(pairs) && pairs.length ? pairs : [{ left: "", right: "" }, { left: "", right: "" }];
+      values.forEach((pair, index) => {
+        const wrap = document.createElement("div");
+        wrap.className = "grid grid-cols-[1fr_1fr_auto] gap-2";
+        const left = document.createElement("input");
+        left.className = "rounded-lg border border-slate-300 px-3 py-2";
+        left.dataset.pairField = "left";
+        left.value = String(pair?.left ?? "");
+        left.placeholder = "Left item";
+        const right = document.createElement("input");
+        right.className = "rounded-lg border border-slate-300 px-3 py-2";
+        right.dataset.pairField = "right";
+        right.value = String(pair?.right ?? "");
+        right.placeholder = "Right match";
+        const remove = document.createElement("button");
+        remove.type = "button";
+        remove.className = "rounded-lg border border-red-200 px-3 py-2 font-bold text-red-700";
+        remove.textContent = "×";
+        remove.addEventListener("click", () => { wrap.remove(); });
+        wrap.append(left, right, remove);
+        matchingPairsEditor.appendChild(wrap);
+      });
+    }
+
+    function openRichQuestionEditor() {
+      const row = selectedAuthoringRow();
+      if (!row) {
+        showToast("Select one row first, then open Rich Question.");
+        return;
+      }
+      richEditingRowId = row.__internalId;
+      richQuestionMeta.textContent = `${row.quiz_id || "(new quiz)"} · question ${row.question_number || "(unnumbered)"}`;
+      richQuestionType.value = row.question_type || "radio";
+      richSubprompt.value = row.subprompt || "";
+      richAcceptedAnswers.value = richArray(row.accepted_answers).join("\n");
+      richTolerance.value = row.tolerance ?? "";
+      richRankingItems.value = richArray(row.items).join("\n");
+      richCorrectOrder.value = richArray(row.correct_order).join("\n");
+      richImageUrl.value = row.image_url || "";
+      richImageAlt.value = row.image_alt || "";
+      richAudioUrl.value = row.audio_url || "";
+      richAudioLabel.value = row.audio_label || "";
+      renderMatchingEditors(row.pairs);
+      setRichPanelVisibility();
+      richQuestionModal.classList.remove("hidden");
+      richQuestionModal.classList.add("flex");
+    }
+
+    function closeRichQuestionEditor() {
+      richEditingRowId = null;
+      richQuestionModal.classList.add("hidden");
+      richQuestionModal.classList.remove("flex");
+    }
+
+    function saveRichQuestion() {
+      const row = getRowByInternalId(richEditingRowId);
+      if (!row) return closeRichQuestionEditor();
+      const type = richQuestionType.value;
+      row.question_type = type;
+      row.subprompt = richSubprompt.value.trim();
+      row.accepted_answers = richAcceptedAnswers.value.split(/\r?\n/).map(v => v.trim()).filter(Boolean);
+      row.tolerance = richTolerance.value.trim();
+      row.pairs = Array.from(matchingPairsEditor.children).map(wrap => ({
+        left: String(wrap.querySelector('[data-pair-field="left"]')?.value || "").trim(),
+        right: String(wrap.querySelector('[data-pair-field="right"]')?.value || "").trim()
+      })).filter(p => p.left || p.right);
+      row.items = richRankingItems.value.split(/\r?\n/).map(v => v.trim()).filter(Boolean);
+      row.correct_order = richCorrectOrder.value.split(/\r?\n/).map(v => v.trim()).filter(Boolean);
+      row.image_url = richImageUrl.value.trim();
+      row.image_alt = richImageAlt.value.trim();
+      row.audio_url = richAudioUrl.value.trim();
+      row.audio_label = richAudioLabel.value.trim();
+      syncRichCanonicalFields(row);
+      row.date_updated = new Date().toISOString();
+      renderGrid();
+      scheduleDraftAutosave();
+      showToast("Rich question saved.");
+      closeRichQuestionEditor();
+    }
+
+    function renumberQuizRows() {
+      const byQuiz = new Map();
+      window.mylingoData.forEach(row => {
+        const id = String(row.quiz_id || "").trim();
+        if (!id) return;
+        if (!byQuiz.has(id)) byQuiz.set(id, []);
+        byQuiz.get(id).push(row);
+      });
+      byQuiz.forEach(rows => {
+        rows.sort((a, b) => {
+          const an = Number(a.question_number);
+          const bn = Number(b.question_number);
+          const av = Number.isInteger(an) && an > 0 ? an : Number.MAX_SAFE_INTEGER;
+          const bv = Number.isInteger(bn) && bn > 0 ? bn : Number.MAX_SAFE_INTEGER;
+          return av - bv || String(a.__internalId).localeCompare(String(b.__internalId));
+        });
+        rows.forEach((row, index) => { row.question_number = index + 1; });
+      });
+    }
+
+    function packQuizGroups() {
+      if (!window.mylingoData.length) {
+        showToast("There is no data to pack.");
+        return;
+      }
+      const selectedIds = selectedRows.size ? Array.from(selectedRows) : null;
+      const result = window.MylingoQuizPacker.packRows(window.mylingoData, {
+        minSize: MIN_QUESTIONS_PER_QUIZ,
+        targetSize: 20,
+        maxSize: MAX_QUESTIONS_PER_QUIZ,
+        profiles: PRODUCTION_QUIZ_PROFILES,
+        selectedIds
+      });
+      renumberQuizRows();
+      computeValidation();
+      scheduleDraftAutosave();
+      renderGrid();
+      renderValidationPanel();
+      const profileNote = result.profilesApplied.length
+        ? ` (profiles: ${result.profilesApplied.join(", ")})`
+        : "";
+      showToast(`${result.packedQuizCount} quiz pack(s) created from ${result.packedRowCount} row(s)${profileNote}.`);
+    }
+
+    /*
+     * ============================================================
+     * EVENT WIRING
+     * ============================================================
+     */
+
+    addRowBtn.addEventListener("click", addRow);
+    richQuestionBtn.addEventListener("click", openRichQuestionEditor);
+    richQuestionType.addEventListener("change", setRichPanelVisibility);
+    addMatchPairBtn.addEventListener("click", () => {
+      const current = Array.from(matchingPairsEditor.children).map(wrap => ({
+        left: String(wrap.querySelector('[data-pair-field="left"]')?.value || ""),
+        right: String(wrap.querySelector('[data-pair-field="right"]')?.value || "")
+      }));
+      current.push({ left: "", right: "" });
+      renderMatchingEditors(current);
+    });
+    richQuestionClose.addEventListener("click", closeRichQuestionEditor);
+    richQuestionCancel.addEventListener("click", closeRichQuestionEditor);
+    richQuestionSave.addEventListener("click", saveRichQuestion);
+    richQuestionModal.addEventListener("click", event => {
+      if (event.target === richQuestionModal) closeRichQuestionEditor();
+    });
+
+    duplicateBtn.addEventListener(
+      "click",
+      duplicateSelectedRows
+    );
+
+    deleteBtn.addEventListener(
+      "click",
+      deleteSelectedRows
+    );
+
+    clearBtn.addEventListener(
+      "click",
+      clearAllData
+    );
+
+    downloadZipBtn.addEventListener(
+      "click",
+      downloadProductionZip
+    );
+
+    fileInput.addEventListener("change", event => {
+      const file = event.target.files?.[0];
+
+      if (file) {
+        importSpreadsheetFile(file);
+      }
+    });
+
+    parsePasteBtn.addEventListener(
+      "click",
+      appendPastedRows
+    );
+
+    ocrInput.addEventListener("change", event => {
+      const file = event.target.files?.[0];
+
+      if (file) {
+        processOCR(file);
+      }
+    });
+
+    copyOcrBtn.addEventListener(
+      "click",
+      copyOCRText
+    );
+
+    selectAllBtn.addEventListener(
+      "click",
+      selectAllVisible
+    );
+
+    deselectAllBtn.addEventListener(
+      "click",
+      deselectAll
+    );
+
+    downloadCsvBtn.addEventListener(
+      "click",
+      downloadMasterCsv
+    );
+
+    packQuizzesBtn.addEventListener(
+      "click",
+      packQuizGroups
+    );
+
+    restoreDraftBtn.addEventListener("click", restoreAutosavedDraft);
+    discardDraftBtn.addEventListener("click", discardAutosavedDraft);
+
+    window.addEventListener("beforeunload", flushDraftAutosave);
+    window.addEventListener("pagehide", flushDraftAutosave);
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "hidden") flushDraftAutosave();
+    });
+
+    /*
+     * ============================================================
+     * INITIALIZATION
+     * ============================================================
+     */
+
+    function init() {
+      populateTagVocabularyList();
+      renderLevelTabs();
+      renderGrid();
+      const draft = draftAutosave?.load?.();
+      if (draft) {
+        setAutosaveStatus(`Draft available ${draftAutosave.formatSavedAt(draft.savedAt)}`, "warn");
+      } else {
+        setAutosaveStatus("Autosave ready", "muted");
+      }
+      updateDraftButtons();
+    }
+
+    function populateTagVocabularyList() {
+      const list = document.getElementById("tagVocabularyList");
+      if (!list) return;
+      list.innerHTML = "";
+      TAG_AUTOCOMPLETE_VALUES.forEach(value => {
+        const option = document.createElement("option");
+        option.value = value;
+        list.appendChild(option);
+      });
+    }
+
+    init();
+
+    /*
+     * ============================================================
+     * PROJECT STATUS — FINALIZED BY AGENT 2
+     * ============================================================
+     *
+     * Core global state:
+     *   window.mylingoData
+     *
+     * Data schema:
+     *   quiz_id, level, category, title, question_num, prompt,
+     *   option_0..3, correct_index, explanation
+     *
+     * Validation rules implemented (live, per-row + per-quiz):
+     *   - required fields present on every row
+     *   - correct_index is 0-3 and points at a non-empty option
+     *   - duplicate question_num within a quiz_id
+     *   - question count per quiz_id must be 5-150
+     *   - level/category/title consistency within a quiz_id
+     *   - imported raw rows are auto-assigned before validation, so missing
+     *     quiz_id is normally eliminated at the import boundary
+     *   Row-level status is shown as a dot next to each row number;
+     *   quiz-level status is shown in the Validation panel above the
+     *   grid, with a PASS/FAIL badge and full issue list per quiz.
+     *
+     * Production export ("Download Production ZIP" button):
+     *   master_source.csv           — full canonical CSV, sorted by
+     *                                  level / quiz_id / question_num
+     *   validation_report.json      — snapshot of all issues found
+     *                                  at export time
+     *   site/{level}/{slug}.json    — one file per quiz, containing
+     *                                  quiz_id, level, category, title,
+     *                                  question_count, and a questions
+     *                                  array (prompt/options/
+     *                                  correct_index/explanation)
+     *   site/{level}/quizzes.json   — manifest per level listing all
+     *                                  quizzes and their question counts
+     *   Rows with unrecognized levels are grouped under site/unsorted/.
+     *   Exporting with outstanding validation issues asks for
+     *   confirmation first; the issues are always written to
+     *   validation_report.json either way.
+     *
+     * Libraries loaded: Tailwind, SheetJS, Tesseract.js, JSZip,
+     * FileSaver.
+     *
+     * ============================================================
+     */
+  </script>
+</body>
+</html>

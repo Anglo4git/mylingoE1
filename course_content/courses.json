@@ -1,0 +1,81 @@
+[
+  {
+    "course_id": "course-a1",
+    "level": "A1",
+    "title": "English A1",
+    "description": "A guided path through A1-level content, organized by topic.",
+    "version": 1,
+    "status": "published",
+    "unit_ids": [
+      "course-a1-unit-01",
+      "course-a1-unit-02"
+    ]
+  },
+  {
+    "course_id": "course-a2",
+    "level": "A2",
+    "title": "English A2",
+    "description": "A guided path through A2-level content, organized by topic.",
+    "version": 1,
+    "status": "published",
+    "unit_ids": [
+      "course-a2-unit-01",
+      "course-a2-unit-02"
+    ]
+  },
+  {
+    "course_id": "course-b1",
+    "level": "B1",
+    "title": "English B1",
+    "description": "A guided path through B1-level content, organized by topic.",
+    "version": 1,
+    "status": "published",
+    "unit_ids": [
+      "course-b1-unit-01",
+      "course-b1-unit-02",
+      "course-b1-unit-03"
+    ]
+  },
+  {
+    "course_id": "course-b2",
+    "level": "B2",
+    "title": "English B2",
+    "description": "A guided path through B2-level content, organized by topic.",
+    "version": 1,
+    "status": "published",
+    "unit_ids": [
+      "course-b2-unit-01",
+      "course-b2-unit-02",
+      "course-b2-unit-03",
+      "course-b2-unit-04"
+    ]
+  },
+  {
+    "course_id": "course-c1",
+    "level": "C1",
+    "title": "English C1",
+    "description": "A guided path through C1-level content, organized by topic.",
+    "version": 1,
+    "status": "published",
+    "unit_ids": [
+      "course-c1-unit-01",
+      "course-c1-unit-02",
+      "course-c1-unit-03",
+      "course-c1-unit-04"
+    ]
+  },
+  {
+    "course_id": "course-c2",
+    "level": "C2",
+    "title": "English C2",
+    "description": "A guided path through C2-level content, organized by topic.",
+    "version": 1,
+    "status": "published",
+    "unit_ids": [
+      "course-c2-unit-01",
+      "course-c2-unit-02",
+      "course-c2-unit-03",
+      "course-c2-unit-04"
+    ]
+  }
+]

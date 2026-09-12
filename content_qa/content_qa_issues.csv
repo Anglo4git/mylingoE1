@@ -1,0 +1,62 @@
+code,severity,scope,ref,message
+CQ-C07,info,answers,"row 157 (quiz_id=b2-002, q=1)",answer options have inconsistent capitalization shape; review parallelism
+CQ-C07,info,answers,"row 158 (quiz_id=b2-002, q=2)",answer options have inconsistent capitalization shape; review parallelism
+CQ-C07,info,answers,"row 159 (quiz_id=b2-002, q=3)",answer options have inconsistent capitalization shape; review parallelism
+CQ-C07,info,answers,"row 160 (quiz_id=b2-002, q=4)",answer options have inconsistent capitalization shape; review parallelism
+CQ-C07,info,answers,"row 161 (quiz_id=b2-002, q=5)",answer options have inconsistent capitalization shape; review parallelism
+CQ-D02,info,explanation,102/103/104/105/106,same normalized explanation reused 5 times across quiz(es): b1-001
+CQ-D02,info,explanation,107/108/109/110/111,same normalized explanation reused 5 times across quiz(es): b1-002
+CQ-D02,info,explanation,112/113/114/115/116,same normalized explanation reused 5 times across quiz(es): b1-003
+CQ-D02,info,explanation,117/118/119/120/121,same normalized explanation reused 5 times across quiz(es): b1-004
+CQ-D02,info,explanation,12/13/14/15/16,same normalized explanation reused 5 times across quiz(es): a1-003
+CQ-D02,info,explanation,122/123/124/125/126,same normalized explanation reused 5 times across quiz(es): b1-005
+CQ-D02,info,explanation,127/128/129/130/131,same normalized explanation reused 5 times across quiz(es): b1-006
+CQ-D02,info,explanation,132/133/134/135/136,same normalized explanation reused 5 times across quiz(es): b1-007
+CQ-D02,info,explanation,137/138/139/140/141,same normalized explanation reused 5 times across quiz(es): b1-008
+CQ-D02,info,explanation,142/143/144/145/146,same normalized explanation reused 5 times across quiz(es): b1-009
+CQ-D02,info,explanation,147/148/149/150/151,same normalized explanation reused 5 times across quiz(es): b1-010
+CQ-D02,info,explanation,152/153/154/155/156,same normalized explanation reused 5 times across quiz(es): b2-001
+CQ-D02,info,explanation,157/158/159/160/161,same normalized explanation reused 5 times across quiz(es): b2-002
+CQ-D02,info,explanation,162/163/164/165/166,same normalized explanation reused 5 times across quiz(es): b2-003
+CQ-D02,info,explanation,167/168/169/170/171,same normalized explanation reused 5 times across quiz(es): b2-004
+CQ-D02,info,explanation,17/18/19/20/21,same normalized explanation reused 5 times across quiz(es): a1-004
+CQ-D02,info,explanation,172/173/174/175/176,same normalized explanation reused 5 times across quiz(es): b2-005
+CQ-D02,info,explanation,177/178/179/180/181,same normalized explanation reused 5 times across quiz(es): b2-006
+CQ-D02,info,explanation,182/183/184/185/186,same normalized explanation reused 5 times across quiz(es): b2-007
+CQ-D02,info,explanation,187/188/189/190/191,same normalized explanation reused 5 times across quiz(es): b2-008
+CQ-D02,info,explanation,192/193/194/195/196,same normalized explanation reused 5 times across quiz(es): b2-009
+CQ-D02,info,explanation,197/198/199/200/201,same normalized explanation reused 5 times across quiz(es): b2-010
+CQ-D02,info,explanation,2/3/4/5/6,same normalized explanation reused 5 times across quiz(es): a1-001
+CQ-D02,info,explanation,202/203/204/205/206,same normalized explanation reused 5 times across quiz(es): c1-001
+CQ-D02,info,explanation,207/208/209/210/211,same normalized explanation reused 5 times across quiz(es): c1-002
+CQ-D02,info,explanation,212/213/214/215/216,same normalized explanation reused 5 times across quiz(es): c1-003
+CQ-D02,info,explanation,217/218/219/220/221,same normalized explanation reused 5 times across quiz(es): c1-004
+CQ-D02,info,explanation,22/23/24/25/26,same normalized explanation reused 5 times across quiz(es): a1-005
+CQ-D02,info,explanation,222/223/224/225/226,same normalized explanation reused 5 times across quiz(es): c1-005
+CQ-D02,info,explanation,227/228/229/230/231,same normalized explanation reused 5 times across quiz(es): c1-006
+CQ-D02,info,explanation,232/233/234/235/236,same normalized explanation reused 5 times across quiz(es): c1-007
+CQ-D02,info,explanation,237/238/239/240/241,same normalized explanation reused 5 times across quiz(es): c1-008
+CQ-D02,info,explanation,242/243/244/245,same normalized explanation reused 4 times across quiz(es): c1-009
+CQ-D02,info,explanation,247/248/250/251,same normalized explanation reused 4 times across quiz(es): c1-010
+CQ-D02,info,explanation,252/253/254/255/256,same normalized explanation reused 5 times across quiz(es): c2-001
+CQ-D02,info,explanation,257/258/259/260/261,same normalized explanation reused 5 times across quiz(es): c2-002
+CQ-D02,info,explanation,262/263/264/265/266,same normalized explanation reused 5 times across quiz(es): c2-003
+CQ-D02,info,explanation,267/268/269/270/271,same normalized explanation reused 5 times across quiz(es): c2-004
+CQ-D02,info,explanation,27/28/29/30/31,same normalized explanation reused 5 times across quiz(es): a1-006
+CQ-D02,info,explanation,272/273/274/275/276,same normalized explanation reused 5 times across quiz(es): c2-005
+CQ-D02,info,explanation,277/278/279/280/281,same normalized explanation reused 5 times across quiz(es): c2-006
+CQ-D02,info,explanation,287/288/289/290/291,same normalized explanation reused 5 times across quiz(es): c2-008
+CQ-D02,info,explanation,292/293/294/295/296,same normalized explanation reused 5 times across quiz(es): c2-009
+CQ-D02,info,explanation,297/298/299/300/301,same normalized explanation reused 5 times across quiz(es): c2-010
+CQ-D02,info,explanation,32/33/34/35/36,same normalized explanation reused 5 times across quiz(es): a1-007
+CQ-D02,info,explanation,37/38/39/40/41,same normalized explanation reused 5 times across quiz(es): a1-008
+CQ-D02,info,explanation,42/43/44/45/46,same normalized explanation reused 5 times across quiz(es): a1-009
+CQ-D02,info,explanation,52/53/54/55/56,same normalized explanation reused 5 times across quiz(es): a2-001
+CQ-D02,info,explanation,57/58/59/60/61,same normalized explanation reused 5 times across quiz(es): a2-002
+CQ-D02,info,explanation,62/63/64/65/66,same normalized explanation reused 5 times across quiz(es): a2-003
+CQ-D02,info,explanation,67/68/69/70/71,same normalized explanation reused 5 times across quiz(es): a2-004
+CQ-D02,info,explanation,72/73/74/75/76,same normalized explanation reused 5 times across quiz(es): a2-005
+CQ-D02,info,explanation,77/78/79/80/81,same normalized explanation reused 5 times across quiz(es): a2-006
+CQ-D02,info,explanation,82/83/84/85/86,same normalized explanation reused 5 times across quiz(es): a2-007
+CQ-D02,info,explanation,87/88/89/90/91,same normalized explanation reused 5 times across quiz(es): a2-008
+CQ-D02,info,explanation,92/93/94/95/96,same normalized explanation reused 5 times across quiz(es): a2-009

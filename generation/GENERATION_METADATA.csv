@@ -1,0 +1,24 @@
+question_id,template_id,seed,learning_objective,target_item,difficulty,distractor_strategy,source_reference,generation_status,generated_at
+a1-001-q02,,,,Present Simple,,,raw-input,generated,2026-09-07T00:42:44.032066+00:00
+a1-001-q03,,,,Present Simple,,,raw-input,generated,2026-09-07T00:42:44.032066+00:00
+a1-001-q04,,,,Present Simple,,,raw-input,generated,2026-09-07T00:42:44.032066+00:00
+a1-001-q05,,,,Present Simple,,,raw-input,generated,2026-09-07T00:42:44.032066+00:00
+a1-001-q06,,,,Present Simple,,,raw-input,generated,2026-09-07T00:42:44.032066+00:00
+a1-001-q07,,,,Present Simple,,,raw-input,generated,2026-09-07T00:42:44.032066+00:00
+a1-011-q01,,,,Irregular Verbs,,,raw-input,generated,2026-09-07T00:42:44.032066+00:00
+a1-011-q02,,,,Irregular Verbs,,,raw-input,generated,2026-09-07T00:42:44.032066+00:00
+a1-011-q03,,,,Irregular Verbs,,,raw-input,generated,2026-09-07T00:42:44.032066+00:00
+a1-011-q04,,,,Irregular Verbs,,,raw-input,generated,2026-09-07T00:42:44.032066+00:00
+a1-011-q05,,,,Irregular Verbs,,,raw-input,generated,2026-09-07T00:42:44.032066+00:00
+a2-011-q01,,,,Synonyms,,,raw-input,generated,2026-09-07T00:42:44.032066+00:00
+a2-011-q02,,,,Synonyms,,,raw-input,generated,2026-09-07T00:42:44.032066+00:00
+a2-011-q03,,,,Synonyms,,,raw-input,generated,2026-09-07T00:42:44.032066+00:00
+a2-011-q04,,,,Synonyms,,,raw-input,generated,2026-09-07T00:42:44.032066+00:00
+a2-011-q05,,,,Synonyms,,,raw-input,generated,2026-09-07T00:42:44.032066+00:00
+b1-011-q01,,,,Word Order,,,raw-input,generated,2026-09-07T00:42:44.032066+00:00
+b1-011-q02,,,,Word Order,,,raw-input,generated,2026-09-07T00:42:44.032066+00:00
+b1-011-q03,,,,Word Order,,,raw-input,generated,2026-09-07T00:42:44.032066+00:00
+b1-011-q04,,,,Word Order,,,raw-input,generated,2026-09-07T00:42:44.032066+00:00
+b1-011-q05,,,,Word Order,,,raw-input,generated,2026-09-07T00:42:44.032066+00:00
+b1-011-q06,,,,Word Order,,,raw-input,generated,2026-09-07T00:42:44.032066+00:00
+a1-003-q02,,,,Articles,,,raw-input,generated,2026-09-07T00:42:44.032066+00:00

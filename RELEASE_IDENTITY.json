@@ -1,0 +1,8 @@
+{
+  "_comment": "SINGLE SOURCE OF TRUTH for release naming. Do not hardcode a release tag anywhere else. Update ONLY this file, then run `npm run release:verify-identity` (or `python3 scripts/verify_release_identity.py`) to confirm every downstream reference agrees before re-zipping.",
+  "releaseId": "v118",
+  "packageDirName": "MYLINGO_v118_FINAL_RELEASE",
+  "artifactFilename": "MYLINGO_v118_FINAL_RELEASE.zip",
+  "lastVerifiedAgent": 121,
+  "notes": "The 'vNNN' token historically tracked whichever agent number last produced a shipped zip (see AGENT_118_RELEASE_GATE.md, AGENT_120_FINAL_RELEASE_GATE.md). That convention is why prior artifacts disagreed with each other (v118 vs v120 vs v121 all appear in the repo's own history). This file is now the only place that name is allowed to be declared; everything else must read from it or be checked against it by scripts/verify_release_identity.py."
+}

@@ -1,0 +1,3 @@
+stage,ref,reason
+parse,raw row 32,correct_index 5 out of range for 3 answer(s)
+parse,raw row 33,duplicate answer options within this question

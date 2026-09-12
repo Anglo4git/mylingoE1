@@ -1,0 +1,1305 @@
+{
+  "category_policy": {
+    "A1": {
+      "Grammar": [
+        0.7,
+        0.9
+      ],
+      "Vocabulary": [
+        0.1,
+        0.3
+      ]
+    },
+    "A2": {
+      "Grammar": [
+        0.7,
+        0.9
+      ],
+      "Vocabulary": [
+        0.1,
+        0.3
+      ]
+    }
+  },
+  "cefr_category_coverage": {
+    "A1": {
+      "categories": {
+        "Grammar": 9,
+        "Vocabulary": 1
+      },
+      "quizzes": 10,
+      "required_shares": {
+        "Grammar": {
+          "actual": 0.9,
+          "max": 0.9,
+          "min": 0.7
+        },
+        "Vocabulary": {
+          "actual": 0.1,
+          "max": 0.3,
+          "min": 0.1
+        }
+      }
+    },
+    "A2": {
+      "categories": {
+        "Grammar": 9,
+        "Vocabulary": 1
+      },
+      "quizzes": 10,
+      "required_shares": {
+        "Grammar": {
+          "actual": 0.9,
+          "max": 0.9,
+          "min": 0.7
+        },
+        "Vocabulary": {
+          "actual": 0.1,
+          "max": 0.3,
+          "min": 0.1
+        }
+      }
+    }
+  },
+  "generated_at": "2026-09-11T18:45:37.318133+00:00",
+  "input_quizzes": 60,
+  "input_rows": 300,
+  "issues": [
+    {
+      "code": "CQ-C07",
+      "message": "answer options have inconsistent capitalization shape; review parallelism",
+      "ref": "row 157 (quiz_id=b2-002, q=1)",
+      "scope": "answers",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-C07",
+      "message": "answer options have inconsistent capitalization shape; review parallelism",
+      "ref": "row 158 (quiz_id=b2-002, q=2)",
+      "scope": "answers",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-C07",
+      "message": "answer options have inconsistent capitalization shape; review parallelism",
+      "ref": "row 159 (quiz_id=b2-002, q=3)",
+      "scope": "answers",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-C07",
+      "message": "answer options have inconsistent capitalization shape; review parallelism",
+      "ref": "row 160 (quiz_id=b2-002, q=4)",
+      "scope": "answers",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-C07",
+      "message": "answer options have inconsistent capitalization shape; review parallelism",
+      "ref": "row 161 (quiz_id=b2-002, q=5)",
+      "scope": "answers",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): b1-001",
+      "ref": "102/103/104/105/106",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): b1-002",
+      "ref": "107/108/109/110/111",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): b1-003",
+      "ref": "112/113/114/115/116",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): b1-004",
+      "ref": "117/118/119/120/121",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): a1-003",
+      "ref": "12/13/14/15/16",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): b1-005",
+      "ref": "122/123/124/125/126",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): b1-006",
+      "ref": "127/128/129/130/131",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): b1-007",
+      "ref": "132/133/134/135/136",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): b1-008",
+      "ref": "137/138/139/140/141",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): b1-009",
+      "ref": "142/143/144/145/146",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): b1-010",
+      "ref": "147/148/149/150/151",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): b2-001",
+      "ref": "152/153/154/155/156",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): b2-002",
+      "ref": "157/158/159/160/161",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): b2-003",
+      "ref": "162/163/164/165/166",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): b2-004",
+      "ref": "167/168/169/170/171",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): a1-004",
+      "ref": "17/18/19/20/21",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): b2-005",
+      "ref": "172/173/174/175/176",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): b2-006",
+      "ref": "177/178/179/180/181",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): b2-007",
+      "ref": "182/183/184/185/186",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): b2-008",
+      "ref": "187/188/189/190/191",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): b2-009",
+      "ref": "192/193/194/195/196",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): b2-010",
+      "ref": "197/198/199/200/201",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): a1-001",
+      "ref": "2/3/4/5/6",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): c1-001",
+      "ref": "202/203/204/205/206",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): c1-002",
+      "ref": "207/208/209/210/211",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): c1-003",
+      "ref": "212/213/214/215/216",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): c1-004",
+      "ref": "217/218/219/220/221",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): a1-005",
+      "ref": "22/23/24/25/26",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): c1-005",
+      "ref": "222/223/224/225/226",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): c1-006",
+      "ref": "227/228/229/230/231",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): c1-007",
+      "ref": "232/233/234/235/236",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): c1-008",
+      "ref": "237/238/239/240/241",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 4 times across quiz(es): c1-009",
+      "ref": "242/243/244/245",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 4 times across quiz(es): c1-010",
+      "ref": "247/248/250/251",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): c2-001",
+      "ref": "252/253/254/255/256",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): c2-002",
+      "ref": "257/258/259/260/261",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): c2-003",
+      "ref": "262/263/264/265/266",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): c2-004",
+      "ref": "267/268/269/270/271",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): a1-006",
+      "ref": "27/28/29/30/31",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): c2-005",
+      "ref": "272/273/274/275/276",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): c2-006",
+      "ref": "277/278/279/280/281",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): c2-008",
+      "ref": "287/288/289/290/291",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): c2-009",
+      "ref": "292/293/294/295/296",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): c2-010",
+      "ref": "297/298/299/300/301",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): a1-007",
+      "ref": "32/33/34/35/36",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): a1-008",
+      "ref": "37/38/39/40/41",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): a1-009",
+      "ref": "42/43/44/45/46",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): a2-001",
+      "ref": "52/53/54/55/56",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): a2-002",
+      "ref": "57/58/59/60/61",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): a2-003",
+      "ref": "62/63/64/65/66",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): a2-004",
+      "ref": "67/68/69/70/71",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): a2-005",
+      "ref": "72/73/74/75/76",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): a2-006",
+      "ref": "77/78/79/80/81",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): a2-007",
+      "ref": "82/83/84/85/86",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): a2-008",
+      "ref": "87/88/89/90/91",
+      "scope": "explanation",
+      "severity": "info"
+    },
+    {
+      "code": "CQ-D02",
+      "message": "same normalized explanation reused 5 times across quiz(es): a2-009",
+      "ref": "92/93/94/95/96",
+      "scope": "explanation",
+      "severity": "info"
+    }
+  ],
+  "quizzes": [
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 2
+      },
+      "level": "A1",
+      "questions": 5,
+      "quiz_id": "a1-001",
+      "title": "Present Simple"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 2,
+        "4": 1
+      },
+      "level": "A1",
+      "questions": 5,
+      "quiz_id": "a1-002",
+      "title": "Be: am/is/are"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 2
+      },
+      "level": "A1",
+      "questions": 5,
+      "quiz_id": "a1-003",
+      "title": "Articles"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 2,
+        "3": 1,
+        "4": 1
+      },
+      "level": "A1",
+      "questions": 5,
+      "quiz_id": "a1-004",
+      "title": "Plural Nouns"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 2,
+        "2": 1,
+        "3": 1,
+        "4": 1
+      },
+      "level": "A1",
+      "questions": 5,
+      "quiz_id": "a1-005",
+      "title": "There is / There are"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 2
+      },
+      "level": "A1",
+      "questions": 5,
+      "quiz_id": "a1-006",
+      "title": "Can"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 2,
+        "4": 1
+      },
+      "level": "A1",
+      "questions": 5,
+      "quiz_id": "a1-007",
+      "title": "Past Simple"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 2,
+        "3": 1,
+        "4": 1
+      },
+      "level": "A1",
+      "questions": 5,
+      "quiz_id": "a1-008",
+      "title": "Possessive Adjectives"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 2,
+        "4": 1
+      },
+      "level": "A1",
+      "questions": 5,
+      "quiz_id": "a1-009",
+      "title": "Prepositions"
+    },
+    {
+      "category": "Vocabulary",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 2
+      },
+      "level": "A1",
+      "questions": 5,
+      "quiz_id": "a1-010",
+      "title": "Everyday Vocabulary"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 2,
+        "4": 1
+      },
+      "level": "A2",
+      "questions": 5,
+      "quiz_id": "a2-001",
+      "title": "Comparative Adjectives"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 2
+      },
+      "level": "A2",
+      "questions": 5,
+      "quiz_id": "a2-002",
+      "title": "Present Continuous"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 2,
+        "4": 1
+      },
+      "level": "A2",
+      "questions": 5,
+      "quiz_id": "a2-003",
+      "title": "Past Continuous"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 2,
+        "2": 1,
+        "3": 1,
+        "4": 1
+      },
+      "level": "A2",
+      "questions": 5,
+      "quiz_id": "a2-004",
+      "title": "Future: going to"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 2,
+        "3": 1,
+        "4": 1
+      },
+      "level": "A2",
+      "questions": 5,
+      "quiz_id": "a2-005",
+      "title": "First Conditional"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 2,
+        "3": 1,
+        "4": 1
+      },
+      "level": "A2",
+      "questions": 5,
+      "quiz_id": "a2-006",
+      "title": "Countable/Uncountable"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 2
+      },
+      "level": "A2",
+      "questions": 5,
+      "quiz_id": "a2-007",
+      "title": "Adverbs of Frequency"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 2
+      },
+      "level": "A2",
+      "questions": 5,
+      "quiz_id": "a2-008",
+      "title": "Modal: should"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 2,
+        "3": 1,
+        "4": 1
+      },
+      "level": "A2",
+      "questions": 5,
+      "quiz_id": "a2-009",
+      "title": "Present Perfect"
+    },
+    {
+      "category": "Vocabulary",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 2
+      },
+      "level": "A2",
+      "questions": 5,
+      "quiz_id": "a2-010",
+      "title": "Everyday Vocabulary"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 2,
+        "2": 1,
+        "3": 1,
+        "4": 1
+      },
+      "level": "B1",
+      "questions": 5,
+      "quiz_id": "b1-001",
+      "title": "Present Perfect vs Past Simple"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 2
+      },
+      "level": "B1",
+      "questions": 5,
+      "quiz_id": "b1-002",
+      "title": "Second Conditional"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 2
+      },
+      "level": "B1",
+      "questions": 5,
+      "quiz_id": "b1-003",
+      "title": "Relative Clauses"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 2
+      },
+      "level": "B1",
+      "questions": 5,
+      "quiz_id": "b1-004",
+      "title": "Reported Speech"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 2,
+        "3": 1,
+        "4": 1
+      },
+      "level": "B1",
+      "questions": 5,
+      "quiz_id": "b1-005",
+      "title": "Gerunds and Infinitives"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 2,
+        "4": 1
+      },
+      "level": "B1",
+      "questions": 5,
+      "quiz_id": "b1-006",
+      "title": "Modal Deduction"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 2,
+        "4": 1
+      },
+      "level": "B1",
+      "questions": 5,
+      "quiz_id": "b1-007",
+      "title": "Passive Voice"
+    },
+    {
+      "category": "Writing",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 2
+      },
+      "level": "B1",
+      "questions": 5,
+      "quiz_id": "b1-008",
+      "title": "Linkers"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 2
+      },
+      "level": "B1",
+      "questions": 5,
+      "quiz_id": "b1-009",
+      "title": "Used to"
+    },
+    {
+      "category": "Vocabulary",
+      "correct_index_distribution": {
+        "1": 2,
+        "2": 1,
+        "3": 1,
+        "4": 1
+      },
+      "level": "B1",
+      "questions": 5,
+      "quiz_id": "b1-010",
+      "title": "Phrasal Verbs"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 2
+      },
+      "level": "B2",
+      "questions": 5,
+      "quiz_id": "b2-001",
+      "title": "Mixed Conditionals"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 2,
+        "3": 1,
+        "4": 1
+      },
+      "level": "B2",
+      "questions": 5,
+      "quiz_id": "b2-002",
+      "title": "Inversion"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 2,
+        "4": 1
+      },
+      "level": "B2",
+      "questions": 5,
+      "quiz_id": "b2-003",
+      "title": "Modal Perfect"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 2,
+        "2": 1,
+        "3": 1,
+        "4": 1
+      },
+      "level": "B2",
+      "questions": 5,
+      "quiz_id": "b2-004",
+      "title": "Causative"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 2
+      },
+      "level": "B2",
+      "questions": 5,
+      "quiz_id": "b2-005",
+      "title": "Participle Clauses"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 2
+      },
+      "level": "B2",
+      "questions": 5,
+      "quiz_id": "b2-006",
+      "title": "Advanced Passive"
+    },
+    {
+      "category": "Academic English",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 2,
+        "4": 2
+      },
+      "level": "B2",
+      "questions": 5,
+      "quiz_id": "b2-007",
+      "title": "Hedging"
+    },
+    {
+      "category": "Vocabulary",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 2
+      },
+      "level": "B2",
+      "questions": 5,
+      "quiz_id": "b2-008",
+      "title": "Collocation"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 2
+      },
+      "level": "B2",
+      "questions": 5,
+      "quiz_id": "b2-009",
+      "title": "Concession"
+    },
+    {
+      "category": "Writing",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 2,
+        "4": 1
+      },
+      "level": "B2",
+      "questions": 5,
+      "quiz_id": "b2-010",
+      "title": "Register"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 2
+      },
+      "level": "C1",
+      "questions": 5,
+      "quiz_id": "c1-001",
+      "title": "Advanced Conditionals"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 2
+      },
+      "level": "C1",
+      "questions": 5,
+      "quiz_id": "c1-002",
+      "title": "Subjunctive"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 2
+      },
+      "level": "C1",
+      "questions": 5,
+      "quiz_id": "c1-003",
+      "title": "Cleft Sentences"
+    },
+    {
+      "category": "Writing",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 2,
+        "4": 1
+      },
+      "level": "C1",
+      "questions": 5,
+      "quiz_id": "c1-004",
+      "title": "Discourse Markers"
+    },
+    {
+      "category": "Academic English",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 2,
+        "3": 1,
+        "4": 1
+      },
+      "level": "C1",
+      "questions": 5,
+      "quiz_id": "c1-005",
+      "title": "Nominalisation"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 2,
+        "3": 1,
+        "4": 1
+      },
+      "level": "C1",
+      "questions": 5,
+      "quiz_id": "c1-006",
+      "title": "Ellipsis"
+    },
+    {
+      "category": "Vocabulary",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 2,
+        "4": 1
+      },
+      "level": "C1",
+      "questions": 5,
+      "quiz_id": "c1-007",
+      "title": "Lexical Precision"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 2,
+        "2": 1,
+        "3": 1,
+        "4": 1
+      },
+      "level": "C1",
+      "questions": 5,
+      "quiz_id": "c1-008",
+      "title": "Inversion after Only"
+    },
+    {
+      "category": "Academic English",
+      "correct_index_distribution": {
+        "1": 2,
+        "2": 1,
+        "3": 1,
+        "4": 1
+      },
+      "level": "C1",
+      "questions": 5,
+      "quiz_id": "c1-009",
+      "title": "Academic Stance"
+    },
+    {
+      "category": "Vocabulary",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 2,
+        "4": 1
+      },
+      "level": "C1",
+      "questions": 5,
+      "quiz_id": "c1-010",
+      "title": "Collocation"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 2
+      },
+      "level": "C2",
+      "questions": 5,
+      "quiz_id": "c2-001",
+      "title": "Nuanced Modality"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 2,
+        "3": 2
+      },
+      "level": "C2",
+      "questions": 5,
+      "quiz_id": "c2-002",
+      "title": "Concessive Inversion"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 2,
+        "2": 1,
+        "3": 1,
+        "4": 1
+      },
+      "level": "C2",
+      "questions": 5,
+      "quiz_id": "c2-003",
+      "title": "Fronting"
+    },
+    {
+      "category": "Writing",
+      "correct_index_distribution": {
+        "1": 2,
+        "3": 1,
+        "4": 2
+      },
+      "level": "C2",
+      "questions": 5,
+      "quiz_id": "c2-004",
+      "title": "Register and Tone"
+    },
+    {
+      "category": "Vocabulary",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 2,
+        "4": 1
+      },
+      "level": "C2",
+      "questions": 5,
+      "quiz_id": "c2-005",
+      "title": "Semantic Nuance"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 2,
+        "4": 1
+      },
+      "level": "C2",
+      "questions": 5,
+      "quiz_id": "c2-006",
+      "title": "Advanced Relative Construction"
+    },
+    {
+      "category": "Grammar",
+      "correct_index_distribution": {
+        "1": 3,
+        "2": 1,
+        "3": 1
+      },
+      "level": "C2",
+      "questions": 5,
+      "quiz_id": "c2-007",
+      "title": "Inversion with Negative Adverbial"
+    },
+    {
+      "category": "Vocabulary",
+      "correct_index_distribution": {
+        "1": 2,
+        "2": 1,
+        "3": 1,
+        "4": 1
+      },
+      "level": "C2",
+      "questions": 5,
+      "quiz_id": "c2-008",
+      "title": "Pragmatics"
+    },
+    {
+      "category": "Vocabulary",
+      "correct_index_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 2,
+        "4": 1
+      },
+      "level": "C2",
+      "questions": 5,
+      "quiz_id": "c2-009",
+      "title": "Idiomatic Precision"
+    },
+    {
+      "category": "Academic English",
+      "correct_index_distribution": {
+        "1": 2,
+        "2": 2,
+        "3": 1
+      },
+      "level": "C2",
+      "questions": 5,
+      "quiz_id": "c2-010",
+      "title": "Synthesis"
+    }
+  ],
+  "schema_version": 1,
+  "strict": true,
+  "summary": {
+    "by_code": {
+      "CQ-C07": 5,
+      "CQ-D02": 56
+    },
+    "categories": {
+      "Academic English": 20,
+      "Grammar": 215,
+      "Vocabulary": 45,
+      "Writing": 20
+    },
+    "errors": 0,
+    "info": 61,
+    "levels": {
+      "A1": 50,
+      "A2": 50,
+      "B1": 50,
+      "B2": 50,
+      "C1": 50,
+      "C2": 50
+    },
+    "quality_score": 98,
+    "warnings": 0
+  },
+  "thresholds": {
+    "max_explanation_chars": 350,
+    "max_question_chars": 220,
+    "min_explanation_chars": 20,
+    "min_questions_per_quiz": 5
+  }
+}
