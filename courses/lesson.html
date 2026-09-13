@@ -25,12 +25,12 @@ main{max-width:680px;margin:auto;padding:20px 16px 60px}
 /* Course-identity header (Agent 94): gives the lesson page its own visual
    identity distinct from a generic content page — the same course/unit
    context that carries forward into the quiz via quizUrl(). */
-.course-id{display:flex;align-items:center;gap:8px;margin-bottom:14px;font-size:12px;font-weight:800;color:var(--brand)}
-.course-id .lvl-badge{background:var(--brand-soft);border-radius:99px;padding:3px 9px}
-.course-id .sep{color:var(--muted);font-weight:600}
-.course-id .unit-name{color:var(--muted);font-weight:700}
+.course-id{display:flex;align-items:center;gap:6px;margin-bottom:14px;font-size:12px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.03em}
+.course-id .lvl-badge{color:var(--brand)}
+.course-id .sep{color:var(--line);font-weight:600}
+.course-id .unit-name{color:var(--muted);font-weight:700;text-transform:none;letter-spacing:0}
 .topline{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:6px}
-.chip{display:inline-block;font-size:11px;font-weight:900;color:var(--brand);background:var(--brand-soft);border-radius:99px;padding:3px 10px}
+.chip{font-size:12px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.03em}
 .skipbtn{flex:0 0 auto;text-decoration:none;font-weight:800;font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:99px;padding:8px 14px;min-height:36px;display:inline-flex;align-items:center;white-space:nowrap}
 h1{margin:6px 0 8px;font-size:24px}
 .readtime{color:var(--muted);font-size:13px;margin:0 0 20px;display:flex;align-items:center;gap:6px}
@@ -59,7 +59,7 @@ h1{margin:6px 0 8px;font-size:24px}
 .btn{display:block;width:100%;text-align:center;text-decoration:none;font-weight:800;font-size:16px;padding:15px 16px;border-radius:99px;min-height:52px;box-sizing:border-box;transition:transform 220ms var(--ease-release)}
 .btn:active{transform:scale(.98)}
 .btn.primary{background:var(--brand);color:#fff}
-.exercise-cards{display:grid;gap:10px}.exercise-card{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:15px;border:1px solid var(--line);border-radius:16px;background:var(--card)}.exercise-card h3{margin:5px 0 4px;font-size:16px}.exercise-card p{margin:0 0 5px;color:var(--muted);font-size:13px;line-height:1.45}.exercise-card small{color:var(--muted);font-size:11px}.exercise-type{font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.06em;color:var(--brand)}.exercise-card .btn{flex:0 0 auto}.loading{text-align:center;color:var(--muted);padding:60px 20px}
+.exercise-cards{display:grid;gap:10px}.exercise-card{display:flex;align-items:center;gap:12px;padding:16px;border:1px solid var(--line);border-radius:16px;background:var(--card);text-decoration:none;color:inherit;transition:transform 220ms var(--ease-release),background 150ms var(--ease-micro)}.exercise-card:active{transform:scale(.98);background:var(--brand-soft)}.exercise-card>div{flex:1 1 auto;min-width:0}.exercise-card h3{margin:0;font-size:15px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.exercise-card small{color:var(--muted);font-size:12px}.exercise-card .chev{flex:0 0 auto;color:var(--brand);font-size:18px;line-height:1}@media(prefers-reduced-motion:reduce){.exercise-card{transition:none}.exercise-card:active{transform:none}}.loading{text-align:center;color:var(--muted);padding:60px 20px}
 .err{text-align:center;color:var(--muted);padding:50px 20px}
 .err a{color:var(--brand);font-weight:800;text-decoration:none}
 footer{max-width:680px;margin:0 auto;padding:24px 16px 40px;color:var(--muted);font-size:13px;text-align:center}
@@ -207,9 +207,8 @@ Promise.all([
         exerciseIds.map(function(id){
           var q=quizMap[id]||{};
           var title=q.title||id;
-          var description=q.description||'Practice the skills from this lesson.';
           var count=q.questions?String(q.questions)+' question'+(q.questions===1?'':'s'):'';
-          return '<article class="exercise-card"><div><span class="exercise-type">Quiz</span><h3>'+esc(title)+'</h3><p>'+esc(description)+'</p>'+(count?'<small>'+esc(count)+'</small>':'')+'</div><a class="btn primary" href="'+quizUrl(id,level,backUrl,course.title,unit.title)+'">'+(exerciseIds.length===1?'Start quiz':'Open quiz')+'</a></article>';
+          return '<a class="exercise-card" href="'+quizUrl(id,level,backUrl,course.title,unit.title)+'"><div><h3>'+esc(title)+'</h3>'+(count?'<small>'+esc(count)+'</small>':'')+'</div><span class="chev" aria-hidden="true">\u2192</span></a>';
         }).join('')+
       '</div></div>';
     }
