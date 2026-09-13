@@ -78,24 +78,3 @@ Next: Agent C should audit root-relative links and first-hop navigation without 
 
 ## Agent 122 completion
 Agent 122 completed the Link / Path Integrity lane. The root entry and all local HTML href/src references audit clean with zero missing local references. No production code changes were required. Next lane: Offline / PWA consistency (Agent 123).
-
-## Final release checkpoint — Agents 126–128
-
-### Agent 126 — Source/deployment parity
-COMPLETED. Freshly built `dist-release/` was compared with the root deployment artifact. Runtime file sets match exactly after excluding generated release reports and historical handoff documents.
-
-### Agent 127 — Final regression audit
-COMPLETED. Build/release gate PASS (0 errors, 0 warnings); JS syntax PASS; type contract PASS; lint has 0 blocking findings and 1 existing warning; 109/109 Python unit tests PASS; critical-module coverage 11/11; content QA 300 rows / 60 quizzes / 0 errors / 0 warnings; scale benchmark PASS.
-
-### Final concrete correction
-The offline canonical source contract was missing the new root `index.html`. Corrected `offline_packs.py::CORE_FILES`, `site/offline/core-manifest.json`, and `site/offline/packs.json`; rebuilt the core ZIP. Offline integrity tests now pass 4/4.
-
-### Agent 128 — Final release package
-COMPLETED. Final artifacts:
-- `MYLINGO_FINAL_ROOT_DEPLOYMENT.zip`
-- `MYLINGO_FINAL_SOURCE_HANDOFF.zip`
-
-Browser Playwright remains environment-blocked/hung and is explicitly NOT claimed as PASS.
-
-## RELEASE STATUS
-READY FOR DEPLOYMENT, with browser smoke verification remaining an environment limitation rather than an unreported test result.
