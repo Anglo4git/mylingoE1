@@ -51,7 +51,7 @@ footer{max-width:950px;margin:0 auto;padding:24px 16px 40px;color:var(--muted);f
 @keyframes page-in{from{opacity:0;transform:scale(1.04)}}
 @media(prefers-reduced-motion:reduce){@view-transition{navigation:none}.reset button{transition:none}.reset button:active{transform:none}}
 </style><link rel="stylesheet" href="../shared/css/app-shell.css"><link rel="stylesheet" href="../shared/css/theme.css"></head>
-<script src="../shared/js/splash.js"></script><body>
+<script src="../shared/js/splash.js"></script><script src="../shared/js/level-lock.js"></script><body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
 <header><div class="headrow">
   <img class="brand-logo" src="../shared/brand/logo-horizontal.svg" alt="Mylingo">
@@ -73,6 +73,10 @@ const $=x=>document.getElementById(x);
 const KEY='mylingo.progress.v1';
 const parts=location.pathname.split('/').filter(Boolean);
 const level=(parts[parts.length-2]||'a1').toLowerCase();
+if(window.MylingoLevelLock && window.MylingoLevelLock.isLocked(level)){
+  window.MylingoLevelLock.renderLockedState(document.getElementById('main-content'), level, {backHref:'../main/index.html'});
+  return;
+}
 document.title='Mylingo '+level.toUpperCase()+' · Dashboard';
 $('title').textContent=level.toUpperCase()+' progress';
 
@@ -167,6 +171,6 @@ $('resetBtn').onclick=()=>{
 
 load();
 })();
-try{if(window.MylingoOfflinePacksUI){window.MylingoOfflinePacksUI.mount(document.getElementById('offlinePacksMount'),{level:level});}}catch(e){}
+try{if(window.MylingoOfflinePacksUI && !(window.MylingoLevelLock && window.MylingoLevelLock.isLocked(level))){window.MylingoOfflinePacksUI.mount(document.getElementById('offlinePacksMount'),{level:level});}}catch(e){}
 </script>
 <script src="../shared/js/app-shell.js"></script></body></html>

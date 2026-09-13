@@ -53,7 +53,7 @@ small{display:block;color:var(--muted);margin-top:2px}
 @keyframes page-in{from{opacity:0;transform:scale(1.04)}}
 @media(prefers-reduced-motion:reduce){@view-transition{navigation:none}}
 </style><link rel="stylesheet" href="../shared/css/app-shell.css"><link rel="stylesheet" href="../shared/css/theme.css"></head>
-<script src="../shared/js/splash.js"></script><body>
+<script src="../shared/js/splash.js"></script><script src="../shared/js/level-lock.js"></script><body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
 <header><div class="headrow">
   <img class="brand-logo" src="../shared/brand/logo-horizontal.svg" alt="Mylingo">
@@ -69,8 +69,10 @@ small{display:block;color:var(--muted);margin-top:2px}
   <p class="count" id="count" aria-live="polite"></p>
   <ul class="grid" id="grid" role="list" aria-live="polite"></ul>
   <button class="more" id="more" style="display:none">Show more</button>
+  <div id="offlinePacksMount"></div>
 </main>
 <footer>Mylingo · Works offline once installed · Free forever</footer>
+<script src="../shared/js/offline-packs.js"></script><script src="../shared/js/offline-packs-ui.js"></script>
 <script>
 (function(){
 'use strict';
@@ -78,6 +80,10 @@ const $=x=>document.getElementById(x);
 const KEY='mylingo.progress.v1';
 const parts=location.pathname.split('/').filter(Boolean);
 const level=(parts[parts.length-2]||'a1').toLowerCase();
+if(window.MylingoLevelLock && window.MylingoLevelLock.isLocked(level)){
+  window.MylingoLevelLock.renderLockedState(document.getElementById('main-content'), level, {backHref:'../main/index.html'});
+  return;
+}
 const PAGE=24;
 let shown=PAGE, all=[], filtered=[];
 
@@ -161,6 +167,7 @@ async function load(){
   paint();
 }
 load();
+try{ if(window.MylingoOfflinePacksUI) window.MylingoOfflinePacksUI.mount(document.getElementById('offlinePacksMount'),{level:level}); }catch(e){}
 })();
 </script>
 <script src="../shared/js/app-shell.js"></script></body></html>

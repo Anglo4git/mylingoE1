@@ -57,8 +57,12 @@
         "shared/brand/icon.svg",
         "shared/brand/logo-horizontal.svg",
         "shared/brand/logo-stacked.svg",
+        "shared/css/app-shell.css",
+        "shared/css/theme.css",
+        "shared/js/app-shell.js",
         "shared/js/course-progress.js",
         "shared/js/gamification.js",
+        "shared/js/level-lock.js",
         "shared/js/offline-packs-ui.js",
         "shared/js/offline-packs.js",
         "shared/js/orientation.js",
@@ -67,17 +71,14 @@
         "shared/js/review-scheduler.js",
         "shared/js/runtime-v2-adapter.js",
         "shared/js/skill-mastery.js",
+        "shared/js/splash.js",
         "shared/quiz.html",
         "shared/sfx/correct.mp3",
         "shared/sfx/great_job.mp3",
         "shared/sfx/try_again_2.mp3",
         "shared/sfx/win.mp3",
         "shared/sfx/wrong_answer.mp3",
-        "sw.js",
-        "shared/css/app-shell.css",
-        "shared/css/theme.css",
-        "shared/js/app-shell.js",
-        "shared/js/splash.js"
+        "sw.js"
       ]
     },
     {

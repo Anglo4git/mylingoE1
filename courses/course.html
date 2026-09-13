@@ -6,6 +6,7 @@
 <link rel="manifest" href="../manifest.json">
 <meta name="theme-color" content="#1959d1">
 <script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js').catch(function(){});});}</script>
+<script src="../shared/js/level-lock.js"></script>
 <title>Mylingo · Course</title>
 <style>
 :root{--brand:#1959d1;--brand-dark:#0e45ae;--brand-soft:#eaf1fc;--success:#58cc02;--success-dark:#46a302;--success-soft:#e9f8df;--ink:#17212b;--muted:#4b5563;--line:#e5e7eb;--bg:#f7f9fc;--ease-micro:cubic-bezier(0.25,0.1,0.25,1);--ease-release:cubic-bezier(0.34,1.56,0.64,1)}
@@ -143,6 +144,11 @@ function lessonUrl(lessonId,lvl,backUrl){
 
 if(!level){
   renderError('No course level was specified.');
+  return;
+}
+
+if(window.MylingoLevelLock && window.MylingoLevelLock.isLocked(level)){
+  renderError('This level is locked. Reach it from your current level to unlock it, or find your level first.');
   return;
 }
 
