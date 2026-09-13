@@ -1,0 +1,6 @@
+{
+  "release": "v118",
+  "product": "MyLingo",
+  "sourceOfTruth": true,
+  "policy": "Do not hardcode release tags elsewhere in application code."
+}

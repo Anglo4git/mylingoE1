@@ -59,7 +59,7 @@ h1{margin:6px 0 8px;font-size:24px}
 .btn{display:block;width:100%;text-align:center;text-decoration:none;font-weight:800;font-size:16px;padding:15px 16px;border-radius:99px;min-height:52px;box-sizing:border-box;transition:transform 220ms var(--ease-release)}
 .btn:active{transform:scale(.98)}
 .btn.primary{background:var(--brand);color:#fff}
-.loading{text-align:center;color:var(--muted);padding:60px 20px}
+.exercise-cards{display:grid;gap:10px}.exercise-card{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:15px;border:1px solid var(--line);border-radius:16px;background:var(--card)}.exercise-card h3{margin:5px 0 4px;font-size:16px}.exercise-card p{margin:0 0 5px;color:var(--muted);font-size:13px;line-height:1.45}.exercise-card small{color:var(--muted);font-size:11px}.exercise-type{font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.06em;color:var(--brand)}.exercise-card .btn{flex:0 0 auto}.loading{text-align:center;color:var(--muted);padding:60px 20px}
 .err{text-align:center;color:var(--muted);padding:50px 20px}
 .err a{color:var(--brand);font-weight:800;text-decoration:none}
 footer{max-width:680px;margin:0 auto;padding:24px 16px 40px;color:var(--muted);font-size:13px;text-align:center}
@@ -70,8 +70,8 @@ footer{max-width:680px;margin:0 auto;padding:24px 16px 40px;color:var(--muted);f
 @keyframes page-out{to{opacity:0;transform:scale(.96)}}
 @keyframes page-in{from{opacity:0;transform:scale(1.04)}}
 @media(prefers-reduced-motion:reduce){@view-transition{navigation:none}}
-</style><link rel="stylesheet" href="../shared/css/app-shell.css"></head>
-<body>
+</style><link rel="stylesheet" href="../shared/css/app-shell.css"><link rel="stylesheet" href="../shared/css/theme.css"></head>
+<script src="../shared/js/splash.js"></script><body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
 <header><div class="headrow">
   <img class="brand-logo" src="../shared/brand/logo-horizontal.svg" alt="Mylingo">
@@ -202,14 +202,16 @@ Promise.all([
     }
 
     var exercisesHtml='';
-    if(exerciseIds.length>1){
-      exercisesHtml='<div class="card"><h2>Exercises in this lesson</h2><ul class="exlist">'+
+    if(exerciseIds.length){
+      exercisesHtml='<div class="card"><h2>Exercises in this lesson</h2><div class="exercise-cards">'+
         exerciseIds.map(function(id){
-          var q=quizMap[id];
-          return '<li><div class="meta"><b>'+esc((q&&q.title)||id)+'</b>'+(q&&q.questions?q.questions+' question'+(q.questions===1?'':'s'):'')+'</div>'+
-            '<a href="'+quizUrl(id,level,backUrl,course.title,unit.title)+'">Practice</a></li>';
+          var q=quizMap[id]||{};
+          var title=q.title||id;
+          var description=q.description||'Practice the skills from this lesson.';
+          var count=q.questions?String(q.questions)+' question'+(q.questions===1?'':'s'):'';
+          return '<article class="exercise-card"><div><span class="exercise-type">Quiz</span><h3>'+esc(title)+'</h3><p>'+esc(description)+'</p>'+(count?'<small>'+esc(count)+'</small>':'')+'</div><a class="btn primary" href="'+quizUrl(id,level,backUrl,course.title,unit.title)+'">'+(exerciseIds.length===1?'Start quiz':'Open quiz')+'</a></article>';
         }).join('')+
-      '</ul></div>';
+      '</div></div>';
     }
 
     $('content').innerHTML=

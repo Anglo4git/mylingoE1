@@ -73,7 +73,11 @@
         "shared/sfx/try_again_2.mp3",
         "shared/sfx/win.mp3",
         "shared/sfx/wrong_answer.mp3",
-        "sw.js"
+        "sw.js",
+        "shared/css/app-shell.css",
+        "shared/css/theme.css",
+        "shared/js/app-shell.js",
+        "shared/js/splash.js"
       ]
     },
     {
