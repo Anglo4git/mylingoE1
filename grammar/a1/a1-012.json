@@ -1,0 +1,76 @@
+{
+  "id": "a1-012",
+  "title": "Be: am/is/are — Mixed Practice",
+  "description": "Practice am/is/are with a mix of question types.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,A1,Be",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question_type": "banner",
+      "question": "Be: am / is / are",
+      "content": "The verb \"be\" changes with its subject: I am, he/she/it is, you/we/they are. This lesson mixes several question types — multiple choice, select-all, a dropdown, a fill-in-the-blank, a matching task and a word-order task.",
+      "category": "Grammar",
+      "tags": "Grammar,A1,Be"
+    },
+    {
+      "question_type": "radio",
+      "question": "I ___ a teacher.",
+      "category": "Grammar",
+      "tags": "Grammar,A1,Be",
+      "explanation": "Use \"am\" with the pronoun I.",
+      "answers": ["is", "am", "are", "be"],
+      "correctIndex": 2
+    },
+    {
+      "question_type": "checkbox",
+      "question": "Which sentences use \"are\" correctly?",
+      "category": "Grammar",
+      "tags": "Grammar,A1,Be",
+      "explanation": "\"Are\" goes with you, we and they — not he/she.",
+      "answers": ["We are happy.", "She are happy.", "They are here.", "He are here."],
+      "correctIndices": [1, 3]
+    },
+    {
+      "question_type": "dropdown",
+      "question": "We ___ from Spain.",
+      "category": "Grammar",
+      "tags": "Grammar,A1,Be",
+      "explanation": "\"We\" takes \"are\".",
+      "answers": ["am", "is", "are", "be"],
+      "correctIndex": 3
+    },
+    {
+      "question_type": "fill_in_the_blank",
+      "question": "Complete the sentence: She ___ a doctor. (be)",
+      "category": "Grammar",
+      "tags": "Grammar,A1,Be",
+      "explanation": "\"She\" takes \"is\".",
+      "acceptedAnswers": ["is"]
+    },
+    {
+      "question_type": "matching",
+      "question": "Match each subject to its form of \"be\".",
+      "category": "Grammar",
+      "tags": "Grammar,A1,Be",
+      "explanation": "I → am, you/we/they → are, he/she/it → is.",
+      "pairs": [
+        { "left": "I", "right": "am" },
+        { "left": "You", "right": "are" },
+        { "left": "He", "right": "is" },
+        { "left": "We", "right": "are" }
+      ]
+    },
+    {
+      "question_type": "ranking",
+      "question": "Put the words in the correct order to make a sentence with \"be\".",
+      "category": "Grammar",
+      "tags": "Grammar,A1,Be",
+      "explanation": "Word order: subject + be + article + noun.",
+      "items": ["student", "is", "a", "She"],
+      "correctOrder": ["She", "is", "a", "student"]
+    }
+  ]
+}

@@ -11,7 +11,8 @@
     "presentation_url": null,
     "youtube_url": null,
     "exercise_quiz_ids": [
-      "a1-001"
+      "a1-001",
+      "a1-011"
     ],
     "version": 1,
     "status": "published"
@@ -28,7 +29,8 @@
     "presentation_url": null,
     "youtube_url": null,
     "exercise_quiz_ids": [
-      "a1-002"
+      "a1-002",
+      "a1-012"
     ],
     "version": 1,
     "status": "published"

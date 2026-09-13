@@ -119,19 +119,21 @@
       var anchors = node.tagName === 'A' ? [node] : Array.prototype.slice.call(node.querySelectorAll('a'));
       var locked = isLocked(lvl);
 
-      var badge = node.querySelector('.level-lock-badge');
+      var overlay = node.querySelector('.level-lock-overlay');
       if (locked) {
         node.classList.add('is-level-locked');
-        if (!badge) {
-          badge = document.createElement('span');
-          badge.className = 'level-lock-badge';
-          badge.textContent = '\uD83D\uDD12 Locked';
-          badge.style.cssText = 'display:inline-block;font-size:11px;font-weight:900;color:#8a6100;background:#fff7e0;border-radius:999px;padding:4px 9px;margin-top:6px';
-          node.appendChild(badge);
+        if (getComputedStyle(node).position === 'static') node.style.position = 'relative';
+        if (!overlay) {
+          overlay = document.createElement('div');
+          overlay.className = 'level-lock-overlay';
+          overlay.setAttribute('aria-hidden', 'true');
+          overlay.style.cssText = 'position:absolute;inset:0;z-index:5;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.62);backdrop-filter:blur(1px);border-radius:inherit;pointer-events:none';
+          overlay.innerHTML = '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#4b5563" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="10.5" width="15" height="10" rx="2.5"/><path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"/></svg>';
+          node.appendChild(overlay);
         }
       } else {
         node.classList.remove('is-level-locked');
-        if (badge) badge.remove();
+        if (overlay) overlay.remove();
       }
 
       anchors.forEach(function (a) {

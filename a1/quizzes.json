@@ -118,5 +118,29 @@
     "level": "A1",
     "questions": 5,
     "version": 1
+  },
+  {
+    "file": "grammar/a1/a1-011.json",
+    "id": "a1-011",
+    "title": "Present Simple: Mixed Practice",
+    "topic": "Present Simple",
+    "description": "Practice Present Simple with a mix of question types.",
+    "category": "Grammar",
+    "tags": "Grammar,A1,Present Simple",
+    "level": "A1",
+    "questions": 7,
+    "version": 1
+  },
+  {
+    "file": "grammar/a1/a1-012.json",
+    "id": "a1-012",
+    "title": "Be: am/is/are \u2014 Mixed Practice",
+    "topic": "Be: am/is/are",
+    "description": "Practice am/is/are with a mix of question types.",
+    "category": "Grammar",
+    "tags": "Grammar,A1,Be",
+    "level": "A1",
+    "questions": 7,
+    "version": 1
   }
 ]

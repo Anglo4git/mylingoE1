@@ -1,0 +1,76 @@
+{
+  "id": "a1-011",
+  "title": "Present Simple: Mixed Practice",
+  "description": "Practice Present Simple with a mix of question types.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,A1,Present Simple",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question_type": "banner",
+      "question": "Present Simple: Mixed Practice",
+      "content": "We use the present simple for habits, routines and facts. Remember the -s ending for he/she/it. This lesson mixes several question types — multiple choice, select-all, a dropdown, a fill-in-the-blank, a matching task and a word-order task.",
+      "category": "Grammar",
+      "tags": "Grammar,A1,Present Simple"
+    },
+    {
+      "question_type": "radio",
+      "question": "She ___ to school every day.",
+      "category": "Grammar",
+      "tags": "Grammar,A1,Present Simple",
+      "explanation": "Use -s with he/she/it in the present simple.",
+      "answers": ["goes", "go", "going", "gone"],
+      "correctIndex": 1
+    },
+    {
+      "question_type": "checkbox",
+      "question": "Which subjects use \"do\" (not \"does\") in the present simple?",
+      "category": "Grammar",
+      "tags": "Grammar,A1,Present Simple",
+      "explanation": "\"Does\" is only for he/she/it. Every other subject uses \"do\".",
+      "answers": ["I", "You", "He", "We", "She", "They"],
+      "correctIndices": [1, 2, 4, 6]
+    },
+    {
+      "question_type": "dropdown",
+      "question": "My brother ___ football on Saturdays.",
+      "category": "Grammar",
+      "tags": "Grammar,A1,Present Simple",
+      "explanation": "\"Brother\" is he, so the verb takes -s: plays.",
+      "answers": ["play", "plays", "playing", "played"],
+      "correctIndex": 2
+    },
+    {
+      "question_type": "fill_in_the_blank",
+      "question": "Complete the sentence: I usually ___ coffee in the morning. (drink)",
+      "category": "Grammar",
+      "tags": "Grammar,A1,Present Simple",
+      "explanation": "\"I\" doesn't take -s in the present simple.",
+      "acceptedAnswers": ["drink"]
+    },
+    {
+      "question_type": "matching",
+      "question": "Match each subject to the verb form that matches it: \"work\".",
+      "category": "Grammar",
+      "tags": "Grammar,A1,Present Simple",
+      "explanation": "He/she/it take \"works\"; every other subject takes \"work\".",
+      "pairs": [
+        { "left": "He", "right": "works" },
+        { "left": "They", "right": "work" },
+        { "left": "I", "right": "work" },
+        { "left": "She", "right": "works" }
+      ]
+    },
+    {
+      "question_type": "ranking",
+      "question": "Put the words in the correct order to make a present simple sentence.",
+      "category": "Grammar",
+      "tags": "Grammar,A1,Present Simple",
+      "explanation": "Present simple word order: subject + adverb of frequency + verb + object.",
+      "items": ["tea", "always", "drinks", "She"],
+      "correctOrder": ["She", "always", "drinks", "tea"]
+    }
+  ]
+}
