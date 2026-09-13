@@ -105,7 +105,7 @@ main{max-width:920px;margin:auto;padding:20px 16px 32px}
 .check-answer{transition:transform var(--dur-standard) var(--ease-release),box-shadow var(--dur-micro) var(--ease-micro)}
 .check-answer:active{transition-duration:80ms;transition-timing-function:var(--ease-micro)}
 .footer-note{text-align:center;color:#5b6470;font-size:11px;margin-top:14px}
-.overlay{position:fixed;inset:0;background:rgba(255,255,255,.98);display:grid;place-items:center;padding:24px;z-index:20;overflow:auto}
+.overlay{position:fixed;top:0;left:0;right:0;bottom:calc(60px + env(safe-area-inset-bottom));background:rgba(255,255,255,.98);display:grid;place-items:center;padding:24px;z-index:20;overflow:auto}
 .overlay.anim-in{animation:overlayIn .22s var(--ease-standard)}
 .overlay.anim-in .modal{animation:modalIn .4s var(--ease-spring)}
 @keyframes overlayIn{from{opacity:0}to{opacity:1}}
