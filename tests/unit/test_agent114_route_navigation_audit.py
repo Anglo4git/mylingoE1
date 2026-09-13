@@ -57,13 +57,16 @@ class Agent114RouteRedirectNavigationAudit(unittest.TestCase):
                     broken.append(f'{html_file.relative_to(ROOT)} -> {value}')
         self.assertEqual(broken, [], 'Broken static link(s):\n' + '\n'.join(broken))
 
-    def test_root_index_redirect_has_meta_refresh_and_noscript_fallback_link(self):
+    def test_root_index_is_a_real_app_entry(self):
         source = (SITE / 'index.html').read_text(encoding='utf-8')
-        self.assertIn('http-equiv="refresh"', source)
-        self.assertIn('url=./main/index.html', source)
-        # A real <a> fallback must exist for clients that don't honor the
-        # meta refresh (e.g. some crawlers, some assistive tooling).
-        self.assertIn('href="./main/index.html"', source)
+        # The repository root entry must render Mylingo directly; it must not
+        # depend on a meta-refresh redirect to /main/.
+        self.assertNotIn('http-equiv="refresh"', source)
+        self.assertIn('<title>Mylingo · Learn English your way</title>', source)
+        self.assertIn('src="./shared/brand/logo-horizontal.svg"', source)
+        self.assertIn('href="./courses/index.html"', source)
+        for level in ('a1', 'a2', 'b1', 'b2', 'c1', 'c2'):
+            self.assertIn(f'href="./{level}/index.html"', source)
 
     def test_quiz_redirect_param_is_validated_before_use(self):
         source = (SITE / 'shared/quiz.html').read_text(encoding='utf-8')

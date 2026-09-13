@@ -1,0 +1,37 @@
+{
+  "_comment": "Hand-authored lesson additions layered on top of map_quiz_catalog.py's mechanical baseline. Each entry reuses existing published quiz_id(s) only (no new quiz content, no duplicated questions) and is appended to an existing unit's lesson_ids. See apply_curated_content.py for how this is composed with the baseline, and AGENT_119_CONTENT_EXPANSION_RESOLUTION.md for the architecture decision this file implements.",
+  "additions": [
+    {
+      "lesson_id": "course-a2-unit-02-lesson-02",
+      "unit_id": "course-a2-unit-02",
+      "title": "Everyday Vocabulary Review",
+      "category": "Mixed",
+      "revision": {
+        "summary": "A short mixed review pulling together everyday vocabulary and the present perfect, for learners who want extra practice before moving on.",
+        "key_terms": ["everyday vocabulary", "present perfect"],
+        "examples": [
+          "I've already learned these words — now let's use them in context.",
+          "Have you used the present perfect correctly in a sentence today?"
+        ],
+        "estimated_minutes": 8
+      },
+      "exercise_quiz_ids": ["a2-010", "a2-009"]
+    },
+    {
+      "lesson_id": "course-c1-unit-04-lesson-03",
+      "unit_id": "course-c1-unit-04",
+      "title": "Academic Writing Integration",
+      "category": "Mixed",
+      "revision": {
+        "summary": "An integrative revision lesson combining nominalisation, academic stance, and discourse markers for learners consolidating academic writing skills.",
+        "key_terms": ["nominalisation", "academic stance", "discourse markers"],
+        "examples": [
+          "Turning verbs into nouns can make writing sound more formal and academic.",
+          "Discourse markers like 'however' and 'furthermore' help structure an argument."
+        ],
+        "estimated_minutes": 10
+      },
+      "exercise_quiz_ids": ["c1-005", "c1-009", "c1-004"]
+    }
+  ]
+}

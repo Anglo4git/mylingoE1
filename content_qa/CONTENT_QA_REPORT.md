@@ -1,10 +1,10 @@
 # Mylingo Content QA Report
 
-- Generated: 2026-09-11T18:45:37.318133+00:00
+- Generated: 2026-09-13T00:18:08.888731+00:00
 - Source: `master_source.csv`
 - Rows: 300
 - Quizzes: 60
-- Mode: strict
+- Mode: diagnostic
 - Triage score: **98/100** (review-priority signal only; not a CEFR score)
 
 ## Outcome

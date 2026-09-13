@@ -1,0 +1,22 @@
+{
+  "_comment": "Controlled tag vocabulary for Content Schema v2 (see 07_CONTENT_SCHEMA_V2.md). Matching is case-insensitive. This file is advisory input to content_qa.py's CQ-T01 rule, not a build.py hard blocker. Extend by adding entries and a short rationale in _added_log, not by silently editing existing values.",
+  "version": 1,
+  "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+  "skills": ["grammar", "vocabulary", "reading", "listening", "writing", "usage"],
+  "categories": [
+    "Grammar",
+    "Vocabulary",
+    "Writing",
+    "Academic English",
+    "Reading",
+    "Listening",
+    "Speaking",
+    "Pronunciation",
+    "Idioms",
+    "Business English",
+    "Exam Prep"
+  ],
+  "_added_log": [
+    { "milestone": "07_CONTENT_SCHEMA_V2", "added": ["Reading", "Listening", "Speaking", "Pronunciation", "Idioms", "Business English", "Exam Prep"], "reason": "Reserved growth categories anticipated by the ~400-quiz raw dataset described in the authoring-orientation notes; not yet used by any published quiz, added so future content doesn't immediately trip CQ-T01." }
+  ]
+}

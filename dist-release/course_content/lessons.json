@@ -1,0 +1,1078 @@
+[
+  {
+    "lesson_id": "course-a1-unit-01-lesson-01",
+    "unit_id": "course-a1-unit-01",
+    "title": "Present Simple",
+    "category": "Grammar",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Present Simple."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-001"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-02",
+    "unit_id": "course-a1-unit-01",
+    "title": "Be: am/is/are",
+    "category": "Grammar",
+    "order": 2,
+    "revision": {
+      "summary": "Practice Be: am/is/are."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-002"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-03",
+    "unit_id": "course-a1-unit-01",
+    "title": "Articles",
+    "category": "Grammar",
+    "order": 3,
+    "revision": {
+      "summary": "Practice Articles."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-003"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-04",
+    "unit_id": "course-a1-unit-01",
+    "title": "Plural Nouns",
+    "category": "Grammar",
+    "order": 4,
+    "revision": {
+      "summary": "Practice Plural Nouns."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-004"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-05",
+    "unit_id": "course-a1-unit-01",
+    "title": "There is / There are",
+    "category": "Grammar",
+    "order": 5,
+    "revision": {
+      "summary": "Practice There is / There are."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-005"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-06",
+    "unit_id": "course-a1-unit-01",
+    "title": "Can",
+    "category": "Grammar",
+    "order": 6,
+    "revision": {
+      "summary": "Practice Can."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-006"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-07",
+    "unit_id": "course-a1-unit-01",
+    "title": "Past Simple",
+    "category": "Grammar",
+    "order": 7,
+    "revision": {
+      "summary": "Practice Past Simple."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-007"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-08",
+    "unit_id": "course-a1-unit-01",
+    "title": "Possessive Adjectives",
+    "category": "Grammar",
+    "order": 8,
+    "revision": {
+      "summary": "Practice Possessive Adjectives."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-008"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-09",
+    "unit_id": "course-a1-unit-01",
+    "title": "Prepositions",
+    "category": "Grammar",
+    "order": 9,
+    "revision": {
+      "summary": "Practice Prepositions."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-009"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-a1-unit-02-lesson-01",
+    "unit_id": "course-a1-unit-02",
+    "title": "Everyday Vocabulary",
+    "category": "Vocabulary",
+    "order": 1,
+    "revision": {
+      "summary": "Practice everyday vocabulary."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-010"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-01",
+    "unit_id": "course-a2-unit-01",
+    "title": "Comparative Adjectives",
+    "category": "Grammar",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Comparative Adjectives."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-001"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-02",
+    "unit_id": "course-a2-unit-01",
+    "title": "Present Continuous",
+    "category": "Grammar",
+    "order": 2,
+    "revision": {
+      "summary": "Practice Present Continuous."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-002"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-03",
+    "unit_id": "course-a2-unit-01",
+    "title": "Past Continuous",
+    "category": "Grammar",
+    "order": 3,
+    "revision": {
+      "summary": "Practice Past Continuous."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-003"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-04",
+    "unit_id": "course-a2-unit-01",
+    "title": "Future: going to",
+    "category": "Grammar",
+    "order": 4,
+    "revision": {
+      "summary": "Practice Future: going to."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-004"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-05",
+    "unit_id": "course-a2-unit-01",
+    "title": "First Conditional",
+    "category": "Grammar",
+    "order": 5,
+    "revision": {
+      "summary": "Practice First Conditional."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-005"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-06",
+    "unit_id": "course-a2-unit-01",
+    "title": "Countable/Uncountable",
+    "category": "Grammar",
+    "order": 6,
+    "revision": {
+      "summary": "Practice Countable/Uncountable."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-006"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-07",
+    "unit_id": "course-a2-unit-01",
+    "title": "Adverbs of Frequency",
+    "category": "Grammar",
+    "order": 7,
+    "revision": {
+      "summary": "Practice Adverbs of Frequency."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-007"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-08",
+    "unit_id": "course-a2-unit-01",
+    "title": "Modal: should",
+    "category": "Grammar",
+    "order": 8,
+    "revision": {
+      "summary": "Practice Modal: should."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-008"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-09",
+    "unit_id": "course-a2-unit-01",
+    "title": "Present Perfect",
+    "category": "Grammar",
+    "order": 9,
+    "revision": {
+      "summary": "Practice Present Perfect."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-009"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-a2-unit-02-lesson-01",
+    "unit_id": "course-a2-unit-02",
+    "title": "Everyday Vocabulary",
+    "category": "Vocabulary",
+    "order": 1,
+    "revision": {
+      "summary": "Practice everyday vocabulary."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-010"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-01-lesson-01",
+    "unit_id": "course-b1-unit-01",
+    "title": "Present Perfect vs Past Simple",
+    "category": "Grammar",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Present Perfect vs Past Simple."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "b1-001"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-01-lesson-02",
+    "unit_id": "course-b1-unit-01",
+    "title": "Second Conditional",
+    "category": "Grammar",
+    "order": 2,
+    "revision": {
+      "summary": "Practice Second Conditional."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "b1-002"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-01-lesson-03",
+    "unit_id": "course-b1-unit-01",
+    "title": "Relative Clauses",
+    "category": "Grammar",
+    "order": 3,
+    "revision": {
+      "summary": "Practice Relative Clauses."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "b1-003"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-01-lesson-04",
+    "unit_id": "course-b1-unit-01",
+    "title": "Reported Speech",
+    "category": "Grammar",
+    "order": 4,
+    "revision": {
+      "summary": "Practice Reported Speech."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "b1-004"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-01-lesson-05",
+    "unit_id": "course-b1-unit-01",
+    "title": "Gerunds and Infinitives",
+    "category": "Grammar",
+    "order": 5,
+    "revision": {
+      "summary": "Practice Gerunds and Infinitives."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "b1-005"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-01-lesson-06",
+    "unit_id": "course-b1-unit-01",
+    "title": "Modal Deduction",
+    "category": "Grammar",
+    "order": 6,
+    "revision": {
+      "summary": "Practice Modal Deduction."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "b1-006"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-01-lesson-07",
+    "unit_id": "course-b1-unit-01",
+    "title": "Passive Voice",
+    "category": "Grammar",
+    "order": 7,
+    "revision": {
+      "summary": "Practice Passive Voice."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "b1-007"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-01-lesson-08",
+    "unit_id": "course-b1-unit-01",
+    "title": "Used to",
+    "category": "Grammar",
+    "order": 8,
+    "revision": {
+      "summary": "Practice Used to."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "b1-009"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-02-lesson-01",
+    "unit_id": "course-b1-unit-02",
+    "title": "Phrasal Verbs",
+    "category": "Vocabulary",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Phrasal Verbs."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "b1-010"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-03-lesson-01",
+    "unit_id": "course-b1-unit-03",
+    "title": "Linkers",
+    "category": "Writing",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Linkers."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "b1-008"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-01-lesson-01",
+    "unit_id": "course-b2-unit-01",
+    "title": "Mixed Conditionals",
+    "category": "Grammar",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Mixed Conditionals."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "b2-001"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-01-lesson-02",
+    "unit_id": "course-b2-unit-01",
+    "title": "Inversion",
+    "category": "Grammar",
+    "order": 2,
+    "revision": {
+      "summary": "Practice Inversion."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "b2-002"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-01-lesson-03",
+    "unit_id": "course-b2-unit-01",
+    "title": "Modal Perfect",
+    "category": "Grammar",
+    "order": 3,
+    "revision": {
+      "summary": "Practice Modal Perfect."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "b2-003"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-01-lesson-04",
+    "unit_id": "course-b2-unit-01",
+    "title": "Causative",
+    "category": "Grammar",
+    "order": 4,
+    "revision": {
+      "summary": "Practice Causative."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "b2-004"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-01-lesson-05",
+    "unit_id": "course-b2-unit-01",
+    "title": "Participle Clauses",
+    "category": "Grammar",
+    "order": 5,
+    "revision": {
+      "summary": "Practice Participle Clauses."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "b2-005"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-01-lesson-06",
+    "unit_id": "course-b2-unit-01",
+    "title": "Advanced Passive",
+    "category": "Grammar",
+    "order": 6,
+    "revision": {
+      "summary": "Practice Advanced Passive."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "b2-006"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-01-lesson-07",
+    "unit_id": "course-b2-unit-01",
+    "title": "Concession",
+    "category": "Grammar",
+    "order": 7,
+    "revision": {
+      "summary": "Practice Concession."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "b2-009"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-02-lesson-01",
+    "unit_id": "course-b2-unit-02",
+    "title": "Collocation",
+    "category": "Vocabulary",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Collocation."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "b2-008"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-03-lesson-01",
+    "unit_id": "course-b2-unit-03",
+    "title": "Register",
+    "category": "Writing",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Register."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "b2-010"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-04-lesson-01",
+    "unit_id": "course-b2-unit-04",
+    "title": "Hedging",
+    "category": "Academic English",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Hedging."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "b2-007"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-01-lesson-01",
+    "unit_id": "course-c1-unit-01",
+    "title": "Advanced Conditionals",
+    "category": "Grammar",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Advanced Conditionals."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "c1-001"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-01-lesson-02",
+    "unit_id": "course-c1-unit-01",
+    "title": "Subjunctive",
+    "category": "Grammar",
+    "order": 2,
+    "revision": {
+      "summary": "Practice Subjunctive."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "c1-002"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-01-lesson-03",
+    "unit_id": "course-c1-unit-01",
+    "title": "Cleft Sentences",
+    "category": "Grammar",
+    "order": 3,
+    "revision": {
+      "summary": "Practice Cleft Sentences."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "c1-003"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-01-lesson-04",
+    "unit_id": "course-c1-unit-01",
+    "title": "Ellipsis",
+    "category": "Grammar",
+    "order": 4,
+    "revision": {
+      "summary": "Practice Ellipsis."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "c1-006"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-01-lesson-05",
+    "unit_id": "course-c1-unit-01",
+    "title": "Inversion after Only",
+    "category": "Grammar",
+    "order": 5,
+    "revision": {
+      "summary": "Practice Inversion after Only."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "c1-008"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-02-lesson-01",
+    "unit_id": "course-c1-unit-02",
+    "title": "Lexical Precision",
+    "category": "Vocabulary",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Lexical Precision."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "c1-007"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-02-lesson-02",
+    "unit_id": "course-c1-unit-02",
+    "title": "Collocation",
+    "category": "Vocabulary",
+    "order": 2,
+    "revision": {
+      "summary": "Practice Collocation."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "c1-010"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-03-lesson-01",
+    "unit_id": "course-c1-unit-03",
+    "title": "Discourse Markers",
+    "category": "Writing",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Discourse Markers."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "c1-004"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-04-lesson-01",
+    "unit_id": "course-c1-unit-04",
+    "title": "Nominalisation",
+    "category": "Academic English",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Nominalisation."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "c1-005"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-04-lesson-02",
+    "unit_id": "course-c1-unit-04",
+    "title": "Academic Stance",
+    "category": "Academic English",
+    "order": 2,
+    "revision": {
+      "summary": "Practice Academic Stance."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "c1-009"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c2-unit-01-lesson-01",
+    "unit_id": "course-c2-unit-01",
+    "title": "Nuanced Modality",
+    "category": "Grammar",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Nuanced Modality."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "c2-001"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c2-unit-01-lesson-02",
+    "unit_id": "course-c2-unit-01",
+    "title": "Concessive Inversion",
+    "category": "Grammar",
+    "order": 2,
+    "revision": {
+      "summary": "Practice Concessive Inversion."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "c2-002"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c2-unit-01-lesson-03",
+    "unit_id": "course-c2-unit-01",
+    "title": "Fronting",
+    "category": "Grammar",
+    "order": 3,
+    "revision": {
+      "summary": "Practice Fronting."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "c2-003"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c2-unit-01-lesson-04",
+    "unit_id": "course-c2-unit-01",
+    "title": "Advanced Relative Construction",
+    "category": "Grammar",
+    "order": 4,
+    "revision": {
+      "summary": "Practice Advanced Relative Construction."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "c2-006"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c2-unit-01-lesson-05",
+    "unit_id": "course-c2-unit-01",
+    "title": "Inversion with Negative Adverbial",
+    "category": "Grammar",
+    "order": 5,
+    "revision": {
+      "summary": "Practice Inversion with Negative Adverbial."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "c2-007"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c2-unit-02-lesson-01",
+    "unit_id": "course-c2-unit-02",
+    "title": "Semantic Nuance",
+    "category": "Vocabulary",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Semantic Nuance."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "c2-005"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c2-unit-02-lesson-02",
+    "unit_id": "course-c2-unit-02",
+    "title": "Pragmatics",
+    "category": "Vocabulary",
+    "order": 2,
+    "revision": {
+      "summary": "Practice Pragmatics."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "c2-008"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c2-unit-02-lesson-03",
+    "unit_id": "course-c2-unit-02",
+    "title": "Idiomatic Precision",
+    "category": "Vocabulary",
+    "order": 3,
+    "revision": {
+      "summary": "Practice Idiomatic Precision."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "c2-009"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c2-unit-03-lesson-01",
+    "unit_id": "course-c2-unit-03",
+    "title": "Register and Tone",
+    "category": "Writing",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Register and Tone."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "c2-004"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c2-unit-04-lesson-01",
+    "unit_id": "course-c2-unit-04",
+    "title": "Synthesis",
+    "category": "Academic English",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Synthesis."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "c2-010"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-a2-unit-02-lesson-02",
+    "unit_id": "course-a2-unit-02",
+    "title": "Everyday Vocabulary Review",
+    "category": "Mixed",
+    "order": 2,
+    "revision": {
+      "summary": "A short mixed review pulling together everyday vocabulary and the present perfect, for learners who want extra practice before moving on.",
+      "key_terms": [
+        "everyday vocabulary",
+        "present perfect"
+      ],
+      "examples": [
+        "I've already learned these words \u2014 now let's use them in context.",
+        "Have you used the present perfect correctly in a sentence today?"
+      ],
+      "estimated_minutes": 8
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-010",
+      "a2-009"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-04-lesson-03",
+    "unit_id": "course-c1-unit-04",
+    "title": "Academic Writing Integration",
+    "category": "Mixed",
+    "order": 3,
+    "revision": {
+      "summary": "An integrative revision lesson combining nominalisation, academic stance, and discourse markers for learners consolidating academic writing skills.",
+      "key_terms": [
+        "nominalisation",
+        "academic stance",
+        "discourse markers"
+      ],
+      "examples": [
+        "Turning verbs into nouns can make writing sound more formal and academic.",
+        "Discourse markers like 'however' and 'furthermore' help structure an argument."
+      ],
+      "estimated_minutes": 10
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "c1-005",
+      "c1-009",
+      "c1-004"
+    ],
+    "version": 1,
+    "status": "published"
+  }
+]

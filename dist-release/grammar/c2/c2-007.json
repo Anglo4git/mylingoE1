@@ -1,0 +1,77 @@
+{
+  "id": "c2-007",
+  "title": "Inversion with Negative Adverbial",
+  "description": "Practice Inversion with Negative Adverbial.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,C2",
+  "level": "C2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Under no circumstances ___ the data be altered.",
+      "category": "Grammar",
+      "tags": "Grammar,C2",
+      "explanation": "Negative fronted adverbials trigger inversion.",
+      "correctIndex": 3,
+      "answers": [
+        "the data should",
+        "would",
+        "should",
+        "have"
+      ]
+    },
+    {
+      "question": "Under no circumstances ___ confidential data be shared.",
+      "category": "Grammar",
+      "tags": "Grammar,C2",
+      "explanation": "Negative fronted adverbials trigger inversion.",
+      "correctIndex": 2,
+      "answers": [
+        "the data should",
+        "should",
+        "would",
+        "have"
+      ]
+    },
+    {
+      "question": "Rarely, if ever, ___ such confidential data be shared.",
+      "category": "Grammar",
+      "tags": "Grammar,C2",
+      "explanation": "Negative or restrictive fronted expressions can trigger subject–auxiliary inversion.",
+      "correctIndex": 1,
+      "answers": [
+        "should",
+        "would",
+        "have",
+        "the data should"
+      ]
+    },
+    {
+      "question": "At no point during the review ___ the rules be ignored.",
+      "category": "Grammar",
+      "tags": "Grammar,C2",
+      "explanation": "Negative fronted adverbials such as at no point trigger subject–auxiliary inversion.",
+      "correctIndex": 1,
+      "answers": [
+        "should",
+        "would",
+        "have",
+        "the rules should"
+      ]
+    },
+    {
+      "question": "In no circumstances ___ these figures be altered after publication.",
+      "category": "Grammar",
+      "tags": "Grammar,C2",
+      "explanation": "Negative fronted adverbials such as in no circumstances trigger subject–auxiliary inversion.",
+      "correctIndex": 1,
+      "answers": [
+        "should",
+        "would",
+        "have",
+        "the figures should"
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Mylingo Build Report
 
-- Generated: 2026-09-11T19:13:32.738878+00:00
+- Generated: 2026-09-13T00:52:19.304688+00:00
 - Source: `master_source.csv`
 - Rows processed: 300
 - Quizzes generated (published only): 60

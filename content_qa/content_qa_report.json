@@ -61,7 +61,7 @@
       }
     }
   },
-  "generated_at": "2026-09-11T18:45:37.318133+00:00",
+  "generated_at": "2026-09-13T00:18:08.888731+00:00",
   "input_quizzes": 60,
   "input_rows": 300,
   "issues": [
@@ -1271,7 +1271,7 @@
     }
   ],
   "schema_version": 1,
-  "strict": true,
+  "strict": false,
   "summary": {
     "by_code": {
       "CQ-C07": 5,

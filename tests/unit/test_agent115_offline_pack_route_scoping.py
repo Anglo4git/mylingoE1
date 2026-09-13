@@ -90,7 +90,12 @@ class Agent115OfflinePackRouteScopingAudit(unittest.TestCase):
         for html_file in sorted(SITE.rglob('*.html')):
             source = html_file.read_text(encoding='utf-8')
             for src in re.findall(r'<script src="([^"]*offline-packs\.js)"', source):
-                if src != '../shared/js/offline-packs.js':
+                # The root entry may load the shared script from ./shared/js;
+                # all other pages must use ../shared/js. Both resolve the
+                # script one directory below site/, which preserves
+                # offline-packs.js BASE_URL = new URL('../../', script.src).
+                expected = './shared/js/offline-packs.js' if html_file == SITE / 'index.html' else '../shared/js/offline-packs.js'
+                if src != expected:
                     offenders.append(f'{html_file.relative_to(ROOT)} -> {src}')
         self.assertEqual(offenders, [], 'offline-packs.js included at unexpected relative depth:\n' + '\n'.join(offenders))
 

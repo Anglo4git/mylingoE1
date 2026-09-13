@@ -1,0 +1,216 @@
+[
+  {
+    "unit_id": "course-a1-unit-01",
+    "course_id": "course-a1",
+    "title": "Grammar",
+    "order": 1,
+    "lesson_ids": [
+      "course-a1-unit-01-lesson-01",
+      "course-a1-unit-01-lesson-02",
+      "course-a1-unit-01-lesson-03",
+      "course-a1-unit-01-lesson-04",
+      "course-a1-unit-01-lesson-05",
+      "course-a1-unit-01-lesson-06",
+      "course-a1-unit-01-lesson-07",
+      "course-a1-unit-01-lesson-08",
+      "course-a1-unit-01-lesson-09"
+    ]
+  },
+  {
+    "unit_id": "course-a1-unit-02",
+    "course_id": "course-a1",
+    "title": "Vocabulary",
+    "order": 2,
+    "lesson_ids": [
+      "course-a1-unit-02-lesson-01"
+    ]
+  },
+  {
+    "unit_id": "course-a2-unit-01",
+    "course_id": "course-a2",
+    "title": "Grammar",
+    "order": 1,
+    "lesson_ids": [
+      "course-a2-unit-01-lesson-01",
+      "course-a2-unit-01-lesson-02",
+      "course-a2-unit-01-lesson-03",
+      "course-a2-unit-01-lesson-04",
+      "course-a2-unit-01-lesson-05",
+      "course-a2-unit-01-lesson-06",
+      "course-a2-unit-01-lesson-07",
+      "course-a2-unit-01-lesson-08",
+      "course-a2-unit-01-lesson-09"
+    ]
+  },
+  {
+    "unit_id": "course-a2-unit-02",
+    "course_id": "course-a2",
+    "title": "Vocabulary",
+    "order": 2,
+    "lesson_ids": [
+      "course-a2-unit-02-lesson-01",
+      "course-a2-unit-02-lesson-02"
+    ]
+  },
+  {
+    "unit_id": "course-b1-unit-01",
+    "course_id": "course-b1",
+    "title": "Grammar",
+    "order": 1,
+    "lesson_ids": [
+      "course-b1-unit-01-lesson-01",
+      "course-b1-unit-01-lesson-02",
+      "course-b1-unit-01-lesson-03",
+      "course-b1-unit-01-lesson-04",
+      "course-b1-unit-01-lesson-05",
+      "course-b1-unit-01-lesson-06",
+      "course-b1-unit-01-lesson-07",
+      "course-b1-unit-01-lesson-08"
+    ]
+  },
+  {
+    "unit_id": "course-b1-unit-02",
+    "course_id": "course-b1",
+    "title": "Vocabulary",
+    "order": 2,
+    "lesson_ids": [
+      "course-b1-unit-02-lesson-01"
+    ]
+  },
+  {
+    "unit_id": "course-b1-unit-03",
+    "course_id": "course-b1",
+    "title": "Writing",
+    "order": 3,
+    "lesson_ids": [
+      "course-b1-unit-03-lesson-01"
+    ]
+  },
+  {
+    "unit_id": "course-b2-unit-01",
+    "course_id": "course-b2",
+    "title": "Grammar",
+    "order": 1,
+    "lesson_ids": [
+      "course-b2-unit-01-lesson-01",
+      "course-b2-unit-01-lesson-02",
+      "course-b2-unit-01-lesson-03",
+      "course-b2-unit-01-lesson-04",
+      "course-b2-unit-01-lesson-05",
+      "course-b2-unit-01-lesson-06",
+      "course-b2-unit-01-lesson-07"
+    ]
+  },
+  {
+    "unit_id": "course-b2-unit-02",
+    "course_id": "course-b2",
+    "title": "Vocabulary",
+    "order": 2,
+    "lesson_ids": [
+      "course-b2-unit-02-lesson-01"
+    ]
+  },
+  {
+    "unit_id": "course-b2-unit-03",
+    "course_id": "course-b2",
+    "title": "Writing",
+    "order": 3,
+    "lesson_ids": [
+      "course-b2-unit-03-lesson-01"
+    ]
+  },
+  {
+    "unit_id": "course-b2-unit-04",
+    "course_id": "course-b2",
+    "title": "Academic English",
+    "order": 4,
+    "lesson_ids": [
+      "course-b2-unit-04-lesson-01"
+    ]
+  },
+  {
+    "unit_id": "course-c1-unit-01",
+    "course_id": "course-c1",
+    "title": "Grammar",
+    "order": 1,
+    "lesson_ids": [
+      "course-c1-unit-01-lesson-01",
+      "course-c1-unit-01-lesson-02",
+      "course-c1-unit-01-lesson-03",
+      "course-c1-unit-01-lesson-04",
+      "course-c1-unit-01-lesson-05"
+    ]
+  },
+  {
+    "unit_id": "course-c1-unit-02",
+    "course_id": "course-c1",
+    "title": "Vocabulary",
+    "order": 2,
+    "lesson_ids": [
+      "course-c1-unit-02-lesson-01",
+      "course-c1-unit-02-lesson-02"
+    ]
+  },
+  {
+    "unit_id": "course-c1-unit-03",
+    "course_id": "course-c1",
+    "title": "Writing",
+    "order": 3,
+    "lesson_ids": [
+      "course-c1-unit-03-lesson-01"
+    ]
+  },
+  {
+    "unit_id": "course-c1-unit-04",
+    "course_id": "course-c1",
+    "title": "Academic English",
+    "order": 4,
+    "lesson_ids": [
+      "course-c1-unit-04-lesson-01",
+      "course-c1-unit-04-lesson-02",
+      "course-c1-unit-04-lesson-03"
+    ]
+  },
+  {
+    "unit_id": "course-c2-unit-01",
+    "course_id": "course-c2",
+    "title": "Grammar",
+    "order": 1,
+    "lesson_ids": [
+      "course-c2-unit-01-lesson-01",
+      "course-c2-unit-01-lesson-02",
+      "course-c2-unit-01-lesson-03",
+      "course-c2-unit-01-lesson-04",
+      "course-c2-unit-01-lesson-05"
+    ]
+  },
+  {
+    "unit_id": "course-c2-unit-02",
+    "course_id": "course-c2",
+    "title": "Vocabulary",
+    "order": 2,
+    "lesson_ids": [
+      "course-c2-unit-02-lesson-01",
+      "course-c2-unit-02-lesson-02",
+      "course-c2-unit-02-lesson-03"
+    ]
+  },
+  {
+    "unit_id": "course-c2-unit-03",
+    "course_id": "course-c2",
+    "title": "Writing",
+    "order": 3,
+    "lesson_ids": [
+      "course-c2-unit-03-lesson-01"
+    ]
+  },
+  {
+    "unit_id": "course-c2-unit-04",
+    "course_id": "course-c2",
+    "title": "Academic English",
+    "order": 4,
+    "lesson_ids": [
+      "course-c2-unit-04-lesson-01"
+    ]
+  }
+]
