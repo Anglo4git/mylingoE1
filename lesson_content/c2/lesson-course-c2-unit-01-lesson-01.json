@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-c2-unit-01-lesson-01",
+  "title": "Lesson: Nuanced Modality",
+  "description": "Practice Nuanced Modality.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,C2",
+  "level": "C2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Nuanced Modality.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C2",
+      "media": {},
+      "subprompt": "Nuanced Modality",
+      "explanation": "Practice Nuanced Modality."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Nuanced Modality",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C2"
+    },
+    {
+      "question": "He ___ have been aware of the risk, but the evidence is inconclusive.",
+      "category": "Grammar",
+      "tags": "Grammar,C2,QuickCheck",
+      "explanation": "May have been expresses a possible past state.",
+      "correctIndex": 3,
+      "answers": [
+        "must",
+        "will",
+        "may",
+        "should"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C2"
+    }
+  ]
+}

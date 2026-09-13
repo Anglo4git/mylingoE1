@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a2-unit-01-lesson-06",
+  "title": "Lesson: Countable/Uncountable",
+  "description": "Practice Countable/Uncountable.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Countable/Uncountable.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Countable/Uncountable",
+      "explanation": "Practice Countable/Uncountable."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Countable/Uncountable",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "How ___ water do you need?",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "Use much with uncountable nouns.",
+      "correctIndex": 3,
+      "answers": [
+        "many",
+        "few",
+        "much",
+        "a lot"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

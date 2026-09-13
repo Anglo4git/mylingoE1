@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-01-lesson-08",
+  "title": "Lesson: Used to",
+  "description": "Practice Used to.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Used to.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Used to",
+      "explanation": "Practice Used to."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Used to",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "I ___ play football every weekend when I was younger.",
+      "category": "Grammar",
+      "tags": "Grammar,B1,QuickCheck",
+      "explanation": "Used to describes past habits or states.",
+      "correctIndex": 4,
+      "answers": [
+        "use to",
+        "am used to",
+        "used",
+        "used to"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

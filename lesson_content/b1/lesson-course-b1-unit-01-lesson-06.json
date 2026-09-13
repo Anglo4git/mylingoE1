@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-01-lesson-06",
+  "title": "Lesson: Modal Deduction",
+  "description": "Practice Modal Deduction.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Modal Deduction.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Modal Deduction",
+      "explanation": "Practice Modal Deduction."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Modal Deduction",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "The lights are off. They ___ be at home.",
+      "category": "Grammar",
+      "tags": "Grammar,B1,QuickCheck",
+      "explanation": "Can't expresses a strong negative deduction.",
+      "correctIndex": 1,
+      "answers": [
+        "can't",
+        "must",
+        "should",
+        "need"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "id": "a2-media-01",
+  "title": "Picture & Sound Vocabulary",
+  "description": "Look, listen, and choose the right word.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,Media,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "What is shown in the picture?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Image,A2",
+      "explanation": "People travel on a bus.",
+      "media": {
+        "image": {
+          "src": "media/images/vocab/bus.svg",
+          "alt": "a bus"
+        }
+      },
+      "correctIndex": 4,
+      "answers": [
+        "an umbrella",
+        "a chair",
+        "a bicycle",
+        "a bus"
+      ]
+    },
+    {
+      "question": "What is shown in the picture?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Image,A2",
+      "explanation": "You sit on a chair.",
+      "media": {
+        "image": {
+          "src": "media/images/vocab/chair.svg",
+          "alt": "a chair"
+        }
+      },
+      "correctIndex": 2,
+      "answers": [
+        "a clock",
+        "a chair",
+        "a bus",
+        "a tree"
+      ]
+    },
+    {
+      "question": "What is shown in the picture?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Image,A2",
+      "explanation": "A tree grows in the ground.",
+      "media": {
+        "image": {
+          "src": "media/images/vocab/tree.svg",
+          "alt": "a tree"
+        }
+      },
+      "correctIndex": 4,
+      "answers": [
+        "a chair",
+        "a clock",
+        "an umbrella",
+        "a tree"
+      ]
+    },
+    {
+      "question": "What is shown in the picture?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Image,A2",
+      "explanation": "An umbrella keeps you dry in the rain.",
+      "media": {
+        "image": {
+          "src": "media/images/vocab/umbrella.svg",
+          "alt": "an umbrella"
+        }
+      },
+      "correctIndex": 2,
+      "answers": [
+        "a bicycle",
+        "an umbrella",
+        "a bus",
+        "a tree"
+      ]
+    },
+    {
+      "question": "Listen. What does she ride?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Audio,A2",
+      "explanation": "The sentence says she rides a bicycle.",
+      "media": {
+        "audio": {
+          "tts": "She rides her bicycle to work every morning.",
+          "label": "Listen to the sentence"
+        }
+      },
+      "correctIndex": 3,
+      "answers": [
+        "umbrella",
+        "chair",
+        "bicycle",
+        "bus"
+      ]
+    },
+    {
+      "question": "Listen. What should you take?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Audio,A2",
+      "explanation": "The speaker suggests taking an umbrella.",
+      "media": {
+        "audio": {
+          "tts": "Take an umbrella, it might rain later.",
+          "label": "Listen to the sentence"
+        }
+      },
+      "correctIndex": 1,
+      "answers": [
+        "umbrella",
+        "bus",
+        "tree",
+        "clock"
+      ]
+    }
+  ]
+}

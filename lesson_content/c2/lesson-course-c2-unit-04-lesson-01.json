@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-c2-unit-04-lesson-01",
+  "title": "Lesson: Synthesis",
+  "description": "Practice Synthesis.",
+  "brand": "Mylingo",
+  "category": "Academic English",
+  "tags": "Lesson,C2",
+  "level": "C2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Synthesis.",
+      "question_type": "banner",
+      "category": "Academic English",
+      "tags": "Lesson,C2",
+      "media": {},
+      "subprompt": "Synthesis",
+      "explanation": "Practice Synthesis."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Synthesis",
+      "question_type": "banner",
+      "category": "Academic English",
+      "tags": "Lesson,C2"
+    },
+    {
+      "question": "Taken together, the results ___ a nuanced picture of the problem.",
+      "category": "Academic English",
+      "tags": "Academic English,C2,QuickCheck",
+      "explanation": "Paint a picture is a common metaphorical collocation in analytical writing.",
+      "correctIndex": 3,
+      "answers": [
+        "draw",
+        "write",
+        "paint",
+        "build"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Academic English",
+      "tags": "Lesson,C2"
+    }
+  ]
+}

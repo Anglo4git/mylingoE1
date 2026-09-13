@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-01-lesson-05",
+  "title": "Lesson: There is / There are",
+  "description": "Practice There is / There are.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice There is / There are.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "There is / There are",
+      "explanation": "Practice There is / There are."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "There is / There are",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "___ three chairs in the room.",
+      "category": "Grammar",
+      "tags": "Grammar,A1,QuickCheck",
+      "explanation": "Use There are with plural nouns.",
+      "correctIndex": 4,
+      "answers": [
+        "There is",
+        "It is",
+        "They are",
+        "There are"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

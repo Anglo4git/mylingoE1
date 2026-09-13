@@ -1,0 +1,132 @@
+{
+  "id": "b1-media-01",
+  "title": "Picture & Sound Vocabulary",
+  "description": "Look, listen, and choose the word that best fits.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,Media,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Which word matches the picture?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Image,B1",
+      "explanation": "A key is used to open a lock.",
+      "media": {
+        "image": {
+          "src": "media/images/vocab/key.svg",
+          "alt": "a key"
+        }
+      },
+      "correctIndex": 1,
+      "answers": [
+        "a key",
+        "a clock",
+        "a phone",
+        "a coffee cup"
+      ]
+    },
+    {
+      "question": "Which word matches the picture?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Image,B1",
+      "explanation": "People use a phone to call or text.",
+      "media": {
+        "image": {
+          "src": "media/images/vocab/phone.svg",
+          "alt": "a phone"
+        }
+      },
+      "correctIndex": 2,
+      "answers": [
+        "a bicycle",
+        "a phone",
+        "a chair",
+        "a key"
+      ]
+    },
+    {
+      "question": "Which word matches the picture?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Image,B1",
+      "explanation": "This is a hot drink made from roasted beans.",
+      "media": {
+        "image": {
+          "src": "media/images/vocab/coffee.svg",
+          "alt": "a cup of coffee"
+        }
+      },
+      "correctIndex": 3,
+      "answers": [
+        "a key",
+        "a bus",
+        "a cup of coffee",
+        "a book"
+      ]
+    },
+    {
+      "question": "Which word matches the picture?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Image,B1",
+      "explanation": "A clock shows what time it is.",
+      "media": {
+        "image": {
+          "src": "media/images/vocab/clock.svg",
+          "alt": "a clock"
+        }
+      },
+      "correctIndex": 1,
+      "answers": [
+        "a clock",
+        "a phone",
+        "an umbrella",
+        "a coffee cup"
+      ]
+    },
+    {
+      "question": "Listen. What did the speaker forget?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Audio,B1",
+      "explanation": "The speaker forgot their keys.",
+      "media": {
+        "audio": {
+          "tts": "I forgot my keys at the office again.",
+          "label": "Listen to the sentence"
+        }
+      },
+      "correctIndex": 2,
+      "answers": [
+        "clock",
+        "keys",
+        "coffee",
+        "phone"
+      ]
+    },
+    {
+      "question": "Listen. What device is mentioned?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Audio,B1",
+      "explanation": "The speaker refers to a phone.",
+      "media": {
+        "audio": {
+          "tts": "Could you turn down the volume on your phone?",
+          "label": "Listen to the sentence"
+        }
+      },
+      "correctIndex": 2,
+      "answers": [
+        "keys",
+        "phone",
+        "clock",
+        "bicycle"
+      ]
+    }
+  ]
+}

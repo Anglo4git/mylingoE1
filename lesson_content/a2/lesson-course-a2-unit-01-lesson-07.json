@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a2-unit-01-lesson-07",
+  "title": "Lesson: Adverbs of Frequency",
+  "description": "Practice Adverbs of Frequency.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Adverbs of Frequency.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Adverbs of Frequency",
+      "explanation": "Practice Adverbs of Frequency."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Adverbs of Frequency",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "She ___ gets up early; almost every day.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "Usually means something happens often but not always.",
+      "correctIndex": 1,
+      "answers": [
+        "usually",
+        "never",
+        "rarely",
+        "never is"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

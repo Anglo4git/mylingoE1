@@ -1,0 +1,67 @@
+{
+  "id": "lesson-course-c2-unit-02-lesson-01",
+  "title": "Lesson: Semantic Nuance",
+  "description": "Practice Semantic Nuance.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,C2",
+  "level": "C2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Semantic Nuance.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,C2",
+      "media": {},
+      "subprompt": "Semantic Nuance",
+      "explanation": "Practice Semantic Nuance."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Semantic Nuance, Picture & Sound Vocabulary",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,C2"
+    },
+    {
+      "question": "The minister's response was deliberately ___, avoiding a direct commitment.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C2,QuickCheck",
+      "explanation": "Equivocal means deliberately unclear or open to more than one interpretation.",
+      "correctIndex": 2,
+      "answers": [
+        "equivalent",
+        "equivocal",
+        "explicit",
+        "conclusive"
+      ]
+    },
+    {
+      "question": "Which nuanced description best fits the picture?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Image,C2,QuickCheck",
+      "explanation": "Coffee is an infusion valued chiefly for its stimulant (caffeine) properties.",
+      "media": {
+        "image": {
+          "src": "media/images/vocab/coffee.svg",
+          "alt": "an infusion prized for its stimulant properties"
+        }
+      },
+      "correctIndex": 3,
+      "answers": [
+        "an instrument for measuring elapsed time",
+        "an implement for unlocking mechanisms",
+        "an infusion prized for its stimulant properties",
+        "a mode of pedal-powered transport"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,C2"
+    }
+  ]
+}

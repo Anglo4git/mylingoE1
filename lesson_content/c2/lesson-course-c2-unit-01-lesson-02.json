@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-c2-unit-01-lesson-02",
+  "title": "Lesson: Concessive Inversion",
+  "description": "Practice Concessive Inversion.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,C2",
+  "level": "C2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Concessive Inversion.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C2",
+      "media": {},
+      "subprompt": "Concessive Inversion",
+      "explanation": "Practice Concessive Inversion."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Concessive Inversion",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C2"
+    },
+    {
+      "question": "Much as we ___ the theory, the evidence remains weak.",
+      "category": "Grammar",
+      "tags": "Grammar,C2,QuickCheck",
+      "explanation": "Much as + verb introduces a strong concession.",
+      "correctIndex": 2,
+      "answers": [
+        "am admiring",
+        "admire",
+        "admired",
+        "would admire"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C2"
+    }
+  ]
+}

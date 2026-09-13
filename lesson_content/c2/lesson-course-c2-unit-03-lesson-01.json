@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-c2-unit-03-lesson-01",
+  "title": "Lesson: Register and Tone",
+  "description": "Practice Register and Tone.",
+  "brand": "Mylingo",
+  "category": "Writing",
+  "tags": "Lesson,C2",
+  "level": "C2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Register and Tone.",
+      "question_type": "banner",
+      "category": "Writing",
+      "tags": "Lesson,C2",
+      "media": {},
+      "subprompt": "Register and Tone",
+      "explanation": "Practice Register and Tone."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Register and Tone",
+      "question_type": "banner",
+      "category": "Writing",
+      "tags": "Lesson,C2"
+    },
+    {
+      "question": "Which expression best suits highly formal academic writing?",
+      "category": "Writing",
+      "tags": "Writing,C2,QuickCheck",
+      "explanation": "A substantial proportion of is formal and precise.",
+      "correctIndex": 1,
+      "answers": [
+        "a substantial proportion of",
+        "a lot of",
+        "loads of",
+        "tons of"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Writing",
+      "tags": "Lesson,C2"
+    }
+  ]
+}

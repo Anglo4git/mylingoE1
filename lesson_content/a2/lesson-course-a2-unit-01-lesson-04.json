@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a2-unit-01-lesson-04",
+  "title": "Lesson: Future: going to",
+  "description": "Practice Future: going to.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Future: going to.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Future: going to",
+      "explanation": "Practice Future: going to."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Future: going to",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "We ___ visit next weekend.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "Use be + going to + base verb for plans.",
+      "correctIndex": 2,
+      "answers": [
+        "going",
+        "are going to",
+        "are go",
+        "went"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

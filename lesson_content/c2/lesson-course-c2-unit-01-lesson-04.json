@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-c2-unit-01-lesson-04",
+  "title": "Lesson: Advanced Relative Construction",
+  "description": "Practice Advanced Relative Construction.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,C2",
+  "level": "C2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Advanced Relative Construction.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C2",
+      "media": {},
+      "subprompt": "Advanced Relative Construction",
+      "explanation": "Practice Advanced Relative Construction."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Advanced Relative Construction",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C2"
+    },
+    {
+      "question": "The proposal, ___ merits were debated for months, was finally rejected.",
+      "category": "Grammar",
+      "tags": "Grammar,C2,QuickCheck",
+      "explanation": "Whose can express possession in a non-defining relative clause.",
+      "correctIndex": 4,
+      "answers": [
+        "which",
+        "whom",
+        "where",
+        "whose"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C2"
+    }
+  ]
+}

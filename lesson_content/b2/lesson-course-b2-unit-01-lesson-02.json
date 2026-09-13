@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-01-lesson-02",
+  "title": "Lesson: Inversion",
+  "description": "Practice Inversion.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Inversion.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Inversion",
+      "explanation": "Practice Inversion."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Inversion",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "Rarely ___ such a beautiful performance.",
+      "category": "Grammar",
+      "tags": "Grammar,B2,QuickCheck",
+      "explanation": "Restrictive adverbs at the front can trigger inversion.",
+      "correctIndex": 2,
+      "answers": [
+        "I have seen",
+        "have I seen",
+        "I saw",
+        "did I have seen"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

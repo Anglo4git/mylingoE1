@@ -1,0 +1,132 @@
+{
+  "id": "c2-media-01",
+  "title": "Picture & Sound Vocabulary",
+  "description": "Look, listen, and choose the most nuanced word.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,Media,C2",
+  "level": "C2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Which nuanced description best fits the picture?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Image,C2",
+      "explanation": "Coffee is an infusion valued chiefly for its stimulant (caffeine) properties.",
+      "media": {
+        "image": {
+          "src": "media/images/vocab/coffee.svg",
+          "alt": "an infusion prized for its stimulant properties"
+        }
+      },
+      "correctIndex": 3,
+      "answers": [
+        "an instrument for measuring elapsed time",
+        "an implement for unlocking mechanisms",
+        "an infusion prized for its stimulant properties",
+        "a mode of pedal-powered transport"
+      ]
+    },
+    {
+      "question": "Which nuanced description best fits the picture?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Image,C2",
+      "explanation": "A key is an implement used to unlock or secure mechanisms.",
+      "media": {
+        "image": {
+          "src": "media/images/vocab/key.svg",
+          "alt": "an implement for unlocking mechanisms"
+        }
+      },
+      "correctIndex": 2,
+      "answers": [
+        "an infusion prized for its stimulant properties",
+        "an implement for unlocking mechanisms",
+        "a device for remote communication",
+        "an instrument for measuring elapsed time"
+      ]
+    },
+    {
+      "question": "Which nuanced description best fits the picture?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Image,C2",
+      "explanation": "A clock is an instrument for measuring elapsed time.",
+      "media": {
+        "image": {
+          "src": "media/images/vocab/clock.svg",
+          "alt": "an instrument for measuring elapsed time"
+        }
+      },
+      "correctIndex": 4,
+      "answers": [
+        "an implement for unlocking mechanisms",
+        "a device for remote communication",
+        "a mode of pedal-powered transport",
+        "an instrument for measuring elapsed time"
+      ]
+    },
+    {
+      "question": "Which nuanced description best fits the picture?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Image,C2",
+      "explanation": "A phone is a device enabling remote communication.",
+      "media": {
+        "image": {
+          "src": "media/images/vocab/phone.svg",
+          "alt": "a device for remote communication"
+        }
+      },
+      "correctIndex": 2,
+      "answers": [
+        "a mode of pedal-powered transport",
+        "a device for remote communication",
+        "an infusion prized for its stimulant properties",
+        "an implement for unlocking mechanisms"
+      ]
+    },
+    {
+      "question": "Listen. What device rang?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Audio,C2",
+      "explanation": "The phone rang.",
+      "media": {
+        "audio": {
+          "tts": "The committee's decision was, in effect, a fait accompli by the time the phone rang.",
+          "label": "Listen to the sentence"
+        }
+      },
+      "correctIndex": 4,
+      "answers": [
+        "coffee",
+        "key",
+        "clock",
+        "phone"
+      ]
+    },
+    {
+      "question": "Listen. What was she nursing?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Audio,C2",
+      "explanation": "She was nursing her coffee.",
+      "media": {
+        "audio": {
+          "tts": "She nursed her coffee, seemingly impervious to the clamour around her.",
+          "label": "Listen to the sentence"
+        }
+      },
+      "correctIndex": 3,
+      "answers": [
+        "phone",
+        "clock",
+        "coffee",
+        "key"
+      ]
+    }
+  ]
+}

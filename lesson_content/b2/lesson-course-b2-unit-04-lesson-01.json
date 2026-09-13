@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-04-lesson-01",
+  "title": "Lesson: Hedging",
+  "description": "Practice Hedging.",
+  "brand": "Mylingo",
+  "category": "Academic English",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Hedging.",
+      "question_type": "banner",
+      "category": "Academic English",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Hedging",
+      "explanation": "Practice Hedging."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Hedging",
+      "question_type": "banner",
+      "category": "Academic English",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "The results ___ suggest that the policy was effective.",
+      "category": "Academic English",
+      "tags": "Academic English,B2,QuickCheck",
+      "explanation": "Appear to is a cautious way to state a conclusion.",
+      "correctIndex": 2,
+      "answers": [
+        "clearly",
+        "appear to",
+        "must",
+        "never"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Academic English",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

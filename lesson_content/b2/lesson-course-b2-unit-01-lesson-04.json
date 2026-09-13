@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-01-lesson-04",
+  "title": "Lesson: Causative",
+  "description": "Practice Causative.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Causative.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Causative",
+      "explanation": "Practice Causative."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Causative",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "I had my car ___ yesterday.",
+      "category": "Grammar",
+      "tags": "Grammar,B2,QuickCheck",
+      "explanation": "Have + object + past participle describes a service arranged for someone.",
+      "correctIndex": 2,
+      "answers": [
+        "repair",
+        "repaired",
+        "repairing",
+        "to repair"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

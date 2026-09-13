@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-c2-unit-01-lesson-03",
+  "title": "Lesson: Fronting",
+  "description": "Practice Fronting.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,C2",
+  "level": "C2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Fronting.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C2",
+      "media": {},
+      "subprompt": "Fronting",
+      "explanation": "Practice Fronting."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Fronting",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C2"
+    },
+    {
+      "question": "What the report fails to explain ___ why the figures changed.",
+      "category": "Grammar",
+      "tags": "Grammar,C2,QuickCheck",
+      "explanation": "The subject is a singular noun clause, so use is.",
+      "correctIndex": 1,
+      "answers": [
+        "is",
+        "are",
+        "be",
+        "have"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C2"
+    }
+  ]
+}

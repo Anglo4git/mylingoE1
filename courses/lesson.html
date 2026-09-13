@@ -177,6 +177,15 @@ Promise.all([
     var exerciseIds=lesson.exercise_quiz_ids||[];
     var firstExercise=exerciseIds[0];
     var startUrl=firstExercise ? quizUrl(firstExercise,level,backUrl,course.title,unit.title) : null;
+    // The lesson body itself now plays through the same interactive engine
+    // as an exercise quiz (shared/quiz.html): revision copy renders as
+    // "banner" cards (Continue-only, ungraded) and each linked exercise
+    // contributes one real quick-check question, so image/audio questions
+    // authored anywhere in the exercise set surface inside the lesson too.
+    // Finishing the lesson deck's "Continue" goes straight into the first
+    // real exercise (or back to the course if there isn't one).
+    var lessonQuizId=lesson.lesson_quiz_id;
+    var lessonStartUrl=lessonQuizId ? quizUrl(lessonQuizId,level,startUrl||backUrl,course.title,unit.title) : null;
 
     var minutes=estimateMinutes(lesson.revision);
     var revision=lesson.revision||{};
@@ -219,9 +228,14 @@ Promise.all([
       '</div></div>';
     }
 
+    // The course-id row already names the unit (e.g. "Grammar"); when the
+    // lesson's own category is the same word, showing it again as a chip
+    // right below is pure repetition. Only show the chip when it adds
+    // information beyond the unit name.
+    var showCategoryChip=lesson.category && lesson.category.trim().toLowerCase()!==(unit.title||'').trim().toLowerCase();
     $('content').innerHTML=
       '<div class="course-id"><span class="lvl-badge">'+esc(course.level)+'</span><span>'+esc(course.title)+'</span><span class="sep">·</span><span class="unit-name">'+esc(unit.title)+'</span></div>'+
-      '<div class="topline"><span class="chip">'+esc(lesson.category)+'</span>'+
+      '<div class="topline">'+(showCategoryChip?'<span class="chip">'+esc(lesson.category)+'</span>':'<span></span>')+
         (startUrl?'<a class="skipbtn" href="'+startUrl+'">Skip revision</a>':'')+
       '</div>'+
       '<h1>'+esc(lesson.title)+'</h1>'+
@@ -234,7 +248,9 @@ Promise.all([
       mediaHtml+
       exercisesHtml+
       '<div class="cta">'+
-        (startUrl ? '<a class="btn primary" href="'+startUrl+'">Start exercises</a>' : '<p class="err">No exercises are linked to this lesson yet.</p>')+
+        (lessonStartUrl ? '<a class="btn primary" href="'+lessonStartUrl+'">Start lesson</a>' :
+         startUrl ? '<a class="btn primary" href="'+startUrl+'">Start exercises</a>' :
+         '<p class="err">No exercises are linked to this lesson yet.</p>')+
       '</div>';
 
     window.addEventListener('offline',function(){

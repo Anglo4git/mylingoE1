@@ -1,0 +1,67 @@
+{
+  "id": "lesson-course-b2-unit-02-lesson-01",
+  "title": "Lesson: Collocation",
+  "description": "Practice Collocation.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Collocation.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Collocation",
+      "explanation": "Practice Collocation."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Collocation, Picture & Sound Vocabulary",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "The company needs to ___ a decision quickly.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2,QuickCheck",
+      "explanation": "Make a decision is the standard collocation.",
+      "correctIndex": 1,
+      "answers": [
+        "make",
+        "do",
+        "take up",
+        "put"
+      ]
+    },
+    {
+      "question": "Which category best matches the picture?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Image,B2,QuickCheck",
+      "explanation": "Coffee is a beverage (a drink).",
+      "media": {
+        "image": {
+          "src": "media/images/vocab/coffee.svg",
+          "alt": "a beverage"
+        }
+      },
+      "correctIndex": 1,
+      "answers": [
+        "a beverage",
+        "a timepiece",
+        "a piece of furniture",
+        "a vehicle"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

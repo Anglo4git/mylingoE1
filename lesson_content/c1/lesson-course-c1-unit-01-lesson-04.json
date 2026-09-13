@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-c1-unit-01-lesson-04",
+  "title": "Lesson: Ellipsis",
+  "description": "Practice Ellipsis.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Ellipsis.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C1",
+      "media": {},
+      "subprompt": "Ellipsis",
+      "explanation": "Practice Ellipsis."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Ellipsis",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C1"
+    },
+    {
+      "question": "I can finish the report, and she can ___ too.",
+      "category": "Grammar",
+      "tags": "Grammar,C1,QuickCheck",
+      "explanation": "The repeated main verb can be retained or omitted after a modal; finish is the natural completion.",
+      "correctIndex": 3,
+      "answers": [
+        "does",
+        "so",
+        "finish",
+        "can"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C1"
+    }
+  ]
+}

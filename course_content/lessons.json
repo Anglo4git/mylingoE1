@@ -15,7 +15,8 @@
       "a1-011"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-01"
   },
   {
     "lesson_id": "course-a1-unit-01-lesson-02",
@@ -33,7 +34,8 @@
       "a1-012"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-02"
   },
   {
     "lesson_id": "course-a1-unit-01-lesson-03",
@@ -50,7 +52,8 @@
       "a1-003"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-03"
   },
   {
     "lesson_id": "course-a1-unit-01-lesson-04",
@@ -67,7 +70,8 @@
       "a1-004"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-04"
   },
   {
     "lesson_id": "course-a1-unit-01-lesson-05",
@@ -84,7 +88,8 @@
       "a1-005"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-05"
   },
   {
     "lesson_id": "course-a1-unit-01-lesson-06",
@@ -101,7 +106,8 @@
       "a1-006"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-06"
   },
   {
     "lesson_id": "course-a1-unit-01-lesson-07",
@@ -118,7 +124,8 @@
       "a1-007"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-07"
   },
   {
     "lesson_id": "course-a1-unit-01-lesson-08",
@@ -135,7 +142,8 @@
       "a1-008"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-08"
   },
   {
     "lesson_id": "course-a1-unit-01-lesson-09",
@@ -152,7 +160,8 @@
       "a1-009"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-09"
   },
   {
     "lesson_id": "course-a1-unit-02-lesson-01",
@@ -166,10 +175,12 @@
     "presentation_url": null,
     "youtube_url": null,
     "exercise_quiz_ids": [
-      "a1-010"
+      "a1-010",
+      "a1-media-01"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-02-lesson-01"
   },
   {
     "lesson_id": "course-a2-unit-01-lesson-01",
@@ -186,7 +197,8 @@
       "a2-001"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-01"
   },
   {
     "lesson_id": "course-a2-unit-01-lesson-02",
@@ -203,7 +215,8 @@
       "a2-002"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-02"
   },
   {
     "lesson_id": "course-a2-unit-01-lesson-03",
@@ -220,7 +233,8 @@
       "a2-003"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-03"
   },
   {
     "lesson_id": "course-a2-unit-01-lesson-04",
@@ -237,7 +251,8 @@
       "a2-004"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-04"
   },
   {
     "lesson_id": "course-a2-unit-01-lesson-05",
@@ -254,7 +269,8 @@
       "a2-005"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-05"
   },
   {
     "lesson_id": "course-a2-unit-01-lesson-06",
@@ -271,7 +287,8 @@
       "a2-006"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-06"
   },
   {
     "lesson_id": "course-a2-unit-01-lesson-07",
@@ -288,7 +305,8 @@
       "a2-007"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-07"
   },
   {
     "lesson_id": "course-a2-unit-01-lesson-08",
@@ -305,7 +323,8 @@
       "a2-008"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-08"
   },
   {
     "lesson_id": "course-a2-unit-01-lesson-09",
@@ -322,7 +341,8 @@
       "a2-009"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-09"
   },
   {
     "lesson_id": "course-a2-unit-02-lesson-01",
@@ -336,10 +356,12 @@
     "presentation_url": null,
     "youtube_url": null,
     "exercise_quiz_ids": [
-      "a2-010"
+      "a2-010",
+      "a2-media-01"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-02-lesson-01"
   },
   {
     "lesson_id": "course-b1-unit-01-lesson-01",
@@ -356,7 +378,8 @@
       "b1-001"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b1-unit-01-lesson-01"
   },
   {
     "lesson_id": "course-b1-unit-01-lesson-02",
@@ -373,7 +396,8 @@
       "b1-002"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b1-unit-01-lesson-02"
   },
   {
     "lesson_id": "course-b1-unit-01-lesson-03",
@@ -390,7 +414,8 @@
       "b1-003"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b1-unit-01-lesson-03"
   },
   {
     "lesson_id": "course-b1-unit-01-lesson-04",
@@ -407,7 +432,8 @@
       "b1-004"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b1-unit-01-lesson-04"
   },
   {
     "lesson_id": "course-b1-unit-01-lesson-05",
@@ -424,7 +450,8 @@
       "b1-005"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b1-unit-01-lesson-05"
   },
   {
     "lesson_id": "course-b1-unit-01-lesson-06",
@@ -441,7 +468,8 @@
       "b1-006"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b1-unit-01-lesson-06"
   },
   {
     "lesson_id": "course-b1-unit-01-lesson-07",
@@ -458,7 +486,8 @@
       "b1-007"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b1-unit-01-lesson-07"
   },
   {
     "lesson_id": "course-b1-unit-01-lesson-08",
@@ -475,7 +504,8 @@
       "b1-009"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b1-unit-01-lesson-08"
   },
   {
     "lesson_id": "course-b1-unit-02-lesson-01",
@@ -489,10 +519,12 @@
     "presentation_url": null,
     "youtube_url": null,
     "exercise_quiz_ids": [
-      "b1-010"
+      "b1-010",
+      "b1-media-01"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b1-unit-02-lesson-01"
   },
   {
     "lesson_id": "course-b1-unit-03-lesson-01",
@@ -509,7 +541,8 @@
       "b1-008"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b1-unit-03-lesson-01"
   },
   {
     "lesson_id": "course-b2-unit-01-lesson-01",
@@ -526,7 +559,8 @@
       "b2-001"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b2-unit-01-lesson-01"
   },
   {
     "lesson_id": "course-b2-unit-01-lesson-02",
@@ -543,7 +577,8 @@
       "b2-002"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b2-unit-01-lesson-02"
   },
   {
     "lesson_id": "course-b2-unit-01-lesson-03",
@@ -560,7 +595,8 @@
       "b2-003"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b2-unit-01-lesson-03"
   },
   {
     "lesson_id": "course-b2-unit-01-lesson-04",
@@ -577,7 +613,8 @@
       "b2-004"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b2-unit-01-lesson-04"
   },
   {
     "lesson_id": "course-b2-unit-01-lesson-05",
@@ -594,7 +631,8 @@
       "b2-005"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b2-unit-01-lesson-05"
   },
   {
     "lesson_id": "course-b2-unit-01-lesson-06",
@@ -611,7 +649,8 @@
       "b2-006"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b2-unit-01-lesson-06"
   },
   {
     "lesson_id": "course-b2-unit-01-lesson-07",
@@ -628,7 +667,8 @@
       "b2-009"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b2-unit-01-lesson-07"
   },
   {
     "lesson_id": "course-b2-unit-02-lesson-01",
@@ -642,10 +682,12 @@
     "presentation_url": null,
     "youtube_url": null,
     "exercise_quiz_ids": [
-      "b2-008"
+      "b2-008",
+      "b2-media-01"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b2-unit-02-lesson-01"
   },
   {
     "lesson_id": "course-b2-unit-03-lesson-01",
@@ -662,7 +704,8 @@
       "b2-010"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b2-unit-03-lesson-01"
   },
   {
     "lesson_id": "course-b2-unit-04-lesson-01",
@@ -679,7 +722,8 @@
       "b2-007"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b2-unit-04-lesson-01"
   },
   {
     "lesson_id": "course-c1-unit-01-lesson-01",
@@ -696,7 +740,8 @@
       "c1-001"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c1-unit-01-lesson-01"
   },
   {
     "lesson_id": "course-c1-unit-01-lesson-02",
@@ -713,7 +758,8 @@
       "c1-002"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c1-unit-01-lesson-02"
   },
   {
     "lesson_id": "course-c1-unit-01-lesson-03",
@@ -730,7 +776,8 @@
       "c1-003"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c1-unit-01-lesson-03"
   },
   {
     "lesson_id": "course-c1-unit-01-lesson-04",
@@ -747,7 +794,8 @@
       "c1-006"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c1-unit-01-lesson-04"
   },
   {
     "lesson_id": "course-c1-unit-01-lesson-05",
@@ -764,7 +812,8 @@
       "c1-008"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c1-unit-01-lesson-05"
   },
   {
     "lesson_id": "course-c1-unit-02-lesson-01",
@@ -778,10 +827,12 @@
     "presentation_url": null,
     "youtube_url": null,
     "exercise_quiz_ids": [
-      "c1-007"
+      "c1-007",
+      "c1-media-01"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c1-unit-02-lesson-01"
   },
   {
     "lesson_id": "course-c1-unit-02-lesson-02",
@@ -798,7 +849,8 @@
       "c1-010"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c1-unit-02-lesson-02"
   },
   {
     "lesson_id": "course-c1-unit-03-lesson-01",
@@ -815,7 +867,8 @@
       "c1-004"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c1-unit-03-lesson-01"
   },
   {
     "lesson_id": "course-c1-unit-04-lesson-01",
@@ -832,7 +885,8 @@
       "c1-005"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c1-unit-04-lesson-01"
   },
   {
     "lesson_id": "course-c1-unit-04-lesson-02",
@@ -849,7 +903,8 @@
       "c1-009"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c1-unit-04-lesson-02"
   },
   {
     "lesson_id": "course-c2-unit-01-lesson-01",
@@ -866,7 +921,8 @@
       "c2-001"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c2-unit-01-lesson-01"
   },
   {
     "lesson_id": "course-c2-unit-01-lesson-02",
@@ -883,7 +939,8 @@
       "c2-002"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c2-unit-01-lesson-02"
   },
   {
     "lesson_id": "course-c2-unit-01-lesson-03",
@@ -900,7 +957,8 @@
       "c2-003"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c2-unit-01-lesson-03"
   },
   {
     "lesson_id": "course-c2-unit-01-lesson-04",
@@ -917,7 +975,8 @@
       "c2-006"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c2-unit-01-lesson-04"
   },
   {
     "lesson_id": "course-c2-unit-01-lesson-05",
@@ -934,7 +993,8 @@
       "c2-007"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c2-unit-01-lesson-05"
   },
   {
     "lesson_id": "course-c2-unit-02-lesson-01",
@@ -948,10 +1008,12 @@
     "presentation_url": null,
     "youtube_url": null,
     "exercise_quiz_ids": [
-      "c2-005"
+      "c2-005",
+      "c2-media-01"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c2-unit-02-lesson-01"
   },
   {
     "lesson_id": "course-c2-unit-02-lesson-02",
@@ -968,7 +1030,8 @@
       "c2-008"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c2-unit-02-lesson-02"
   },
   {
     "lesson_id": "course-c2-unit-02-lesson-03",
@@ -985,7 +1048,8 @@
       "c2-009"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c2-unit-02-lesson-03"
   },
   {
     "lesson_id": "course-c2-unit-03-lesson-01",
@@ -1002,7 +1066,8 @@
       "c2-004"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c2-unit-03-lesson-01"
   },
   {
     "lesson_id": "course-c2-unit-04-lesson-01",
@@ -1019,7 +1084,8 @@
       "c2-010"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c2-unit-04-lesson-01"
   },
   {
     "lesson_id": "course-a2-unit-02-lesson-02",
@@ -1034,7 +1100,7 @@
         "present perfect"
       ],
       "examples": [
-        "I've already learned these words \u2014 now let's use them in context.",
+        "I've already learned these words — now let's use them in context.",
         "Have you used the present perfect correctly in a sentence today?"
       ],
       "estimated_minutes": 8
@@ -1046,7 +1112,8 @@
       "a2-009"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-02-lesson-02"
   },
   {
     "lesson_id": "course-c1-unit-04-lesson-03",
@@ -1075,6 +1142,7 @@
       "c1-004"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c1-unit-04-lesson-03"
   }
 ]

@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-c1-unit-04-lesson-01",
+  "title": "Lesson: Nominalisation",
+  "description": "Practice Nominalisation.",
+  "brand": "Mylingo",
+  "category": "Academic English",
+  "tags": "Lesson,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Nominalisation.",
+      "question_type": "banner",
+      "category": "Academic English",
+      "tags": "Lesson,C1",
+      "media": {},
+      "subprompt": "Nominalisation",
+      "explanation": "Practice Nominalisation."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Nominalisation",
+      "question_type": "banner",
+      "category": "Academic English",
+      "tags": "Lesson,C1"
+    },
+    {
+      "question": "The committee decided to delay the vote. The ___ was unexpected.",
+      "category": "Academic English",
+      "tags": "Academic English,C1,QuickCheck",
+      "explanation": "Decision is the noun form of decide.",
+      "correctIndex": 2,
+      "answers": [
+        "decide",
+        "decision",
+        "deciding",
+        "decisive"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Academic English",
+      "tags": "Lesson,C1"
+    }
+  ]
+}

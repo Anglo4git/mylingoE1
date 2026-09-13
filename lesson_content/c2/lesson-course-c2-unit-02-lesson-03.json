@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-c2-unit-02-lesson-03",
+  "title": "Lesson: Idiomatic Precision",
+  "description": "Practice Idiomatic Precision.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,C2",
+  "level": "C2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Idiomatic Precision.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,C2",
+      "media": {},
+      "subprompt": "Idiomatic Precision",
+      "explanation": "Practice Idiomatic Precision."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Idiomatic Precision",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,C2"
+    },
+    {
+      "question": "The new evidence ___ serious doubt on the original claim.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C2,QuickCheck",
+      "explanation": "Cast doubt on is the standard collocation.",
+      "correctIndex": 3,
+      "answers": [
+        "throws up",
+        "does",
+        "casts",
+        "makes"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,C2"
+    }
+  ]
+}

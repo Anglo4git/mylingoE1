@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-01-lesson-07",
+  "title": "Lesson: Concession",
+  "description": "Practice Concession.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Concession.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Concession",
+      "explanation": "Practice Concession."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Concession",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "___ the heavy traffic, we arrived on time.",
+      "category": "Grammar",
+      "tags": "Grammar,B2,QuickCheck",
+      "explanation": "Despite is followed by a noun phrase or gerund.",
+      "correctIndex": 2,
+      "answers": [
+        "Although of",
+        "Despite",
+        "However",
+        "Because"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

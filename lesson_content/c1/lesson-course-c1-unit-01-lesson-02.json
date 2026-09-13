@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-c1-unit-01-lesson-02",
+  "title": "Lesson: Subjunctive",
+  "description": "Practice Subjunctive.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Subjunctive.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C1",
+      "media": {},
+      "subprompt": "Subjunctive",
+      "explanation": "Practice Subjunctive."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Subjunctive",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C1"
+    },
+    {
+      "question": "It is essential that every applicant ___ the form.",
+      "category": "Grammar",
+      "tags": "Grammar,C1,QuickCheck",
+      "explanation": "Formal English may use the base form after essential that.",
+      "correctIndex": 2,
+      "answers": [
+        "completes",
+        "complete",
+        "completed",
+        "will complete"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C1"
+    }
+  ]
+}

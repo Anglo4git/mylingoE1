@@ -1,0 +1,132 @@
+{
+  "id": "c1-media-01",
+  "title": "Picture & Sound Vocabulary",
+  "description": "Look, listen, and choose the most precise word.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,Media,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Which description best fits the picture?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Image,C1",
+      "explanation": "A key provides a means of access, e.g. to a lock.",
+      "media": {
+        "image": {
+          "src": "media/images/vocab/key.svg",
+          "alt": "a means of access"
+        }
+      },
+      "correctIndex": 4,
+      "answers": [
+        "a means of timekeeping",
+        "a means of transport",
+        "a means of communication",
+        "a means of access"
+      ]
+    },
+    {
+      "question": "Which description best fits the picture?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Image,C1",
+      "explanation": "A phone is a means of communication.",
+      "media": {
+        "image": {
+          "src": "media/images/vocab/phone.svg",
+          "alt": "a means of communication"
+        }
+      },
+      "correctIndex": 2,
+      "answers": [
+        "a means of timekeeping",
+        "a means of communication",
+        "a means of access",
+        "a beverage"
+      ]
+    },
+    {
+      "question": "Which description best fits the picture?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Image,C1",
+      "explanation": "A clock is an instrument for measuring time.",
+      "media": {
+        "image": {
+          "src": "media/images/vocab/clock.svg",
+          "alt": "an instrument for measuring time"
+        }
+      },
+      "correctIndex": 1,
+      "answers": [
+        "an instrument for measuring time",
+        "a means of access",
+        "a beverage container",
+        "an instrument for measuring distance"
+      ]
+    },
+    {
+      "question": "Which description best fits the picture?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Image,C1",
+      "explanation": "Coffee is a stimulant beverage due to its caffeine content.",
+      "media": {
+        "image": {
+          "src": "media/images/vocab/coffee.svg",
+          "alt": "a stimulant beverage"
+        }
+      },
+      "correctIndex": 2,
+      "answers": [
+        "an instrument for measuring time",
+        "a stimulant beverage",
+        "a means of access",
+        "a mode of transport"
+      ]
+    },
+    {
+      "question": "Listen. What did the negotiations hinge on?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Audio,C1",
+      "explanation": "The negotiations hinged on a phone call.",
+      "media": {
+        "audio": {
+          "tts": "The negotiations hinged on a single, decisive phone call.",
+          "label": "Listen to the sentence"
+        }
+      },
+      "correctIndex": 1,
+      "answers": [
+        "phone call",
+        "coffee break",
+        "key exchange",
+        "bicycle ride"
+      ]
+    },
+    {
+      "question": "Listen. What were latecomers reminded to check?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Audio,C1",
+      "explanation": "Latecomers were reminded to check the clock.",
+      "media": {
+        "audio": {
+          "tts": "Punctuality was enforced; latecomers were reminded to check the clock.",
+          "label": "Listen to the sentence"
+        }
+      },
+      "correctIndex": 4,
+      "answers": [
+        "key",
+        "phone",
+        "coffee",
+        "clock"
+      ]
+    }
+  ]
+}

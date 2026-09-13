@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-01-lesson-03",
+  "title": "Lesson: Articles",
+  "description": "Practice Articles.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Articles.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Articles",
+      "explanation": "Practice Articles."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Articles",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "I have ___ apple.",
+      "category": "Grammar",
+      "tags": "Grammar,A1,QuickCheck",
+      "explanation": "Use an before a vowel sound.",
+      "correctIndex": 1,
+      "answers": [
+        "an",
+        "a",
+        "the",
+        "some"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

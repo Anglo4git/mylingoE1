@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-03-lesson-01",
+  "title": "Lesson: Linkers",
+  "description": "Practice Linkers.",
+  "brand": "Mylingo",
+  "category": "Writing",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Linkers.",
+      "question_type": "banner",
+      "category": "Writing",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Linkers",
+      "explanation": "Practice Linkers."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Linkers",
+      "question_type": "banner",
+      "category": "Writing",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "I was tired; ___, I finished the report.",
+      "category": "Writing",
+      "tags": "Writing,B1,QuickCheck",
+      "explanation": "However introduces a contrast.",
+      "correctIndex": 4,
+      "answers": [
+        "because",
+        "so that",
+        "unless",
+        "however"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Writing",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

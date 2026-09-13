@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-01-lesson-04",
+  "title": "Lesson: Reported Speech",
+  "description": "Practice Reported Speech.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Reported Speech.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Reported Speech",
+      "explanation": "Practice Reported Speech."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Reported Speech",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "He said that he ___ tired.",
+      "category": "Grammar",
+      "tags": "Grammar,B1,QuickCheck",
+      "explanation": "Backshift is commonly used when reporting a past statement.",
+      "correctIndex": 1,
+      "answers": [
+        "was",
+        "is",
+        "has",
+        "will"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-c1-unit-03-lesson-01",
+  "title": "Lesson: Discourse Markers",
+  "description": "Practice Discourse Markers.",
+  "brand": "Mylingo",
+  "category": "Writing",
+  "tags": "Lesson,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Discourse Markers.",
+      "question_type": "banner",
+      "category": "Writing",
+      "tags": "Lesson,C1",
+      "media": {},
+      "subprompt": "Discourse Markers",
+      "explanation": "Practice Discourse Markers."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Discourse Markers",
+      "question_type": "banner",
+      "category": "Writing",
+      "tags": "Lesson,C1"
+    },
+    {
+      "question": "The proposal is ambitious. ___, it is financially realistic.",
+      "category": "Writing",
+      "tags": "Writing,C1,QuickCheck",
+      "explanation": "Nevertheless signals contrast.",
+      "correctIndex": 4,
+      "answers": [
+        "For example",
+        "Similarly",
+        "Consequently",
+        "Nevertheless"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Writing",
+      "tags": "Lesson,C1"
+    }
+  ]
+}

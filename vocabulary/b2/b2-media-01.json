@@ -1,0 +1,132 @@
+{
+  "id": "b2-media-01",
+  "title": "Picture & Sound Vocabulary",
+  "description": "Look, listen, and choose the closest word.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,Media,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Which category best matches the picture?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Image,B2",
+      "explanation": "Coffee is a beverage (a drink).",
+      "media": {
+        "image": {
+          "src": "media/images/vocab/coffee.svg",
+          "alt": "a beverage"
+        }
+      },
+      "correctIndex": 1,
+      "answers": [
+        "a beverage",
+        "a timepiece",
+        "a piece of furniture",
+        "a vehicle"
+      ]
+    },
+    {
+      "question": "Which category best matches the picture?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Image,B2",
+      "explanation": "A bicycle is a mode of transport.",
+      "media": {
+        "image": {
+          "src": "media/images/vocab/bicycle.svg",
+          "alt": "a mode of transport"
+        }
+      },
+      "correctIndex": 4,
+      "answers": [
+        "a beverage",
+        "a timepiece",
+        "a household object",
+        "a mode of transport"
+      ]
+    },
+    {
+      "question": "Which category best matches the picture?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Image,B2",
+      "explanation": "A clock is a timepiece — it tells the time.",
+      "media": {
+        "image": {
+          "src": "media/images/vocab/clock.svg",
+          "alt": "a timepiece"
+        }
+      },
+      "correctIndex": 3,
+      "answers": [
+        "a beverage",
+        "a piece of jewelry",
+        "a timepiece",
+        "a mode of transport"
+      ]
+    },
+    {
+      "question": "Which category best matches the picture?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Image,B2",
+      "explanation": "An umbrella is an accessory used for protection from rain.",
+      "media": {
+        "image": {
+          "src": "media/images/vocab/umbrella.svg",
+          "alt": "a rain accessory"
+        }
+      },
+      "correctIndex": 2,
+      "answers": [
+        "a timepiece",
+        "a rain accessory",
+        "a vehicle",
+        "a beverage"
+      ]
+    },
+    {
+      "question": "Listen. What item did she leave without?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Audio,B2",
+      "explanation": "She left without her umbrella.",
+      "media": {
+        "audio": {
+          "tts": "Despite the forecast, she left without her umbrella.",
+          "label": "Listen to the sentence"
+        }
+      },
+      "correctIndex": 2,
+      "answers": [
+        "clock",
+        "umbrella",
+        "coffee",
+        "bicycle"
+      ]
+    },
+    {
+      "question": "Listen. How does he commute?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Audio,B2",
+      "explanation": "He commutes by bicycle.",
+      "media": {
+        "audio": {
+          "tts": "He commutes by bicycle regardless of the weather.",
+          "label": "Listen to the sentence"
+        }
+      },
+      "correctIndex": 2,
+      "answers": [
+        "phone",
+        "bicycle",
+        "umbrella",
+        "coffee"
+      ]
+    }
+  ]
+}

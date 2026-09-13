@@ -1,0 +1,132 @@
+{
+  "id": "a1-media-01",
+  "title": "Picture & Sound Vocabulary",
+  "description": "Look, listen, and choose the right word.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,Media,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "What is shown in the picture?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Image,A1",
+      "explanation": "This fruit is called an apple.",
+      "media": {
+        "image": {
+          "src": "media/images/vocab/apple.svg",
+          "alt": "an apple"
+        }
+      },
+      "correctIndex": 3,
+      "answers": [
+        "a book",
+        "a house",
+        "an apple",
+        "a car"
+      ]
+    },
+    {
+      "question": "What is shown in the picture?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Image,A1",
+      "explanation": "People live in a house.",
+      "media": {
+        "image": {
+          "src": "media/images/vocab/house.svg",
+          "alt": "a house"
+        }
+      },
+      "correctIndex": 1,
+      "answers": [
+        "a house",
+        "a dog",
+        "a car",
+        "an apple"
+      ]
+    },
+    {
+      "question": "What is shown in the picture?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Image,A1",
+      "explanation": "A car is used for driving.",
+      "media": {
+        "image": {
+          "src": "media/images/vocab/car.svg",
+          "alt": "a car"
+        }
+      },
+      "correctIndex": 2,
+      "answers": [
+        "a cat",
+        "a car",
+        "a book",
+        "a house"
+      ]
+    },
+    {
+      "question": "What is shown in the picture?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Image,A1",
+      "explanation": "This animal is a dog.",
+      "media": {
+        "image": {
+          "src": "media/images/vocab/dog.svg",
+          "alt": "a dog"
+        }
+      },
+      "correctIndex": 4,
+      "answers": [
+        "a car",
+        "a book",
+        "a cat",
+        "a dog"
+      ]
+    },
+    {
+      "question": "Listen. What does the sentence mention?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Audio,A1",
+      "explanation": "The sentence talks about a book.",
+      "media": {
+        "audio": {
+          "tts": "I read a book every night.",
+          "label": "Listen to the sentence"
+        }
+      },
+      "correctIndex": 3,
+      "answers": [
+        "dog",
+        "apple",
+        "book",
+        "car"
+      ]
+    },
+    {
+      "question": "Listen. What animal is mentioned?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Audio,A1",
+      "explanation": "The sentence mentions a cat.",
+      "media": {
+        "audio": {
+          "tts": "The cat is sleeping on the chair.",
+          "label": "Listen to the sentence"
+        }
+      },
+      "correctIndex": 2,
+      "answers": [
+        "bus",
+        "cat",
+        "tree",
+        "dog"
+      ]
+    }
+  ]
+}

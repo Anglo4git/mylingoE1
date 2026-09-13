@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-c2-unit-02-lesson-02",
+  "title": "Lesson: Pragmatics",
+  "description": "Practice Pragmatics.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,C2",
+  "level": "C2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Pragmatics.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,C2",
+      "media": {},
+      "subprompt": "Pragmatics",
+      "explanation": "Practice Pragmatics."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Pragmatics",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,C2"
+    },
+    {
+      "question": "Her 'That's interesting' was probably ___ given her dismissive tone.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C2,QuickCheck",
+      "explanation": "Tone and context can make a seemingly positive phrase sarcastic.",
+      "correctIndex": 3,
+      "answers": [
+        "enthusiastic",
+        "literal",
+        "sarcastic",
+        "grateful"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,C2"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a2-unit-01-lesson-02",
+  "title": "Lesson: Present Continuous",
+  "description": "Practice Present Continuous.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Present Continuous.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Present Continuous",
+      "explanation": "Practice Present Continuous."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Present Continuous",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "Look! The baby ___.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "Use am/is/are + -ing for an action happening now.",
+      "correctIndex": 2,
+      "answers": [
+        "sleep",
+        "is sleeping",
+        "sleeps",
+        "slept"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

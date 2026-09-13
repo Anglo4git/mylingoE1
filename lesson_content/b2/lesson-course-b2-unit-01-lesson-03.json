@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-01-lesson-03",
+  "title": "Lesson: Modal Perfect",
+  "description": "Practice Modal Perfect.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Modal Perfect.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Modal Perfect",
+      "explanation": "Practice Modal Perfect."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Modal Perfect",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "She ___ have forgotten the meeting; she never misses one.",
+      "category": "Grammar",
+      "tags": "Grammar,B2,QuickCheck",
+      "explanation": "Can't have + past participle expresses a strong negative deduction.",
+      "correctIndex": 3,
+      "answers": [
+        "must",
+        "should",
+        "can't",
+        "can"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

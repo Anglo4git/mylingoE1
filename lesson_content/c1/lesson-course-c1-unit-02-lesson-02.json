@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-c1-unit-02-lesson-02",
+  "title": "Lesson: Collocation",
+  "description": "Practice Collocation.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Collocation.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,C1",
+      "media": {},
+      "subprompt": "Collocation",
+      "explanation": "Practice Collocation."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Collocation",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,C1"
+    },
+    {
+      "question": "The report draws ___ attention to a serious gap.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1,QuickCheck",
+      "explanation": "Draw sharp attention to is a natural formal collocation.",
+      "correctIndex": 3,
+      "answers": [
+        "strong",
+        "heavy",
+        "sharp",
+        "big"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,C1"
+    }
+  ]
+}

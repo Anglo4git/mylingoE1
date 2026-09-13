@@ -55,6 +55,9 @@ main{max-width:920px;margin:auto;padding:20px 16px 32px}
 .qimg-wrap img{max-width:100%;max-height:280px;border-radius:var(--image-card-radius);display:inline-block;object-fit:contain}
 .media-audio{margin:0 0 14px;padding:12px 14px;border:1px solid var(--line);border-radius:var(--audio-card-radius);background:#fbfcfe}
 .media-audio audio{display:block;width:100%;min-height:44px}
+.tts-play{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;min-height:44px;border:1px solid var(--brand);background:var(--brand-soft);color:var(--brand-dark);border-radius:12px;font-weight:800;font-size:15px;cursor:pointer}
+.tts-play:active{transform:scale(.98)}
+.tts-play[aria-pressed="true"]{background:var(--brand);color:#fff}
 .media-label{display:block;font-size:12px;font-weight:800;color:var(--muted);margin-bottom:8px}
 .question{font-size:clamp(21px,4vw,30px);line-height:1.4;font-weight:900;text-align:center}
 .blank{display:inline-block;min-width:64px;color:transparent;border-bottom:3px solid var(--line);padding:0 4px;transition:color var(--dur-standard) var(--ease-emphasis),border-color var(--dur-standard) var(--ease-emphasis)}
@@ -169,6 +172,7 @@ main{max-width:920px;margin:auto;padding:20px 16px 32px}
   <div class="media-audio" id="qaudioWrap" style="display:none">
     <span class="media-label" id="qaudioLabel">Listen</span>
     <audio id="qaudio" controls preload="none"></audio>
+    <button type="button" class="tts-play" id="qttsBtn" style="display:none">🔊 Play audio</button>
   </div>
   <div class="question" id="question" role="heading" aria-level="1">Loading…</div>
   <p class="subprompt" id="subprompt">Choose the best answer.</p>
@@ -268,6 +272,7 @@ $('speedBtn').onclick=()=>{audioSpeed=audioSpeed===1?0.75:1;try{localStorage.set
 updateSpeedBtn();
 function stopAllSounds(){
   Object.values(sfxCache).forEach(a=>{try{a.pause();a.currentTime=0}catch(e){}});
+  try{if('speechSynthesis' in window)window.speechSynthesis.cancel()}catch(e){}
 }
 function playSfx(name,volume){
   if(!soundOn) return null;
@@ -512,8 +517,27 @@ function normalizeText(v){return String(v??'').trim().replace(/\s+/g,' ').toLowe
 function mediaValue(q,key){
   const m=q&&q.media&&typeof q.media==='object'?q.media:null;
   const value=m&&m[key]!=null?m[key]:q&&q[key+'Url'];
-  if(value&&typeof value==='object') return {src:value.src||value.url||'',alt:value.alt||value.label||'',label:value.label||''};
-  return {src:typeof value==='string'?value:'',alt:q&&q[key+'Alt']||'',label:''};
+  if(value&&typeof value==='object') return {src:value.src||value.url||'',alt:value.alt||value.label||'',label:value.label||'',tts:value.tts||''};
+  return {src:typeof value==='string'?value:'',alt:q&&q[key+'Alt']||'',label:'',tts:m&&typeof m[key+'Tts']==='string'?m[key+'Tts']:''};
+}
+// Audio questions may ship a real file (media.audio.src) or, when no audio
+// asset exists, a media.audio.tts string spoken client-side via the Web
+// Speech API — this lets "listen and answer" questions work fully offline
+// without shipping/recording an audio file for every sentence.
+let ttsUtterance=null;
+function speakTts(text){
+  try{
+    if(!('speechSynthesis' in window))return false;
+    window.speechSynthesis.cancel();
+    ttsUtterance=new SpeechSynthesisUtterance(text);
+    ttsUtterance.rate=audioSpeed;
+    ttsUtterance.lang='en-US';
+    const btn=$('qttsBtn');
+    ttsUtterance.onstart=()=>{if(btn){btn.setAttribute('aria-pressed','true');btn.textContent='🔊 Playing…'}};
+    ttsUtterance.onend=ttsUtterance.onerror=()=>{if(btn){btn.setAttribute('aria-pressed','false');btn.textContent='🔊 Play audio'}};
+    window.speechSynthesis.speak(ttsUtterance);
+    return true;
+  }catch(e){return false}
 }
 function questionHTML(text){
   return esc(text).split(/_{3,}/).join('<span class="blank">______</span>');
@@ -688,9 +712,18 @@ function renderMedia(q){
   const img=mediaValue(q,'image'),iw=$('qimgWrap');
   if(img.src){$('qimg').src=img.src;$('qimg').alt=img.alt||'';iw.style.display='block';$('qimg').onerror=()=>{iw.style.display='none'}}
   else{iw.style.display='none';$('qimg').removeAttribute('src')}
-  const au=mediaValue(q,'audio'),aw=$('qaudioWrap');
-  if(au.src){$('qaudio').src=au.src;$('qaudio').setAttribute('aria-label',au.label||'Question audio');$('qaudioLabel').textContent=au.label||'Listen';aw.style.display='block'}
-  else{aw.style.display='none';$('qaudio').removeAttribute('src');$('qaudio').load()}
+  const au=mediaValue(q,'audio'),aw=$('qaudioWrap'),ttsBtn=$('qttsBtn');
+  if(au.src){
+    $('qaudio').style.display='block';$('qaudio').src=au.src;$('qaudio').setAttribute('aria-label',au.label||'Question audio');
+    $('qaudioLabel').textContent=au.label||'Listen';aw.style.display='block';ttsBtn.style.display='none';
+  }else if(au.tts){
+    $('qaudio').style.display='none';$('qaudio').removeAttribute('src');
+    $('qaudioLabel').textContent=au.label||'Listen';aw.style.display='block';
+    ttsBtn.style.display='flex';ttsBtn.setAttribute('aria-pressed','false');ttsBtn.textContent='🔊 Play audio';
+    ttsBtn.onclick=()=>{if(!speakTts(au.tts))ttsBtn.textContent='Audio unavailable on this device'};
+  }else{
+    aw.style.display='none';$('qaudio').removeAttribute('src');$('qaudio').load();ttsBtn.style.display='none';
+  }
 }
 function makeCheckButton(onclick,label='Check answer'){
   const wrap=document.createElement('div');wrap.className='answer-actions';

@@ -1,0 +1,67 @@
+{
+  "id": "lesson-course-a1-unit-02-lesson-01",
+  "title": "Lesson: Everyday Vocabulary",
+  "description": "Practice everyday vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice everyday vocabulary.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Everyday Vocabulary",
+      "explanation": "Practice everyday vocabulary."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Everyday Vocabulary, Picture & Sound Vocabulary",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "What is the closest meaning of “happy”?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1,QuickCheck",
+      "explanation": "Happy means feeling glad.",
+      "correctIndex": 4,
+      "answers": [
+        "sad",
+        "angry",
+        "tired",
+        "glad"
+      ]
+    },
+    {
+      "question": "What is shown in the picture?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Image,A1,QuickCheck",
+      "explanation": "This fruit is called an apple.",
+      "media": {
+        "image": {
+          "src": "media/images/vocab/apple.svg",
+          "alt": "an apple"
+        }
+      },
+      "correctIndex": 3,
+      "answers": [
+        "a book",
+        "a house",
+        "an apple",
+        "a car"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-01-lesson-05",
+  "title": "Lesson: Participle Clauses",
+  "description": "Practice Participle Clauses.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Participle Clauses.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Participle Clauses",
+      "explanation": "Practice Participle Clauses."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Participle Clauses",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "___ the report, she sent it to the manager.",
+      "category": "Grammar",
+      "tags": "Grammar,B2,QuickCheck",
+      "explanation": "Having + past participle shows the first action happened before the second.",
+      "correctIndex": 1,
+      "answers": [
+        "Having finished",
+        "Finishing",
+        "To finish",
+        "Finished"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-01-lesson-03",
+  "title": "Lesson: Relative Clauses",
+  "description": "Practice Relative Clauses.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Relative Clauses.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Relative Clauses",
+      "explanation": "Practice Relative Clauses."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Relative Clauses",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "The woman ___ lives next door is a doctor.",
+      "category": "Grammar",
+      "tags": "Grammar,B1,QuickCheck",
+      "explanation": "Use who when the relative pronoun refers to a person in a defining relative clause.",
+      "correctIndex": 3,
+      "answers": [
+        "which",
+        "where",
+        "who",
+        "what"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

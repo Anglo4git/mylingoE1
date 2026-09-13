@@ -1,0 +1,74 @@
+{
+  "id": "lesson-course-a2-unit-02-lesson-02",
+  "title": "Lesson: Everyday Vocabulary Review",
+  "description": "A short mixed review pulling together everyday vocabulary and the present perfect, for learners who want extra practice before moving on.",
+  "brand": "Mylingo",
+  "category": "Mixed",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "A short mixed review pulling together everyday vocabulary and the present perfect, for learners who want extra practice before moving on.",
+      "question_type": "banner",
+      "category": "Mixed",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Everyday Vocabulary Review",
+      "explanation": "A short mixed review pulling together everyday vocabulary and the present perfect, for learners who want extra practice before moving on."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Everyday Vocabulary, Present Perfect",
+      "question_type": "banner",
+      "category": "Mixed",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "Examples",
+      "subprompt": "I've already learned these words — now let's use them in context. · Have you used the present perfect correctly in a sentence today?",
+      "question_type": "banner",
+      "category": "Mixed",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "Key terms",
+      "subprompt": "everyday vocabulary, present perfect",
+      "question_type": "banner",
+      "category": "Mixed",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "Which word is closest in meaning to “begin”?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "Begin and start have the same basic meaning.",
+      "correctIndex": 3,
+      "answers": [
+        "finish",
+        "stop",
+        "start",
+        "close"
+      ]
+    },
+    {
+      "question": "I ___ my homework already.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "Use have/has + past participle for a completed action connected to now.",
+      "correctIndex": 4,
+      "answers": [
+        "finish",
+        "finished",
+        "am finishing",
+        "have finished"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Mixed",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

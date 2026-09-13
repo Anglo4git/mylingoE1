@@ -1,0 +1,87 @@
+{
+  "id": "lesson-course-c1-unit-04-lesson-03",
+  "title": "Lesson: Academic Writing Integration",
+  "description": "An integrative revision lesson combining nominalisation, academic stance, and discourse markers for learners consolidating academic writing skills.",
+  "brand": "Mylingo",
+  "category": "Mixed",
+  "tags": "Lesson,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "An integrative revision lesson combining nominalisation, academic stance, and discourse markers for learners consolidating academic writing skills.",
+      "question_type": "banner",
+      "category": "Mixed",
+      "tags": "Lesson,C1",
+      "media": {},
+      "subprompt": "Academic Writing Integration",
+      "explanation": "An integrative revision lesson combining nominalisation, academic stance, and discourse markers for learners consolidating academic writing skills."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Nominalisation, Academic Stance, Discourse Markers",
+      "question_type": "banner",
+      "category": "Mixed",
+      "tags": "Lesson,C1"
+    },
+    {
+      "question": "Examples",
+      "subprompt": "Turning verbs into nouns can make writing sound more formal and academic. · Discourse markers like 'however' and 'furthermore' help structure an argument.",
+      "question_type": "banner",
+      "category": "Mixed",
+      "tags": "Lesson,C1"
+    },
+    {
+      "question": "Key terms",
+      "subprompt": "nominalisation, academic stance, discourse markers",
+      "question_type": "banner",
+      "category": "Mixed",
+      "tags": "Lesson,C1"
+    },
+    {
+      "question": "The committee decided to delay the vote. The ___ was unexpected.",
+      "category": "Academic English",
+      "tags": "Academic English,C1,QuickCheck",
+      "explanation": "Decision is the noun form of decide.",
+      "correctIndex": 2,
+      "answers": [
+        "decide",
+        "decision",
+        "deciding",
+        "decisive"
+      ]
+    },
+    {
+      "question": "The findings ___ indicate a relationship between the variables.",
+      "category": "Academic English",
+      "tags": "Academic English,C1,QuickCheck",
+      "explanation": "Appear to indicates cautious academic interpretation.",
+      "correctIndex": 2,
+      "answers": [
+        "definitely prove",
+        "appear to",
+        "obviously are",
+        "must"
+      ]
+    },
+    {
+      "question": "The proposal is ambitious. ___, it is financially realistic.",
+      "category": "Writing",
+      "tags": "Writing,C1,QuickCheck",
+      "explanation": "Nevertheless signals contrast.",
+      "correctIndex": 4,
+      "answers": [
+        "For example",
+        "Similarly",
+        "Consequently",
+        "Nevertheless"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Mixed",
+      "tags": "Lesson,C1"
+    }
+  ]
+}

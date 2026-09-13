@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-c1-unit-04-lesson-02",
+  "title": "Lesson: Academic Stance",
+  "description": "Practice Academic Stance.",
+  "brand": "Mylingo",
+  "category": "Academic English",
+  "tags": "Lesson,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Academic Stance.",
+      "question_type": "banner",
+      "category": "Academic English",
+      "tags": "Lesson,C1",
+      "media": {},
+      "subprompt": "Academic Stance",
+      "explanation": "Practice Academic Stance."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Academic Stance",
+      "question_type": "banner",
+      "category": "Academic English",
+      "tags": "Lesson,C1"
+    },
+    {
+      "question": "The findings ___ indicate a relationship between the variables.",
+      "category": "Academic English",
+      "tags": "Academic English,C1,QuickCheck",
+      "explanation": "Appear to indicates cautious academic interpretation.",
+      "correctIndex": 2,
+      "answers": [
+        "definitely prove",
+        "appear to",
+        "obviously are",
+        "must"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Academic English",
+      "tags": "Lesson,C1"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a2-unit-01-lesson-05",
+  "title": "Lesson: First Conditional",
+  "description": "Practice First Conditional.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice First Conditional.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "First Conditional",
+      "explanation": "Practice First Conditional."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "First Conditional",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "If it rains, we ___ at home.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "The first conditional uses if + present, then will + base verb.",
+      "correctIndex": 1,
+      "answers": [
+        "will stay",
+        "stay",
+        "stayed",
+        "would stay"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

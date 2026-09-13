@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-01-lesson-05",
+  "title": "Lesson: Gerunds and Infinitives",
+  "description": "Practice Gerunds and Infinitives.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Gerunds and Infinitives.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Gerunds and Infinitives",
+      "explanation": "Practice Gerunds and Infinitives."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Gerunds and Infinitives",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "She enjoys ___ books.",
+      "category": "Grammar",
+      "tags": "Grammar,B1,QuickCheck",
+      "explanation": "Enjoy is followed by a gerund (-ing form).",
+      "correctIndex": 4,
+      "answers": [
+        "read",
+        "to read",
+        "reads",
+        "reading"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

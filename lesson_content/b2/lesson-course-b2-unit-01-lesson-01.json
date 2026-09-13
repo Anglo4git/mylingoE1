@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-01-lesson-01",
+  "title": "Lesson: Mixed Conditionals",
+  "description": "Practice Mixed Conditionals.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Mixed Conditionals.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Mixed Conditionals",
+      "explanation": "Practice Mixed Conditionals."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Mixed Conditionals",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "If I had studied harder, I ___ more confident now.",
+      "category": "Grammar",
+      "tags": "Grammar,B2,QuickCheck",
+      "explanation": "A past condition can have a present result.",
+      "correctIndex": 1,
+      "answers": [
+        "would be",
+        "will be",
+        "am",
+        "would have been"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

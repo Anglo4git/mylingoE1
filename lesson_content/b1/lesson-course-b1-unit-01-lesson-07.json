@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-01-lesson-07",
+  "title": "Lesson: Passive Voice",
+  "description": "Practice Passive Voice.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Passive Voice.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Passive Voice",
+      "explanation": "Practice Passive Voice."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Passive Voice",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "The bridge ___ in 1990.",
+      "category": "Grammar",
+      "tags": "Grammar,B1,QuickCheck",
+      "explanation": "The past passive uses was/were + past participle.",
+      "correctIndex": 3,
+      "answers": [
+        "built",
+        "is building",
+        "was built",
+        "has build"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

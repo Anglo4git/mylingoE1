@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-01-lesson-06",
+  "title": "Lesson: Advanced Passive",
+  "description": "Practice Advanced Passive.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Advanced Passive.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Advanced Passive",
+      "explanation": "Practice Advanced Passive."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Advanced Passive",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "The suspect is believed ___ abroad.",
+      "category": "Grammar",
+      "tags": "Grammar,B2,QuickCheck",
+      "explanation": "Is believed + to have + past participle reports an earlier action.",
+      "correctIndex": 4,
+      "answers": [
+        "fleeing to have",
+        "that fled",
+        "to fleeing",
+        "to have fled"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "lesson-course-c1-unit-02-lesson-01",
+  "title": "Lesson: Lexical Precision",
+  "description": "Practice Lexical Precision.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Lexical Precision.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,C1",
+      "media": {},
+      "subprompt": "Lexical Precision",
+      "explanation": "Practice Lexical Precision."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Lexical Precision, Picture & Sound Vocabulary",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,C1"
+    },
+    {
+      "question": "The wording was ___; readers disagreed about its meaning.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1,QuickCheck",
+      "explanation": "Ambiguous means open to more than one interpretation.",
+      "correctIndex": 3,
+      "answers": [
+        "ambitious",
+        "arbitrary",
+        "ambiguous",
+        "obsolete"
+      ]
+    },
+    {
+      "question": "Which description best fits the picture?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Image,C1,QuickCheck",
+      "explanation": "A key provides a means of access, e.g. to a lock.",
+      "media": {
+        "image": {
+          "src": "media/images/vocab/key.svg",
+          "alt": "a means of access"
+        }
+      },
+      "correctIndex": 4,
+      "answers": [
+        "a means of timekeeping",
+        "a means of transport",
+        "a means of communication",
+        "a means of access"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,C1"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "lesson-course-a2-unit-02-lesson-01",
+  "title": "Lesson: Everyday Vocabulary",
+  "description": "Practice everyday vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice everyday vocabulary.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Everyday Vocabulary",
+      "explanation": "Practice everyday vocabulary."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Everyday Vocabulary, Picture & Sound Vocabulary",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "Which word is closest in meaning to “begin”?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "Begin and start have the same basic meaning.",
+      "correctIndex": 3,
+      "answers": [
+        "finish",
+        "stop",
+        "start",
+        "close"
+      ]
+    },
+    {
+      "question": "What is shown in the picture?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Image,A2,QuickCheck",
+      "explanation": "People travel on a bus.",
+      "media": {
+        "image": {
+          "src": "media/images/vocab/bus.svg",
+          "alt": "a bus"
+        }
+      },
+      "correctIndex": 4,
+      "answers": [
+        "an umbrella",
+        "a chair",
+        "a bicycle",
+        "a bus"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

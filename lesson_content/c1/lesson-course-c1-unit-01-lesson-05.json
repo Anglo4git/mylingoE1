@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-c1-unit-01-lesson-05",
+  "title": "Lesson: Inversion after Only",
+  "description": "Practice Inversion after Only.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Inversion after Only.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C1",
+      "media": {},
+      "subprompt": "Inversion after Only",
+      "explanation": "Practice Inversion after Only."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Inversion after Only",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C1"
+    },
+    {
+      "question": "Only after the meeting ___ the implications become clear.",
+      "category": "Grammar",
+      "tags": "Grammar,C1,QuickCheck",
+      "explanation": "Only + fronted adverbial can require inversion.",
+      "correctIndex": 1,
+      "answers": [
+        "did",
+        "were",
+        "have",
+        "do"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C1"
+    }
+  ]
+}

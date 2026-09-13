@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a2-unit-01-lesson-09",
+  "title": "Lesson: Present Perfect",
+  "description": "Practice Present Perfect.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Present Perfect.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Present Perfect",
+      "explanation": "Practice Present Perfect."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Present Perfect",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "I ___ my homework already.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "Use have/has + past participle for a completed action connected to now.",
+      "correctIndex": 4,
+      "answers": [
+        "finish",
+        "finished",
+        "am finishing",
+        "have finished"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

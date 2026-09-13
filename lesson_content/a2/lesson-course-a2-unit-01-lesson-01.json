@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a2-unit-01-lesson-01",
+  "title": "Lesson: Comparative Adjectives",
+  "description": "Practice Comparative Adjectives.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Comparative Adjectives.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Comparative Adjectives",
+      "explanation": "Practice Comparative Adjectives."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Comparative Adjectives",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "A car is ___ than a bicycle.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "Use the comparative form faster for a two-item comparison.",
+      "correctIndex": 4,
+      "answers": [
+        "fast",
+        "fastest",
+        "more fast",
+        "faster"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-c1-unit-01-lesson-03",
+  "title": "Lesson: Cleft Sentences",
+  "description": "Practice Cleft Sentences.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Cleft Sentences.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C1",
+      "media": {},
+      "subprompt": "Cleft Sentences",
+      "explanation": "Practice Cleft Sentences."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Cleft Sentences",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C1"
+    },
+    {
+      "question": "___ I object to is the lack of evidence.",
+      "category": "Grammar",
+      "tags": "Grammar,C1,QuickCheck",
+      "explanation": "What I object to is a cleft construction.",
+      "correctIndex": 3,
+      "answers": [
+        "That",
+        "Which",
+        "What",
+        "It"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C1"
+    }
+  ]
+}

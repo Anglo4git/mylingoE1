@@ -1,0 +1,67 @@
+{
+  "id": "lesson-course-b1-unit-02-lesson-01",
+  "title": "Lesson: Phrasal Verbs",
+  "description": "Practice Phrasal Verbs.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Phrasal Verbs.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Phrasal Verbs",
+      "explanation": "Practice Phrasal Verbs."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Phrasal Verbs, Picture & Sound Vocabulary",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "Please ___ the lights before you leave.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1,QuickCheck",
+      "explanation": "Turn off means switch something off.",
+      "correctIndex": 4,
+      "answers": [
+        "turn up to",
+        "turning off",
+        "turned",
+        "turn off"
+      ]
+    },
+    {
+      "question": "Which word matches the picture?",
+      "question_type": "radio",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,Image,B1,QuickCheck",
+      "explanation": "A key is used to open a lock.",
+      "media": {
+        "image": {
+          "src": "media/images/vocab/key.svg",
+          "alt": "a key"
+        }
+      },
+      "correctIndex": 1,
+      "answers": [
+        "a key",
+        "a clock",
+        "a phone",
+        "a coffee cup"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-01-lesson-01",
+  "title": "Lesson: Present Perfect vs Past Simple",
+  "description": "Practice Present Perfect vs Past Simple.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Present Perfect vs Past Simple.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Present Perfect vs Past Simple",
+      "explanation": "Practice Present Perfect vs Past Simple."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Present Perfect vs Past Simple",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "I ___ London twice, but I first went there in 2022.",
+      "category": "Grammar",
+      "tags": "Grammar,B1,QuickCheck",
+      "explanation": "Use present perfect for life experience without a finished past time.",
+      "correctIndex": 2,
+      "answers": [
+        "visited",
+        "have visited",
+        "am visiting",
+        "visit"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

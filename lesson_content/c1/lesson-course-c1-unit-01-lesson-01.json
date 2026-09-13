@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-c1-unit-01-lesson-01",
+  "title": "Lesson: Advanced Conditionals",
+  "description": "Practice Advanced Conditionals.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Advanced Conditionals.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C1",
+      "media": {},
+      "subprompt": "Advanced Conditionals",
+      "explanation": "Practice Advanced Conditionals."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Advanced Conditionals",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C1"
+    },
+    {
+      "question": "Had I known about the delay, I ___ earlier.",
+      "category": "Grammar",
+      "tags": "Grammar,C1,QuickCheck",
+      "explanation": "Had I known is an inverted third conditional.",
+      "correctIndex": 3,
+      "answers": [
+        "would leave",
+        "will have left",
+        "would have left",
+        "left"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C1"
+    }
+  ]
+}

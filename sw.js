@@ -29,7 +29,7 @@
  */
 'use strict';
 
-var CACHE_VERSION = 'mylingo-v4';
+var CACHE_VERSION = 'mylingo-v5';
 var STATIC_CACHE = CACHE_VERSION + '-static';
 var RUNTIME_CACHE = CACHE_VERSION + '-runtime';
 // Must match CACHE_PREFIX in shared/js/offline-packs.js.

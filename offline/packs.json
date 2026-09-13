@@ -78,7 +78,23 @@
         "shared/sfx/try_again_2.mp3",
         "shared/sfx/win.mp3",
         "shared/sfx/wrong_answer.mp3",
-        "sw.js"
+        "sw.js",
+        "shared/media/images/vocab/apple.svg",
+        "shared/media/images/vocab/bicycle.svg",
+        "shared/media/images/vocab/book.svg",
+        "shared/media/images/vocab/bus.svg",
+        "shared/media/images/vocab/car.svg",
+        "shared/media/images/vocab/cat.svg",
+        "shared/media/images/vocab/chair.svg",
+        "shared/media/images/vocab/clock.svg",
+        "shared/media/images/vocab/coffee.svg",
+        "shared/media/images/vocab/dog.svg",
+        "shared/media/images/vocab/house.svg",
+        "shared/media/images/vocab/key.svg",
+        "shared/media/images/vocab/phone.svg",
+        "shared/media/images/vocab/sun.svg",
+        "shared/media/images/vocab/tree.svg",
+        "shared/media/images/vocab/umbrella.svg"
       ]
     },
     {
@@ -104,7 +120,18 @@
         "grammar/a1/a1-009.json",
         "vocabulary/a1/a1-010.json",
         "grammar/a1/a1-011.json",
-        "grammar/a1/a1-012.json"
+        "grammar/a1/a1-012.json",
+        "vocabulary/a1/a1-media-01.json",
+        "lesson_content/a1/lesson-course-a1-unit-01-lesson-01.json",
+        "lesson_content/a1/lesson-course-a1-unit-01-lesson-02.json",
+        "lesson_content/a1/lesson-course-a1-unit-01-lesson-03.json",
+        "lesson_content/a1/lesson-course-a1-unit-01-lesson-04.json",
+        "lesson_content/a1/lesson-course-a1-unit-01-lesson-05.json",
+        "lesson_content/a1/lesson-course-a1-unit-01-lesson-06.json",
+        "lesson_content/a1/lesson-course-a1-unit-01-lesson-07.json",
+        "lesson_content/a1/lesson-course-a1-unit-01-lesson-08.json",
+        "lesson_content/a1/lesson-course-a1-unit-01-lesson-09.json",
+        "lesson_content/a1/lesson-course-a1-unit-02-lesson-01.json"
       ]
     },
     {
@@ -128,7 +155,19 @@
         "grammar/a2/a2-007.json",
         "grammar/a2/a2-008.json",
         "grammar/a2/a2-009.json",
-        "vocabulary/a2/a2-010.json"
+        "vocabulary/a2/a2-010.json",
+        "vocabulary/a2/a2-media-01.json",
+        "lesson_content/a2/lesson-course-a2-unit-01-lesson-01.json",
+        "lesson_content/a2/lesson-course-a2-unit-01-lesson-02.json",
+        "lesson_content/a2/lesson-course-a2-unit-01-lesson-03.json",
+        "lesson_content/a2/lesson-course-a2-unit-01-lesson-04.json",
+        "lesson_content/a2/lesson-course-a2-unit-01-lesson-05.json",
+        "lesson_content/a2/lesson-course-a2-unit-01-lesson-06.json",
+        "lesson_content/a2/lesson-course-a2-unit-01-lesson-07.json",
+        "lesson_content/a2/lesson-course-a2-unit-01-lesson-08.json",
+        "lesson_content/a2/lesson-course-a2-unit-01-lesson-09.json",
+        "lesson_content/a2/lesson-course-a2-unit-02-lesson-01.json",
+        "lesson_content/a2/lesson-course-a2-unit-02-lesson-02.json"
       ]
     },
     {
@@ -152,7 +191,18 @@
         "grammar/b1/b1-007.json",
         "grammar/b1/b1-009.json",
         "vocabulary/b1/b1-010.json",
-        "writing/b1/b1-008.json"
+        "writing/b1/b1-008.json",
+        "vocabulary/b1/b1-media-01.json",
+        "lesson_content/b1/lesson-course-b1-unit-01-lesson-01.json",
+        "lesson_content/b1/lesson-course-b1-unit-01-lesson-02.json",
+        "lesson_content/b1/lesson-course-b1-unit-01-lesson-03.json",
+        "lesson_content/b1/lesson-course-b1-unit-01-lesson-04.json",
+        "lesson_content/b1/lesson-course-b1-unit-01-lesson-05.json",
+        "lesson_content/b1/lesson-course-b1-unit-01-lesson-06.json",
+        "lesson_content/b1/lesson-course-b1-unit-01-lesson-07.json",
+        "lesson_content/b1/lesson-course-b1-unit-01-lesson-08.json",
+        "lesson_content/b1/lesson-course-b1-unit-02-lesson-01.json",
+        "lesson_content/b1/lesson-course-b1-unit-03-lesson-01.json"
       ]
     },
     {
@@ -176,7 +226,18 @@
         "grammar/b2/b2-006.json",
         "grammar/b2/b2-009.json",
         "vocabulary/b2/b2-008.json",
-        "writing/b2/b2-010.json"
+        "writing/b2/b2-010.json",
+        "vocabulary/b2/b2-media-01.json",
+        "lesson_content/b2/lesson-course-b2-unit-01-lesson-01.json",
+        "lesson_content/b2/lesson-course-b2-unit-01-lesson-02.json",
+        "lesson_content/b2/lesson-course-b2-unit-01-lesson-03.json",
+        "lesson_content/b2/lesson-course-b2-unit-01-lesson-04.json",
+        "lesson_content/b2/lesson-course-b2-unit-01-lesson-05.json",
+        "lesson_content/b2/lesson-course-b2-unit-01-lesson-06.json",
+        "lesson_content/b2/lesson-course-b2-unit-01-lesson-07.json",
+        "lesson_content/b2/lesson-course-b2-unit-02-lesson-01.json",
+        "lesson_content/b2/lesson-course-b2-unit-03-lesson-01.json",
+        "lesson_content/b2/lesson-course-b2-unit-04-lesson-01.json"
       ]
     },
     {
@@ -200,7 +261,19 @@
         "grammar/c1/c1-008.json",
         "vocabulary/c1/c1-007.json",
         "vocabulary/c1/c1-010.json",
-        "writing/c1/c1-004.json"
+        "writing/c1/c1-004.json",
+        "vocabulary/c1/c1-media-01.json",
+        "lesson_content/c1/lesson-course-c1-unit-01-lesson-01.json",
+        "lesson_content/c1/lesson-course-c1-unit-01-lesson-02.json",
+        "lesson_content/c1/lesson-course-c1-unit-01-lesson-03.json",
+        "lesson_content/c1/lesson-course-c1-unit-01-lesson-04.json",
+        "lesson_content/c1/lesson-course-c1-unit-01-lesson-05.json",
+        "lesson_content/c1/lesson-course-c1-unit-02-lesson-01.json",
+        "lesson_content/c1/lesson-course-c1-unit-02-lesson-02.json",
+        "lesson_content/c1/lesson-course-c1-unit-03-lesson-01.json",
+        "lesson_content/c1/lesson-course-c1-unit-04-lesson-01.json",
+        "lesson_content/c1/lesson-course-c1-unit-04-lesson-02.json",
+        "lesson_content/c1/lesson-course-c1-unit-04-lesson-03.json"
       ]
     },
     {
@@ -224,7 +297,18 @@
         "vocabulary/c2/c2-005.json",
         "vocabulary/c2/c2-008.json",
         "vocabulary/c2/c2-009.json",
-        "writing/c2/c2-004.json"
+        "writing/c2/c2-004.json",
+        "vocabulary/c2/c2-media-01.json",
+        "lesson_content/c2/lesson-course-c2-unit-01-lesson-01.json",
+        "lesson_content/c2/lesson-course-c2-unit-01-lesson-02.json",
+        "lesson_content/c2/lesson-course-c2-unit-01-lesson-03.json",
+        "lesson_content/c2/lesson-course-c2-unit-01-lesson-04.json",
+        "lesson_content/c2/lesson-course-c2-unit-01-lesson-05.json",
+        "lesson_content/c2/lesson-course-c2-unit-02-lesson-01.json",
+        "lesson_content/c2/lesson-course-c2-unit-02-lesson-02.json",
+        "lesson_content/c2/lesson-course-c2-unit-02-lesson-03.json",
+        "lesson_content/c2/lesson-course-c2-unit-03-lesson-01.json",
+        "lesson_content/c2/lesson-course-c2-unit-04-lesson-01.json"
       ]
     }
   ]

@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-01-lesson-02",
+  "title": "Lesson: Second Conditional",
+  "description": "Practice Second Conditional.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Second Conditional.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Second Conditional",
+      "explanation": "Practice Second Conditional."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Second Conditional",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "If I had more time, I ___ another language.",
+      "category": "Grammar",
+      "tags": "Grammar,B1,QuickCheck",
+      "explanation": "Use if + past, would + base verb for hypothetical situations.",
+      "correctIndex": 2,
+      "answers": [
+        "learn",
+        "would learn",
+        "will learn",
+        "learned"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a2-unit-01-lesson-08",
+  "title": "Lesson: Modal: should",
+  "description": "Practice Modal: should.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Modal: should.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Modal: should",
+      "explanation": "Practice Modal: should."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Modal: should",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "You ___ see a doctor if you feel very ill.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "Should is followed by the base verb.",
+      "correctIndex": 2,
+      "answers": [
+        "must to",
+        "should",
+        "can to",
+        "should to"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

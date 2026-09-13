@@ -1,0 +1,54 @@
+{
+  "id": "lesson-course-a1-unit-01-lesson-01",
+  "title": "Lesson: Present Simple",
+  "description": "Practice Present Simple.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Present Simple.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Present Simple",
+      "explanation": "Practice Present Simple."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Present Simple, Present Simple: Mixed Practice",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "Choose the correct form: She ___ to school every day.",
+      "category": "Grammar",
+      "tags": "Grammar,A1,QuickCheck",
+      "explanation": "Use -s with he/she/it in the present simple.",
+      "correctIndex": 1,
+      "answers": [
+        "goes",
+        "go",
+        "going",
+        "gone"
+      ]
+    },
+    {
+      "question_type": "banner",
+      "question": "Present Simple: Mixed Practice",
+      "content": "We use the present simple for habits, routines and facts. Remember the -s ending for he/she/it. This lesson mixes several question types — multiple choice, select-all, a dropdown, a fill-in-the-blank, a matching task and a word-order task.",
+      "category": "Grammar",
+      "tags": "Grammar,A1,Present Simple,QuickCheck"
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

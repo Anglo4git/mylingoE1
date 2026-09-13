@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-01-lesson-06",
+  "title": "Lesson: Can",
+  "description": "Practice Can.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Can.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Can",
+      "explanation": "Practice Can."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Can",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "I ___ how to swim.",
+      "category": "Grammar",
+      "tags": "Grammar,A1,QuickCheck",
+      "explanation": "Can is followed by the base form of the verb.",
+      "correctIndex": 1,
+      "answers": [
+        "can",
+        "cans",
+        "am can",
+        "can to"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1"
+    }
+  ]
+}
