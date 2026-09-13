@@ -82,8 +82,42 @@
   function mount(){
     if(document.getElementById('mylingoAppShell')) return;
     if(!document.body) return;
-    document.body.appendChild(build());
+    var nav=build();
+    document.body.appendChild(nav);
     document.body.classList.add('has-mylingo-appshell');
+    bindPressAnimation(nav);
+  }
+
+  // Subtle iOS-style press feedback: the icon/label scale down instantly on
+  // touch/press, then spring back on release. Uses pointer events (not the
+  // CSS :active pseudo-class) so it fires reliably on iOS Safari, which
+  // otherwise suppresses :active on plain link taps. Each page is a full
+  // reload on navigation, so this only needs to cover the moment of the tap
+  // itself — the spring-back class is a no-op if the page unloads first.
+  function bindPressAnimation(nav){
+    var current=null;
+    function press(tab){
+      if(current&&current!==tab) release(current);
+      tab.classList.remove('as-release');
+      tab.classList.add('as-press');
+      current=tab;
+    }
+    function release(tab){
+      tab.classList.remove('as-press');
+      tab.classList.add('as-release');
+      window.setTimeout(function(){tab.classList.remove('as-release')},400);
+      if(current===tab) current=null;
+    }
+    nav.addEventListener('pointerdown',function(e){
+      var tab=e.target.closest('.as-tab');
+      if(tab) press(tab);
+    });
+    ['pointerup','pointercancel','pointerleave'].forEach(function(type){
+      nav.addEventListener(type,function(e){
+        var tab=e.target.closest('.as-tab')||current;
+        if(tab) release(tab);
+      });
+    });
   }
 
   function setVisible(visible){
