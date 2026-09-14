@@ -152,10 +152,15 @@ if(window.MylingoLevelLock && window.MylingoLevelLock.isLocked(level)){
   return;
 }
 
+// Level is already known here (it's in the URL), so we only need this
+// course's slice of lessons — fetch course_content/lessons/<level>.json
+// directly instead of the old all-levels lessons.json bundle. Fall back to
+// the monolith if the per-level file is missing for any reason (e.g. a
+// level added to courses.json before its split file exists).
 Promise.all([
   fetchJson('../course_content/courses.json'),
   fetchJson('../course_content/units.json'),
-  fetchJson('../course_content/lessons.json'),
+  fetchJson('../course_content/lessons/'+level+'.json').catch(function(){ return fetchJson('../course_content/lessons.json') }),
   fetchJson('../'+level+'/quizzes.json').catch(function(){ return [] })
 ]).then(function(results){
   var courses=results[0], allUnits=results[1], allLessons=results[2], quizList=results[3];

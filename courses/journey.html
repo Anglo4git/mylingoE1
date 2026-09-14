@@ -37,7 +37,10 @@ function directHref(ids){return ids.length?'../shared/quiz.html?quiz='+encodeURI
 function renderError(message){$('content').innerHTML='<div class="err"><p>'+esc(message)+'</p><p><a href="./index.html">Back to courses</a> or <a href="../main/index.html">find my level</a>.</p></div>'}
 if(!level){renderError('No course level was specified.');return}
 $('courseLink').href='./course.html?level='+encodeURIComponent(level);
-Promise.all([fetchJson('../course_content/courses.json'),fetchJson('../course_content/units.json'),fetchJson('../course_content/lessons.json')]).then(function(r){
+// Level is known from the URL up front, so fetch only this level's lesson
+// file (course_content/lessons/<level>.json) instead of the old all-levels
+// bundle; fall back to the monolith if the split file isn't there.
+Promise.all([fetchJson('../course_content/courses.json'),fetchJson('../course_content/units.json'),fetchJson('../course_content/lessons/'+level+'.json').catch(function(){return fetchJson('../course_content/lessons.json')})]).then(function(r){
  var courses=r[0],allUnits=r[1],allLessons=r[2],course=courses.find(function(c){return c.level.toLowerCase()===level&&c.status==='published'});if(!course){renderError('This course isn’t available yet.');return}
  var units=allUnits.filter(function(u){return u.course_id===course.course_id}).sort(function(a,b){return a.order-b.order});
  var lessons=[];units.forEach(function(u){var ls=allLessons.filter(function(l){return l.unit_id===u.unit_id&&l.status==='published'}).sort(function(a,b){return a.order-b.order});ls.forEach(function(l){lessons.push({unit:u,lesson:l})})});

@@ -16,7 +16,8 @@
     ],
     "version": 1,
     "status": "published",
-    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-01"
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-01",
+    "body_content": "<h2>Welcome to Unit 1</h2><p>In this lesson we practise the verb <strong>to be</strong> in short, everyday sentences.</p><ul><li>I <em>am</em> a student.</li><li>You <em>are</em> my friend.</li><li>She <em>is</em> at home.</li></ul><p>Keep sentences short and listen for the sound of <code>am / is / are</code> as you read.</p>"
   },
   {
     "lesson_id": "course-a1-unit-01-lesson-02",

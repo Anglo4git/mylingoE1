@@ -1,0 +1,186 @@
+[
+  {
+    "lesson_id": "course-a1-unit-01-lesson-01",
+    "unit_id": "course-a1-unit-01",
+    "title": "Present Simple",
+    "category": "Grammar",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Present Simple."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-001",
+      "a1-011"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-01",
+    "body_content": "<h2>Welcome to Unit 1</h2><p>In this lesson we practise the verb <strong>to be</strong> in short, everyday sentences.</p><ul><li>I <em>am</em> a student.</li><li>You <em>are</em> my friend.</li><li>She <em>is</em> at home.</li></ul><p>Keep sentences short and listen for the sound of <code>am / is / are</code> as you read.</p>"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-02",
+    "unit_id": "course-a1-unit-01",
+    "title": "Be: am/is/are",
+    "category": "Grammar",
+    "order": 2,
+    "revision": {
+      "summary": "Practice Be: am/is/are."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-002",
+      "a1-012"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-02"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-03",
+    "unit_id": "course-a1-unit-01",
+    "title": "Articles",
+    "category": "Grammar",
+    "order": 3,
+    "revision": {
+      "summary": "Practice Articles."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-003"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-03"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-04",
+    "unit_id": "course-a1-unit-01",
+    "title": "Plural Nouns",
+    "category": "Grammar",
+    "order": 4,
+    "revision": {
+      "summary": "Practice Plural Nouns."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-004"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-04"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-05",
+    "unit_id": "course-a1-unit-01",
+    "title": "There is / There are",
+    "category": "Grammar",
+    "order": 5,
+    "revision": {
+      "summary": "Practice There is / There are."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-005"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-05"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-06",
+    "unit_id": "course-a1-unit-01",
+    "title": "Can",
+    "category": "Grammar",
+    "order": 6,
+    "revision": {
+      "summary": "Practice Can."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-006"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-06"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-07",
+    "unit_id": "course-a1-unit-01",
+    "title": "Past Simple",
+    "category": "Grammar",
+    "order": 7,
+    "revision": {
+      "summary": "Practice Past Simple."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-007"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-07"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-08",
+    "unit_id": "course-a1-unit-01",
+    "title": "Possessive Adjectives",
+    "category": "Grammar",
+    "order": 8,
+    "revision": {
+      "summary": "Practice Possessive Adjectives."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-008"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-08"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-09",
+    "unit_id": "course-a1-unit-01",
+    "title": "Prepositions",
+    "category": "Grammar",
+    "order": 9,
+    "revision": {
+      "summary": "Practice Prepositions."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-009"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-09"
+  },
+  {
+    "lesson_id": "course-a1-unit-02-lesson-01",
+    "unit_id": "course-a1-unit-02",
+    "title": "Everyday Vocabulary",
+    "category": "Vocabulary",
+    "order": 1,
+    "revision": {
+      "summary": "Practice everyday vocabulary."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-010",
+      "a1-media-01"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-02-lesson-01"
+  }
+]

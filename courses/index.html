@@ -102,10 +102,21 @@ function renderError(){
   $('grid').innerHTML='<li class="err">Courses aren\u2019t available right now. <a href="../main/index.html">Go to levels</a> instead.</li>';
 }
 
+// Homepage lists every level, so it needs lessons across all of them —
+// fetch the six per-level files (course_content/lessons/<level>.json) in
+// parallel and concat, instead of the old single all-levels bundle. Falls
+// back to the monolith as a whole if any per-level file is missing.
+var ALL_LEVELS=['a1','a2','b1','b2','c1','c2'];
+function fetchAllLessons(){
+  return Promise.all(ALL_LEVELS.map(function(lvl){ return fetchJson('../course_content/lessons/'+lvl+'.json') }))
+    .then(function(lists){ return lists.reduce(function(a,b){ return a.concat(b) },[]) })
+    .catch(function(){ return fetchJson('../course_content/lessons.json') });
+}
+
 Promise.all([
   fetchJson('../course_content/courses.json'),
   fetchJson('../course_content/units.json'),
-  fetchJson('../course_content/lessons.json')
+  fetchAllLessons()
 ]).then(function(results){
   var courses=results[0], units=results[1], lessons=results[2];
   var progress=readProgress();
