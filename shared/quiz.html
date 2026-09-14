@@ -97,7 +97,7 @@ main{max-width:920px;margin:auto;padding:20px 16px 32px}
 @keyframes feedbackIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 .good{background:var(--success-soft);color:#347800}
 .bad{background:var(--error-soft);color:#a52626}
-.actions{display:flex;flex-direction:row;align-items:stretch;justify-content:center;gap:10px;margin-top:18px;flex-wrap:wrap}.actions .next,.actions .primary,.actions .secondary{width:180px;min-width:160px;max-width:220px;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box}
+.actions{display:flex;flex-direction:row;align-items:stretch;justify-content:center;gap:10px;margin-top:18px;flex-wrap:nowrap}.actions .next,.actions .primary,.actions .secondary{width:auto;min-width:0;max-width:none;flex:1 1 0;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box}
 .next,.primary{border:0;background:var(--brand);color:#fff;font-weight:900;padding:14px 30px;border-radius:999px;box-shadow:0 5px 0 var(--brand-dark);cursor:pointer;font-size:15px;min-height:48px;will-change:transform;transition:transform var(--dur-standard) var(--ease-release),box-shadow var(--dur-micro) var(--ease-micro),opacity var(--dur-emphasis) var(--ease-out)}
 .next:active,.primary:active{transform:translateY(3px) scale(.97);box-shadow:0 2px 0 var(--brand-dark);transition-duration:80ms;transition-timing-function:var(--ease-micro)}
 .next{opacity:0}
@@ -115,7 +115,7 @@ main{max-width:920px;margin:auto;padding:20px 16px 32px}
 @keyframes overlayIn{from{opacity:0}to{opacity:1}}
 @keyframes modalIn{from{opacity:0;transform:scale(.94) translateY(8px)}to{opacity:1;transform:scale(1) translateY(0)}}
 .modal{text-align:center;max-width:420px;width:100%}
-.modal .stack{display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:4px}
+.modal .stack{display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:4px}.modal .stack.actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch}.modal .stack.actions>.reco,.modal .stack.actions>.suggest,.modal .stack.actions>.small{grid-column:1/-1;width:100%}.modal .stack.actions>.primary,.modal .stack.actions>.secondary{width:100%;min-width:0;margin:0;white-space:normal;line-height:1.2}
 .logo{width:64px;height:64px;border-radius:20px;margin:0 auto 16px;box-shadow:0 8px 0 var(--brand-dark)}
 .logo img{width:100%;height:100%;display:block;border-radius:20px}
 .brand-logo-sm{height:20px;width:auto;vertical-align:middle}
@@ -230,7 +230,7 @@ const id=p.get('quiz');
 const VALID_LEVELS=['a1','a2','b1','b2','c1','c2'];
 const rawLevel=(p.get('level')||'a1').toLowerCase();
 const level=VALID_LEVELS.indexOf(rawLevel)>=0?rawLevel:'a1';
-const mode=(p.get('mode')||'').toLowerCase(); // 'placement' enables recommendation routing
+const mode=(p.get('mode')||'').toLowerCase(); // placement/recommended enable direct quiz routing
 const redirect=p.get('redirect'); // where "Continue" goes to in placement mode
 // Course-mode context (Agent 94): course.html/lesson.html pass these when a
 // quiz is launched from within a course, so the quiz screen can show a
@@ -244,6 +244,7 @@ const unitTitleParam=p.get('unit_title');
 // linked to directly (see findOwningLesson()/enforceLessonGate()).
 const lessonParam=p.get('lesson');
 const stage=(p.get('stage')||'primary').toLowerCase();
+const directRecommended=p.get('recommended')==='1';
 const anchorLevel=VALID_LEVELS.indexOf((p.get('anchor')||'').toLowerCase())>=0?(p.get('anchor')||'').toLowerCase():null;
 const $=x=>document.getElementById(x);
 const KEY='mylingo.progress.v1';
@@ -708,7 +709,7 @@ async function load(){
   show('loading');
   if(!id){errorState('No quiz to load','We couldn\'t find a quiz in this link. Head back and pick one from the list.',false);return}
   if(mode!=='placement' && window.MylingoLevelLock && window.MylingoLevelLock.isLocked(level)){errorState('Level locked','This level isn\'t unlocked yet. Head back to your current level to keep going.',false);return}
-  if(mode!=='placement'){
+  if(mode!=='placement' && !directRecommended){
     const gated=await enforceLessonGate();
     if(gated) return; // redirected to the owning lesson's player
   }
@@ -1027,7 +1028,7 @@ function renderSuggestions(){
     box.style.display='none';return
   }
   const picks=suggestPool.slice().sort(()=>Math.random()-0.5).slice(0,3);
-  grid.innerHTML=picks.map(item=>'<a href="./quiz.html?quiz='+encodeURIComponent(item.id)+'&level='+level+'">'+esc(item.title)+'</a>').join('');
+  grid.innerHTML=picks.map(item=>'<a href="./quiz.html?quiz='+encodeURIComponent(item.id)+'&level='+level+'&recommended=1">'+esc(item.title)+'</a>').join('');
   $('suggestCat').textContent=data.category;
   box.style.display='block';
 }
@@ -1104,7 +1105,7 @@ function renderPlacementRecommendations(profile){
       if(!picks.length)return;
       const links=picks.map(p=>{
         const q=p.quiz;
-        return '<a style="display:block;margin:7px 0;color:inherit;font-weight:800" href="./quiz.html?quiz='+encodeURIComponent(q.id)+'&level='+encodeURIComponent(p.level)+'">→ '+esc(q.title)+' <span style="font-weight:700;color:#6b7280">('+p.skill.toUpperCase()+' · '+p.score+'% · '+p.level.toUpperCase()+')</span></a>';
+        return '<a style="display:block;margin:7px 0;color:inherit;font-weight:800" href="./quiz.html?quiz='+encodeURIComponent(q.id)+'&level='+encodeURIComponent(p.level)+'&recommended=1">→ '+esc(q.title)+' <span style="font-weight:700;color:#6b7280">('+p.skill.toUpperCase()+' · '+p.score+'% · '+p.level.toUpperCase()+')</span></a>';
       }).join('');
       box.innerHTML+= '<div style="margin-top:12px"><strong>Skill-level recommendations</strong><div style="color:#6b7280;font-size:12px;margin-top:3px">Practice each skill at the level that best matches your evidence.</div>'+links+'</div>';
     }).catch(()=>{});
@@ -1177,6 +1178,31 @@ function end(){
       });
     }
   }catch(e){ /* review storage must never break the results screen */ }
+
+  // Lesson-owned assessment: a passing score unlocks the next lesson and
+  // exposes that next lesson directly on the result screen. A failed attempt
+  // returns to the current lesson for review/retry. This keeps the guided
+  // course streamlined without forcing a course-page detour.
+  if(lessonParam && mode!=='placement'){
+    getLevelLessons().then(lessons=>{
+      const idx=lessons.findIndex(l=>l.lesson_id===lessonParam);
+      const ordered=lessons.filter(l=>l.status==='published').sort((a,b)=>String(a.unit_id).localeCompare(String(b.unit_id)) || ((a.order||0)-(b.order||0)));
+      const pos=ordered.findIndex(l=>l.lesson_id===lessonParam);
+      const btn=$('continueBtn');
+      if(btn){
+        btn.style.display='inline-flex';
+        if(pct>=60 && pos>=0 && ordered[pos+1]){
+          const nextLesson=ordered[pos+1];
+          const nextUnit=encodeURIComponent(nextLesson.unit_id||'');
+          btn.textContent='Continue to next lesson';
+          btn.onclick=()=>{stopAllSounds();location.href='../courses/lesson.html?lesson='+encodeURIComponent(nextLesson.lesson_id)+'&level='+encodeURIComponent(level)+'&redirect='+encodeURIComponent('../courses/journey.html?level='+encodeURIComponent(level)+'&unit='+nextUnit)};
+        }else{
+          btn.textContent=pct>=60?'Course complete':'Review lesson';
+          btn.onclick=()=>{stopAllSounds();location.href=backTarget()};
+        }
+      }
+    }).catch(()=>{});
+  }
 
   if(mode==='placement'){
     const profile=saveAssessmentResult(pct);

@@ -6,7 +6,7 @@
 <link rel="manifest" href="../manifest.json">
 <meta name="theme-color" content="#0b0c0d">
 <script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js').catch(function(){});});}</script>
-<script src="../shared/js/level-lock.js"></script>
+<script src="../shared/js/level-lock.js"></script><script src="../shared/js/course-progress.js"></script>
 <title>Mylingo · Lesson</title>
 <style>
 /* ============================================================
@@ -32,7 +32,7 @@ a{color:inherit}
 .chapter-trail{max-width:820px;margin:auto;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 0 12px}
 .chapter-trail::-webkit-scrollbar{display:none}
 .trail-item{flex:1 1 0;min-width:96px;display:flex;align-items:center;gap:8px;touch-action:manipulation;background:transparent;border:none;border-bottom:3px solid var(--line);color:var(--muted);font-size:12px;font-weight:800;padding:0 4px 10px;cursor:pointer;white-space:nowrap;transition:color .2s var(--ease-micro),border-color .2s var(--ease-micro)}
-.trail-item .num{width:22px;height:22px;border-radius:50%;background:var(--line);color:var(--muted);display:grid;place-items:center;font-size:10px;flex:0 0 auto;transition:background .2s,color .2s}
+.trail-item .num{width:22px;height:22px;border-radius:50%;background:var(--line);color:var(--muted);display:grid;place-items:center;font-size:10px;font-weight:900;flex:0 0 auto;transition:background .2s,color .2s}.trail-item .type-icon{font-size:12px;line-height:1;opacity:.95}.trail-item.active .type-icon{opacity:1}
 .trail-item.done .num{background:var(--success);color:#0b0c0d}
 .trail-item .kind{font-size:12px;line-height:1}.trail-item.active{color:#fff;border-color:var(--brand)}
 .trail-item.active .num{background:var(--brand);color:#0b0c0d}
@@ -116,7 +116,7 @@ h1{margin:6px 0 8px;font-size:24px;color:#fff}
 
 /* ---- Responsive: collapse trail labels, stack nav on narrow screens ---- */
 @media(max-width:520px){
-  .trail-item span{display:none}
+  .trail-item span:not(.num):not(.type-icon){display:none}
   .trail-item{min-width:44px;justify-content:center}
   h1{font-size:21px}
 }
@@ -305,6 +305,18 @@ lessonsFetch.catch(function(){
   if(!unit || !course){ renderError('This lesson isn\u2019t available yet.'); return }
 
   var level=levelParam || found.level || course.level.toLowerCase();
+  // Sequential lesson gate: the first published lesson is open; every later
+  // lesson requires the immediately previous lesson's final assessment to be
+  // mastered (60%+). This also blocks direct lesson URLs.
+  var ordered=(lessons||[]).filter(function(l){return l.status==='published'}).sort(function(a,b){
+    var au=String(a.unit_id),bu=String(b.unit_id); if(au===bu)return (a.order||0)-(b.order||0); return au.localeCompare(bu);
+  });
+  var lessonPos=ordered.findIndex(function(l){return l.lesson_id===lesson.lesson_id});
+  if(lessonPos>0){
+    var previousLesson=ordered[lessonPos-1], progressNow=window.MylingoCourseProgress?window.MylingoCourseProgress.readProgress():{};
+    var previousComplete=window.MylingoCourseProgress?window.MylingoCourseProgress.lessonIsComplete(previousLesson,progressNow):false;
+    if(!previousComplete){ renderError('Finish the previous lesson first. Complete and pass “'+previousLesson.title+'” to unlock this lesson.'); return; }
+  }
 
   if(window.MylingoLevelLock && window.MylingoLevelLock.isLocked(level)){
     renderError('This level is locked. Reach it from your current level to unlock it, or find your level first.');
@@ -367,11 +379,13 @@ lessonsFetch.catch(function(){
 
     var currentIndex=0;
     var maxReached=0;
+    var lastCtaHref=lessonStartUrl;
+    var lastCtaLabel=lessonQuizId?'Pass lesson & continue':'Finish lesson';
 
     function renderTrail(){
       $('chapterTrail').innerHTML=slides.map(function(s,i){
         var cls='trail-item'+(i===currentIndex?' active':'')+(i<currentIndex?' done':'');
-        var icon=s.kind==='video'?'▶':(s.kind==='audio'?'◖':(s.kind==='practice'?'✓':'T')); return '<button type="button" class="'+cls+'" data-idx="'+i+'" role="tab" aria-selected="'+(i===currentIndex)+'" aria-label="'+esc(s.label)+'"><span class="num"><span class="kind" aria-hidden="true">'+icon+'</span></span><span>'+esc(s.label)+'</span></button>';
+        var icon=s.kind==='video'?'▶':(s.kind==='audio'?'◖':(s.kind==='practice'?'✓':'T')); return '<button type="button" class="'+cls+'" data-idx="'+i+'" role="tab" aria-selected="'+(i===currentIndex)+'" aria-label="Slide '+(i+1)+' of '+slides.length+': '+esc(s.label)+'"><span class="num">'+(i+1)+'</span><span class="type-icon" aria-hidden="true">'+icon+'</span><span>'+esc(s.label)+'</span></button>';
       }).join('');
       Array.prototype.forEach.call($('chapterTrail').querySelectorAll('.trail-item'),function(btn){
         btn.addEventListener('click',function(){

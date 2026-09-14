@@ -6,7 +6,25 @@
     "category": "Grammar",
     "order": 1,
     "revision": {
-      "summary": "Practice Present Simple."
+      "summary": "Master the present simple for routines, facts, questions, negatives, frequency and third-person -s.",
+      "examples": [
+        "I work every day.",
+        "She works every day.",
+        "He doesn’t work on Sunday.",
+        "Do you study English?",
+        "Does she study English?",
+        "Water boils at 100°C."
+      ],
+      "key_terms": [
+        "base verb",
+        "third-person -s",
+        "do / does",
+        "don’t / doesn’t",
+        "frequency adverbs",
+        "routine",
+        "general truth"
+      ],
+      "estimated_minutes": 8
     },
     "presentation_url": null,
     "youtube_url": null,
@@ -17,7 +35,7 @@
     "version": 1,
     "status": "published",
     "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-01",
-    "body_content": "<h2>Welcome to Unit 1</h2><p>In this lesson we practise the verb <strong>to be</strong> in short, everyday sentences.</p><ul><li>I <em>am</em> a student.</li><li>You <em>are</em> my friend.</li><li>She <em>is</em> at home.</li></ul><p>Keep sentences short and listen for the sound of <code>am / is / are</code> as you read.</p>"
+    "body_content": "<h2>Present Simple — the everyday tense</h2><p>Use the <strong>present simple</strong> for routines, habits, repeated actions, facts, schedules, and things that are generally true. Think: <em>What happens regularly?</em></p><h3>1. Positive sentences</h3><p>With <strong>I, you, we, they</strong>, use the base verb:</p><ul><li>I <strong>work</strong> in Accra.</li><li>You <strong>study</strong> English every day.</li><li>We <strong>play</strong> football on Saturdays.</li><li>They <strong>live</strong> near the school.</li></ul><p>With <strong>he, she, it</strong>, usually add <strong>-s</strong>:</p><ul><li>He <strong>works</strong> in a bank.</li><li>She <strong>studies</strong> English every evening.</li><li>It <strong>rains</strong> a lot here.</li></ul><h3>2. The third-person -s rules</h3><ul><li>Most verbs: <strong>work → works</strong>, <strong>read → reads</strong>, <strong>play → plays</strong>.</li><li>Verbs ending in <strong>-s, -sh, -ch, -x, -o</strong>: add <strong>-es</strong>: <strong>watch → watches</strong>, <strong>go → goes</strong>, <strong>fix → fixes</strong>.</li><li>Consonant + <strong>y</strong>: change <strong>y → ies</strong>: <strong>study → studies</strong>, <strong>try → tries</strong>.</li><li>Vowel + <strong>y</strong>: keep <strong>y</strong>: <strong>play → plays</strong>, <strong>enjoy → enjoys</strong>.</li></ul><h3>3. Negative sentences</h3><p>Use <strong>do not / don't</strong> with I/you/we/they and <strong>does not / doesn't</strong> with he/she/it. After <strong>doesn't</strong>, the main verb returns to its base form.</p><ul><li>I <strong>don't work</strong> on Sunday.</li><li>They <strong>don't watch</strong> TV every night.</li><li>He <strong>doesn't work</strong> on Sunday. <em>Not: doesn't works.</em></li><li>She <strong>doesn't like</strong> coffee.</li></ul><h3>4. Questions</h3><p>Put <strong>Do</strong> or <strong>Does</strong> before the subject:</p><ul><li><strong>Do</strong> you speak English?</li><li><strong>Do</strong> they live here?</li><li><strong>Does</strong> he play football?</li><li><strong>Does</strong> she study every day?</li></ul><p>Short answers: <strong>Yes, I do. / No, I don't. / Yes, he does. / No, she doesn't.</strong></p><h3>5. Frequency words</h3><p>Common words are <strong>always, usually, often, sometimes, rarely, never</strong>. They normally come before the main verb: <em>I usually walk to work. She often reads at night.</em> With <strong>be</strong>, the frequency word normally comes after be: <em>He is always early.</em></p><h3>6. Time expressions</h3><p>Present simple often appears with <strong>every day, every week, on Mondays, in the morning, at weekends, once a month</strong>.</p><ul><li>I exercise <strong>every morning</strong>.</li><li>We visit our family <strong>on Sundays</strong>.</li><li>She has an English class <strong>twice a week</strong>.</li></ul><h3>7. Facts and general truths</h3><ul><li>Water <strong>boils</strong> at 100°C.</li><li>The sun <strong>rises</strong> in the east.</li><li>Birds <strong>have</strong> wings.</li></ul><h3>Common mistakes</h3><div class=\"tutor-notice-box\"><strong>Watch the helper verb.</strong><br>He <strong>works</strong> here. → Does he <strong>work</strong> here?<br>He <strong>doesn't work</strong> here.<br><br><strong>Don't use -s after does/doesn't.</strong> The <em>does</em> already carries the third-person grammar.</div><h3>Quick pattern</h3><p><strong>Positive:</strong> Subject + verb (+s for he/she/it).<br><strong>Negative:</strong> Subject + don't/doesn't + base verb.<br><strong>Question:</strong> Do/Does + subject + base verb?</p>"
   },
   {
     "lesson_id": "course-a1-unit-01-lesson-02",
@@ -26,7 +44,26 @@
     "category": "Grammar",
     "order": 2,
     "revision": {
-      "summary": "Practice Be: am/is/are."
+      "summary": "Master am, is and are for identity, jobs, location, age, feelings, descriptions, negatives and questions.",
+      "examples": [
+        "I am ready.",
+        "She is a teacher.",
+        "They are at home.",
+        "He isn’t tired.",
+        "Are you ready?",
+        "Is she your sister?"
+      ],
+      "key_terms": [
+        "am",
+        "is",
+        "are",
+        "not",
+        "contraction",
+        "identity",
+        "location",
+        "state"
+      ],
+      "estimated_minutes": 8
     },
     "presentation_url": null,
     "youtube_url": null,
@@ -36,7 +73,8 @@
     ],
     "version": 1,
     "status": "published",
-    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-02"
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-02",
+    "body_content": "<h2>Be: am / is / are — the verb that connects</h2><p>The verb <strong>be</strong> is one of the most important English verbs. In the present tense it changes to <strong>am, is,</strong> or <strong>are</strong>. Use it to talk about identity, description, age, location, feelings, jobs, and states.</p><h3>1. Choose the correct form</h3><ul><li><strong>I am</strong> ready.</li><li><strong>You are</strong> my friend.</li><li><strong>He is</strong> a teacher.</li><li><strong>She is</strong> happy.</li><li><strong>It is</strong> cold.</li><li><strong>We are</strong> at home.</li><li><strong>They are</strong> students.</li></ul><h3>2. The core pattern</h3><div class=\"tutor-notice-box\"><strong>I → am</strong><br><strong>He / She / It → is</strong><br><strong>You / We / They → are</strong></div><h3>3. Contractions</h3><ul><li>I <strong>am</strong> → <strong>I'm</strong></li><li>He <strong>is</strong> → <strong>He's</strong></li><li>She <strong>is</strong> → <strong>She's</strong></li><li>It <strong>is</strong> → <strong>It's</strong></li><li>You <strong>are</strong> → <strong>You're</strong></li><li>We <strong>are</strong> → <strong>We're</strong></li><li>They <strong>are</strong> → <strong>They're</strong></li></ul><h3>4. Uses of be</h3><ul><li><strong>Identity:</strong> I am Daniel. She is my sister.</li><li><strong>Job:</strong> He is a doctor. They are teachers.</li><li><strong>Location:</strong> We are at school. The keys are on the table.</li><li><strong>Feelings/states:</strong> I am tired. You are hungry.</li><li><strong>Age:</strong> I am 20 years old. She is ten.</li><li><strong>Description:</strong> The room is small. They are friendly.</li></ul><h3>5. Negative sentences</h3><p>Add <strong>not</strong> after am/is/are:</p><ul><li>I <strong>am not</strong> tired.</li><li>He <strong>is not</strong> at work.</li><li>She <strong>isn't</strong> angry.</li><li>We <strong>aren't</strong> late.</li><li>They <strong>aren't</strong> from Ghana.</li></ul><p>Notice that we do <strong>not</strong> use <em>do/does</em> with be: <strong>She isn't happy.</strong> Not: <em>She doesn't be happy.</em></p><h3>6. Questions with be</h3><p>Move am/is/are before the subject:</p><ul><li><strong>Am I</strong> late?</li><li><strong>Is he</strong> your brother?</li><li><strong>Is she</strong> at home?</li><li><strong>Are you</strong> ready?</li><li><strong>Are they</strong> students?</li></ul><p>Short answers: <strong>Yes, I am. / No, I'm not. / Yes, he is. / No, he isn't. / Yes, they are. / No, they aren't.</strong></p><h3>7. Be vs. ordinary verbs</h3><p>Use <strong>be</strong> for a state or identity: <em>She is tired.</em> Use an ordinary verb for an action: <em>She works every day.</em></p><ul><li>He <strong>is</strong> a teacher. → identity/job</li><li>He <strong>teaches</strong> English. → action</li><li>They <strong>are</strong> at home. → location</li><li>They <strong>watch</strong> TV. → action</li></ul><h3>Common mistakes</h3><div class=\"tutor-notice-box\"><strong>Match the subject and be.</strong><br>I <strong>am</strong> happy. <span>✓</span><br>She <strong>is</strong> happy. <span>✓</span><br>They <strong>are</strong> happy. <span>✓</span><br><br><strong>Don't add do/does.</strong> Are you ready? ✓ &nbsp; Do you are ready? ✗</div><h3>Quick pattern</h3><p><strong>Positive:</strong> Subject + am/is/are + complement.<br><strong>Negative:</strong> Subject + am/is/are + not + complement.<br><strong>Question:</strong> Am/Is/Are + subject + complement?</p>"
   },
   {
     "lesson_id": "course-a1-unit-01-lesson-03",

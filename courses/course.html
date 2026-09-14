@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <link rel="icon" type="image/svg+xml" href="../shared/brand/icon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="../shared/brand/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../shared/brand/favicon-192.png">
@@ -61,7 +61,7 @@ h1{margin:0 0 6px;font-size:26px}
 .ubar{width:64px;height:6px;background:#edf0f3;border-radius:99px;overflow:hidden;flex:0 0 auto}
 .ubar i{display:block;height:100%;background:var(--success)}
 .lesson-list{list-style:none;margin:0;padding:0 18px 14px}
-.lesson{display:flex;align-items:center;gap:12px;padding:12px 0;border-top:1px solid var(--line)}
+.lesson{display:flex;align-items:center;gap:10px;padding:12px 0;border-top:1px solid var(--line)}.lesson .type-icon{width:24px;flex:0 0 24px;text-align:center;font-size:13px;font-weight:900;color:var(--brand)}.lesson-link.locked{cursor:not-allowed;opacity:.78}.lesson.locked .status{background:#f1f3f5;color:var(--muted)}
 .lesson .meta{flex:1;min-width:0}
 .lesson b{display:block;font-size:14px}
 .lesson small{color:var(--muted);font-size:12px}
@@ -74,7 +74,7 @@ h1{margin:0 0 6px;font-size:26px}
 .err{text-align:center;color:var(--muted);padding:50px 20px}
 .err a{color:var(--brand);font-weight:800;text-decoration:none}
 footer{max-width:800px;margin:0 auto;padding:24px 16px 40px;color:var(--muted);font-size:13px;text-align:center}
-@media(max-width:360px){.actions{flex-wrap:wrap}.actions .btn{min-width:0}}
+@media(max-width:360px){.actions{flex-wrap:nowrap}.actions .btn{min-width:0;font-size:12px;padding-left:10px;padding-right:10px}}
 @media(prefers-reduced-motion:reduce){.btn,.chev{transition:none}.btn:active{transform:none}}
 @view-transition{navigation:auto}
 ::view-transition-old(root){animation:page-out .28s cubic-bezier(.4,0,.2,1) both}
@@ -120,18 +120,19 @@ function renderError(message){
   $('content').innerHTML='<div class="err"><p>'+esc(message)+'</p><p><a href="./index.html">Back to all courses</a> or <a href="../main/index.html">find my level</a>.</p></div>';
 }
 
-function statusFor(exerciseIds,progress){
-  if(!exerciseIds.length) return 'not-started';
-  // Agent 4 (MASTERY-THRESHOLD): "completed" now requires every exercise to
-  // be mastered (scored >=60%, see shared/js/course-progress.js), not just
-  // attempted-and-marked-completed with any score.
+function statusFor(lesson,progress){
+  var ids=lesson.exercise_quiz_ids||[];
+  if(window.MylingoCourseProgress&&window.MylingoCourseProgress.lessonCompletionRecord){
+    var rec=window.MylingoCourseProgress.lessonCompletionRecord(lesson,progress);
+    if(rec.completed)return 'completed';
+    if(rec.progress>0||ids.some(function(id){return !!progress[id]})|| (lesson.lesson_quiz_id&&progress[lesson.lesson_quiz_id])) return 'in-progress';
+    return 'not-started';
+  }
+  if(!ids.length)return 'not-started';
   var isMastered=window.MylingoCourseProgress?window.MylingoCourseProgress.isMastered:function(r){return r&&r.status==='completed'};
-  var completed=exerciseIds.every(function(id){ return isMastered(progress[id]) });
-  if(completed) return 'completed';
-  var started=exerciseIds.some(function(id){ return !!progress[id] });
-  return started ? 'in-progress' : 'not-started';
+  if(ids.every(function(id){return isMastered(progress[id])}))return 'completed';
+  return ids.some(function(id){return !!progress[id]})?'in-progress':'not-started';
 }
-
 function statusLabel(s){
   return s==='completed'?'Completed':s==='in-progress'?'In progress':'Not started';
 }
@@ -195,10 +196,10 @@ Promise.all([
 
   var totalLessons=allLessonsFlat.length;
   var exerciseIdsAll=[]; allLessonsFlat.forEach(function(x){ (x.lesson.exercise_quiz_ids||[]).forEach(function(id){ exerciseIdsAll.push(id) }) });
-  var completedLessons=allLessonsFlat.filter(function(x){ return statusFor(x.lesson.exercise_quiz_ids||[],progress)==='completed' }).length;
+  var completedLessons=allLessonsFlat.filter(function(x){ return statusFor(x.lesson,progress)==='completed' }).length;
   var pct=totalLessons ? Math.round(completedLessons/totalLessons*100) : 0;
 
-  var next=allLessonsFlat.find(function(x){ return statusFor(x.lesson.exercise_quiz_ids||[],progress)!=='completed' });
+  var next=allLessonsFlat.find(function(x){ return statusFor(x.lesson,progress)!=='completed' });
   var backUrl='../courses/course.html?level='+level;
   var ctaHtml;
   if(next && next.lesson.exercise_quiz_ids && next.lesson.exercise_quiz_ids.length){
@@ -214,18 +215,22 @@ Promise.all([
 
   var unitsHtml=units.map(function(u){
     var ls=unitLessons[u.unit_id];
-    var uCompleted=ls.filter(function(l){ return statusFor(l.exercise_quiz_ids||[],progress)==='completed' }).length;
+    var uCompleted=ls.filter(function(l){ return statusFor(l,progress)==='completed' }).length;
     var uPct=ls.length?Math.round(uCompleted/ls.length*100):0;
     var isOpen=(openUnit===u.unit_id) || (!openUnit && next && next.unit.unit_id===u.unit_id);
     var lessonsHtml=ls.map(function(l){
       var ids=l.exercise_quiz_ids||[];
-      var st=statusFor(ids,progress);
+      var st=statusFor(l,progress);
       var exCount=ids.reduce(function(sum,id){ return sum+((quizMap[id]&&quizMap[id].questions)||0) },0);
-      var practiceUrl=ids.length?lessonUrl(l.lesson_id,level,backUrl+'&unit='+encodeURIComponent(u.unit_id)):null;
-      return '<li class="lesson">'+
-        '<a class="lesson-link" href="'+(practiceUrl||'#')+'"'+(!practiceUrl?' aria-disabled="true"':'')+'><div class="meta"><b>'+esc(l.title)+'</b><small>'+esc(l.category)+' \u00b7 '+ids.length+' exercise'+(ids.length===1?'':'s')+(exCount?' \u00b7 '+exCount+' question'+(exCount===1?'':'s'):'')+'</small></div><span class="chev" aria-hidden="true">→</span></a>'+
-        '<span class="status '+st+'">'+statusLabel(st)+'</span>'+
-      '</li>';
+      var globalIndex=allLessonsFlat.findIndex(function(x){return x.lesson.lesson_id===l.lesson_id});
+      var previous=globalIndex>0?allLessonsFlat[globalIndex-1].lesson:null;
+      var previousDone=previous?statusFor(previous,progress)==='completed':true;
+      var unlocked=(st==='completed')||previousDone;
+      var href=unlocked&&ids.length?lessonUrl(l.lesson_id,level,backUrl+'&unit='+encodeURIComponent(u.unit_id)):null;
+      var typeIcon=(Array.isArray(l.videos)&&l.videos.length||Array.isArray(l.video_urls)&&l.video_urls.length||l.youtube_url)?'▶':((Array.isArray(l.audios)&&l.audios.length||Array.isArray(l.audio_urls)&&l.audio_urls.length)?'◖':'T');
+      var titleBlock='<div class="meta"><b>'+esc(l.title)+'</b><small>'+esc(l.category)+' · '+ids.length+' exercise'+(ids.length===1?'':'s')+(exCount?' · '+exCount+' question'+(exCount===1?'':'s'):'')+'</small></div>';
+      var action=href?'<a class="lesson-link" href="'+href+'">'+titleBlock+'<span class="chev" aria-hidden="true">→</span></a>':'<div class="lesson-link locked" aria-disabled="true">'+titleBlock.replace('</small></div>',' · Finish the previous lesson to unlock</small></div>')+'<span class="chev" aria-hidden="true">🔒</span></div>';
+      return '<li class="lesson '+(unlocked?'unlocked':'locked')+'"><span class="type-icon" aria-hidden="true">'+typeIcon+'</span>'+action+'<span class="status '+st+'">'+(st==='completed'?'Completed':(unlocked?'Ready':'Locked'))+'</span></li>';
     }).join('');
     return '<details class="unit'+(uPct>=100&&ls.length?' unit-completed':'')+'"'+(isOpen?' open':'')+'>'+
       '<summary><span class="uinfo"><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg><span>'+esc(u.title)+'</span><span class="count">'+ls.length+' lesson'+(ls.length===1?'':'s')+'</span></span><span class="ubar"><i style="width:'+uPct+'%"></i></span></summary>'+
