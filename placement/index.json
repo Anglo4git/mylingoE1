@@ -25,5 +25,17 @@
       "quiz": "placement-001",
       "file": "c2/placement-001.json"
     }
+  },
+  "assessment_120": {
+    "quiz": "placement-120",
+    "file": "assessment/placement-120.json",
+    "question_count": 120,
+    "distribution": {
+      "A1": 40,
+      "A2": 40,
+      "B1": 40
+    },
+    "mastery_threshold_percent": 70,
+    "ceiling": "B1"
   }
 }

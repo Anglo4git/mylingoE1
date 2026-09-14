@@ -36,7 +36,7 @@ h1{margin:0 0 6px;font-size:26px}
 .bar{height:10px;background:#edf0f3;border-radius:99px;overflow:hidden;margin-bottom:6px}
 .bar i{display:block;height:100%;background:var(--brand)}
 .pctrow{display:flex;justify-content:space-between;font-size:13px;color:var(--muted);margin-bottom:16px}
-.actions{display:flex;gap:10px;flex-wrap:wrap}
+.actions{display:flex;gap:10px;flex-wrap:nowrap}
 .btn{flex:1 1 auto;text-align:center;text-decoration:none;font-weight:800;font-size:14px;padding:13px 16px;border-radius:99px;min-height:48px;display:inline-flex;align-items:center;justify-content:center;transition:transform 220ms var(--ease-release)}
 .btn:active{transform:scale(.97)}
 .btn.primary{background:var(--brand);color:#fff}
@@ -69,11 +69,12 @@ h1{margin:0 0 6px;font-size:26px}
 .status.completed{background:var(--success-soft);color:#2f6d06}
 .status.in-progress{background:#fff7e0;color:#8a6100}
 .status.not-started{background:#f1f3f5;color:var(--muted)}
-.lesson a.practice{flex:0 0 auto;text-decoration:none;font-weight:800;font-size:12px;color:var(--brand);border:1px solid var(--brand-soft);background:var(--brand-soft);border-radius:99px;padding:8px 12px;min-height:36px;display:inline-flex;align-items:center}
+.lesson-link{display:flex;align-items:center;gap:10px;flex:1;min-width:0;text-decoration:none;color:inherit}.lesson-link:hover .meta b{text-decoration:underline}.lesson-link .chev{color:var(--brand);font-size:18px;flex:0 0 auto}
 .loading{text-align:center;color:var(--muted);padding:60px 20px}
 .err{text-align:center;color:var(--muted);padding:50px 20px}
 .err a{color:var(--brand);font-weight:800;text-decoration:none}
 footer{max-width:800px;margin:0 auto;padding:24px 16px 40px;color:var(--muted);font-size:13px;text-align:center}
+@media(max-width:360px){.actions{flex-wrap:wrap}.actions .btn{min-width:0}}
 @media(prefers-reduced-motion:reduce){.btn,.chev{transition:none}.btn:active{transform:none}}
 @view-transition{navigation:auto}
 ::view-transition-old(root){animation:page-out .28s cubic-bezier(.4,0,.2,1) both}
@@ -89,7 +90,7 @@ footer{max-width:800px;margin:0 auto;padding:24px 16px 40px;color:var(--muted);f
   <nav><a href="./index.html">All courses</a> <a id="journeyLink" href="./journey.html">Journey</a></nav>
 </div></header>
 <main id="main-content">
-  <p class="crumb"><a href="./index.html">Courses</a> / <span id="crumbLevel">…</span></p>
+  <p class="crumb"><a href="./index.html">Courses</a></p>
   <div id="content"><div class="loading" role="status" aria-live="polite">Loading course…</div></div>
 </main>
 <footer>Mylingo · Works offline once installed · Free forever</footer>
@@ -177,7 +178,6 @@ Promise.all([
   if(!course){ renderError('This course isn\u2019t available yet.'); return }
 
   document.title='Mylingo · '+course.title;
-  $('crumbLevel').textContent=course.title;
   $('journeyLink').href='./journey.html?level='+encodeURIComponent(level);
 
   var quizMap={};
@@ -205,7 +205,7 @@ Promise.all([
     var ctaLabel=completedLessons>0 ? 'Continue: '+esc(next.lesson.title) : 'Start course';
     ctaHtml='<a class="btn primary" href="'+lessonUrl(next.lesson.lesson_id,level,backUrl+'&unit='+encodeURIComponent(next.unit.unit_id))+'">'+ctaLabel+'</a>';
   } else if(totalLessons){
-    ctaHtml='<a class="btn primary" href="../'+level+'/index.html">Course complete \u2014 practice again</a>';
+    ctaHtml='<a class="btn primary" href="./index.html">Course complete \u2014 back to courses</a>';
   } else {
     ctaHtml='';
   }
@@ -223,9 +223,8 @@ Promise.all([
       var exCount=ids.reduce(function(sum,id){ return sum+((quizMap[id]&&quizMap[id].questions)||0) },0);
       var practiceUrl=ids.length?lessonUrl(l.lesson_id,level,backUrl+'&unit='+encodeURIComponent(u.unit_id)):null;
       return '<li class="lesson">'+
-        '<div class="meta"><b>'+esc(l.title)+'</b><small>'+esc(l.category)+' \u00b7 '+ids.length+' exercise'+(ids.length===1?'':'s')+(exCount?' \u00b7 '+exCount+' question'+(exCount===1?'':'s'):'')+'</small></div>'+
+        '<a class="lesson-link" href="'+(practiceUrl||'#')+'"'+(!practiceUrl?' aria-disabled="true"':'')+'><div class="meta"><b>'+esc(l.title)+'</b><small>'+esc(l.category)+' \u00b7 '+ids.length+' exercise'+(ids.length===1?'':'s')+(exCount?' \u00b7 '+exCount+' question'+(exCount===1?'':'s'):'')+'</small></div><span class="chev" aria-hidden="true">→</span></a>'+
         '<span class="status '+st+'">'+statusLabel(st)+'</span>'+
-        (practiceUrl?'<a class="practice" href="'+practiceUrl+'">'+(st==='completed'?'Review lesson':'Open lesson')+'</a>':'')+
       '</li>';
     }).join('');
     return '<details class="unit'+(uPct>=100&&ls.length?' unit-completed':'')+'"'+(isOpen?' open':'')+'>'+
@@ -248,7 +247,6 @@ Promise.all([
       (totalLessons?'<div class="bar"><i style="width:'+pct+'%"></i></div><div class="pctrow"><span>'+pct+'% complete</span><span>'+completedLessons+' / '+totalLessons+' lessons</span></div>':'')+
       '<div class="actions">'+
         ctaHtml+
-        '<a class="btn secondary" href="../'+level+'/index.html">Practice this level directly</a>'+
       '</div>'+
     '</div>'+
     '<h2 class="section-title">Units</h2>'+

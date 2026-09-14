@@ -193,7 +193,7 @@ main{max-width:920px;margin:auto;padding:20px 16px 32px}
     <button class="primary" id="startBtn">Start quiz</button>
     <button class="secondary" id="resumeBtn" style="display:none">Resume</button>
     <button class="secondary" id="focusBtn"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg> Enter focus mode</button>
-    <div class="small">Free forever · No sign-up needed</div>
+    <div class="small" id="startNote">Free forever · No sign-up needed</div>
     <button class="secondary back" id="homeBtn"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back</button>
   </div>
 </div></section>
@@ -659,6 +659,7 @@ async function resolveQuizPath(quizId){
   // by the generic RuntimeContentLoader. Match any placement-* id, not
   // just the one that happens to exist today, so new placement quizzes
   // added later don't silently 404.
+  if(String(quizId||'').toLowerCase()==='placement-120') return '../placement/assessment/placement-120.json';
   if(/^placement-[a-z0-9_-]+$/i.test(String(quizId||''))) return '../placement/'+encodeURIComponent(level)+'/'+encodeURIComponent(quizId)+'.json';
   return null; // RuntimeContentLoader resolves the normal content route lazily.
 }
@@ -735,6 +736,7 @@ async function load(){
   $('titleTop').textContent=data.title;
   $('startTitle').textContent=data.title;
   $('desc').textContent=(data.questions.length+' questions · ')+(data.description||'Practice and improve your English.');
+  if(String(data.id).toLowerCase()==='placement-120'){ $('startNote').textContent='120 questions · A1 to B1 · final result capped at B1'; $('startBtn').textContent='Start level assessment'; }
   $('level').textContent=data.level||level.toUpperCase();
   if(data.category){$('categoryBadge').textContent=data.category;$('categoryBadge').style.display='inline-block'}
   show('start');
@@ -746,7 +748,7 @@ function configureStart(){
   const session=sessionForCurrentQuiz();
   const hasResume=!!session;
   $('resumeBtn').style.display=hasResume?'inline-flex':'none';
-  $('startBtn').textContent=hasResume?'Start over':'Start quiz';
+  $('startBtn').textContent=hasResume?'Start over':(String(data&&data.id).toLowerCase()==='placement-120'?'Start level assessment':'Start quiz');
 }
 
 function startFresh(){
@@ -1036,53 +1038,38 @@ function orientationEstimate(){
 function saveAssessmentResult(pct){
   if(mode!=='placement'||!window.MylingoPlacement||!data)return null;
   const estimated=anchorLevel||orientationEstimate();
+  if(String(data.id).toLowerCase()==='placement-120'){
+    const currentEvidence=window.MylingoPlacement.buildEvidence(data.questions,answerCorrect,data.id,'primary');
+    const result=window.MylingoPlacement.calculate120Placement(data.questions,answerCorrect);
+    const profile=window.MylingoPlacement.calculateResult({
+      estimated_level:estimated, assessed_level:result.recommended_level, score:pct,
+      graded_questions:gradedTotal(), questions:data.questions, evidence:currentEvidence,
+      assessment_quiz_ids:[data.id], complete:Object.keys(answerCorrect).length>=gradedTotal()
+    });
+    profile.recommended_level=result.recommended_level;
+    profile.assessed_level=result.recommended_level;
+    profile.confidence=result.confidence;
+    profile.boundary_reason='120_question_mastery';
+    profile.assessment_120=result;
+    window.MylingoPlacement.writeStored(profile);
+    return profile;
+  }
   const currentEvidence=window.MylingoPlacement.buildEvidence(data.questions,answerCorrect,data.id,stage);
   if(stage==='verification'){
     let pending=null; try{pending=JSON.parse(localStorage.getItem('mylingo.assessment.pending.v1')||'null')}catch(e){}
     const mergedEvidence=window.MylingoPlacement.mergePlacementEvidence(pending&&Array.isArray(pending.primary_evidence)?pending.primary_evidence:[],currentEvidence);
-    const final=window.MylingoPlacement.resolvePlacement({
-      estimated_level:pending&&pending.estimated_level||estimated,
-      assessed_level:level,
-      score:pct,
-      graded_questions:gradedTotal(),
-      complete:Object.keys(answerCorrect).length>=gradedTotal(),
-      stage:'verification'
-    });
-    const profile=window.MylingoPlacement.calculateResult({
-      estimated_level:pending&&pending.estimated_level||estimated,
-      assessed_level:level,
-      score:pct,
-      graded_questions:gradedTotal(),
-      questions:data.questions,
-      evidence:mergedEvidence,
-      assessment_quiz_ids:[pending&&pending.primary_quiz_id,data.id].filter(Boolean),
-      complete:Object.keys(answerCorrect).length>=gradedTotal()
-    });
-    profile.recommended_level=final.recommended_level;
-    profile.confidence=final.confidence;
-    profile.boundary_reason=final.reason;
-    profile.primary_score=pending&&Number(pending.primary_score)||null;
-    profile.verification_score=pct;
-    profile.evidence_stages=['primary','verification'];
+    const final=window.MylingoPlacement.resolvePlacement({estimated_level:pending&&pending.estimated_level||estimated,assessed_level:level,score:pct,graded_questions:gradedTotal(),complete:Object.keys(answerCorrect).length>=gradedTotal(),stage:'verification'});
+    const profile=window.MylingoPlacement.calculateResult({estimated_level:pending&&pending.estimated_level||estimated,assessed_level:level,score:pct,graded_questions:gradedTotal(),questions:data.questions,evidence:mergedEvidence,assessment_quiz_ids:[pending&&pending.primary_quiz_id,data.id].filter(Boolean),complete:Object.keys(answerCorrect).length>=gradedTotal()});
+    profile.recommended_level=final.recommended_level; profile.confidence=final.confidence; profile.boundary_reason=final.reason;
+    profile.primary_score=pending&&Number(pending.primary_score)||null; profile.verification_score=pct; profile.evidence_stages=['primary','verification'];
     try{localStorage.removeItem('mylingo.assessment.pending.v1')}catch(e){}
-    window.MylingoPlacement.writeStored(profile);
-    return profile;
+    window.MylingoPlacement.writeStored(profile); return profile;
   }
   const profile=window.MylingoPlacement.calculateResult({estimated_level:estimated,assessed_level:level,score:pct,graded_questions:gradedTotal(),questions:data.questions,evidence:currentEvidence,assessment_quiz_ids:[data.id],complete:Object.keys(answerCorrect).length>=gradedTotal()});
   const decision=window.MylingoPlacement.resolvePlacement({estimated_level:estimated,assessed_level:level,score:pct,graded_questions:gradedTotal(),complete:Object.keys(answerCorrect).length>=gradedTotal(),stage:'primary'});
   profile.verification_level=decision.action==='verify_boundary'?decision.verification_level:null;
-  if(decision.action==='verify_boundary'){
-    try{localStorage.setItem('mylingo.assessment.pending.v1',JSON.stringify({version:1,estimated_level:estimated,primary_level:level,primary_score:pct,primary_quiz_id:data.id,verification_level:decision.verification_level,primary_evidence:currentEvidence,timestamp:Date.now()}))}catch(e){}
-    profile.recommended_level=level;
-    profile.confidence=decision.confidence;
-    profile.boundary_reason=decision.reason;
-  }else{
-    profile.recommended_level=decision.recommended_level;
-    profile.confidence=decision.confidence;
-    profile.boundary_reason=decision.reason;
-    window.MylingoPlacement.writeStored(profile);
-  }
-  return profile;
+  profile.recommended_level=decision.recommended_level; profile.confidence=decision.confidence; profile.boundary_reason=decision.reason;
+  window.MylingoPlacement.writeStored(profile); return profile;
 }
 
 function renderPlacementResult(profile){
@@ -1092,10 +1079,14 @@ function renderPlacementResult(profile){
   const strong=skillBits.filter(k=>profile.skills[k]>=80);
   const practice=skillBits.filter(k=>profile.skills[k]<70);
   const pending=profile.verification_level&&profile.verification_level!==profile.assessed_level;
-  box.innerHTML='<div style="font-weight:900;margin-bottom:7px">'+(pending?'Placement assessment':'Final placement')+'</div>'+
-    '<div style="color:#6b7280;font-size:13px">Assessed: <strong style="color:#17212b">'+profile.assessed_level.toUpperCase()+' — '+profile.score+'%</strong> · Confidence: <strong style="color:#17212b">'+profile.confidence.charAt(0).toUpperCase()+profile.confidence.slice(1)+'</strong></div>'+
-    (pending?'<div style="margin-top:8px;font-size:13px">Boundary check recommended at <strong>'+profile.verification_level.toUpperCase()+'</strong>.</div>':'<div style="margin-top:8px;font-size:13px">Recommended level: <strong>'+profile.recommended_level.toUpperCase()+'</strong></div>')+
-    '<div style="margin-top:10px;color:#6b7280;font-size:12px"><strong style="color:#17212b">Evidence basis:</strong> '+(profile.evidence_question_count||0)+' unique graded questions'+(profile.evidence_stages&&profile.evidence_stages.length?' across '+profile.evidence_stages.join(' + ')+' stages':'')+'. '+(profile.coverage&&profile.coverage.unavailable_skills&&profile.coverage.unavailable_skills.listening||'')+'</div>'+
+  const is120=profile.assessment_120&&profile.assessment_120.question_count===120;
+  const a120=profile.assessment_120;
+  const lead=is120?'Your placement result':'Final placement';
+  const detail=is120?('A1 '+a120.scores.a1+'% · A2 '+a120.scores.a2+'% · B1 '+a120.scores.b1+'% · '+a120.mastery_threshold+'% mastery required to move up.'):(pending?'Boundary check recommended at '+profile.verification_level.toUpperCase()+'.':'Recommended level: '+profile.recommended_level.toUpperCase());
+  box.innerHTML='<div style="font-weight:900;margin-bottom:7px">'+lead+'</div>'+
+    '<div style="color:#6b7280;font-size:13px">Best starting level: <strong style="color:#17212b">'+profile.recommended_level.toUpperCase()+'</strong> · Confidence: <strong style="color:#17212b">'+profile.confidence.charAt(0).toUpperCase()+profile.confidence.slice(1)+'</strong></div>'+
+    '<div style="margin-top:8px;font-size:13px">'+detail+'</div>'+
+    '<div style="margin-top:10px;color:#6b7280;font-size:12px"><strong style="color:#17212b">Evidence basis:</strong> '+(profile.evidence_question_count||0)+' graded questions'+(is120?' from the 120-question A1–B1 assessment.':'')+'</div>'+
     (strong.length?'<div style="margin-top:10px"><strong>Strong areas</strong><br><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-1px;display:inline-block" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> '+strong.map(k=>k.charAt(0).toUpperCase()+k.slice(1)).join(' · ')+'</div>':'')+
     (practice.length?'<div style="margin-top:8px"><strong>Practice next</strong><br>• '+practice.map(k=>k.charAt(0).toUpperCase()+k.slice(1)).join(' · ')+'</div>':'');
 }

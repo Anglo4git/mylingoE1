@@ -12,6 +12,9 @@
     { min: 0, max: 39.999, key: 'very_weak', label: 'Very weak' }
   ];
   var STORAGE_KEY = 'mylingo.assessment.v1';
+  var ASSESSMENT_LEVELS = ['a1', 'a2', 'b1'];
+  var ASSESSMENT_120 = { question_count: 120, questions_per_level: 40, mastery_threshold: 70, ceiling: 'b1' };
+
 
   // Placement Blueprint v2 is an explicit, versioned decision contract layered
   // on top of the original deterministic helpers below. It keeps the current
@@ -26,6 +29,7 @@
       confidence_field: 'estimate_confidence',
       not_final_placement: true
     },
+    assessment_120: { question_count: 120, distribution: { a1: 40, a2: 40, b1: 40 }, mastery_threshold: 70, ceiling: 'b1' },
     primary_assessment: {
       target_questions: 10,
       min_graded_questions: 5,
@@ -275,6 +279,29 @@
     return { skills: profile, counts: counts };
   }
 
+  function calculate120Placement(questions, correctMap) {
+    var bands = { a1: { total: 0, correct: 0 }, a2: { total: 0, correct: 0 }, b1: { total: 0, correct: 0 } };
+    (questions || []).forEach(function (q, index) {
+      var raw = String(q && (q.placement_level || q.cefr) || '').toLowerCase();
+      if (!bands[raw]) return;
+      bands[raw].total += 1;
+      if (correctMap && correctMap[index]) bands[raw].correct += 1;
+    });
+    var scores = {};
+    ASSESSMENT_LEVELS.forEach(function (lv) { scores[lv] = bands[lv].total ? Math.round(bands[lv].correct / bands[lv].total * 100) : 0; });
+    var recommended = 'a1';
+    if (scores.a1 >= ASSESSMENT_120.mastery_threshold) recommended = 'a2';
+    if (scores.a1 >= ASSESSMENT_120.mastery_threshold && scores.a2 >= ASSESSMENT_120.mastery_threshold && scores.b1 >= ASSESSMENT_120.mastery_threshold) recommended = 'b1';
+    var overallTotal = ASSESSMENT_LEVELS.reduce(function (n, lv) { return n + bands[lv].total; }, 0);
+    var overallCorrect = ASSESSMENT_LEVELS.reduce(function (n, lv) { return n + bands[lv].correct; }, 0);
+    return {
+      recommended_level: recommended, scores: scores, bands: bands,
+      question_count: overallTotal, correct_count: overallCorrect,
+      mastery_threshold: ASSESSMENT_120.mastery_threshold, ceiling: ASSESSMENT_120.ceiling,
+      confidence: overallTotal >= 120 ? 'high' : (overallTotal >= 80 ? 'medium' : 'low')
+    };
+  }
+
   function calculateResult(input) {
     var questions = Array.isArray(input && input.questions) ? input.questions : [];
     var correctMap = input && input.correctMap && typeof input.correctMap === 'object' ? input.correctMap : {};
@@ -449,6 +476,8 @@
     calculateSkillProfile: calculateSkillProfile,
     calculateResult: calculateResult,
     validateQuestionMetadata: validateQuestionMetadata,
+    calculate120Placement: calculate120Placement,
+    ASSESSMENT_120: JSON.parse(JSON.stringify(ASSESSMENT_120)),
     PLACEMENT_BLUEPRINT_V2: JSON.parse(JSON.stringify(PLACEMENT_BLUEPRINT_V2)),
     validatePlacementBlueprint: validatePlacementBlueprint,
     resolvePlacement: resolvePlacement,

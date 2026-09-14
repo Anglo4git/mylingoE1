@@ -3,6 +3,7 @@
 
   var STORAGE_KEY = 'mylingo.orientation.v1';
   var LEVELS = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'];
+  var PLACEMENT_LEVELS = ['a1', 'a2', 'b1'];
   var QUESTIONS = [
     { id:'confidence', text:'How comfortable do you feel using English in everyday situations?', answers:['I’m just starting','I can handle simple situations','I can usually manage','I’m very comfortable','I can handle almost anything'] },
     { id:'listening', text:'When people speak English to you, how much can you usually understand?', answers:['Only a few words','Simple, slow conversations','Most everyday conversations','Most conversations, even when they’re faster','Almost everything'] },
@@ -38,7 +39,7 @@
 
   function recommendation(answers) {
     var score = scoreAnswers(answers);
-    var level = levelFromScore(score);
+    var level = PLACEMENT_LEVELS[Math.min(PLACEMENT_LEVELS.length - 1, Math.floor(clamp(score / MAX_SCORE, 0, 1) * PLACEMENT_LEVELS.length))];
     var ratio = MAX_SCORE ? score / MAX_SCORE : 0;
     var estimateScore = Math.round(ratio * 100);
     var confidence = ratio < 0.2 || ratio > 0.85 ? 'medium' : 'high';
@@ -53,8 +54,8 @@
   }
 
   function placementUrl(level) {
-    level = LEVELS.indexOf(level) >= 0 ? level : 'a1';
-    return '../shared/quiz.html?quiz=placement-001&level=' + encodeURIComponent(level) + '&mode=placement&redirect=../' + encodeURIComponent(level) + '/dashboard.html';
+    level = PLACEMENT_LEVELS.indexOf(level) >= 0 ? level : 'a1';
+    return '../shared/quiz.html?quiz=placement-120&level=b1&mode=placement&redirect=../' + encodeURIComponent(level) + '/dashboard.html';
   }
 
   function readState() {

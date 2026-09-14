@@ -13,11 +13,19 @@
   --my-dark-success:#8be56a;
   --my-dark-success-soft:#1b4828;
   --my-dark-warning:#ffd166;
+  --my-dark-input:#0f1928;
+  --my-dark-hover:#20324d;
+  --my-dark-shadow:rgba(0,0,0,.45);
 }
 @media (prefers-color-scheme:dark){
   html,body{background:var(--my-dark-bg)!important;color:var(--my-dark-ink)!important}
   body{--brand:var(--my-dark-brand)!important;--brand-dark:var(--my-dark-brand-dark)!important;--brand-soft:var(--my-dark-soft)!important;--ink:var(--my-dark-ink)!important;--muted:var(--my-dark-muted)!important;--line:var(--my-dark-line)!important;--bg:var(--my-dark-bg)!important;--card:var(--my-dark-card)!important;--success:var(--my-dark-success)!important;--success-soft:var(--my-dark-success-soft)!important}
-  header,.card,.section-card,.hero-card,.level,.goal,.step,.statcard,.unit,.overlay,.suggest-grid a,.input-card,.match-card,.ranking-card,.match-left,.rank-item,.option,.answer-input,.answer-select,.media-audio,.qimg-wrap,.mylingo-appshell{background:var(--my-dark-card)!important;color:var(--my-dark-ink)!important;border-color:var(--my-dark-line)!important}
+  header,.card,.section-card,.hero-card,.level,.goal,.step,.statcard,.unit,.overlay,.suggest-grid a,.input-card,.match-card,.ranking-card,.match-left,.rank-item,.option,.answer-input,.answer-select,.media-audio,.qimg-wrap,.mylingo-appshell,.course-card{background:var(--my-dark-card)!important;color:var(--my-dark-ink)!important;border-color:var(--my-dark-line)!important}
+  input,select,textarea{background:var(--my-dark-input)!important;color:var(--my-dark-ink)!important;border-color:var(--my-dark-line)!important}
+  .course-card:hover,.goal:hover,.step:hover,.suggest-grid a:hover{background:var(--my-dark-hover)!important;border-color:var(--my-dark-brand)!important}
+  .card h1,.card h2,.card h3,.course-card h2,.lesson b,.lesson-link .meta b,.question,.modal h1{color:var(--my-dark-ink)!important}
+  .btn.primary,.primary,.next{color:#07111f!important}
+  .btn.secondary,.secondary{box-shadow:none!important}
   .mylingo-appshell{background:rgba(18,28,45,.96)!important}
   .btn.secondary,.secondary,.more,.chip,.key,.mini-flow div{background:var(--my-dark-card-2)!important;color:var(--my-dark-ink)!important;border-color:var(--my-dark-line)!important}
   .hero p,.card p,.desc,.sub,.lead,.muted,.small,.footer-note,footer,.stat .l,.lesson small,.lesson .meta small,.qstatus,.section-head p,.empty,.err,.readtime,.crumb,.headrow nav a{color:var(--my-dark-muted)!important}
@@ -36,6 +44,10 @@
   .skel{background:var(--my-dark-card)!important;border-color:var(--my-dark-line)!important}
   .skel::after{background:linear-gradient(90deg,transparent,rgba(255,255,255,.06),transparent)!important}
 }
-html[data-theme="dark"],html[data-theme="dark"] body{
-  background:var(--my-dark-bg)!important;color:var(--my-dark-ink)!important;
+html[data-theme="dark"],html[data-theme="dark"] body{background:var(--my-dark-bg)!important;color:var(--my-dark-ink)!important;}
+@media(prefers-color-scheme:dark){a{color:var(--my-dark-ink)} button{color:var(--my-dark-ink)} .crumb a,.lesson-content a,.video-link,.err a{color:var(--my-dark-brand)!important}
+  [style*="color:#17212b"],[style*="color: #17212b"]{color:var(--my-dark-ink)!important}
+  [style*="color:#6b7280"],[style*="color: #6b7280"]{color:var(--my-dark-muted)!important}
+  [style*="background:#fff"],[style*="background: #fff"],[style*="background:white"],[style*="background: white"]{background:var(--my-dark-card)!important;color:var(--my-dark-ink)!important}
+  [style*="color:#111827"],[style*="color: #111827"],[style*="color:#374151"],[style*="color: #374151"]{color:var(--my-dark-ink)!important}
 }

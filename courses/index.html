@@ -30,7 +30,7 @@ h1{margin:0 0 4px}
 .findlevel a:active{transform:scale(.97)}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;list-style:none;padding:0;margin:0}
 .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;transition:transform 220ms var(--ease-release),border-color 120ms var(--ease-micro)}
-.card:hover{border-color:#c9d0d8}
+.card:hover{border-color:#c9d0d8}.course-card{display:block;text-decoration:none;color:inherit;height:100%}.course-card:focus-visible{outline:3px solid var(--brand);outline-offset:3px}
 .card.is-level-locked{opacity:.55}
 .card.is-level-locked .btn{pointer-events:none;background:#f1f3f5!important;color:var(--muted)!important;box-shadow:none}
 .card h2{margin:0 0 4px;font-size:19px}
@@ -41,7 +41,7 @@ h1{margin:0 0 4px}
 .bar{height:8px;background:#edf0f3;border-radius:99px;overflow:hidden;margin-bottom:6px}
 .bar i{display:block;height:100%;background:var(--brand)}
 .pctrow{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-bottom:14px}
-.actions{display:flex;gap:8px;flex-wrap:wrap}
+.actions{display:flex;gap:8px;flex-wrap:nowrap}
 .btn{flex:1 1 auto;text-align:center;text-decoration:none;font-weight:800;font-size:13px;padding:11px 14px;border-radius:99px;min-height:44px;display:inline-flex;align-items:center;justify-content:center;transition:transform 220ms var(--ease-release)}
 .btn:active{transform:scale(.97)}
 .btn.primary{background:var(--brand);color:#fff}
@@ -51,6 +51,7 @@ h1{margin:0 0 4px}
 @keyframes sh{from{transform:translateX(-100%)}to{transform:translateX(100%)}}
 .err{text-align:center;color:var(--muted);padding:50px 20px;grid-column:1/-1}
 footer{max-width:950px;margin:0 auto;padding:24px 16px 40px;color:var(--muted);font-size:13px;text-align:center}
+@media(max-width:360px){.actions{flex-wrap:wrap}.actions .btn{min-width:0}}
 @media(prefers-reduced-motion:reduce){.skel::after{animation:none}.card,.btn,.findlevel a{transition:none}.btn:active,.findlevel a:active{transform:none}}
 @view-transition{navigation:auto}
 ::view-transition-old(root){animation:page-out .28s cubic-bezier(.4,0,.2,1) both}
@@ -67,7 +68,7 @@ footer{max-width:950px;margin:0 auto;padding:24px 16px 40px;color:var(--muted);f
 </div></header>
 <main id="main-content">
   <h1>Courses</h1>
-  <p class="sub">A guided path through each level — short revision, then practice, organized into units and lessons. You can also jump straight into any level and practice directly, any time.</p>
+  <p class="sub">A guided path through each level — learn in lessons, then practise the exercises that belong to each lesson.</p>
   <div class="findlevel">
     <p>Not sure where to start?</p>
     <a href="../main/index.html">Find my level</a>
@@ -144,19 +145,15 @@ Promise.all([
     var startedAny=courseLessons.some(function(l){ return (l.exercise_quiz_ids||[]).some(function(id){ return !!progress[id] }) });
     var pct=courseLessons.length ? Math.round(completedLessons/courseLessons.length*100) : 0;
     var level=course.level.toLowerCase();
-    var ctaLabel=pct>=100 && courseLessons.length ? 'Practice again' : (startedAny ? 'Continue' : 'Start course');
+    var ctaLabel=pct>=100 && courseLessons.length ? 'Review course' : (startedAny ? 'Continue' : 'Start course');
 
-    return '<li class="card" data-level="'+level+'">'+
+    return '<li data-level="'+level+'"><a class="card course-card" href="./course.html?level='+level+'" aria-label="Open '+esc(course.title)+' course">'+
       '<span class="lvl">'+esc(course.level)+' \u00b7 '+esc(LEVEL_LABEL[course.level]||'')+'</span>'+
       '<h2>'+esc(course.title)+'</h2>'+
       '<p>'+esc(course.description)+'</p>'+
       '<div class="stats"><span><b>'+courseUnits.length+'</b> units</span><span><b>'+courseLessons.length+'</b> lessons</span><span><b>'+exerciseIds.length+'</b> exercises</span></div>'+
-      (courseLessons.length ? '<div class="bar"><i style="width:'+pct+'%"></i></div><div class="pctrow"><span>'+pct+'% complete</span></div>' : '')+
-      '<div class="actions">'+
-        '<a class="btn primary" href="./course.html?level='+level+'">'+ctaLabel+'</a>'+
-        '<a class="btn secondary" href="../'+level+'/index.html">Practice directly</a>'+
-      '</div>'+
-    '</li>';
+      (courseLessons.length ? '<div class="bar"><i style="width:'+pct+'%"></i></div><div class="pctrow"><span>'+pct+'% complete</span><span>'+esc(ctaLabel)+'</span></div>' : '')+
+      '</a></li>';
   }).join('');
 
   $('grid').innerHTML=html;

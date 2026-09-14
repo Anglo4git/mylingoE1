@@ -31,14 +31,14 @@ a{color:inherit}
 /* ---- Chapter-trail strip: shows Lesson -> Watch -> Practice progress ---- */
 .chapter-trail{max-width:820px;margin:auto;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 0 12px}
 .chapter-trail::-webkit-scrollbar{display:none}
-.trail-item{flex:1 1 0;min-width:96px;display:flex;align-items:center;gap:8px;background:transparent;border:none;border-bottom:3px solid var(--line);color:var(--muted);font-size:12px;font-weight:800;padding:0 4px 10px;cursor:pointer;white-space:nowrap;transition:color .2s var(--ease-micro),border-color .2s var(--ease-micro)}
-.trail-item .num{width:20px;height:20px;border-radius:50%;background:var(--line);color:var(--muted);display:grid;place-items:center;font-size:10px;flex:0 0 auto;transition:background .2s,color .2s}
+.trail-item{flex:1 1 0;min-width:96px;display:flex;align-items:center;gap:8px;touch-action:manipulation;background:transparent;border:none;border-bottom:3px solid var(--line);color:var(--muted);font-size:12px;font-weight:800;padding:0 4px 10px;cursor:pointer;white-space:nowrap;transition:color .2s var(--ease-micro),border-color .2s var(--ease-micro)}
+.trail-item .num{width:22px;height:22px;border-radius:50%;background:var(--line);color:var(--muted);display:grid;place-items:center;font-size:10px;flex:0 0 auto;transition:background .2s,color .2s}
 .trail-item.done .num{background:var(--success);color:#0b0c0d}
-.trail-item.active{color:#fff;border-color:var(--brand)}
+.trail-item .kind{font-size:12px;line-height:1}.trail-item.active{color:#fff;border-color:var(--brand)}
 .trail-item.active .num{background:var(--brand);color:#0b0c0d}
 .trail-item:hover{color:#fff}
 
-main{max-width:820px;margin:auto;padding:20px 16px 48px}
+main{max-width:820px;margin:auto;padding:20px 16px calc(140px + env(safe-area-inset-bottom))}
 .crumb{font-size:13px;color:var(--muted);margin:0 0 14px}
 .crumb a{color:var(--brand);text-decoration:none;font-weight:700}
 .course-id{display:flex;align-items:center;gap:6px;margin-bottom:14px;font-size:12px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.03em}
@@ -136,7 +136,6 @@ h1{margin:6px 0 8px;font-size:24px;color:#fff}
   <nav class="chapter-trail" id="chapterTrail" role="tablist" aria-label="Lesson sections"></nav>
 </div>
 <main id="main-content">
-  <p class="crumb" id="crumb">…</p>
   <div id="content"><div class="loading" role="status" aria-live="polite">Loading lesson…</div></div>
 </main>
 <script src="../shared/js/safe-url.js"></script>
@@ -218,26 +217,31 @@ function youtubeEmbedSrc(vid){
 // offline/broken-link fallback) plus any presentation image. Kept as a
 // single function so both the initial render and the offline listener
 // build the exact same markup.
-function renderMedia(lesson,vid,isOnline){
-  var html='';
-  if(window.MylingoSafeUrl && window.MylingoSafeUrl.isSafeMediaUrl(lesson.presentation_url)){
-    html+='<div class="card media"><h2>Presentation</h2>'+
-      '<img src="'+esc(lesson.presentation_url)+'" alt="'+esc(lesson.title)+' presentation" loading="lazy" '+
-      'onerror="this.closest(\'.media\').remove()">'+
-    '</div>';
+function mediaEntries(lesson){
+  function normalize(list, fallback){
+    var arr=Array.isArray(list)?list:[];
+    if(!arr.length && fallback) arr=[fallback];
+    return arr.map(function(item){
+      if(typeof item==='string') return {url:item,title:''};
+      if(item&&typeof item==='object') return {url:item.url||item.src||'',title:item.title||item.label||''};
+      return null;
+    }).filter(function(x){return x&&x.url});
   }
-  if(lesson.youtube_url){
-    if(vid && isOnline){
-      html+='<div class="card"><h2>Watch</h2><div class="video-wrap">'+
-        '<iframe src="'+esc(youtubeEmbedSrc(vid))+'" title="'+esc(lesson.title)+' video explanation" '+
-        'loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen '+
-        'onerror="this.closest(\'.video-wrap\').outerHTML=\'<div class=&quot;video-fallback&quot;>Video unavailable right now. Read the quick revision instead.</div>\'"></iframe>'+
-      '</div></div>';
-    } else if(vid && !isOnline){
-      html+='<div class="card"><h2>Watch</h2><div class="video-fallback">Video unavailable offline. Read the quick revision instead.</div></div>';
-    }
+  return {
+    videos:normalize(lesson.video_urls||lesson.videos, lesson.youtube_url),
+    audios:normalize(lesson.audio_urls||lesson.audios, lesson.audio_url)
+  };
+}
+function renderMediaItem(entry,kind,title,isOnline){
+  var safe=window.MylingoSafeUrl&&window.MylingoSafeUrl.isSafeMediaUrl(entry.url);
+  if(!safe) return '<div class="card"><h2>'+esc(kind==='video'?'Video':'Audio')+'</h2><div class="video-fallback">This media link is not available.</div></div>';
+  if(!isOnline) return '<div class="card"><h2>'+esc(kind==='video'?'Video':'Audio')+'</h2><div class="video-fallback">Media unavailable offline. Continue with the lesson text.</div></div>';
+  if(kind==='video'){
+    var vid=youtubeId(entry.url);
+    if(vid) return '<div class="card"><h2>'+esc(entry.title||'Video')+'</h2><div class="video-wrap"><iframe src="'+esc(youtubeEmbedSrc(vid))+'" title="'+esc(entry.title||title)+' video" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe></div></div>';
+    return '<div class="card"><h2>'+esc(entry.title||'Video')+'</h2><video controls playsinline preload="metadata" style="width:100%;border-radius:14px;background:#000" src="'+esc(entry.url)+'"></video></div>';
   }
-  return html;
+  return '<div class="card"><h2>'+esc(entry.title||'Audio lesson')+'</h2><audio controls preload="metadata" style="width:100%" src="'+esc(entry.url)+'"></audio></div>';
 }
 
 function quizUrl(quizId,level,redirect,courseTitle,unitTitle,lessonIdParam){
@@ -311,7 +315,6 @@ lessonsFetch.catch(function(){
     var quizMap={}; (quizList||[]).forEach(function(q){ quizMap[q.id]=q });
 
     document.title='Mylingo · '+lesson.title;
-    $('crumb').innerHTML='<a href="./index.html">Courses</a> / <a href="./course.html?level='+level+'">'+esc(course.title)+'</a> / '+esc(unit.title);
 
     var courseBack='../courses/course.html?level='+level+'&unit='+encodeURIComponent(unit.unit_id);
     var backUrl=redirectParam || courseBack;
@@ -326,9 +329,7 @@ lessonsFetch.catch(function(){
     var hasSummary=!!(revision.summary && revision.summary.trim());
     var examples=(revision.examples||[]).filter(Boolean);
     var terms=(revision.key_terms||[]).filter(Boolean);
-    var vid=youtubeId(lesson.youtube_url);
     var isOnline=('onLine' in navigator) ? navigator.onLine : true;
-    var hasMedia=!!((window.MylingoSafeUrl && window.MylingoSafeUrl.isSafeMediaUrl(lesson.presentation_url)) || (lesson.youtube_url && vid));
 
     var showCategoryChip=lesson.category && lesson.category.trim().toLowerCase()!==(unit.title||'').trim().toLowerCase();
     var headerHtml=
@@ -339,44 +340,30 @@ lessonsFetch.catch(function(){
       '<h1>'+esc(lesson.title)+'</h1>'+
       '<p class="readtime"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg> ~'+minutes+' min read</p>';
 
-    // ---- Slide deck: text lesson -> watch (if media) -> practice (last) ----
-    // A lesson authored as blog-style rich HTML (lesson.body_content, the
-    // JSON "headless CMS" shape) takes over the whole Lesson slide; plain
-    // structured lessons keep the summary/examples/terms cards as before.
+    // ---- Slide deck: authored chapters -> videos -> audio -> practice.
+    // Backward compatible: one body_content still renders as one text slide;
+    // richer lessons can add chapters[], video_urls/videos[], audio_urls/audios[].
     var bodyContent=lesson.body_content && String(lesson.body_content).trim();
-    var lessonSlideHtml;
-    if(bodyContent){
-      lessonSlideHtml=headerHtml+'<div class="card"><div class="lesson-content">'+sanitizeHtml(bodyContent)+'</div></div>';
-    } else {
-      lessonSlideHtml=headerHtml+
-        '<div class="card"><h2>Quick revision</h2>'+
-          (hasSummary ? '<p class="summary">'+esc(revision.summary)+'</p>' : '<p class="summary">No revision notes yet for this lesson \u2014 you can still practice.</p>')+
-        '</div>'+
-        (examples.length ? '<div class="card"><h2>Examples</h2><ul class="examples">'+examples.map(function(e){ return '<li>'+esc(e)+'</li>' }).join('')+'</ul></div>' : '')+
-        (terms.length ? '<div class="card"><h2>Key terms</h2><div class="terms">'+terms.map(function(t){ return '<span class="term">'+esc(t)+'</span>' }).join('')+'</div></div>' : '');
-    }
+    var chapters=Array.isArray(lesson.chapters)?lesson.chapters.filter(function(c){return c&&String(c.body_content||c.html||c.body||'').trim()}):[];
+    var media=mediaEntries(lesson);
     var slides=[];
-    slides.push({ key:'lesson', label:'Lesson', html: lessonSlideHtml });
-    if(hasMedia){
-      slides.push({ key:'watch', label:'Watch', html: renderMedia(lesson,vid,isOnline) });
-    }
-    var exercisesHtml='';
-    if(exerciseIds.length){
-      exercisesHtml='<div class="card"><h2>Exercises in this lesson</h2><div class="exercise-cards">'+
-        exerciseIds.map(function(id){
-          var q=quizMap[id]||{};
-          var title=q.title||id;
-          var count=q.questions?String(q.questions)+' question'+(q.questions===1?'':'s'):'';
-          return '<a class="exercise-card" href="'+quizUrl(id,level,backUrl,course.title,unit.title,lesson.lesson_id)+'"><div><h3>'+esc(title)+'</h3>'+(count?'<small>'+esc(count)+'</small>':'')+'</div><span class="chev" aria-hidden="true">\u2192</span></a>';
-        }).join('')+
-      '</div></div>';
+    if(chapters.length){
+      chapters.forEach(function(ch,index){
+        var html=String(ch.body_content||ch.html||ch.body||'');
+        slides.push({key:'text-'+index,label:ch.title||('Chapter '+(index+1)),kind:'text',html:headerHtml+'<div class="card"><div class="lesson-content">'+sanitizeHtml(html)+'</div></div>'});
+      });
     } else {
-      exercisesHtml='<div class="card"><p class="summary">No exercises are linked to this lesson yet.</p></div>';
+      var lessonSlideHtml;
+      if(bodyContent){ lessonSlideHtml=headerHtml+'<div class="card"><div class="lesson-content">'+sanitizeHtml(bodyContent)+'</div></div>'; }
+      else { lessonSlideHtml=headerHtml+'<div class="card"><h2>Quick revision</h2>'+(hasSummary?'<p class="summary">'+esc(revision.summary)+'</p>':'<p class="summary">No revision notes yet for this lesson — you can still practice.</p>')+'</div>'+(examples.length?'<div class="card"><h2>Examples</h2><ul class="examples">'+examples.map(function(e){return '<li>'+esc(e)+'</li>'}).join('')+'</ul></div>':'')+(terms.length?'<div class="card"><h2>Key terms</h2><div class="terms">'+terms.map(function(t){return '<span class="term">'+esc(t)+'</span>'}).join('')+'</div></div>':''); }
+      slides.push({key:'text',label:'Lesson',kind:'text',html:lessonSlideHtml});
     }
-    slides.push({ key:'practice', label:'Practice', html: exercisesHtml });
-
-    var lastCtaHref=lessonStartUrl||startUrl||null;
-    var lastCtaLabel=lessonStartUrl?'Start lesson':(startUrl?'Start exercises':null);
+    media.videos.forEach(function(entry,index){ slides.push({key:'video-'+index,label:entry.title||('Video '+(index+1)),kind:'video',html:renderMediaItem(entry,'video',lesson.title,isOnline)}); });
+    media.audios.forEach(function(entry,index){ slides.push({key:'audio-'+index,label:entry.title||('Audio '+(index+1)),kind:'audio',html:renderMediaItem(entry,'audio',lesson.title,isOnline)}); });
+    var exercisesHtml='';
+    if(exerciseIds.length){ exercisesHtml='<div class="card"><h2>Practice in this lesson</h2><div class="exercise-cards">'+exerciseIds.map(function(id){var q=quizMap[id]||{};var title=q.title||id;var count=q.questions?String(q.questions)+' question'+(q.questions===1?'':'s'):'';return '<a class="exercise-card" href="'+quizUrl(id,level,backUrl,course.title,unit.title,lesson.lesson_id)+'"><div><h3>'+esc(title)+'</h3>'+(count?'<small>'+esc(count)+'</small>':'')+'</div><span class="chev" aria-hidden="true">→</span></a>';}).join('')+'</div></div>'; }
+    else { exercisesHtml='<div class="card"><p class="summary">No exercises are linked to this lesson yet.</p></div>'; }
+    slides.push({key:'practice',label:'Practice',kind:'practice',html:exercisesHtml});
 
     var currentIndex=0;
     var maxReached=0;
@@ -384,8 +371,7 @@ lessonsFetch.catch(function(){
     function renderTrail(){
       $('chapterTrail').innerHTML=slides.map(function(s,i){
         var cls='trail-item'+(i===currentIndex?' active':'')+(i<currentIndex?' done':'');
-        return '<button type="button" class="'+cls+'" data-idx="'+i+'" role="tab" aria-selected="'+(i===currentIndex)+'">'+
-          '<span class="num">'+(i+1)+'</span><span>'+esc(s.label)+'</span></button>';
+        var icon=s.kind==='video'?'▶':(s.kind==='audio'?'◖':(s.kind==='practice'?'✓':'T')); return '<button type="button" class="'+cls+'" data-idx="'+i+'" role="tab" aria-selected="'+(i===currentIndex)+'" aria-label="'+esc(s.label)+'"><span class="num"><span class="kind" aria-hidden="true">'+icon+'</span></span><span>'+esc(s.label)+'</span></button>';
       }).join('');
       Array.prototype.forEach.call($('chapterTrail').querySelectorAll('.trail-item'),function(btn){
         btn.addEventListener('click',function(){
