@@ -21,11 +21,12 @@ a{color:inherit}
 .skip-link{position:absolute;left:8px;top:-48px;background:var(--brand);color:#0b0c0d;padding:10px 16px;border-radius:10px;font-weight:800;text-decoration:none;z-index:1000;transition:top .15s ease}
 .skip-link:focus{top:8px}
 
-/* ---- Header: spotlight top bar ---- */
-header{padding:16px 16px 0;background:var(--panel);border-bottom:1px solid var(--line);padding-top:calc(16px + env(safe-area-inset-top))}
-.headrow{max-width:820px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding-bottom:14px}
-.brand-logo{height:24px;width:auto;display:block;filter:brightness(0) invert(1)}
-.headrow nav a{font-size:12px;font-weight:700;text-decoration:none;color:var(--muted);border:1px solid var(--line);border-radius:99px;padding:10px 14px;display:inline-flex;align-items:center;min-height:40px}
+/* ---- Full-screen player mode (Agent NAV-STRIP): no branded site header,
+   no bottom app-shell nav — this page is the fullscreen slide player.
+   The chapter-trail is the only top chrome, acting as both a slide
+   progress indicator and the player's "exit" affordance via the crumb
+   link below it. It sits in a plain top strip, not a bordered site header. ---- */
+.player-top{padding:calc(10px + env(safe-area-inset-top)) 16px 0}
 
 /* ---- Chapter-trail strip: shows Lesson -> Watch -> Practice progress ---- */
 .chapter-trail{max-width:820px;margin:auto;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 0 12px}
@@ -37,7 +38,7 @@ header{padding:16px 16px 0;background:var(--panel);border-bottom:1px solid var(-
 .trail-item.active .num{background:var(--brand);color:#0b0c0d}
 .trail-item:hover{color:#fff}
 
-main{max-width:820px;margin:auto;padding:20px 16px 140px}
+main{max-width:820px;margin:auto;padding:20px 16px 48px}
 .crumb{font-size:13px;color:var(--muted);margin:0 0 14px}
 .crumb a{color:var(--brand);text-decoration:none;font-weight:700}
 .course-id{display:flex;align-items:center;gap:6px;margin-bottom:14px;font-size:12px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.03em}
@@ -113,8 +114,6 @@ h1{margin:6px 0 8px;font-size:24px;color:#fff}
 .btn.ghost{background:transparent;color:var(--muted);border:1px solid var(--line);flex:0 0 auto;min-width:96px}
 @media(prefers-reduced-motion:reduce){.btn{transition:none}.btn:active{transform:none}}
 
-footer{max-width:820px;margin:0 auto;padding:24px 16px 120px;color:var(--muted);font-size:13px;text-align:center}
-
 /* ---- Responsive: collapse trail labels, stack nav on narrow screens ---- */
 @media(max-width:520px){
   .trail-item span{display:none}
@@ -127,21 +126,19 @@ footer{max-width:820px;margin:0 auto;padding:24px 16px 120px;color:var(--muted);
 @keyframes page-out{to{opacity:0;transform:scale(.96)}}
 @keyframes page-in{from{opacity:0;transform:scale(1.04)}}
 @media(prefers-reduced-motion:reduce){@view-transition{navigation:none}}
-</style><link rel="stylesheet" href="../shared/css/app-shell.css"><link rel="stylesheet" href="../shared/css/theme.css"></head>
+/* No app-shell.css: the fullscreen player intentionally carries no
+   branded site header and no bottom app tab bar (see .player-top /
+   .chapter-trail below and the removed app-shell.js include). */
+</style><link rel="stylesheet" href="../shared/css/theme.css"></head>
 <script src="../shared/js/splash.js"></script><body class="lesson-player">
 <a href="#main-content" class="skip-link">Skip to main content</a>
-<header>
-  <div class="headrow">
-    <img class="brand-logo" src="../shared/brand/logo-horizontal.svg" alt="Mylingo">
-    <nav><a href="./index.html">All courses</a> <a href="../main/index.html">All levels</a></nav>
-  </div>
+<div class="player-top">
   <nav class="chapter-trail" id="chapterTrail" role="tablist" aria-label="Lesson sections"></nav>
-</header>
+</div>
 <main id="main-content">
   <p class="crumb" id="crumb">…</p>
   <div id="content"><div class="loading" role="status" aria-live="polite">Loading lesson…</div></div>
 </main>
-<footer>Mylingo · Works offline once installed · Free forever</footer>
 <script src="../shared/js/safe-url.js"></script>
 <script>
 (function(){
@@ -243,10 +240,14 @@ function renderMedia(lesson,vid,isOnline){
   return html;
 }
 
-function quizUrl(quizId,level,redirect,courseTitle,unitTitle){
+function quizUrl(quizId,level,redirect,courseTitle,unitTitle,lessonIdParam){
   var url='../shared/quiz.html?quiz='+encodeURIComponent(quizId)+'&level='+encodeURIComponent(level)+(redirect?'&redirect='+encodeURIComponent(redirect):'');
   if(courseTitle) url+='&course='+encodeURIComponent(courseTitle);
   if(unitTitle) url+='&unit_title='+encodeURIComponent(unitTitle);
+  // Agent 2 (QUIZ-GATE): tells shared/quiz.html this quiz was launched
+  // from its owning lesson's player, so the gate there doesn't bounce it
+  // straight back here. Always pass the current lesson's id.
+  if(lessonIdParam) url+='&lesson='+encodeURIComponent(lessonIdParam);
   return url;
 }
 
@@ -316,9 +317,9 @@ lessonsFetch.catch(function(){
     var backUrl=redirectParam || courseBack;
     var exerciseIds=lesson.exercise_quiz_ids||[];
     var firstExercise=exerciseIds[0];
-    var startUrl=firstExercise ? quizUrl(firstExercise,level,backUrl,course.title,unit.title) : null;
+    var startUrl=firstExercise ? quizUrl(firstExercise,level,backUrl,course.title,unit.title,lesson.lesson_id) : null;
     var lessonQuizId=lesson.lesson_quiz_id;
-    var lessonStartUrl=lessonQuizId ? quizUrl(lessonQuizId,level,startUrl||backUrl,course.title,unit.title) : null;
+    var lessonStartUrl=lessonQuizId ? quizUrl(lessonQuizId,level,startUrl||backUrl,course.title,unit.title,lesson.lesson_id) : null;
 
     var minutes=estimateMinutes(lesson.revision);
     var revision=lesson.revision||{};
@@ -366,7 +367,7 @@ lessonsFetch.catch(function(){
           var q=quizMap[id]||{};
           var title=q.title||id;
           var count=q.questions?String(q.questions)+' question'+(q.questions===1?'':'s'):'';
-          return '<a class="exercise-card" href="'+quizUrl(id,level,backUrl,course.title,unit.title)+'"><div><h3>'+esc(title)+'</h3>'+(count?'<small>'+esc(count)+'</small>':'')+'</div><span class="chev" aria-hidden="true">\u2192</span></a>';
+          return '<a class="exercise-card" href="'+quizUrl(id,level,backUrl,course.title,unit.title,lesson.lesson_id)+'"><div><h3>'+esc(title)+'</h3>'+(count?'<small>'+esc(count)+'</small>':'')+'</div><span class="chev" aria-hidden="true">\u2192</span></a>';
         }).join('')+
       '</div></div>';
     } else {
@@ -431,4 +432,4 @@ lessonsFetch.catch(function(){
 })();
 </script>
 <div class="player-nav" id="playerNav"></div>
-<script src="../shared/js/app-shell.js"></script></body></html>
+</body></html>

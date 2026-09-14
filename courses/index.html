@@ -7,6 +7,7 @@
 <meta name="theme-color" content="#1959d1">
 <script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js').catch(function(){});});}</script>
 <script src="../shared/js/level-lock.js"></script>
+<script src="../shared/js/course-progress.js"></script>
 <title>Mylingo · Courses</title>
 <style>
 :root{--brand:#1959d1;--brand-dark:#0e45ae;--brand-soft:#eaf1fc;--success:#58cc02;--success-dark:#46a302;--success-soft:#e9f8df;--ink:#17212b;--muted:#4b5563;--line:#e5e7eb;--bg:#f7f9fc;--ease-micro:cubic-bezier(0.25,0.1,0.25,1);--ease-release:cubic-bezier(0.34,1.56,0.64,1)}
@@ -131,9 +132,14 @@ Promise.all([
     var unitIds={}; courseUnits.forEach(function(u){ unitIds[u.unit_id]=true });
     var courseLessons=lessons.filter(function(l){ return unitIds[l.unit_id] && l.status==='published' });
     var exerciseIds=[]; courseLessons.forEach(function(l){ (l.exercise_quiz_ids||[]).forEach(function(id){ exerciseIds.push(id) }) });
+    // Agent 4 (MASTERY-THRESHOLD): a lesson only counts toward this
+    // course-level percent once every exercise is mastered (scored >=60%,
+    // see shared/js/course-progress.js), not just attempted/marked
+    // completed with any score.
+    var isMastered=window.MylingoCourseProgress?window.MylingoCourseProgress.isMastered:function(r){return r&&r.status==='completed'};
     var completedLessons=courseLessons.filter(function(l){
       var ids=l.exercise_quiz_ids||[];
-      return ids.length>0 && ids.every(function(id){ return progress[id] && progress[id].status==='completed' });
+      return ids.length>0 && ids.every(function(id){ return isMastered(progress[id]) });
     }).length;
     var startedAny=courseLessons.some(function(l){ return (l.exercise_quiz_ids||[]).some(function(id){ return !!progress[id] }) });
     var pct=courseLessons.length ? Math.round(completedLessons/courseLessons.length*100) : 0;

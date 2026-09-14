@@ -238,6 +238,11 @@ const redirect=p.get('redirect'); // where "Continue" goes to in placement mode
 // keep today's plain header unchanged.
 const courseTitleParam=p.get('course');
 const unitTitleParam=p.get('unit_title');
+// Agent 2 (QUIZ-GATE): which lesson the caller claims this quiz belongs
+// to. Set by courses/lesson.html's quizUrl(). Used below to enforce that
+// lesson-backed quizzes can only be reached via the lesson player, not
+// linked to directly (see findOwningLesson()/enforceLessonGate()).
+const lessonParam=p.get('lesson');
 const stage=(p.get('stage')||'primary').toLowerCase();
 const anchorLevel=VALID_LEVELS.indexOf((p.get('anchor')||'').toLowerCase())>=0?(p.get('anchor')||'').toLowerCase():null;
 const $=x=>document.getElementById(x);
@@ -604,8 +609,47 @@ function getManifest(){
     .catch(()=>null);
 }
 
+// Agent 3 (QUIZ-SUGGEST): for a lesson-backed quiz (arrived with a `lesson`
+// param — see Agent 2's gate), scope the result-screen suggestions to the
+// current lesson first, then the current unit, so the learner is nudged
+// toward mastering what they're already on rather than bounced to an
+// unrelated topic that merely shares a category label. Standalone/
+// placement quizzes (no `lesson` param) are untouched — same-category
+// manifest match as before.
+function lessonSuggestionIds(){
+  if(!lessonParam) return Promise.resolve(null); // not lesson-backed — use old behavior
+  return getLevelLessons().then(lessons=>{
+    const owner=lessons.find(l=>l.lesson_id===lessonParam);
+    if(!owner) return null; // gate already validated this normally; be safe anyway
+    const tier1=(owner.exercise_quiz_ids||[]).filter(qid=>qid!==data.id);
+    if(tier1.length) return tier1;
+    if(!owner.unit_id) return null;
+    const tier2=[];
+    lessons.forEach(l=>{
+      if(l.lesson_id===owner.lesson_id||l.unit_id!==owner.unit_id) return;
+      (l.exercise_quiz_ids||[]).forEach(qid=>{ if(qid!==data.id) tier2.push(qid); });
+    });
+    return tier2.length?tier2:null;
+  }).catch(()=>null);
+}
+
 function loadSuggestions(){
-  if(!data||!data.category) return;
+  if(!data) return;
+  return lessonSuggestionIds().then(ids=>{
+    if(Array.isArray(ids)&&ids.length){
+      return getManifest().then(list=>{
+        const byId=Array.isArray(list)?new Map(list.map(item=>[item.id,item])):new Map();
+        const matched=ids.map(qid=>byId.get(qid)).filter(Boolean);
+        if(matched.length){ suggestPool=matched; return suggestPool; }
+        return categorySuggestions(); // ids didn't resolve in manifest — fall back
+      });
+    }
+    return categorySuggestions(); // no lesson/unit candidates — last-resort fallback
+  });
+}
+
+function categorySuggestions(){
+  if(!data.category) return suggestPool=[];
   return getManifest().then(list=>{ if(Array.isArray(list)) suggestPool=list.filter(item=>item.category===data.category&&item.id!==data.id); return suggestPool; });
 }
 
@@ -620,10 +664,53 @@ async function resolveQuizPath(quizId){
 }
 
 
+// Agent 2 (QUIZ-GATE): course/lesson exercises must be reached through the
+// course player (courses/lesson.html), never linked to directly. This is
+// the single choke point for that rule — it doesn't matter which page
+// tried to link straight to a lesson's quiz; if the quiz belongs to a
+// lesson and the caller didn't arrive with a matching `lesson` param
+// (i.e. it didn't come from the lesson player), send them to the lesson
+// player instead of starting the quiz. Standalone quizzes that aren't
+// referenced by any lesson (e.g. level browse-by-topic practice) are
+// unaffected — they were never part of the course/lesson flow to begin
+// with, so there's nothing to gate.
+// Agent 3 (QUIZ-SUGGEST): factored out of Agent 2's findOwningLesson() so
+// the suggestion tiering below (lessonSuggestionIds()) can reuse the same
+// fetched-and-cached lesson list instead of issuing a second network
+// request for the file findOwningLesson() already pulled during the gate
+// check earlier in load().
+let _levelLessonsPromise=null;
+function getLevelLessons(){
+  if(_levelLessonsPromise) return _levelLessonsPromise;
+  _levelLessonsPromise=fetch('../course_content/lessons/'+level+'.json',{cache:'no-store'})
+    .then(r=>{ if(!r.ok) throw new Error('http '+r.status); return r.json() })
+    .catch(()=>fetch('../course_content/lessons.json',{cache:'no-store'}).then(r=>r.json()))
+    .then(list=>Array.isArray(list)?list:[])
+    .catch(()=>[]);
+  return _levelLessonsPromise;
+}
+async function findOwningLesson(quizId){
+  if(!quizId || /^placement-/i.test(String(quizId))) return null;
+  const list=await getLevelLessons();
+  return list.find(l=>Array.isArray(l.exercise_quiz_ids)&&l.exercise_quiz_ids.indexOf(quizId)>=0)||null;
+}
+async function enforceLessonGate(){
+  const owner=await findOwningLesson(id);
+  if(!owner) return false; // not a lesson-backed quiz — nothing to gate
+  if(lessonParam && lessonParam===owner.lesson_id) return false; // arrived via the lesson player already
+  const backTo=redirect||('../courses/course.html?level='+encodeURIComponent(level));
+  location.replace('../courses/lesson.html?lesson='+encodeURIComponent(owner.lesson_id)+'&level='+encodeURIComponent(level)+'&redirect='+encodeURIComponent(backTo));
+  return true;
+}
+
 async function load(){
   show('loading');
   if(!id){errorState('No quiz to load','We couldn\'t find a quiz in this link. Head back and pick one from the list.',false);return}
   if(mode!=='placement' && window.MylingoLevelLock && window.MylingoLevelLock.isLocked(level)){errorState('Level locked','This level isn\'t unlocked yet. Head back to your current level to keep going.',false);return}
+  if(mode!=='placement'){
+    const gated=await enforceLessonGate();
+    if(gated) return; // redirected to the owning lesson's player
+  }
   let json;
   try{
     const placementPath=await resolveQuizPath(id);
