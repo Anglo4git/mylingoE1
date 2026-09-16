@@ -116,6 +116,8 @@ main{max-width:920px;margin:auto;padding:20px 16px 32px}
 @keyframes modalIn{from{opacity:0;transform:scale(.94) translateY(8px)}to{opacity:1;transform:scale(1) translateY(0)}}
 .modal{text-align:center;max-width:420px;width:100%}
 .modal .stack{display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:4px}.modal .stack.actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch}.modal .stack.actions>.reco,.modal .stack.actions>.suggest,.modal .stack.actions>.small{grid-column:1/-1;width:100%}.modal .stack.actions>.primary,.modal .stack.actions>.secondary{width:100%;min-width:0;margin:0;white-space:normal;line-height:1.2}
+@media(max-width:620px){.modal .stack.actions{grid-template-columns:repeat(2,minmax(0,1fr))}.modal .stack.actions>.reco,.modal .stack.actions>.suggest,.modal .stack.actions>.small{grid-column:1/-1}}
+@media(min-width:621px){.modal .stack.actions{grid-template-columns:repeat(3,minmax(0,1fr))}}
 .logo{width:64px;height:64px;border-radius:20px;margin:0 auto 16px;box-shadow:0 8px 0 var(--brand-dark)}
 .logo img{width:100%;height:100%;display:block;border-radius:20px}
 .brand-logo-sm{height:20px;width:auto;vertical-align:middle}
@@ -1191,21 +1193,26 @@ function end(){
       const btn=$('continueBtn');
       if(btn){
         btn.style.display='inline-flex';
-        if(pct>=60 && pos>=0 && ordered[pos+1]){
-          const nextLesson=ordered[pos+1];
-          const nextUnit=encodeURIComponent(nextLesson.unit_id||'');
-          btn.textContent='Continue to next lesson';
-          btn.onclick=()=>{stopAllSounds();location.href='../courses/lesson.html?lesson='+encodeURIComponent(nextLesson.lesson_id)+'&level='+encodeURIComponent(level)+'&redirect='+encodeURIComponent('../courses/journey.html?level='+encodeURIComponent(level)+'&unit='+nextUnit)};
-        }else{
-          btn.textContent=pct>=60?'Course complete':'Review lesson';
-          btn.onclick=()=>{stopAllSounds();location.href=backTarget()};
-        }
+        btn.textContent='Back to lesson practice';
+        btn.onclick=()=>{stopAllSounds();location.href=backTarget()};
       }
     }).catch(()=>{});
   }
 
   if(mode==='placement'){
     const profile=saveAssessmentResult(pct);
+    // Agent 152: the 120-question assessment (and the legacy verification
+    // stage) are the authoritative measurement — level-lock.js's own header
+    // comment says the assessment engine "assigning or updating a
+    // recommended level always moves the lock ceiling, up or down," but
+    // until now only the 10-question *orientation* estimate ever called
+    // setAssigned() (in main/placement.html). A learner who was orientation-
+    // guessed at A1 and then aced the real B1 assessment was told "Best
+    // starting level: B1" and sent to b1/index.html, only to find it
+    // rendered as locked — the real result never reached level-lock. Every
+    // placement completion (both the 120-question path and the legacy
+    // primary/verification path) must move the ceiling to match.
+    try{ if(profile&&profile.recommended_level&&window.MylingoLevelLock) window.MylingoLevelLock.setAssigned(profile.recommended_level); }catch(e){ /* level-lock update must never break the results screen */ }
     renderPlacementResult(profile);
     renderPlacementRecommendations(profile);
     placementContinue(profile);

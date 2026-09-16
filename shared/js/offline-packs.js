@@ -48,16 +48,39 @@
   }
   function evictIfNeeded(exceptId) {
     if (!global.caches) return Promise.resolve();
-    return caches.keys().then(function (keys) {
-      var ids = keys.filter(function (key) { return key.indexOf(CACHE_PREFIX) === 0; })
-        .map(function (key) { return key.slice(CACHE_PREFIX.length); })
-        .filter(function (id) { return id && String(id) !== String(exceptId); });
-      if (ids.length < MAX_INSTALLED_PACKS) return;
-      var meta = readMeta();
-      ids.sort(function (a, b) { return (meta[a] || 0) - (meta[b] || 0); });
-      var remove = ids.slice(0, ids.length - MAX_INSTALLED_PACKS + 1);
-      return Promise.all(remove.map(function (id) { delete meta[id]; return caches.delete(CACHE_PREFIX + id); }))
-        .then(function () { writeMeta(meta); });
+    return getIndex().then(function (index) {
+      var packs = index && Array.isArray(index.packs) ? index.packs : [];
+      var protectedIds = {};
+      var visiting = {};
+
+      // Never evict the pack being installed, or anything it depends on.
+      // Level packs depend on core, so blindly evicting the oldest cache can
+      // leave an installed pack unusable offline after the next installation.
+      function protectDependencies(id) {
+        id = String(id);
+        if (protectedIds[id] || visiting[id]) return;
+        protectedIds[id] = true;
+        visiting[id] = true;
+        var pack = findPack(index, id);
+        var deps = pack && Array.isArray(pack.dependencies) ? pack.dependencies : [];
+        deps.forEach(protectDependencies);
+        delete visiting[id];
+      }
+      protectDependencies(exceptId);
+
+      return caches.keys().then(function (keys) {
+        var ids = keys.filter(function (key) { return key.indexOf(CACHE_PREFIX) === 0; })
+          .map(function (key) { return key.slice(CACHE_PREFIX.length); })
+          .filter(function (id) { return id && !protectedIds[String(id)]; });
+        var allInstalledCount = keys.filter(function (key) { return key.indexOf(CACHE_PREFIX) === 0; }).length;
+        if (allInstalledCount < MAX_INSTALLED_PACKS) return;
+        var meta = readMeta();
+        ids.sort(function (a, b) { return (meta[a] || 0) - (meta[b] || 0); });
+        var removeCount = allInstalledCount - MAX_INSTALLED_PACKS + 1;
+        var remove = ids.slice(0, removeCount);
+        return Promise.all(remove.map(function (id) { delete meta[id]; return caches.delete(CACHE_PREFIX + id); }))
+          .then(function () { writeMeta(meta); });
+      });
     });
   }
   function isInstalled(id) {
