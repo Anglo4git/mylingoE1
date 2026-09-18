@@ -123,7 +123,7 @@ main{max-width:920px;margin:auto;padding:20px 16px 32px}
 .brand-logo-sm{height:20px;width:auto;vertical-align:middle}
 .secondary{border:0;background:#f1f3f5;color:var(--ink);padding:12px 22px;border-radius:999px;font-weight:800;cursor:pointer;font-size:14px;min-height:44px;display:inline-flex;align-items:center;gap:6px;justify-content:center}
 .small{font-size:12px;color:var(--muted);margin-top:2px}
-.result-ring{--score-angle:0deg;width:120px;height:120px;padding:10px;border:0;border-radius:50%;background:conic-gradient(var(--brand) var(--score-angle),var(--brand-soft) 0deg);display:grid;place-items:center;margin:0 auto 16px;box-sizing:border-box}.result-ring::before{content:"";grid-area:1/1;width:100%;height:100%;background:#fff;border-radius:50%}.result-ring span{grid-area:1/1;position:relative;z-index:1}
+@property --score-angle{syntax:'<angle>';inherits:false;initial-value:0deg}.result-ring{--score-angle:0deg;width:120px;height:120px;padding:10px;border:0;border-radius:50%;background:conic-gradient(var(--brand) var(--score-angle),var(--brand-soft) 0deg);display:grid;place-items:center;margin:0 auto 16px;box-sizing:border-box;transition:--score-angle 900ms cubic-bezier(.16,1,.3,1)}.result-ring::before{content:"";grid-area:1/1;width:100%;height:100%;background:#fff;border-radius:50%}.result-ring span{grid-area:1/1;position:relative;z-index:1}.result-ring.score-reveal{animation:scoreRingSettle 900ms cubic-bezier(.16,1,.3,1)}@keyframes scoreRingSettle{0%{transform:scale(.96);opacity:.8}55%{transform:scale(1.015);opacity:1}100%{transform:scale(1);opacity:1}}
 .result-ring span{font-size:28px;font-weight:900}
 .reco{margin-top:4px;padding:14px 16px;border-radius:16px;background:var(--success-soft);color:#347800;font-weight:700;text-align:left;width:100%}
 .reco.down{background:#fff7e0;color:#8a6100}
@@ -136,7 +136,7 @@ main{max-width:920px;margin:auto;padding:20px 16px 32px}
 @keyframes spin{to{transform:rotate(360deg)}}
 .errbox{color:#a52626}
 @media(max-width:620px){.options{grid-template-columns:1fr}.card{padding:20px 14px}#focusBtn{display:none}}
-@media(prefers-reduced-motion:reduce){.progress i{transition:none}.spinner{animation:none}.option.grow,.option.shake{animation:none}.card.anim-in{animation:none}.option{animation:none;opacity:1;transform:none;transition:none}.feedback.show{animation:none}.overlay.anim-in{animation:none}.overlay.anim-in .modal{animation:none}.next,.primary,.icon-btn,.secondary,.check-answer{transition:none}.text-pop{animation:none}}
+@media(prefers-reduced-motion:reduce){.progress i{transition:none}.spinner{animation:none}.result-ring{transition:none}.result-ring.score-reveal{animation:none}.option.grow,.option.shake{animation:none}.card.anim-in{animation:none}.option{animation:none;opacity:1;transform:none;transition:none}.feedback.show{animation:none}.overlay.anim-in{animation:none}.overlay.anim-in .modal{animation:none}.next,.primary,.icon-btn,.secondary,.check-answer{transition:none}.text-pop{animation:none}}
 .icon{width:16px;height:16px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto;vertical-align:-3px}
 .back{display:inline-flex;align-items:center;gap:5px}
 .star{stroke:#e8a400}
@@ -218,7 +218,6 @@ main{max-width:920px;margin:auto;padding:20px 16px 32px}
     <div class="suggest" id="suggest" style="display:none"><h2>More <span id="suggestCat"></span> practice</h2><div class="suggest-grid" id="suggestGrid"></div></div>
     <button class="primary" id="continueBtn" style="display:none"></button>
     <button class="primary" id="again">Try again</button>
-    <button class="secondary back" id="endHome"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back</button>
     <div class="small">Your results are saved automatically.</div>
   </div>
 </div></section>
@@ -1114,13 +1113,15 @@ function renderPlacementRecommendations(profile){
 }
 
 function placementContinue(profile){
+  const graded=gradedTotal();
+  const pct=graded?Math.round(score/graded*100):100;
+  const cb=$('continueBtn');
+  if(pct<60){cb.style.display='none';return;}
   if(stage==='verification'||!profile||!profile.verification_level||profile.verification_level===profile.assessed_level){
-    const target=(profile&&profile.recommended_level)||level;
-    const cb=$('continueBtn'); cb.style.display='inline-block'; cb.textContent='Continue to '+target.toUpperCase(); cb.onclick=()=>{stopAllSounds();location.href='../'+target+'/index.html'};
+    const target=(profile&&profile.recommended_level)||level; cb.style.display='inline-flex'; cb.textContent='Continue to '+target.toUpperCase(); cb.onclick=()=>{stopAllSounds();location.href='../'+target+'/index.html'};
     return;
   }
-  const target=profile.verification_level;
-  const cb=$('continueBtn'); cb.style.display='inline-block'; cb.textContent='Take '+target.toUpperCase()+' boundary check';
+  const target=profile.verification_level; cb.style.display='inline-flex'; cb.textContent='Continue to '+target.toUpperCase()+' check';
   cb.onclick=()=>{stopAllSounds();location.href='../shared/quiz.html?quiz=placement-001&level='+target+'&mode=placement&stage=verification&anchor='+profile.assessed_level};
 }
 
@@ -1142,7 +1143,11 @@ function end(){
   const graded=gradedTotal();
   const pct=graded?Math.round(score/graded*100):100;
   $('finalPct').textContent=pct+'%';
-  $('end').querySelector('.result-ring').style.setProperty('--score-angle',Math.round(pct*3.6)+'deg');
+  const ring=$('end').querySelector('.result-ring');
+  ring.style.setProperty('--score-angle',Math.round(pct*3.6)+'deg');
+  ring.classList.remove('score-reveal');
+  void ring.offsetWidth;
+  ring.classList.add('score-reveal');
   $('result').textContent=congratsTitle(pct);
   $('message').textContent='You scored '+score+' out of '+graded+' ('+pct+'%).';
   save(true);
@@ -1181,20 +1186,19 @@ function end(){
     }
   }catch(e){ /* review storage must never break the results screen */ }
 
-  // Lesson-owned assessment: a passing score unlocks the next lesson and
-  // exposes that next lesson directly on the result screen. A failed attempt
-  // returns to the current lesson for review/retry. This keeps the guided
-  // course streamlined without forcing a course-page detour.
-  if(lessonParam && mode!=='placement'){
+  // Lesson-owned assessment: only a passed quiz may expose Continue.
+  // Quiz mastery uses the shared 60% threshold; failed attempts keep the
+  // completion card to its single Try again action.
+  if(lessonParam && mode!=='placement' && pct>=60){
     getLevelLessons().then(lessons=>{
-      const idx=lessons.findIndex(l=>l.lesson_id===lessonParam);
       const ordered=lessons.filter(l=>l.status==='published').sort((a,b)=>String(a.unit_id).localeCompare(String(b.unit_id)) || ((a.order||0)-(b.order||0)));
       const pos=ordered.findIndex(l=>l.lesson_id===lessonParam);
+      const next=pos>=0?ordered[pos+1]:null;
       const btn=$('continueBtn');
       if(btn){
         btn.style.display='inline-flex';
-        btn.textContent='Back to lesson practice';
-        btn.onclick=()=>{stopAllSounds();location.href=backTarget()};
+        btn.textContent=next?'Continue':'Back to lesson practice';
+        btn.onclick=()=>{stopAllSounds();location.href=next?'../courses/lesson.html?lesson='+encodeURIComponent(next.lesson_id)+'&level='+encodeURIComponent(level)+'&slide=lesson':backTarget()};
       }
     }).catch(()=>{});
   }
