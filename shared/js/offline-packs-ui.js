@@ -1,4 +1,4 @@
-/*! Mylingo Offline Packs UI — Agent 25 */
+/*! Mylingo Offline Packs UI — Agent 25 (Agent 179: offline-disabled buttons re-enable on reconnect) */
 (function (global) {
   'use strict';
   var API = global.MylingoOfflinePacks;
@@ -44,8 +44,16 @@
     var busy = false;
     function setBusy(value, label) {
       busy = value;
+      row.dataset.busy = value ? '1' : '0';
       button.disabled = value;
       status.textContent = label;
+    }
+    // Agent 179: end of an operation. Re-enable the button UNLESS the pack is not installed and we are offline
+    // (the same rule updateNetwork applies), so a button is never left clickable-but-dead.
+    function idle() {
+      busy = false;
+      row.dataset.busy = '0';
+      button.disabled = row.dataset.installed !== '1' && navigator.onLine === false;
     }
     function setInstalled(value) {
       row.dataset.installed = value ? '1' : '0';
@@ -61,7 +69,7 @@
         setBusy(true, 'Removing…');
         API.removePack(pack.id).then(function () { setInstalled(false); }).catch(function () {
           status.textContent = 'Remove failed';
-        }).then(function () { button.disabled = false; busy = false; });
+        }).then(idle);
         return;
       }
       setBusy(true, 'Starting…');
@@ -74,7 +82,7 @@
         status.textContent = 'Install failed';
         var detail = error && error.message ? error.message : 'Please try again while online.';
         button.title = detail;
-      }).then(function () { button.disabled = false; busy = false; });
+      }).then(idle);
     });
   }
   function mount(target, options) {
@@ -94,7 +102,7 @@
       section.querySelectorAll('.offline-pack').forEach(function (row) {
         var button = row.querySelector('button');
         var installed = row.dataset.installed === '1';
-        if (!button || button.disabled) return;
+        if (!button || row.dataset.busy === '1') return;
         if (!installed) {
           button.disabled = !online;
           button.textContent = online ? 'Install' : 'Connect to install';

@@ -23,16 +23,26 @@
   var MAX_SCORE = QUESTIONS.reduce(function (sum, q) { return sum + 4 * WEIGHTS[q.id]; }, 0);
 
   function clamp(n, min, max) { return Math.max(min, Math.min(max, n)); }
+  // A usable answer is a finite number or a non-blank numeric string. null / '' / whitespace (e.g. a hole in a
+  // JSON-serialised sparse array) mean "unanswered" — Number(null) and Number('') are 0, which would look like a real answer.
+  // Agent 203: only a real number or a non-blank numeric string is an answer — true / false / [] / [2]
+  // used to go through Number() as 1 / 0 / 0 / 2.
+  function answerValue(a) {
+    var n = typeof a === 'number' ? a : (typeof a === 'string' && a.trim() !== '' ? Number(a) : NaN);
+    return Number.isFinite(n) ? n : null;
+  }
   function scoreAnswers(answers) {
     return QUESTIONS.reduce(function (sum, q, i) {
-      var raw = Number(answers && answers[i]);
-      if (!Number.isFinite(raw)) return sum;
+      var raw = answerValue(answers && answers[i]);
+      if (raw === null) return sum;
       return sum + clamp(raw, 0, 4) * WEIGHTS[q.id];
     }, 0);
   }
 
   function levelFromScore(score) {
-    var ratio = clamp(score / MAX_SCORE, 0, 1);
+    // Agent 203: a missing / NaN / junk score gave LEVELS[NaN] = undefined; it is 0 (A1) now.
+    var n = typeof score === 'number' ? score : (typeof score === 'string' && score.trim() !== '' ? Number(score) : NaN);
+    var ratio = clamp((isNaN(n) ? 0 : n) / MAX_SCORE, 0, 1);
     var index = Math.min(LEVELS.length - 1, Math.floor(ratio * LEVELS.length));
     return LEVELS[index];
   }
@@ -45,7 +55,7 @@
     var confidence = ratio < 0.2 || ratio > 0.85 ? 'medium' : 'high';
     var signals = {};
     QUESTIONS.forEach(function (q, i) {
-      if (['reading','writing','grammar','listening','speaking'].indexOf(q.id) >= 0) signals[q.id] = Number.isFinite(Number(answers && answers[i])) ? Number(answers[i]) : null;
+      if (['reading','writing','grammar','listening','speaking'].indexOf(q.id) >= 0) { var v = answerValue(answers && answers[i]); signals[q.id] = v === null ? null : clamp(v, 0, 4); }
     });
     return {
       score: Math.round(score * 100) / 100, maxScore: MAX_SCORE, level: level,
@@ -61,13 +71,19 @@
   function readState() {
     try {
       var value = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null');
-      if (!value || typeof value !== 'object') return null;
+      if (!value || typeof value !== 'object' || Array.isArray(value)) return null;
       return value;
     } catch (e) { return null; }
   }
 
   function writeState(state) {
-    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); return true; } catch (e) { return false; }
+    // Agent 203: JSON.stringify(undefined / a function) is undefined, which setItem stored as the string "undefined".
+    try {
+      var json = JSON.stringify(state);
+      if (typeof json !== 'string') return false;
+      localStorage.setItem(STORAGE_KEY, json);
+      return true;
+    } catch (e) { return false; }
   }
 
   global.MylingoOrientation = {

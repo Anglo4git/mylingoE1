@@ -25,6 +25,27 @@
     return LEVELS.indexOf(level) >= 0 ? level : null;
   }
   function clamp(n, min, max) { return Math.max(min, Math.min(max, n)); }
+  // Agent 201: `Math.floor(Number(x) || 0)` lets the string "Infinity" through as Infinity, which JSON.stringify later writes as null (silent data loss).
+  // Counters must be finite, non-negative integers; anything else is 0.
+  function countOrZero(v) {
+    var n = Math.floor(Number(v));
+    return Number.isFinite(n) && n > 0 ? n : 0;
+  }
+  // Agent 201: `Number.isFinite(Number(x))` accepted null / '' / false / [] (all Number() -> 0), so a caller passing `timestamp: null` stamped the
+  // attempt at 1970 (a review card "due since 1970"). Only a real number or a non-blank numeric string counts; anything else means "now".
+  function timeOrNow(v) {
+    if (typeof v !== 'number' && typeof v !== 'string') return Date.now();
+    if (typeof v === 'string' && v.trim() === '') return Date.now();
+    var n = Number(v);
+    return Number.isFinite(n) ? n : Date.now();
+  }
+  // Agent 158: Number(null) === 0 is finite, so a stored `null` timestamp used to
+  // be coerced to 0 (1970). Nullish/blank stays null.
+  function finiteOrNull(v) {
+    if (v == null || v === '') return null;
+    var n = Number(v);
+    return Number.isFinite(n) ? n : null;
+  }
   function masteryBand(accuracy) {
     var n = clamp(Number(accuracy) || 0, 0, 100);
     var result = MASTERY_BANDS[0];
@@ -63,9 +84,9 @@
   function sanitizeSkill(raw) {
     var skill = emptySkill();
     if (!raw || typeof raw !== 'object') return skill;
-    skill.question_count = Math.max(0, Math.floor(Number(raw.question_count) || 0));
-    skill.correct_count = clamp(Math.floor(Number(raw.correct_count) || 0), 0, skill.question_count);
-    skill.attempt_count = Math.max(0, Math.floor(Number(raw.attempt_count) || 0));
+    skill.question_count = countOrZero(raw.question_count);
+    skill.correct_count = clamp(countOrZero(raw.correct_count), 0, skill.question_count);
+    skill.attempt_count = countOrZero(raw.attempt_count);
     if (skill.question_count > 0) {
       skill.accuracy = Math.round(skill.correct_count / skill.question_count * 10000) / 100;
       skill.mastery_band = masteryBand(skill.accuracy).key;
@@ -74,20 +95,20 @@
     if (raw.level_counts && typeof raw.level_counts === 'object') {
       Object.keys(raw.level_counts).forEach(function (level) {
         var normalized = normalizeLevel(level);
-        var count = Math.floor(Number(raw.level_counts[level]) || 0);
+        var count = countOrZero(raw.level_counts[level]);
         if (normalized && count > 0) skill.level_counts[normalized] = count;
       });
     }
     skill.last_level = normalizeLevel(raw.last_level);
     skill.last_quiz_id = raw.last_quiz_id == null ? null : String(raw.last_quiz_id);
-    skill.last_attempt_at = Number.isFinite(Number(raw.last_attempt_at)) ? Number(raw.last_attempt_at) : null;
+    skill.last_attempt_at = finiteOrNull(raw.last_attempt_at);
     return skill;
   }
 
   function sanitizeStore(raw) {
     if (!raw || typeof raw !== 'object' || Number(raw.version) !== VERSION) return emptyStore();
     var result = emptyStore();
-    result.updated_at = Number.isFinite(Number(raw.updated_at)) ? Number(raw.updated_at) : null;
+    result.updated_at = finiteOrNull(raw.updated_at);
     if (raw.skills && typeof raw.skills === 'object') {
       Object.keys(raw.skills).forEach(function (name) {
         var skill = normalizeSkill(name);
@@ -131,7 +152,7 @@
     var correctMap = input.correctMap && typeof input.correctMap === 'object' ? input.correctMap : {};
     var quizId = input.quiz_id == null ? null : String(input.quiz_id);
     var level = normalizeLevel(input.level);
-    var now = Number.isFinite(Number(input.timestamp)) ? Number(input.timestamp) : Date.now();
+    var now = timeOrNow(input.timestamp);
     var changed = false;
     var contributed = {};
 

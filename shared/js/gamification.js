@@ -116,12 +116,19 @@
     return quizId + '|' + quizVersion;
   }
 
+  // Agent 200: persisted state is untrusted. A non-finite (e.g. the string "Infinity", which JSON.stringify later turns into null and
+  // silently wipes the total) or negative counter is treated as 0 instead of being carried into the totals / the UI.
+  function nonNegFinite(v) {
+    var n = Number(v);
+    return (Number.isFinite(n) && n > 0) ? n : 0;
+  }
+
   function getState() {
     var s = safeGet();
     return {
-      xpTotal: Number(s.xpTotal) || 0,
-      streak: Number(s.streak) || 0,
-      longestStreak: Number(s.longestStreak) || 0,
+      xpTotal: nonNegFinite(s.xpTotal),
+      streak: nonNegFinite(s.streak),
+      longestStreak: nonNegFinite(s.longestStreak),
       lastActiveDate: s.lastActiveDate || null,
       rewardedSessions: Array.isArray(s.rewardedSessions) ? s.rewardedSessions.slice(-SESSION_HISTORY_LIMIT) : [],
       rewardLedger: isPlainObject(s.rewardLedger) ? s.rewardLedger : migrateRewardLedger(s.rewardedSessions)
@@ -143,7 +150,9 @@
     var questionTotal = Math.max(0, Number(total) || 0);
     var ledger = isPlainObject(state.rewardLedger) ? state.rewardLedger : {};
     var rewardId = quizId ? rewardKey(quizId, quizVersion) : '';
-    var entry = rewardId ? ledger[rewardId] : null;
+    // Agent 200: a ledger entry that is not a plain object (5, "abc", true, an array) used to reach `entry.bestScore = ...` and throw a
+    // TypeError in strict mode; it is now treated like a missing entry (a fresh completion record replaces it), same as a stored null.
+    var entry = (rewardId && isPlainObject(ledger[rewardId])) ? ledger[rewardId] : null;
     var repeated = false;
     var xpEarned = 0;
     var rewardType = 'none';
@@ -154,12 +163,13 @@
         ledger[rewardId] = entry;
         xpEarned = calculateXp(score, questionTotal);
         rewardType = 'completion';
-      } else if (score > Number(entry.bestScore || 0)) {
-        var gain = score - Number(entry.bestScore || 0);
-        var remaining = Math.max(0, MAX_IMPROVEMENT_BONUS_XP - Number(entry.improvementBonusXp || 0));
+      } else if (score > nonNegFinite(entry.bestScore)) {
+        // Agent 200: a negative stored bestScore / improvementBonusXp would inflate the gain or lift the improvement cap.
+        var gain = score - nonNegFinite(entry.bestScore);
+        var remaining = Math.max(0, MAX_IMPROVEMENT_BONUS_XP - nonNegFinite(entry.improvementBonusXp));
         var improvement = Math.min(remaining, gain * IMPROVEMENT_XP_PER_CORRECT);
         entry.bestScore = score;
-        entry.improvementBonusXp = Number(entry.improvementBonusXp || 0) + improvement;
+        entry.improvementBonusXp = nonNegFinite(entry.improvementBonusXp) + improvement;
         xpEarned = improvement;
         rewardType = improvement > 0 ? 'improvement' : 'improvement-capped';
       } else {
@@ -502,8 +512,6 @@
       var ok = validators[name](normalized.sections[name]);
       (ok ? valid : invalid).push(name);
     });
-    // A legacy backup has only the three fields that existed in v1; new sections are optional.
-    if (normalized.legacy && present.length !== 3) return { ok: false, reason: 'Malformed legacy backup.' };
     if (!present.length) return { ok: false, reason: 'Backup contains no recognized learner state.' };
     return { ok: true, legacy: normalized.legacy, valid_sections: valid, invalid_sections: invalid };
   }

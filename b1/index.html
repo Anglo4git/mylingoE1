@@ -79,7 +79,8 @@ small{display:block;color:var(--muted);margin-top:2px}
 const $=x=>document.getElementById(x);
 const KEY='mylingo.progress.v1';
 const parts=location.pathname.split('/').filter(Boolean);
-const level=(parts[parts.length-2]||'a1').toLowerCase();
+const lastSeg=parts[parts.length-1]||'';
+const level=((/^[a-c][12]$/i.test(lastSeg)?lastSeg:parts[parts.length-2])||'a1').toLowerCase();
 if(window.MylingoLevelLock && window.MylingoLevelLock.isLocked(level)){
   window.MylingoLevelLock.renderLockedState(document.getElementById('main-content'), level, {backHref:'../main/index.html'});
   return;

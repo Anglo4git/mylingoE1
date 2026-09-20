@@ -29,7 +29,7 @@
  */
 'use strict';
 
-var CACHE_VERSION = 'mylingo-v5';
+var CACHE_VERSION = 'mylingo-v25';
 var STATIC_CACHE = CACHE_VERSION + '-static';
 var RUNTIME_CACHE = CACHE_VERSION + '-runtime';
 // Must match CACHE_PREFIX in shared/js/offline-packs.js.
@@ -96,6 +96,16 @@ self.addEventListener('activate', function (event) {
 
 // Immutable/rarely-changing binary assets: safe to serve cache-first and
 // revalidate in the background.
+// App-shell code (Agent 162): .js and .css used to fall through to the bare
+// network (the handler below had no branch for them), so the precached copies
+// were never served — with the HTTP cache out of the picture an offline load
+// got its HTML from the precache but ZERO scripts/stylesheets. Network-first
+// with a cache fallback (same policy as mutable JSON) keeps an online learner on
+// the freshest code and lets the precached copy carry an offline one.
+function isShellCode(url) {
+  return /\.(js|css)$/.test(url.pathname);
+}
+
 function isImmutableAsset(url) {
   return /\.(mp3|png|svg|ico)$/.test(url.pathname);
 }
@@ -189,6 +199,11 @@ self.addEventListener('fetch', function (event) {
 
   if (isMutableJson(url)) {
     event.respondWith(networkFirst(request, 'json'));
+    return;
+  }
+
+  if (isShellCode(url)) {
+    event.respondWith(networkFirst(request, 'asset'));
     return;
   }
 

@@ -91,13 +91,21 @@
       var deps = Array.isArray(pack.dependencies) ? pack.dependencies : [];
       return Promise.all(deps.map(function (dep) { return isInstalled(dep); })).then(function (ready) {
         if (!ready.every(Boolean)) return false;
-        return caches.open(CACHE_PREFIX + String(id)).then(function (cache) {
-          return Promise.all(pack.files.map(function (file) {
-            return cache.match(assetUrl(file), { ignoreSearch: true });
-          })).then(function (matches) {
-            var installed = matches.every(Boolean);
-            if (installed) touch(pack.id);
-            return installed;
+        // Agent 159: caches.open() CREATES an empty cache when none exists, so merely asking
+        // "is it installed?" used to leave a phantom cache per queried pack (counted by
+        // evictIfNeeded). Check existence first; only open a cache that is really there.
+        var name = CACHE_PREFIX + String(id);
+        var exists = typeof caches.has === 'function' ? caches.has(name) : Promise.resolve(true);
+        return exists.then(function (present) {
+          if (!present) return false;
+          return caches.open(name).then(function (cache) {
+            return Promise.all(pack.files.map(function (file) {
+              return cache.match(assetUrl(file), { ignoreSearch: true });
+            })).then(function (matches) {
+              var installed = matches.every(Boolean);
+              if (installed) touch(pack.id);
+              return installed;
+            });
           });
         });
       });
@@ -123,14 +131,17 @@
         var next = 0;
         var installed = new Array(total);
         var concurrency = Math.min(INSTALL_CONCURRENCY, total || 1);
+        // Agent 159: once one download fails the install is rolled back, so the sibling
+        // workers must stop pulling more files instead of downloading into a dead cache.
+        var failed = false;
         if (typeof onProgress === 'function') onProgress({ id: pack.id, done: 0, total: total });
 
         function worker() {
           var index = next;
           next += 1;
-          if (index >= total) return Promise.resolve();
+          if (failed || index >= total) return Promise.resolve();
           var file = files[index];
-          return cache.add(assetUrl(file)).then(function () {
+          return cache.add(assetUrl(file)).catch(function (error) { failed = true; throw error; }).then(function () {
             done += 1;
             installed[index] = file;
             if (typeof onProgress === 'function') onProgress({ id: pack.id, done: done, total: total, file: file });

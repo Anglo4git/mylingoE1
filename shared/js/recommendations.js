@@ -40,8 +40,27 @@
   }
   function clamp(n, min, max) { return Math.max(min, Math.min(max, n)); }
   function levelAt(level, offset) {
+    // A non-numeric offset means "stay" and a fractional one is truncated: LEVELS[NaN] and
+    // LEVELS[2.5] are undefined, which used to leak out of this exported helper.
+    var step = Number(offset);
+    step = Number.isNaN(step) ? 0 : Math.trunc(step);
     var idx = LEVELS.indexOf(normalizeLevel(level));
-    return LEVELS[clamp(idx + Number(offset || 0), 0, LEVELS.length - 1)];
+    return LEVELS[clamp(idx + step, 0, LEVELS.length - 1)];
+  }
+  // A score is a real number or a numeric string. Anything else (null, booleans, arrays,
+  // objects, blank strings) is "no score": Number('') , Number(false) and Number([]) are all
+  // 0, which would read as a 0% result and push the learner a level down.
+  function numericScore(value) {
+    if (typeof value !== 'number' && typeof value !== 'string') return null;
+    if (typeof value === 'string' && !value.trim()) return null;
+    var n = Number(value);
+    return Number.isFinite(n) ? n : null;
+  }
+  // Only real CEFR levels count. normalizeLevel() maps junk to 'a1', which is right for a
+  // learner's base level but wrong for a catalog list (junk must not make A1 look available).
+  function validLevel(level) {
+    level = String(level == null ? '' : level).toLowerCase();
+    return LEVELS.indexOf(level) >= 0 ? level : null;
   }
   function scoreBand(score) {
     var n = clamp(Number(score) || 0, 0, 100);
@@ -54,8 +73,9 @@
 
   function recommendationForSkill(skill, score, baseLevel, availableLevels) {
     skill = String(skill || '').toLowerCase();
-    if (SKILLS.indexOf(skill) < 0 || score == null || !Number.isFinite(Number(score))) return null;
-    var n = clamp(Number(score), 0, 100);
+    var numeric = numericScore(score);
+    if (SKILLS.indexOf(skill) < 0 || numeric === null) return null;
+    var n = clamp(numeric, 0, 100);
     var level = normalizeLevel(baseLevel);
     var reason = 'practice';
     var label = 'Practice at your level';
@@ -79,7 +99,7 @@
     // Do not recommend a level that isn't represented by the supplied catalog.
     // `availableLevels` can be omitted when the caller only needs the target.
     if (availableLevels && Array.isArray(availableLevels) && availableLevels.length) {
-      var normalized = availableLevels.map(normalizeLevel);
+      var normalized = availableLevels.map(validLevel).filter(Boolean);
       if (normalized.indexOf(level) < 0) {
         var candidates = [level, levelAt(level, -1), levelAt(level, 1)];
         for (var i = 0; i < candidates.length; i++) {
@@ -116,7 +136,9 @@
 
     SKILLS.forEach(function (skill) {
       var score = skills[skill];
-      var count = Number(counts[skill]) || 0;
+      // Agent 202: a non-finite count (the string "Infinity") used to pass `|| 0` and surface as question_count: Infinity (null once serialised).
+      var count = Number(counts[skill]);
+      if (!Number.isFinite(count)) count = 0;
       if (score == null || count < RULES.min_reported_questions) return;
       var item = recommendationForSkill(skill, score, baseLevel, availableLevels);
       if (item) {
@@ -126,29 +148,45 @@
     });
 
     items.sort(rank);
-    var limit = Number(options.max_recommendations) || RULES.max_recommendations;
+    var limit = RULES.max_recommendations;
+    var requested = options.max_recommendations;
+    if (requested != null && requested !== '' && Number.isFinite(Number(requested))) limit = Number(requested);
     return items.slice(0, Math.max(0, limit));
   }
 
   function groupManifestByLevel(manifestByLevel) {
     var result = {};
     Object.keys(manifestByLevel || {}).forEach(function (key) {
-      var level = normalizeLevel(key);
+      var level = validLevel(key);
+      if (!level) return; // a junk key must not be folded into (and overwrite) A1
       var list = manifestByLevel[key];
-      result[level] = Array.isArray(list) ? list.slice() : [];
+      result[level] = (result[level] || []).concat(Array.isArray(list) ? list : []);
     });
     return result;
   }
 
+  function alreadyPicked(picked, quiz) {
+    var id = quiz && quiz.id != null ? String(quiz.id) : '';
+    return picked.some(function (other) {
+      return other === quiz || (id !== '' && other && other.id != null && String(other.id) === id);
+    });
+  }
+
   function resolveQuizPicks(recommendations, manifestByLevel) {
     var manifests = groupManifestByLevel(manifestByLevel);
-    return (recommendations || []).map(function (recommendation) {
-      var list = manifests[recommendation.level] || [];
+    var picked = [];
+    return (Array.isArray(recommendations) ? recommendations : []).map(function (recommendation) {
+      if (!recommendation || typeof recommendation !== 'object') return null;
+      var list = manifests[String(recommendation.level || '').toLowerCase()] || [];
       var category = String(recommendation.category || '').toLowerCase();
       var item = list.find(function (quiz) {
         return String(quiz && quiz.category || '').toLowerCase() === category;
       });
       if (!item) return null;
+      // grammar and usage both map to the Grammar category: never offer the same quiz twice
+      // (recommendations arrive weakest-first, so the first skill keeps the quiz).
+      if (alreadyPicked(picked, item)) return null;
+      picked.push(item);
       return {
         skill: recommendation.skill,
         score: recommendation.score,

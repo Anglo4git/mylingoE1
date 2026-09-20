@@ -14,7 +14,10 @@ var MASTERY_THRESHOLD=60;
 var LESSON_COMPLETION_THRESHOLD=90;
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(m){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]})}
 function read(key,fallback){try{return JSON.parse(localStorage.getItem(key)||JSON.stringify(fallback))}catch(e){return fallback}}
-function progress(){return read(PROGRESS_KEY,{})}
+// Agent 199: persisted progress is untrusted. A stored JSON `null` (or a number / string / boolean) used to be returned as-is, and
+// `null` made lessonCompletionRecord's p[id] throw. Non-objects now collapse to {} (same guard journey.html's own reader has);
+// an ARRAY is still returned as-is (typeof [] === 'object') - pinned by the Agent 181 test, harmless because p[id] on it is undefined.
+function progress(){var v=read(PROGRESS_KEY,{});return v&&typeof v==='object'?v:{}}
 function sessionFor(id){try{return read(SESSION_PREFIX+encodeURIComponent(id),null)}catch(e){return null}}
 function sessionRatio(id,total){var s=sessionFor(id);if(!s||s.status!=='in-progress'||!Number.isInteger(s.questionIndex)||!total)return 0;return Math.max(0,Math.min(99,Math.round((s.questionIndex/total)*100)))}
 // A quiz record counts as mastered when it's completed AND scored at or
@@ -38,7 +41,18 @@ function lessonCompletionRecord(lesson,p){
   var completionPct=Math.round((done/ids.length)*100);
   if(completionPct>=LESSON_COMPLETION_THRESHOLD)return {completed:true,progress:100,gateId:ids[ids.length-1]};
   var partial=ids.find(function(id){return p[id]&&p[id].status==='in-progress'});
-  if(partial)return {completed:false,progress:Math.round(((done+sessionRatio(partial,p[partial].totalQuestions||0)/100)/ids.length)*100),gateId:partial};
+  // Agent 161: this branch only runs when completionPct (the mastered-only
+  // percentage, checked above) is under LESSON_COMPLETION_THRESHOLD, so the
+  // lesson is definitely not complete — but adding the partial quiz's own
+  // ratio (capped at 99, see sessionRatio) can round the *combined* figure
+  // up to 100 anyway (e.g. 1 of 2 quizzes mastered + the other 99% through:
+  // (1 + 0.99) / 2 * 100 = 99.5 -> rounds to 100). A progress of 100 here
+  // would contradict completed:false and, worse, made the lesson vanish from
+  // resolveHomepageState's "continue" card below, since that function's
+  // in-progress branch requires percent<100 and its fallback branch requires
+  // percent!==100 — a percent:100/completed:false lesson matched neither and
+  // was silently dropped. Cap at 99 so an incomplete lesson never reports 100.
+  if(partial)return {completed:false,progress:Math.min(99,Math.round(((done+sessionRatio(partial,p[partial].totalQuestions||0)/100)/ids.length)*100)),gateId:partial};
   return {completed:false,progress:completionPct,gateId:null};
 }
 function lessonIsComplete(lesson,p){return lessonCompletionRecord(lesson,p).completed}
@@ -49,7 +63,10 @@ var ALL_LEVELS=['a1','a2','b1','b2','c1','c2'];
 // needs lessons across all of them — fetch the six per-level files in
 // parallel and concat, instead of the old all-levels lessons.json bundle.
 // Falls back to the monolith if a per-level file can't be fetched.
-function fetchAllLessons(){return Promise.all(ALL_LEVELS.map(function(lvl){return fetchJson('../course_content/lessons/'+lvl+'.json')})).then(function(lists){return lists.reduce(function(a,b){return a.concat(b)},[])}).catch(function(){return fetchJson('../course_content/lessons.json')})}
-function resolveHomepageState(){return Promise.all([fetchJson('../course_content/courses.json'),fetchJson('../course_content/units.json'),fetchAllLessons()]).then(function(a){var courses=a[0],units=a[1],lessons=a[2],p=progress(),flat=[];courses.filter(function(c){return c.status==='published'}).forEach(function(c){units.filter(function(u){return u.course_id===c.course_id}).forEach(function(u){lessons.filter(function(l){return l.unit_id===u.unit_id&&l.status==='published'}).sort(function(x,y){return x.order-y.order}).forEach(function(l){flat.push({course:c,unit:u,lesson:l,percent:lessonPercent(l,p)})})})});var active=flat.find(function(x){return x.percent>0&&x.percent<100});if(!active)active=flat.find(function(x){return x.percent===100?false:(x.lesson.exercise_quiz_ids||[]).some(function(id){return p[id]})});return active||null})}
+// Agent 188: `base` is the path from the CALLING PAGE to the site root (default '../' = one folder deep, i.e. main/index.html;
+// the root index.html passes './'). fetch() resolves against the page URL, not the script URL, so the old hard-coded '../'
+// pointed the root page one level ABOVE the app - fine on a domain root, a 404 (empty card) under /<project>/.
+function fetchAllLessons(base){base=base==null?'../':String(base);return Promise.all(ALL_LEVELS.map(function(lvl){return fetchJson(base+'course_content/lessons/'+lvl+'.json')})).then(function(lists){return lists.reduce(function(a,b){return a.concat(b)},[])}).catch(function(){return fetchJson(base+'course_content/lessons.json')})}
+function resolveHomepageState(base){base=base==null?'../':String(base);return Promise.all([fetchJson(base+'course_content/courses.json'),fetchJson(base+'course_content/units.json'),fetchAllLessons(base)]).then(function(a){var courses=a[0],units=a[1],lessons=a[2],p=progress(),flat=[];courses.filter(function(c){return c.status==='published'}).forEach(function(c){units.filter(function(u){return u.course_id===c.course_id}).forEach(function(u){lessons.filter(function(l){return l.unit_id===u.unit_id&&l.status==='published'}).sort(function(x,y){return x.order-y.order}).forEach(function(l){flat.push({course:c,unit:u,lesson:l,percent:lessonPercent(l,p)})})})});var active=flat.find(function(x){return x.percent>0&&x.percent<100});if(!active)active=flat.find(function(x){return x.percent===100?false:(x.lesson.exercise_quiz_ids||[]).some(function(id){return p[id]})});return active||null})}
 global.MylingoCourseProgress={readProgress:progress,lessonPercent:lessonPercent,lessonCompletionRecord:lessonCompletionRecord,lessonIsComplete:lessonIsComplete,resolveHomepageState:resolveHomepageState,esc:esc,isMastered:isMastered,MASTERY_THRESHOLD:MASTERY_THRESHOLD,LESSON_COMPLETION_THRESHOLD:LESSON_COMPLETION_THRESHOLD};
 })(window);

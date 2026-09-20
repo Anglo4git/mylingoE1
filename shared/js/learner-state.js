@@ -1,8 +1,11 @@
 /*! Mylingo — Learner State Integrity Contract (Agent 6) */
 (function (root, factory) {
-  if (typeof module === 'object' && module.exports) module.exports = factory();
-  else root.MylingoLearnerState = factory();
-})(typeof self !== 'undefined' ? self : this, function () {
+  if (typeof module === 'object' && module.exports) module.exports = factory(root);
+  else root.MylingoLearnerState = factory(root);
+})(typeof self !== 'undefined' ? self : this, function (root) {
+  // Agent 159: `root` used to be referenced below without being a parameter of this
+  // factory, so readLocal() threw a ReferenceError (swallowed by its try/catch) and
+  // ALWAYS returned the fallback, in every environment.
   'use strict';
 
   var LEVELS = ['a1','a2','b1','b2','c1','c2'];

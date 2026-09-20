@@ -57,19 +57,19 @@
       if (!Array.isArray(rows)) rows = [];
       const savedAt = new Date().toISOString();
       const chunks = [];
-      let written = 0;
+      let written = 0, storedRows = 0;
       try {
         for (let start = 0, index = 0; start < rows.length; start += chunkSize, index += 1) {
           const part = [];
           for (let i = start; i < Math.min(start + chunkSize, rows.length); i += 1) { const row = cleanRow(rows[i]); if (row) part.push(row); }
           store.setItem(chunkKey(index), JSON.stringify(part));
-          chunks.push({ index, rowCount: part.length }); written = index + 1;
+          chunks.push({ index, rowCount: part.length }); written = index + 1; storedRows += part.length;
         }
         const previous = readManifest();
-        const manifest = { schemaVersion: SCHEMA_VERSION, savedAt, activeLevel: String(viewState?.activeLevel || "ALL"), rowCount: rows.length, chunkSize, chunks };
+        const manifest = { schemaVersion: SCHEMA_VERSION, savedAt, activeLevel: String(viewState?.activeLevel || "ALL"), rowCount: storedRows, chunkSize, chunks };
         store.setItem(MANIFEST_KEY, JSON.stringify(manifest));
         if (previous?.chunks) for (const c of previous.chunks) if (c.index >= written) store.removeItem(chunkKey(c.index));
-        return { ok:true, savedAt, rowCount: rows.length, chunkCount: chunks.length };
+        return { ok:true, savedAt, rowCount: storedRows, chunkCount: chunks.length };
       } catch (error) { return { ok:false, reason:error?.name === "QuotaExceededError" ? "quota" : "write-failed", error }; }
     }
     function schedule(rows, viewState, onSaved) { if (timer) clearTimeout(timer); timer = setTimeout(() => { timer=null; const r=save(rows,viewState); if (typeof onSaved === "function") onSaved(r); }, debounceMs); }

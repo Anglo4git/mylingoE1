@@ -108,7 +108,12 @@
 
   function compute(model) {
     model = model || {};
-    var now = Number.isFinite(Number(model.now)) ? Number(model.now) : Date.now();
+    // Agent 202: `Number.isFinite(Number(model.now))` accepted null / '' / false / [] (Number() -> 0), so `now: null` compared every due date
+    // against 1970 and reported nothing due. Only a real number or a non-blank numeric string is an explicit time; anything else is "now".
+    var now = Date.now();
+    if (typeof model.now === 'number' || (typeof model.now === 'string' && model.now.trim() !== '')) {
+      if (Number.isFinite(Number(model.now))) now = Number(model.now);
+    }
     var summary = buildSummary(model.masteryStore || { skills: {} }, model.reviewStore || { skills: {} }, now);
     var rows = summary.due.map(function (item) {
       var data = summary.skills[item.skill] || {};
@@ -152,7 +157,7 @@
       '<div class="mr-kpi"><div class="n">' + summary.dueCount + '</div><div class="l">Due today</div></div>' +
       '<div class="mr-kpi"><div class="n">' + summary.skillCount + '</div><div class="l">Tracked skills</div></div>' +
       '<div class="mr-kpi"><div class="n">' + (summary.average == null ? '—' : summary.average + '%') + '</div><div class="l">Overall accuracy</div></div>' +
-      '<div class="mr-kpi"><div class="n">' + (summary.weakest ? labelForSkill(summary.weakest) : '—') + '</div><div class="l">Priority skill</div></div>' +
+      '<div class="mr-kpi"><div class="n">' + (summary.weakest ? esc(labelForSkill(summary.weakest)) : '—') /* Agent 202: was written unescaped */ + '</div><div class="l">Priority skill</div></div>' +
       '</div>';
 
     if (summary.dueCount) {

@@ -9,6 +9,7 @@
   var STORAGE_KEY = 'mylingo.review-scheduling.v1';
   var DAY_MS = 86400000;
   var SKILLS = ['grammar', 'vocabulary', 'reading', 'listening', 'writing', 'usage'];
+  var LEVELS = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'];
   var MAX_INTERVAL_DAYS = 30;
   var INTERVAL_BY_ACCURACY = [
     { max: 39, hours: 6 },
@@ -22,7 +23,37 @@
     skill = String(skill || '').toLowerCase();
     return SKILLS.indexOf(skill) >= 0 ? skill : null;
   }
+  // Agent 159: cards used to store ANY string as last_level, but the learner-backup
+  // validator (gamification.js validateReviewScheduling) only accepts CEFR levels and
+  // rejects the whole section otherwise -- so one odd level silently dropped all review
+  // cards from backups/restores. Normalise exactly like skill-mastery.js does.
+  function normalizeLevel(level) {
+    level = String(level == null ? '' : level).toLowerCase();
+    return LEVELS.indexOf(level) >= 0 ? level : null;
+  }
   function clamp(n, min, max) { return Math.max(min, Math.min(max, n)); }
+  // Agent 201: `Math.floor(Number(x) || 0)` lets the string "Infinity" through as Infinity, which JSON.stringify later writes as null (silent data loss).
+  // Counters must be finite, non-negative integers; anything else is 0.
+  function countOrZero(v) {
+    var n = Math.floor(Number(v));
+    return Number.isFinite(n) && n > 0 ? n : 0;
+  }
+  // Agent 201: `Number.isFinite(Number(x))` accepted null / '' / false / [] (all Number() -> 0), so a caller passing `timestamp: null` stamped the
+  // attempt at 1970 (a review card "due since 1970"). Only a real number or a non-blank numeric string counts; anything else means "now".
+  function timeOrNow(v) {
+    if (typeof v !== 'number' && typeof v !== 'string') return Date.now();
+    if (typeof v === 'string' && v.trim() === '') return Date.now();
+    var n = Number(v);
+    return Number.isFinite(n) ? n : Date.now();
+  }
+  // Agent 158: Number(null) === 0 is finite, so `Number.isFinite(Number(x))`
+  // silently turned a stored `null` timestamp into 0 (1970) -- e.g. a card with
+  // due_at:null became "due since 1970". Nullish/blank stays null.
+  function finiteOrNull(v) {
+    if (v == null || v === '') return null;
+    var n = Number(v);
+    return Number.isFinite(n) ? n : null;
+  }
   function accuracyBandHours(n) {
     n = clamp(Number(n) || 0, 0, 100);
     for (var i = 0; i < INTERVAL_BY_ACCURACY.length; i++) {
@@ -30,7 +61,6 @@
     }
     return 336;
   }
-  function accuracyBand(n) { return accuracyBandHours(n) / 24; }
   function emptyCard() {
     return {
       interval_hours: 0,
@@ -51,18 +81,20 @@
     var legacyDays = clamp(Number(raw.interval_days) || 0, 0, MAX_INTERVAL_DAYS);
     card.interval_hours = clamp(Math.floor(Number(raw.interval_hours) || legacyDays * 24), 0, MAX_INTERVAL_DAYS * 24);
     card.interval_days = card.interval_hours / 24;
-    card.consecutive_successes = Math.max(0, Math.floor(Number(raw.consecutive_successes) || 0));
+    card.consecutive_successes = countOrZero(raw.consecutive_successes);
+    // Agent 201: a non-numeric last_accuracy used to become NaN (serialised as null) and made validateStore() reject the whole section.
     card.last_accuracy = raw.last_accuracy == null ? null : clamp(Math.round(Number(raw.last_accuracy) * 100) / 100, 0, 100);
-    card.last_review_at = Number.isFinite(Number(raw.last_review_at)) ? Number(raw.last_review_at) : null;
-    card.due_at = Number.isFinite(Number(raw.due_at)) ? Number(raw.due_at) : null;
+    if (Number.isNaN(card.last_accuracy)) card.last_accuracy = null;
+    card.last_review_at = finiteOrNull(raw.last_review_at);
+    card.due_at = finiteOrNull(raw.due_at);
     card.last_quiz_id = raw.last_quiz_id == null ? null : String(raw.last_quiz_id);
-    card.last_level = raw.last_level == null ? null : String(raw.last_level).toLowerCase();
+    card.last_level = normalizeLevel(raw.last_level);
     return card;
   }
   function sanitizeStore(raw) {
     if (!raw || typeof raw !== 'object' || Number(raw.version) !== VERSION) return emptyStore();
     var result = emptyStore();
-    result.updated_at = Number.isFinite(Number(raw.updated_at)) ? Number(raw.updated_at) : null;
+    result.updated_at = finiteOrNull(raw.updated_at);
     if (raw.skills && typeof raw.skills === 'object') {
       Object.keys(raw.skills).forEach(function (skill) {
         var normalized = normalizeSkill(skill);
@@ -102,19 +134,9 @@
     return clamp(base, 6, MAX_INTERVAL_DAYS * 24);
   }
 
-  function calculateNextInterval(previous, accuracy) {
-    var base = accuracyBand(accuracy);
-    var prior = previous && Number(previous.interval_days) || 0;
-    var success = Number(previous && previous.consecutive_successes) || 0;
-    var strong = Number(accuracy) >= 80;
-    if (strong && prior > 0 && success > 0) base = Math.min(MAX_INTERVAL_DAYS, Math.max(base, prior * 2));
-    if (Number(accuracy) < 60) return 1;
-    return clamp(base, 1, MAX_INTERVAL_DAYS);
-  }
-
   function isDue(card, now) {
     if (!card || card.due_at == null) return false;
-    return Number(card.due_at) <= (Number.isFinite(Number(now)) ? Number(now) : Date.now());
+    return Number(card.due_at) <= timeOrNow(now);
   }
 
   function recordAttempt(input, store) {
@@ -122,9 +144,9 @@
     var target = sanitizeStore(store || readStored());
     var questions = Array.isArray(input.questions) ? input.questions : [];
     var correctMap = input.correctMap && typeof input.correctMap === 'object' ? input.correctMap : {};
-    var now = Number.isFinite(Number(input.timestamp)) ? Number(input.timestamp) : Date.now();
+    var now = timeOrNow(input.timestamp);
     var quizId = input.quiz_id == null ? null : String(input.quiz_id);
-    var level = input.level == null ? null : String(input.level).toLowerCase();
+    var level = normalizeLevel(input.level);
     var perSkill = {};
 
     questions.forEach(function (question, index) {
@@ -172,7 +194,7 @@
   }
   function getDueSkills(store, now) {
     var target = sanitizeStore(store || readStored());
-    var when = Number.isFinite(Number(now)) ? Number(now) : Date.now();
+    var when = timeOrNow(now);
     return Object.keys(target.skills).filter(function (skill) {
       return isDue(target.skills[skill], when);
     }).sort(function (a, b) {
@@ -207,9 +229,7 @@
     SKILLS: SKILLS.slice(),
     MAX_INTERVAL_DAYS: MAX_INTERVAL_DAYS,
     DAY_MS: DAY_MS,
-    accuracyBand: accuracyBand,
     accuracyBandHours: accuracyBandHours,
-    calculateNextInterval: calculateNextInterval,
     calculateNextIntervalHours: calculateNextIntervalHours,
     isDue: isDue,
     readStored: readStored,

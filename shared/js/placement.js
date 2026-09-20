@@ -71,14 +71,58 @@
     return LEVELS.indexOf(level) >= 0 ? level : 'a1';
   }
   function clamp(n, min, max) { return Math.max(min, Math.min(max, n)); }
+  var STAGES = ['primary', 'verification'];
+  // Agent 203: untrusted-shape helpers. Number(x) takes null / '' / false / [] as 0, true as 1
+  // and "Infinity" as Infinity; only a real number or a non-blank numeric string is a number.
+  function numeric(value) {
+    if (typeof value === 'number') return value;
+    if (typeof value === 'string' && value.trim() !== '') return Number(value);
+    return NaN;
+  }
+  // A 0-100 percentage: junk is 0, out-of-range clamps (Infinity clamps to 100, as 250 does).
+  function pct(value) {
+    var n = numeric(value);
+    return isNaN(n) ? 0 : clamp(n, 0, 100);
+  }
+  // A question count: only a finite number > 0 counts; Infinity / negatives / junk are 0.
+  function count(value) {
+    var n = numeric(value);
+    return isFinite(n) && n > 0 ? n : 0;
+  }
+  function idString(value) {
+    if (typeof value === 'string') return value.trim();
+    if (typeof value === 'number' && isFinite(value)) return String(value);
+    return '';
+  }
+  function skillOf(value) {
+    var skill = typeof value === 'string' ? value.toLowerCase() : '';
+    return SKILLS.indexOf(skill) >= 0 ? skill : null;
+  }
+  function normalizeStage(value) {
+    return typeof value === 'string' && value.toLowerCase() === STAGES[1] ? STAGES[1] : STAGES[0];
+  }
+  function unique(list) {
+    return list.filter(function (item, index) { return list.indexOf(item) === index; });
+  }
+  function typeOf(q) {
+    return String(q && q.question_type || 'radio').toLowerCase().replace(/[\s-]+/g, '_');
+  }
   function adjacentLevel(level, direction) {
     var idx = LEVELS.indexOf(normalizeLevel(level));
-    return LEVELS[clamp(idx + direction, 0, LEVELS.length - 1)];
+    // Agent 203: a string direction concatenated ('b1' + '1' -> idx '21' -> C2) and a
+    // missing / NaN / fractional one indexed LEVELS out of range (undefined). Only a finite
+    // number moves, truncated to whole steps; anything else stays put.
+    var step = numeric(direction);
+    step = isFinite(step) ? Math.trunc(step) : 0;
+    return LEVELS[clamp(idx + step, 0, LEVELS.length - 1)];
   }
   function scoreBand(score) {
-    var n = clamp(Number(score) || 0, 0, 100);
+    var n = pct(score);
+    // Agent 165: bands are ordered high -> low, so a lower-bound test alone is enough.
+    // The old `n >= min && n <= max` test left holes at the `.999` ceilings
+    // (e.g. 89.9995 matched no band and fell through to "Very weak").
     for (var i = 0; i < SCORE_BANDS.length; i++) {
-      if (n >= SCORE_BANDS[i].min && n <= SCORE_BANDS[i].max) return SCORE_BANDS[i];
+      if (n >= SCORE_BANDS[i].min) return SCORE_BANDS[i];
     }
     return SCORE_BANDS[SCORE_BANDS.length - 1];
   }
@@ -104,7 +148,7 @@
   // Scores from 50–84 stay at the assessed level unless evidence quality is low.
   function decideVerificationPath(input) {
     var assessed = normalizeLevel(input && input.assessed_level);
-    var score = clamp(Number(input && input.score) || 0, 0, 100);
+    var score = pct(input && input.score);
     if (score >= 85 && assessed !== 'c2') return { level: adjacentLevel(assessed, 1), direction: 'upper', reason: 'upper_boundary' };
     if (score < 50 && assessed !== 'a1') return { level: adjacentLevel(assessed, -1), direction: 'lower', reason: 'lower_boundary' };
     return { level: assessed, direction: 'none', reason: 'no_boundary_check' };
@@ -117,16 +161,16 @@
       reason: verification.reason === 'score_in_band' ? 'verified_boundary' : verification.reason,
       confidence: confidenceFor({ graded_questions: input && input.graded_questions, score: input && input.verification_score, complete: input && input.complete }),
       primary_level: normalizeLevel(input && input.primary_level),
-      primary_score: clamp(Number(input && input.primary_score) || 0, 0, 100),
+      primary_score: pct(input && input.primary_score),
       verification_level: normalizeLevel(input && input.verification_level),
-      verification_score: clamp(Number(input && input.verification_score) || 0, 0, 100)
+      verification_score: pct(input && input.verification_score)
     };
   }
 
   function decideFromPerformance(input) {
     var assessed = normalizeLevel(input && input.assessed_level);
-    var score = clamp(Number(input && input.score) || 0, 0, 100);
-    var evidence = Number(input && input.graded_questions) || 0;
+    var score = pct(input && input.score);
+    var evidence = count(input && input.graded_questions);
     var complete = input && input.complete !== false;
     var margin = score >= 85 || score < 50 ? 'boundary' : 'clear';
     var recommended = assessed;
@@ -155,8 +199,8 @@
   function confidenceFor(input) {
     var c = PLACEMENT_BLUEPRINT_V2.confidence;
     var pa = PLACEMENT_BLUEPRINT_V2.primary_assessment;
-    var evidence = Number(input && input.graded_questions) || 0;
-    var score = clamp(Number(input && input.score) || 0, 0, 100);
+    var evidence = count(input && input.graded_questions);
+    var score = pct(input && input.score);
     var complete = input && input.complete !== false;
     var conflicting = !!(input && input.conflicting_signals);
     if (!complete || evidence < c.medium_min_graded || conflicting) return 'low';
@@ -168,17 +212,20 @@
 
   function buildEvidence(questions, correctMap, quizId, stage) {
     var sourceQuizId = String(quizId || '').trim();
-    var sourceStage = String(stage || 'primary').toLowerCase();
+    // Agent 203: the stage comes from the page URL (?stage=), so a junk value used to be stamped on
+    // every evidence entry (and into evidence_stages); only the two real stages are kept.
+    var sourceStage = normalizeStage(stage);
     var map = correctMap && typeof correctMap === 'object' ? correctMap : {};
     return (Array.isArray(questions) ? questions : []).reduce(function (out, q, index) {
-      var type = String(q && q.question_type || 'radio').toLowerCase().replace(/[\s-]+/g, '_');
-      if (type === 'banner' || typeof map[index] !== 'boolean') return out;
-      var questionId = String(q && q.id || (sourceQuizId + ':' + index)).trim();
-      if (!questionId) return out;
+      if (typeOf(q) === 'banner' || typeof map[index] !== 'boolean') return out;
+      // Agent 165: a blank / whitespace-only id now falls back to `quizId:index` like a
+      // missing one. It used to be trimmed to '' and the graded answer was silently
+      // dropped from the evidence (and from the skill profile / evidence counts).
+      var questionId = idString(q && q.id) || (sourceQuizId + ':' + index);
       out.push({
         question_id: questionId,
         quiz_id: sourceQuizId || null,
-        skill: SKILLS.indexOf(String(q && q.skill || '').toLowerCase()) >= 0 ? String(q.skill).toLowerCase() : null,
+        skill: skillOf(q && q.skill),
         correct: !!map[index],
         stage: sourceStage
       });
@@ -188,27 +235,33 @@
 
   function mergePlacementEvidence(primary, verification) {
     var merged = [];
-    var byId = {};
+    // Agent 203: a plain {} lookup treated an id like 'constructor' / 'toString' / '__proto__' as
+    // an already-seen entry and threw (or rewired the prototype); a null-prototype map cannot.
+    var byId = Object.create(null);
     function add(entry) {
       if (!entry || typeof entry !== 'object') return;
-      var id = String(entry.question_id || '').trim();
+      var id = idString(entry.question_id);
       if (!id) return;
-      var incomingStages = Array.isArray(entry.stages) && entry.stages.length ? entry.stages.map(function (stage) { return String(stage).toLowerCase(); }) : [String(entry.stage || 'primary').toLowerCase()];
-      var incomingQuizIds = Array.isArray(entry.quiz_ids) && entry.quiz_ids.length ? entry.quiz_ids.map(String) : (entry.quiz_id ? [String(entry.quiz_id)] : []);
+      var incomingStages = (Array.isArray(entry.stages) ? entry.stages : []).filter(function (stage) {
+        return typeof stage === 'string' && STAGES.indexOf(stage.toLowerCase()) >= 0;
+      }).map(function (stage) { return stage.toLowerCase(); });
+      if (!incomingStages.length) incomingStages = [normalizeStage(entry.stage)];
+      var incomingQuizIds = (Array.isArray(entry.quiz_ids) ? entry.quiz_ids : []).map(idString).filter(Boolean);
+      if (!incomingQuizIds.length && idString(entry.quiz_id)) incomingQuizIds = [idString(entry.quiz_id)];
       if (!byId[id]) {
         var copy = {
           question_id: id,
-          quiz_id: entry.quiz_id || incomingQuizIds[0] || null,
-          quiz_ids: incomingQuizIds.slice(),
-          skill: entry.skill || null,
+          quiz_id: idString(entry.quiz_id) || incomingQuizIds[0] || null,
+          quiz_ids: unique(incomingQuizIds),
+          skill: skillOf(entry.skill),
           correct: !!entry.correct,
-          stages: incomingStages.slice()
+          stages: unique(incomingStages)
         };
         byId[id] = copy; merged.push(copy); return;
       }
       var existing = byId[id];
       incomingQuizIds.forEach(function (quizId) { if (existing.quiz_ids.indexOf(quizId) < 0) existing.quiz_ids.push(quizId); });
-      if (entry.skill && !existing.skill) existing.skill = entry.skill;
+      if (skillOf(entry.skill) && !existing.skill) existing.skill = skillOf(entry.skill);
       incomingStages.forEach(function (stage) { if (existing.stages.indexOf(stage) < 0) existing.stages.push(stage); });
       // Keep the original correctness value for a duplicate question ID; duplicates
       // represent the same evidence item and must never inflate totals.
@@ -222,8 +275,8 @@
     var totals = {};
     var counts = {};
     (Array.isArray(evidence) ? evidence : []).forEach(function (entry) {
-      var skill = String(entry && entry.skill || '').toLowerCase();
-      if (SKILLS.indexOf(skill) < 0) return;
+      var skill = skillOf(entry && entry.skill);
+      if (!skill) return;
       counts[skill] = (counts[skill] || 0) + 1;
       totals[skill] = (totals[skill] || 0) + (entry.correct ? 1 : 0);
     });
@@ -238,8 +291,8 @@
     var counts = {};
     SKILLS.forEach(function (skill) { counts[skill] = 0; });
     (Array.isArray(questions) ? questions : []).forEach(function (q) {
-      var skill = String(q && q.skill || '').toLowerCase();
-      if (SKILLS.indexOf(skill) >= 0 && String(q && q.question_type || 'radio').toLowerCase().replace(/[\s-]+/g, '_') !== 'banner') counts[skill] += 1;
+      var skill = skillOf(q && q.skill);
+      if (skill && typeOf(q) !== 'banner') counts[skill] += 1;
     });
     var b = PLACEMENT_BLUEPRINT_V2.coverage;
     var missing = [];
@@ -266,10 +319,13 @@
   function calculateSkillProfile(questions, correctMap) {
     var totals = {};
     var counts = {};
-    (questions || []).forEach(function (q, index) {
-      var skill = String(q && q.skill || '').toLowerCase();
-      if (SKILLS.indexOf(skill) < 0) return;
-      totals[skill] = (totals[skill] || 0) + (correctMap[index] ? 1 : 0);
+    // Agent 203: a missing map threw, a truthy non-boolean ('false', 'no', 1) counted as correct
+    // (buildEvidence only trusts real booleans) and a banner carrying a skill was counted.
+    var map = correctMap && typeof correctMap === 'object' ? correctMap : {};
+    (Array.isArray(questions) ? questions : []).forEach(function (q, index) {
+      var skill = skillOf(q && q.skill);
+      if (!skill || typeOf(q) === 'banner') return;
+      totals[skill] = (totals[skill] || 0) + (map[index] === true ? 1 : 0);
       counts[skill] = (counts[skill] || 0) + 1;
     });
     var profile = {};
@@ -281,11 +337,14 @@
 
   function calculate120Placement(questions, correctMap) {
     var bands = { a1: { total: 0, correct: 0 }, a2: { total: 0, correct: 0 }, b1: { total: 0, correct: 0 } };
-    (questions || []).forEach(function (q, index) {
-      var raw = String(q && (q.placement_level || q.cefr) || '').toLowerCase();
-      if (!bands[raw]) return;
+    // Agent 203: `bands[raw]` was truthy for '__proto__' / 'constructor' / 'toString', so a bank
+    // row with such a level wrote `total` onto Object.prototype (every object then inherited
+    // NaN); the level is now checked against the three real bands, and banners are not graded.
+    (Array.isArray(questions) ? questions : []).forEach(function (q, index) {
+      var raw = String((q && typeof q.placement_level === 'string' && q.placement_level) || (q && typeof q.cefr === 'string' && q.cefr) || '').toLowerCase();
+      if (ASSESSMENT_LEVELS.indexOf(raw) < 0 || typeOf(q) === 'banner') return;
       bands[raw].total += 1;
-      if (correctMap && correctMap[index]) bands[raw].correct += 1;
+      if (correctMap && correctMap[index] === true) bands[raw].correct += 1;
     });
     var scores = {};
     ASSESSMENT_LEVELS.forEach(function (lv) { scores[lv] = bands[lv].total ? Math.round(bands[lv].correct / bands[lv].total * 100) : 0; });
@@ -298,15 +357,21 @@
       recommended_level: recommended, scores: scores, bands: bands,
       question_count: overallTotal, correct_count: overallCorrect,
       mastery_threshold: ASSESSMENT_120.mastery_threshold, ceiling: ASSESSMENT_120.ceiling,
-      confidence: overallTotal >= 120 ? 'high' : (overallTotal >= 80 ? 'medium' : 'low')
+      confidence: overallTotal >= ASSESSMENT_120.question_count ? 'high' : (overallTotal >= Math.round(ASSESSMENT_120.question_count * (2 / 3)) ? 'medium' : 'low')
     };
+  }
+
+  // Agent 203: Infinity / negatives used to be stored as the timestamp (Infinity serialises to null).
+  function timestampOf(value) {
+    var n = numeric(value);
+    return isFinite(n) && n > 0 ? n : Date.now();
   }
 
   function calculateResult(input) {
     var questions = Array.isArray(input && input.questions) ? input.questions : [];
     var correctMap = input && input.correctMap && typeof input.correctMap === 'object' ? input.correctMap : {};
-    var graded = Number(input && input.graded_questions) || questions.filter(function (q) { return String(q && q.question_type || 'radio') !== 'banner'; }).length;
-    var score = clamp(Number(input && input.score) || 0, 0, 100);
+    var graded = count(input && input.graded_questions) || questions.filter(function (q) { return typeOf(q) !== 'banner'; }).length;
+    var score = pct(input && input.score);
     var evidence = Array.isArray(input && input.evidence) ? mergePlacementEvidence(input.evidence, []) : buildEvidence(questions, correctMap, input && input.quiz_id, input && input.stage);
     var skill = evidence.length ? calculateEvidenceSkillProfile(evidence) : calculateSkillProfile(questions, correctMap);
     var coverage = coverageReport(questions);
@@ -328,7 +393,7 @@
       confidence: confidence,
       skills: skill.skills,
       skill_counts: skill.counts,
-      assessment_quiz_ids: Array.isArray(input && input.assessment_quiz_ids) ? input.assessment_quiz_ids.slice() : [],
+      assessment_quiz_ids: Array.isArray(input && input.assessment_quiz_ids) ? input.assessment_quiz_ids.map(idString).filter(Boolean) : [],
       evidence: evidence,
       evidence_question_count: evidence.length,
       evidence_correct_count: evidenceCorrect,
@@ -339,8 +404,8 @@
       boundary_reason: decision.reason,
       boundary_check: decision.boundary_check,
       graded_questions: graded,
-      complete: input && input.complete !== false,
-      timestamp: Number(input && input.timestamp) || Date.now()
+      complete: !!(input && input.complete !== false),
+      timestamp: timestampOf(input && input.timestamp)
     };
   }
 
@@ -351,7 +416,9 @@
       var value = JSON.parse(raw);
       if (!value || typeof value !== 'object') return null;
       if (LEVELS.indexOf(String(value.recommended_level || value.assessed_level || '').toLowerCase()) < 0) return null;
-      if (!Number.isFinite(Number(value.score))) return null;
+      // Agent 203: Number(null) / Number('') / Number(false) / Number([]) are all 0, so a record
+      // whose score was null, blank or a boolean read back as a valid 0%-ish result.
+      if (!Number.isFinite(numeric(value.score))) return null;
       return value;
     } catch (e) { return null; }
   }
@@ -385,10 +452,13 @@
     input = input || {};
     var estimated = normalizeLevel(input.estimated_level);
     var assessed = normalizeLevel(input.assessed_level || estimated);
-    var score = clamp(Number(input.score) || 0, 0, 100);
-    var graded = Number(input.graded_questions) || 0;
+    var score = pct(input.score);
+    var graded = count(input.graded_questions);
     var complete = input.complete !== false;
-    var stage = String(input.stage || 'primary').toLowerCase();
+    // Agent 203: any stage other than 'verification' is the primary stage. An unknown / junk
+    // stage (it is a URL parameter upstream) used to fall into the verification branch, marking
+    // a boundary score final instead of asking for the boundary check.
+    var stage = normalizeStage(input.stage);
     var confidence = confidenceFor({ graded_questions: graded, score: score, complete: complete, conflicting_signals: input.conflicting_signals });
     var result = {
       blueprint_version: PLACEMENT_BLUEPRINT_V2.version,
@@ -442,16 +512,18 @@
 
   function validateQuestionMetadata(question) {
     if (!question || typeof question !== 'object') return false;
-    if (question.skill != null && SKILLS.indexOf(String(question.skill).toLowerCase()) < 0) return false;
+    // Agent 203: skill / cefr must be strings and difficulty / time real numbers (or numeric
+    // strings); true, [30] and ['grammar'] used to pass through String() / Number().
+    if (question.skill != null && !skillOf(question.skill)) return false;
     if (question.difficulty != null) {
-      var d = Number(question.difficulty);
+      var d = numeric(question.difficulty);
       if (!Number.isInteger(d) || d < DIFFICULTY.min || d > DIFFICULTY.max) return false;
     }
     if (question.estimated_time_seconds != null) {
-      var t = Number(question.estimated_time_seconds);
+      var t = numeric(question.estimated_time_seconds);
       if (!Number.isFinite(t) || t <= 0) return false;
     }
-    if (question.cefr != null && LEVELS.indexOf(String(question.cefr).toLowerCase()) < 0) return false;
+    if (question.cefr != null && (typeof question.cefr !== 'string' || LEVELS.indexOf(question.cefr.toLowerCase()) < 0)) return false;
     return true;
   }
 

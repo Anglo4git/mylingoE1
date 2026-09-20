@@ -61,7 +61,7 @@ footer{max-width:950px;margin:0 auto;padding:24px 16px 40px;color:var(--muted);f
   <h1 id="title">My progress</h1>
   <div class="stats" id="stats"></div>
   <div id="body"></div>
-  <div class="reset" id="resetWrap" style="display:none"><button id="resetBtn">Reset this level's progress</button></div>
+  <div class="reset" id="resetWrap"><button id="resetBtn" style="display:none">Reset this level's progress</button></div>
 <div id="masteryReviewMount"></div><div id="offlinePacksMount"></div>
 </main>
 <footer>Mylingo · Works offline once installed · Free forever</footer>
@@ -72,7 +72,8 @@ footer{max-width:950px;margin:0 auto;padding:24px 16px 40px;color:var(--muted);f
 const $=x=>document.getElementById(x);
 const KEY='mylingo.progress.v1';
 const parts=location.pathname.split('/').filter(Boolean);
-const level=(parts[parts.length-2]||'a1').toLowerCase();
+const lastSeg=parts[parts.length-1]||'';
+const level=((/^[a-c][12]$/i.test(lastSeg)?lastSeg:parts[parts.length-2])||'a1').toLowerCase();
 if(window.MylingoLevelLock && window.MylingoLevelLock.isLocked(level)){
   window.MylingoLevelLock.renderLockedState(document.getElementById('main-content'), level, {backHref:'../main/index.html'});
   return;
@@ -126,12 +127,12 @@ async function load(){
 
   if(entries.length===0 && notStarted.length===0){
     $('body').innerHTML='<div class="empty">No quizzes found for this level yet.</div>';
-    $('resetWrap').style.display='none';
+    $('resetBtn').style.display='none';
     return;
   }
   if(entries.length===0){
     $('body').innerHTML='<div class="empty">You haven\'t started any '+level.toUpperCase()+' quizzes yet. <a href="./index.html">Browse quizzes →</a></div>';
-    $('resetWrap').style.display='none';
+    $('resetBtn').style.display='none';
     return;
   }
 
@@ -158,7 +159,7 @@ async function load(){
   }
 
   $('body').innerHTML='<p class="section-title">In progress</p>'+rows+notStartedHtml;
-  $('resetWrap').style.display='block';
+  $('resetBtn').style.display='inline-block';
 }
 
 $('resetBtn').onclick=()=>{
@@ -170,7 +171,7 @@ $('resetBtn').onclick=()=>{
 };
 
 load();
+try{ if(window.MylingoOfflinePacksUI) window.MylingoOfflinePacksUI.mount(document.getElementById('offlinePacksMount'),{level:level}); }catch(e){}
 })();
-try{if(window.MylingoOfflinePacksUI && !(window.MylingoLevelLock && window.MylingoLevelLock.isLocked(level))){window.MylingoOfflinePacksUI.mount(document.getElementById('offlinePacksMount'),{level:level});}}catch(e){}
 </script>
 <script src="../shared/js/app-shell.js"></script></body></html>

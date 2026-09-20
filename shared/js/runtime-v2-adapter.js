@@ -99,11 +99,16 @@
     return null;
   }
 
-  function normalizeAcceptedAnswers(question) {
+  function normalizeAcceptedAnswers(question, correctIndex) {
     var value = firstDefined(question,
       ['acceptedAnswers', 'accepted_answers', 'correctAnswer', 'correct_answer', 'answer'],
       null);
-    if (value == null && Array.isArray(question.answers) && !Number.isInteger(numberValue(question.correctIndex, null))) {
+    // Agent 162: "does this question already have a correct option?" must be asked
+    // of the NORMALIZED index. It used to read the raw camelCase `correctIndex`
+    // only, so a radio question authored with `correct_index` or `is_correct`
+    // flags looked index-less and had its whole option list (raw objects, for the
+    // flag form) copied out as `acceptedAnswers`.
+    if (value == null && Array.isArray(question.answers) && !Number.isInteger(correctIndex)) {
       value = question.answers;
     }
     if (value == null) return undefined;
@@ -170,11 +175,20 @@
     var media = normalizeMedia(input);
     if (media) out.media = media;
 
-    var accepted = normalizeAcceptedAnswers(input);
+    var accepted = normalizeAcceptedAnswers(input, out.correctIndex);
     if (accepted !== undefined) out.acceptedAnswers = accepted;
 
-    ['subprompt', 'correctIndices', 'pairs', 'matches', 'items', 'correctOrder',
-     'skill', 'subskill', 'difficulty', 'cefr', 'estimated_time_seconds'].forEach(function (key) {
+    // Agent 162: skill/subskill/difficulty/cefr/estimated_time_seconds are the
+    // canonical metadata keys. When MylingoCanonicalMetadata is loaded it has
+    // already produced the normalized value above (trimmed skill, category
+    // fallback, numeric difficulty, upper-cased CEFR), so copying the RAW input
+    // over it here silently undid that normalization: `skill:" Grammar "` or an
+    // unknown `skill:"foo"` (which should fall back to the category) reached
+    // skill-mastery.js unnormalized and the question was dropped from mastery.
+    // The raw copy is now only the fallback for when the module isn't loaded.
+    var passthrough = ['subprompt', 'correctIndices', 'pairs', 'matches', 'items', 'correctOrder'];
+    if (!canonical) passthrough = passthrough.concat(['skill', 'subskill', 'difficulty', 'cefr', 'estimated_time_seconds']);
+    passthrough.forEach(function (key) {
       copyOptional(out, input, key);
     });
 

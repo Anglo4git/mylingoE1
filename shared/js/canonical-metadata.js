@@ -16,7 +16,11 @@
 
   function skillForCategory(value) {
     var key = String(value || '').trim().toLowerCase();
-    return CATEGORY_TO_SKILL[key] || null;
+    // Agent 162: own-property check only. A bare `CATEGORY_TO_SKILL[key]` also
+    // resolves inherited Object.prototype names, so a category of "constructor"
+    // (or "toString", "__proto__") returned a function/object instead of null and
+    // normalize() then stored that as `skill`.
+    return Object.prototype.hasOwnProperty.call(CATEGORY_TO_SKILL, key) ? CATEGORY_TO_SKILL[key] : null;
   }
 
   function normalizeObjective(input) {

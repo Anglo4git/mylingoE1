@@ -29,6 +29,10 @@
         .then(function (list) {
           return Array.isArray(list) ? list : [];
         });
+      // Agent 163: never memoize a FAILURE. quiz.html's "Try again" button calls
+      // load() again in the same page; a cached rejected promise made every retry
+      // fail instantly until a full page reload, even once the connection was back.
+      manifestPromises[level].catch(function () { delete manifestPromises[level]; });
     }
     return manifestPromises[level];
   }
@@ -70,6 +74,9 @@
           });
         });
     }());
+
+    // Agent 163: evict on failure (see manifest() above) so a retry really retries.
+    jsonPromises[key].catch(function () { delete jsonPromises[key]; });
 
     return jsonPromises[key];
   }
