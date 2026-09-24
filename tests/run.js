@@ -1268,7 +1268,7 @@ console.log('static wiring: level-lock fail-open guard (Agent 158)');
   const files = [];
   (function walk(dir) {
     fs.readdirSync(dir, { withFileTypes: true }).forEach((e) => {
-      if (e.name === 'node_modules' || e.name === 'tests' || e.name.startsWith('.')) return;
+      if ((e.name === 'node_modules' || e.name === 'dist') || e.name === 'tests' || e.name.startsWith('.')) return;
       const full = path.join(dir, e.name);
       if (e.isDirectory()) walk(full);
       else if (e.name.endsWith('.html')) files.push(full);
@@ -1364,6 +1364,118 @@ console.log('learner-state.js (Agent 159)');
     assert.strictEqual(LS.validatePlacement({ recommended_level: 'a2', assessed_level: 'b1', score: 55 }), true);
     assert.strictEqual(LS.validatePlacement({ recommended_level: 'a2', score: 55 }), false);
     assert.strictEqual(LS.validatePlacement({ recommended_level: 'a2', assessed_level: 'b1', score: 101 }), false);
+  });
+
+  test('validators: a boolean or single-item/empty array standing in for a number is rejected, not silently coerced (Agent 206 fix)', () => {
+    // Before the fix, Number(true)===1, Number([5])===5 and Number([])===0, so any
+    // of these shapes slipped past the old bare-Number(x) gates. Same bug class
+    // Agent 205 fixed in gamification.js's backup/restore validators.
+    assert.strictEqual(LS.validateProgress({ q1: { best: true } }), false, 'Number(true)===1 must not pass as a valid 0-100 best');
+    assert.strictEqual(LS.validateProgress({ q1: { attempts: [5] } }), false, 'Number([5])===5 must not pass as a valid integer attempts');
+    assert.strictEqual(LS.validateProgress({ q1: { totalQuestions: [] } }), false, 'Number([])===0 must not pass as a valid integer totalQuestions');
+    assert.strictEqual(LS.validateProgress({ q1: { lastAccess: [1700000000] } }), false, 'array lastAccess must not pass as finite');
+
+    assert.strictEqual(LS.validateGamification({ xpTotal: false }), false, 'Number(false)===0 must not pass as a valid xpTotal');
+    assert.strictEqual(LS.validateGamification({ streak: [3] }), false, 'array streak must not pass as a valid integer');
+    assert.strictEqual(LS.validateGamification({ longestStreak: true }), false, 'boolean longestStreak must not pass');
+
+    assert.strictEqual(LS.validateSkillMastery({ version: [1], skills: {} }), false, 'array version must not satisfy === 1');
+    assert.strictEqual(LS.validateSkillMastery({ version: 1, skills: { grammar: { question_count: true, correct_count: 0, attempt_count: 0 } } }), false, 'boolean question_count must not pass');
+    assert.strictEqual(LS.validateSkillMastery({ version: 1, skills: { grammar: { question_count: 5, correct_count: [0], attempt_count: 0 } } }), false, 'array correct_count must not pass');
+
+    assert.strictEqual(LS.validateReviewScheduling({ version: [1], skills: {} }), false, 'array version must not satisfy === 1');
+    assert.strictEqual(LS.validateReviewScheduling({ version: 1, skills: { grammar: { interval_days: true } } }), false, 'boolean interval_days must not pass');
+    assert.strictEqual(LS.validateReviewScheduling({ version: 1, skills: { grammar: { interval_days: 1, interval_hours: [24] } } }), false, 'array interval_hours must not pass');
+
+    assert.strictEqual(LS.validatePlacement({ recommended_level: 'a2', assessed_level: 'b1', score: [55] }), false, 'Number([55])===55 must not pass as a valid score');
+
+    // A real numeric string is still accepted everywhere — the fix narrows the
+    // gate to real numbers and non-blank numeric strings, not to numbers alone.
+    assert.strictEqual(LS.validateGamification({ xpTotal: '10' }), true, 'numeric string xpTotal is still accepted');
+
+    // A whitespace-only string is still blank (Number('   ') is 0, which would
+    // otherwise silently pass as a valid xpTotal if `.trim()` were dropped).
+    assert.strictEqual(LS.validateGamification({ xpTotal: '   ' }), false, 'whitespace-only xpTotal stays rejected, not coerced to 0');
+  });
+
+  test('validateProgress: every 0-lower-bound field accepts exactly 0 (Agent 206 mutation-sweep hardening)', () => {
+    assert.strictEqual(LS.validateProgress({ q1: { best: 0 } }), true);
+    assert.strictEqual(LS.validateProgress({ q1: { latest: 0 } }), true);
+    assert.strictEqual(LS.validateProgress({ q1: { attempts: 0 } }), true);
+    assert.strictEqual(LS.validateProgress({ q1: { totalQuestions: 0 } }), true);
+  });
+
+  test('validateProgress: every field also rejects a value that fails only its lower bound, and only its upper bound (Agent 206 mutation-sweep hardening)', () => {
+    assert.strictEqual(LS.validateProgress({ q1: { latest: -5 } }), false);
+    assert.strictEqual(LS.validateProgress({ q1: { latest: 150 } }), false);
+    assert.strictEqual(LS.validateProgress({ q1: { latest: 100 } }), true, '100 is the inclusive upper bound');
+    assert.strictEqual(LS.validateProgress({ q1: { best: 100 } }), true, '100 is the inclusive upper bound');
+    assert.strictEqual(LS.validateProgress({ q1: { current: -5 } }), false);
+    assert.strictEqual(LS.validateProgress({ q1: { current: 100001 } }), false);
+    assert.strictEqual(LS.validateProgress({ q1: { current: 100000 } }), true, '100000 is the inclusive upper bound');
+    assert.strictEqual(LS.validateProgress({ q1: { totalQuestions: -5 } }), false);
+    assert.strictEqual(LS.validateProgress({ q1: { totalQuestions: 100000 } }), true, '100000 is the inclusive upper bound');
+    assert.strictEqual(LS.validateProgress({ q1: { attempts: 100000 } }), true, '100000 is the inclusive upper bound');
+  });
+
+  test('validateProgress: level is case-insensitive and the FIRST level ("a1") validates, not just later ones (Agent 206 mutation-sweep hardening)', () => {
+    assert.strictEqual(LS.validateProgress({ q1: { level: 'a1' } }), true);
+    assert.strictEqual(LS.validateProgress({ q1: { level: 'A2' } }), true, 'uppercase still matches via case-fold');
+  });
+
+  test('validateProgress: a non-numeric string field is rejected outright (Agent 206 mutation-sweep hardening)', () => {
+    assert.strictEqual(LS.validateProgress({ q1: { latest: 'abc' } }), false);
+  });
+
+  test('validateProgress: MAX_KEYS boundary accepts exactly 1000 entries (Agent 206 mutation-sweep hardening)', () => {
+    const exact = {};
+    for (let i = 0; i < LS.MAX_KEYS; i++) exact['q' + i] = {};
+    assert.strictEqual(LS.validateProgress(exact), true);
+  });
+
+  test('validateGamification: 0-lower and inclusive-upper bounds for xpTotal/streak/longestStreak, and a non-string lastActiveDate is rejected even though it may have a short .length (Agent 206 mutation-sweep hardening)', () => {
+    assert.strictEqual(LS.validateGamification({ xpTotal: 0 }), true);
+    assert.strictEqual(LS.validateGamification({ streak: 0 }), true);
+    assert.strictEqual(LS.validateGamification({ longestStreak: 0 }), true);
+    assert.strictEqual(LS.validateGamification({ xpTotal: 1000000000 }), true, 'inclusive upper bound');
+    assert.strictEqual(LS.validateGamification({ streak: -5 }), false);
+    assert.strictEqual(LS.validateGamification({ streak: 1000000 }), true, 'inclusive upper bound');
+    assert.strictEqual(LS.validateGamification({ longestStreak: -5 }), false);
+    assert.strictEqual(LS.validateGamification({ longestStreak: 1000000 }), true, 'inclusive upper bound');
+    assert.strictEqual(LS.validateGamification({ lastActiveDate: '2'.repeat(32) }), true, '32 chars is the inclusive bound');
+    assert.strictEqual(LS.validateGamification({ lastActiveDate: '2'.repeat(33) }), false);
+    assert.strictEqual(LS.validateGamification({ lastActiveDate: [1, 2, 3] }), false, 'an array has a short .length but is not a string');
+    assert.strictEqual(LS.validateGamification({ rewardedSessions: new Array(20).fill('x') }), true, '20 is the inclusive bound');
+  });
+
+  test('validateSkillMastery / validateReviewScheduling: 0-lower and inclusive-upper bounds, exactly SKILLS.length (6) skill keys, and accuracy rejects on either bound alone (Agent 206 mutation-sweep hardening)', () => {
+    const allSix = {};
+    LS.SKILLS.forEach((name) => { allSix[name] = { question_count: 1, correct_count: 1, attempt_count: 1 }; });
+    assert.strictEqual(LS.validateSkillMastery({ version: 1, skills: allSix }), true, 'exactly SKILLS.length keys is the inclusive bound');
+    assert.strictEqual(LS.validateSkillMastery({ version: 1, skills: { grammar: { question_count: 0, correct_count: 0, attempt_count: 0 } } }), true, '0 is the inclusive lower bound');
+    assert.strictEqual(LS.validateSkillMastery({ version: 1, skills: { GRAMMAR: { question_count: 0, correct_count: 0, attempt_count: 0 } } }), true, 'skill name is case-insensitive');
+    assert.strictEqual(LS.validateSkillMastery({ version: 1, skills: { grammar: { question_count: 5, correct_count: 5, attempt_count: 1, accuracy: 150 } } }), false, 'accuracy over 100 alone must fail');
+    assert.strictEqual(LS.validateSkillMastery({ version: 1, skills: { grammar: { question_count: 5, correct_count: 5, attempt_count: 1, accuracy: -10 } } }), false, 'accuracy under 0 alone must fail');
+    assert.strictEqual(LS.validateSkillMastery({ version: 1, skills: { grammar: { question_count: 5, correct_count: 5, attempt_count: 1, accuracy: 100 } } }), true, '100 is the inclusive upper bound');
+
+    const allSixRs = {};
+    LS.SKILLS.forEach((name) => { allSixRs[name] = { interval_days: 0 }; });
+    assert.strictEqual(LS.validateReviewScheduling({ version: 1, skills: allSixRs }), true, 'exactly SKILLS.length keys is the inclusive bound');
+    assert.strictEqual(LS.validateReviewScheduling({ version: 1, skills: { grammar: { interval_days: 0 } } }), true, '0 is the inclusive lower bound');
+    assert.strictEqual(LS.validateReviewScheduling({ version: 1, skills: { grammar: { interval_days: 30 } } }), true, '30 is the inclusive upper bound');
+    assert.strictEqual(LS.validateReviewScheduling({ version: 1, skills: { grammar: { interval_days: 1, interval_hours: 0 } } }), true, '0 is the inclusive lower bound');
+    assert.strictEqual(LS.validateReviewScheduling({ version: 1, skills: { grammar: { interval_days: 1, interval_hours: 720 } } }), true, '720 is the inclusive upper bound');
+  });
+
+  test('validatePlacement: score accepts the inclusive 0 and 100 bounds (Agent 206 mutation-sweep hardening)', () => {
+    assert.strictEqual(LS.validatePlacement({ recommended_level: 'a2', assessed_level: 'b1', score: 0 }), true);
+    assert.strictEqual(LS.validatePlacement({ recommended_level: 'a2', assessed_level: 'b1', score: 100 }), true);
+  });
+
+  test('parse: a valid-JSON string of exactly 250000 chars is not treated as oversize (Agent 206 mutation-sweep hardening)', () => {
+    const exact = '"' + 'x'.repeat(249998) + '"'; // valid JSON string literal, 250000 chars total
+    assert.strictEqual(exact.length, 250000);
+    assert.strictEqual(LS.parse(exact, 'fb'), 'x'.repeat(249998));
   });
 
   test('parse + readLocal fall back on oversize / bad JSON / invalid shape / throwing storage', () => {
@@ -2245,6 +2357,46 @@ console.log('gamification.js: backup / restore (Agent 159)');
     assert.strictEqual(res.ok, true);
     assert.strictEqual(gamStore.getItem(GAM.PLACEMENT_KEY), null);
   });
+
+  // Agent 205: an uploaded backup file is untrusted JSON. Every numeric field below
+  // used to be gated with a bare Number(x): Number(true)/Number([5])/Number([]) are
+  // 1/5/0, so a boolean or a single-item/empty array slipped past validation as if it
+  // were a real number, and restoreBackup then wrote that exact non-numeric value
+  // straight into localStorage via JSON.stringify(value) — corrupting the live
+  // learner state (e.g. xpTotal becoming the array [999999999], later read back as
+  // a "valid" 999999999 by getState()'s own Number(v) coercion).
+  test('validateBackup / restoreBackup: a boolean or single-item array standing in for a number is rejected, not silently coerced (Agent 205 fix)', () => {
+    assert.strictEqual(GAM.validateBackup(v2({ gamification: { xpTotal: true } })).valid_sections.length, 0);
+    assert.strictEqual(GAM.validateBackup(v2({ gamification: { xpTotal: [999999999] } })).valid_sections.length, 0);
+    assert.strictEqual(GAM.validateBackup(v2({ gamification: { streak: [1] } })).valid_sections.length, 0);
+    assert.strictEqual(GAM.validateBackup(v2({ progress: { q: { best: true } } })).valid_sections.length, 0);
+    assert.strictEqual(GAM.validateBackup(v2({ progress: { q: { best: [50] } } })).valid_sections.length, 0);
+    assert.strictEqual(GAM.validateBackup(v2({ progress: { q: { attempts: [] } } })).valid_sections.length, 0, 'Number([]) is 0, which is in-range and used to pass');
+    assert.strictEqual(GAM.validateBackup(v2({
+      skillMastery: { version: 1, skills: { grammar: { question_count: [5], correct_count: false, attempt_count: 0 } } }
+    })).valid_sections.length, 0);
+    assert.strictEqual(GAM.validateBackup(v2({
+      reviewScheduling: { version: 1, skills: { grammar: { interval_days: [7] } } }
+    })).valid_sections.length, 0);
+    assert.strictEqual(GAM.validateBackup(v2({
+      placement: { recommended_level: 'a1', assessed_level: 'a1', score: [50] }
+    })).valid_sections.length, 0);
+    assert.strictEqual(GAM.validateBackup(v2({
+      placementPending: { version: 1, estimated_level: 'a1', primary_level: 'a1', verification_level: 'a1', primary_score: [50], primary_quiz_id: 'q', primary_evidence: [] }
+    })).valid_sections.length, 0);
+    assert.strictEqual(GAM.validateBackup(v2({
+      orientation: { version: 1, answers: [[1]], score: 1, maxScore: 4 }
+    })).valid_sections.length, 0, 'a non-numeric answer entry must not pass as index [1]');
+    // A single-item array standing in for the schema version itself must not bypass it either.
+    assert.strictEqual(GAM.validateBackup({ schema: 'mylingo.backup.v2', version: [2], exportedAt: 'x', sections: { gamification: { xpTotal: 1 } } }).ok, false);
+
+    gamStore.clear();
+    const res = GAM.restoreBackup(v2({ gamification: { xpTotal: [999999999] }, progress: { q: { best: 90 } } }));
+    assert.strictEqual(res.ok, true);
+    assert.strictEqual(res.partial, true);
+    assert.deepStrictEqual(res.rejected_sections, ['gamification']);
+    assert.strictEqual(gamStore.getItem(GAM.KEY), null, 'the junk xpTotal array must never reach storage');
+  });
 })();
 
 // ============================================================
@@ -2365,6 +2517,63 @@ console.log('quiz-packer.js (Agent 159)');
     assert.ok(input.every((r) => !('__packOrder' in r)));
     assert.strictEqual(QP.packRows(null).packedRowCount, 0);
     assert.strictEqual(Object.isFrozen(QP), true);
+  });
+
+  test('bucketKey/levelCategoryKey/profileKey: whitespace-trimmed, case-folded, and quiz_category wins over category when both are set', () => {
+    assert.strictEqual(QP.bucketKey({ level: ' b1 ', quiz_category: ' Grammar ', title: ' Basics ' }), 'b1|grammar|basics');
+    assert.strictEqual(QP.bucketKey({ level: 'B1', quiz_category: 'Grammar', category: 'ShouldBeIgnored', title: 'X' }), 'b1|grammar|x');
+    assert.strictEqual(QP.bucketKey({ level: 'B1', category: 'Grammar', title: 'X' }), 'b1|grammar|x');
+    assert.strictEqual(QP.levelCategoryKey({ level: ' b1 ', quiz_category: ' Grammar ' }), 'b1|grammar');
+    assert.strictEqual(QP.levelCategoryKey({ level: 'B1', quiz_category: 'Grammar', category: 'ShouldBeIgnored' }), 'b1|grammar');
+    assert.strictEqual(QP.profileKey(' b1 ', ' Grammar '), 'b1|grammar');
+    assert.strictEqual(QP.profileKey('B1', 'GRAMMAR'), QP.profileKey('b1', 'grammar'), 'profileKey must be case-insensitive so a profile registered as Grammar matches a row categorized grammar');
+  });
+
+  test('indexProfiles: a profile missing EITHER level OR quiz_category alone is skipped, not just when both are missing', () => {
+    const idx = QP.indexProfiles([
+      null,
+      undefined,
+      42,
+      { quiz_category: 'Grammar' },       // missing level only
+      { level: 'B1' },                    // missing quiz_category only
+      { level: 'B1', quiz_category: 'Grammar', id: 'ok' }
+    ]);
+    assert.strictEqual(idx.size, 1);
+    assert.strictEqual(idx.get(QP.profileKey('B1', 'Grammar')).id, 'ok');
+  });
+
+  test('a pre-identified row with NO question_number is still left untouched when repackExisting is not set (existingSizeHint must not be required to preserve an existing id)', () => {
+    const input = rows(4, 'A2', 'Vocabulary').concat([{ level: 'A2', quiz_category: 'Vocabulary', quiz_id: 'a2-099', title: 'Keep me, no question_number' }]);
+    const res = QP.packRows(input, { targetSize: 5 });
+    assert.strictEqual(res.packedRowCount, 0, 'only 4 eligible rows, below minSize 5, so nothing is packed');
+    const kept = input[input.length - 1];
+    assert.strictEqual(kept.quiz_id, 'a2-099');
+    assert.strictEqual(kept.title, 'Keep me, no question_number');
+  });
+
+  test('sort by __packOrder is stable at the front of the pool (position 0 must not be treated as falsy/0 fallback)', () => {
+    const input = rows(6, 'B1', 'Reading');
+    const res = QP.packRows(input, { targetSize: 6 });
+    assert.strictEqual(res.packedRowCount, 6);
+    assert.deepStrictEqual(input.map((r) => r.question, ), input.map((r, i) => 'q' + i), 'original row order preserved end to end');
+    assert.deepStrictEqual(input.map((r) => r.question_number), [1, 2, 3, 4, 5, 6]);
+  });
+
+  test('output level casing: a lowercase input level is upper-cased in the title/tags, not just in the internal key', () => {
+    const input = rows(5, 'b1', 'Grammar');
+    const res = QP.packRows(input, { targetSize: 5 });
+    assert.strictEqual(input[0].title, 'Mixed Grammar Practice');
+    assert.strictEqual(input[0].quiz_tags, 'Grammar,B1');
+    assert.strictEqual(input[0].quiz_id, 'b1-001');
+  });
+
+  test('question_category and question_tags are preserved when already set, and only filled in when absent', () => {
+    const input = rows(5, 'C1', 'Listening', ).map((r, i) => (i === 0 ? Object.assign(r, { question_category: 'CustomCat', question_tags: 'custom,tags' }) : r));
+    const res = QP.packRows(input, { targetSize: 5 });
+    assert.strictEqual(input[0].question_category, 'CustomCat', 'existing question_category must not be overwritten');
+    assert.strictEqual(input[0].question_tags, 'custom,tags', 'existing question_tags must not be overwritten');
+    assert.strictEqual(input[1].question_category, 'Listening', 'absent question_category falls back to the bucket category');
+    assert.strictEqual(input[1].question_tags, 'Listening,C1', 'absent question_tags falls back to category,level');
   });
 })();
 
@@ -2804,7 +3013,7 @@ console.log('runtime-v2-adapter.js: question / quiz / hierarchy / manifest (Agen
     const problems = []; let quizzes = 0, questions = 0;
     (function walk(dir) {
       fs.readdirSync(dir, { withFileTypes: true }).forEach((e) => {
-        if (['node_modules', 'tests', 'offline'].includes(e.name) || e.name.startsWith('.')) return;
+        if (['node_modules', 'tests', 'offline', 'dist'].includes(e.name) || e.name.startsWith('.')) return;
         const full = path.join(dir, e.name);
         if (e.isDirectory()) return walk(full);
         if (!e.name.endsWith('.json')) return;
@@ -2904,6 +3113,13 @@ console.log('runtime-content-loader.js (Agent 163)');
     withLoader({ '../grammar/a1/q.json': { body: { q: 1 } } }, async (L, calls) => {
       await L.load('a1', 'q'); await L.load('a1', 'q');
       assert.strictEqual(calls.length, 1);
+    }));
+
+  testAsync('loader: explicitFile is part of the memoization key — two different explicit files under the same level/id are NOT treated as the same cache entry (Agent 207 mutation-sweep hardening)', () =>
+    withLoader({ '../vocabulary/a1/x.json': { body: { x: 1 } }, '../vocabulary/a1/y.json': { body: { y: 2 } } }, async (L, calls) => {
+      assert.deepStrictEqual(await L.load('a1', 'ignored', './vocabulary/a1/x.json'), { x: 1 });
+      assert.deepStrictEqual(await L.load('a1', 'ignored', './vocabulary/a1/y.json'), { y: 2 });
+      assert.deepStrictEqual(calls, ['../vocabulary/a1/x.json', '../vocabulary/a1/y.json'], 'both files must be fetched; the second must not replay the first\'s cached result');
     }));
 
   testAsync('loader: non-array manifest body is treated as an empty list', () =>
@@ -3047,7 +3263,7 @@ console.log('quiz.html inline logic: type/validate/grading/session (Agent 164)')
     const bad = []; let n = 0;
     (function walk(dir) {
       fs.readdirSync(dir, { withFileTypes: true }).forEach((e) => {
-        if (['node_modules', 'tests', 'offline'].includes(e.name) || e.name.startsWith('.')) return;
+        if (['node_modules', 'tests', 'offline', 'dist'].includes(e.name) || e.name.startsWith('.')) return;
         const full = path.join(dir, e.name);
         if (e.isDirectory()) return walk(full);
         if (!e.name.endsWith('.json')) return;
@@ -4720,6 +4936,214 @@ console.log('offline core precache reconciliation (Agent 162)');
 })();
 
 // ============================================================
+console.log('sw.js: install/activate lifecycle + fetch routing strategies (Agent 212 mutation-sweep hardening)');
+// ============================================================
+(function () {
+  const fs = require('fs');
+  const root = path.join(__dirname, '..');
+  const code = fs.readFileSync(path.join(root, 'sw.js'), 'utf8');
+
+  // Sandbox: fake ServiceWorkerGlobalScope with an in-memory, named Cache Storage
+  // (a Map per cache name) so tests can assert exactly what got cached where,
+  // plus spies on skipWaiting()/clients.claim() and every caches.delete() call.
+  function makeSandbox(opts) {
+    opts = opts || {};
+    const handlers = {};
+    const spy = { skipWaitingCalled: false, claimCalled: false };
+    const putCalls = [];
+    const deletedCaches = [];
+    const stores = {}; // cacheName -> Map(url -> response)
+    const store = (name) => (stores[name] = stores[name] || new Map());
+    if (opts.seed) {
+      Object.keys(opts.seed).forEach((name) => { Object.keys(opts.seed[name]).forEach((url) => store(name).set(url, opts.seed[name][url])); });
+    }
+    const fakeSelf = {
+      location: { origin: 'https://app.test' },
+      addEventListener: (type, fn) => { handlers[type] = fn; },
+      skipWaiting: () => { spy.skipWaitingCalled = true; return Promise.resolve(); },
+      clients: { claim: () => { spy.claimCalled = true; return Promise.resolve(); } },
+    };
+    const fakeCaches = {
+      open: (name) => Promise.resolve({
+        put: (request, response) => { const url = typeof request === 'string' ? request : request.url; store(name).set(url, response); putCalls.push({ cacheName: name, url, response }); },
+        addAll: (urls) => { (opts.onAddAll || function () {})(name, urls); return Promise.resolve(); },
+      }),
+      match: (request) => {
+        const url = typeof request === 'string' ? request : request.url;
+        for (const name of Object.keys(stores)) { if (stores[name].has(url)) return Promise.resolve(stores[name].get(url)); }
+        return Promise.resolve(undefined);
+      },
+      keys: () => Promise.resolve(opts.cacheKeys || []),
+      delete: (name) => { deletedCaches.push(name); return Promise.resolve(true); },
+    };
+    function FakeResponse(body, init) {
+      this.body = body; this.status = init && init.status; this.statusText = init && init.statusText; this.headers = (init && init.headers) || {};
+      this.ok = !init || init.status === undefined || (init.status >= 200 && init.status < 300);
+      this.clone = () => this;
+    }
+    const fetchImpl = opts.fetch || (() => Promise.reject(new TypeError('network down')));
+    new Function('self', 'caches', 'fetch', 'Response', 'URL', code)(fakeSelf, fakeCaches, fetchImpl, FakeResponse, URL);
+    return { handlers, spy, putCalls, deletedCaches, stores };
+  }
+
+  function fireEvent(handler) {
+    let waited = null;
+    handler({ waitUntil: (p) => { waited = p; } });
+    return waited;
+  }
+
+  function fireFetch(handlers, request) {
+    let responded = null;
+    handlers.fetch({ request, respondWith: (p) => { responded = Promise.resolve(p); } });
+    return responded;
+  }
+
+  testAsync('install: fetches the core manifest, addAll()s exactly its files into a cache, then calls skipWaiting() only after caching resolves', async () => {
+    let addAllName = null, addAllUrls = null;
+    const s = makeSandbox({
+      fetch: (url, opts2) => {
+        assert.ok(String(url).indexOf('core-manifest.json') >= 0, 'install must fetch the core manifest');
+        assert.strictEqual(opts2 && opts2.cache, 'no-store', 'the manifest fetch must bypass HTTP cache');
+        return Promise.resolve({ ok: true, json: () => Promise.resolve({ schema: 'mylingo.offline-core.v1', files: ['index.html', './shared/js/app-shell.js'] }) });
+      },
+      onAddAll: (name, urls) => { addAllName = name; addAllUrls = urls; },
+    });
+    await fireEvent(s.handlers.install);
+    assert.deepStrictEqual(addAllUrls, ['./index.html', './shared/js/app-shell.js'], 'every manifest file, normalised to a single leading ./');
+    assert.ok(addAllName, 'addAll happened inside an opened cache');
+    assert.strictEqual(s.spy.skipWaitingCalled, true, 'skipWaiting() runs after the cache is populated');
+  });
+
+  testAsync('install: a manifest that is not ok, has the wrong schema, or has a non-array files list rejects and never calls skipWaiting()', async () => {
+    for (const resp of [
+      { ok: false, json: () => Promise.resolve({}) },
+      { ok: true, json: () => Promise.resolve({ schema: 'wrong', files: [] }) },
+      { ok: true, json: () => Promise.resolve({ schema: 'mylingo.offline-core.v1', files: 'not-an-array' }) },
+      { ok: true, json: () => Promise.resolve(null) },
+    ]) {
+      const s = makeSandbox({ fetch: () => Promise.resolve(resp) });
+      await assert.rejects(fireEvent(s.handlers.install));
+      assert.strictEqual(s.spy.skipWaitingCalled, false, 'a bad manifest must not let the new worker take over');
+    }
+  });
+
+  testAsync('activate: deletes only OUR previous mylingo-v* shell caches — never a PACK_CACHE_PREFIX cache (even an old one), never an unrelated cache, never the current version', async () => {
+    const s = makeSandbox({
+      cacheKeys: [
+        'mylingo-v28-static', 'mylingo-v28-runtime', // current version: keep
+        'mylingo-v26-static', 'mylingo-v3-runtime', // old shell versions: delete
+        'mylingo-offline-pack-v1-a1', 'mylingo-offline-pack-v1-core', // learner's installed packs: NEVER delete
+        'some-other-app-cache-v9', // unrelated cache: leave alone
+      ],
+    });
+    await fireEvent(s.handlers.activate);
+    assert.deepStrictEqual(s.deletedCaches.sort(), ['mylingo-v26-static', 'mylingo-v3-runtime'].sort());
+    assert.strictEqual(s.spy.claimCalled, true, 'clients.claim() runs after cleanup settles');
+  });
+
+  testAsync('activate: an empty cache list deletes nothing but still calls clients.claim()', async () => {
+    const s = makeSandbox({ cacheKeys: [] });
+    await fireEvent(s.handlers.activate);
+    assert.deepStrictEqual(s.deletedCaches, []);
+    assert.strictEqual(s.spy.claimCalled, true);
+  });
+
+  testAsync('fetch: non-GET requests and cross-origin requests are never intercepted (no respondWith call)', async () => {
+    const s = makeSandbox({});
+    assert.strictEqual(await fireFetch(s.handlers, { method: 'POST', url: 'https://app.test/a1/quizzes.json', mode: 'no-cors', destination: '' }), null);
+    assert.strictEqual(await fireFetch(s.handlers, { method: 'GET', url: 'https://evil.test/a1/quizzes.json', mode: 'no-cors', destination: '' }), null);
+  });
+
+  testAsync('fetch: a navigation (mode "navigate" OR destination "document") goes network-first, caching a successful response into the runtime cache', async () => {
+    const liveDoc = { ok: true }; liveDoc.clone = () => liveDoc;
+    const s = makeSandbox({ fetch: () => Promise.resolve(liveDoc) });
+    const byMode = await fireFetch(s.handlers, { method: 'GET', url: 'https://app.test/main/index.html', mode: 'navigate', destination: '' });
+    assert.strictEqual(await byMode, liveDoc);
+    const byDest = await fireFetch(s.handlers, { method: 'GET', url: 'https://app.test/courses/lesson.html', mode: 'no-cors', destination: 'document' });
+    assert.strictEqual(await byDest, liveDoc);
+    assert.ok(s.putCalls.some((c) => c.cacheName.endsWith('-runtime') && c.response === liveDoc), 'a successful navigation response is cached for later offline use');
+  });
+
+  testAsync('fetch: a navigation offline with no cached copy gets the synthetic "You\u2019re offline" HTML page (503, text/html), not a hard network error', async () => {
+    const s = makeSandbox({ fetch: () => Promise.reject(new TypeError('offline')) });
+    const r = await fireFetch(s.handlers, { method: 'GET', url: 'https://app.test/main/index.html', mode: 'navigate', destination: '' });
+    assert.strictEqual(r.status, 503);
+    assert.strictEqual(r.headers['Content-Type'], 'text/html; charset=utf-8');
+    assert.ok(r.body.startsWith('<!doctype html>'), 'a real doctype, not a mangled one');
+    assert.ok(/You.{1,2}re offline/.test(r.body), 'body explains the offline state');
+  });
+
+  testAsync('fetch: a network response that is NOT ok (e.g. a 404/500) is still returned as-is, but is never written into the runtime cache — only successful responses are cached', async () => {
+    const badDoc = { ok: false, status: 404 }; badDoc.clone = () => badDoc;
+    const s1 = makeSandbox({ fetch: () => Promise.resolve(badDoc) });
+    const r1 = await fireFetch(s1.handlers, { method: 'GET', url: 'https://app.test/main/index.html', mode: 'navigate', destination: '' });
+    assert.strictEqual(await r1, badDoc, 'network-first always hands back whatever the network gave, even an error');
+    assert.strictEqual(s1.putCalls.length, 0, 'a non-ok response must never be cached (would poison offline fallback with an error page)');
+
+    const badAsset = { ok: false, status: 500 }; badAsset.clone = () => badAsset;
+    const s2 = makeSandbox({ fetch: () => Promise.resolve(badAsset) });
+    const r2 = await fireFetch(s2.handlers, { method: 'GET', url: 'https://app.test/shared/brand/icon.svg', mode: 'no-cors', destination: 'image' });
+    assert.strictEqual(await r2, badAsset, 'cache-first with no cached copy still hands back a network error response as-is');
+    assert.strictEqual(s2.putCalls.length, 0, 'cache-first must not cache a non-ok response either');
+  });
+
+  testAsync('fetch: a navigation offline WITH a previously-cached copy serves that copy instead of the synthetic fallback', async () => {
+    const cachedPage = { sentinel: 'cached-index' };
+    const s = makeSandbox({ fetch: () => Promise.reject(new TypeError('offline')), seed: { 'mylingo-v28-runtime': { 'https://app.test/main/index.html': cachedPage } } });
+    const r = await fireFetch(s.handlers, { method: 'GET', url: 'https://app.test/main/index.html', mode: 'navigate', destination: '' });
+    assert.strictEqual(r, cachedPage);
+  });
+
+  testAsync('fetch: .json requests are network-first; offline with nothing cached returns the synthetic {error:"offline"} JSON, never undefined', async () => {
+    const s = makeSandbox({ fetch: () => Promise.reject(new TypeError('offline')) });
+    const r = await fireFetch(s.handlers, { method: 'GET', url: 'https://app.test/a1/quizzes.json', mode: 'no-cors', destination: '' });
+    assert.strictEqual(r.status, 503);
+    assert.strictEqual(r.headers['Content-Type'], 'application/json');
+    assert.deepStrictEqual(JSON.parse(r.body), { error: 'offline', offline: true, cached: false });
+  });
+
+  testAsync('fetch: .json requests cache a successful online response into the runtime cache', async () => {
+    const liveJson = { ok: true }; liveJson.clone = () => liveJson;
+    const s = makeSandbox({ fetch: () => Promise.resolve(liveJson) });
+    const r = await fireFetch(s.handlers, { method: 'GET', url: 'https://app.test/a1/quizzes.json', mode: 'no-cors', destination: '' });
+    assert.strictEqual(await r, liveJson);
+    assert.ok(s.putCalls.some((c) => c.response === liveJson));
+  });
+
+  testAsync('fetch: immutable assets (.mp3/.png/.svg/.ico) are cache-FIRST — a cached copy returns immediately even though a real Response was never awaited', async () => {
+    const cachedAudio = { sentinel: 'cached-audio' };
+    let fetchWasCalled = false;
+    const s = makeSandbox({
+      fetch: () => { fetchWasCalled = true; return Promise.resolve({ ok: true }); },
+      seed: { 'mylingo-v28-runtime': { 'https://app.test/shared/sfx/correct.mp3': cachedAudio } },
+    });
+    const r = await fireFetch(s.handlers, { method: 'GET', url: 'https://app.test/shared/sfx/correct.mp3', mode: 'no-cors', destination: 'audio' });
+    assert.strictEqual(r, cachedAudio, 'the cached copy wins immediately, cache-first');
+    assert.ok(fetchWasCalled, 'a background revalidation fetch still fires to keep the cache fresh');
+  });
+
+  testAsync('fetch: an immutable asset with no cached copy falls through to the network, and a successful response is cached for next time', async () => {
+    const liveAsset = { ok: true }; liveAsset.clone = () => liveAsset;
+    const s = makeSandbox({ fetch: () => Promise.resolve(liveAsset) });
+    const r = await fireFetch(s.handlers, { method: 'GET', url: 'https://app.test/shared/brand/icon.svg', mode: 'no-cors', destination: 'image' });
+    assert.strictEqual(await r, liveAsset);
+    assert.ok(s.putCalls.some((c) => c.response === liveAsset));
+  });
+
+  testAsync('fetch: an immutable asset offline with no cached copy gets the generic empty 503 fallback (not the HTML or JSON one)', async () => {
+    const s = makeSandbox({ fetch: () => Promise.reject(new TypeError('offline')) });
+    const r = await fireFetch(s.handlers, { method: 'GET', url: 'https://app.test/shared/sfx/win.mp3', mode: 'no-cors', destination: 'audio' });
+    assert.strictEqual(r.status, 503);
+    assert.strictEqual(r.body, null);
+  });
+
+  testAsync('fetch: an unrecognized extension (fonts etc.) is never intercepted, cached-first or otherwise', async () => {
+    const s = makeSandbox({});
+    assert.strictEqual(await fireFetch(s.handlers, { method: 'GET', url: 'https://app.test/shared/fonts/x.woff2', mode: 'no-cors', destination: 'font' }), null);
+  });
+})();
+
+// ============================================================
 console.log('quiz.html end(): results-screen orchestration, isolated with stubbed collaborators (Agent 169)');
 // ============================================================
 (function () {
@@ -5514,6 +5938,44 @@ console.log('quiz.html question-rendering: renderChoice/renderTextLike/renderMat
   }
   const ITEMS = ['a', 'b', 'c', 'd'];
 
+  test('ranking move buttons (Agent 24): every row has a labelled Move up / Move down button (touch + screen-reader alternative to drag); the ends are disabled; a click swaps with the neighbour, renumbers, updates labels, announces the new position in a polite live region and keeps focus on a still-enabled button', () => {
+    const r = rankingSandbox(ITEMS);
+    const btns = (v) => r.row(v).querySelectorAll('.rank-move');
+    r.list.children.forEach((row) => { assert.strictEqual(btns(row.dataset.value).length, 2); assert.strictEqual(row.getAttribute('role'), 'listitem'); });
+    assert.strictEqual(r.list.getAttribute('role'), 'list');
+    const live = r.s.els.options.children[0].children[2];
+    assert.strictEqual(live.getAttribute('role'), 'status'); assert.strictEqual(live.getAttribute('aria-live'), 'polite'); assert.ok(live.classList.contains('sr-only'));
+    assert.strictEqual(btns('a')[0].disabled, true, 'first row cannot move up'); assert.strictEqual(btns('a')[1].disabled, false);
+    assert.strictEqual(btns('d')[1].disabled, true, 'last row cannot move down'); assert.strictEqual(btns('d')[0].disabled, false);
+    assert.strictEqual(btns('b')[0].getAttribute('aria-label'), 'Move b up, currently position 2 of 4');
+    btns('b')[1].click();   // b down
+    assert.deepStrictEqual(r.order(), ['a', 'c', 'b', 'd']); assert.deepStrictEqual(r.nums(), ['1', '2', '3', '4']);
+    assert.strictEqual(live.textContent, 'b, position 3 of 4');
+    assert.strictEqual(btns('b')[0].getAttribute('aria-label'), 'Move b up, currently position 3 of 4', 'labels follow the new position');
+    assert.ok(btns('b')[1].focused, 'focus stays on the button that was used');
+    btns('b')[1].focused = false; btns('b')[1].click();   // b down again -> last, its down button becomes disabled
+    assert.deepStrictEqual(r.order(), ['a', 'c', 'd', 'b']);
+    assert.strictEqual(btns('b')[1].disabled, true); assert.ok(btns('b')[0].focused, 'focus moves to the other button instead of being lost on a disabled one');
+    btns('b')[0].click(); btns('b')[0].click(); btns('b')[0].click();   // b up x3 -> first
+    assert.deepStrictEqual(r.order(), ['b', 'a', 'c', 'd']); assert.strictEqual(btns('b')[0].disabled, true); assert.ok(btns('b')[1].focused);
+    assert.deepStrictEqual(r.submit(), ['b', 'a', 'c', 'd'], 'Check order submits the order the buttons produced');
+  });
+
+  test('ranking move buttons (Agent 24): keyboard arrows and drag-and-drop also refresh the button state; finishAnswer locks the buttons', () => {
+    const r = rankingSandbox(ITEMS);
+    r.press('a', 'ArrowDown');
+    assert.deepStrictEqual(r.order(), ['b', 'a', 'c', 'd']);
+    assert.strictEqual(r.row('b').querySelectorAll('.rank-move')[0].disabled, true, 'b is now first');
+    assert.strictEqual(r.row('a').querySelectorAll('.rank-move')[0].disabled, false);
+    r.drag('d'); r.drop('b');
+    assert.deepStrictEqual(r.order(), ['d', 'b', 'a', 'c']);
+    assert.strictEqual(r.row('c').querySelectorAll('.rank-move')[1].disabled, true, 'c is now last');
+    assert.strictEqual(r.row('a').querySelectorAll('.rank-move')[1].disabled, false);
+    const html2 = require('fs').readFileSync(path.join(__dirname, '..', 'shared', 'quiz.html'), 'utf8');
+    assert.ok(/querySelectorAll\('\.rank-move'\)\.forEach\(b=>\{b\.disabled=true\}\)/.test(html2), 'finishAnswer disables the move buttons');
+    assert.ok(/\.rank-item \.rank-move\{[^}]*width:44px;height:44px/.test(html2), '44px touch targets');
+  });
+
   test('renderRanking: starts with the first row focused, the "Up/Down arrows to reorder, or drag" hint, and rows numbered 1..N in DOM order', () => {
     const r = rankingSandbox(ITEMS);
     assert.deepStrictEqual(r.order(), ITEMS, 'pinned Math.random keeps item order');
@@ -5684,6 +6146,25 @@ console.log('quiz.html question-rendering: renderChoice/renderTextLike/renderMat
     assert.strictEqual(s.els.qttsBtn.getAttribute('aria-pressed'), 'false');
     s.els.qttsBtn.onclick();
     assert.deepStrictEqual(s.call('speakTts')[0][1], ['Hello there']);
+  });
+
+  test('renderMedia: TTS button resets to enabled on (re)render, and locks itself if speakTts reports unsupported/failed', () => {
+    const s = renderSandbox();
+    vm.runInContext('renderMedia({media:{audio:{tts:\"Hello there\"}}})', s.ctx);
+    assert.strictEqual(s.els.qttsBtn.disabled, false);
+    assert.strictEqual(s.els.qttsBtn.getAttribute('aria-disabled'), null);
+    // speakTts spy returns undefined (falsy), standing in for an unsupported/failed real call.
+    s.els.qttsBtn.onclick();
+    assert.strictEqual(s.els.qttsBtn.textContent, 'Audio unavailable on this device');
+    assert.strictEqual(s.els.qttsBtn.disabled, true, 'locked so a screen-reader/touch user cannot keep retrying a dead control');
+    assert.strictEqual(s.els.qttsBtn.getAttribute('aria-disabled'), 'true');
+    assert.strictEqual(s.els.qttsBtn.getAttribute('aria-pressed'), null, 'no longer a pressable toggle once locked');
+    // A fresh question re-renders the button back to its normal enabled state.
+    vm.runInContext('renderMedia({media:{audio:{tts:\"Next one\"}}})', s.ctx);
+    assert.strictEqual(s.els.qttsBtn.disabled, false);
+    assert.strictEqual(s.els.qttsBtn.getAttribute('aria-disabled'), null);
+    assert.strictEqual(s.els.qttsBtn.getAttribute('aria-pressed'), 'false');
+    assert.strictEqual(s.els.qttsBtn.textContent, '🔊 Play audio');
   });
 
   test('renderMedia: no audio at all hides both the player wrap and the TTS button, and .load()s the (now-stale) audio element', () => {
@@ -6810,7 +7291,7 @@ console.log('splash.js: once-per-session launch splash (Agent 176)');
     const hits = [];
     (function walk(dir, depth) {
       for (const ent of fs.readdirSync(dir, { withFileTypes: true })) {
-        if (ent.name === 'node_modules' || ent.name === 'tests' || ent.name.startsWith('.')) continue;
+        if ((ent.name === 'node_modules' || ent.name === 'dist') || ent.name === 'tests' || ent.name.startsWith('.')) continue;
         const full = path.join(dir, ent.name);
         if (ent.isDirectory()) walk(full, depth + 1);
         else if (ent.name.endsWith('.html') && /splash\.js/.test(fs.readFileSync(full, 'utf8'))) hits.push([path.relative(root, full), depth]);
@@ -7346,7 +7827,7 @@ console.log('app-shell.js: shared bottom navigation (Agent 177)');
     const hits = [];
     (function walk(dir, depth) {
       for (const ent of fs.readdirSync(dir, { withFileTypes: true })) {
-        if (ent.name === 'node_modules' || ent.name.startsWith('.')) continue;
+        if ((ent.name === 'node_modules' || ent.name === 'dist') || ent.name.startsWith('.')) continue;
         const full = path.join(dir, ent.name);
         if (ent.isDirectory()) walk(full, depth + 1);
         else if (ent.name.endsWith('.html')) { const h = fs.readFileSync(full, 'utf8'); if (/app-shell\.js/.test(h)) hits.push([path.relative(root, full), /app-shell\.css/.test(h)]); }
@@ -7682,7 +8163,7 @@ console.log('authoring-draft-autosave.js: chunked draft save/restore for the aut
   });
 
   test('static note: no shipped HTML page wires up authoring-draft-autosave.js yet (an authoring tool this ships for, not yet built into the site)', () => {
-    const glob = (dir, out) => { for (const name of fs.readdirSync(dir, { withFileTypes: true })) { const p = path.join(dir, name.name); if (name.isDirectory()) glob(p, out); else if (name.name.endsWith('.html')) out.push(p); } return out; };
+    const glob = (dir, out) => { for (const name of fs.readdirSync(dir, { withFileTypes: true })) { const p = path.join(dir, name.name); if (name.isDirectory()) { if (name.name !== 'dist') glob(p, out); } else if (name.name.endsWith('.html')) out.push(p); } return out; };
     const pages = glob(root, []);
     const wired = pages.filter((p) => fs.readFileSync(p, 'utf8').includes('authoring-draft-autosave'));
     assert.deepStrictEqual(wired, [], 'if this now fails, a page wires it up — add the matching static-contract test the other modules have');
@@ -8036,7 +8517,7 @@ console.log('offline-packs-ui.js: the "Offline learning" install/remove panel (A
   test('static contract: the twelve level pages that load offline-packs-ui.js each load offline-packs.js FIRST, have exactly one #offlinePacksMount, and mount with { level } inside a try/catch', () => {
     const pages = [];
     ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'].forEach((l) => ['index', 'dashboard'].forEach((p) => pages.push(l + '/' + p + '.html')));
-    const glob = (dir, out) => { for (const e of fs.readdirSync(dir, { withFileTypes: true })) { const f = path.join(dir, e.name); if (e.isDirectory()) { if (e.name !== 'node_modules') glob(f, out); } else if (e.name.endsWith('.html')) out.push(path.relative(root, f).split(path.sep).join('/')); } return out; };
+    const glob = (dir, out) => { for (const e of fs.readdirSync(dir, { withFileTypes: true })) { const f = path.join(dir, e.name); if (e.isDirectory()) { if (e.name !== 'node_modules' && e.name !== 'dist') glob(f, out); } else if (e.name.endsWith('.html')) out.push(path.relative(root, f).split(path.sep).join('/')); } return out; };
     const loading = glob(root, []).filter((f) => fs.readFileSync(path.join(root, f), 'utf8').indexOf('offline-packs-ui.js') >= 0).sort();
     assert.deepStrictEqual(plain(loading), pages.slice().sort(), 'exactly these pages load the UI');
     pages.forEach((f) => {
@@ -8438,7 +8919,7 @@ console.log('mastery-review-ui.js: the "Today\u2019s Review" mastery + review da
     const hits = [];
     (function walk(dir) {
       fs.readdirSync(dir, { withFileTypes: true }).forEach((e) => {
-        if (e.name === 'node_modules' || e.name === '.git') return;
+        if ((e.name === 'node_modules' || e.name === 'dist') || e.name === '.git') return;
         const full = path.join(dir, e.name);
         if (e.isDirectory()) return walk(full);
         if (/\.html?$/.test(e.name) && read(path.relative(root, full)).indexOf('mastery-review-ui.js') >= 0) hits.push(path.relative(root, full).split(path.sep).join('/'));
@@ -9070,7 +9551,7 @@ console.log('authoring-validation.js: per-row rules, per-quiz rules and the incr
     const hits = [];
     (function walk(dir) {
       fs.readdirSync(dir, { withFileTypes: true }).forEach((e) => {
-        if (e.name === 'node_modules' || e.name === '.git' || e.name === 'tests') return;
+        if ((e.name === 'node_modules' || e.name === 'dist') || e.name === '.git' || e.name === 'tests') return;
         const full = path.join(dir, e.name);
         if (e.isDirectory()) return walk(full);
         if (!/\.(html?|js|json|webmanifest)$/.test(e.name) || e.name === 'authoring-validation.js') return;
@@ -9171,6 +9652,7 @@ console.log('courses/lesson.html: the lesson player inline script (Agent 182)');
       addEventListener: (t, f) => { (listeners[t] = listeners[t] || []).push(f); },
       scrollTo: (a) => { scrolls.push(a); },
     };
+    if (o.matchMedia) sb.matchMedia = (q) => ({ matches: /reduce/.test(q) });
     sb.window = sb;
     vm.createContext(sb);
     (o.modules || ['ll', 'cp', 'su']).forEach((m) => vm.runInContext(MOD[m], sb));
@@ -9560,7 +10042,7 @@ console.log('courses/lesson.html: the lesson player inline script (Agent 182)');
   testAsync('page: header - level badge, course, unit, category chip (hidden when it equals the unit title, case/space-insensitively), reading time, Skip-revision link', async () => {
     const p = await runPage();
     const c = p.content;
-    assert.ok(c.includes('<span class="lvl-badge">A1</span><span>Course A1</span><span class="sep">\u00b7</span><span class="unit-name">Unit One</span>'), c);
+    assert.ok(c.includes('<span class="lvl-badge">A1</span><span>Course A1</span><span class="sep" aria-hidden="true">\u00b7</span><span class="unit-name">Unit One</span>'), c);
     assert.ok(c.includes('<span class="chip">Grammar</span>'));
     assert.ok(/~5 min read/.test(c));
     const skip = p.els.content.querySelector('.skipbtn');
@@ -9697,18 +10179,41 @@ console.log('courses/lesson.html: the lesson player inline script (Agent 182)');
     assert.ok((await runPage({ search: '?lesson=course-a1-unit-01-lesson-01&slide=PRACTICE' })).content.includes('Quick revision'), 'case-sensitive');
   });
 
-  testAsync('page: navigation - Continue / Back move one slide, the trail marks active + done, aria-selected follows, every move scrolls to top', async () => {
+  testAsync('page: navigation - Continue / Back move one slide, the trail marks active + done, aria-current follows, every move scrolls to top', async () => {
     const f = mkFiles(); Object.assign(f['../course_content/lessons/a1.json'][0], { audio_urls: ['https://cdn.example/a.mp3'] });
     const p = await runPage({ files: f });
     assert.strictEqual(p.btn('navBack'), null); assert.strictEqual(p.btn('navNext').textContent, 'Continue');
     assert.strictEqual(p.items().length, 3);
-    const st = () => p.items().map((b) => (b.className.includes('active') ? 'A' : b.className.includes('done') ? 'D' : '-') + b.getAttribute('aria-selected')).join(' ');
-    assert.strictEqual(st(), 'Atrue -false -false');
-    await p.next(); assert.strictEqual(st(), 'Dfalse Atrue -false'); assert.ok(p.btn('navBack'));
-    await p.next(); assert.strictEqual(st(), 'Dfalse Dfalse Atrue');
-    await p.back(); assert.strictEqual(st(), 'Dfalse Atrue -false', 'going back un-marks the slide you left');
+    const st = () => p.items().map((b) => (b.className.includes('active') ? 'A' : b.className.includes('done') ? 'D' : '-') + b.getAttribute('aria-current')).join(' ');
+    assert.strictEqual(st(), 'Astep -null -null');
+    await p.next(); assert.strictEqual(st(), 'Dnull Astep -null'); assert.ok(p.btn('navBack'));
+    await p.next(); assert.strictEqual(st(), 'Dnull Dnull Astep');
+    await p.back(); assert.strictEqual(st(), 'Dnull Astep -null', 'going back un-marks the slide you left');
     assert.ok(p.scrolls.length >= 4 && p.scrolls.every((s) => s.top === 0 && s.behavior === 'smooth'));
     await p.back(); assert.strictEqual(p.btn('navBack'), null, 'no Back on the first slide');
+  });
+
+  testAsync('page: a11y (Agent 26) - trail is a plain nav of buttons (no orphan tab roles), unreached items are aria-disabled, focus moves to the slide region on user navigation but not on first load, and reduced motion scrolls instantly', async () => {
+    const f = mkFiles(); Object.assign(f['../course_content/lessons/a1.json'][0], { audio_urls: ['https://cdn.example/a.mp3'] });
+    const p = await runPage({ files: f });
+    assert.ok(!/role=\"tab/.test(p.trail) && !/aria-selected/.test(p.trail), 'no tab/tablist semantics without tabpanels');
+    assert.ok(!/role=\"tablist\"/.test(HTML), 'nav is not overridden into a tablist');
+    const dis = () => p.items().map((b) => b.getAttribute('aria-disabled') || '-').join(' ');
+    assert.strictEqual(dis(), '- true true', 'only slides beyond the furthest reached are aria-disabled');
+    await p.next(); assert.strictEqual(dis(), '- - true');
+    const slide = p.els.content.querySelector('.slide');
+    assert.ok(/Slide 2 of 3: /.test(slide.getAttribute('aria-label')) && slide.getAttribute('tabindex') === '-1' && slide.getAttribute('role') === 'region');
+    assert.strictEqual(slide.focusCount, 1, 'Continue moves focus to the new slide');
+    await p.back(); assert.strictEqual(p.els.content.querySelector('.slide').focusCount, 1, 'Back moves focus too');
+    const first = await runPage({ files: f });
+    assert.ok(!first.els.content.querySelector('.slide').focusCount, 'initial render does not steal focus');
+    const rm = await runPage({ files: f, matchMedia: true });
+    await rm.next(); assert.ok(rm.scrolls.length && rm.scrolls.every((s) => s.behavior === 'auto'), 'reduced motion -> no smooth scroll');
+  });
+
+  test('placement.html (Agent 26): answer buttons expose their selected state via aria-pressed', () => {
+    const h = read('main', 'placement.html');
+    assert.ok(/b\.className='answer'\+\(answers\[i\]===n\?' selected':''\);b\.setAttribute\('aria-pressed',answers\[i\]===n\?'true':'false'\);/.test(h));
   });
 
   testAsync('page: chapter-trail clicks only reach slides already visited (idx <= furthest reached)', async () => {
@@ -10444,7 +10949,7 @@ console.log('courses/index.html: page rendering (Agent 184)');
     assert.strictEqual(a1.title, 'T <i>x</i>'); assert.strictEqual(cards(p)[0].querySelector('h2').querySelectorAll('i').length, 0, 'no injected <i> in the heading');
     assert.strictEqual(a1.desc, 'D & "q"');
     assert.strictEqual(a1.href, './course.html?level=a1');
-    assert.strictEqual(a1.ariaLabel, 'Open T <i>x</i> course');
+    assert.ok(!a1.ariaLabel, 'no aria-label: the accessible name is the visible card content (WCAG 2.5.3 Label in Name; Agent 11)');
     const nod = fx(); delete nod['../course_content/courses.json'][0].description;
     assert.strictEqual(cardsOf(await run({ files: nod })).find((c) => c.level === 'a1').desc, '', 'a missing description is blank, never "undefined"');
   });
@@ -10945,6 +11450,177 @@ console.log('main/placement.html: page rendering (Agent 186)');
     assert.strictEqual(go('').root.getAttribute('data-theme'), 'light');
   });
 
+  test('main/placement.html: theme default follows the OS when there is no valid saved choice; a saved choice always wins (Agent 12, Step 10)', () => {
+    const go = (saved, osDark) => {
+      const store = makeFakeStorage(); if (saved !== undefined) store.setItem('mylingo.theme.manual', saved);
+      const button = new PN(1, 'button'), root = new PN(1, 'html');
+      const sb = { localStorage: store, matchMedia: (q) => ({ matches: osDark && q.indexOf('prefers-color-scheme: dark') >= 0 }), document: { documentElement: root, getElementById: (id) => (id === 'themeToggle' ? button : null) } };
+      RUN_VM.createContext(sb); RUN_VM.runInContext(THEME, sb);
+      return root.getAttribute('data-theme');
+    };
+    assert.strictEqual(go(undefined, true), 'dark', 'dark OS, no saved choice -> dark (was always light: light text on white cards)');
+    assert.strictEqual(go('blue', true), 'dark', 'junk saved value falls back to the OS preference');
+    assert.strictEqual(go(undefined, false), 'light');
+    assert.strictEqual(go('light', true), 'light', 'an explicit saved light wins over a dark OS');
+    assert.strictEqual(go('dark', false), 'dark', 'an explicit saved dark wins over a light OS');
+  });
+
+  test('main/placement.html: the result view keeps a page-level heading (intro h1 is hidden there) and the manual theme block defines a full token set for both themes (Agent 12, Step 10)', () => {
+    assert.ok(/<h1 id="resultTitle">/.test(HTML), 'resultTitle is the h1 of the result view');
+    assert.strictEqual((HTML.match(/<h1[ >]/g) || []).length, 3, 'intro h1 + result h1 + manual-chooser h1 (only one of the three views is ever visible)');
+    for (const t of ['dark', 'light']) assert.ok(HTML.indexOf('html[data-theme="' + t + '"] body{--brand:') >= 0, t + ' theme token block present');
+  });
+
+  test('SEO (Agent 13, Step 14): robots.txt allows crawling; tools/build-sitemap.js lists only files that exist, rejects non-https / non-origin input, and the noindex set is exactly the per-learner + stub pages', () => {
+    const fsx = require('fs'), pathx = require('path'), rootx = pathx.join(__dirname, '..');
+    assert.strictEqual(fsx.readFileSync(pathx.join(rootx, 'robots.txt'), 'utf8'), 'User-agent: *\nAllow: /\nDisallow: /tests/\nDisallow: /tools/\n');
+    const sm = require('../tools/build-sitemap.js');
+    for (const p of sm.paths()) assert.ok(fsx.existsSync(pathx.join(rootx, p === '/' ? 'index.html' : p.split('?')[0])), 'sitemap path exists: ' + p);
+    const xml = sm.buildSitemap('https://example.com');
+    assert.strictEqual((xml.match(/<loc>/g) || []).length, sm.paths().length);
+    assert.ok(xml.indexOf('<loc>https://example.com/</loc>') >= 0 && xml.indexOf('level=a1') >= 0);
+    assert.ok(sm.buildRobots('https://example.com/').indexOf('Sitemap: https://example.com/sitemap.xml') >= 0);
+    for (const bad of ['http://example.com', 'example.com', 'https://example.com/x', 'https://example.com/?a=1', '', undefined]) assert.throws(() => sm.buildSitemap(bad), bad);
+    const NOINDEX = new Set(['a1', 'a2', 'b1', 'b2', 'c1', 'c2'].map((l) => l + '/dashboard.html').concat(['main/progress.html', 'shared/quiz.html', 'main/practice.html']));
+    const walk = (d) => fsx.readdirSync(d, { withFileTypes: true }).flatMap((e) => e.isDirectory() ? (['tests', 'node_modules', 'offline', 'dist'].includes(e.name) ? [] : walk(pathx.join(d, e.name))) : e.name.endsWith('.html') ? [pathx.relative(rootx, pathx.join(d, e.name))] : []);
+    const pages = walk(rootx).filter((f) => !f.startsWith('course_content') && !f.startsWith('lesson_content'));
+    assert.ok(pages.length >= 22, 'found ' + pages.length);
+    for (const f of pages) assert.strictEqual(/<meta name="robots" content="noindex">/.test(fsx.readFileSync(pathx.join(rootx, f), 'utf8')), NOINDEX.has(f), f + ' noindex expectation');
+    for (const f of ['index.html', 'main/index.html']) { const h = fsx.readFileSync(pathx.join(rootx, f), 'utf8'); for (const t of ['og:type', 'og:site_name', 'og:title', 'og:description', 'twitter:card']) assert.ok(h.indexOf(t) >= 0, f + ' has ' + t); }
+  });
+
+  test('theme.css: forced-colors block keeps progress fills and selected/correct/wrong/current states visible; dark block covers white-on-brand buttons (Agent 14, Step 10)', () => {
+    const css = require('fs').readFileSync(require('path').join(__dirname, '..', 'shared', 'css', 'theme.css'), 'utf8');
+    const fc = css.slice(css.indexOf('@media (forced-colors:active)'));
+    assert.ok(fc.length > 20 && css.indexOf('@media (forced-colors:active)') > 0, 'forced-colors block present');
+    for (const sel of ['.progress i', '.mr-meter i', '.answer.selected', '.option.correct', '.option.wrong', '.lesson.current']) assert.ok(fc.indexOf(sel) >= 0, 'forced-colors covers ' + sel);
+    assert.ok(/\.option\.wrong\{outline:3px dashed/.test(fc), 'wrong is dashed so it differs from correct/selected (solid)');
+    assert.ok(/\.check-answer[^{]*\{color:#07111f!important\}/.test(css), 'dark mode: .check-answer label is dark on the light-blue brand');
+    const quiz = require('fs').readFileSync(require('path').join(__dirname, '..', 'shared', 'quiz.html'), 'utf8');
+    assert.ok(/id="start"[^>]*aria-labelledby="startTitle"/.test(quiz) && /id="end"[^>]*aria-labelledby="result"/.test(quiz), 'start/end overlays are labelled landmarks');
+  });
+
+  test('lesson.html (light-only player, does not load theme.css): white label on the brand-blue skip link / active trail dot (3.16:1 with the old dark label), readable key-term chip, decorative separator hidden, forced-colors cue (Agent 15, Step 10 leftovers)', () => {
+    const h = require('fs').readFileSync(require('path').join(__dirname, '..', 'courses', 'lesson.html'), 'utf8');
+    assert.ok(/\.skip-link\{[^}]*background:var\(--brand\);color:#fff;/.test(h), 'skip link label is white on the brand blue');
+    assert.ok(/\.trail-item\.active \.num\{background:var\(--brand\);color:#fff\}/.test(h), 'active trail dot is white on the brand blue');
+    assert.ok(/\.trail-item\.done \.num\{background:var\(--success\);color:#0b0c0d\}/.test(h), 'done dot keeps the dark label on the green');
+    assert.ok(/\.term\{[^}]*background:var\(--success-soft\);color:#2f6d06;/.test(h) && h.indexOf('color:#8fe04a') < 0, 'key-term chip text is dark green (was #8fe04a on #e9f8df, 1.47:1)');
+    assert.ok(h.indexOf('<span class="sep" aria-hidden="true">') > 0, 'the middle-dot separator is decorative');
+    const fc = h.slice(h.indexOf('@media (forced-colors:active)'));
+    assert.ok(h.indexOf('@media (forced-colors:active)') > 0 && /\.trail-item\.active\{outline:3px solid Highlight/.test(fc) && /\.term\{border:1px solid CanvasText\}/.test(fc), 'forced-colors: active trail item outlined, chips bordered');
+    assert.ok(h.indexOf('shared/css/theme.css"') < 0, 'still intentionally does not load theme.css');
+  });
+
+  test('publish directory (Agent 16): tools/build-dist.js ships exactly the runtime files, byte-identical; repo internals never ship; every referenced runtime file is present; netlify.toml + CI publish dist', () => {
+    const fsx = require('fs'), pathx = require('path'), osx = require('os');
+    const rootx = pathx.join(__dirname, '..');
+    const bd = require('../tools/build-dist.js');
+    const files = bd.plan(rootx);
+    const set = new Set(files);
+    // never shipped
+    for (const f of files) {
+      assert.ok(!/^(tests|tools|\.github|\.git|node_modules|dist)\//.test(f), 'repo internal shipped: ' + f);
+      assert.ok(!/\.md$/i.test(f), 'markdown shipped: ' + f);
+    }
+    for (const f of ['netlify.toml', 'RELEASE_IDENTITY.json', 'STATE.md', 'LESSON_A11Y_RESULTS_AGENT15.json']) assert.ok(!set.has(f), f + ' must not ship');
+    assert.ok(!files.some((f) => /^LIGHTHOUSE_RESULTS/.test(f)), 'lighthouse result files must not ship');
+    // shipped
+    for (const f of ['index.html', 'manifest.json', 'sw.js', 'robots.txt', 'offline/packs.json', 'offline/core-manifest.json', 'shared/quiz.html', 'courses/lesson.html', 'main/placement.html']) assert.ok(set.has(f), f + ' must ship');
+    for (const l of ['a1', 'a2', 'b1', 'b2', 'c1', 'c2']) for (const f of [l + '/index.html', l + '/dashboard.html', l + '/quizzes.json', 'offline/packs/' + l + '.zip']) assert.ok(set.has(f), f + ' must ship');
+    const manifest = JSON.parse(fsx.readFileSync(pathx.join(rootx, 'offline', 'core-manifest.json'), 'utf8'));
+    manifest.files.forEach((f) => assert.ok(set.has(f), 'core-manifest file missing from dist: ' + f));
+    // every html page in the source tree (outside tests/tools) ships
+    const htmls = []; (function w(d, r) { fsx.readdirSync(d, { withFileTypes: true }).forEach((e) => { if (e.isDirectory()) { if (!['tests', 'tools', 'node_modules', 'dist', '.git', '.github'].includes(e.name)) w(pathx.join(d, e.name), r + e.name + '/'); } else if (e.name.endsWith('.html')) htmls.push(r + e.name); }); })(rootx, '');
+    assert.ok(htmls.length >= 21, 'found ' + htmls.length + ' pages');
+    htmls.forEach((f) => assert.ok(set.has(f), 'page not shipped: ' + f));
+    // build to a temp dir: byte-identical, nothing extra, refuses to wipe the repo
+    const out = fsx.mkdtempSync(pathx.join(osx.tmpdir(), 'mylingo-dist-'));
+    try {
+      const built = bd.build(rootx, pathx.join(out, 'd'));
+      assert.deepStrictEqual(built, files);
+      const got = []; (function w(d, r) { fsx.readdirSync(d, { withFileTypes: true }).forEach((e) => e.isDirectory() ? w(pathx.join(d, e.name), r + e.name + '/') : got.push(r + e.name)); })(pathx.join(out, 'd'), '');
+      assert.deepStrictEqual(got.sort(), files);
+      files.forEach((f) => assert.ok(fsx.readFileSync(pathx.join(rootx, f)).equals(fsx.readFileSync(pathx.join(out, 'd', f))), 'not byte-identical: ' + f));
+      // reference integrity: any relative asset path a shipped file mentions that exists in the source tree also exists in dist
+      const re = /["'`(]([A-Za-z0-9_\-./]+\.(?:html|json|js|css|svg|png|mp3|zip|ico))(?:[?#][^"'`)]*)?["'`)]/g; const missing = [];
+      files.filter((f) => /\.(html|js|css|json)$/.test(f)).forEach((f) => { const t = fsx.readFileSync(pathx.join(rootx, f), 'utf8'); let m; while ((m = re.exec(t))) { [pathx.posix.normalize(pathx.posix.join(pathx.posix.dirname(f), m[1])), pathx.posix.normalize(m[1].replace(/^\.\//, ''))].map((c) => c.replace(/^\/+/, '')).forEach((c) => { if (!c.startsWith('..') && fsx.existsSync(pathx.join(rootx, c)) && !set.has(c) && !/^(tests|tools)\//.test(c) && !/\.md$/.test(c)) missing.push(f + ' -> ' + c); }); } });
+      assert.deepStrictEqual(missing, [], 'runtime files referenced but not shipped');
+    } finally { fsx.rmSync(out, { recursive: true, force: true }); }
+    assert.throws(() => bd.build(rootx, rootx), /refusing/);
+    assert.throws(() => bd.build(pathx.join(rootx, 'shared'), pathx.join(rootx)), /refusing/);
+    // config
+    const toml = fsx.readFileSync(pathx.join(rootx, 'netlify.toml'), 'utf8');
+    assert.ok(/publish = "dist"/.test(toml) && /command = "node tools\/build-dist\.js"/.test(toml), 'netlify publishes dist after building it');
+    const yml = fsx.readFileSync(pathx.join(rootx, '.github', 'workflows', 'deploy.yml'), 'utf8');
+    assert.strictEqual((yml.match(/publish-dir: 'dist'/g) || []).length, 2);
+    assert.strictEqual((yml.match(/node tools\/build-dist\.js/g) || []).length, 2);
+    assert.ok(yml.indexOf("publish-dir: '.'") < 0);
+    assert.ok(/^dist\/$/m.test(fsx.readFileSync(pathx.join(rootx, '.gitignore'), 'utf8')), 'dist/ is git-ignored');
+  });
+
+  test('CI workflow + dotfiles (Agent 22): the test job runs tools/verify-all.js --quick before both deploy jobs, and the dotfiles a zip of "*" silently drops (.github/workflows/deploy.yml, .gitignore) exist and are not shipped in dist', () => {
+    const fsx = require('fs'), pathx = require('path');
+    const rootx = pathx.join(__dirname, '..');
+    const yml = fsx.readFileSync(pathx.join(rootx, '.github', 'workflows', 'deploy.yml'), 'utf8');
+    assert.strictEqual((yml.match(/^\s*- run: node tools\/verify-all\.js --quick\s*$/gm) || []).length, 1, 'exactly one --quick gate step');
+    assert.ok(!/node tests\/run\.js/.test(yml), 'the plain unit-suite step was replaced by the gate');
+    assert.strictEqual((yml.match(/^\s*needs: test\s*$/gm) || []).length, 2, 'both deploy jobs need the test job');
+    assert.ok(/^  test:$/m.test(yml) && /^  deploy-preview:$/m.test(yml) && /^  deploy-production:$/m.test(yml), 'three jobs');
+    assert.ok(fsx.statSync(pathx.join(rootx, '.gitignore')).isFile());
+    const plan = require('../tools/build-dist.js').plan(rootx);
+    assert.ok(!plan.some((f) => /(^|\/)\.[^/]/.test(f)), 'no dotfile / dot-directory is shipped in dist');
+  });
+
+  test('release gate (Agent 19): tools/verify-all.js parses, runs the suite, CSP check, dist identity and the sweep, supports --quick, and is not shipped in dist', () => {
+    const fsx = require('fs'), pathx = require('path'), cpx = require('child_process');
+    const rootx = pathx.join(__dirname, '..');
+    const f = pathx.join(rootx, 'tools', 'verify-all.js');
+    const src = fsx.readFileSync(f, 'utf8');
+    cpx.execFileSync(process.execPath, ['--check', f]);
+    assert.ok(/tests\/run\.js/.test(src) && /build-csp\.js/.test(src) && /--check/.test(src) && /csp-sweep\.js/.test(src) && /--quick/.test(src) && /build-dist\.js/.test(src));
+    assert.ok(!require('../tools/build-dist.js').plan(rootx).some(e => /verify-all/.test(JSON.stringify(e))), 'verify-all.js is not copied into dist');
+  });
+
+  test('CSP sweep harness (Agent 18): tools/csp-sweep.js is syntactically valid, reads the CSP from netlify.toml, builds dist, keeps the service worker active, runs an offline pass and has the --no-hashes control; it is not shipped in dist', () => {
+    const fsx = require('fs'), pathx = require('path'), cpx = require('child_process');
+    const rootx = pathx.join(__dirname, '..');
+    const f = pathx.join(rootx, 'tools', 'csp-sweep.js');
+    const src = fsx.readFileSync(f, 'utf8');
+    cpx.execFileSync(process.execPath, ['--check', f]);
+    assert.ok(/netlify\.toml/.test(src) && /Content-Security-Policy/.test(src) && /build-dist\.js/.test(src));
+    assert.ok(/serviceWorkers: 'allow'/.test(src) && /setOffline/.test(src) && /securitypolicyviolation/.test(src) && /--no-hashes/.test(src));
+    const bd = require('../tools/build-dist.js');
+    assert.ok(!bd.plan(rootx).some(e => /csp-sweep/.test(JSON.stringify(e))), 'csp-sweep.js is not copied into dist');
+  });
+
+  test('CSP (Agent 17): script-src has NO unsafe-inline — netlify.toml lists the sha256 of every inline <script> block; no inline event-handler attributes or javascript: URLs exist; style-src keeps unsafe-inline', () => {
+    const fsx = require('fs'), pathx = require('path'), cryptox = require('crypto');
+    const rootx = pathx.join(__dirname, '..');
+    const csp = require('../tools/build-csp.js'), bd = require('../tools/build-dist.js');
+    const hashes = csp.inlineScriptHashes(rootx);
+    assert.ok(hashes.hashes.length >= 10, 'found ' + hashes.hashes.length + ' distinct inline script hashes');
+    assert.strictEqual(csp.current(rootx), csp.policy(hashes.hashes), 'netlify.toml CSP is stale — run: node tools/build-csp.js');
+    const pol = csp.current(rootx);
+    const scriptSrc = /script-src ([^;]*);/.exec(pol)[1];
+    assert.ok(scriptSrc.indexOf('unsafe-inline') < 0 && scriptSrc.indexOf('unsafe-eval') < 0 && scriptSrc.indexOf('unsafe-hashes') < 0, 'script-src: ' + scriptSrc.slice(0, 60));
+    assert.ok(scriptSrc.startsWith("'self' 'sha256-"), 'script-src is self + hashes');
+    assert.ok(/style-src 'self' 'unsafe-inline'/.test(pol) && /default-src 'self'/.test(pol) && /frame-ancestors 'none'/.test(pol) && /object-src 'none'/.test(pol));
+    // independent recomputation for one page (guards the tool itself)
+    const idx = fsx.readFileSync(pathx.join(rootx, 'index.html'), 'utf8'); const m = /<script>([\s\S]*?)<\/script>/.exec(idx);
+    assert.ok(m && pol.indexOf("'sha256-" + cryptox.createHash('sha256').update(m[1], 'utf8').digest('base64') + "'") > 0, 'index.html inline script hash is in the policy');
+    // the assumption that makes hashes sufficient
+    const bad = [];
+    bd.plan(rootx).filter((f) => /\.(html|js)$/.test(f)).forEach((f) => {
+      const t = fsx.readFileSync(pathx.join(rootx, f), 'utf8');
+      if (/["'`\s]on(click|change|input|submit|load|error|keydown|keyup|focus|blur|mouse[a-z]+|touch[a-z]+)\s*=\s*(\\?["']|\$\{)/i.test(t)) bad.push(f + ': inline event-handler attribute');
+      if (/(href|src|action)\s*=\s*["']\s*javascript:/i.test(t)) bad.push(f + ': javascript: URL');
+    });
+    assert.deepStrictEqual(bad, [], 'a CSP without unsafe-inline would block these');
+    // every inline script is covered: a page with an un-hashed inline script would fail here
+    Object.keys(hashes.perFile).forEach((f) => { const t = fsx.readFileSync(pathx.join(rootx, f), 'utf8'); const re = /<script(?![^>]*\bsrc\s*=)([^>]*)>([\s\S]*?)<\/script>/gi; let x; while ((x = re.exec(t))) if (x[2].trim()) assert.ok(pol.indexOf("'sha256-" + cryptox.createHash('sha256').update(x[2], 'utf8').digest('base64') + "'") > 0, f + ' has an inline script not in the CSP'); });
+  });
+
   test('main/placement.html: static wiring - every getElementById id exists, module order (gamification, orientation, placement, level-lock) before the page script, app-shell last, chooser present without JS', () => {
     const ids = new Set([...HTML.matchAll(/\bid="([^"]+)"/g)].map((m) => m[1]));
     const used = [...SCRIPT.matchAll(/getElementById\('([^']+)'\)/g)].map((m) => m[1]);
@@ -11023,7 +11699,7 @@ console.log('<level>/index.html + <level>/dashboard.html: page rendering (Agent 
     assert.deepStrictEqual(groups(p), [{ topic: 'Tenses', n: 2 }, { topic: 'Solo title', n: 1 }, { topic: 'Other', n: 1 }, { topic: 'Odd', n: 1 }]);
     const cs = cards(p);
     assert.strictEqual(cs[0].getAttribute('href'), '../shared/quiz.html?quiz=g1&level=b1');
-    assert.strictEqual(cs[0].getAttribute('aria-label'), 'Present, Completed');
+    assert.ok(!cs[0].getAttribute('aria-label'), 'no aria-label: the accessible name is the visible card content (WCAG 2.5.3 Label in Name; Agent 11)');
     assert.strictEqual(cs[0].querySelector('.best').textContent, 'Best 90%');
     assert.strictEqual(cs[0].querySelector('.qstatus').textContent, 'Completed');
     assert.strictEqual(cs[1].querySelector('.qstatus').textContent, 'In progress');
@@ -11031,7 +11707,7 @@ console.log('<level>/index.html + <level>/dashboard.html: page rendering (Agent 
     assert.strictEqual(cs[2].querySelector('.best').textContent, 'Best 0%', 'a stored best of 0 still shows (null check, not truthiness)');
     assert.strictEqual(cs[3].querySelector('.qstatus').textContent, 'Not started');
     assert.strictEqual(cs[3].querySelector('b').textContent, '', 'a manifest entry without a title renders an empty heading');
-    assert.strictEqual(cs[3].getAttribute('aria-label'), ', Not started', 'PINNED: ...and a card whose accessible name is just ", Not started"');
+    assert.ok(!cs[3].getAttribute('aria-label') && cs[3].querySelector('.qstatus').textContent === 'Not started', 'a card with no title has no aria-label either; its name comes from the visible status text');
     assert.strictEqual(cs[4].getAttribute('href'), '../shared/quiz.html?quiz=sp%20ace%261&level=b1', 'the id is URL-encoded');
     assert.strictEqual(p.els.count.textContent, '5 quizzes');
     assert.strictEqual(p.els.pageSub.textContent, '5 quizzes at B1. Data-driven, one runtime.');
@@ -11045,7 +11721,7 @@ console.log('<level>/index.html + <level>/dashboard.html: page rendering (Agent 
     const p = await runIdx('a1', { files });
     const c = cards(p)[0];
     assert.strictEqual(c.querySelector('b').textContent, '<i>T</i> & "q"');
-    assert.strictEqual(c.getAttribute('aria-label'), '<i>T</i> & "q", Not started', 'a quote in the title cannot break out of the aria-label attribute');
+    assert.ok(!c.getAttribute('aria-label') && c.getAttribute('href').indexOf('"') === -1, 'no aria-label attribute for a quote in the title to break out of');
     assert.strictEqual(p.els.grid.querySelectorAll('i').length, 0, 'no injected <i>');
     assert.strictEqual(p.els.grid.querySelector('h2').textContent, '<b>Tp</b>');
     assert.strictEqual(c.querySelector('small').textContent, 'Zed <x>');
@@ -12275,6 +12951,7 @@ console.log('index.html vs main/index.html: normalised-diff drift guard (Agent 1
 
   const rootRules = [
     ['href="./shared/brand/favicon.ico"', 'href="{{SHARED}}/brand/favicon.ico"', 1],
+    ['href="./shared/brand/apple-touch-icon.png"', 'href="{{SHARED}}/brand/apple-touch-icon.png"', 1],
     ['href="./manifest.json"', 'href="{{ROOT}}/manifest.json"', 1],
     ['src="./shared/js/course-progress.js"', 'src="{{SHARED}}/js/course-progress.js"', 1],
     ['src="./shared/js/gamification.js"', 'src="{{SHARED}}/js/gamification.js"', 1],
@@ -12292,6 +12969,7 @@ console.log('index.html vs main/index.html: normalised-diff drift guard (Agent 1
   ];
   const mainRules = [
     ['href="../shared/brand/favicon.ico"', 'href="{{SHARED}}/brand/favicon.ico"', 1],
+    ['href="../shared/brand/apple-touch-icon.png"', 'href="{{SHARED}}/brand/apple-touch-icon.png"', 1],
     ['href="../manifest.json"', 'href="{{ROOT}}/manifest.json"', 1],
     ['src="../shared/js/course-progress.js"', 'src="{{SHARED}}/js/course-progress.js"', 1],
     ['src="../shared/js/gamification.js"', 'src="{{SHARED}}/js/gamification.js"', 1],
@@ -12332,8 +13010,8 @@ console.log('quiz.html dead-code removal pin + cache bump (Agent 191, HANDOFF_AG
     assert.ok(!/\bqGlobalTolerance\b/.test(quizSrc), 'qGlobalTolerance is back in quiz.html');
     assert.ok(/function submitAnswer\(input\)/.test(quizSrc), 'submitAnswer must still exist');
   });
-  test('sw.js CACHE_VERSION is mylingo-v25 (v24 -> v25 Agent 203: placement.js, safe-url.js, orientation.js; v16 -> v17 Agent 191, v17 -> v18 Agent 194, v18 -> v19 Agent 195, v19 -> v20 Agent 196, v20 -> v21 Agent 199: course-progress.js; v21 -> v22 Agent 200: gamification.js; v22 -> v23 Agent 201: skill-mastery.js + review-scheduler.js; v23 -> v24 Agent 202: recommendations.js + mastery-review-ui.js; core-pack files changed)', () => {
-    assert.ok(/var CACHE_VERSION = 'mylingo-v25';/.test(swSrc));
+  test('sw.js CACHE_VERSION is mylingo-v28 (v27 -> v28 Agent 27: revised brand logos + regenerated favicons; v26 -> v27 Agent 205: gamification.js; v25 -> v26 Agent 204: runtime-v2-adapter.js + canonical-metadata.js; v24 -> v25 Agent 203: placement.js, safe-url.js, orientation.js; v16 -> v17 Agent 191, v17 -> v18 Agent 194, v18 -> v19 Agent 195, v19 -> v20 Agent 196, v20 -> v21 Agent 199: course-progress.js; v21 -> v22 Agent 200: gamification.js; v22 -> v23 Agent 201: skill-mastery.js + review-scheduler.js; v23 -> v24 Agent 202: recommendations.js + mastery-review-ui.js; core-pack files changed)', () => {
+    assert.ok(/var CACHE_VERSION = 'mylingo-v28';/.test(swSrc));
   });
 })();
 
@@ -12431,5 +13109,673 @@ console.log('quiz.html app-files error, orientation.js unanswered/clamp/readStat
     assert.ok(auto.includes('storedRows += part.length'));
     assert.strictEqual((auto.match(/rowCount: storedRows/g) || []).length, 2);
     assert.ok(!/rowCount: rows\.length/.test(auto));
+  });
+})();
+
+// ============================================================
+console.log('runtime-v2-adapter.js + canonical-metadata.js: untrusted shapes + direct unit coverage from a corrected mutation sweep (Agent 204)');
+// ============================================================
+(function () {
+  const fs = require('fs'), vm = require('vm');
+  const root = path.join(__dirname, '..');
+  const J = (x) => JSON.parse(JSON.stringify(x));
+  function load(files) {
+    const w = {}; w.window = w; const ctx = vm.createContext(w);
+    files.forEach((f) => vm.runInContext(fs.readFileSync(path.join(root, 'shared/js', f + '.js'), 'utf8'), ctx));
+    return w;
+  }
+  const W = load(['canonical-metadata', 'runtime-v2-adapter']);
+  const A = W.MylingoRuntimeV2, C = W.MylingoCanonicalMetadata;
+  const Aplain = load(['runtime-v2-adapter']).MylingoRuntimeV2; // no canonical module loaded
+  // JSON.parse builds an object with its OWN non-function toString: String() of it throws.
+  const evil = () => JSON.parse('{"toString":1,"valueOf":2}');
+  const base = { question: 'q', answers: ['a', 'b'], correctIndex: 1 };
+  const nq = (extra) => J(A.normalizeQuestion(Object.assign({}, base, extra)));
+  const JUNK_TEXT = [{ a: 1 }, ['x', 'y'], true, false, null, NaN, Infinity, evil(), () => 'f'];
+
+  test('text fields: an object / array / boolean / non-finite number / own-toString object is NOT text (was "[object Object]", "x,y", "true", or a TypeError); strings trim, finite numbers stringify (Agent 204 fix)', () => {
+    JUNK_TEXT.forEach((v, i) => {
+      const q = A.normalizeQuestion({ question: v, category: v, explanation: v, answers: ['a', 'b'], correctIndex: 1 });
+      assert.strictEqual(q.question, '', 'question #' + i); assert.strictEqual(q.category, '', 'category #' + i); assert.strictEqual(q.explanation, '', 'explanation #' + i);
+      const z = A.normalizeQuiz({ id: v, title: v, description: v, brand: v, category: v, questions: [] });
+      assert.deepStrictEqual([z.id, z.title, z.description, z.brand, z.category], ['', '', '', 'Mylingo', ''], 'quiz #' + i);
+    });
+    const ok = A.normalizeQuiz({ id: 0, title: 12.5, description: '  d  ', questions: [] });
+    assert.deepStrictEqual([ok.id, ok.title, ok.description], ['0', '12.5', 'd']);
+    assert.strictEqual(A.normalizeQuestion({ question: 42, answers: ['a'], correctIndex: 1 }).question, '42');
+  });
+
+  test('tags: a comma string is trimmed; an authored array of strings / numbers joins with commas (blanks and junk items dropped); anything else is ""', () => {
+    assert.strictEqual(nq({ tags: ' a,b ' }).tags, 'a,b');
+    assert.strictEqual(nq({ tags: ['a', ' b ', '', 3, null, { x: 1 }, true] }).tags, 'a,b,3');
+    assert.strictEqual(nq({ question_tags: ['x', 'y'] }).tags, 'x,y');
+    assert.strictEqual(A.normalizeQuiz({ quiz_tags: ['p', 'q'], questions: [] }).tags, 'p,q');
+    assert.strictEqual(A.normalizeManifest([{ tags: ['m', 'n'] }])[0].tags, 'm,n');
+    JUNK_TEXT.filter((v) => !Array.isArray(v)).forEach((v) => { assert.strictEqual(nq({ tags: v }).tags, ''); assert.strictEqual(A.normalizeManifest([{ tags: v }])[0].tags, ''); });
+  });
+
+  test('answers: an object option uses its first present text / label / value (junk inside it is blank), a boolean stays "true" / "false", numbers stringify, null / arrays / nested objects are blank, nothing throws', () => {
+    const out = J(A.normalizeQuestion({ question: 'q', answers: [{ text: { a: 1 } }, { text: ['x'] }, null, 5, true, false, [1], { label: ' L ' }, { value: 0 }, evil(), { text: evil() }, { text: '', label: 'skipped' }, NaN] })).answers;
+    assert.deepStrictEqual(out, ['', '', '', '5', 'true', 'false', '', 'L', '0', '', '', '', '']);
+    assert.deepStrictEqual(J(A.normalizeQuestion({ question: 'q', options: [{ text: 'o1' }, 'o2'], correctIndex: 1 })).answers, ['o1', 'o2']);
+    assert.deepStrictEqual(J(A.normalizeQuestion({ question: 'q', answer_1: 'x', answer_2: 7, answer_9: 'nine', answer_10: 'ten' })).answers, ['x', '7', 'nine'], 'answer_1..9 only');
+    assert.deepStrictEqual(J(A.normalizeQuestion({ question: 'q', answers: 'not-an-array' })).answers, []);
+  });
+
+  test('numbers: only a real number or a non-blank numeric string counts — true / false / [] / [3] / " " / "" / null / objects / NaN / Infinity fall back (Number() gave 1 / 0 / 0 / 3 / 0) (Agent 204 fix)', () => {
+    [true, false, [], [3], [3, 4], ' ', '', '   ', null, {}, NaN, Infinity, -Infinity, 'x', '1x', () => 3].forEach((v, i) => {
+      assert.strictEqual(A.normalizeQuiz({ version: v, questions: [] }).version, 1, 'version #' + i);
+      assert.strictEqual(A.normalizeManifest([{ version: v }])[0].version, 1, 'manifest version #' + i);
+      assert.strictEqual(A.normalizeManifest([{ questions: v }])[0].questions, 0, 'manifest questions #' + i);
+    });
+    assert.strictEqual(A.normalizeQuiz({ version: 0, questions: [] }).version, 0);
+    assert.strictEqual(A.normalizeQuiz({ version: ' 7 ', questions: [] }).version, 7);
+    assert.strictEqual(A.normalizeQuiz({ version: -2.5, questions: [] }).version, -2.5);
+    assert.strictEqual(A.normalizeManifest([{ version: '3' }])[0].version, 3);
+  });
+
+  test('manifest question count: a whole, non-negative number — negatives clamp to 0, fractions truncate, numeric strings parse', () => {
+    const q = (v) => A.normalizeManifest([{ questions: v }])[0].questions;
+    assert.strictEqual(q(-3), 0); assert.strictEqual(q('-3'), 0); assert.strictEqual(q(0), 0); assert.strictEqual(q(2.9), 2); assert.strictEqual(q('2.9'), 2);
+    assert.strictEqual(q(12), 12); assert.strictEqual(q(' 12 '), 12); assert.strictEqual(q(undefined), 0);
+  });
+
+  test('correct index: true / false / [] / [2] / blank / objects are not indexes (was 1 / 0 / 0 / 2 / 0); the first alias holding a real integer wins, a junk earlier alias no longer hides a valid later one (Agent 204 fix)', () => {
+    [true, false, [], [2], ' ', '', {}, 'x', 1.5, NaN, Infinity].forEach((v, i) => {
+      ['correctIndex', 'correct_index', 'correctAnswerIndex', 'correct_answer_index'].forEach((k) => {
+        assert.strictEqual(A.normalizeQuestion({ question: 'q', answers: ['a', 'b'], [k]: v }).correctIndex, null, k + ' #' + i);
+      });
+    });
+    assert.strictEqual(nq({ correctIndex: 'x', correct_index: 2 }).correctIndex, 2);
+    assert.strictEqual(nq({ correctIndex: true, correct_index: '2' }).correctIndex, 2);
+    assert.strictEqual(nq({ correctIndex: 1, correct_index: 2 }).correctIndex, 1, 'both valid: the earlier alias wins');
+    assert.strictEqual(nq({ correctIndex: null, correctAnswerIndex: 2 }).correctIndex, 2);
+    assert.strictEqual(nq({ correctIndex: undefined, correct_answer_index: ' 2 ' }).correctIndex, 2);
+    assert.strictEqual(nq({ correctIndex: 0 }).correctIndex, 0, 'a real integer is passed through as-is (range is the runtime validator\'s job)');
+    const junkThenFlag = A.normalizeQuestion({ question: 'q', answers: [{ text: 'a' }, { text: 'b', is_correct: true }], correctIndex: 'x' });
+    assert.strictEqual(junkThenFlag.correctIndex, 2, 'a junk index falls through to the is_correct flags');
+    assert.strictEqual(A.normalizeQuestion({ question: 'q', answers: [{ text: 'a', is_correct: 'true' }, { text: 'b', isCorrect: 1 }] }).correctIndex, null, 'only a real true is a correct flag');
+    assert.strictEqual(A.normalizeQuestion({ question: 'q', answers: ['a', { isCorrect: true }] }).correctIndex, 2);
+  });
+
+  test('legacy option_0 export: only a real integer-like correct_index gets the zero-based +1 offset (true / false no longer become 2 / 1); it needs option_0 AND no answer_1 AND an options array', () => {
+    const leg = (extra) => A.normalizeQuestion(Object.assign({ question: 'q', options: ['a', 'b', 'c'], option_0: 'a' }, extra)).correctIndex;
+    assert.strictEqual(leg({ correct_index: 0 }), 1); assert.strictEqual(leg({ correct_index: '2' }), 3);
+    [true, false, [1], ' ', 'x'].forEach((v) => assert.strictEqual(leg({ correct_index: v }), null, JSON.stringify(v)));
+    assert.strictEqual(leg({ correct_index: 1.5 }), null);
+    assert.strictEqual(leg({ correct_index: 1, answer_1: 'z' }), 1, 'an answer_1 means the canonical 1-based shape');
+    assert.strictEqual(A.normalizeQuestion({ question: 'q', options: ['a', 'b'], correct_index: 1 }).correctIndex, 1, 'no option_0 -> canonical');
+    assert.strictEqual(A.normalizeQuestion({ question: 'q', answers: ['a', 'b'], option_0: 'a', correct_index: 1 }).correctIndex, 1, 'answers[] (not options[]) -> canonical');
+    assert.strictEqual(A.normalizeQuestion({ question: 'q', options: ['a', 'b'], option_0: 'a', correct_index: null }).correctIndex, null);
+  });
+
+  test('question_type: reserved Object.prototype names are ordinary unknown types (was Object.prototype / the Object function), aliases are own-property only, case / separators fold', () => {
+    ['__proto__', 'constructor', 'toString', 'valueOf', 'hasOwnProperty', 'isPrototypeOf', 'propertyIsEnumerable', '__defineGetter__'].forEach((name) => {
+      const q = A.normalizeQuestion({ question: 'q', answers: ['a', 'b'], correctIndex: 1, question_type: name });
+      assert.strictEqual(typeof q.question_type, 'string', name);
+      assert.strictEqual(q.question_type, name.toLowerCase(), name);
+      const h = A.normalizeHierarchy({ course: { units: [{ lessons: [{ activities: [{ type: name, questions: [Object.assign({}, base, { type: name })] }] }] }] } });
+      const act = h.course.units[0].lessons[0].activities[0];
+      assert.strictEqual(typeof act.activity_type, 'string', name); assert.strictEqual(act.activity_type, name.toLowerCase());
+      assert.strictEqual(act.questions[0].question_type, name.toLowerCase());
+    });
+    const t = (v) => A.normalizeQuestion({ question: 'q', answers: ['a', 'b'], correctIndex: 1, question_type: v }).question_type;
+    assert.strictEqual(t('  Complete Question  '), 'fill_in_the_blank'); assert.strictEqual(t('reorganizer_task'), 'ranking'); assert.strictEqual(t('comparison'), 'matching'); assert.strictEqual(t('Reorganizer'), 'ranking');
+    assert.strictEqual(t('multi - part'), 'multi_part'); assert.strictEqual(t({ a: 1 }), undefined, 'a junk type is the default radio (omitted)'); assert.strictEqual(t(['ranking']), undefined); assert.strictEqual(t(''), undefined); assert.strictEqual(t(0), undefined); assert.strictEqual(t(true), undefined); assert.strictEqual(t('   '), undefined);
+    assert.strictEqual(A.normalizeQuestion({ question: 'q', answers: ['a', 'b'], correctIndex: 1, questionType: 'comparison' }).question_type, 'matching', 'questionType alias');
+    assert.strictEqual(A.normalizeQuestion({ question: 'q', answers: ['a', 'b'], correctIndex: 1, type: 'comparison' }).question_type, 'matching', 'type alias');
+    assert.strictEqual(A.normalizeHierarchy({ course: { units: [{ lessons: [{ activities: [{ type: { a: 1 }, questions: [] }] }] }] } }).course.units[0].lessons[0].activities[0].activity_type, 'quiz', 'junk activity type -> quiz');
+  });
+
+  test('level: a payload level must be a real CEFR string; the fallback (options.level, which comes from the URL) is validated too (was returned raw: "zz" / an object); an invalid level falls to cefr_level, then to the fallback', () => {
+    const lv = (input, opts) => A.normalizeQuiz(Object.assign({ questions: [] }, input), opts).level;
+    assert.strictEqual(lv({}, { level: 'zz' }), ''); assert.strictEqual(lv({}, { level: { a: 1 } }), ''); assert.strictEqual(lv({}, { level: ['b1'] }), ''); assert.strictEqual(lv({}, { level: true }), '');
+    assert.strictEqual(lv({}, { level: ' B2 ' }), 'b2'); assert.strictEqual(lv({ level: 'zz' }, { level: 'c1' }), 'c1'); assert.strictEqual(lv({ level: 'c2' }, { level: 'a1' }), 'c2');
+    assert.strictEqual(lv({ level: 'zz', cefr_level: 'B1' }, { level: 'c1' }), 'b1', 'a junk level no longer hides a valid cefr_level');
+    assert.strictEqual(lv({ level: 'a2', cefr_level: 'b1' }), 'a2', 'level wins over cefr_level');
+    assert.strictEqual(lv({ level: ['b1'] }), '', 'an array is not a level (String(["b1"]) was "b1")'); assert.strictEqual(lv({ level: { a: 1 }, cefr_level: 5 }), '');
+    assert.strictEqual(lv({ level: 'zz', cefr_level: 'yy' }, { level: 'A2' }), 'a2');
+    assert.strictEqual(lv({}, 'b1'), '', 'options that is not an object carries no level'); assert.strictEqual(lv({}, null), ''); assert.strictEqual(lv({}), '');
+    assert.strictEqual(A.normalizeManifest([{ level: ' C1 ' }])[0].level, 'c1'); assert.strictEqual(A.normalizeManifest([{ level: ['a1'] }])[0].level, ''); assert.strictEqual(A.normalizeManifest([{ level: 'x' }])[0].level, '');
+    ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'].forEach((l) => assert.strictEqual(lv({ level: l.toUpperCase() }), l));
+  });
+
+  test('acceptedAnswers: strings / numbers / booleans are kept as authored; an object contributes its text / label / value; null, arrays, nested junk, blank objects and non-finite numbers are dropped (were raw objects -> "[object Object]" / "null" accepted) (Agent 204 fix)', () => {
+    const acc = (extra) => J(A.normalizeQuestion(Object.assign({ question: 'q', question_type: 'fill_in_the_blank' }, extra))).acceptedAnswers;
+    assert.deepStrictEqual(acc({ accepted_answers: ['go', 3, true, false, '', 0] }), ['go', 3, true, false, '', 0]);
+    assert.deepStrictEqual(acc({ acceptedAnswers: ['go', null, { text: 'went' }, { label: 'gone' }, { value: 5 }, {}, { text: {} }, [1], undefined, evil()] }), ['go', 'went', 'gone', '5']);
+    assert.deepStrictEqual(acc({ answers: [{ text: 'a' }, { label: 'b' }, 'c'] }), ['a', 'b', 'c'], 'the option-object answers[] fallback yields their text, not raw objects');
+    assert.deepStrictEqual(acc({ correct_answer: { a: 1 } }), [], 'a junk scalar leaves NO accepted answer (the runtime reports "missing its accepted answer")');
+    assert.deepStrictEqual(acc({ correctAnswer: { text: 'x' } }), ['x']); assert.deepStrictEqual(acc({ answer: 7 }), [7]); assert.deepStrictEqual(acc({ answer: 'ok' }), ['ok']);
+    assert.deepStrictEqual(acc({ accepted_answers: [NaN, Infinity, -Infinity] }), [], 'JSON never produces these, but a stray non-finite number is not an answer');
+    assert.strictEqual(acc({}), undefined, 'nothing authored -> no key');
+    assert.strictEqual(acc({ answers: 'x' }), undefined);
+    assert.deepStrictEqual(acc({ acceptedAnswers: ['a'], accepted_answers: ['b'], correct_answer: 'c' }), ['a'], 'alias precedence: acceptedAnswers first');
+    assert.deepStrictEqual(acc({ accepted_answers: ['b'], correct_answer: 'c' }), ['b']);
+    assert.deepStrictEqual(acc({ correctAnswer: 'c', answer: 'z' }), ['c']);
+    assert.deepStrictEqual(acc({ correct_answer: 'd', answer: 'z' }), ['d']);
+    assert.deepStrictEqual(acc({ answers: ['a', 'b'], correctIndex: 1 }), undefined, 'an answers[] with a real correct index is a choice question: no accepted set');
+    assert.deepStrictEqual(acc({ answers: ['a', 'b'], correct_index: 2 }), undefined);
+    assert.deepStrictEqual(acc({ answers: ['a', 'b'], correctIndex: 'x' }), ['a', 'b'], 'a junk index is no index: the answers are the accepted set');
+    const src = { question: 'q', question_type: 'fill_in_the_blank', acceptedAnswers: ['go', { text: 'x' }] };
+    A.normalizeQuestion(src); assert.deepStrictEqual(J(src.acceptedAnswers), ['go', { text: 'x' }], 'the source array is untouched');
+  });
+
+  test('media: a source is a non-blank STRING (a number / object / blank is dropped); the first non-blank string of src / url wins; string form and src are trimmed; alt / label are text or blank; legacy imageUrl / audioUrl alias', () => {
+    const md = (extra) => J(A.normalizeQuestion(Object.assign({}, base, extra))).media;
+    assert.strictEqual(md({ media: { image: '  ' } }), undefined); assert.strictEqual(md({ media: { image: 5 } }), undefined); assert.strictEqual(md({ media: { image: { src: 5 } } }), undefined);
+    assert.deepStrictEqual(md({ media: { image: ' i.png ' } }), { image: { src: 'i.png' } });
+    assert.deepStrictEqual(md({ media: { image: { src: ' a.png ', url: 'b.png' } } }), { image: { src: 'a.png', alt: '', label: '' } });
+    assert.deepStrictEqual(md({ media: { image: { src: {}, url: 'b.png' } } }), { image: { src: 'b.png', alt: '', label: '' } }, 'a junk src no longer hides a valid url');
+    assert.deepStrictEqual(md({ media: { image: { src: '  ', url: 'b.png' } } }), { image: { src: 'b.png', alt: '', label: '' } });
+    assert.deepStrictEqual(md({ media: { image: { src: 'a.png', alt: { x: 1 }, label: ['L'] } } }), { image: { src: 'a.png', alt: '', label: '' } });
+    assert.deepStrictEqual(md({ media: { audio: { url: 'a.mp3', label: ' Play ' } } }), { audio: { src: 'a.mp3', alt: 'Play', label: 'Play' } });
+    assert.deepStrictEqual(md({ imageUrl: 'i.png', imageAlt: { x: 1 } }), { image: { src: 'i.png', alt: '', label: '' } });
+    assert.deepStrictEqual(md({ imageUrl: 5 }), undefined); assert.deepStrictEqual(md({ imageUrl: '  ', audioUrl: 'a.mp3' }), { audio: { src: 'a.mp3', alt: '', label: '' } });
+    assert.deepStrictEqual(md({ audioUrl: 'a.mp3', audioLabel: 'L' }), { audio: { src: 'a.mp3', alt: 'L', label: 'L' } });
+    assert.deepStrictEqual(md({ media: { image: 'i.png', audio: 'a.mp3' } }), { image: { src: 'i.png' }, audio: { src: 'a.mp3' } });
+    assert.strictEqual(md({ media: 'x' }), undefined, 'a string media is not an object'); assert.strictEqual(md({ media: [] }), undefined); assert.strictEqual(md({ media: {} }), undefined);
+    assert.deepStrictEqual(md({ media: { image: 'i.png' }, imageUrl: 'other.png' }), { image: { src: 'i.png' } }, 'an authored media object wins over the legacy aliases');
+    assert.strictEqual(md({ media: { image: null, audio: null } }), undefined);
+  });
+
+  test('hierarchy ids: the first non-blank id wins (id 0 is a real id "0"; an object / blank / array id is skipped to the alias, then to the generated fallback); the course id flows to every unit', () => {
+    const h = A.normalizeHierarchy({ course: { id: 0, units: [
+      null,
+      { id: 0, lessons: [{ id: 0, activities: [{ id: 0, questions: [] }] }] },
+      { id: {}, unit_id: 'U', course_id: {}, courseId: 'C', lessons: [{ id: '', lesson_id: 'L', activities: [{ id: [], activity_id: 'A', questions: [] }] }] },
+      { id: ' ', unit_id: ' ', course_id: 'own', lessons: [{ id: null, activities: [{ id: null, questions: [] }] }] }
+    ] } });
+    assert.strictEqual(h.course.id, '0');
+    const [u0, u1, u2, u3] = h.course.units;
+    assert.deepStrictEqual([u0.id, u0.course_id], ['unit-1', '0']);
+    assert.deepStrictEqual([u1.id, u1.lessons[0].id, u1.lessons[0].activities[0].id, u1.lessons[0].unit_id, u1.lessons[0].activities[0].lesson_id], ['0', '0', '0', '0', '0']);
+    assert.deepStrictEqual([u2.id, u2.course_id, u2.lessons[0].id, u2.lessons[0].activities[0].id], ['U', 'C', 'L', 'A']);
+    assert.deepStrictEqual([u3.id, u3.course_id, u3.lessons[0].id, u3.lessons[0].activities[0].id], ['unit-4', 'own', 'unit-4-lesson-1', 'unit-4-lesson-1-activity-1']);
+    assert.strictEqual(A.normalizeHierarchy({ course: { course_id: 'cc', units: [{}] } }).course.units[0].course_id, 'cc');
+    assert.strictEqual(A.normalizeHierarchy({ course: { id: {}, course_id: 'z', units: [] } }).course.id, 'z');
+    assert.strictEqual(A.normalizeHierarchy({ course: { id: [] , units: [{}] } }).course.units[0].course_id, '');
+    assert.deepStrictEqual(J(A.normalizeHierarchy({ units: [{ id: 'u', lessons: [] }], id: 'bare', title: ' T ' })), { course: { id: 'bare', title: 'T', units: [{ id: 'u', title: '', course_id: 'bare', lessons: [] }] } });
+    assert.strictEqual(A.normalizeHierarchy({ course: { units: [{ id: 'own-units' }] }, units: [{ id: 'outer' }] }).course.units[0].id, 'outer', 'input.units wins over course.units');
+    assert.strictEqual(A.normalizeHierarchy({ course: { units: 'x' } }).course.units.length, 0);
+    const f = A.flattenActivityToQuiz({ course: { units: [{ id: 'u', lessons: [{ id: 'lesson-9', activities: [{ id: {}, title: {}, questions: [] }] }] }], title: 'CT' } });
+    assert.strictEqual(f.id, 'lesson-9-activity-1'); assert.strictEqual(f.title, 'CT', 'a junk activity / lesson title falls through to the course title');
+    assert.strictEqual(A.flattenActivityToQuiz({ course: { units: [{ lessons: [{ title: 'LT', activities: [{ id: 'x', questions: [] }] }] }] } }).title, 'LT');
+    assert.strictEqual(A.flattenActivityToQuiz({ course: { units: [{ lessons: [{ activities: [{ id: 'x', title: 'AT', questions: [] }] }] }] } }).title, 'AT');
+  });
+
+  test('canonical-metadata: skill / category / subskill / cefr / objective are STRINGS (object, array, boolean, number, own-toString object are ignored — String() used to give "[object Object]", "GRAMMAR" from ["grammar"], or throw) (Agent 204 fix)', () => {
+    [{ a: 1 }, ['grammar'], true, 5, null, evil(), () => 'grammar'].forEach((v, i) => {
+      assert.deepStrictEqual(J(C.normalize({ skill: v, category: v, subskill: v, cefr: v, objective: v, learning_objective: v })), {}, 'junk #' + i);
+      assert.strictEqual(C.normalizeSkill(v), null, 'normalizeSkill #' + i); assert.strictEqual(C.skillForCategory(v), null, 'skillForCategory #' + i); assert.strictEqual(C.normalizeObjective({ objective: v }), null, 'objective #' + i);
+    });
+    assert.deepStrictEqual(J(C.normalize({ skill: ' Grammar ', subskill: ' tenses ', cefr: ' b1 ', objective: '  Use   the\n past  ' })), { skill: 'grammar', subskill: 'tenses', objective: 'Use the past', cefr: 'B1' });
+    assert.strictEqual(C.normalizeSkill(' READING '), 'reading'); assert.strictEqual(C.normalizeSkill('foo'), null); assert.strictEqual(C.normalizeSkill(''), null);
+    assert.strictEqual(C.skillForCategory(' Academic English '), 'usage'); assert.strictEqual(C.skillForCategory('Vocabulary'), 'vocabulary'); assert.strictEqual(C.skillForCategory('cooking'), null);
+  });
+
+  test('canonical-metadata: skill resolution order (valid skill > category > fallback category); a blank / non-string category falls to the fallback; reserved names are no skill; objective falls back to learning_objective only when objective is not a non-blank string', () => {
+    const sk = (input, fb) => C.normalize(input, fb).skill;
+    assert.strictEqual(sk({ skill: 'reading', category: 'Grammar' }, 'Writing'), 'reading');
+    assert.strictEqual(sk({ skill: 'nope', category: 'Grammar' }, 'Writing'), 'grammar');
+    assert.strictEqual(sk({ category: 'Grammar' }, 'Writing'), 'grammar');
+    assert.strictEqual(sk({}, 'Writing'), 'writing'); assert.strictEqual(sk({ category: '  ' }, 'Writing'), 'writing'); assert.strictEqual(sk({ category: { a: 1 } }, 'Writing'), 'writing'); assert.strictEqual(sk({ category: 5 }, 'Writing'), 'writing');
+    assert.strictEqual(sk({ category: 'Cooking' }, 'Writing'), undefined, 'an unmapped STRING category does not fall through to the fallback (pinned)');
+    assert.strictEqual(sk({}, undefined), undefined); assert.strictEqual(sk({}, { a: 1 }), undefined);
+    ['constructor', '__proto__', 'toString', 'hasOwnProperty'].forEach((n) => { assert.strictEqual(sk({ category: n }), undefined, n); assert.strictEqual(sk({ skill: n }), undefined, n); assert.strictEqual(sk({}, n), undefined, n); });
+    assert.strictEqual(C.normalizeObjective({ objective: 'O', learning_objective: 'L' }), 'O'); assert.strictEqual(C.normalizeObjective({ learning_objective: 'L' }), 'L');
+    assert.strictEqual(C.normalizeObjective({ objective: '  ', learning_objective: ' L  x ' }), 'L x'); assert.strictEqual(C.normalizeObjective({ objective: { a: 1 }, learning_objective: 'L' }), 'L');
+    assert.strictEqual(C.normalizeObjective({ objective: '', learning_objective: '' }), null); assert.strictEqual(C.normalizeObjective({}), null);
+    [null, undefined, 'x', 5, true].forEach((v) => assert.strictEqual(C.normalizeObjective(v), null));
+    assert.deepStrictEqual(J(C.normalize(null)), {}); assert.deepStrictEqual(J(C.normalize('x')), {}); assert.deepStrictEqual(J(C.normalize(undefined, 'Grammar')), { skill: 'grammar' }, 'a non-object input is {} but the fallback category still applies');
+  });
+
+  test('canonical-metadata: difficulty / estimated_time_seconds are real finite numbers or non-blank numeric strings — true / false / "" / " " / [3] / objects / NaN / Infinity are dropped (were 1 / 0 / 0 / 0 / 3) (Agent 204 fix)', () => {
+    [true, false, '', ' ', [3], [], {}, NaN, Infinity, -Infinity, 'x', '3x', null].forEach((v, i) => {
+      assert.deepStrictEqual(J(C.normalize({ difficulty: v, estimated_time_seconds: v })), {}, 'junk #' + i);
+    });
+    assert.deepStrictEqual(J(C.normalize({ difficulty: 0, estimated_time_seconds: 0 })), { difficulty: 0, estimated_time_seconds: 0 });
+    assert.deepStrictEqual(J(C.normalize({ difficulty: ' 3 ', estimated_time_seconds: '45.5' })), { difficulty: 3, estimated_time_seconds: 45.5 });
+    assert.deepStrictEqual(J(C.normalize({ difficulty: -1, estimated_time_seconds: 30 })), { difficulty: -1, estimated_time_seconds: 30 });
+    assert.deepStrictEqual(J(C.normalize({ cefr: 'b1', difficulty: 2 })), { cefr: 'B1', difficulty: 2 });
+    assert.deepStrictEqual(J(Object.keys(C.normalize({ estimated_time_seconds: 5, cefr: 'a1', objective: 'o', subskill: 's', skill: 'usage', difficulty: 1 }))), ['skill', 'subskill', 'objective', 'difficulty', 'cefr', 'estimated_time_seconds'], 'stable key order');
+  });
+
+  test('adapter x canonical: the normalized metadata (not the raw input) reaches the question; without the canonical module the raw fields are copied through; junk metadata never leaks either way except raw passthrough', () => {
+    const q = J(A.normalizeQuestion({ question: 'q', answers: ['a', 'b'], correctIndex: 1, category: 'Grammar', skill: ' READING ', subskill: ' s ', difficulty: ' 4 ', cefr: 'b2', estimated_time_seconds: '30', objective: ' o ' }));
+    assert.deepStrictEqual([q.skill, q.subskill, q.difficulty, q.cefr, q.estimated_time_seconds, q.objective], ['reading', 's', 4, 'B2', 30, 'o']);
+    const junk = J(A.normalizeQuestion({ question: 'q', answers: ['a', 'b'], correctIndex: 1, category: 'Cooking', skill: { a: 1 }, difficulty: true, cefr: ['b1'], estimated_time_seconds: '' }));
+    ['skill', 'difficulty', 'cefr', 'estimated_time_seconds', 'subskill', 'objective'].forEach((k) => assert.ok(!(k in junk), k + ' leaked: ' + JSON.stringify(junk[k])));
+    const raw = J(Aplain.normalizeQuestion({ question: 'q', answers: ['a', 'b'], correctIndex: 1, skill: ' Grammar ', subskill: 's', difficulty: '3', cefr: 'b1', estimated_time_seconds: 9, objective: 'o' }));
+    assert.deepStrictEqual([raw.skill, raw.subskill, raw.difficulty, raw.cefr, raw.estimated_time_seconds], [' Grammar ', 's', '3', 'b1', 9], 'canonical module absent: raw copy');
+    assert.ok(!('objective' in raw), 'objective is only produced by the canonical module');
+    const fromQuestionCategory = J(A.normalizeQuestion({ question: 'q', answers: ['a', 'b'], correctIndex: 1, question_category: 'Vocabulary' }));
+    assert.strictEqual(fromQuestionCategory.skill, 'vocabulary'); assert.strictEqual(fromQuestionCategory.category, 'Vocabulary');
+  });
+
+  test('adapter: structured passthrough keys are copied only when present; correctIndices removes a null single index; radio is omitted but non-radio kept; alias precedence for text fields', () => {
+    const q = nq({ question_type: 'checkbox', correctIndices: [1, 2], subprompt: 'sp', pairs: [['a', 'b']], matches: [1], items: ['i'], correctOrder: [2, 1], correctIndex: undefined });
+    assert.deepStrictEqual([q.correctIndices, q.subprompt, q.pairs, q.matches, q.items, q.correctOrder, q.question_type], [[1, 2], 'sp', [['a', 'b']], [1], ['i'], [2, 1], 'checkbox']);
+    assert.ok(!('correctIndex' in q));
+    const withBoth = nq({ correctIndices: [1], correctIndex: 2 }); assert.strictEqual(withBoth.correctIndex, 2, 'a real single index is kept next to correctIndices');
+    ['subprompt', 'correctIndices', 'pairs', 'matches', 'items', 'correctOrder'].forEach((k) => assert.ok(!(k in nq({})), k));
+    assert.strictEqual(nq({ question: 'A', question_text: 'B', prompt: 'C', content: 'D' }).question, 'A'); assert.strictEqual(nq({ question: undefined, question_text: 'B', prompt: 'C' }).question, 'B');
+    assert.strictEqual(nq({ question: null, prompt: 'C', content: 'D' }).question, 'C'); assert.strictEqual(nq({ question: undefined, content: 'D' }).question, 'D');
+    assert.strictEqual(nq({ category: 'X', question_category: 'Y' }).category, 'X'); assert.strictEqual(nq({ explanation: 'E', question_explanation: 'F' }).explanation, 'E'); assert.strictEqual(nq({ explanation: undefined, question_explanation: 'F' }).explanation, 'F');
+    assert.strictEqual(nq({ question_type: 'radio', questionType: 'ranking' }).question_type, undefined, 'first alias present wins (radio -> omitted)');
+    assert.strictEqual(nq({ questionType: 'ranking', type: 'matching' }).question_type, 'ranking');
+    assert.strictEqual(nq({ type: 'ranking' }).question_type, 'ranking');
+  });
+
+  test('quiz / manifest shape: source precedence, quiz-level date passthrough (all four keys), manifest date keys, non-object entries dropped, output key sets are exact', () => {
+    const one = [Object.assign({}, base)];
+    assert.strictEqual(A.normalizeQuiz({ questions: one, items: [], data: [] }).questions.length, 1); assert.strictEqual(A.normalizeQuiz({ questions: 'x', items: one }).questions.length, 1, 'a non-array questions falls to items');
+    assert.strictEqual(A.normalizeQuiz({ items: 'x', data: one }).questions.length, 1); assert.deepStrictEqual(J(A.normalizeQuiz({ questions: {}, items: {}, data: {} }).questions), []);
+    ['date_added', 'date_updated', 'dateAdded', 'dateUpdated'].forEach((k) => { assert.strictEqual(A.normalizeQuiz({ [k]: 'D', questions: [] })[k], 'D', k); assert.ok(!(k in A.normalizeQuiz({ questions: [] })), k + ' absent'); });
+    assert.deepStrictEqual(J(Object.keys(A.normalizeQuiz({ questions: [] }))), ['id', 'title', 'description', 'brand', 'category', 'tags', 'level', 'version', 'questions']);
+    assert.deepStrictEqual(J(Object.keys(A.normalizeManifest([{}])[0])), ['file', 'id', 'title', 'topic', 'description', 'category', 'tags', 'level', 'questions', 'version']);
+    const m = A.normalizeManifest([{ date: 'd', date_added: 'a', date_updated: 'u', topic: ' T ', quizId: 'qq', summary: ' S ', quiz_category: 'C' }, [], 5, null, 'x', {}])
+    assert.strictEqual(m.length, 2); assert.deepStrictEqual([m[0].date, m[0].date_added, m[0].date_updated, m[0].topic, m[0].id, m[0].description, m[0].category], ['d', 'a', 'u', 'T', 'qq', 'S', 'C']);
+    assert.ok(!('date' in m[1]) && !('date_added' in m[1]) && !('date_updated' in m[1]));
+    assert.strictEqual(A.normalizeManifest([{ file: 'f', path: 'p' }])[0].file, 'f'); assert.strictEqual(A.normalizeManifest([{ path: 'p' }])[0].file, 'p'); assert.strictEqual(A.normalizeManifest([{ id: 'i', quiz_id: 'q' }])[0].id, 'i');
+    assert.strictEqual(A.normalizeQuiz({ id: 'i', quiz_id: 'q', quizId: 'z', questions: [] }).id, 'i'); assert.strictEqual(A.normalizeQuiz({ quizId: 'z', questions: [] }).id, 'z');
+    assert.strictEqual(A.normalizeQuiz({ title: 't', name: 'n', questions: [] }).title, 't'); assert.strictEqual(A.normalizeQuiz({ description: 'd', summary: 's', questions: [] }).description, 'd');
+    assert.strictEqual(A.normalizeQuiz({ category: 'c', quiz_category: 'q', questions: [] }).category, 'c'); assert.strictEqual(A.normalizeQuiz({ quiz_category: 'q', questions: [] }).category, 'q');
+    assert.strictEqual(A.normalizeQuiz({ brand: ' Acme ', questions: [] }).brand, 'Acme'); assert.strictEqual(A.normalizeQuiz({ questions: [] }).brand, 'Mylingo');
+    assert.strictEqual(A.normalizeQuiz({ questions: [] }).version, 1);
+  });
+
+  test('errors: a non-object anywhere is a clear Error (question, quiz, hierarchy, activity bridge); flatten needs exactly one activity; the module global is frozen and the LEVELS copy is not the internal array', () => {
+    [null, undefined, 'x', 5, [], true].forEach((v) => { assert.throws(() => A.normalizeQuestion(v), /Question must be an object\./); assert.throws(() => A.normalizeQuiz(v), /Quiz payload must be an object\./); assert.throws(() => A.normalizeHierarchy(v), /Content hierarchy must be an object\./); assert.throws(() => A.flattenActivityToQuiz(v), /Activity bridge requires a course object\./); });
+    assert.throws(() => A.normalizeQuiz({ questions: [null] }), /Question must be an object\./);
+    assert.throws(() => A.flattenActivityToQuiz({ course: 'x' }), /requires a course object/);
+    assert.throws(() => A.flattenActivityToQuiz({ course: { units: [{ lessons: [{ activities: [{}, {}] }] }] } }), /exactly one activity\./);
+    assert.strictEqual(A.VERSION, '2.0'); assert.deepStrictEqual(J(A.LEVELS), ['a1', 'a2', 'b1', 'b2', 'c1', 'c2']);
+    A.LEVELS.push('zz'); assert.strictEqual(A.normalizeQuiz({ level: 'zz', questions: [] }).level, '', 'the exported LEVELS is a copy: mutating it cannot add a level');
+    assert.deepStrictEqual(J(Object.keys(A).sort()), ['LEVELS', 'VERSION', 'flattenActivityToQuiz', 'normalizeHierarchy', 'normalizeManifest', 'normalizeQuestion', 'normalizeQuiz']);
+    assert.deepStrictEqual(J(Object.keys(C).sort()), ['CATEGORY_TO_SKILL', 'SKILLS', 'VERSION', 'normalize', 'normalizeObjective', 'normalizeSkill', 'skillForCategory']);
+    assert.strictEqual(C.VERSION, 1); assert.deepStrictEqual(J(C.SKILLS), ['grammar', 'vocabulary', 'reading', 'listening', 'writing', 'usage']);
+    C.SKILLS.push('zz'); C.CATEGORY_TO_SKILL.zz = 'zz'; assert.strictEqual(C.SKILLS.length, 6 + 1); // exported copy is a copy: rebuild the module to prove the internal list is unharmed
+    assert.strictEqual(load(['canonical-metadata']).MylingoCanonicalMetadata.SKILLS.length, 6);
+    assert.deepStrictEqual(J(load(['canonical-metadata']).MylingoCanonicalMetadata.CATEGORY_TO_SKILL), { grammar: 'grammar', vocabulary: 'vocabulary', reading: 'reading', listening: 'listening', writing: 'writing', usage: 'usage', 'academic english': 'usage' });
+  });
+
+  test('every shipped quiz payload still normalizes exactly as before the hardening (no shipped field was junk): question / answer / index / accepted-answer / media fields survive', () => {
+    const dirs = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'].map((l) => path.join(root, 'placement', l)).concat([path.join(root, 'placement', 'assessment')]);
+    let questions = 0;
+    dirs.forEach((d) => fs.readdirSync(d).filter((f) => /\.json$/.test(f)).forEach((f) => {
+      const raw = JSON.parse(fs.readFileSync(path.join(d, f), 'utf8'));
+      const quiz = J(A.normalizeQuiz(raw));
+      const src = Array.isArray(raw.questions) ? raw.questions : Array.isArray(raw.items) ? raw.items : Array.isArray(raw.data) ? raw.data : [];
+      assert.strictEqual(quiz.questions.length, src.length, f);
+      quiz.questions.forEach((q, i) => {
+        questions += 1;
+        assert.strictEqual(typeof q.question, 'string', f); assert.ok(Array.isArray(q.answers), f);
+        const s = src[i];
+        if (s.correctIndex !== undefined || s.correct_index !== undefined) assert.strictEqual(q.correctIndex, Number(s.correctIndex !== undefined ? s.correctIndex : s.correct_index), f + ' #' + i);
+        if (s.acceptedAnswers !== undefined) assert.deepStrictEqual(q.acceptedAnswers, [].concat(s.acceptedAnswers), f + ' #' + i);
+      });
+    }));
+    assert.ok(questions > 100, 'sanity: normalized ' + questions + ' shipped questions');
+  });
+  test('answer_1..9 keys: answer_0 / answer_10 are not answers; a null answer_N is skipped (not a blank option); an empty string is kept', () => {
+    assert.deepStrictEqual(J(A.normalizeQuestion({ question: 'q', answer_0: 'zero', answer_1: 'a', answer_2: null, answer_3: 'c', answer_4: '' })).answers, ['a', 'c', '']);
+    assert.deepStrictEqual(J(A.normalizeQuestion({ question: 'q', answers: ['x'], answer_1: 'ignored' })).answers, ['x'], 'answers[] beats answer_N');
+    assert.deepStrictEqual(J(A.normalizeQuestion({ question: 'q', options: ['o'], answers: 'no', answer_1: 'ignored' })).answers, ['o'], 'options[] beats answer_N');
+    assert.deepStrictEqual(J(A.normalizeQuestion({ question: 'q', answers: ['a'], options: ['o'] })).answers, ['a'], 'answers[] beats options[]');
+  });
+
+  test('exact error messages (the full sentence, not a prefix)', () => {
+    const msg = (fn) => { try { fn(); } catch (e) { return e.message; } return null; };
+    assert.strictEqual(msg(() => A.normalizeQuestion(null)), 'Question must be an object.');
+    assert.strictEqual(msg(() => A.normalizeQuiz(null)), 'Quiz payload must be an object.');
+    assert.strictEqual(msg(() => A.normalizeHierarchy(null)), 'Content hierarchy must be an object.');
+    assert.strictEqual(msg(() => A.flattenActivityToQuiz(null)), 'Activity bridge requires a course object.');
+    assert.strictEqual(msg(() => A.flattenActivityToQuiz({ course: { units: [] } })), 'Activity bridge requires exactly one activity.');
+  });
+
+  test('title / name, description / summary, category / quiz_category, tags / quiz_tags aliases at every level (unit, lesson, activity, course, quiz, manifest) — the primary key wins, the alias is the fallback', () => {
+    const h = (k1, k2) => A.normalizeHierarchy({ course: { [k1]: 'C1', [k2]: 'C2', units: [{ [k1]: 'U1', [k2]: 'U2', lessons: [{ [k1]: 'L1', [k2]: 'L2', activities: [{ [k1]: 'A1', [k2]: 'A2', questions: [] }] }] }] } }).course;
+    const both = h('title', 'name'), onlyName = h('name', 'name'), noTitle = A.normalizeHierarchy({ course: { name: 'CN', units: [{ name: 'UN', lessons: [{ name: 'LN', activities: [{ name: 'AN', questions: [] }] }] }] } }).course;
+    assert.deepStrictEqual([both.title, both.units[0].title, both.units[0].lessons[0].title, both.units[0].lessons[0].activities[0].title], ['C1', 'U1', 'L1', 'A1']);
+    assert.deepStrictEqual([noTitle.title, noTitle.units[0].title, noTitle.units[0].lessons[0].title, noTitle.units[0].lessons[0].activities[0].title], ['CN', 'UN', 'LN', 'AN']);
+    assert.strictEqual(onlyName.title, 'C2');
+    const q = (o) => A.normalizeQuiz(Object.assign({ questions: [] }, o)), m = (o) => A.normalizeManifest([o])[0];
+    assert.strictEqual(q({ tags: 'a', quiz_tags: 'b' }).tags, 'a'); assert.strictEqual(q({ quiz_tags: 'b' }).tags, 'b');
+    assert.strictEqual(m({ tags: 'a', quiz_tags: 'b' }).tags, 'a'); assert.strictEqual(m({ quiz_tags: 'b' }).tags, 'b');
+    assert.strictEqual(m({ title: 't', name: 'n' }).title, 't'); assert.strictEqual(m({ name: 'n' }).title, 'n');
+    assert.strictEqual(m({ description: 'd', summary: 's' }).description, 'd'); assert.strictEqual(m({ summary: 's' }).description, 's');
+    assert.strictEqual(m({ category: 'c', quiz_category: 'q' }).category, 'c'); assert.strictEqual(m({ quiz_category: 'q' }).category, 'q');
+    assert.strictEqual(m({ topic: 'tp' }).topic, 'tp');
+  });
+
+  test('hierarchy: a question keeps an explicit type in every alias (question_type / questionType / type; radio when absent or junk); activity_type / activityType / type, default "quiz"', () => {
+    const qt = (q) => A.normalizeHierarchy({ course: { units: [{ lessons: [{ activities: [{ questions: [Object.assign({ question: 'q', answers: ['a', 'b'], correctIndex: 1 }, q)] }] }] }] } }).course.units[0].lessons[0].activities[0].questions[0].question_type;
+    assert.strictEqual(qt({ question_type: 'comparison' }), 'matching'); assert.strictEqual(qt({ questionType: 'reorganizer' }), 'ranking'); assert.strictEqual(qt({ type: 'complete_question' }), 'fill_in_the_blank');
+    assert.strictEqual(qt({}), 'radio'); assert.strictEqual(qt({ question_type: {} }), 'radio'); assert.strictEqual(qt({ question_type: 'radio', type: 'matching' }), 'radio');
+    const at = (a) => A.normalizeHierarchy({ course: { units: [{ lessons: [{ activities: [Object.assign({ questions: [] }, a)] }] }] } }).course.units[0].lessons[0].activities[0].activity_type;
+    assert.strictEqual(at({ activity_type: 'comparison' }), 'matching'); assert.strictEqual(at({ activityType: 'reorganizer' }), 'ranking'); assert.strictEqual(at({ type: 'complete_question' }), 'fill_in_the_blank');
+    assert.strictEqual(at({}), 'quiz'); assert.strictEqual(at({ activity_type: '' }), 'quiz'); assert.strictEqual(at({ activity_type: 'Practice Set' }), 'practice_set'); assert.strictEqual(at({ activity_type: 'quiz', type: 'matching' }), 'quiz');
+  });
+
+  test('flattenActivityToQuiz: version / category / level come from the bridge input (version default 1), the activity id is the normalized one, questions are normalized', () => {
+    const src = (extra) => Object.assign({ course: { units: [{ id: 'u', lessons: [{ id: 'l', activities: [{ questions: [{ question: 'q', answers: ['a', 'b'], correct_index: '2' }] }] }] }] } }, extra);
+    assert.strictEqual(A.flattenActivityToQuiz(src({})).version, 1); assert.strictEqual(A.flattenActivityToQuiz(src({ version: '4' })).version, 4); assert.strictEqual(A.flattenActivityToQuiz(src({ version: 0 })).version, 0);
+    assert.strictEqual(A.flattenActivityToQuiz(src({})).id, 'l-activity-1'); assert.strictEqual(A.flattenActivityToQuiz(src({ level: 'C1', category: 'Grammar' })).level, 'c1');
+    assert.strictEqual(A.flattenActivityToQuiz(src({ category: 'Grammar' })).category, 'Grammar'); assert.strictEqual(A.flattenActivityToQuiz(src({})).questions[0].correctIndex, 2);
+  });
+
+  test('media legacy pair: an imageUrl alone / an audioUrl alone yields only that media; both yield both; a null url is absent', () => {
+    const md = (extra) => J(A.normalizeQuestion(Object.assign({}, base, extra))).media;
+    assert.deepStrictEqual(md({ imageUrl: 'i.png' }), { image: { src: 'i.png', alt: '', label: '' } });
+    assert.deepStrictEqual(md({ audioUrl: 'a.mp3' }), { audio: { src: 'a.mp3', alt: '', label: '' } });
+    assert.deepStrictEqual(md({ imageUrl: null, audioUrl: 'a.mp3' }), { audio: { src: 'a.mp3', alt: '', label: '' } });
+    assert.deepStrictEqual(md({ imageUrl: 'i.png', audioUrl: null }), { image: { src: 'i.png', alt: '', label: '' } });
+    assert.strictEqual(md({ imageUrl: null, audioUrl: null }), undefined);
+    assert.deepStrictEqual(md({ media: { image: null, audio: 'a.mp3' } }), { audio: { src: 'a.mp3' } });
+  });
+})();
+
+// ============================================================
+console.log('offline-packs.js + offline-packs-ui.js: untrusted shapes (packs.json, stored meta blob) (Agent 204)');
+// ============================================================
+(function () {
+  const fs = require('fs'), vm = require('vm');
+  const root = path.join(__dirname, '..');
+  const SRC = fs.readFileSync(path.join(root, 'shared', 'js', 'offline-packs.js'), 'utf8');
+  const UISRC = fs.readFileSync(path.join(root, 'shared', 'js', 'offline-packs-ui.js'), 'utf8');
+  const J = (x) => JSON.parse(JSON.stringify(x));
+  const META = 'mylingo-offline-pack-cache-meta-v1', PFX = 'mylingo-offline-pack-v1-';
+  const evilJson = '{"toString":1,"valueOf":2}';
+
+  // A private world per test: fake Cache Storage + fetch + localStorage, the module run in its own vm context.
+  function world(indexBody, opts) {
+    opts = opts || {};
+    const H = { body: indexBody, caches: new Map(), fetches: 0, adds: [], ok: opts.ok !== false, clock: 1000, fetchArgs: [], matchOpts: [], inflight: 0, maxInflight: 0 };
+    const storage = makeFakeStorage();
+    const fakeCaches = {
+      open: async (name) => { if (!H.caches.has(name)) H.caches.set(name, new Map()); const m = H.caches.get(name); return { add: async (u) => { H.inflight++; H.maxInflight = Math.max(H.maxInflight, H.inflight); await new Promise((r) => setImmediate(r)); H.inflight--; H.adds.push(u); m.set(u, true); }, match: async (u, o) => { H.matchOpts.push(o); return m.has(u) ? true : undefined; } }; },
+      keys: async () => Array.from(H.caches.keys()), delete: async (n) => H.caches.delete(n), has: async (n) => H.caches.has(n),
+    };
+    if (opts.noHas) delete fakeCaches.has;
+    const w = { localStorage: storage, caches: opts.noCaches ? undefined : fakeCaches, document: { currentScript: { src: 'https://example.test/shared/js/offline-packs.js' } }, location: { href: 'https://example.test/x' }, URL, Date: { now: () => ++H.clock } };
+    w.window = w;
+    w.fetch = async (u, o) => { H.fetches++; H.fetchArgs.push([u, o]); return { ok: H.ok, json: async () => (typeof H.body === 'string' ? JSON.parse(H.body) : H.body) }; };
+    vm.createContext(w); vm.runInContext(SRC, w);
+    return { H, w, storage, OP: w.MylingoOfflinePacks };
+  }
+  const P = (id, deps, files) => ({ id, files: files || [id + '-0.json', id + '-1.json'], dependencies: deps || [] });
+
+  testAsync('stored meta blob: a null / array / number / string / boolean / unparseable blob is an empty map (was: touch() THREW, so installPack rolled the install back and isInstalled said "not installed") (Agent 204 fix)', async () => {
+    for (const blob of ['null', '[]', '[1,2]', '5', '"x"', 'true', 'false', '{bad', '']) {
+      const { OP, storage } = world({ packs: [P('a1')] });
+      storage.setItem(META, blob);
+      const res = await OP.installPack('a1');
+      assert.strictEqual(res.total, 2, 'install with meta ' + JSON.stringify(blob));
+      assert.strictEqual(await OP.isInstalled('a1'), true, 'isInstalled with meta ' + JSON.stringify(blob));
+      const meta = JSON.parse(storage.getItem(META));
+      assert.deepStrictEqual(Object.keys(meta), ['a1'], JSON.stringify(blob));
+      assert.strictEqual(typeof meta.a1, 'number');
+    }
+  });
+
+  testAsync('stored meta blob: only own finite-number timestamps survive (strings / null / objects / arrays are dropped) and they keep being written back; reserved ids are ordinary keys', async () => {
+    const { OP, storage } = world({ packs: [P('a1'), P('constructor'), P('__proto__'), P('toString')] });
+    storage.setItem(META, JSON.stringify({ old: 7, junkStr: 'x', junkNull: null, junkObj: { a: 1 }, junkArr: [1], numStr: '5', neg: -3, zero: 0 }));
+    await OP.installPack('a1'); await OP.installPack('constructor'); await OP.installPack('toString'); await OP.installPack('__proto__');
+    assert.strictEqual(await OP.isInstalled('constructor'), true); assert.strictEqual(await OP.isInstalled('toString'), true); assert.strictEqual(await OP.isInstalled('__proto__'), true);
+    const meta = JSON.parse(storage.getItem(META));
+    assert.deepStrictEqual(Object.keys(meta).sort(), ['__proto__', 'a1', 'constructor', 'neg', 'old', 'toString', 'zero']);
+    assert.strictEqual(meta.old, 7); assert.strictEqual(meta.neg, -3); assert.strictEqual(meta.zero, 0);
+    assert.strictEqual(({}).constructor, Object, 'sanity: the real Object.prototype is untouched');
+    await OP.removePack('constructor');
+    assert.strictEqual(await OP.isInstalled('constructor'), false); assert.ok(!('constructor' in JSON.parse(storage.getItem(META)) && Object.prototype.hasOwnProperty.call(JSON.parse(storage.getItem(META)), 'constructor')));
+  });
+
+  testAsync('eviction: with more than the maximum installed, the pack with the OLDEST numeric timestamp goes (junk stored timestamps count as 0), the pack being installed and its dependencies never do, and a pack named "constructor" is evictable like any other', async () => {
+    const { OP, storage, H } = world({ packs: [P('core'), P('a1', ['core']), P('a2', ['core']), P('constructor'), P('b1', ['core'])] });
+    storage.setItem(META, JSON.stringify({ a2: 'zzz', constructor: 50, a1: 60, core: 70 }));
+    await OP.installPack('a1'); await OP.installPack('a2'); await OP.installPack('constructor');
+    assert.deepStrictEqual(Array.from(H.caches.keys()).sort(), [PFX + 'a1', PFX + 'a2', PFX + 'constructor', PFX + 'core']);
+    storage.setItem(META, JSON.stringify({ a2: 'zzz', constructor: 5, a1: 900000, core: 900001 }));
+    await OP.installPack('b1');
+    const left = Array.from(H.caches.keys()).sort();
+    assert.ok(left.indexOf(PFX + 'core') >= 0 && left.indexOf(PFX + 'b1') >= 0, 'the dependency and the new pack are protected: ' + left);
+    assert.ok(left.indexOf(PFX + 'a2') < 0, 'junk timestamp counts as the oldest: ' + left);
+    assert.ok(left.length <= 4, left.join());
+  });
+
+  testAsync('getIndex: the body must be an object — null / array / number / string bodies reject with "Invalid offline pack index" (installPack rejects, isInstalled is false, nothing is fetched or cached); a non-ok response keeps its own message', async () => {
+    for (const body of [null, [], [{ id: 'a1' }], 5, JSON.stringify('x'), true]) {
+      const { OP, H } = world(body);
+      await assert.rejects(OP.getIndex(), /^Error: Invalid offline pack index$/, JSON.stringify(body));
+      await assert.rejects(OP.installPack('a1'), /Invalid offline pack index/);
+      assert.strictEqual(await OP.isInstalled('a1'), false); assert.strictEqual(H.caches.size, 0); assert.strictEqual(H.adds.length, 0);
+      assert.deepStrictEqual(J(await world({ packs: [] }).OP.getIndex()), { packs: [] });
+    }
+    await assert.rejects(world({ packs: [] }, { ok: false }).OP.getIndex(), /Unable to load offline pack index/);
+    const noArray = world({ packs: 'nope' });
+    await assert.rejects(noArray.OP.installPack('a1'), /Unknown offline pack: a1/); assert.strictEqual(await noArray.OP.isInstalled('a1'), false); assert.strictEqual(await noArray.OP.removePack('a1'), false, 'nothing to delete, no throw');
+  });
+
+  testAsync('findPack: only a string / number id matches (String() of an object THREW or matched "[object Object]"); junk entries are skipped; a numeric id matches its string form', async () => {
+    const { OP } = world({});
+    const index = JSON.parse('{"packs":[null,5,"x",[],{"id":{"a":1}},{"id":' + evilJson + '},{"id":null},{"id":true},{"id":7,"files":[]},{"id":"real","files":["f"]}]}');
+    assert.strictEqual(OP.findPack(index, '[object Object]'), null); assert.strictEqual(OP.findPack(index, 'true'), null); assert.strictEqual(OP.findPack(index, 'null'), null);
+    assert.strictEqual(J(OP.findPack(index, 'real')).files[0], 'f'); assert.strictEqual(J(OP.findPack(index, 7)).id, 7); assert.strictEqual(J(OP.findPack(index, '7')).id, 7);
+    [{}, [], null, undefined, true, evilJson && JSON.parse(evilJson), () => 1].forEach((v) => assert.strictEqual(OP.findPack(index, v), null));
+    [null, undefined, 5, 'x', [], { packs: 'x' }, { packs: {} }].forEach((v) => assert.strictEqual(OP.findPack(v, 'real'), null));
+  });
+
+  testAsync('pack files: every entry must be a non-blank string that resolves inside the app origin — null / object / "" / "  " / absolute / protocol-relative entries make the pack INVALID (installPack rejects before any download, isInstalled is false) (Agent 204 fix)', async () => {
+    const bad = [[null], [{}], [''], ['   '], ['ok.json', null], [5], [['a.json']], ['https://evil.example/a.json'], ['//evil.example/a.json'], ['http://example.test/a.json'], ['ok.json', '//evil.example/x']];
+    for (const files of bad) {
+      const { OP, H } = world({ packs: [P('a1', [], files)] });
+      await assert.rejects(OP.installPack('a1'), /^Error: Invalid offline pack: a1$/, JSON.stringify(files));
+      assert.strictEqual(H.adds.length, 0, 'nothing downloaded for ' + JSON.stringify(files)); assert.strictEqual(H.caches.size, 0);
+      assert.strictEqual(await OP.isInstalled('a1'), false);
+    }
+    const good = world({ packs: [P('a1', [], ['./x/a.json', 'b.json', '../up.json', '/root.json', 'https://example.test/abs.json', 'q.json?v=1'])] });
+    const res = await good.OP.installPack('a1');
+    assert.strictEqual(res.total, 6); assert.strictEqual(await good.OP.isInstalled('a1'), true);
+    assert.deepStrictEqual(good.H.adds.slice().sort(), ['https://example.test/abs.json', 'https://example.test/b.json', 'https://example.test/q.json?v=1', 'https://example.test/root.json', 'https://example.test/up.json', 'https://example.test/x/a.json']);
+    const empty = world({ packs: [P('a1', [], [])] });
+    assert.strictEqual(await empty.OP.isInstalled('a1'), false, 'a pack with no files is never "installed"');
+  });
+
+  testAsync('dependencies: junk entries (null / object / boolean) are ignored, a numeric dependency means its string id; a cycle or a self-dependency is NOT installed (was: unbounded recursion re-fetching packs.json); a shared dependency (diamond) is fine', async () => {
+    const junk = world({ packs: [P('core'), P('5'), P('a1', [null, {}, true, ['core'], 'core', 5])] });
+    const res = await junk.OP.installPack('a1');
+    assert.deepStrictEqual(J(res.dependencies), ['core', '5'], 'only string / number dependencies survive, as strings');
+    const numDep = world({ packs: [P(5), P('a1', [5])] });
+    await numDep.OP.installPack('a1'); assert.strictEqual(await numDep.OP.isInstalled(5), true); assert.strictEqual(await numDep.OP.isInstalled('a1'), true);
+    await assert.rejects(numDep.OP.removePack(5), /Cannot remove offline pack 5: installed packs depend on it/);
+    await assert.rejects(numDep.OP.removePack('5'), /Cannot remove offline pack 5/);
+    const cyc = world({ packs: [P('x', ['y']), P('y', ['x']), P('self', ['self'])] });
+    for (const id of ['x', 'y', 'self']) {
+      cyc.H.fetches = 0; assert.strictEqual(await cyc.OP.isInstalled(id), false, id); assert.ok(cyc.H.fetches < 12, id + ' used ' + cyc.H.fetches + ' fetches');
+    }
+    await assert.rejects(cyc.OP.installPack('self'), /dependency cycle/);
+    const dia = world({ packs: [P('d'), P('b', ['d']), P('c', ['d']), P('a', ['b', 'c'])] });
+    await dia.OP.installPack('a'); assert.strictEqual(await dia.OP.isInstalled('a'), true); assert.strictEqual(await dia.OP.isInstalled('d'), true);
+    dia.H.caches.delete(PFX + 'd'); assert.strictEqual(await dia.OP.isInstalled('a'), false, 'a missing shared dependency fails every branch');
+  });
+
+  testAsync('isInstalled / installPack / removePack with a junk id: false / rejects / never throws synchronously; no Cache Storage -> false', async () => {
+    const { OP, H } = world({ packs: [P('a1')] });
+    for (const id of [undefined, null, {}, [], true, JSON.parse(evilJson)]) { assert.strictEqual(await OP.isInstalled(id), false); }
+    await assert.rejects(OP.installPack('ghost'), /Unknown offline pack: ghost/); assert.strictEqual(H.caches.size, 0);
+    const none = world({ packs: [P('a1')] }, { noCaches: true });
+    assert.strictEqual(await none.OP.isInstalled('a1'), false); assert.strictEqual(await none.OP.removePack('a1'), false);
+    await assert.rejects(none.OP.installPack('a1'), /require Cache Storage support/);
+    const mixed = world(JSON.parse('{"packs":[null,7,{"id":{"a":1},"dependencies":["a1"]},{"id":"z","dependencies":"a1"},' + JSON.stringify(P('a1')) + ']}'));
+    await mixed.OP.installPack('a1'); assert.strictEqual(await mixed.OP.removePack('a1'), true, 'junk index entries never block or crash a removal');
+  });
+
+  // ---------- offline-packs-ui.js ----------
+  function makeUi(getIndex, isInstalled) {
+    const head = new El('head'), body = new El('body');
+    const document = { head, body, createElement: (t) => new El(t), getElementById: () => null };
+    const api = { getIndex, isInstalled: isInstalled || (() => Promise.resolve(false)), installPack: () => Promise.resolve(), removePack: () => Promise.resolve() };
+    const window = { MylingoOfflinePacks: api, addEventListener() {} };
+    const ctx = { window, document, navigator: { onLine: true } }; vm.createContext(ctx); vm.runInContext(UISRC, ctx);
+    const target = new El('div'); body.appendChild(target);
+    const section = window.MylingoOfflinePacksUI.mount(target, { level: 'a1' });
+    return section;
+  }
+  const settle2 = async () => { for (let i = 0; i < 8; i++) await new Promise((r) => setImmediate(r)); };
+
+  testAsync('panel: one malformed pack entry (null / number / array / no id / blank id / object id / boolean id) is skipped instead of taking the whole panel down; NaN / Infinity ids are skipped too; a numeric id renders', async () => {
+    const packs = JSON.parse('[null,5,"x",[],{"label":"no id"},{"id":""},{"id":"  "},{"id":{"a":1}},{"id":true},{"id":' + evilJson + '},{"id":"core","label":"Core","files":["a"]},{"id":9,"files":["a","b"]}]');
+    const section = makeUi(() => Promise.resolve({ packs }));
+    await settle2();
+    const rows = section.querySelectorAll('.offline-pack');
+    assert.deepStrictEqual(rows.map((r) => r.querySelector('b').textContent), ['Core', '9']);
+    assert.ok(!/could not be loaded/.test(section.querySelector('.offline-list').textContent));
+    const none = makeUi(() => Promise.resolve({ packs: [null, 3] })); await settle2();
+    assert.strictEqual(none.querySelector('.offline-list').textContent, 'No content packs are available in this build.');
+  });
+
+  testAsync('panel text: a non-string label falls back to the id, an object label / level renders as nothing (was "[object Object]"), a throwing own-toString label no longer kills the render; markup in strings is escaped', async () => {
+    const packs = JSON.parse('[{"id":"a<b","label":{"x":1},"files":["f"]},{"id":"c1","label":' + evilJson + ',"level":' + evilJson + ',"files":["f"]},{"id":"d1","label":"<i>L</i>","level":"A&1","files":["f"]},{"id":"e1","label":["x"],"level":["y"],"files":["f"]},{"id":"f1","label":"   ","level":5,"files":"nope"}]');
+    const section = makeUi(() => Promise.resolve({ packs })); await settle2();
+    const rows = section.querySelectorAll('.offline-pack');
+    assert.deepStrictEqual(rows.map((r) => r.querySelector('b').textContent), ['a<b', 'c1', '<i>L</i>', 'e1', 'f1']);
+    const small = rows.map((r) => r.querySelector('small').textContent);
+    assert.deepStrictEqual(small, ['1 asset', '1 asset', '1 asset · A&1', '1 asset', '0 assets · 5']);
+    assert.strictEqual(rows[2].querySelector('i'), null, 'label markup is escaped, not injected as an element');
+  });
+
+  testAsync('panel: an index that is not an object (null / array) shows the "could not be loaded" note (with the reason as its title) — same as a network failure', async () => {
+    const api = world([]).OP; // real getIndex against a bad body
+    const w = world(null);
+    const section = makeUi(() => w.OP.getIndex()); await settle2();
+    assert.ok(/could not be loaded/.test(section.querySelector('.offline-list').textContent));
+    assert.strictEqual(section.querySelector('.offline-note').title, 'Invalid offline pack index');
+    assert.strictEqual(typeof api.getIndex, 'function');
+  });
+  testAsync('panel ordering: with options.level the matching pack (case-insensitive) comes first, then core, the rest after (pinned for these inputs); no / unknown level keeps the fetched order; NaN / Infinity / non-JSON ids are skipped', async () => {
+    const order = async (ids, level) => {
+      const head = new El('head'), body = new El('body');
+      const document = { head, body, createElement: (tg) => new El(tg), getElementById: () => null };
+      const api = { getIndex: () => Promise.resolve({ packs: ids.map((id) => ({ id, files: ['f'] })) }), isInstalled: () => Promise.resolve(false), installPack: () => Promise.resolve(), removePack: () => Promise.resolve() };
+      const window = { MylingoOfflinePacks: api, addEventListener() {} };
+      const ctx = { window, document, navigator: { onLine: true } }; vm.createContext(ctx); vm.runInContext(UISRC, ctx);
+      const target = new El('div'); body.appendChild(target);
+      const section = window.MylingoOfflinePacksUI.mount(target, level === undefined ? undefined : { level });
+      await settle2();
+      return section.querySelectorAll('.offline-pack').map((r) => r.querySelector('b').textContent).join(',');
+    };
+    assert.strictEqual(await order(['c1', 'core', 'a1', 'b1'], 'a1'), 'a1,core,c1,b1');
+    assert.strictEqual(await order(['c1', 'core', 'a1', 'b1'], 'A1'), 'a1,core,c1,b1');
+    assert.strictEqual(await order(['core', 'a1', 'a2', 'b1', 'c1'], 'a1'), 'a1,core,a2,b1,c1');
+    assert.strictEqual(await order(['core', 'a1', 'a2', 'b1', 'c1'], 'B1'), 'b1,core,a1,a2,c1');
+    assert.strictEqual(await order(['a2', 'b1', 'core'], 'a1'), 'core,a2,b1');
+    assert.strictEqual(await order(['b1', 'a1'], 'a1'), 'a1,b1');
+    assert.strictEqual(await order(['c1', 'core', 'a1', 'b1'], 'zz'), 'core,c1,a1,b1');
+    assert.strictEqual(await order(['c1', 'core', 'a1', 'b1']), 'c1,core,a1,b1');
+    assert.strictEqual(await order(['c1', 'core', 'a1', 'b1'], ''), 'c1,core,a1,b1', 'an empty level is no level');
+    const head = new El('head'), body = new El('body');
+    const document = { head, body, createElement: (tg) => new El(tg), getElementById: () => null };
+    const packs = [{ id: NaN, files: [] }, { id: Infinity, files: [] }, { id: -Infinity }, { id: 3, files: [] }, { id: 0, files: [] }, { id: 'ok', files: [] }];
+    const api = { getIndex: () => Promise.resolve({ packs }), isInstalled: () => Promise.resolve(false), installPack: () => Promise.resolve(), removePack: () => Promise.resolve() };
+    const window = { MylingoOfflinePacks: api, addEventListener() {} };
+    const ctx = { window, document, navigator: { onLine: true } }; vm.createContext(ctx); vm.runInContext(UISRC, ctx);
+    const target = new El('div'); body.appendChild(target); const section = window.MylingoOfflinePacksUI.mount(target); await settle2();
+    assert.deepStrictEqual(section.querySelectorAll('.offline-pack').map((r) => r.querySelector('b').textContent), ['3', '0', 'ok']);
+  });
+  testAsync('constants, base URL and fetch call: INSTALL_CONCURRENCY 4 is really the max parallel downloads, MAX_INSTALLED_PACKS 4, VERSION 1; packs.json is fetched no-store from the script-derived root; without a script the page URL supplies the base; exact error messages', async () => {
+    const { OP, H } = world({ packs: [P('big', [], Array.from({ length: 12 }, (_, i) => 'f' + i + '.json'))] });
+    assert.strictEqual(OP.VERSION, 1); assert.strictEqual(OP.INSTALL_CONCURRENCY, 4); assert.strictEqual(OP.MAX_INSTALLED_PACKS, 4);
+    await OP.installPack('big'); assert.strictEqual(H.maxInflight, 4, 'exactly INSTALL_CONCURRENCY parallel downloads'); assert.strictEqual(H.adds.length, 12);
+    assert.deepStrictEqual(J(H.fetchArgs[0]), ['https://example.test/offline/packs.json', { cache: 'no-store' }]);
+    assert.strictEqual(OP.assetUrl('./a/b.json'), 'https://example.test/a/b.json'); assert.strictEqual(OP.assetUrl('a/../c.json'), 'https://example.test/c.json');
+    const small = world({ packs: [P('s', [], ['one.json'])] }); await small.OP.installPack('s'); assert.strictEqual(small.H.maxInflight, 1);
+    const empty = world({ packs: [P('e', [], [])] }); const r = await empty.OP.installPack('e'); assert.strictEqual(r.total, 0);
+    const mk = (docSrc, href) => { const w = { localStorage: makeFakeStorage(), caches: undefined, document: { currentScript: docSrc }, location: { href }, URL, Date }; w.window = w; vm.createContext(w); vm.runInContext(SRC, w); return w.MylingoOfflinePacks; };
+    assert.strictEqual(mk(null, 'https://example.test/a/b/c/d.html').assetUrl('x.json'), 'https://example.test/a/x.json', 'no currentScript: two levels up from the page URL');
+    assert.strictEqual(mk({ src: '' }, 'https://example.test/a/b/c/d.html').assetUrl('x.json'), 'https://example.test/a/x.json');
+    assert.strictEqual(mk({ src: 'https://cdn.test/app/shared/js/offline-packs.js' }, 'https://example.test/p/q/r.html').assetUrl('x.json'), 'https://cdn.test/app/x.json', 'the script location wins over the page URL');
+    await assert.rejects(world({ packs: [] }, { ok: false }).OP.getIndex(), /^Error: Unable to load offline pack index$/);
+    await assert.rejects(world({ packs: [] }, { noCaches: true }).OP.installPack('a'), /^Error: Unknown offline pack: a$/);
+    await assert.rejects(world({ packs: [P('a')] }, { noCaches: true }).OP.installPack('a'), /^Error: Offline packs require Cache Storage support$/);
+    await assert.rejects(world({ packs: [P('x', ['y']), P('y', ['x'])] }).OP.installPack('x'), /^Error: Offline pack dependency cycle: x$/);
+    const dep = world({ packs: [P('core'), P('a1', ['core'])] }); await dep.OP.installPack('a1');
+    await assert.rejects(dep.OP.removePack('core'), /^Error: Cannot remove offline pack core: installed packs depend on it$/);
+  });
+
+  testAsync('findPack: a junk-id entry is never returned for a junk lookup id (even when it is the first junk element)', async () => {
+    const { OP } = world({});
+    const index = JSON.parse('{"packs":[{"id":{"a":1},"marker":"first-junk"},{"id":null},{"id":"real"}]}');
+    [{}, null, undefined, true, [], () => 1].forEach((v) => assert.strictEqual(OP.findPack(index, v), null));
+    assert.strictEqual(J(OP.findPack(index, 'real')).id, 'real');
+  });
+
+  testAsync('pack file validation: an unparseable entry ("http://[") makes the pack invalid; a pack with a cache already present but empty / non-array / invalid files is NEVER reported installed', async () => {
+    const bad = world({ packs: [P('a1', [], ['ok.json', 'http://['])] });
+    await assert.rejects(bad.OP.installPack('a1'), /^Error: Invalid offline pack: a1$/);
+    const cases = [{ files: [] }, { files: 'x.json' }, { files: null }, { files: ['//evil.example/a.json'] }, { files: [null] }, { files: ['ok.json', ''] }];
+    for (const c of cases) {
+      const { OP, H } = world({ packs: [{ id: 'a1', files: c.files }] });
+      H.caches.set(PFX + 'a1', new Map([['https://evil.example/a.json', true], ['https://example.test/ok.json', true], ['https://example.test/x.json', true], ['https://example.test/', true]]));
+      assert.strictEqual(await OP.isInstalled('a1'), false, JSON.stringify(c));
+    }
+    const ok = world({ packs: [{ id: 'a1', files: ['ok.json'] }] });
+    ok.H.caches.set(PFX + 'a1', new Map([['https://example.test/ok.json', true]]));
+    assert.strictEqual(await ok.OP.isInstalled('a1'), true, 'sanity: the same setup with valid files IS installed');
+  });
+
+  testAsync('isInstalled: matches ignore the query string, touches the pack timestamp only when it IS installed, and works when this browser\'s Cache Storage has no has() (existence is assumed)', async () => {
+    const { OP, H, storage } = world({ packs: [P('a1')] });
+    await OP.installPack('a1'); storage.setItem(META, JSON.stringify({ a1: 5 })); H.matchOpts.length = 0;
+    assert.strictEqual(await OP.isInstalled('a1'), true);
+    assert.ok(H.matchOpts.length >= 2 && H.matchOpts.every((o) => o && o.ignoreSearch === true), 'cache.match(url, { ignoreSearch: true })');
+    assert.ok(JSON.parse(storage.getItem(META)).a1 > 5, 'touched');
+    H.caches.get(PFX + 'a1').delete('https://example.test/a1-1.json'); storage.setItem(META, JSON.stringify({ a1: 5 }));
+    assert.strictEqual(await OP.isInstalled('a1'), false); assert.strictEqual(JSON.parse(storage.getItem(META)).a1, 5, 'not touched when a file is missing');
+    const nh = world({ packs: [P('a1')] }, { noHas: true });
+    await nh.OP.installPack('a1'); assert.strictEqual(await nh.OP.isInstalled('a1'), true, 'no caches.has: the cache is opened and checked');
+    const ghost = world({ packs: [P('a1')] }, { noHas: true }); assert.strictEqual(await ghost.OP.isInstalled('a1'), false, 'and an empty cache is simply not installed');
+  });
+
+  testAsync('eviction: a cache named exactly the prefix (empty id) is counted but never chosen; a pack with no timestamp counts as timestamp 0 (older than 0.5, newer than -0.5)', async () => {
+    const mkw = (meta, keys) => { const x = world({ packs: [P('a1'), P('x1'), P('x2'), P('x3')] }); x.storage.setItem(META, JSON.stringify(meta)); keys.forEach((k) => x.H.caches.set(PFX + k, new Map())); return x; };
+    const e = mkw({ x1: 1, x2: 2, x3: 3 }, ['', 'x1', 'x2', 'x3']);
+    await e.OP.installPack('a1');
+    assert.ok(e.H.caches.has(PFX), 'the empty-id cache survives'); assert.ok(!e.H.caches.has(PFX + 'x1') && e.H.caches.has(PFX + 'x2') && e.H.caches.has(PFX + 'x3') && e.H.caches.has(PFX + 'a1'), Array.from(e.H.caches.keys()).join());
+    const older = mkw({ x1: 0.5, x3: 9 }, ['x1', 'x2', 'x3']); older.H.caches.set(PFX + 'x4', new Map());
+    await older.OP.installPack('a1');
+    assert.ok(!older.H.caches.has(PFX + 'x2') || !older.H.caches.has(PFX + 'x4'), 'a missing timestamp is older than 0.5: ' + Array.from(older.H.caches.keys()).join());
+    assert.ok(older.H.caches.has(PFX + 'x1'), 'x1 (0.5) outlives the untimestamped ones');
+    const newer = mkw({ x1: -0.5, x3: 9 }, ['x1', 'x2', 'x3']); newer.H.caches.set(PFX + 'x4', new Map());
+    await newer.OP.installPack('a1');
+    assert.ok(!newer.H.caches.has(PFX + 'x1'), 'x1 (-0.5) is older than a missing timestamp (0): ' + Array.from(newer.H.caches.keys()).join());
+  });
+  testAsync('eviction: the pack being installed and its whole dependency chain are protected even when they hold the OLDEST timestamps; a missing timestamp is 0 whichever side of the comparison it lands on', async () => {
+    const mk = (meta, keys) => { const x = world({ packs: [P('core'), P('mid', ['core']), P('a1', ['mid']), P('x1'), P('x2'), P('x3'), P('x4')] }); x.storage.setItem(META, JSON.stringify(meta)); keys.forEach((k) => x.H.caches.set(PFX + k, new Map())); return x; };
+    const chain = mk({ core: 1, mid: 2, x1: 10, x2: 20, x3: 30 }, ['core', 'mid', 'x1', 'x2', 'x3']);
+    await chain.OP.installPack('a1');
+    const left = Array.from(chain.H.caches.keys()).sort();
+    assert.ok(left.indexOf(PFX + 'core') >= 0 && left.indexOf(PFX + 'mid') >= 0 && left.indexOf(PFX + 'a1') >= 0, 'core / mid / a1 survive: ' + left);
+    assert.ok(left.indexOf(PFX + 'x1') < 0 && left.indexOf(PFX + 'x2') < 0, 'the oldest UNPROTECTED ones went: ' + left);
+    // untimestamped ids listed in both orders so the missing value lands on either side of the comparator
+    const mk2 = (meta, keys) => { const x = world({ packs: [P('n1'), P('x1'), P('x2'), P('x3'), P('x4')] }); x.storage.setItem(META, JSON.stringify(meta)); keys.forEach((k) => x.H.caches.set(PFX + k, new Map())); return x; };
+    for (const order of [['x1', 'x2', 'x3', 'x4'], ['x4', 'x3', 'x2', 'x1'], ['x3', 'x2', 'x4', 'x1']]) {
+      const hi = mk2({ x1: 0.5, x4: 0.25, x3: 9 }, order);   // x2 has no timestamp: it is the oldest (0 < 0.25)
+      await hi.OP.installPack('n1');
+      assert.ok(!hi.H.caches.has(PFX + 'x2') && hi.H.caches.has(PFX + 'x4') && hi.H.caches.has(PFX + 'x1'), 'untimestamped x2 goes first (order ' + order + '): ' + Array.from(hi.H.caches.keys()).join());
+      const lo = mk2({ x1: -0.5, x4: -0.25, x3: 9 }, order); // x2 (0) is NEWER than both negatives
+      await lo.OP.installPack('n1');
+      assert.ok(!lo.H.caches.has(PFX + 'x1') && lo.H.caches.has(PFX + 'x2') && lo.H.caches.has(PFX + 'x4'), 'the oldest negative goes, x2 (0) outlives it (order ' + order + '): ' + Array.from(lo.H.caches.keys()).join());
+    }
+  });
+  test('packaging tool (Agent 23): tools/package.js zips WITH dotfiles (zip -r -X . with excludes, never a "*" glob), requires the dotfiles in the archive, and verifies from a fresh unzip; it is not shipped in dist', () => {
+    const src = fs.readFileSync(path.join(__dirname, '..', 'tools', 'package.js'), 'utf8');
+    assert.ok(/'-r', '-X'/.test(src) && /'\.', '-x'/.test(src), 'zips the tree root with -r -X and excludes');
+    assert.ok(!/'\*'/.test(src), 'no "*" glob');
+    assert.ok(/\.github\/workflows\/deploy\.yml/.test(src) && /'\.gitignore'/.test(src), 'requires the dotfiles');
+    assert.ok(/mkdtempSync/.test(src) && /verify-all\.js', '--quick'/.test(src), 'verifies from a fresh unzip');
+    const bd = fs.readFileSync(path.join(__dirname, '..', 'tools', 'build-dist.js'), 'utf8');
+    assert.ok(!/package\.js/.test(bd), 'not a runtime file');
   });
 })();

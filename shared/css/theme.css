@@ -51,3 +51,35 @@ html[data-theme="dark"],html[data-theme="dark"] body{background:var(--my-dark-bg
   [style*="background:#fff"],[style*="background: #fff"],[style*="background:white"],[style*="background: white"]{background:var(--my-dark-card)!important;color:var(--my-dark-ink)!important}
   [style*="color:#111827"],[style*="color: #111827"],[style*="color:#374151"],[style*="color: #374151"]{color:var(--my-dark-ink)!important}
 }
+
+/* Agent 12 (Step 10): dark-mode contrast for components that hard-code a white surface or white-on-brand text.
+   axe-core measured these at 1.07-2.76:1 in dark mode (light mode was clean). Kept in one block so it is easy to audit. */
+@media (prefers-color-scheme:dark){
+  .stat,.empty,.mr-section,.offline-section{background:var(--my-dark-card)!important;color:var(--my-dark-ink)!important;border-color:var(--my-dark-line)!important}
+  .offline-btn{background:var(--my-dark-card-2)!important;color:var(--my-dark-ink)!important;border-color:var(--my-dark-line)!important}
+  .offline-btn.primary,.mr-action,.findlevel a{background:var(--my-dark-brand)!important;color:#07111f!important;border-color:var(--my-dark-brand)!important}
+  .mr-chip:not(.due):not(.needs-support):not(.developing):not(.mastered){background:var(--my-dark-soft)!important;color:#d2e5ff!important}
+  .mr-meter{background:#223149!important}
+  .offline-network:not(.online){background:var(--my-dark-card-2)!important;color:var(--my-dark-muted)!important}
+  .mylingo-appshell{--as-muted:var(--my-dark-muted);--as-brand:var(--my-dark-brand)}
+  .errbox{color:#ffc2ca!important}
+  .row{background:var(--my-dark-card)!important;color:var(--my-dark-ink)!important;border-color:var(--my-dark-line)!important}
+  .badge:not(.neutral){color:#d2e5ff!important}
+  .badge.neutral{background:var(--my-dark-card-2)!important}
+  .state.upcoming,.status.not-started,.icon-btn{background:var(--my-dark-card-2)!important}
+  .blank.filled{color:var(--my-dark-success)!important}
+  /* white-on-brand in light mode; brand is light blue in dark mode, so the label must be dark */
+  .check-answer,.lesson.current .node,.navlinks a.primary,.skip-link,.skip,.answer.selected .num{color:#07111f!important}
+}
+
+/* Agent 13 (Step 10 leftovers): Windows High Contrast / forced-colors. The UA replaces every background-color with Canvas,
+   so a progress fill (background only) becomes identical to its track and every progress bar disappeared (measured on 8 pages).
+   Give tracks a visible border and fills the system Highlight colour. */
+@media (forced-colors:active){
+  .bar,.ubar,.progress,.unit-bar,.mr-meter{border:1px solid CanvasText!important;background:Canvas!important;forced-color-adjust:none}
+  .bar i,.ubar i,.progress i,.unit-bar i,.mr-meter i{background:Highlight!important;forced-color-adjust:none}
+  /* selected / current states are conveyed by background or colour only, which forced-colors flattens: add an outline */
+  .answer.selected,.option.selected,.option.correct,.trail-item.active,.unit.current,.lesson.current{outline:3px solid Highlight!important;outline-offset:-3px}
+  .option.wrong{outline:3px dashed CanvasText!important;outline-offset:-3px}
+  .mylingo-appshell .as-tab.active .as-label{text-decoration:underline!important;text-decoration-thickness:2px}
+}

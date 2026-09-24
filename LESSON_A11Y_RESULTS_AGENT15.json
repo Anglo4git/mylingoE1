@@ -1,0 +1,39 @@
+{
+ "agent": 15,
+ "date": "2026-09-24",
+ "tool": "custom Playwright contrast/name audit (axe-core unavailable: egress closed)",
+ "lessons": {
+  "published": 62,
+  "runs_full_sweep": 248,
+  "schemes": [
+   "light",
+   "dark"
+  ],
+  "widths": [
+   390,
+   320
+  ],
+  "findings_before_fix": {
+   "skip-link/active trail dot": "3.16:1 (#0b0c0d on #1959d1)",
+   "span.term chips (a2-u02-l02, c1-u04-l03)": "1.47:1 (#8fe04a on #e9f8df)"
+  },
+  "after_fix_non_decorative_contrast_issues": 0
+ },
+ "keyboard_focus_issues": 0,
+ "text_spacing_issues": 0,
+ "quiz_result_screens": {
+  "runs": 74,
+  "ended": 72,
+  "scores_seen": [
+   "0%",
+   "100%",
+   "20%",
+   "33%",
+   "40%",
+   "60%"
+  ],
+  "contrast_issues": 0,
+  "overflow": 0
+ },
+ "placement_120_result": "clean, light+dark"
+}

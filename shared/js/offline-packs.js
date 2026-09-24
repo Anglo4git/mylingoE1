@@ -15,20 +15,63 @@
     } catch (e) { return './'; }
   })();
   function assetUrl(path) { return new URL(String(path).replace(/^\.\//, ''), BASE_URL).href; }
+  // Agent 204: packs.json is fetched JSON, so its shape is untrusted. The index must be an
+  // object (a `null` / array / number body used to surface later as a TypeError somewhere
+  // inside a chain), and only a string / number is an id (String() of an object with its
+  // own non-function `toString` THROWS, and any object matched the id "[object Object]").
   function getIndex() {
     return fetch(assetUrl('offline/packs.json'), { cache: 'no-store' }).then(function (response) {
       if (!response.ok) throw new Error('Unable to load offline pack index');
       return response.json();
+    }).then(function (index) {
+      if (!index || typeof index !== 'object' || Array.isArray(index)) throw new Error('Invalid offline pack index');
+      return index;
     });
   }
-  function findPack(index, id) {
-    var packs = index && Array.isArray(index.packs) ? index.packs : [];
-    return packs.find(function (pack) { return pack && String(pack.id) === String(id); }) || null;
+  function packsOf(index) {
+    return index && Array.isArray(index.packs) ? index.packs : [];
   }
-  function cacheFor(id) { return global.caches ? caches.open(CACHE_PREFIX + String(id)) : Promise.resolve(null); }
+  function idOf(pack) {
+    if (!pack || typeof pack !== 'object') return null;
+    return typeof pack.id === 'string' || typeof pack.id === 'number' ? String(pack.id) : null;
+  }
+  function findPack(index, id) {
+    var want = typeof id === 'string' || typeof id === 'number' ? String(id) : null;
+    if (want === null) return null;
+    return packsOf(index).find(function (pack) { return idOf(pack) === want; }) || null;
+  }
+  // A pack file is a non-blank string that resolves inside the app's own origin (a `null` /
+  // object entry became the relative URL "null" / "[object Object]", and an absolute or
+  // protocol-relative entry made the installer download from another origin).
+  function validFiles(pack) {
+    var origin;
+    try { origin = new URL(BASE_URL).origin; } catch (e) { return false; }
+    return Array.isArray(pack.files) && pack.files.every(function (file) {
+      if (typeof file !== 'string' || !file.trim()) return false;
+      try { return new URL(assetUrl(file)).origin === origin; } catch (e) { return false; }
+    });
+  }
+  function depsOf(pack) {
+    return Array.isArray(pack.dependencies) ? pack.dependencies.filter(function (dep) {
+      return typeof dep === 'string' || typeof dep === 'number';
+    }).map(String) : [];
+  }
+  // Agent 204: the stored blob is untrusted. A stored `null` / array / number / string made
+  // touch() THROW (setting a property on null), which inside installPack rolled the whole install
+  // back and inside isInstalled turned every pack into "not installed"; non-numeric timestamps
+  // made the eviction sort comparator NaN. Only own finite-number entries survive, in a
+  // prototype-free map (an id such as "constructor" is an ordinary key).
   function readMeta() {
-    try { return JSON.parse(global.localStorage.getItem(CACHE_META_KEY) || '{}'); }
-    catch (e) { return {}; }
+    var meta = Object.create(null);
+    try {
+      var parsed = JSON.parse(global.localStorage.getItem(CACHE_META_KEY) || '{}');
+      if (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) {
+        Object.keys(parsed).forEach(function (key) {
+          if (typeof parsed[key] === 'number' && Number.isFinite(parsed[key])) meta[key] = parsed[key];
+        });
+      }
+    } catch (e) {}
+    return meta;
   }
   function writeMeta(meta) {
     try { global.localStorage.setItem(CACHE_META_KEY, JSON.stringify(meta)); } catch (e) {}
@@ -49,9 +92,8 @@
   function evictIfNeeded(exceptId) {
     if (!global.caches) return Promise.resolve();
     return getIndex().then(function (index) {
-      var packs = index && Array.isArray(index.packs) ? index.packs : [];
-      var protectedIds = {};
-      var visiting = {};
+      var protectedIds = Object.create(null);
+      var visiting = Object.create(null);
 
       // Never evict the pack being installed, or anything it depends on.
       // Level packs depend on core, so blindly evicting the oldest cache can
@@ -62,7 +104,7 @@
         protectedIds[id] = true;
         visiting[id] = true;
         var pack = findPack(index, id);
-        var deps = pack && Array.isArray(pack.dependencies) ? pack.dependencies : [];
+        var deps = pack ? depsOf(pack) : [];
         deps.forEach(protectDependencies);
         delete visiting[id];
       }
@@ -83,13 +125,20 @@
       });
     });
   }
-  function isInstalled(id) {
+  // `stack` (internal) is the chain of packs being checked: a dependency cycle (or a pack that
+  // depends on itself) can never be satisfied, and used to recurse — re-fetching packs.json each
+  // time — without end. Each branch gets its own copy so a shared dependency (a diamond) is fine.
+  function isInstalled(id, stack) {
     if (!global.caches) return Promise.resolve(false);
+    var key = typeof id === 'string' || typeof id === 'number' ? String(id) : null;
+    if (key === null || (stack && stack[key])) return Promise.resolve(false);
+    var chain = Object.assign(Object.create(null), stack);
+    chain[key] = true;
     return cleanupOldCacheVersions().then(function () { return getIndex(); }).then(function (index) {
       var pack = findPack(index, id);
-      if (!pack || !Array.isArray(pack.files) || !pack.files.length) return false;
-      var deps = Array.isArray(pack.dependencies) ? pack.dependencies : [];
-      return Promise.all(deps.map(function (dep) { return isInstalled(dep); })).then(function (ready) {
+      if (!pack || !Array.isArray(pack.files) || !pack.files.length || !validFiles(pack)) return false;
+      var deps = depsOf(pack);
+      return Promise.all(deps.map(function (dep) { return isInstalled(dep, chain); })).then(function (ready) {
         if (!ready.every(Boolean)) return false;
         // Agent 159: caches.open() CREATES an empty cache when none exists, so merely asking
         // "is it installed?" used to leave a phantom cache per queried pack (counted by
@@ -112,14 +161,16 @@
     }).catch(function () { return false; });
   }
   function installPack(id, onProgress, dependencyStack) {
-    dependencyStack = dependencyStack || {};
+    // Prototype-free: a pack named "constructor" / "toString" is not already "on the stack".
+    dependencyStack = dependencyStack || Object.create(null);
     if (dependencyStack[String(id)]) return Promise.reject(new Error('Offline pack dependency cycle: ' + id));
     dependencyStack[String(id)] = true;
     return cleanupOldCacheVersions().then(function () { return getIndex(); }).then(function (index) {
       var pack = findPack(index, id);
       if (!pack || !Array.isArray(pack.files)) throw new Error('Unknown offline pack: ' + id);
+      if (!validFiles(pack)) throw new Error('Invalid offline pack: ' + id);
       if (!global.caches) throw new Error('Offline packs require Cache Storage support');
-      var deps = Array.isArray(pack.dependencies) ? pack.dependencies : [];
+      var deps = depsOf(pack);
       return deps.reduce(function (chain, dep) {
         return chain.then(function () { return installPack(dep, null, dependencyStack); });
       }, Promise.resolve()).then(function () { return evictIfNeeded(pack.id); }).then(function () {
@@ -167,8 +218,8 @@
   function removePack(id) {
     if (!global.caches) return Promise.resolve(false);
     return getIndex().then(function (index) {
-      var dependents = (index.packs || []).filter(function (pack) {
-        return pack && Array.isArray(pack.dependencies) && pack.dependencies.indexOf(id) !== -1;
+      var dependents = packsOf(index).filter(function (pack) {
+        return pack && typeof pack === 'object' && depsOf(pack).indexOf(String(id)) !== -1;
       });
       return Promise.all(dependents.map(function (pack) { return isInstalled(pack.id); })).then(function (installed) {
         if (installed.some(Boolean)) throw new Error('Cannot remove offline pack ' + id + ': installed packs depend on it');

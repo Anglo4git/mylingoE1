@@ -30,8 +30,12 @@
     style.textContent = STYLE;
     document.head.appendChild(style);
   }
+  // Agent 204: only a string / number is text. String(x) turned an object into "[object Object]"
+  // and THREW for an object with its own non-function `toString`, which (inside the render
+  // chain) replaced the whole panel with the "could not be loaded" note.
   function esc(value) {
-    return String(value == null ? '' : value).replace(/[&<>"']/g, function (m) {
+    var text = typeof value === 'string' || typeof value === 'number' ? String(value) : '';
+    return text.replace(/[&<>"']/g, function (m) {
       return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[m];
     });
   }
@@ -113,7 +117,10 @@
     global.addEventListener('online', updateNetwork);
     global.addEventListener('offline', updateNetwork);
     API.getIndex().then(function (index) {
-      var packs = Array.isArray(index.packs) ? index.packs : [];
+      // One malformed entry (null, a number, no usable id) must not take the whole panel down.
+      var packs = (Array.isArray(index.packs) ? index.packs : []).filter(function (pack) {
+        return pack && typeof pack === 'object' && ((typeof pack.id === 'string' && pack.id.trim() !== '') || (typeof pack.id === 'number' && Number.isFinite(pack.id)));
+      });
       if (options.level) {
         packs.sort(function (a, b) {
           var aBoost = String(a.id).toLowerCase() === String(options.level).toLowerCase() ? -1 : 0;
@@ -130,7 +137,7 @@
           var pack = entry.pack;
           var row = document.createElement('div');
           row.className = 'offline-pack';
-          row.innerHTML = '<div><b>' + esc(pack.label || pack.id) + '</b><small>' + sizeLabel(Array.isArray(pack.files) ? pack.files.length : 0) + (pack.level ? ' · ' + esc(pack.level) : '') + '</small></div><div class="offline-actions"><span class="offline-status">Checking…</span><button type="button" class="offline-btn">Install</button></div>';
+          row.innerHTML = '<div><b>' + esc(typeof pack.label === 'string' && pack.label.trim() ? pack.label : pack.id) + '</b><small>' + sizeLabel(Array.isArray(pack.files) ? pack.files.length : 0) + (esc(pack.level) ? ' · ' + esc(pack.level) : '') + '</small></div><div class="offline-actions"><span class="offline-status">Checking…</span><button type="button" class="offline-btn">Install</button></div>';
           list.appendChild(row);
           renderPack(row, pack, entry.installed);
         });

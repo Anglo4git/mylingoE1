@@ -1,0 +1,459 @@
+{
+ "a1/dashboard.html": {
+  "perf": 0.99,
+  "a11y": 1,
+  "bp": 1,
+  "seo": 0.66,
+  "cls": 0,
+  "lcp": 2024.55275,
+  "tbt": 0,
+  "fails": [
+   "first-contentful-paint",
+   "largest-contentful-paint",
+   "speed-index",
+   "interactive",
+   "unminified-javascript",
+   "unused-javascript",
+   "is-crawlable",
+   "cache-insight",
+   "document-latency-insight",
+   "network-dependency-tree-insight",
+   "render-blocking-insight"
+  ],
+  "runtimeError": null
+ },
+ "a1/index.html": {
+  "perf": 1,
+  "a11y": 1,
+  "bp": 1,
+  "seo": 1,
+  "cls": 0,
+  "lcp": 1649.0656999999999,
+  "tbt": 0,
+  "fails": [
+   "first-contentful-paint",
+   "largest-contentful-paint",
+   "unminified-javascript",
+   "cache-insight",
+   "document-latency-insight",
+   "network-dependency-tree-insight",
+   "render-blocking-insight"
+  ],
+  "runtimeError": null
+ },
+ "a2/dashboard.html": {
+  "perf": 0.99,
+  "a11y": 1,
+  "bp": 1,
+  "seo": 0.66,
+  "cls": 0,
+  "lcp": 2122,
+  "tbt": 0,
+  "fails": [
+   "first-contentful-paint",
+   "largest-contentful-paint",
+   "interactive",
+   "unminified-javascript",
+   "unused-javascript",
+   "is-crawlable",
+   "cache-insight",
+   "document-latency-insight",
+   "network-dependency-tree-insight",
+   "render-blocking-insight"
+  ],
+  "runtimeError": null
+ },
+ "a2/index.html": {
+  "perf": 0.99,
+  "a11y": 1,
+  "bp": 1,
+  "seo": 1,
+  "cls": 0,
+  "lcp": 1732,
+  "tbt": 3,
+  "fails": [
+   "first-contentful-paint",
+   "largest-contentful-paint",
+   "unminified-javascript",
+   "cache-insight",
+   "document-latency-insight",
+   "network-dependency-tree-insight",
+   "render-blocking-insight"
+  ],
+  "runtimeError": null
+ },
+ "b1/dashboard.html": {
+  "perf": 0.99,
+  "a11y": 1,
+  "bp": 1,
+  "seo": 0.66,
+  "cls": 0,
+  "lcp": 2132,
+  "tbt": 10,
+  "fails": [
+   "first-contentful-paint",
+   "largest-contentful-paint",
+   "max-potential-fid",
+   "interactive",
+   "unminified-javascript",
+   "unused-javascript",
+   "is-crawlable",
+   "cache-insight",
+   "document-latency-insight",
+   "network-dependency-tree-insight",
+   "render-blocking-insight"
+  ],
+  "runtimeError": null
+ },
+ "b1/index.html": {
+  "perf": 1,
+  "a11y": 1,
+  "bp": 1,
+  "seo": 1,
+  "cls": 0,
+  "lcp": 1641.3757500000002,
+  "tbt": 18,
+  "fails": [
+   "first-contentful-paint",
+   "largest-contentful-paint",
+   "unminified-javascript",
+   "cache-insight",
+   "document-latency-insight",
+   "network-dependency-tree-insight",
+   "render-blocking-insight"
+  ],
+  "runtimeError": null
+ },
+ "b2/dashboard.html": {
+  "perf": 0.99,
+  "a11y": 1,
+  "bp": 1,
+  "seo": 0.66,
+  "cls": 0,
+  "lcp": 2038.75265,
+  "tbt": 0,
+  "fails": [
+   "first-contentful-paint",
+   "largest-contentful-paint",
+   "interactive",
+   "unminified-javascript",
+   "unused-javascript",
+   "is-crawlable",
+   "cache-insight",
+   "document-latency-insight",
+   "network-dependency-tree-insight",
+   "render-blocking-insight"
+  ],
+  "runtimeError": null
+ },
+ "b2/index.html": {
+  "perf": 1,
+  "a11y": 1,
+  "bp": 1,
+  "seo": 1,
+  "cls": 0,
+  "lcp": 1616.60015,
+  "tbt": 0,
+  "fails": [
+   "first-contentful-paint",
+   "largest-contentful-paint",
+   "unminified-javascript",
+   "cache-insight",
+   "document-latency-insight",
+   "network-dependency-tree-insight",
+   "render-blocking-insight"
+  ],
+  "runtimeError": null
+ },
+ "c1/dashboard.html": {
+  "perf": 0.98,
+  "a11y": 1,
+  "bp": 1,
+  "seo": 0.66,
+  "cls": 0,
+  "lcp": 2131.64825,
+  "tbt": 0,
+  "fails": [
+   "first-contentful-paint",
+   "largest-contentful-paint",
+   "speed-index",
+   "interactive",
+   "unminified-javascript",
+   "unused-javascript",
+   "is-crawlable",
+   "cache-insight",
+   "document-latency-insight",
+   "network-dependency-tree-insight",
+   "render-blocking-insight"
+  ],
+  "runtimeError": null
+ },
+ "c1/index.html": {
+  "perf": 1,
+  "a11y": 1,
+  "bp": 1,
+  "seo": 1,
+  "cls": 0,
+  "lcp": 1635.69075,
+  "tbt": 0,
+  "fails": [
+   "first-contentful-paint",
+   "largest-contentful-paint",
+   "unminified-javascript",
+   "cache-insight",
+   "document-latency-insight",
+   "network-dependency-tree-insight",
+   "render-blocking-insight"
+  ],
+  "runtimeError": null
+ },
+ "c2/dashboard.html": {
+  "perf": 0.98,
+  "a11y": 1,
+  "bp": 1,
+  "seo": 0.66,
+  "cls": 0,
+  "lcp": 2313.332,
+  "tbt": 19,
+  "fails": [
+   "first-contentful-paint",
+   "largest-contentful-paint",
+   "speed-index",
+   "max-potential-fid",
+   "interactive",
+   "unminified-javascript",
+   "unused-javascript",
+   "is-crawlable",
+   "cache-insight",
+   "document-latency-insight",
+   "network-dependency-tree-insight",
+   "render-blocking-insight"
+  ],
+  "runtimeError": null
+ },
+ "c2/index.html": {
+  "perf": 0.99,
+  "a11y": 1,
+  "bp": 1,
+  "seo": 1,
+  "cls": 0,
+  "lcp": 1752,
+  "tbt": 7,
+  "fails": [
+   "first-contentful-paint",
+   "largest-contentful-paint",
+   "unminified-javascript",
+   "cache-insight",
+   "document-latency-insight",
+   "network-dependency-tree-insight",
+   "render-blocking-insight"
+  ],
+  "runtimeError": null
+ },
+ "courses/course.html": {
+  "perf": 1,
+  "a11y": 1,
+  "bp": 1,
+  "seo": 1,
+  "cls": 0,
+  "lcp": 1363,
+  "tbt": 3.5,
+  "fails": [
+   "first-contentful-paint",
+   "unminified-javascript",
+   "cache-insight",
+   "document-latency-insight",
+   "lcp-discovery-insight",
+   "network-dependency-tree-insight",
+   "render-blocking-insight"
+  ],
+  "runtimeError": null
+ },
+ "courses/index.html": {
+  "perf": 1,
+  "a11y": 1,
+  "bp": 1,
+  "seo": 1,
+  "cls": 0,
+  "lcp": 1758,
+  "tbt": 0,
+  "fails": [
+   "first-contentful-paint",
+   "largest-contentful-paint",
+   "speed-index",
+   "unminified-javascript",
+   "cache-insight",
+   "document-latency-insight",
+   "network-dependency-tree-insight",
+   "render-blocking-insight"
+  ],
+  "runtimeError": null
+ },
+ "courses/journey.html": {
+  "perf": 1,
+  "a11y": 1,
+  "bp": 1,
+  "seo": 1,
+  "cls": 0,
+  "lcp": 1600.1436,
+  "tbt": 0,
+  "fails": [
+   "first-contentful-paint",
+   "largest-contentful-paint",
+   "unminified-javascript",
+   "cache-insight",
+   "document-latency-insight",
+   "lcp-discovery-insight",
+   "network-dependency-tree-insight",
+   "render-blocking-insight"
+  ],
+  "runtimeError": null
+ },
+ "courses/lesson.html": {
+  "perf": 1,
+  "a11y": 1,
+  "bp": 1,
+  "seo": 1,
+  "cls": 0,
+  "lcp": 1686,
+  "tbt": 0,
+  "fails": [
+   "first-contentful-paint",
+   "largest-contentful-paint",
+   "unminified-css",
+   "unminified-javascript",
+   "cache-insight",
+   "document-latency-insight",
+   "lcp-discovery-insight",
+   "network-dependency-tree-insight",
+   "render-blocking-insight"
+  ],
+  "runtimeError": null
+ },
+ "index.html": {
+  "perf": 0.99,
+  "a11y": 1,
+  "bp": 1,
+  "seo": 1,
+  "cls": 0,
+  "lcp": 1826.0522999999998,
+  "tbt": 0,
+  "fails": [
+   "first-contentful-paint",
+   "largest-contentful-paint",
+   "speed-index",
+   "unminified-javascript",
+   "unused-javascript",
+   "cache-insight",
+   "document-latency-insight",
+   "network-dependency-tree-insight",
+   "render-blocking-insight"
+  ],
+  "runtimeError": null
+ },
+ "main/index.html": {
+  "perf": 0.98,
+  "a11y": 1,
+  "bp": 1,
+  "seo": 1,
+  "cls": 0,
+  "lcp": 1939.737,
+  "tbt": 5,
+  "fails": [
+   "first-contentful-paint",
+   "largest-contentful-paint",
+   "speed-index",
+   "interactive",
+   "unminified-javascript",
+   "unused-javascript",
+   "cache-insight",
+   "document-latency-insight",
+   "network-dependency-tree-insight",
+   "render-blocking-insight"
+  ],
+  "runtimeError": null
+ },
+ "main/placement.html": {
+  "perf": 0.98,
+  "a11y": 1,
+  "bp": 1,
+  "seo": 1,
+  "cls": 0,
+  "lcp": 1867.9065999999998,
+  "tbt": 1,
+  "fails": [
+   "first-contentful-paint",
+   "largest-contentful-paint",
+   "speed-index",
+   "unminified-javascript",
+   "unused-javascript",
+   "cache-insight",
+   "document-latency-insight",
+   "network-dependency-tree-insight",
+   "render-blocking-insight"
+  ],
+  "runtimeError": null
+ },
+ "main/practice.html": {
+  "perf": 0.99,
+  "a11y": 1,
+  "bp": 1,
+  "seo": 1,
+  "cls": 0,
+  "lcp": 1994,
+  "tbt": 0,
+  "fails": [
+   "first-contentful-paint",
+   "largest-contentful-paint",
+   "speed-index",
+   "interactive",
+   "redirects",
+   "unminified-javascript",
+   "cache-insight"
+  ],
+  "runtimeError": null
+ },
+ "main/progress.html": {
+  "perf": 0.99,
+  "a11y": 1,
+  "bp": 1,
+  "seo": 0.66,
+  "cls": 0,
+  "lcp": 1634.5900000000001,
+  "tbt": 0,
+  "fails": [
+   "largest-contentful-paint",
+   "speed-index",
+   "unminified-javascript",
+   "is-crawlable",
+   "cache-insight",
+   "document-latency-insight",
+   "network-dependency-tree-insight",
+   "render-blocking-insight"
+  ],
+  "runtimeError": null
+ },
+ "shared/quiz.html": {
+  "perf": 0.95,
+  "a11y": 1,
+  "bp": 1,
+  "seo": 0.63,
+  "cls": 0,
+  "lcp": 2714.6059999999998,
+  "tbt": 0,
+  "fails": [
+   "first-contentful-paint",
+   "largest-contentful-paint",
+   "speed-index",
+   "interactive",
+   "unminified-javascript",
+   "unused-javascript",
+   "is-crawlable",
+   "cache-insight",
+   "document-latency-insight",
+   "network-dependency-tree-insight",
+   "render-blocking-insight"
+  ],
+  "runtimeError": null
+ }
+}

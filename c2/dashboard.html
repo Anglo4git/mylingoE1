@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="description" content="See your Mylingo English progress at this level: quizzes attempted, completed, and your average score, tracked automatically as you practice."><meta name="robots" content="noindex">
 <link rel="icon" type="image/svg+xml" href="../shared/brand/icon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="../shared/brand/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../shared/brand/favicon-192.png">
@@ -19,9 +19,11 @@ header{padding:22px 16px;background:#fff;border-bottom:1px solid var(--line);pad
 .headrow{max-width:950px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
 .brand-logo{height:26px;width:auto;display:block}
 .headrow nav a{font-size:13px;font-weight:700;text-decoration:none;color:var(--muted);border:1px solid var(--line);border-radius:99px;padding:12px 16px;display:inline-flex;align-items:center;min-height:44px}
-main{max-width:950px;margin:auto;padding:20px 16px 60px}
+main{max-width:950px;margin:auto;padding:20px 16px 60px;min-height:100vh}
 h1{margin:0 0 16px}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:26px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:26px;min-height:267px}
+#body{min-height:118px}
+main.pending #body,main.pending #resetWrap,main.pending #masteryReviewMount,main.pending #offlinePacksMount{visibility:hidden}
 .stat{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px}
 .stat .n{font-size:26px;font-weight:900}
 .stat .l{color:var(--muted);font-size:12px;margin-top:2px}
@@ -39,7 +41,7 @@ h1{margin:0 0 16px}
 .status.not-started{background:#f1f3f5;color:var(--muted)}
 .empty{text-align:center;color:var(--muted);padding:40px 20px;background:#fff;border:1px solid var(--line);border-radius:18px}
 .empty a{color:var(--brand);font-weight:800;text-decoration:none}
-.reset{margin-top:30px;text-align:right}
+.reset{margin-top:30px;text-align:right;min-height:47px}
 .reset button{background:none;border:1px solid var(--line);color:var(--muted);padding:9px 16px;border-radius:99px;font-size:12px;cursor:pointer;min-height:44px;transition:transform 220ms var(--ease-release),background-color 120ms var(--ease-micro)}
 .reset button:active{transform:scale(.96);transition-duration:80ms;transition-timing-function:var(--ease-micro)}
 footer{max-width:950px;margin:0 auto;padding:24px 16px 40px;color:var(--muted);font-size:13px;text-align:center}
@@ -54,7 +56,7 @@ footer{max-width:950px;margin:0 auto;padding:24px 16px 40px;color:var(--muted);f
 <script src="../shared/js/splash.js"></script><script src="../shared/js/level-lock.js"></script><body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
 <header><div class="headrow">
-  <img class="brand-logo" src="../shared/brand/logo-horizontal.svg" alt="Mylingo">
+  <img class="brand-logo" src="../shared/brand/logo-horizontal.svg" alt="Mylingo" width="81" height="26">
   <nav><a href="./index.html">Practice</a> <a id="hubLink" href="../main/index.html">All levels</a></nav>
 </div></header>
 <main id="main-content">
@@ -79,6 +81,7 @@ if(window.MylingoLevelLock && window.MylingoLevelLock.isLocked(level)){
   return;
 }
 document.title='Mylingo '+level.toUpperCase()+' · Dashboard';
+$('main-content').classList.add('pending');
 $('title').textContent=level.toUpperCase()+' progress';
 
 try{if(window.MylingoMasteryReviewUI){window.MylingoMasteryReviewUI.mount(document.getElementById('masteryReviewMount'),{level:level});}}catch(e){}
@@ -95,6 +98,11 @@ function timeAgo(ts){
 }
 
 async function load(){
+  try{ await render(); }
+  finally{ $('main-content').classList.remove('pending'); }
+}
+
+async function render(){
   let manifest=[];
   try{
     const res=await fetch('./quizzes.json',{cache:'no-store'});

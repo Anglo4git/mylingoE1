@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="description" content="Work through an interactive Mylingo English lesson with guided practice and instant feedback.">
 <link rel="icon" type="image/svg+xml" href="../shared/brand/icon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="../shared/brand/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../shared/brand/favicon-192.png">
@@ -18,8 +18,10 @@ html,body{height:100%}
 body.lesson-player{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;margin:0;background:var(--bg);color:var(--ink)}
 :focus-visible{outline:3px solid var(--brand);outline-offset:2px}
 a{color:inherit}
-.skip-link{position:absolute;left:8px;top:-48px;background:var(--brand);color:#0b0c0d;padding:10px 16px;border-radius:10px;font-weight:800;text-decoration:none;z-index:1000;transition:top .15s ease}
+.skip-link{position:absolute;left:8px;top:-48px;background:var(--brand);color:#fff;padding:10px 16px;border-radius:10px;font-weight:800;text-decoration:none;z-index:1000;transition:top .15s ease}
 .skip-link:focus{top:8px}
+.slide:focus{outline:none}
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 
 /* ---- Full-screen player mode (Agent NAV-STRIP): no branded site header,
    no bottom app-shell nav — this page is the fullscreen slide player.
@@ -35,7 +37,7 @@ a{color:inherit}
 .trail-item .num{width:22px;height:22px;border-radius:50%;background:var(--line);color:var(--muted);display:grid;place-items:center;font-size:10px;font-weight:900;flex:0 0 auto;transition:background .2s,color .2s}.trail-item .type-icon{font-size:12px;line-height:1;opacity:.95}.trail-item.active .type-icon{opacity:1}
 .trail-item.done .num{background:var(--success);color:#0b0c0d}
 .trail-item .kind{font-size:12px;line-height:1}.trail-item.active{color:var(--brand);border-color:var(--brand)}
-.trail-item.active .num{background:var(--brand);color:#0b0c0d}
+.trail-item.active .num{background:var(--brand);color:#fff}
 .trail-item:hover{color:var(--ink)}
 
 main{max-width:820px;margin:auto;padding:20px 16px calc(90px + env(safe-area-inset-bottom))}
@@ -65,7 +67,10 @@ h1{margin:6px 0 8px;font-size:24px;color:var(--ink)}
 .examples li:first-child{border-top:none}
 .examples li::before{content:"";position:absolute;left:0;top:17px;width:8px;height:8px;border-radius:99px;background:var(--success)}
 .terms{display:flex;gap:8px;flex-wrap:wrap}
-.term{font-size:13px;font-weight:700;background:var(--success-soft);color:#8fe04a;border-radius:99px;padding:6px 12px}
+/* Agent 15: forced-colors (Windows High Contrast) — the UA flattens backgrounds, so the active/done trail state and term chips need a non-colour cue */
+@media (forced-colors:active){.trail-item .num{border:1px solid CanvasText}.trail-item.active{outline:3px solid Highlight;outline-offset:-3px;text-decoration:underline}.trail-item.done .num::after{content:"\2713";margin-left:2px}.term{border:1px solid CanvasText}}
+
+.term{font-size:13px;font-weight:700;background:var(--success-soft);color:#2f6d06;border-radius:99px;padding:6px 12px}
 .media img{max-width:100%;border-radius:12px;display:block}
 /* Blog-style body content authored as rich HTML inside the lesson JSON
    (body_content). Styles are scoped to .lesson-content so authored markup
@@ -147,8 +152,8 @@ h1{margin:6px 0 8px;font-size:24px;color:var(--ink)}
 </style></head>
 <script src="../shared/js/splash.js"></script><body class="lesson-player">
 <a href="#main-content" class="skip-link">Skip to main content</a>
-<div class="player-top">
-  <nav class="chapter-trail" id="chapterTrail" role="tablist" aria-label="Lesson sections"></nav>
+<div class="player-top" role="region" aria-label="Lesson navigation">
+  <nav class="chapter-trail" id="chapterTrail" aria-label="Lesson sections"></nav>
 </div>
 <main id="main-content">
   <div id="content"><div class="loading" role="status" aria-live="polite">Loading lesson…</div></div>
@@ -362,7 +367,7 @@ lessonsFetch.catch(function(){
 
     var showCategoryChip=lesson.category && lesson.category.trim().toLowerCase()!==(unit.title||'').trim().toLowerCase();
     var headerHtml=
-      '<div class="course-id"><span class="lvl-badge">'+esc(course.level)+'</span><span>'+esc(course.title)+'</span><span class="sep">·</span><span class="unit-name">'+esc(unit.title)+'</span></div>'+
+      '<div class="course-id"><span class="lvl-badge">'+esc(course.level)+'</span><span>'+esc(course.title)+'</span><span class="sep" aria-hidden="true">·</span><span class="unit-name">'+esc(unit.title)+'</span></div>'+
       '<div class="topline">'+(showCategoryChip?'<span class="chip">'+esc(lesson.category)+'</span>':'<span></span>')+
         (startUrl?'<a class="skipbtn" href="'+startUrl+'">Skip revision</a>':'')+
       '</div>'+
@@ -418,12 +423,12 @@ lessonsFetch.catch(function(){
     function renderTrail(){
       $('chapterTrail').innerHTML=slides.map(function(s,i){
         var cls='trail-item'+(i===currentIndex?' active':'')+(i<currentIndex?' done':'');
-        var icon=s.kind==='video'?'▶':(s.kind==='audio'?'◖':(s.kind==='practice'?'✓':'T')); return '<button type="button" class="'+cls+'" data-idx="'+i+'" role="tab" aria-selected="'+(i===currentIndex)+'" aria-label="Slide '+(i+1)+' of '+slides.length+': '+esc(s.label)+'"><span class="num">'+(i+1)+'</span><span class="type-icon" aria-hidden="true">'+icon+'</span><span>'+esc(s.label)+'</span></button>';
+        var icon=s.kind==='video'?'▶':(s.kind==='audio'?'◖':(s.kind==='practice'?'✓':'T')); return '<button type="button" class="'+cls+'" data-idx="'+i+'"'+(i===currentIndex?' aria-current="step"':'')+(i>maxReached?' aria-disabled="true"':'')+' aria-label="Slide '+(i+1)+' of '+slides.length+': '+esc(s.label)+'"><span class="num">'+(i+1)+'</span><span class="type-icon" aria-hidden="true">'+icon+'</span><span>'+esc(s.label)+'</span></button>';
       }).join('');
       Array.prototype.forEach.call($('chapterTrail').querySelectorAll('.trail-item'),function(btn){
         btn.addEventListener('click',function(){
           var idx=Number(btn.getAttribute('data-idx'));
-          if(idx<=maxReached) goToSlide(idx);
+          if(idx<=maxReached) goToSlide(idx,true);
         });
       });
     }
@@ -436,24 +441,26 @@ lessonsFetch.catch(function(){
         if(lessonPassReady && lastCtaHref){
           nextHtml='<a class="btn primary" id="navNext" href="'+lastCtaHref+'">'+esc(lastCtaLabel)+'</a>';
         }else{
-          nextHtml='<button type="button" class="btn primary" id="navNext" disabled style="opacity:.5;cursor:not-allowed" title="Pass 90% of lesson quizzes first">'+esc(lastCtaLabel)+'</button>';
+          nextHtml='<button type="button" class="btn primary" id="navNext" disabled style="opacity:.5;cursor:not-allowed" title="Pass 90% of lesson quizzes first" aria-describedby="navHint">'+esc(lastCtaLabel)+'</button><span class="sr-only" id="navHint">Pass 90% of the lesson quizzes to unlock this.</span>';
         }
       } else {
         nextHtml='<button type="button" class="btn primary" id="navNext">Continue</button>';
       }
       $('playerNav').innerHTML='<div class="player-nav-inner">'+backHtml+nextHtml+'</div>';
-      var backBtn=$('navBack'); if(backBtn) backBtn.addEventListener('click',function(){ goToSlide(currentIndex-1) });
-      var nextBtn=$('navNext'); if(nextBtn && !isLast) nextBtn.addEventListener('click',function(){ goToSlide(currentIndex+1) });
+      var backBtn=$('navBack'); if(backBtn) backBtn.addEventListener('click',function(){ goToSlide(currentIndex-1,true) });
+      var nextBtn=$('navNext'); if(nextBtn && !isLast) nextBtn.addEventListener('click',function(){ goToSlide(currentIndex+1,true) });
     }
 
-    function goToSlide(idx){
+    function goToSlide(idx,moveFocus){
       idx=Math.max(0,Math.min(slides.length-1,idx));
       currentIndex=idx;
       if(idx>maxReached) maxReached=idx;
-      $('content').innerHTML='<div class="slide">'+slides[idx].html+'</div>';
+      $('content').innerHTML='<div class="slide" tabindex="-1" role="region" aria-label="Slide '+(idx+1)+' of '+slides.length+': '+esc(slides[idx].label)+'">'+slides[idx].html+'</div>';
       renderTrail();
       renderNav();
-      window.scrollTo({top:0,behavior:'smooth'});
+      var reduce=false; try{reduce=typeof window.matchMedia==='function'&&window.matchMedia('(prefers-reduced-motion: reduce)').matches}catch(e){}
+      window.scrollTo({top:0,behavior:reduce?'auto':'smooth'});
+      if(moveFocus){var sl=$('content').querySelector('.slide'); if(sl&&typeof sl.focus==='function'){try{sl.focus({preventScroll:true})}catch(e){sl.focus()}}}
     }
 
     var startIndex=(requestedSlide==='practice'&&initialPractice>=0)?initialPractice:0;

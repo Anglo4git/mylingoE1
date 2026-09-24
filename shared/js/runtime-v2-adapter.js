@@ -13,8 +13,7 @@
     comparison: 'matching',
     reorganizer: 'ranking',
     reorganizer_task: 'ranking',
-    complete_question: 'fill_in_the_blank',
-    'complete-question': 'fill_in_the_blank'
+    complete_question: 'fill_in_the_blank'
   };
 
   function isObject(value) {
@@ -28,31 +27,74 @@
     return fallback;
   }
 
+  // Agent 204: authored / fetched JSON is untrusted. String(x) turned an object
+  // into the learner-visible text "[object Object]", an array into "a,b", `true`
+  // into "true", and THREW ("Cannot convert object to primitive value") for an
+  // object carrying its own non-function `toString`. Only strings and finite
+  // numbers are text now; everything else is ''.
   function stringValue(value) {
-    return value == null ? '' : String(value).trim();
+    if (typeof value === 'string') return value.trim();
+    return typeof value === 'number' && Number.isFinite(value) ? String(value) : '';
   }
 
+  // Agent 204: only a real number or a non-blank numeric string is a number.
+  // Number(true) / Number(false) / Number([]) / Number([5]) / Number(' ') are
+  // 1 / 0 / 0 / 5 / 0, so `version: true`, `correct_index: false` (0) or
+  // `questions: [3]` used to be read as valid numbers.
   function numberValue(value, fallback) {
-    if (value === '' || value == null) return fallback;
-    var n = Number(value);
+    var n;
+    if (typeof value === 'number') n = value;
+    else if (typeof value === 'string' && value.trim() !== '') n = Number(value);
+    else return fallback;
     return Number.isFinite(n) ? n : fallback;
   }
 
-  function normalizedLevel(value, fallback) {
+  function validLevel(value) {
     var level = stringValue(value).toLowerCase();
-    return LEVELS.indexOf(level) >= 0 ? level : fallback || '';
+    return LEVELS.indexOf(level) >= 0 ? level : '';
   }
 
-  function normalizedType(value) {
-    var type = stringValue(value || 'radio').toLowerCase().replace(/[\s-]+/g, '_');
-    return QUESTION_TYPE_ALIASES[type] || type || 'radio';
+  // The fallback (options.level, which the page takes from the URL) used to be
+  // returned RAW, so a junk value became the quiz's level unchecked.
+  function normalizedLevel(value, fallback) {
+    return validLevel(value) || validLevel(fallback);
+  }
+
+  // Own-property lookup only: a bare QUESTION_TYPE_ALIASES[type] also resolves
+  // inherited names, so question_type "__proto__" / "constructor" came back as
+  // Object.prototype / the Object function instead of a string.
+  // A type is a string; a junk / blank one is the caller's default (a question is
+  // `radio`, an activity is `quiz`).
+  function normalizedType(value, fallback) {
+    var type = typeof value === 'string' ? value.trim().toLowerCase().replace(/[\s-]+/g, '_') : '';
+    if (Object.prototype.hasOwnProperty.call(QUESTION_TYPE_ALIASES, type)) return QUESTION_TYPE_ALIASES[type];
+    return type || fallback;
+  }
+
+  // First non-blank id among the keys (id 0 is a real id; an object / blank is not).
+  function idOf(obj, keys, fallback) {
+    for (var i = 0; i < keys.length; i += 1) {
+      var id = stringValue(obj[keys[i]]);
+      if (id) return id;
+    }
+    return stringValue(fallback);
+  }
+
+  // `tags` are a comma-separated string; an authored array of strings is joined
+  // the same way, anything else is not a tag list.
+  function tagsValue(value) {
+    if (Array.isArray(value)) {
+      return value.map(stringValue).filter(Boolean).join(',');
+    }
+    return stringValue(value);
   }
 
   function normalizeAnswer(value) {
     if (isObject(value)) {
       return stringValue(firstDefined(value, ['text', 'label', 'value'], ''));
     }
-    return stringValue(value);
+    // A True / False question may legitimately be authored with real booleans.
+    return typeof value === 'boolean' ? String(value) : stringValue(value);
   }
 
   function answerList(question) {
@@ -83,9 +125,11 @@
       if (Number.isInteger(legacy)) return legacy + 1;
     }
 
-    var direct = firstDefined(question, ['correctIndex', 'correct_index', 'correctAnswerIndex', 'correct_answer_index'], null);
-    if (direct != null) {
-      var n = numberValue(direct, null);
+    // Agent 204: the first alias holding a real integer wins; a junk value under
+    // an earlier alias (`correctIndex: "x"`) no longer hides a valid later one.
+    var aliases = ['correctIndex', 'correct_index', 'correctAnswerIndex', 'correct_answer_index'];
+    for (var a = 0; a < aliases.length; a += 1) {
+      var n = numberValue(question[aliases[a]], null);
       if (Number.isInteger(n)) return n;
     }
 
@@ -112,25 +156,43 @@
       value = question.answers;
     }
     if (value == null) return undefined;
-    return Array.isArray(value) ? value.slice() : [value];
+    // Agent 204: the consumer compares String(accepted), so a raw object item
+    // (an option-object answers[] fallback, or a junk accepted entry) would
+    // accept the text "[object Object]" and a null item the text "null". Strings,
+    // numbers and booleans are kept as authored; an object contributes its
+    // text / label / value; anything else is dropped.
+    return (Array.isArray(value) ? value : [value]).map(function (item) {
+      if (typeof item === 'string' || typeof item === 'boolean') return item;
+      if (typeof item === 'number') return Number.isFinite(item) ? item : undefined;
+      // An object contributes its text; null / arrays / functions come back '' and drop out.
+      return normalizeAnswer(item) || undefined;
+    }).filter(function (item) { return item !== undefined; });
   }
 
   function normalizeMedia(question) {
     var media = isObject(question.media) ? question.media : null;
     if (!media && (question.imageUrl != null || question.audioUrl != null)) {
       media = {};
-      if (question.imageUrl != null) media.image = { src: question.imageUrl, alt: question.imageAlt || '' };
-      if (question.audioUrl != null) media.audio = { src: question.audioUrl, label: question.audioLabel || '' };
+      media.image = { src: question.imageUrl, alt: question.imageAlt };
+      media.audio = { src: question.audioUrl, label: question.audioLabel };
     }
     if (!media) return undefined;
 
+    // A media source is a string: a number / object / array is not a URL, and a
+    // blank string is not a source. The first non-blank string of src / url wins.
+    function sourceOf(value, keys) {
+      for (var i = 0; i < keys.length; i += 1) {
+        if (typeof value[keys[i]] === 'string' && value[keys[i]].trim()) return value[keys[i]].trim();
+      }
+      return '';
+    }
+
     function one(key) {
       var value = media[key];
-      if (value == null) return undefined;
-      if (typeof value === 'string') return { src: value };
+      if (typeof value === 'string') return { src: value.trim() };
       if (isObject(value)) {
         return {
-          src: stringValue(firstDefined(value, ['src', 'url'], '')),
+          src: sourceOf(value, ['src', 'url']),
           alt: stringValue(firstDefined(value, ['alt', 'label'], '')),
           label: stringValue(value.label || '')
         };
@@ -157,7 +219,7 @@
     var out = {
       question: stringValue(firstDefined(input, ['question', 'question_text', 'prompt', 'content'], '')),
       category: stringValue(firstDefined(input, ['category', 'question_category'], '')),
-      tags: stringValue(firstDefined(input, ['tags', 'question_tags'], '')),
+      tags: tagsValue(firstDefined(input, ['tags', 'question_tags'], '')),
       explanation: stringValue(firstDefined(input, ['explanation', 'question_explanation'], '')),
       correctIndex: normalizeCorrectIndex(input, answers),
       answers: answers
@@ -169,7 +231,7 @@
       Object.keys(metadata).forEach(function (key) { out[key] = metadata[key]; });
     }
 
-    var type = normalizedType(firstDefined(input, ['question_type', 'questionType', 'type'], 'radio'));
+    var type = normalizedType(firstDefined(input, ['question_type', 'questionType', 'type'], 'radio'), 'radio');
     if (type !== 'radio') out.question_type = type;
 
     var media = normalizeMedia(input);
@@ -193,7 +255,6 @@
     });
 
     if (out.correctIndex == null && input.correctIndices !== undefined) delete out.correctIndex;
-    if (out.question_type === 'radio') delete out.question_type;
     return out;
   }
 
@@ -215,8 +276,8 @@
       description: stringValue(firstDefined(input, ['description', 'summary'], '')),
       brand: stringValue(firstDefined(input, ['brand'], 'Mylingo')) || 'Mylingo',
       category: stringValue(firstDefined(input, ['category', 'quiz_category'], '')),
-      tags: stringValue(firstDefined(input, ['tags', 'quiz_tags'], '')),
-      level: normalizedLevel(firstDefined(input, ['level', 'cefr_level'], options.level || ''), options.level || ''),
+      tags: tagsValue(firstDefined(input, ['tags', 'quiz_tags'], '')),
+      level: normalizedLevel(input.level, '') || normalizedLevel(input.cefr_level, options.level),
       version: numberValue(firstDefined(input, ['version'], 1), 1),
       questions: questionSource.map(normalizeQuestion)
     };
@@ -229,28 +290,24 @@
     return out;
   }
 
-  function canonicalId(value, fallback) {
-    var id = stringValue(value);
-    return id || stringValue(fallback);
-  }
-
   function normalizeHierarchy(input) {
     if (!isObject(input)) throw new Error('Content hierarchy must be an object.');
 
     var course = isObject(input.course) ? input.course : input;
     var units = Array.isArray(input.units) ? input.units : (Array.isArray(course.units) ? course.units : []);
+    var courseId = idOf(course, ['id', 'course_id'], '');
     var normalizedUnits = units.map(function (unit, unitIndex) {
       unit = isObject(unit) ? unit : {};
-      var unitId = canonicalId(unit.id || unit.unit_id, 'unit-' + (unitIndex + 1));
+      var unitId = idOf(unit, ['id', 'unit_id'], 'unit-' + (unitIndex + 1));
       var lessons = Array.isArray(unit.lessons) ? unit.lessons : [];
 
       return {
         id: unitId,
         title: stringValue(firstDefined(unit, ['title', 'name'], '')),
-        course_id: canonicalId(unit.course_id || unit.courseId, course.id || course.course_id),
+        course_id: idOf(unit, ['course_id', 'courseId'], courseId),
         lessons: lessons.map(function (lesson, lessonIndex) {
           lesson = isObject(lesson) ? lesson : {};
-          var lessonId = canonicalId(lesson.id || lesson.lesson_id, unitId + '-lesson-' + (lessonIndex + 1));
+          var lessonId = idOf(lesson, ['id', 'lesson_id'], unitId + '-lesson-' + (lessonIndex + 1));
           var activities = Array.isArray(lesson.activities) ? lesson.activities : [];
 
           return {
@@ -259,21 +316,21 @@
             unit_id: unitId,
             activities: activities.map(function (activity, activityIndex) {
               activity = isObject(activity) ? activity : {};
-              var activityId = canonicalId(activity.id || activity.activity_id, lessonId + '-activity-' + (activityIndex + 1));
+              var activityId = idOf(activity, ['id', 'activity_id'], lessonId + '-activity-' + (activityIndex + 1));
               var rawQuestions = Array.isArray(activity.questions) ? activity.questions : [];
               var questions = rawQuestions.map(function (question) {
                 var normalized = normalizeQuestion(question);
                 // Hierarchy is a source-side contract, so keep an explicitly
                 // authored type (including `radio`) visible here. The legacy
                 // quiz runtime still omits `radio` when flattened below.
-                normalized.question_type = normalizedType(firstDefined(question, ['question_type', 'questionType', 'type'], 'radio'));
+                normalized.question_type = normalizedType(firstDefined(question, ['question_type', 'questionType', 'type'], 'radio'), 'radio');
                 return normalized;
               });
               return {
                 id: activityId,
                 title: stringValue(firstDefined(activity, ['title', 'name'], '')),
                 lesson_id: lessonId,
-                activity_type: normalizedType(firstDefined(activity, ['activity_type', 'activityType', 'type'], 'quiz')),
+                activity_type: normalizedType(firstDefined(activity, ['activity_type', 'activityType', 'type'], 'quiz'), 'quiz'),
                 questions: questions
               };
             })
@@ -284,7 +341,7 @@
 
     return {
       course: {
-        id: canonicalId(course.id || course.course_id, ''),
+        id: courseId,
         title: stringValue(firstDefined(course, ['title', 'name'], '')),
         units: normalizedUnits
       }
@@ -308,7 +365,7 @@
     var match = matches[0];
     var activity = match.activity;
     return normalizeQuiz({
-      id: canonicalId(activity.id, match.lesson.id + '-activity-1'),
+      id: activity.id,
       title: activity.title || match.lesson.title || course.title,
       category: firstDefined(input, ['category'], ''),
       level: firstDefined(input, ['level'], ''),
@@ -327,9 +384,9 @@
         topic: stringValue(firstDefined(entry, ['topic'], '')),
         description: stringValue(firstDefined(entry, ['description', 'summary'], '')),
         category: stringValue(firstDefined(entry, ['category', 'quiz_category'], '')),
-        tags: stringValue(firstDefined(entry, ['tags', 'quiz_tags'], '')),
+        tags: tagsValue(firstDefined(entry, ['tags', 'quiz_tags'], '')),
         level: normalizedLevel(entry.level),
-        questions: numberValue(entry.questions, 0),
+        questions: Math.max(0, Math.trunc(numberValue(entry.questions, 0))),
         version: numberValue(entry.version, 1)
       };
       if (entry.date !== undefined) out.date = entry.date;

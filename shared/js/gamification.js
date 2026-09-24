@@ -257,17 +257,32 @@
   function validLevel(value) { return ['a1','a2','b1','b2','c1','c2'].indexOf(String(value || '').toLowerCase()) >= 0; }
   function validSkill(value) { return ['grammar','vocabulary','reading','listening','writing','usage'].indexOf(String(value || '').toLowerCase()) >= 0; }
 
+  // Agent 205: the section validators below used to gate on `Number(x)` directly.
+  // Number(true) / Number([5]) / Number([]) are 1 / 5 / 0, so an imported backup file
+  // could carry a boolean or a single-item/empty array in place of any numeric field
+  // (xpTotal, best, question_count, score, ...) and still pass validation — the value
+  // then went straight into localStorage via JSON.stringify(value) in restoreBackup,
+  // corrupting the live learner state with a non-numeric type that later reads would
+  // still coerce, mask, or silently misuse. Only a real number or a non-blank numeric
+  // string is treated as a number now; every other shape becomes NaN, which every
+  // existing isFiniteNumber(...) / Number.isInteger(...) check already rejects.
+  function strictNum(value) {
+    if (typeof value === 'number') return value;
+    if (typeof value === 'string' && value.trim() !== '') return Number(value);
+    return NaN;
+  }
+
   function validProgressEntry(entry, id) {
     if (!isPlainObject(entry) || typeof id !== 'string' || !id) return false;
     if (entry.id != null && String(entry.id) !== id) return false;
     if (entry.level != null && !validLevel(entry.level)) return false;
     if (entry.status != null && entry.status !== 'completed' && entry.status !== 'in-progress') return false;
-    if (entry.best != null && (!isFiniteNumber(Number(entry.best)) || Number(entry.best) < 0 || Number(entry.best) > 100)) return false;
-    if (entry.latest != null && (!isFiniteNumber(Number(entry.latest)) || Number(entry.latest) < 0 || Number(entry.latest) > 100)) return false;
-    if (entry.attempts != null && (!Number.isInteger(Number(entry.attempts)) || Number(entry.attempts) < 0)) return false;
-    if (entry.current != null && (!Number.isInteger(Number(entry.current)) || Number(entry.current) < 0)) return false;
-    if (entry.totalQuestions != null && (!Number.isInteger(Number(entry.totalQuestions)) || Number(entry.totalQuestions) < 0)) return false;
-    if (entry.lastAccess != null && !isFiniteNumber(Number(entry.lastAccess))) return false;
+    if (entry.best != null && (!isFiniteNumber(strictNum(entry.best)) || strictNum(entry.best) < 0 || strictNum(entry.best) > 100)) return false;
+    if (entry.latest != null && (!isFiniteNumber(strictNum(entry.latest)) || strictNum(entry.latest) < 0 || strictNum(entry.latest) > 100)) return false;
+    if (entry.attempts != null && (!Number.isInteger(strictNum(entry.attempts)) || strictNum(entry.attempts) < 0)) return false;
+    if (entry.current != null && (!Number.isInteger(strictNum(entry.current)) || strictNum(entry.current) < 0)) return false;
+    if (entry.totalQuestions != null && (!Number.isInteger(strictNum(entry.totalQuestions)) || strictNum(entry.totalQuestions) < 0)) return false;
+    if (entry.lastAccess != null && !isFiniteNumber(strictNum(entry.lastAccess))) return false;
     return true;
   }
 
@@ -358,48 +373,48 @@
 
   function validateGamification(state) {
     if (!isPlainObject(state)) return false;
-    if (state.xpTotal != null && (!isFiniteNumber(Number(state.xpTotal)) || Number(state.xpTotal) < 0)) return false;
-    if (state.streak != null && (!Number.isInteger(Number(state.streak)) || Number(state.streak) < 0)) return false;
-    if (state.longestStreak != null && (!Number.isInteger(Number(state.longestStreak)) || Number(state.longestStreak) < 0)) return false;
+    if (state.xpTotal != null && (!isFiniteNumber(strictNum(state.xpTotal)) || strictNum(state.xpTotal) < 0)) return false;
+    if (state.streak != null && (!Number.isInteger(strictNum(state.streak)) || strictNum(state.streak) < 0)) return false;
+    if (state.longestStreak != null && (!Number.isInteger(strictNum(state.longestStreak)) || strictNum(state.longestStreak) < 0)) return false;
     if (state.lastActiveDate != null && typeof state.lastActiveDate !== 'string') return false;
     if (state.rewardedSessions != null && !Array.isArray(state.rewardedSessions)) return false;
     return true;
   }
 
   function validateSkillMastery(store) {
-    if (!isPlainObject(store) || Number(store.version) !== 1) return false;
-    if (store.updated_at != null && !isFiniteNumber(Number(store.updated_at))) return false;
+    if (!isPlainObject(store) || strictNum(store.version) !== 1) return false;
+    if (store.updated_at != null && !isFiniteNumber(strictNum(store.updated_at))) return false;
     if (store.skills != null && !isPlainObject(store.skills)) return false;
     return Object.keys(store.skills || {}).every(function (skill) {
       var item = store.skills[skill];
       if (!validSkill(skill) || !isPlainObject(item)) return false;
-      if (!Number.isInteger(Number(item.question_count)) || item.question_count < 0) return false;
-      if (!Number.isInteger(Number(item.correct_count)) || item.correct_count < 0 || item.correct_count > item.question_count) return false;
-      if (!Number.isInteger(Number(item.attempt_count)) || item.attempt_count < 0) return false;
-      if (item.accuracy != null && (!isFiniteNumber(Number(item.accuracy)) || Number(item.accuracy) < 0 || Number(item.accuracy) > 100)) return false;
+      if (!Number.isInteger(strictNum(item.question_count)) || strictNum(item.question_count) < 0) return false;
+      if (!Number.isInteger(strictNum(item.correct_count)) || strictNum(item.correct_count) < 0 || strictNum(item.correct_count) > strictNum(item.question_count)) return false;
+      if (!Number.isInteger(strictNum(item.attempt_count)) || strictNum(item.attempt_count) < 0) return false;
+      if (item.accuracy != null && (!isFiniteNumber(strictNum(item.accuracy)) || strictNum(item.accuracy) < 0 || strictNum(item.accuracy) > 100)) return false;
       if (item.level_counts != null && !isPlainObject(item.level_counts)) return false;
       if (item.last_level != null && !validLevel(item.last_level)) return false;
       if (item.last_quiz_id != null && typeof item.last_quiz_id !== 'string') return false;
-      return item.last_attempt_at == null || isFiniteNumber(Number(item.last_attempt_at));
+      return item.last_attempt_at == null || isFiniteNumber(strictNum(item.last_attempt_at));
     });
   }
 
   function validateReviewScheduling(store) {
-    if (!isPlainObject(store) || Number(store.version) !== 1) return false;
-    if (store.updated_at != null && !isFiniteNumber(Number(store.updated_at))) return false;
+    if (!isPlainObject(store) || strictNum(store.version) !== 1) return false;
+    if (store.updated_at != null && !isFiniteNumber(strictNum(store.updated_at))) return false;
     if (store.skills != null && !isPlainObject(store.skills)) return false;
     return Object.keys(store.skills || {}).every(function (skill) {
       var card = store.skills[skill];
       if (!validSkill(skill) || !isPlainObject(card)) return false;
-      if (!isFiniteNumber(Number(card.interval_days)) || Number(card.interval_days) < 0 || Number(card.interval_days) > 30) return false;
-       if (card.interval_hours != null && (!isFiniteNumber(Number(card.interval_hours)) || Number(card.interval_hours) < 0 || Number(card.interval_hours) > 30 * 24)) return false;
-       if (card.interval_hours != null && Math.abs(Number(card.interval_days) * 24 - Number(card.interval_hours)) > 1e-9) return false;
-      if (!Number.isInteger(Number(card.consecutive_successes)) || Number(card.consecutive_successes) < 0) return false;
-      if (card.last_accuracy != null && (!isFiniteNumber(Number(card.last_accuracy)) || Number(card.last_accuracy) < 0 || Number(card.last_accuracy) > 100)) return false;
+      if (!isFiniteNumber(strictNum(card.interval_days)) || strictNum(card.interval_days) < 0 || strictNum(card.interval_days) > 30) return false;
+       if (card.interval_hours != null && (!isFiniteNumber(strictNum(card.interval_hours)) || strictNum(card.interval_hours) < 0 || strictNum(card.interval_hours) > 30 * 24)) return false;
+       if (card.interval_hours != null && Math.abs(strictNum(card.interval_days) * 24 - strictNum(card.interval_hours)) > 1e-9) return false;
+      if (!Number.isInteger(strictNum(card.consecutive_successes)) || strictNum(card.consecutive_successes) < 0) return false;
+      if (card.last_accuracy != null && (!isFiniteNumber(strictNum(card.last_accuracy)) || strictNum(card.last_accuracy) < 0 || strictNum(card.last_accuracy) > 100)) return false;
       if (card.last_quiz_id != null && typeof card.last_quiz_id !== 'string') return false;
       if (card.last_level != null && !validLevel(card.last_level)) return false;
-      if (card.last_review_at != null && !isFiniteNumber(Number(card.last_review_at))) return false;
-      return card.due_at == null || isFiniteNumber(Number(card.due_at));
+      if (card.last_review_at != null && !isFiniteNumber(strictNum(card.last_review_at))) return false;
+      return card.due_at == null || isFiniteNumber(strictNum(card.due_at));
     });
   }
 
@@ -418,31 +433,31 @@
     if (result == null) return true;
     if (!isPlainObject(result)) return false;
     if (!validLevel(result.recommended_level) || !validLevel(result.assessed_level)) return false;
-    if (!isFiniteNumber(Number(result.score)) || Number(result.score) < 0 || Number(result.score) > 100) return false;
+    if (!isFiniteNumber(strictNum(result.score)) || strictNum(result.score) < 0 || strictNum(result.score) > 100) return false;
     if (result.estimated_level != null && !validLevel(result.estimated_level)) return false;
     if (result.evidence != null && (!Array.isArray(result.evidence) || !result.evidence.every(validateEvidenceEntry))) return false;
-    if (result.evidence_question_count != null && (!Number.isInteger(Number(result.evidence_question_count)) || Number(result.evidence_question_count) < 0)) return false;
-    if (result.evidence_correct_count != null && (!Number.isInteger(Number(result.evidence_correct_count)) || Number(result.evidence_correct_count) < 0)) return false;
+    if (result.evidence_question_count != null && (!Number.isInteger(strictNum(result.evidence_question_count)) || strictNum(result.evidence_question_count) < 0)) return false;
+    if (result.evidence_correct_count != null && (!Number.isInteger(strictNum(result.evidence_correct_count)) || strictNum(result.evidence_correct_count) < 0)) return false;
     if (result.assessment_quiz_ids != null && (!Array.isArray(result.assessment_quiz_ids) || !result.assessment_quiz_ids.every(function (x) { return typeof x === 'string'; }))) return false;
     return true;
   }
 
   function validatePlacementPending(pending) {
     if (pending == null) return true;
-    if (!isPlainObject(pending) || Number(pending.version) !== 1) return false;
+    if (!isPlainObject(pending) || strictNum(pending.version) !== 1) return false;
     if (!validLevel(pending.estimated_level) || !validLevel(pending.primary_level) || !validLevel(pending.verification_level)) return false;
-    if (!isFiniteNumber(Number(pending.primary_score)) || Number(pending.primary_score) < 0 || Number(pending.primary_score) > 100) return false;
+    if (!isFiniteNumber(strictNum(pending.primary_score)) || strictNum(pending.primary_score) < 0 || strictNum(pending.primary_score) > 100) return false;
     if (typeof pending.primary_quiz_id !== 'string') return false;
     if (!Array.isArray(pending.primary_evidence) || !pending.primary_evidence.every(validateEvidenceEntry)) return false;
-    return pending.timestamp == null || isFiniteNumber(Number(pending.timestamp));
+    return pending.timestamp == null || isFiniteNumber(strictNum(pending.timestamp));
   }
 
   function validateOrientation(state) {
     if (state == null) return true;
-    if (!isPlainObject(state) || Number(state.version) !== 1) return false;
+    if (!isPlainObject(state) || strictNum(state.version) !== 1) return false;
     if (!Array.isArray(state.answers) || state.answers.length > 10) return false;
-    if (!state.answers.every(function (x) { return Number.isInteger(Number(x)) && Number(x) >= 0 && Number(x) <= 4; })) return false;
-    if (!isFiniteNumber(Number(state.score)) || !isFiniteNumber(Number(state.maxScore))) return false;
+    if (!state.answers.every(function (x) { return Number.isInteger(strictNum(x)) && strictNum(x) >= 0 && strictNum(x) <= 4; })) return false;
+    if (!isFiniteNumber(strictNum(state.score)) || !isFiniteNumber(strictNum(state.maxScore))) return false;
     if (state.recommendedLevel != null && !validLevel(state.recommendedLevel)) return false;
     if (state.completedAt != null && typeof state.completedAt !== 'string') return false;
     return true;
@@ -495,7 +510,7 @@
         legacy: true
       };
     }
-    if (pkg.schema !== BACKUP_SCHEMA || Number(pkg.version) !== BACKUP_VERSION) return { ok: false, reason: 'Unsupported backup version.' };
+    if (pkg.schema !== BACKUP_SCHEMA || strictNum(pkg.version) !== BACKUP_VERSION) return { ok: false, reason: 'Unsupported backup version.' };
     if (typeof pkg.exportedAt !== 'string' || !pkg.exportedAt) return { ok: false, reason: 'Missing export timestamp.' };
     if (!isPlainObject(pkg.sections)) return { ok: false, reason: 'Missing backup sections.' };
     return { ok: true, version: BACKUP_VERSION, exportedAt: pkg.exportedAt, sections: pkg.sections, legacy: false };

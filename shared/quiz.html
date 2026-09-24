@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="description" content="Take an interactive English quiz in Mylingo, with instant scoring and progress saved automatically to your level dashboard."><meta name="robots" content="noindex">
 <link rel="icon" type="image/svg+xml" href="./brand/icon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="./brand/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="./brand/favicon-192.png">
@@ -61,7 +61,7 @@ main{max-width:920px;margin:auto;padding:20px 16px 32px}
 .media-label{display:block;font-size:12px;font-weight:800;color:var(--muted);margin-bottom:8px}
 .question{font-size:clamp(21px,4vw,30px);line-height:1.4;font-weight:900;text-align:center}
 .blank{display:inline-block;min-width:64px;color:transparent;border-bottom:3px solid var(--line);padding:0 4px;transition:color var(--dur-standard) var(--ease-emphasis),border-color var(--dur-standard) var(--ease-emphasis)}
-.blank.filled{color:var(--success);border-bottom-color:var(--success)}
+.blank.filled{color:#2f6d06;border-bottom-color:var(--success)}
 .subprompt{text-align:center;color:var(--muted);font-size:12px;font-weight:700;margin-top:10px}
 .hint{text-align:center;color:var(--muted);font-size:12px;margin-top:10px}
 .options{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:14px}
@@ -91,6 +91,11 @@ main{max-width:920px;margin:auto;padding:20px 16px 32px}
 .rank-list{display:grid;gap:8px}
 .rank-item{display:flex;align-items:center;gap:10px;padding:12px;border:2px solid var(--line);border-radius:var(--option-radius);background:#fff;font-weight:800;cursor:grab;user-select:none}
 .rank-item:focus-visible{outline:3px solid #1a73e8;outline-offset:2px}
+.rank-item .rank-text{flex:1;min-width:0}
+.rank-item .rank-move{flex:0 0 44px;width:44px;height:44px;border:2px solid var(--line);border-radius:12px;background:#f8f9fa;color:inherit;font:inherit;font-weight:900;font-size:18px;line-height:1;cursor:pointer;display:grid;place-items:center;padding:0}
+.rank-item .rank-move:disabled{opacity:.35;cursor:default}
+.rank-item .rank-move:focus-visible{outline:3px solid #1a73e8;outline-offset:2px}
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .rank-item .rank-num{width:28px;height:28px;border-radius:99px;background:#f0f2f4;display:grid;place-items:center;flex:0 0 28px;font-size:12px}
 .feedback{display:none;margin-top:14px;padding:14px 16px;border-radius:18px;line-height:1.5}.feedback-status{display:inline-flex;align-items:center;gap:7px;vertical-align:middle}.feedback-icon{width:18px;height:18px;flex:0 0 18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .feedback.show{display:block;animation:feedbackIn .34s var(--ease-spring)}
@@ -154,7 +159,7 @@ main{max-width:920px;margin:auto;padding:20px 16px 32px}
 <a href="#main-content" class="skip-link">Skip to question</a>
 <header class="header"><div class="header-inner">
   <button class="icon-btn" id="exitBtn" aria-label="Exit quiz" type="button"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
-  <div class="brand"><img class="brand-logo-sm" src="./brand/logo-horizontal.svg" alt="Mylingo"> · <span id="titleTop"></span></div>
+  <div class="brand"><img class="brand-logo-sm" src="./brand/logo-horizontal.svg" alt="Mylingo" width="62" height="20"> · <span id="titleTop"></span></div>
   <div class="counter" id="counter" aria-live="polite"></div>
 </div>
 <div class="progress" role="progressbar" aria-label="Quiz progress" aria-valuemin="0" aria-valuemax="100" id="progressWrap" aria-valuenow="0"><i id="bar"></i></div>
@@ -188,8 +193,8 @@ main{max-width:920px;margin:auto;padding:20px 16px 32px}
 
 <section class="overlay" id="loading"><div class="modal"><div class="spinner" aria-hidden="true"></div><p>Loading quiz…</p></div></section>
 
-<section class="overlay" id="start" style="display:none"><div class="modal">
-  <div class="logo"><img src="./brand/icon.svg" alt="Mylingo"></div>
+<section class="overlay" id="start" style="display:none" aria-labelledby="startTitle"><div class="modal">
+  <div class="logo"><img src="./brand/icon.svg" alt="Mylingo" width="64" height="64"></div>
   <h1 id="startTitle">Mylingo Quiz</h1><p id="desc"></p>
   <div class="stack">
     <button class="primary" id="startBtn">Start quiz</button>
@@ -200,7 +205,7 @@ main{max-width:920px;margin:auto;padding:20px 16px 32px}
   </div>
 </div></section>
 
-<section class="overlay" id="error" style="display:none"><div class="modal">
+<section class="overlay" id="error" style="display:none" aria-labelledby="errTitle"><div class="modal">
   <h1 class="errbox" id="errTitle" tabindex="-1">Something went wrong</h1>
   <p id="errMsg" class="errbox"></p>
   <div class="stack actions">
@@ -209,7 +214,7 @@ main{max-width:920px;margin:auto;padding:20px 16px 32px}
   </div>
 </div></section>
 
-<section class="overlay" id="end" style="display:none"><div class="modal">
+<section class="overlay" id="end" style="display:none" aria-labelledby="result"><div class="modal">
   <div class="result-ring"><span id="finalPct">0%</span></div>
   <h1 id="result" tabindex="-1"></h1><p class="small" id="message"></p>
   <div class="badges" id="gamifyBadges" style="display:none;justify-content:center;margin:4px 0 10px"></div><div id="placementProfile" style="text-align:left;margin:12px 0;display:none"></div>
@@ -842,8 +847,8 @@ function renderMedia(q){
   }else if(au.tts){
     $('qaudio').style.display='none';$('qaudio').removeAttribute('src');
     $('qaudioLabel').textContent=au.label||'Listen';aw.style.display='block';
-    ttsBtn.style.display='flex';ttsBtn.setAttribute('aria-pressed','false');ttsBtn.textContent='🔊 Play audio';
-    ttsBtn.onclick=()=>{if(!speakTts(au.tts))ttsBtn.textContent='Audio unavailable on this device'};
+    ttsBtn.style.display='flex';ttsBtn.disabled=false;ttsBtn.removeAttribute('aria-disabled');ttsBtn.setAttribute('aria-pressed','false');ttsBtn.textContent='🔊 Play audio';
+    ttsBtn.onclick=()=>{if(!speakTts(au.tts)){ttsBtn.textContent='Audio unavailable on this device';ttsBtn.disabled=true;ttsBtn.setAttribute('aria-disabled','true');ttsBtn.removeAttribute('aria-pressed')}};
   }else{
     aw.style.display='none';$('qaudio').removeAttribute('src');$('qaudio').load();ttsBtn.style.display='none';
   }
@@ -903,16 +908,25 @@ function renderMatching(q){
 }
 function renderRanking(q){
   const items=Array.isArray(q.items)?q.items:answerList(q),card=document.createElement('div');card.className='ranking-card';
-  const list=document.createElement('div');list.className='rank-list';items.slice().sort(()=>Math.random()-.5).forEach((item)=>{
-    const row=document.createElement('div');row.className='rank-item';row.draggable=true;row.tabIndex=0;row.dataset.value=String(item);
-    row.innerHTML='<span class="rank-num"></span><span>'+esc(item)+'</span>';
-    row.addEventListener('keydown',e=>{const rows=Array.from(list.children),at=rows.indexOf(row);if(e.key==='ArrowUp'&&at>0){e.preventDefault();list.insertBefore(row,rows[at-1]);updateRanks(list);row.focus()}if(e.key==='ArrowDown'&&at<rows.length-1){e.preventDefault();list.insertBefore(rows[at+1],row);updateRanks(list);row.focus()}});
+  const list=document.createElement('div');list.className='rank-list';list.setAttribute('role','list');list.setAttribute('aria-label','Ranking. Use the move up and move down buttons or the arrow keys to reorder.');
+  const live=document.createElement('div');live.className='sr-only';live.setAttribute('role','status');live.setAttribute('aria-live','polite');
+  const ctl=new Map();
+  // Agent 24: touch + screen-reader alternative to HTML5 drag (which is unreliable on touch): per-row Move up / Move down buttons.
+  const sync=(moved)=>{const rows=Array.from(list.children),total=rows.length;rows.forEach((r,n)=>{const c=ctl.get(r);if(!c)return;c.up.disabled=n===0;c.dn.disabled=n===total-1;c.up.setAttribute('aria-label','Move '+r.dataset.value+' up, currently position '+(n+1)+' of '+total);c.dn.setAttribute('aria-label','Move '+r.dataset.value+' down, currently position '+(n+1)+' of '+total)});if(moved)live.textContent=moved.dataset.value+', position '+(rows.indexOf(moved)+1)+' of '+total};
+  const step=(row,dir,btn)=>{const rows=Array.from(list.children),at=rows.indexOf(row),to=at+dir;if(to<0||to>=rows.length)return;if(dir<0)list.insertBefore(row,rows[to]);else list.insertBefore(rows[to],row);updateRanks(list);sync(row);const c=ctl.get(row);const target=btn&&!btn.disabled?btn:(c?(dir<0?c.dn:c.up):row);target.focus()};
+  items.slice().sort(()=>Math.random()-.5).forEach((item)=>{
+    const row=document.createElement('div');row.className='rank-item';row.draggable=true;row.tabIndex=0;row.dataset.value=String(item);row.setAttribute('role','listitem');
+    row.innerHTML='<span class="rank-num"></span><span class="rank-text">'+esc(item)+'</span>';
+    const up=document.createElement('button'),dn=document.createElement('button');
+    [[up,'\u2191',-1],[dn,'\u2193',1]].forEach(([b,t,d])=>{b.type='button';b.className='rank-move';b.textContent=t;b.addEventListener('click',()=>step(row,d,b));row.appendChild(b)});
+    ctl.set(row,{up,dn});
+    row.addEventListener('keydown',e=>{const rows=Array.from(list.children),at=rows.indexOf(row);if(e.key==='ArrowUp'&&at>0){e.preventDefault();list.insertBefore(row,rows[at-1]);updateRanks(list);sync(row);row.focus()}if(e.key==='ArrowDown'&&at<rows.length-1){e.preventDefault();list.insertBefore(rows[at+1],row);updateRanks(list);sync(row);row.focus()}});
     row.addEventListener('dragstart',e=>{e.dataTransfer.setData('text/plain',String(item));row.classList.add('dragging')});
     row.addEventListener('dragend',()=>row.classList.remove('dragging'));
     row.addEventListener('dragover',e=>e.preventDefault());
-    row.addEventListener('drop',e=>{e.preventDefault();const dragging=list.querySelector('.dragging');if(dragging&&dragging!==row){const rows=Array.from(list.children),a=rows.indexOf(dragging),b=rows.indexOf(row);if(a<b)list.insertBefore(dragging,row.nextSibling);else list.insertBefore(dragging,row);updateRanks(list)}});
+    row.addEventListener('drop',e=>{e.preventDefault();const dragging=list.querySelector('.dragging');if(dragging&&dragging!==row){const rows=Array.from(list.children),a=rows.indexOf(dragging),b=rows.indexOf(row);if(a<b)list.insertBefore(dragging,row.nextSibling);else list.insertBefore(dragging,row);updateRanks(list);sync(dragging)}});
     list.appendChild(row);
-  });updateRanks(list);card.appendChild(list);card.appendChild(makeCheckButton(()=>submitAnswer({ranking:Array.from(list.children).map(x=>x.dataset.value)}),'Check order'));$('options').appendChild(card);
+  });updateRanks(list);sync(null);card.appendChild(list);card.appendChild(makeCheckButton(()=>submitAnswer({ranking:Array.from(list.children).map(x=>x.dataset.value)}),'Check order'));card.appendChild(live);$('options').appendChild(card);
   list.children[0]?.focus();$('kbHint').textContent='Use Up/Down arrows to reorder, or drag items, then press Check order.';
 }
 function updateRanks(list){Array.from(list.children).forEach((el,n)=>el.querySelector('.rank-num').textContent=String(n+1))}
@@ -1000,7 +1014,7 @@ function finishAnswer(ok,correctText,input){
   }else if(type==='checkbox'){
     const want=correctIndexes(q,answers),got=input.indices||[];Array.from($('options').querySelectorAll('.option')).forEach((b,j)=>{b.disabled=true;b.tabIndex=-1;const n=j+1;if(want.includes(n))b.classList.add('correct');if(got.includes(n)&&!want.includes(n))b.classList.add('wrong')})
   }else{
-    $('options').querySelectorAll('.rank-item').forEach(el=>{el.setAttribute('aria-disabled','true');el.draggable=false});
+    $('options').querySelectorAll('.rank-item').forEach(el=>{el.setAttribute('aria-disabled','true');el.draggable=false});$('options').querySelectorAll('.rank-move').forEach(b=>{b.disabled=true});
   }
   // Every question type must end up fully inert once graded — radio/dropdown/
   // checkbox only disable their own .option buttons above, which leaves a
