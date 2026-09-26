@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-a1-unit-02-lesson-18",
+  "title": "Lesson: Family and Relationships",
+  "description": "Practice Family and Relationships.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A1,A1+",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Family and Relationships.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1+,A1",
+      "media": {},
+      "subprompt": "Family and Relationships",
+      "explanation": "Practice Family and Relationships."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Family and Relationships",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1+,A1"
+    },
+    {
+      "question": "Your mother's brother is your ___ .",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1+,QuickCheck",
+      "explanation": "Your mother's or father's brother is your uncle.",
+      "correctIndex": 1,
+      "answers": [
+        "uncle",
+        "cousin",
+        "nephew",
+        "grandson"
+      ]
+    },
+    {
+      "question": "Your sister's daughter is your ___ .",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1+,QuickCheck",
+      "explanation": "A niece is your brother's or sister's daughter.",
+      "correctIndex": 1,
+      "answers": [
+        "niece",
+        "aunt",
+        "cousin",
+        "grandmother"
+      ]
+    },
+    {
+      "question": "Which word describes a person married to your sibling?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1+,QuickCheck",
+      "explanation": "A brother-in-law can be your spouse's brother or your sibling's husband.",
+      "correctIndex": 1,
+      "answers": [
+        "brother-in-law",
+        "grandson",
+        "nephew",
+        "uncle"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1+"
+    }
+  ]
+}

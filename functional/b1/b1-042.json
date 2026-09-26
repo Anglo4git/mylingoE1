@@ -1,0 +1,77 @@
+{
+  "id": "b1-042",
+  "title": "Stating preferences and opinions",
+  "description": "Practice Stating preferences and opinions.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"___, the book was better.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Give and support opinions politely.",
+      "correctIndex": 3,
+      "answers": [
+        "I opinion",
+        "My opinion that",
+        "Opinion I have",
+        "In my opinion"
+      ]
+    },
+    {
+      "question": "\"I'm not really a fan ___ horror films.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Give and support opinions politely.",
+      "correctIndex": 1,
+      "answers": [
+        "for",
+        "of",
+        "about",
+        "with"
+      ]
+    },
+    {
+      "question": "\"I'd rather stay in tonight\" expresses...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Give and support opinions politely.",
+      "correctIndex": 2,
+      "answers": [
+        "a deduction",
+        "obligation",
+        "a preference",
+        "permission"
+      ]
+    },
+    {
+      "question": "\"What I like about it is...\" introduces...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Give and support opinions politely.",
+      "correctIndex": 2,
+      "answers": [
+        "a complaint",
+        "a question",
+        "a specific positive reason",
+        "a refusal"
+      ]
+    },
+    {
+      "question": "Polite opinion starter:",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Give and support opinions politely.",
+      "correctIndex": 2,
+      "answers": [
+        "\"Everyone knows...\"",
+        "\"It's obvious...\"",
+        "\"I'd say that...\"",
+        "\"You must think...\""
+      ]
+    }
+  ]
+}

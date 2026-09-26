@@ -6,7 +6,7 @@
   "category": "Grammar",
   "tags": "Lesson,A2",
   "level": "A2",
-  "version": 1,
+  "version": 2,
   "questions": [
     {
       "question": "Practice Countable/Uncountable.",
@@ -35,6 +35,19 @@
         "few",
         "much",
         "a lot"
+      ]
+    },
+    {
+      "question": "There ___ much water left in the bottle.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "Water is uncountable, so it takes a singular verb (is).",
+      "correctIndex": 1,
+      "answers": [
+        "is",
+        "are",
+        "isn't",
+        "aren't"
       ]
     },
     {

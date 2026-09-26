@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-a1-unit-03-lesson-21",
+  "title": "Lesson: Making Comparisons",
+  "description": "Practice Making Comparisons.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,A1,A1+",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Making Comparisons.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1+,A1",
+      "media": {},
+      "subprompt": "Making Comparisons",
+      "explanation": "Practice Making Comparisons."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Making Comparisons",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1+,A1"
+    },
+    {
+      "question": "Which sentence makes a comparison?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1+,QuickCheck",
+      "explanation": "Cheaper than compares two things.",
+      "correctIndex": 1,
+      "answers": [
+        "This phone is cheaper than that one.",
+        "This phone is on the table.",
+        "I bought this phone yesterday.",
+        "The phone is black."
+      ]
+    },
+    {
+      "question": "Complete: My new bag is ___ than my old one.",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1+,QuickCheck",
+      "explanation": "Lighter than compares the weight of two bags.",
+      "correctIndex": 1,
+      "answers": [
+        "lighter",
+        "lightest",
+        "more light",
+        "lightly"
+      ]
+    },
+    {
+      "question": "Which phrase compares two options?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1+,QuickCheck",
+      "explanation": "Faster than compares the speed of two options.",
+      "correctIndex": 1,
+      "answers": [
+        "The train is faster than the bus.",
+        "The train leaves at six.",
+        "I like trains.",
+        "The bus is at the station."
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1+"
+    }
+  ]
+}

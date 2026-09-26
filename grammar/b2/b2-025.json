@@ -1,0 +1,77 @@
+{
+  "id": "b2-025",
+  "title": "Modals: present",
+  "description": "Practice Modals: present.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"You ___ call your mother back.\" (personal urging)",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Modals: present lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "have to",
+        "must",
+        "can",
+        "may"
+      ]
+    },
+    {
+      "question": "\"I ___ submit this by Friday.\" (external deadline)",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Modals: present lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "must",
+        "have to",
+        "can",
+        "should to"
+      ]
+    },
+    {
+      "question": "\"You ___ park here.\" (prohibited)",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Modals: present lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "don't have to",
+        "mustn't",
+        "needn't",
+        "may not have to"
+      ]
+    },
+    {
+      "question": "\"You ___ come if you're tired.\" (optional, not forbidden)",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Modals: present lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "mustn't",
+        "don't have to",
+        "can't",
+        "shouldn't"
+      ]
+    },
+    {
+      "question": "Which shows NO obligation, not prohibition?",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Modals: present lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "mustn't",
+        "don't have to",
+        "must not",
+        "can't"
+      ]
+    }
+  ]
+}

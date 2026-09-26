@@ -1,0 +1,77 @@
+{
+  "id": "b1-013",
+  "title": "Adverbs of Manner and Modifiers",
+  "description": "Practice Adverbs of Manner and Modifiers.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"She sang ___.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Describe how actions happen, and modify adjectives/adverbs with intensity words.",
+      "correctIndex": 1,
+      "answers": [
+        "beauty",
+        "beautifully",
+        "more beautiful",
+        "beautiful"
+      ]
+    },
+    {
+      "question": "\"He drives ___ fast.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Describe how actions happen, and modify adjectives/adverbs with intensity words.",
+      "correctIndex": 2,
+      "answers": [
+        "realer",
+        "really-ly",
+        "really",
+        "real"
+      ]
+    },
+    {
+      "question": "Irregular adverb of \"good\" is...",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Describe how actions happen, and modify adjectives/adverbs with intensity words.",
+      "correctIndex": 3,
+      "answers": [
+        "good",
+        "gooder",
+        "goodly",
+        "well"
+      ]
+    },
+    {
+      "question": "\"It's ___ cold today — bring a coat.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Describe how actions happen, and modify adjectives/adverbs with intensity words.",
+      "correctIndex": 3,
+      "answers": [
+        "quit",
+        "quiete",
+        "quiet",
+        "quite"
+      ]
+    },
+    {
+      "question": "Which is a modifier, not an adverb of manner?",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Describe how actions happen, and modify adjectives/adverbs with intensity words.",
+      "correctIndex": 1,
+      "answers": [
+        "quickly",
+        "extremely",
+        "happily",
+        "carefully"
+      ]
+    }
+  ]
+}

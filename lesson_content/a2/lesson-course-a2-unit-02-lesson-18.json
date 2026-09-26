@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-02-lesson-18",
+  "title": "Lesson: Descriptions of People, Health, Fitness and Illnesses",
+  "description": "Practice Descriptions of People, Health, Fitness and Illnesses vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Descriptions of People, Health, Fitness and Illnesses vocabulary.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Descriptions of People, Health, Fitness and Illnesses",
+      "explanation": "Practice Descriptions of People, Health, Fitness and Illnesses vocabulary."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Descriptions of People, Health, Fitness and Illnesses",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "Someone in good physical shape is ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "See the Descriptions of People, Health, Fitness and Illnesses lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "fit",
+        "sore",
+        "exhausted",
+        "allergic"
+      ]
+    },
+    {
+      "question": "Extremely tired is ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "See the Descriptions of People, Health, Fitness and Illnesses lesson.",
+      "correctIndex": 2,
+      "answers": [
+        "fit",
+        "exhausted",
+        "allergic",
+        "sore"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

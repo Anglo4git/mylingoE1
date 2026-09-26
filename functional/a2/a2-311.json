@@ -1,0 +1,77 @@
+{
+  "id": "a2-311",
+  "title": "Talking About Obligation",
+  "description": "Practice: Talking About Obligation.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"I'm ___ to hand this in by Friday.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Talking About Obligation lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "supposed",
+        "suppose",
+        "supposing",
+        "supposedly"
+      ]
+    },
+    {
+      "question": "\"It's ___ to wear a seatbelt.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Talking About Obligation lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "compulsory",
+        "optional",
+        "suggested",
+        "preferred"
+      ]
+    },
+    {
+      "question": "\"You don't have to come, ___ you're welcome to.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Talking About Obligation lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "but",
+        "so",
+        "such",
+        "although"
+      ]
+    },
+    {
+      "question": "Strongest obligation phrase:",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Talking About Obligation lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "\"I have to.\"",
+        "\"I might.\"",
+        "\"I could.\"",
+        "\"I'd like to.\""
+      ]
+    },
+    {
+      "question": "\"We're ___ to arrive by 9am.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Talking About Obligation lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "supposed",
+        "suppose",
+        "supposing",
+        "able"
+      ]
+    }
+  ]
+}

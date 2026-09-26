@@ -1,0 +1,77 @@
+{
+  "id": "b2-030",
+  "title": "Work, working conditions",
+  "description": "Practice Work, working conditions.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"She got made ___ when the department closed.\"",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Work, working conditions lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "promoted",
+        "redundant",
+        "overtime",
+        "flexitime"
+      ]
+    },
+    {
+      "question": "\"The job comes with good ___, like private healthcare.\"",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Work, working conditions lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "wages",
+        "perks",
+        "overtime",
+        "redundancy"
+      ]
+    },
+    {
+      "question": "Fixed hourly/daily pay is usually called a...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Work, working conditions lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "salary",
+        "wage",
+        "perk",
+        "bonus"
+      ]
+    },
+    {
+      "question": "\"He works ___ so he can pick up his kids.\"",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Work, working conditions lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "overtime",
+        "redundancy",
+        "flexitime",
+        "salary"
+      ]
+    },
+    {
+      "question": "Balancing job demands and personal life is called...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Work, working conditions lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "overtime",
+        "work-life balance",
+        "redundancy",
+        "a perk"
+      ]
+    }
+  ]
+}

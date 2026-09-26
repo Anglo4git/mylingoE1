@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-02-lesson-12",
+  "title": "Lesson: Work and Careers",
+  "description": "Practice Work and Careers vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Work and Careers vocabulary.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Work and Careers",
+      "explanation": "Practice Work and Careers vocabulary."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Work and Careers",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "Moving to a higher position at work is a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "See the Work and Careers lesson.",
+      "correctIndex": 2,
+      "answers": [
+        "resignation",
+        "promotion",
+        "interview",
+        "salary"
+      ]
+    },
+    {
+      "question": "A person you work with is your ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "See the Work and Careers lesson.",
+      "correctIndex": 2,
+      "answers": [
+        "boss",
+        "colleague",
+        "client",
+        "manager only"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

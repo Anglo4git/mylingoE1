@@ -1,0 +1,77 @@
+{
+  "id": "a1-030",
+  "title": "Shops and Places in Town",
+  "description": "Practice Shops and Places in Town.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Where do you buy stamps and send letters?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "You buy stamps and send letters at the post office.",
+      "correctIndex": 3,
+      "answers": [
+        "bakery",
+        "bank",
+        "post office",
+        "park"
+      ]
+    },
+    {
+      "question": "Where do you buy medicine?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Medicine is bought at a pharmacy.",
+      "correctIndex": 1,
+      "answers": [
+        "pharmacy",
+        "supermarket",
+        "bank",
+        "bakery"
+      ]
+    },
+    {
+      "question": "How do you ask where a place is?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "'Where is the bank?' is the standard question form.",
+      "correctIndex": 1,
+      "answers": [
+        "Where is the bank?",
+        "Bank is where?",
+        "Is where the bank?",
+        "The bank where is?"
+      ]
+    },
+    {
+      "question": "Where can I ___ some bread?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Use the base verb after 'can'.",
+      "correctIndex": 1,
+      "answers": [
+        "buy",
+        "buys",
+        "buying",
+        "bought"
+      ]
+    },
+    {
+      "question": "\"I need money, so I'm going to the bank.\" Why is the speaker going to the bank?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "They need money, so they go to the bank to get it.",
+      "correctIndex": 2,
+      "answers": [
+        "to buy bread",
+        "to get money",
+        "to send a letter",
+        "to buy medicine"
+      ]
+    }
+  ]
+}

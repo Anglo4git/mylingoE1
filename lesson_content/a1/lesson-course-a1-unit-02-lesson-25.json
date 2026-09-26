@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-a1-unit-02-lesson-25",
+  "title": "Lesson: Hotel Situations",
+  "description": "Practice Hotel Situations.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A1,A1+",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Hotel Situations.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1+,A1",
+      "media": {},
+      "subprompt": "Hotel Situations",
+      "explanation": "Practice Hotel Situations."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Hotel Situations",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1+,A1"
+    },
+    {
+      "question": "Where do you go when you arrive at a hotel to get your room key?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1+,QuickCheck",
+      "explanation": "Hotel reception handles check-in and room information.",
+      "correctIndex": 1,
+      "answers": [
+        "reception",
+        "platform",
+        "departure gate",
+        "classroom"
+      ]
+    },
+    {
+      "question": "What do you say if the room is too cold?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1+,QuickCheck",
+      "explanation": "This is a polite hotel request about heating.",
+      "correctIndex": 1,
+      "answers": [
+        "Could you turn up the heating?",
+        "Could you book a train?",
+        "Could you wash my clothes?",
+        "Could you open the airport?"
+      ]
+    },
+    {
+      "question": "What is a check-out time?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1+,QuickCheck",
+      "explanation": "Check-out is when you leave and return the room.",
+      "correctIndex": 1,
+      "answers": [
+        "The time you leave the hotel.",
+        "The time you book a flight.",
+        "The time breakfast is cooked.",
+        "The time you arrive at school."
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1+"
+    }
+  ]
+}

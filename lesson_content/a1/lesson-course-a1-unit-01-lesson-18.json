@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-01-lesson-18",
+  "title": "Lesson: Imperatives",
+  "description": "Practice Imperatives.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Imperatives.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Imperatives",
+      "explanation": "Practice Imperatives."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Imperatives",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "You want someone to open a window. What do you say?",
+      "category": "Grammar",
+      "tags": "Grammar,A1,QuickCheck",
+      "explanation": "Use the base verb for an imperative.",
+      "correctIndex": 1,
+      "answers": [
+        "Open the window.",
+        "You open the window?",
+        "You opening window.",
+        "Opens the window."
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

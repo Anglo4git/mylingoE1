@@ -1,0 +1,77 @@
+{
+  "id": "a2-212",
+  "title": "Education",
+  "description": "Practice Education vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "A piece of set schoolwork is called an ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Education lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "assignment",
+        "degree",
+        "tuition",
+        "lecture"
+      ]
+    },
+    {
+      "question": "A university qualification is a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Education lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "semester",
+        "degree",
+        "lecture",
+        "scholarship"
+      ]
+    },
+    {
+      "question": "Money awarded to help pay for study is a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Education lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "tuition",
+        "scholarship",
+        "semester",
+        "degree"
+      ]
+    },
+    {
+      "question": "A formal university talk/class is a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Education lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "lecture",
+        "semester",
+        "tuition",
+        "assignment"
+      ]
+    },
+    {
+      "question": "To finish your studies successfully is to ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Education lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "enrol",
+        "graduate",
+        "apply",
+        "resign"
+      ]
+    }
+  ]
+}

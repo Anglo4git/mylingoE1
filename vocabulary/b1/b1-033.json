@@ -1,0 +1,77 @@
+{
+  "id": "b1-033",
+  "title": "Cooking",
+  "description": "Practice Cooking.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "To cut food into small pieces is to ___ it.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Describe cooking methods and kitchen actions.",
+      "correctIndex": 1,
+      "answers": [
+        "season",
+        "chop",
+        "boil",
+        "simmer"
+      ]
+    },
+    {
+      "question": "To cook gently in liquid just below boiling is to ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Describe cooking methods and kitchen actions.",
+      "correctIndex": 2,
+      "answers": [
+        "fry",
+        "chop",
+        "simmer",
+        "bake"
+      ]
+    },
+    {
+      "question": "To add salt/spices is to ___ the food.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Describe cooking methods and kitchen actions.",
+      "correctIndex": 0,
+      "answers": [
+        "season",
+        "stir",
+        "boil",
+        "chop"
+      ]
+    },
+    {
+      "question": "To cook in an oven is to ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Describe cooking methods and kitchen actions.",
+      "correctIndex": 0,
+      "answers": [
+        "bake",
+        "boil",
+        "stir",
+        "fry"
+      ]
+    },
+    {
+      "question": "A \"recipe\" is...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Describe cooking methods and kitchen actions.",
+      "correctIndex": 2,
+      "answers": [
+        "a kitchen tool",
+        "an ingredient",
+        "instructions for cooking a dish",
+        "a type of pan"
+      ]
+    }
+  ]
+}

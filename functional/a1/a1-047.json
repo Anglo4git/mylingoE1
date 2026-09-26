@@ -1,0 +1,77 @@
+{
+  "id": "a1-047",
+  "title": "Likes, Dislikes and Opinions",
+  "description": "Practice Likes, Dislikes and Opinions.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Complete: \"I love ___ (swim).\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "Love + -ing form.",
+      "correctIndex": 2,
+      "answers": [
+        "swim",
+        "swimming",
+        "swam",
+        "to swimming"
+      ]
+    },
+    {
+      "question": "Give an opinion about a film.",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "\"I think...\" gives an opinion.",
+      "correctIndex": 1,
+      "answers": [
+        "I think it's great.",
+        "I am a film.",
+        "Film good me.",
+        "Great I think."
+      ]
+    },
+    {
+      "question": "Complete: \"She ___ (not like) coffee.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "Use doesn't + base verb for she.",
+      "correctIndex": 1,
+      "answers": [
+        "doesn't like",
+        "not likes",
+        "don't like",
+        "not like"
+      ]
+    },
+    {
+      "question": "\"I like pizza, but I don't like fish.\" Does the speaker like fish?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "\"Don't like\" means No.",
+      "correctIndex": 1,
+      "answers": [
+        "No",
+        "Yes",
+        "Maybe",
+        "Only sometimes"
+      ]
+    },
+    {
+      "question": "Say one thing you love doing.",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "Any reasonable answer is accepted.",
+      "correctIndex": 1,
+      "answers": [
+        "(own answer)",
+        "(leave blank)",
+        "(skip)",
+        "(refuse)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-02-lesson-06",
+  "title": "Lesson: Seasons and Weather",
+  "description": "Practice Seasons and Weather.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Seasons and Weather.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Seasons and Weather",
+      "explanation": "Practice Seasons and Weather."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Seasons and Weather",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "Which season usually comes after summer?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1,QuickCheck",
+      "explanation": "Autumn (fall) follows summer.",
+      "correctIndex": 3,
+      "answers": [
+        "winter",
+        "spring",
+        "autumn",
+        "none"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

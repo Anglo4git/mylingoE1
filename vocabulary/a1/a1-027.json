@@ -1,0 +1,77 @@
+{
+  "id": "a1-027",
+  "title": "Telling the Time and Days",
+  "description": "Practice Telling the Time and Days.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "What time is 4:30?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "4:30 is 'half past four'.",
+      "correctIndex": 2,
+      "answers": [
+        "quarter past four",
+        "half past four",
+        "quarter to four",
+        "four o'clock"
+      ]
+    },
+    {
+      "question": "Which day comes after Thursday?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Friday follows Thursday.",
+      "correctIndex": 2,
+      "answers": [
+        "Wednesday",
+        "Friday",
+        "Saturday",
+        "Tuesday"
+      ]
+    },
+    {
+      "question": "How do you politely ask the time?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "'Excuse me, what time is it?' is the natural polite question.",
+      "correctIndex": 3,
+      "answers": [
+        "What o'clock?",
+        "What is the time now here?",
+        "Excuse me, what time is it?",
+        "Time is what?"
+      ]
+    },
+    {
+      "question": "My English class is ___ Monday.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Use 'on' with days of the week.",
+      "correctIndex": 3,
+      "answers": [
+        "in",
+        "at",
+        "on",
+        "for"
+      ]
+    },
+    {
+      "question": "\"The shop opens at a quarter to nine.\" What time does it open?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "'A quarter to nine' means 8:45.",
+      "correctIndex": 1,
+      "answers": [
+        "8:45",
+        "8:15",
+        "9:15",
+        "9:45"
+      ]
+    }
+  ]
+}

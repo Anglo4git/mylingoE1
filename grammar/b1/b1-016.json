@@ -1,0 +1,77 @@
+{
+  "id": "b1-016",
+  "title": "Look + adjective, look like + noun",
+  "description": "Practice Look + adjective, look like + noun.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"You ___ tired today.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Describe appearance correctly using \"look\" with an adjective vs. \"look like\" with a noun.",
+      "correctIndex": 0,
+      "answers": [
+        "look",
+        "looking",
+        "look like",
+        "looks like"
+      ]
+    },
+    {
+      "question": "\"He ___ his father.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Describe appearance correctly using \"look\" with an adjective vs. \"look like\" with a noun.",
+      "correctIndex": 2,
+      "answers": [
+        "looking like",
+        "look",
+        "looks like",
+        "looks"
+      ]
+    },
+    {
+      "question": "Which is correct?",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Describe appearance correctly using \"look\" with an adjective vs. \"look like\" with a noun.",
+      "correctIndex": 0,
+      "answers": [
+        "That cake looks delicious.",
+        "That cake looking delicious.",
+        "That cake looks like delicious.",
+        "That cake look delicious."
+      ]
+    },
+    {
+      "question": "\"It looks like ___.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Describe appearance correctly using \"look\" with an adjective vs. \"look like\" with a noun.",
+      "correctIndex": 1,
+      "answers": [
+        "quick",
+        "rain",
+        "happy",
+        "beautifully"
+      ]
+    },
+    {
+      "question": "\"Look + adjective\" describes...",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Describe appearance correctly using \"look\" with an adjective vs. \"look like\" with a noun.",
+      "correctIndex": 1,
+      "answers": [
+        "resemblance to another person",
+        "appearance/state",
+        "possession",
+        "location"
+      ]
+    }
+  ]
+}

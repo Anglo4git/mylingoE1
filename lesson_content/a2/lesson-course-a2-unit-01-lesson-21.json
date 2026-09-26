@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-01-lesson-21",
+  "title": "Lesson: Used To",
+  "description": "Practice Used To.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Used To.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Used To",
+      "explanation": "Practice Used To."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Used To",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "I ___ live in Rome.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "See the Used To lesson.",
+      "correctIndex": 2,
+      "answers": [
+        "use to",
+        "used to",
+        "using to",
+        "uses to"
+      ]
+    },
+    {
+      "question": "She ___ like coffee.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "See the Used To lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "didn't use to",
+        "didn't used to",
+        "doesn't use to",
+        "not used to"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

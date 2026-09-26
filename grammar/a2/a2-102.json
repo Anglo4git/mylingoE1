@@ -1,0 +1,77 @@
+{
+  "id": "a2-102",
+  "title": "Past Simple",
+  "description": "Practice Past Simple.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "I ___ my grandparents last weekend.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Past Simple lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "visit",
+        "visited",
+        "visiting",
+        "visits"
+      ]
+    },
+    {
+      "question": "She ___ to Paris in June.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Past Simple lesson for the rule.",
+      "correctIndex": 3,
+      "answers": [
+        "go",
+        "goed",
+        "went",
+        "gone"
+      ]
+    },
+    {
+      "question": "We ___ watch the film.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Past Simple lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "don't",
+        "didn't",
+        "doesn't",
+        "not"
+      ]
+    },
+    {
+      "question": "___ you call him yesterday?",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Past Simple lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "Do",
+        "Did",
+        "Does",
+        "Were"
+      ]
+    },
+    {
+      "question": "He ___ (buy) a new car last month.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Past Simple lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "buyed",
+        "bought",
+        "buy",
+        "buys"
+      ]
+    }
+  ]
+}

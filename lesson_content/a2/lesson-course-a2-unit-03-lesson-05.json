@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-03-lesson-05",
+  "title": "Lesson: Making Travel Arrangements",
+  "description": "Practice: Making Travel Arrangements.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice: Making Travel Arrangements.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Making Travel Arrangements",
+      "explanation": "Practice: Making Travel Arrangements."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Making Travel Arrangements",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "Polite booking request:",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2,QuickCheck",
+      "explanation": "See the Making Travel Arrangements lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "\"I'd like to book a room.\"",
+        "\"Give me a room.\"",
+        "\"Room now.\"",
+        "\"I want room.\""
+      ]
+    },
+    {
+      "question": "\"Is there ___ earlier flight?\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2,QuickCheck",
+      "explanation": "See the Making Travel Arrangements lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "an",
+        "a",
+        "the",
+        "no"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

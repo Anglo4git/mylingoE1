@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-02-lesson-06",
+  "title": "Lesson: Biographical Information",
+  "description": "Practice Biographical Information vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Biographical Information vocabulary.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Biographical Information",
+      "explanation": "Practice Biographical Information vocabulary."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Biographical Information",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "Your job title is your ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "See the Biographical Information lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "occupation",
+        "nationality",
+        "status",
+        "birth"
+      ]
+    },
+    {
+      "question": "The country you're a citizen of shows your ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "See the Biographical Information lesson.",
+      "correctIndex": 2,
+      "answers": [
+        "occupation",
+        "nationality",
+        "status",
+        "birth"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

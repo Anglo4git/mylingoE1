@@ -1,12 +1,12 @@
 {
   "id": "a2-008",
   "title": "Modal: should",
-  "description": "Practice Modal: should.",
+  "description": "Practice Modal: should (extended with deeper practice).",
   "brand": "Mylingo",
   "category": "Grammar",
   "tags": "Grammar,A2",
   "level": "A2",
-  "version": 1,
+  "version": 2,
   "questions": [
     {
       "question": "You ___ see a doctor if you feel very ill.",
@@ -71,6 +71,32 @@
         "can to",
         "should to",
         "should"
+      ]
+    },
+    {
+      "question": "You ___ apologise — it wasn't your fault.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "'Shouldn't' gives advice that something is not a good idea.",
+      "correctIndex": 1,
+      "answers": [
+        "shouldn't",
+        "should",
+        "must",
+        "mustn't"
+      ]
+    },
+    {
+      "question": "___ I tell her the truth?",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "'Should' is used to ask for advice.",
+      "correctIndex": 1,
+      "answers": [
+        "Should",
+        "Must",
+        "Do",
+        "Am"
       ]
     }
   ]

@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-01-lesson-12",
+  "title": "Lesson: Reflexive Pronouns",
+  "description": "Practice Reflexive Pronouns.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Reflexive Pronouns.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Reflexive Pronouns",
+      "explanation": "Practice Reflexive Pronouns."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Reflexive Pronouns",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "I cut ___ while cooking.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "See the Reflexive Pronouns lesson.",
+      "correctIndex": 2,
+      "answers": [
+        "me",
+        "myself",
+        "my",
+        "mine"
+      ]
+    },
+    {
+      "question": "She taught ___ Spanish.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "See the Reflexive Pronouns lesson.",
+      "correctIndex": 2,
+      "answers": [
+        "her",
+        "herself",
+        "hers",
+        "she"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

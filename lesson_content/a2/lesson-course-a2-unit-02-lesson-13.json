@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-02-lesson-13",
+  "title": "Lesson: Hobbies, Sports and Interests",
+  "description": "Practice Hobbies, Sports and Interests vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Hobbies, Sports and Interests vocabulary.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Hobbies, Sports and Interests",
+      "explanation": "Practice Hobbies, Sports and Interests vocabulary."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Hobbies, Sports and Interests",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "Walking long distances in nature is ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "See the Hobbies, Sports and Interests lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "hiking",
+        "gardening",
+        "chess",
+        "cycling"
+      ]
+    },
+    {
+      "question": "If you love something, you can say you're \"___\" it.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "See the Hobbies, Sports and Interests lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "into",
+        "at",
+        "for",
+        "on"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

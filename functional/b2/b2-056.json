@@ -1,0 +1,77 @@
+{
+  "id": "b2-056",
+  "title": "Commiserating",
+  "description": "Practice Commiserating.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"I'm so sorry to hear about the job — ___.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Commiserating lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "way to go",
+        "that's rough",
+        "congratulations",
+        "nice one"
+      ]
+    },
+    {
+      "question": "\"What a shame you couldn't make it\" expresses...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Commiserating lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "congratulations",
+        "sympathy/commiseration",
+        "an offer",
+        "a guess"
+      ]
+    },
+    {
+      "question": "For very serious bad news, an appropriate phrase is...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Commiserating lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "No biggie!",
+        "You must be devastated.",
+        "Nice one!",
+        "Way to go!"
+      ]
+    },
+    {
+      "question": "Commiserating means...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Commiserating lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "celebrating someone's success",
+        "expressing sympathy for bad news",
+        "making a guess",
+        "clarifying a statement"
+      ]
+    },
+    {
+      "question": "Matching commiseration to the situation means...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Commiserating lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "always using the same phrase",
+        "adjusting phrase strength to how serious the news is",
+        "ignoring the news",
+        "changing the subject"
+      ]
+    }
+  ]
+}

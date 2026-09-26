@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-a1-unit-03-lesson-15",
+  "title": "Lesson: Giving and Justifying Opinions",
+  "description": "Practice Giving and Justifying Opinions.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,A1,A1+",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Giving and Justifying Opinions.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1+,A1",
+      "media": {},
+      "subprompt": "Giving and Justifying Opinions",
+      "explanation": "Practice Giving and Justifying Opinions."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Giving and Justifying Opinions",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1+,A1"
+    },
+    {
+      "question": "Which phrase gives an opinion?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1+,QuickCheck",
+      "explanation": "I think is a common way to introduce an opinion.",
+      "correctIndex": 1,
+      "answers": [
+        "I think it's useful.",
+        "It costs five dollars.",
+        "Turn left.",
+        "See you tomorrow."
+      ]
+    },
+    {
+      "question": "Which phrase gives a reason?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1+,QuickCheck",
+      "explanation": "Because introduces a reason.",
+      "correctIndex": 1,
+      "answers": [
+        "because it's easy",
+        "at three o'clock",
+        "on the table",
+        "next Tuesday"
+      ]
+    },
+    {
+      "question": "Complete: I like this app ___ it is simple to use.",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1+,QuickCheck",
+      "explanation": "Because connects the opinion with its reason.",
+      "correctIndex": 1,
+      "answers": [
+        "because",
+        "but",
+        "or",
+        "so"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1+"
+    }
+  ]
+}

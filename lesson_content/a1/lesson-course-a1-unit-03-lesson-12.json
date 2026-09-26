@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-03-lesson-12",
+  "title": "Lesson: Future Arrangements",
+  "description": "Practice Future Arrangements.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Future Arrangements.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Future Arrangements",
+      "explanation": "Practice Future Arrangements."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Future Arrangements",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "Complete: \"I ___ (meet) John tomorrow.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1,QuickCheck",
+      "explanation": "Use am/is/are + -ing for a fixed future arrangement.",
+      "correctIndex": 1,
+      "answers": [
+        "am meeting",
+        "meet",
+        "will meeting",
+        "meets"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

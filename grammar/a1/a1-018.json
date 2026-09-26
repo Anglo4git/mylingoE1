@@ -1,0 +1,77 @@
+{
+  "id": "a1-018",
+  "title": "Going To — Future Plans",
+  "description": "Practice Going To.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "I ___ visit my parents this weekend.",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "Use be + going to + base verb.",
+      "correctIndex": 2,
+      "answers": [
+        "am going",
+        "am going to",
+        "go to",
+        "going"
+      ]
+    },
+    {
+      "question": "She ___ study medicine.",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "Use be + going to + base verb.",
+      "correctIndex": 1,
+      "answers": [
+        "is going to",
+        "is go to",
+        "going to is",
+        "go to is"
+      ]
+    },
+    {
+      "question": "___ you going to visit them?",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "Use 'are' with 'you' in questions.",
+      "correctIndex": 2,
+      "answers": [
+        "Do",
+        "Are",
+        "Is",
+        "Have"
+      ]
+    },
+    {
+      "question": "\"I am going to call him\" describes",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "'Going to' expresses a plan decided earlier.",
+      "correctIndex": 2,
+      "answers": [
+        "a decision made right now",
+        "a plan already decided",
+        "a past habit",
+        "a general fact"
+      ]
+    },
+    {
+      "question": "Which sentence correctly talks about a weekend plan?",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "Use 'am going to' + base verb.",
+      "correctIndex": 1,
+      "answers": [
+        "This weekend, I am going to visit my cousin.",
+        "This weekend, I go visit my cousin.",
+        "This weekend, I am go to visit my cousin.",
+        "This weekend, I visiting my cousin."
+      ]
+    }
+  ]
+}

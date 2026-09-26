@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-02-lesson-17",
+  "title": "Lesson: Animals",
+  "description": "Practice Animals vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Animals vocabulary.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Animals",
+      "explanation": "Practice Animals vocabulary."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Animals",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "An animal that feeds its young with milk is a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "See the Animals lesson.",
+      "correctIndex": 2,
+      "answers": [
+        "reptile",
+        "mammal",
+        "amphibian",
+        "insect"
+      ]
+    },
+    {
+      "question": "Animals living in the wild, not kept as pets, are ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "See the Animals lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "wildlife",
+        "livestock",
+        "pets",
+        "mammals"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

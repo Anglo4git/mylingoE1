@@ -1,0 +1,77 @@
+{
+  "id": "b1-038",
+  "title": "Political Systems",
+  "description": "Practice Political Systems.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "In a \"democracy\", citizens...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Describe how governments and elections work in general, factual terms.",
+      "correctIndex": 0,
+      "answers": [
+        "vote for their representatives",
+        "have no say in government",
+        "are ruled by a king only",
+        "cannot hold elections"
+      ]
+    },
+    {
+      "question": "A \"monarchy\" is led by...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Describe how governments and elections work in general, factual terms.",
+      "correctIndex": 0,
+      "answers": [
+        "a king or queen",
+        "an elected president",
+        "a parliament only",
+        "voters directly"
+      ]
+    },
+    {
+      "question": "An \"election\" is...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Describe how governments and elections work in general, factual terms.",
+      "correctIndex": 1,
+      "answers": [
+        "a tax",
+        "a process where citizens vote",
+        "a type of law",
+        "a court case"
+      ]
+    },
+    {
+      "question": "\"Parliament\" refers to...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Describe how governments and elections work in general, factual terms.",
+      "correctIndex": 0,
+      "answers": [
+        "a group that makes laws",
+        "a court",
+        "a police force",
+        "a royal family"
+      ]
+    },
+    {
+      "question": "A \"citizen\" is...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Describe how governments and elections work in general, factual terms.",
+      "correctIndex": 2,
+      "answers": [
+        "a voter's relative",
+        "a tourist",
+        "a legal member of a country",
+        "a politician only"
+      ]
+    }
+  ]
+}

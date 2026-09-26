@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-a1-unit-02-lesson-24",
+  "title": "Lesson: Festivals and Celebrations",
+  "description": "Practice Festivals and Celebrations.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A1,A1+",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Festivals and Celebrations.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1+,A1",
+      "media": {},
+      "subprompt": "Festivals and Celebrations",
+      "explanation": "Practice Festivals and Celebrations."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Festivals and Celebrations",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1+,A1"
+    },
+    {
+      "question": "A birthday is a ___ .",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1+,QuickCheck",
+      "explanation": "A birthday is commonly celebrated.",
+      "correctIndex": 1,
+      "answers": [
+        "celebration",
+        "journey",
+        "machine",
+        "direction"
+      ]
+    },
+    {
+      "question": "What do people often do at a festival?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1+,QuickCheck",
+      "explanation": "Festivals are occasions for celebration.",
+      "correctIndex": 1,
+      "answers": [
+        "celebrate",
+        "repair a car",
+        "book a flight only",
+        "take an exam"
+      ]
+    },
+    {
+      "question": "Which word means a special event with music, food, or activities?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1+,QuickCheck",
+      "explanation": "A festival is a special event or period of celebration.",
+      "correctIndex": 1,
+      "answers": [
+        "festival",
+        "receipt",
+        "suitcase",
+        "station"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1+"
+    }
+  ]
+}

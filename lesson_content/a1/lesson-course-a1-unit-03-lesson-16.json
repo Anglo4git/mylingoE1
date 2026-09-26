@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-a1-unit-03-lesson-16",
+  "title": "Lesson: Possibility and Making Decisions",
+  "description": "Practice Possibility and Making Decisions.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,A1,A1+",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Possibility and Making Decisions.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1+,A1",
+      "media": {},
+      "subprompt": "Possibility and Making Decisions",
+      "explanation": "Practice Possibility and Making Decisions."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Possibility and Making Decisions",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1+,A1"
+    },
+    {
+      "question": "Which phrase shows possibility?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1+,QuickCheck",
+      "explanation": "Might expresses possibility.",
+      "correctIndex": 1,
+      "answers": [
+        "It might rain.",
+        "It happened yesterday.",
+        "Turn left.",
+        "I am from Kumasi."
+      ]
+    },
+    {
+      "question": "Which phrase helps make a decision?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1+,QuickCheck",
+      "explanation": "Let's choose... is a useful decision-making phrase.",
+      "correctIndex": 1,
+      "answers": [
+        "Let's choose the blue one.",
+        "Where is the bank?",
+        "What time is it?",
+        "I am sorry."
+      ]
+    },
+    {
+      "question": "Complete: We aren't sure. We ___ go by bus.",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1+,QuickCheck",
+      "explanation": "Might shows that the plan is possible but not certain.",
+      "correctIndex": 1,
+      "answers": [
+        "might",
+        "must",
+        "did",
+        "are"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1+"
+    }
+  ]
+}

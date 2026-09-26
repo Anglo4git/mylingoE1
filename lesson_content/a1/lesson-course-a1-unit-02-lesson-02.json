@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-02-lesson-02",
+  "title": "Lesson: Numbers and Money",
+  "description": "Practice Numbers and Money.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Numbers and Money.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Numbers and Money",
+      "explanation": "Practice Numbers and Money."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Numbers and Money",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "Which is an ordinal number?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1,QuickCheck",
+      "explanation": "Ordinals show order (third), not quantity (three).",
+      "correctIndex": 2,
+      "answers": [
+        "three",
+        "third",
+        "thirty",
+        "threes"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

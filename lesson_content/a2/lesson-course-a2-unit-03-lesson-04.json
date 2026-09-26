@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-03-lesson-04",
+  "title": "Lesson: Describing Personality",
+  "description": "Practice: Describing Personality.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice: Describing Personality.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Describing Personality",
+      "explanation": "Practice: Describing Personality."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Describing Personality",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "\"What's he ___?\" (asking about personality)",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2,QuickCheck",
+      "explanation": "See the Describing Personality lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "like",
+        "as",
+        "look",
+        "doing"
+      ]
+    },
+    {
+      "question": "\"She comes ___ as very confident.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2,QuickCheck",
+      "explanation": "See the Describing Personality lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "across",
+        "up",
+        "out",
+        "over"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

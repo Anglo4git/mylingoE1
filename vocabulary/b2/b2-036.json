@@ -1,0 +1,77 @@
+{
+  "id": "b2-036",
+  "title": "Festivals and celebrations",
+  "description": "Practice Festivals and celebrations.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"The festival ___ the town's founding.\"",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Festivals and celebrations lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "parades",
+        "commemorates",
+        "hands down",
+        "customs"
+      ]
+    },
+    {
+      "question": "\"It's ___ to exchange gifts on this day.\"",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Festivals and celebrations lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "customary",
+        "commemorate",
+        "parading",
+        "handed"
+      ]
+    },
+    {
+      "question": "A traditional procession through the streets is a...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Festivals and celebrations lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "float",
+        "parade",
+        "custom",
+        "commemoration"
+      ]
+    },
+    {
+      "question": "A decorated vehicle in a parade is called a...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Festivals and celebrations lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "float",
+        "parade",
+        "custom",
+        "commemoration"
+      ]
+    },
+    {
+      "question": "\"The tradition has been ___ for generations.\"",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Festivals and celebrations lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "commemorated",
+        "handed down",
+        "paraded",
+        "customary"
+      ]
+    }
+  ]
+}

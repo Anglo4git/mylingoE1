@@ -1,0 +1,77 @@
+{
+  "id": "b2-034",
+  "title": "Phrasal verbs — lexical meaning",
+  "description": "Practice Phrasal verbs — lexical meaning.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"I came ___ an old photo.\" (found by chance)",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Phrasal verbs — lexical meaning lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "across",
+        "up with",
+        "over",
+        "into"
+      ]
+    },
+    {
+      "question": "\"I don't know how she puts ___ him.\" (tolerates)",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Phrasal verbs — lexical meaning lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "up with",
+        "down",
+        "off",
+        "over"
+      ]
+    },
+    {
+      "question": "\"The deal fell ___ at the last minute.\" (failed to happen)",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Phrasal verbs — lexical meaning lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "through",
+        "up",
+        "down",
+        "off"
+      ]
+    },
+    {
+      "question": "\"We're managing to ___ on a small budget.\"",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Phrasal verbs — lexical meaning lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "get by",
+        "chip in",
+        "come across",
+        "fall through"
+      ]
+    },
+    {
+      "question": "\"Everyone ___ to buy her a gift.\" (contributed)",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Phrasal verbs — lexical meaning lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "came across",
+        "chipped in",
+        "fell through",
+        "put up"
+      ]
+    }
+  ]
+}

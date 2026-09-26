@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-01-lesson-22",
+  "title": "Lesson: Relative Clauses",
+  "description": "Practice Relative Clauses.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Relative Clauses.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Relative Clauses",
+      "explanation": "Practice Relative Clauses."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Relative Clauses",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "The woman ___ called you is my sister.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "See the Relative Clauses lesson.",
+      "correctIndex": 2,
+      "answers": [
+        "which",
+        "who",
+        "where",
+        "what"
+      ]
+    },
+    {
+      "question": "This is the book ___ I told you about.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "See the Relative Clauses lesson.",
+      "correctIndex": 2,
+      "answers": [
+        "who",
+        "that",
+        "where",
+        "which not"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

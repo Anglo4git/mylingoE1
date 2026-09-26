@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-03-lesson-01",
+  "title": "Lesson: Greetings and Introductions",
+  "description": "Practice Greetings and Introductions.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Greetings and Introductions.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Greetings and Introductions",
+      "explanation": "Practice Greetings and Introductions."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Greetings and Introductions",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "Introduce your friend Tom.",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1,QuickCheck",
+      "explanation": "Use \"This is...\" to introduce someone else.",
+      "correctIndex": 1,
+      "answers": [
+        "This is Tom.",
+        "I am Tom.",
+        "You are Tom.",
+        "He Tom."
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

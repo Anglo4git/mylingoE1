@@ -1,0 +1,77 @@
+{
+  "id": "b2-037",
+  "title": "Connotation",
+  "description": "Practice Connotation.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Which word has a POSITIVE connotation for \"careful with money\"?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Connotation lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "stingy",
+        "thrifty",
+        "cheap",
+        "miserly"
+      ]
+    },
+    {
+      "question": "Which word has a NEGATIVE connotation for \"wanting to know things\"?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Connotation lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "curious",
+        "interested",
+        "nosy",
+        "inquisitive"
+      ]
+    },
+    {
+      "question": "\"Thrifty\" and \"stingy\" share a similar...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Connotation lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "connotation",
+        "denotation (core meaning)",
+        "grammar",
+        "spelling"
+      ]
+    },
+    {
+      "question": "Connotation refers to...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Connotation lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "the dictionary definition",
+        "the attitude/emotion a word carries",
+        "the pronunciation",
+        "the word's origin only"
+      ]
+    },
+    {
+      "question": "Choosing \"curious\" instead of \"nosy\" signals...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Connotation lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "disapproval",
+        "approval/neutrality",
+        "confusion",
+        "no difference in meaning at all"
+      ]
+    }
+  ]
+}

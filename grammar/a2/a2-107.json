@@ -1,0 +1,77 @@
+{
+  "id": "a2-107",
+  "title": "When / While",
+  "description": "Practice When / While.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "___ I was cooking, the phone rang.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the When / While lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "When",
+        "While",
+        "As soon as",
+        "So"
+      ]
+    },
+    {
+      "question": "___ she arrived, we started the meeting.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the When / While lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "While",
+        "When",
+        "Such",
+        "So"
+      ]
+    },
+    {
+      "question": "He read a book ___ he waited.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the When / While lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "when",
+        "while",
+        "so",
+        "although"
+      ]
+    },
+    {
+      "question": "___ it rains, I take an umbrella.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the When / While lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "While",
+        "When",
+        "So",
+        "Such"
+      ]
+    },
+    {
+      "question": "___ we were talking, she checked her phone.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the When / While lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "When",
+        "While",
+        "Such",
+        "However"
+      ]
+    }
+  ]
+}

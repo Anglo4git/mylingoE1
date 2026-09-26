@@ -1,0 +1,77 @@
+{
+  "id": "a2-109",
+  "title": "As Soon As",
+  "description": "Practice As Soon As.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "I'll call you ___ I land.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the As Soon As lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "as soon as",
+        "while",
+        "so",
+        "such"
+      ]
+    },
+    {
+      "question": "___ she gets home, she checks her email.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the As Soon As lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "While",
+        "As soon as",
+        "Such",
+        "So"
+      ]
+    },
+    {
+      "question": "We'll start ___ everyone arrives.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the As Soon As lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "as soon as",
+        "although",
+        "however",
+        "so"
+      ]
+    },
+    {
+      "question": "He left ___ the meeting ended.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the As Soon As lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "as soon as",
+        "such",
+        "so",
+        "while"
+      ]
+    },
+    {
+      "question": "I'll text you ___ I hear anything.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the As Soon As lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "as soon as",
+        "although",
+        "however",
+        "such"
+      ]
+    }
+  ]
+}

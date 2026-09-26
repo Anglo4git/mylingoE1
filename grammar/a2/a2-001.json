@@ -1,12 +1,12 @@
 {
   "id": "a2-001",
-  "title": "Comparative Adjectives",
+  "title": "Comparative and Superlative Adjectives",
   "description": "Practice Comparative Adjectives.",
   "brand": "Mylingo",
   "category": "Grammar",
   "tags": "Grammar,A2",
   "level": "A2",
-  "version": 1,
+  "version": 2,
   "questions": [
     {
       "question": "A car is ___ than a bicycle.",
@@ -71,6 +71,32 @@
         "fastest",
         "faster",
         "more fast"
+      ]
+    },
+    {
+      "question": "Everest is ___ mountain in the world.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "Use 'the' + superlative (-est) to compare three or more things.",
+      "correctIndex": 1,
+      "answers": [
+        "the highest",
+        "higher",
+        "high",
+        "more high"
+      ]
+    },
+    {
+      "question": "This is ___ film I've ever seen.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "Long adjectives form the superlative with 'the most'.",
+      "correctIndex": 2,
+      "answers": [
+        "more boring",
+        "the most boring",
+        "boring",
+        "boringest"
       ]
     }
   ]

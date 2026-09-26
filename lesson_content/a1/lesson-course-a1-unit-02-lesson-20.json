@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-a1-unit-02-lesson-20",
+  "title": "Lesson: Abilities: Now and as a Child",
+  "description": "Practice Abilities: Now and as a Child.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A1,A1+",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Abilities: Now and as a Child.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1+,A1",
+      "media": {},
+      "subprompt": "Abilities: Now and as a Child",
+      "explanation": "Practice Abilities: Now and as a Child."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Abilities: Now and as a Child",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1+,A1"
+    },
+    {
+      "question": "Which sentence talks about a present ability?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1+,QuickCheck",
+      "explanation": "Can expresses present ability.",
+      "correctIndex": 1,
+      "answers": [
+        "I can swim.",
+        "I could swim when I was five.",
+        "I swam yesterday.",
+        "I am swimming yesterday."
+      ]
+    },
+    {
+      "question": "Which sentence talks about past ability?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1+,QuickCheck",
+      "explanation": "Could can describe ability in the past.",
+      "correctIndex": 1,
+      "answers": [
+        "She could read at age four.",
+        "She can read now.",
+        "She reads every day.",
+        "She is reading now."
+      ]
+    },
+    {
+      "question": "Complete: When I was young, I ___ climb trees.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1+,QuickCheck",
+      "explanation": "Could + base verb describes past ability.",
+      "correctIndex": 1,
+      "answers": [
+        "could",
+        "can",
+        "am able",
+        "could to"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1+"
+    }
+  ]
+}

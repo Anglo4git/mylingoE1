@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-02-lesson-17",
+  "title": "Lesson: Clothes and Street Directions",
+  "description": "Practice Clothes and Street Directions.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Clothes and Street Directions.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Clothes and Street Directions",
+      "explanation": "Practice Clothes and Street Directions."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Clothes and Street Directions",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "Which clothing is best for cold weather?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1,QuickCheck",
+      "explanation": "A coat keeps you warm in cold weather.",
+      "correctIndex": 1,
+      "answers": [
+        "a coat",
+        "shorts",
+        "a t-shirt",
+        "sandals"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

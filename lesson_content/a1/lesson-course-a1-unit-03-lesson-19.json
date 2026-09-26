@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-a1-unit-03-lesson-19",
+  "title": "Lesson: Advising and Suggesting",
+  "description": "Practice Advising and Suggesting.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,A1,A1+",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Advising and Suggesting.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1+,A1",
+      "media": {},
+      "subprompt": "Advising and Suggesting",
+      "explanation": "Practice Advising and Suggesting."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Advising and Suggesting",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1+,A1"
+    },
+    {
+      "question": "Which phrase gives advice?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1+,QuickCheck",
+      "explanation": "Should is commonly used to give advice.",
+      "correctIndex": 1,
+      "answers": [
+        "You should get some rest.",
+        "Get some rest yesterday.",
+        "I rested yesterday.",
+        "Resting is a room."
+      ]
+    },
+    {
+      "question": "Which phrase makes a suggestion?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1+,QuickCheck",
+      "explanation": "Why don't we...? is a common suggestion.",
+      "correctIndex": 1,
+      "answers": [
+        "Why don't we take the bus?",
+        "You took the bus.",
+        "The bus is blue.",
+        "Where is the bus?"
+      ]
+    },
+    {
+      "question": "Complete: You look tired. You ___ go home.",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1+,QuickCheck",
+      "explanation": "Use should + base verb for advice.",
+      "correctIndex": 1,
+      "answers": [
+        "should",
+        "should to",
+        "are should",
+        "shoulds"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1+"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "b2-058",
+  "title": "Guessing",
+  "description": "Practice Guessing.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"___ that it'll cost around $200.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Guessing lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "I'd hazard a guess",
+        "I'm certain",
+        "Congratulations on",
+        "It follows"
+      ]
+    },
+    {
+      "question": "\"If I had to guess, I'd say she's ___.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Guessing lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "definitely thirty",
+        "in her thirties",
+        "never thirty",
+        "exactly thirty"
+      ]
+    },
+    {
+      "question": "\"It's anyone's guess\" means...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Guessing lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "the answer is certain",
+        "nobody can really know",
+        "it's a formal statement",
+        "it's an offer"
+      ]
+    },
+    {
+      "question": "\"My best guess is...\" signals...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Guessing lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "complete certainty",
+        "a tentative, hedged estimate",
+        "an apology",
+        "a conclusion from clear evidence"
+      ]
+    },
+    {
+      "question": "B2 guessing phrases differ from B1's mainly by being...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Guessing lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "less polite",
+        "more varied/sophisticated in hedging",
+        "only used in writing",
+        "grammatically simpler"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "b2-051",
+  "title": "Stating purpose",
+  "description": "Practice Stating purpose.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"We met ___ finalise the budget.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Stating purpose lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "in order to",
+        "so that to",
+        "with aim",
+        "for to"
+      ]
+    },
+    {
+      "question": "\"The workshop's aim is ___ improve communication.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Stating purpose lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "improving",
+        "to improve",
+        "improve",
+        "improved"
+      ]
+    },
+    {
+      "question": "\"With the aim of ___ communication...\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Stating purpose lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "improve",
+        "to improve",
+        "improving",
+        "improved"
+      ]
+    },
+    {
+      "question": "\"So as to\" is followed by...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Stating purpose lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "a bare infinitive",
+        "an infinitive with \"to\"",
+        "an -ing form",
+        "a past participle"
+      ]
+    },
+    {
+      "question": "Stating purpose answers the question...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Stating purpose lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "When?",
+        "Why/for what reason?",
+        "Who?",
+        "How much?"
+      ]
+    }
+  ]
+}

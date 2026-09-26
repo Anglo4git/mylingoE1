@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-02-lesson-11",
+  "title": "Lesson: The Home: Rooms and Furniture",
+  "description": "Practice Rooms and Furniture.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Rooms and Furniture.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "The Home: Rooms and Furniture",
+      "explanation": "Practice Rooms and Furniture."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "The Home: Rooms and Furniture",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "Where do you cook food?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1,QuickCheck",
+      "explanation": "Food is cooked in the kitchen.",
+      "correctIndex": 2,
+      "answers": [
+        "bathroom",
+        "kitchen",
+        "bedroom",
+        "living room"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

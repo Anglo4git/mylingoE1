@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-01-lesson-18",
+  "title": "Lesson: As Soon As",
+  "description": "Practice As Soon As.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice As Soon As.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "As Soon As",
+      "explanation": "Practice As Soon As."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "As Soon As",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "I'll call you ___ I land.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "See the As Soon As lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "as soon as",
+        "while",
+        "so",
+        "such"
+      ]
+    },
+    {
+      "question": "___ she gets home, she checks her email.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "See the As Soon As lesson.",
+      "correctIndex": 2,
+      "answers": [
+        "While",
+        "As soon as",
+        "Such",
+        "So"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

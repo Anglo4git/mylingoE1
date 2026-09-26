@@ -1,0 +1,77 @@
+{
+  "id": "b1-017",
+  "title": "Be able to / can / manage to",
+  "description": "Practice Be able to / can / manage to.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Future ability: \"I ___ help tomorrow.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Express ability in past, present, and future correctly.",
+      "correctIndex": 3,
+      "answers": [
+        "could",
+        "can",
+        "manage to",
+        "will be able to"
+      ]
+    },
+    {
+      "question": "\"She ___ fix the car herself.\" (single achieved, despite difficulty)",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Express ability in past, present, and future correctly.",
+      "correctIndex": 3,
+      "answers": [
+        "could",
+        "was able",
+        "can",
+        "managed to"
+      ]
+    },
+    {
+      "question": "Past general ability: \"I ___ swim when I was five.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Express ability in past, present, and future correctly.",
+      "correctIndex": 1,
+      "answers": [
+        "was able to",
+        "could",
+        "managed to",
+        "can"
+      ]
+    },
+    {
+      "question": "\"Were you ___ reach him?\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Express ability in past, present, and future correctly.",
+      "correctIndex": 0,
+      "answers": [
+        "able to",
+        "could to",
+        "can",
+        "manage"
+      ]
+    },
+    {
+      "question": "\"Can\" has direct forms for which tenses?",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Express ability in past, present, and future correctly.",
+      "correctIndex": 0,
+      "answers": [
+        "present and future only",
+        "past only",
+        "all tenses",
+        "none"
+      ]
+    }
+  ]
+}

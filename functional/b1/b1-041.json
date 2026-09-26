@@ -1,0 +1,77 @@
+{
+  "id": "b1-041",
+  "title": "Describing location of people and things",
+  "description": "Practice Describing location of people and things.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"The pharmacy is ___ the bank.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Give precise spatial descriptions.",
+      "correctIndex": 0,
+      "answers": [
+        "opposite",
+        "opposited",
+        "opposite of",
+        "opposite to"
+      ]
+    },
+    {
+      "question": "\"She's over there, ___ the window.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Give precise spatial descriptions.",
+      "correctIndex": 1,
+      "answers": [
+        "at",
+        "by",
+        "in",
+        "on"
+      ]
+    },
+    {
+      "question": "\"Just ___ the bank\" means slightly further than it.",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Give precise spatial descriptions.",
+      "correctIndex": 0,
+      "answers": [
+        "past",
+        "passed",
+        "passing",
+        "pass"
+      ]
+    },
+    {
+      "question": "\"On the corner of\" describes...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Give precise spatial descriptions.",
+      "correctIndex": 1,
+      "answers": [
+        "inside a building",
+        "a specific street intersection point",
+        "a direction only",
+        "a distance"
+      ]
+    },
+    {
+      "question": "Which best describes proximity?",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Give precise spatial descriptions.",
+      "correctIndex": 3,
+      "answers": [
+        "unrelated to",
+        "never near",
+        "far from",
+        "a couple of blocks from"
+      ]
+    }
+  ]
+}

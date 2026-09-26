@@ -1,0 +1,77 @@
+{
+  "id": "b1-027",
+  "title": "Clothes",
+  "description": "Practice Clothes.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "If clothes are \"loose\", they are...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Describe clothing, fit, and style in more detail than A2.",
+      "correctIndex": 3,
+      "answers": [
+        "formal",
+        "tight",
+        "expensive",
+        "not tight, roomy"
+      ]
+    },
+    {
+      "question": "To \"accessorise\" means to...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Describe clothing, fit, and style in more detail than A2.",
+      "correctIndex": 2,
+      "answers": [
+        "wash clothes",
+        "buy new clothes",
+        "add items like jewellery/scarves",
+        "iron clothes"
+      ]
+    },
+    {
+      "question": "\"Second-hand\" clothes are...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Describe clothing, fit, and style in more detail than A2.",
+      "correctIndex": 2,
+      "answers": [
+        "brand new",
+        "expensive",
+        "previously owned",
+        "handmade"
+      ]
+    },
+    {
+      "question": "A \"casual\" outfit is...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Describe clothing, fit, and style in more detail than A2.",
+      "correctIndex": 3,
+      "answers": [
+        "uncomfortable",
+        "old",
+        "formal",
+        "relaxed, informal"
+      ]
+    },
+    {
+      "question": "\"Fabric\" refers to...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Describe clothing, fit, and style in more detail than A2.",
+      "correctIndex": 3,
+      "answers": [
+        "the size",
+        "the price",
+        "the style",
+        "the material"
+      ]
+    }
+  ]
+}

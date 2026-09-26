@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-01-lesson-16",
+  "title": "Lesson: Will — Offers",
+  "description": "Practice Will: Offers.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Will: Offers.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Will — Offers",
+      "explanation": "Practice Will: Offers."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Will — Offers",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "Your friend looks cold and the window is open. What do you say?",
+      "category": "Grammar",
+      "tags": "Grammar,A1,QuickCheck",
+      "explanation": "'I'll' makes a spontaneous offer.",
+      "correctIndex": 2,
+      "answers": [
+        "I go to close the window.",
+        "I'll close the window.",
+        "I am close the window.",
+        "I closing the window."
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

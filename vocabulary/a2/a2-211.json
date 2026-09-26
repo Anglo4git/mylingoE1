@@ -1,0 +1,77 @@
+{
+  "id": "a2-211",
+  "title": "Hobbies, Sports and Interests",
+  "description": "Practice Hobbies, Sports and Interests vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Walking long distances in nature is ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Hobbies, Sports and Interests lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "hiking",
+        "gardening",
+        "chess",
+        "cycling"
+      ]
+    },
+    {
+      "question": "If you love something, you can say you're \"___\" it.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Hobbies, Sports and Interests lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "into",
+        "at",
+        "for",
+        "on"
+      ]
+    },
+    {
+      "question": "Growing plants is called ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Hobbies, Sports and Interests lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "hiking",
+        "gardening",
+        "cycling",
+        "chess"
+      ]
+    },
+    {
+      "question": "Someone who really likes something is \"a ___ of\" it.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Hobbies, Sports and Interests lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "into",
+        "fan",
+        "at",
+        "with"
+      ]
+    },
+    {
+      "question": "Riding a bike as a hobby is ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Hobbies, Sports and Interests lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "hiking",
+        "cycling",
+        "gardening",
+        "chess"
+      ]
+    }
+  ]
+}

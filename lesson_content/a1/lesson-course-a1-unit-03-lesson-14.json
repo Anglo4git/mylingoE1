@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-03-lesson-14",
+  "title": "Lesson: Writing a Postcard",
+  "description": "Practice Writing a Postcard.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Writing a Postcard.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Writing a Postcard",
+      "explanation": "Practice Writing a Postcard."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Writing a Postcard",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "Which is a postcard closing?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1,QuickCheck",
+      "explanation": "\"See you soon!\" closes a postcard; \"Dear Sara,\" opens one.",
+      "correctIndex": 1,
+      "answers": [
+        "See you soon!",
+        "Dear Sara,",
+        "Hi Sara,",
+        "To whom it may concern,"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

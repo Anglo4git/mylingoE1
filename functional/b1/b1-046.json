@@ -1,0 +1,77 @@
+{
+  "id": "b1-046",
+  "title": "Making deductions",
+  "description": "Practice Making deductions.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"The lights are off — they ___ be out.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Draw logical conclusions from evidence.",
+      "correctIndex": 2,
+      "answers": [
+        "would",
+        "should",
+        "must",
+        "can"
+      ]
+    },
+    {
+      "question": "\"He ___ be at work; it's Sunday.\" (impossible)",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Draw logical conclusions from evidence.",
+      "correctIndex": 2,
+      "answers": [
+        "must",
+        "should",
+        "can't",
+        "will"
+      ]
+    },
+    {
+      "question": "\"That would explain why...\" introduces...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Draw logical conclusions from evidence.",
+      "correctIndex": 0,
+      "answers": [
+        "a logical reason for something observed",
+        "an order",
+        "a request",
+        "a refusal"
+      ]
+    },
+    {
+      "question": "Deduction from evidence typically uses...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Draw logical conclusions from evidence.",
+      "correctIndex": 2,
+      "answers": [
+        "should",
+        "will",
+        "must/can't",
+        "could you"
+      ]
+    },
+    {
+      "question": "\"She's not answering — she ___ be asleep.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Draw logical conclusions from evidence.",
+      "correctIndex": 1,
+      "answers": [
+        "can't",
+        "must",
+        "mustn't",
+        "shouldn't"
+      ]
+    }
+  ]
+}

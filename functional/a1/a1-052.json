@@ -1,0 +1,77 @@
+{
+  "id": "a1-052",
+  "title": "Future Arrangements",
+  "description": "Practice Future Arrangements.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Complete: \"I ___ (meet) John tomorrow.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "Present Continuous for a fixed arrangement.",
+      "correctIndex": 2,
+      "answers": [
+        "meet",
+        "am meeting",
+        "will meeting",
+        "meets"
+      ]
+    },
+    {
+      "question": "Complete: \"She ___ (fly) to Rome on Monday.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "Present Continuous for a fixed arrangement.",
+      "correctIndex": 2,
+      "answers": [
+        "flies",
+        "is flying",
+        "fly",
+        "flew"
+      ]
+    },
+    {
+      "question": "Ask about someone's weekend plans.",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "Present Continuous question for future plans.",
+      "correctIndex": 1,
+      "answers": [
+        "What are you doing this weekend?",
+        "What do you do this weekend?",
+        "What you doing weekend?",
+        "Weekend what doing?"
+      ]
+    },
+    {
+      "question": "\"We're having dinner with friends on Friday.\" Is this decided already?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "Present Continuous shows an already-decided plan.",
+      "correctIndex": 1,
+      "answers": [
+        "Yes",
+        "No",
+        "Maybe",
+        "Never"
+      ]
+    },
+    {
+      "question": "Ask if someone is free on Saturday.",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "Use \"on\" with days.",
+      "correctIndex": 1,
+      "answers": [
+        "Are you free on Saturday?",
+        "Are you free at Saturday?",
+        "You free Saturday?",
+        "Free you Saturday?"
+      ]
+    }
+  ]
+}

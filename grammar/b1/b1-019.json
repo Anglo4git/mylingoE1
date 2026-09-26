@@ -1,0 +1,77 @@
+{
+  "id": "b1-019",
+  "title": "Have and have got",
+  "description": "Practice Have and have got.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"I ___ two brothers.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Use both forms of \"have\" for possession, relationships, and features, especially in British English.",
+      "correctIndex": 2,
+      "answers": [
+        "having",
+        "am having",
+        "have got",
+        "has got"
+      ]
+    },
+    {
+      "question": "Which uses \"have\" for an action, NOT possession?",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Use both forms of \"have\" for possession, relationships, and features, especially in British English.",
+      "correctIndex": 1,
+      "answers": [
+        "I've got a sister.",
+        "I have breakfast at 7.",
+        "I have a car.",
+        "Have you got a pen?"
+      ]
+    },
+    {
+      "question": "\"___ you got a pen?\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Use both forms of \"have\" for possession, relationships, and features, especially in British English.",
+      "correctIndex": 1,
+      "answers": [
+        "Did",
+        "Have",
+        "Are",
+        "Do"
+      ]
+    },
+    {
+      "question": "\"She ___ any money.\" (negative)",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Use both forms of \"have\" for possession, relationships, and features, especially in British English.",
+      "correctIndex": 1,
+      "answers": [
+        "haven't has",
+        "hasn't got",
+        "not have got",
+        "doesn't has"
+      ]
+    },
+    {
+      "question": "\"Have got\" is most common in...",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Use both forms of \"have\" for possession, relationships, and features, especially in British English.",
+      "correctIndex": 0,
+      "answers": [
+        "spoken British English",
+        "formal writing",
+        "past tense only",
+        "American English only"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "b2-024",
+  "title": "Conjunctions: although, despite, in spite of, otherwise, unless",
+  "description": "Practice Conjunctions: although, despite, in spite of, otherwise, unless.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"___ it was raining, we went for a walk.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Conjunctions: although, despite, in spite of, otherwise, unless lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "Despite",
+        "In spite of",
+        "Although",
+        "Otherwise"
+      ]
+    },
+    {
+      "question": "\"___ the rain, we went for a walk.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Conjunctions: although, despite, in spite of, otherwise, unless lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Although",
+        "Despite",
+        "Unless",
+        "Otherwise"
+      ]
+    },
+    {
+      "question": "Which is correct?",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Conjunctions: although, despite, in spite of, otherwise, unless lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "despite it was raining",
+        "despite the rain",
+        "despite of the rain",
+        "despite to the rain"
+      ]
+    },
+    {
+      "question": "\"Hurry up, ___ we'll miss the train.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Conjunctions: although, despite, in spite of, otherwise, unless lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "unless",
+        "although",
+        "otherwise",
+        "despite"
+      ]
+    },
+    {
+      "question": "\"I won't go ___ you come with me.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Conjunctions: although, despite, in spite of, otherwise, unless lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "unless",
+        "otherwise",
+        "despite",
+        "although"
+      ]
+    }
+  ]
+}

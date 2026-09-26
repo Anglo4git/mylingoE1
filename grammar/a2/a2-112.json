@@ -1,0 +1,77 @@
+{
+  "id": "a2-112",
+  "title": "Used To",
+  "description": "Practice Used To.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "I ___ live in Rome.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Used To lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "use to",
+        "used to",
+        "using to",
+        "uses to"
+      ]
+    },
+    {
+      "question": "She ___ like coffee.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Used To lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "didn't use to",
+        "didn't used to",
+        "doesn't use to",
+        "not used to"
+      ]
+    },
+    {
+      "question": "___ you use to play an instrument?",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Used To lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Did",
+        "Do",
+        "Does",
+        "Have"
+      ]
+    },
+    {
+      "question": "We ___ walk to school every day.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Used To lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "use to",
+        "used to",
+        "using",
+        "uses"
+      ]
+    },
+    {
+      "question": "He ___ have long hair, but he cut it.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Used To lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "used to",
+        "use to",
+        "uses to",
+        "using to"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-01-lesson-10",
+  "title": "Lesson: Pronouns",
+  "description": "Practice Pronouns.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Pronouns.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Pronouns",
+      "explanation": "Practice Pronouns."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Pronouns",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "___ love coffee.",
+      "category": "Grammar",
+      "tags": "Grammar,A1,QuickCheck",
+      "explanation": "Use the subject pronoun before the verb.",
+      "correctIndex": 1,
+      "answers": [
+        "I",
+        "Me",
+        "Him",
+        "Them"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

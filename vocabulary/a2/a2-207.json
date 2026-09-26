@@ -1,0 +1,77 @@
+{
+  "id": "a2-207",
+  "title": "Clothes and Accessories",
+  "description": "Practice Clothes and Accessories vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "You wear a ___ around your waist to hold up trousers.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Clothes and Accessories lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "scarf",
+        "belt",
+        "hoodie",
+        "sandal"
+      ]
+    },
+    {
+      "question": "Open shoes for summer are called ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Clothes and Accessories lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "sandals",
+        "boots",
+        "belts",
+        "scarves"
+      ]
+    },
+    {
+      "question": "A warm top with a hood is a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Clothes and Accessories lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "scarf",
+        "hoodie",
+        "sandal",
+        "belt"
+      ]
+    },
+    {
+      "question": "Rings and necklaces are types of ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Clothes and Accessories lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "jewellery",
+        "hoodies",
+        "sandals",
+        "belts"
+      ]
+    },
+    {
+      "question": "A bag typically carried by hand or on the shoulder is a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Clothes and Accessories lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "hoodie",
+        "handbag",
+        "belt",
+        "scarf"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "a1-024",
+  "title": "Superlatives and Irregular Adverbs",
+  "description": "Practice Superlatives and Irregular Adverbs.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "tall → the ___",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "Short adjectives add -est.",
+      "correctIndex": 1,
+      "answers": [
+        "tallest",
+        "most tall",
+        "taller",
+        "more tall"
+      ]
+    },
+    {
+      "question": "beautiful → the ___",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "Longer adjectives use 'the most'.",
+      "correctIndex": 2,
+      "answers": [
+        "beautifulest",
+        "most beautiful",
+        "more beautiful",
+        "beautifullest"
+      ]
+    },
+    {
+      "question": "She sings very ___.",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "'Well' is the adverb form of 'good'.",
+      "correctIndex": 2,
+      "answers": [
+        "good",
+        "well",
+        "goodly",
+        "best"
+      ]
+    },
+    {
+      "question": "Which is correct?",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "'Fast' is both the adjective and the adverb.",
+      "correctIndex": 2,
+      "answers": [
+        "He runs fastly.",
+        "He runs fast.",
+        "He runs faster.",
+        "He run fast."
+      ]
+    },
+    {
+      "question": "\"She is the tallest student in the class.\" How many students are as tall as her?",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "The superlative marks the single highest one.",
+      "correctIndex": 1,
+      "answers": [
+        "none — she is the tallest",
+        "all of them",
+        "one other",
+        "two others"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-01-lesson-17",
+  "title": "Lesson: Must / Might for Deductions",
+  "description": "Practice Must / Might for Deductions.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Must / Might for Deductions.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Must / Might for Deductions",
+      "explanation": "Practice Must / Might for Deductions."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Must / Might for Deductions",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "The lights are off — they ___ be out.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "See the Must / Might for Deductions lesson.",
+      "correctIndex": 2,
+      "answers": [
+        "might",
+        "must",
+        "can",
+        "should"
+      ]
+    },
+    {
+      "question": "She ___ be at work; I'm not sure.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "See the Must / Might for Deductions lesson.",
+      "correctIndex": 2,
+      "answers": [
+        "must",
+        "might",
+        "is",
+        "does"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

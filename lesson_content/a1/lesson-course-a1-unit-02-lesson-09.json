@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-02-lesson-09",
+  "title": "Lesson: Everyday Activities",
+  "description": "Practice Everyday Activities.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Everyday Activities.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Everyday Activities",
+      "explanation": "Practice Everyday Activities."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Everyday Activities",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "I ___ up at seven every morning.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1,QuickCheck",
+      "explanation": "Use the base verb with 'I' in the present simple.",
+      "correctIndex": 2,
+      "answers": [
+        "gets",
+        "get",
+        "getting",
+        "got"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

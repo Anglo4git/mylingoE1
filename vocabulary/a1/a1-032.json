@@ -1,0 +1,77 @@
+{
+  "id": "a1-032",
+  "title": "Everyday Activities",
+  "description": "Practice Everyday Activities.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "I ___ up at seven every morning.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Use the base verb with 'I' in the present simple.",
+      "correctIndex": 2,
+      "answers": [
+        "gets",
+        "get",
+        "getting",
+        "got"
+      ]
+    },
+    {
+      "question": "She ___ breakfast every day.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Add -s for 'she' in the present simple.",
+      "correctIndex": 2,
+      "answers": [
+        "have",
+        "has",
+        "having",
+        "haves"
+      ]
+    },
+    {
+      "question": "Which activity usually happens first in the morning?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Getting up is the first morning activity.",
+      "correctIndex": 3,
+      "answers": [
+        "going to bed",
+        "having dinner",
+        "getting up",
+        "going to work"
+      ]
+    },
+    {
+      "question": "\"He never skips breakfast.\" Does he eat breakfast?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "'Never skips' means he always eats it.",
+      "correctIndex": 1,
+      "answers": [
+        "Yes, always",
+        "No, never",
+        "Sometimes",
+        "Only on weekends"
+      ]
+    },
+    {
+      "question": "Which is a complete, correct sentence about a routine?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Frequency adverb + subject + verb + object is the natural order.",
+      "correctIndex": 1,
+      "answers": [
+        "I usually have coffee in the morning.",
+        "I usually having coffee morning.",
+        "I have usually coffee.",
+        "Usually I coffee have."
+      ]
+    }
+  ]
+}

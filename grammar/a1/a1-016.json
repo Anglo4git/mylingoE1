@@ -1,0 +1,77 @@
+{
+  "id": "a1-016",
+  "title": "Too and Very",
+  "description": "Practice Too and Very.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Which sentence describes a problem?",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "'Too' signals a problem.",
+      "correctIndex": 2,
+      "answers": [
+        "This tea is very hot.",
+        "This tea is too hot to drink.",
+        "This tea is a hot.",
+        "This tea hot too."
+      ]
+    },
+    {
+      "question": "The bag is ___ heavy — I can't lift it.",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "'Too' shows the result is a problem.",
+      "correctIndex": 2,
+      "answers": [
+        "very",
+        "too",
+        "so",
+        "enough"
+      ]
+    },
+    {
+      "question": "She is ___ happy today.",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "'Very' simply strengthens the adjective.",
+      "correctIndex": 1,
+      "answers": [
+        "very",
+        "too",
+        "so",
+        "enough"
+      ]
+    },
+    {
+      "question": "This box is ___ big to fit in the car.",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "'Too' + adjective + to describes a problem.",
+      "correctIndex": 2,
+      "answers": [
+        "very",
+        "too",
+        "so",
+        "enough"
+      ]
+    },
+    {
+      "question": "\"It's too cold to swim today.\" Can they swim?",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "'Too cold to swim' means they cannot swim.",
+      "correctIndex": 2,
+      "answers": [
+        "Yes",
+        "No",
+        "Maybe",
+        "Not sure"
+      ]
+    }
+  ]
+}

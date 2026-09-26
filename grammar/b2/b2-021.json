@@ -1,0 +1,77 @@
+{
+  "id": "b2-021",
+  "title": "Compounds of some, any, no, every",
+  "description": "Practice Compounds of some, any, no, every.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"___ left this here.\" (affirmative statement)",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Compounds of some, any, no, every lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Anyone",
+        "Someone",
+        "No one",
+        "Nothing"
+      ]
+    },
+    {
+      "question": "\"I didn't see ___.\" (negative)",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Compounds of some, any, no, every lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "someone",
+        "anyone",
+        "no one",
+        "everyone"
+      ]
+    },
+    {
+      "question": "\"___ surprises me anymore.\" (no double negative)",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Compounds of some, any, no, every lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "Nothing",
+        "Anything",
+        "Not anything",
+        "Not nothing"
+      ]
+    },
+    {
+      "question": "\"Would you like ___ to drink?\" (polite offer)",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Compounds of some, any, no, every lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "anything",
+        "something",
+        "nothing",
+        "everything"
+      ]
+    },
+    {
+      "question": "\"___ I go, I see the same ad.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Compounds of some, any, no, every lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "Somewhere",
+        "Anywhere",
+        "Everywhere",
+        "Nowhere"
+      ]
+    }
+  ]
+}

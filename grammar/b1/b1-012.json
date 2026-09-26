@@ -1,0 +1,77 @@
+{
+  "id": "b1-012",
+  "title": "First vs Second Conditional (Contrast)",
+  "description": "Contrasts First and Second Conditional; complements the existing standalone Second Conditional item.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"If it rains, I ___ stay home.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Talk about real future possibilities (first conditional) and imaginary/unlikely present situations (second conditional).",
+      "correctIndex": 3,
+      "answers": [
+        "would",
+        "stayed",
+        "stay",
+        "will"
+      ]
+    },
+    {
+      "question": "\"If I ___ the lottery, I would travel.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Talk about real future possibilities (first conditional) and imaginary/unlikely present situations (second conditional).",
+      "correctIndex": 1,
+      "answers": [
+        "will win",
+        "won",
+        "win",
+        "winning"
+      ]
+    },
+    {
+      "question": "Which is second conditional?",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Talk about real future possibilities (first conditional) and imaginary/unlikely present situations (second conditional).",
+      "correctIndex": 0,
+      "answers": [
+        "If I were rich, I'd travel.",
+        "If he calls, tell him I'm out.",
+        "If she studies, she'll pass.",
+        "If it rains, I'll stay in."
+      ]
+    },
+    {
+      "question": "First conditional describes...",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Talk about real future possibilities (first conditional) and imaginary/unlikely present situations (second conditional).",
+      "correctIndex": 1,
+      "answers": [
+        "imaginary situations",
+        "real future possibilities",
+        "past regrets",
+        "general truths"
+      ]
+    },
+    {
+      "question": "\"If I ___ you, I would apologise.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Talk about real future possibilities (first conditional) and imaginary/unlikely present situations (second conditional).",
+      "correctIndex": 0,
+      "answers": [
+        "were",
+        "will be",
+        "am",
+        "was"
+      ]
+    }
+  ]
+}

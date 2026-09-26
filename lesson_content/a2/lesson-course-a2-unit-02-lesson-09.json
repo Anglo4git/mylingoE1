@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-02-lesson-09",
+  "title": "Lesson: Clothes and Accessories",
+  "description": "Practice Clothes and Accessories vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Clothes and Accessories vocabulary.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Clothes and Accessories",
+      "explanation": "Practice Clothes and Accessories vocabulary."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Clothes and Accessories",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "You wear a ___ around your waist to hold up trousers.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "See the Clothes and Accessories lesson.",
+      "correctIndex": 2,
+      "answers": [
+        "scarf",
+        "belt",
+        "hoodie",
+        "sandal"
+      ]
+    },
+    {
+      "question": "Open shoes for summer are called ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "See the Clothes and Accessories lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "sandals",
+        "boots",
+        "belts",
+        "scarves"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

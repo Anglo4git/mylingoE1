@@ -1,0 +1,77 @@
+{
+  "id": "a1-017",
+  "title": "Short-Form Answers",
+  "description": "Practice Short-Form Answers.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Are you tired?",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "Match the auxiliary 'am' from the question.",
+      "correctIndex": 1,
+      "answers": [
+        "Yes, I am.",
+        "Yes, I do.",
+        "Yes, I can.",
+        "Yes, I be."
+      ]
+    },
+    {
+      "question": "Does he play football?",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "Match the auxiliary 'does' from the question.",
+      "correctIndex": 2,
+      "answers": [
+        "Yes, he is.",
+        "Yes, he does.",
+        "Yes, he can.",
+        "Yes, he plays."
+      ]
+    },
+    {
+      "question": "Can they cook?",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "Match the auxiliary 'can' from the question.",
+      "correctIndex": 3,
+      "answers": [
+        "Yes, they do.",
+        "Yes, they are.",
+        "Yes, they can.",
+        "Yes, they cook."
+      ]
+    },
+    {
+      "question": "Which is the correct negative short answer to \"Is it raining?\"",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "Match the auxiliary 'is' from the question.",
+      "correctIndex": 2,
+      "answers": [
+        "No, it doesn't.",
+        "No, it isn't.",
+        "No, it can't.",
+        "No, it not."
+      ]
+    },
+    {
+      "question": "\"Do you live here?\" \"No, I don't.\" What does the second speaker mean?",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "'No, I don't' negates living here.",
+      "correctIndex": 1,
+      "answers": [
+        "They don't live here.",
+        "They live here.",
+        "They live somewhere else too.",
+        "They didn't live here before."
+      ]
+    }
+  ]
+}

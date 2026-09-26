@@ -1,0 +1,77 @@
+{
+  "id": "a1-041",
+  "title": "Greetings and Introductions",
+  "description": "Practice Greetings and Introductions.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "You meet someone for the first time. What do you say?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "A first-meeting greeting.",
+      "correctIndex": 1,
+      "answers": [
+        "Nice to meet you.",
+        "See you later.",
+        "Goodbye.",
+        "Not bad."
+      ]
+    },
+    {
+      "question": "Introduce your friend Tom.",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "Use \"This is...\" to introduce someone else.",
+      "correctIndex": 1,
+      "answers": [
+        "This is Tom.",
+        "I am Tom.",
+        "He Tom.",
+        "Tom is."
+      ]
+    },
+    {
+      "question": "Which is an informal greeting?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "\"Hi!\" is informal.",
+      "correctIndex": 2,
+      "answers": [
+        "Good afternoon",
+        "Hi!",
+        "Good evening",
+        "How do you do"
+      ]
+    },
+    {
+      "question": "Complete: \"___ Maria.\" (introducing yourself)",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "Use I'm to introduce yourself.",
+      "correctIndex": 1,
+      "answers": [
+        "I'm",
+        "You're",
+        "She's",
+        "We're"
+      ]
+    },
+    {
+      "question": "\"How are you?\" \"Fine, thanks. And you?\" What is the second speaker doing?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "\"And you?\" asks the question back.",
+      "correctIndex": 1,
+      "answers": [
+        "asking back",
+        "refusing",
+        "greeting first",
+        "apologising"
+      ]
+    }
+  ]
+}

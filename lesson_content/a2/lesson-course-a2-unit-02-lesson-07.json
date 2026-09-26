@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-02-lesson-07",
+  "title": "Lesson: Buildings and Monuments",
+  "description": "Practice Buildings and Monuments vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Buildings and Monuments vocabulary.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Buildings and Monuments",
+      "explanation": "Practice Buildings and Monuments vocabulary."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Buildings and Monuments",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "A large, grand royal residence is a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "See the Buildings and Monuments lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "palace",
+        "fortress",
+        "ruin",
+        "tower"
+      ]
+    },
+    {
+      "question": "A very tall modern building is a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "See the Buildings and Monuments lesson.",
+      "correctIndex": 2,
+      "answers": [
+        "cathedral",
+        "skyscraper",
+        "ruin",
+        "monument"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

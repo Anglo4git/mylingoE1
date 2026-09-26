@@ -1,0 +1,77 @@
+{
+  "id": "a1-026",
+  "title": "Countries, Nationalities and Languages",
+  "description": "Practice Countries, Nationalities and Languages.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Italy → nationality",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "The nationality adjective for Italy is 'Italian'.",
+      "correctIndex": 2,
+      "answers": [
+        "Italy",
+        "Italian",
+        "Italish",
+        "Italiano (in English)"
+      ]
+    },
+    {
+      "question": "Which nationality matches France?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "The nationality adjective for France is 'French'.",
+      "correctIndex": 3,
+      "answers": [
+        "Frenchy",
+        "France",
+        "French",
+        "Francian"
+      ]
+    },
+    {
+      "question": "She ___ from Mexico.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Use 'comes' with 'she' in the present simple.",
+      "correctIndex": 2,
+      "answers": [
+        "is come",
+        "comes",
+        "coming",
+        "come"
+      ]
+    },
+    {
+      "question": "Someone asks \"Where are you from?\" A correct answer is:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Use 'I'm from' + country.",
+      "correctIndex": 2,
+      "answers": [
+        "I from Canada.",
+        "I'm from Canada.",
+        "I Canada.",
+        "I'm Canada."
+      ]
+    },
+    {
+      "question": "\"He is German and speaks German and English.\" How many languages does he speak?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "German and English = two languages.",
+      "correctIndex": 2,
+      "answers": [
+        "one",
+        "two",
+        "three",
+        "none"
+      ]
+    }
+  ]
+}

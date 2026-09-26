@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-03-lesson-11",
+  "title": "Lesson: Instructions and Suggestions",
+  "description": "Practice Instructions and Suggestions.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Instructions and Suggestions.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Instructions and Suggestions",
+      "explanation": "Practice Instructions and Suggestions."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Instructions and Suggestions",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "Which is a suggestion, not an instruction?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1,QuickCheck",
+      "explanation": "\"How about...?\" makes a suggestion; \"Press the button\" is an instruction.",
+      "correctIndex": 1,
+      "answers": [
+        "How about coffee?",
+        "Press the button.",
+        "Turn left.",
+        "Open the door."
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "a1-040",
+  "title": "Clothes and Street Directions",
+  "description": "Practice Clothes and Street Directions.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Which clothing is best for cold weather?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "A coat keeps you warm in cold weather.",
+      "correctIndex": 1,
+      "answers": [
+        "a coat",
+        "shorts",
+        "a t-shirt",
+        "sandals"
+      ]
+    },
+    {
+      "question": "Which instruction gives a direction?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "'Turn left at the corner' is a direction.",
+      "correctIndex": 2,
+      "answers": [
+        "It's sunny today.",
+        "Turn left at the corner.",
+        "I like your shoes.",
+        "She is wearing a hat."
+      ]
+    },
+    {
+      "question": "Go straight ___, then turn right.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "'Go straight on' is the fixed phrase.",
+      "correctIndex": 1,
+      "answers": [
+        "on",
+        "in",
+        "at",
+        "to"
+      ]
+    },
+    {
+      "question": "\"The bank is next to the pharmacy.\" Where is the bank?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "The text says the bank is next to the pharmacy.",
+      "correctIndex": 2,
+      "answers": [
+        "far from the pharmacy",
+        "next to the pharmacy",
+        "inside the pharmacy",
+        "behind the park"
+      ]
+    },
+    {
+      "question": "Why would someone wear a hat and gloves?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Hats and gloves are usually worn in cold weather.",
+      "correctIndex": 2,
+      "answers": [
+        "it's hot",
+        "it's cold",
+        "it's raining lightly",
+        "no reason"
+      ]
+    }
+  ]
+}

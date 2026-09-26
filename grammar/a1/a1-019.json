@@ -1,0 +1,77 @@
+{
+  "id": "a1-019",
+  "title": "Will — Offers",
+  "description": "Practice Will: Offers.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Your friend looks cold and the window is open. What do you say?",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "'I'll' makes a spontaneous offer.",
+      "correctIndex": 2,
+      "answers": [
+        "I go to close the window.",
+        "I'll close the window.",
+        "I am close the window.",
+        "I closing the window."
+      ]
+    },
+    {
+      "question": "Someone drops their books. What's a polite offer?",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "'I'll' offers help decided now.",
+      "correctIndex": 1,
+      "answers": [
+        "I'll help you.",
+        "I help you.",
+        "I'm helping you.",
+        "I go help you."
+      ]
+    },
+    {
+      "question": "Which sentence is an offer, not a plan?",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "'I'll' is a spontaneous offer; 'going to' is a plan.",
+      "correctIndex": 1,
+      "answers": [
+        "I'll call you later.",
+        "I'm going to call you next week.",
+        "I call you later.",
+        "I am call you later."
+      ]
+    },
+    {
+      "question": "\"___ carry that bag for you.\"",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "'I'll' + base verb makes an offer.",
+      "correctIndex": 1,
+      "answers": [
+        "I'll",
+        "I going to",
+        "I am go to",
+        "I will to"
+      ]
+    },
+    {
+      "question": "\"Don't worry, I'll call the doctor.\" Who is offering to call?",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "The speaker uses 'I'll' to offer.",
+      "correctIndex": 2,
+      "answers": [
+        "the listener",
+        "the speaker",
+        "the doctor",
+        "nobody"
+      ]
+    }
+  ]
+}

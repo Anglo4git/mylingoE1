@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-02-lesson-13",
+  "title": "Lesson: Body and Appearance",
+  "description": "Practice Body and Appearance.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Body and Appearance.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Body and Appearance",
+      "explanation": "Practice Body and Appearance."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Body and Appearance",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "Which is a body part?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1,QuickCheck",
+      "explanation": "'Leg' is a body part.",
+      "correctIndex": 2,
+      "answers": [
+        "tall",
+        "leg",
+        "short",
+        "curly"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

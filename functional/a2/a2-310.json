@@ -1,0 +1,77 @@
+{
+  "id": "a2-310",
+  "title": "Offering and Suggesting",
+  "description": "Practice: Offering and Suggesting.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Offer to help:",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Offering and Suggesting lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "\"Shall I carry that for you?\"",
+        "\"Carry that.\"",
+        "\"I carry now.\"",
+        "\"Give me that.\""
+      ]
+    },
+    {
+      "question": "Suggestion phrase:",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Offering and Suggesting lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "\"Why don't we go for a walk?\"",
+        "\"We go walk.\"",
+        "\"Walk now we.\"",
+        "\"Must walk.\""
+      ]
+    },
+    {
+      "question": "\"___ about trying the new café?\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Offering and Suggesting lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "How",
+        "What",
+        "Why not only",
+        "So"
+      ]
+    },
+    {
+      "question": "Polite offer to do something for someone:",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Offering and Suggesting lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "\"Would you like me to help?\"",
+        "\"I help you now.\"",
+        "\"Help you?\"",
+        "\"You need help.\""
+      ]
+    },
+    {
+      "question": "Which is a suggestion, not an offer?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Offering and Suggesting lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "\"Shall I open the window?\"",
+        "\"Why don't we open the window?\"",
+        "\"I'll open the window.\"",
+        "\"Let me open it.\""
+      ]
+    }
+  ]
+}

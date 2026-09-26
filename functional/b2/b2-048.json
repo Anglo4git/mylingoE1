@@ -1,0 +1,77 @@
+{
+  "id": "b2-048",
+  "title": "Drawing conclusions",
+  "description": "Practice Drawing conclusions.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"Sales dropped everywhere. This ___ the issue isn't local.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Drawing conclusions lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "suggests",
+        "offers",
+        "commiserates",
+        "contrasts"
+      ]
+    },
+    {
+      "question": "\"___, the trip was a success.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Drawing conclusions lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "All things considered",
+        "On top of that",
+        "Then again",
+        "For instance"
+      ]
+    },
+    {
+      "question": "Which signals a logical conclusion?",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Drawing conclusions lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "It follows that...",
+        "Nice one!",
+        "I'd hazard a guess...",
+        "Sorry to hear that"
+      ]
+    },
+    {
+      "question": "\"Therefore\" is used to...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Drawing conclusions lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "introduce an example",
+        "state a conclusion from evidence",
+        "express sympathy",
+        "offer help"
+      ]
+    },
+    {
+      "question": "Drawing a conclusion means...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Drawing conclusions lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "restating the question",
+        "giving a logical result from evidence/discussion",
+        "offering an apology",
+        "making a guess with no evidence"
+      ]
+    }
+  ]
+}

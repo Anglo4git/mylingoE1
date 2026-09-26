@@ -1,0 +1,77 @@
+{
+  "id": "b1-018",
+  "title": "Past Perfect Simple",
+  "description": "Practice Past Perfect Simple.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"When I arrived, the film ___ already started.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Show that one past action happened before another past action.",
+      "correctIndex": 0,
+      "answers": [
+        "had",
+        "was",
+        "did",
+        "has"
+      ]
+    },
+    {
+      "question": "Past Perfect = had + ___.",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Show that one past action happened before another past action.",
+      "correctIndex": 0,
+      "answers": [
+        "past participle",
+        "base verb",
+        "verb-ing",
+        "infinitive"
+      ]
+    },
+    {
+      "question": "\"She had never seen snow before she ___ to Canada.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Show that one past action happened before another past action.",
+      "correctIndex": 2,
+      "answers": [
+        "moves",
+        "moving",
+        "moved",
+        "has moved"
+      ]
+    },
+    {
+      "question": "Past Perfect shows...",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Show that one past action happened before another past action.",
+      "correctIndex": 0,
+      "answers": [
+        "the earlier of two past events",
+        "the later of two past events",
+        "a present habit",
+        "a future event"
+      ]
+    },
+    {
+      "question": "\"We ___ finished dinner by the time he called.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Show that one past action happened before another past action.",
+      "correctIndex": 3,
+      "answers": [
+        "are",
+        "have",
+        "were",
+        "had"
+      ]
+    }
+  ]
+}

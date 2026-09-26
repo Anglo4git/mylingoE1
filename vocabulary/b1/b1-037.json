@@ -1,0 +1,77 @@
+{
+  "id": "b1-037",
+  "title": "Crime and Punishment",
+  "description": "Practice Crime and Punishment.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"Theft\" means...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Understand basic vocabulary for crime and the justice system.",
+      "correctIndex": 0,
+      "answers": [
+        "stealing",
+        "lying",
+        "an argument",
+        "a car accident"
+      ]
+    },
+    {
+      "question": "A \"fine\" is...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Understand basic vocabulary for crime and the justice system.",
+      "correctIndex": 1,
+      "answers": [
+        "a type of crime",
+        "money paid as punishment",
+        "a lawyer",
+        "a prison sentence"
+      ]
+    },
+    {
+      "question": "A \"witness\" is someone who...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Understand basic vocabulary for crime and the justice system.",
+      "correctIndex": 3,
+      "answers": [
+        "commits a crime",
+        "is arrested",
+        "judges a case",
+        "saw an event happen"
+      ]
+    },
+    {
+      "question": "To \"arrest\" someone means to...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Understand basic vocabulary for crime and the justice system.",
+      "correctIndex": 1,
+      "answers": [
+        "fine them",
+        "take them into police custody",
+        "question them at home",
+        "release them"
+      ]
+    },
+    {
+      "question": "A \"sentence\" (legal) is...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Understand basic vocabulary for crime and the justice system.",
+      "correctIndex": 1,
+      "answers": [
+        "a type of crime",
+        "the punishment decided by a court",
+        "a police report",
+        "a witness statement"
+      ]
+    }
+  ]
+}

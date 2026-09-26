@@ -1,0 +1,77 @@
+{
+  "id": "b2-028",
+  "title": "Participle adjectives",
+  "description": "Practice Participle adjectives.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"I'm ___.\" (how I feel)",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Participle adjectives lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "boring",
+        "bored",
+        "bore",
+        "bores"
+      ]
+    },
+    {
+      "question": "\"This film is ___.\" (what causes the feeling)",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Participle adjectives lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "bored",
+        "boring",
+        "bore",
+        "bores"
+      ]
+    },
+    {
+      "question": "\"She was ___ by the lecture.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Participle adjectives lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "fascinating",
+        "fascinated",
+        "fascinate",
+        "fascinates"
+      ]
+    },
+    {
+      "question": "\"That was an ___ mistake.\" (describes the mistake, causing embarrassment)",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Participle adjectives lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "embarrassed",
+        "embarrassing",
+        "embarrass",
+        "embarrasses"
+      ]
+    },
+    {
+      "question": "-ed adjectives describe...",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Participle adjectives lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "the cause of a feeling",
+        "the person experiencing a feeling",
+        "an action in progress",
+        "a future state"
+      ]
+    }
+  ]
+}

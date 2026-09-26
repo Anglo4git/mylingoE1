@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-01-lesson-12",
+  "title": "Lesson: Linking Words: and, but, because, or",
+  "description": "Practice Linking Words.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Linking Words.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Linking Words: and, but, because, or",
+      "explanation": "Practice Linking Words."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Linking Words: and, but, because, or",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "Which word gives a reason?",
+      "category": "Grammar",
+      "tags": "Grammar,A1,QuickCheck",
+      "explanation": "'Because' introduces a reason.",
+      "correctIndex": 3,
+      "answers": [
+        "and",
+        "but",
+        "because",
+        "or"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

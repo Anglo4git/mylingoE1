@@ -1,0 +1,77 @@
+{
+  "id": "a2-108",
+  "title": "Must / Might for Deductions",
+  "description": "Practice Must / Might for Deductions.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "The lights are off — they ___ be out.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Must / Might for Deductions lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "might",
+        "must",
+        "can",
+        "should"
+      ]
+    },
+    {
+      "question": "She ___ be at work; I'm not sure.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Must / Might for Deductions lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "must",
+        "might",
+        "is",
+        "does"
+      ]
+    },
+    {
+      "question": "He ___ be tired after that trip.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Must / Might for Deductions lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "might not",
+        "must",
+        "mustn't",
+        "don't"
+      ]
+    },
+    {
+      "question": "It ___ rain later.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Must / Might for Deductions lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "must",
+        "might",
+        "is",
+        "will"
+      ]
+    },
+    {
+      "question": "That ___ be their car — I recognise it.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Must / Might for Deductions lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "might",
+        "must",
+        "can",
+        "could not"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "a2-213",
+  "title": "Life Changes and Events",
+  "description": "Practice Life Changes and Events vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Stopping work permanently, usually later in life, is to ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Life Changes and Events lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "retire",
+        "graduate",
+        "resign",
+        "apply"
+      ]
+    },
+    {
+      "question": "Moving to a new home is to ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Life Changes and Events lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "move house",
+        "change career",
+        "retire",
+        "get married"
+      ]
+    },
+    {
+      "question": "Becoming a parent for the first time is often described as \"___\".",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Life Changes and Events lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "have a baby",
+        "move house",
+        "retire",
+        "graduate"
+      ]
+    },
+    {
+      "question": "Switching to a completely different job field is to ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Life Changes and Events lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "retire",
+        "change career",
+        "move house",
+        "graduate"
+      ]
+    },
+    {
+      "question": "Formally marrying someone is to ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Life Changes and Events lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "get married",
+        "retire",
+        "change career",
+        "move house"
+      ]
+    }
+  ]
+}

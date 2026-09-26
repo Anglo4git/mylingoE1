@@ -1,0 +1,77 @@
+{
+  "id": "a2-302",
+  "title": "Talking About Personal Experiences",
+  "description": "Practice: Talking About Personal Experiences.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"Have you ___ tried sushi?\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Talking About Personal Experiences lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "ever",
+        "never",
+        "already only",
+        "once"
+      ]
+    },
+    {
+      "question": "\"___, I got lost in Rome.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Talking About Personal Experiences lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "One time",
+        "Never time",
+        "Such time",
+        "So time"
+      ]
+    },
+    {
+      "question": "\"That reminds me ___ when I was a student.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Talking About Personal Experiences lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "of",
+        "for",
+        "about only",
+        "at"
+      ]
+    },
+    {
+      "question": "Correct present-perfect experience form:",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Talking About Personal Experiences lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "\"I've never been to Japan.\"",
+        "\"I never was to Japan.\"",
+        "\"I no went to Japan.\"",
+        "\"I not been Japan.\""
+      ]
+    },
+    {
+      "question": "\"I ___ never skied before.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Talking About Personal Experiences lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "have",
+        "has",
+        "am",
+        "was"
+      ]
+    }
+  ]
+}

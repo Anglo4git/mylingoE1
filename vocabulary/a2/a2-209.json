@@ -1,0 +1,77 @@
+{
+  "id": "a2-209",
+  "title": "Travel and Tourism",
+  "description": "Practice Travel and Tourism vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Your plan of flights/stops for a trip is your ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Travel and Tourism lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "itinerary",
+        "luggage",
+        "visa",
+        "excursion"
+      ]
+    },
+    {
+      "question": "You need this document to show at the gate before flying: ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Travel and Tourism lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "visa",
+        "boarding pass",
+        "itinerary",
+        "luggage"
+      ]
+    },
+    {
+      "question": "Where you stay on a trip is your ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Travel and Tourism lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "accommodation",
+        "excursion",
+        "visa",
+        "boarding pass"
+      ]
+    },
+    {
+      "question": "A short organised trip from a base location is an ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Travel and Tourism lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "itinerary",
+        "excursion",
+        "accommodation",
+        "visa"
+      ]
+    },
+    {
+      "question": "An official permit to enter a country is a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Travel and Tourism lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "visa",
+        "itinerary",
+        "excursion",
+        "boarding pass"
+      ]
+    }
+  ]
+}

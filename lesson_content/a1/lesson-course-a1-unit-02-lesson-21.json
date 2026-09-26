@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-a1-unit-02-lesson-21",
+  "title": "Lesson: Word-Building: Common Suffixes",
+  "description": "Practice Word-Building: Common Suffixes.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A1,A1+",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Word-Building: Common Suffixes.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1+,A1",
+      "media": {},
+      "subprompt": "Word-Building: Common Suffixes",
+      "explanation": "Practice Word-Building: Common Suffixes."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Word-Building: Common Suffixes",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1+,A1"
+    },
+    {
+      "question": "Which noun can be made from teach?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1+,QuickCheck",
+      "explanation": "The suffix -er can make a person noun: teach → teacher.",
+      "correctIndex": 1,
+      "answers": [
+        "teacher",
+        "teachful",
+        "teachment",
+        "teachness"
+      ]
+    },
+    {
+      "question": "Which word means the quality of being kind?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1+,QuickCheck",
+      "explanation": "The suffix -ness can form nouns describing qualities.",
+      "correctIndex": 1,
+      "answers": [
+        "kindness",
+        "kindlyness",
+        "kindful",
+        "kindment"
+      ]
+    },
+    {
+      "question": "Which word is a person who works?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1+,QuickCheck",
+      "explanation": "The suffix -er can name a person who does an action.",
+      "correctIndex": 1,
+      "answers": [
+        "worker",
+        "workness",
+        "workful",
+        "workity"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1+"
+    }
+  ]
+}

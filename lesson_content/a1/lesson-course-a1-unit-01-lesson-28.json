@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-a1-unit-01-lesson-28",
+  "title": "Lesson: Have To / Need To",
+  "description": "Practice Have To / Need To.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A1,A1+",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Have To / Need To.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1+,A1",
+      "media": {},
+      "subprompt": "Have To / Need To",
+      "explanation": "Practice Have To / Need To."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Have To / Need To",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1+,A1"
+    },
+    {
+      "question": "I ___ wear a uniform at work.",
+      "category": "Grammar",
+      "tags": "Grammar,A1+,QuickCheck",
+      "explanation": "Have to expresses obligation; I takes have to.",
+      "correctIndex": 1,
+      "answers": [
+        "have to",
+        "have",
+        "am have to",
+        "has to"
+      ]
+    },
+    {
+      "question": "She ___ get up early tomorrow.",
+      "category": "Grammar",
+      "tags": "Grammar,A1+,QuickCheck",
+      "explanation": "With she, use needs to.",
+      "correctIndex": 1,
+      "answers": [
+        "needs to",
+        "need",
+        "need to",
+        "is need to"
+      ]
+    },
+    {
+      "question": "Which sentence shows no obligation?",
+      "category": "Grammar",
+      "tags": "Grammar,A1+,QuickCheck",
+      "explanation": "Don't have to means it is not necessary.",
+      "correctIndex": 1,
+      "answers": [
+        "You don't have to come.",
+        "You mustn't to come.",
+        "You don't need coming.",
+        "You aren't have to come."
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1+"
+    }
+  ]
+}

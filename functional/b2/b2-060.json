@@ -1,0 +1,77 @@
+{
+  "id": "b2-060",
+  "title": "Giving examples",
+  "description": "Practice Giving examples.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"Several cities have banned plastic bags. ___, France.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Giving examples lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "Take, for example",
+        "In order to",
+        "On the other hand",
+        "I'd hazard a guess"
+      ]
+    },
+    {
+      "question": "\"A case in point is...\" introduces...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Giving examples lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "a contrast",
+        "an example",
+        "a conclusion",
+        "an apology"
+      ]
+    },
+    {
+      "question": "\"To illustrate...\" is used to...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Giving examples lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "summarise",
+        "give an example",
+        "express regret",
+        "make an offer"
+      ]
+    },
+    {
+      "question": "\"Take X, for example\" places the example...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Giving examples lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "before the general statement only",
+        "after mentioning the general point",
+        "never with a general point",
+        "only in questions"
+      ]
+    },
+    {
+      "question": "Giving examples helps to...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Giving examples lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "confuse the argument",
+        "support/clarify a general statement with specifics",
+        "contradict the main point",
+        "end the conversation"
+      ]
+    }
+  ]
+}

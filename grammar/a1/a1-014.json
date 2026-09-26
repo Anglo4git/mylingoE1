@@ -1,0 +1,77 @@
+{
+  "id": "a1-014",
+  "title": "Prepositions of Time",
+  "description": "Practice Prepositions of Time.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "I have lunch ___ 1 o'clock.",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "Use 'at' with clock times.",
+      "correctIndex": 3,
+      "answers": [
+        "on",
+        "in",
+        "at",
+        "by"
+      ]
+    },
+    {
+      "question": "Her party is ___ Saturday.",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "Use 'on' with days.",
+      "correctIndex": 1,
+      "answers": [
+        "on",
+        "in",
+        "at",
+        "for"
+      ]
+    },
+    {
+      "question": "It's very cold ___ winter.",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "Use 'in' with seasons.",
+      "correctIndex": 2,
+      "answers": [
+        "on",
+        "in",
+        "at",
+        "by"
+      ]
+    },
+    {
+      "question": "Which preposition goes with a year (e.g. 1999)?",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "Use 'in' with years.",
+      "correctIndex": 2,
+      "answers": [
+        "on",
+        "in",
+        "at",
+        "for"
+      ]
+    },
+    {
+      "question": "\"The shop opens ___ 9 o'clock, ___ Mondays.\" Choose the correct pair.",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "Use 'at' for clock time and 'on' for days.",
+      "correctIndex": 1,
+      "answers": [
+        "at / on",
+        "in / at",
+        "on / for",
+        "at / by"
+      ]
+    }
+  ]
+}

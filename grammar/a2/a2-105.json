@@ -1,0 +1,77 @@
+{
+  "id": "a2-105",
+  "title": "Have to / Need to (Obligation)",
+  "description": "Practice Have to / Need to (Obligation).",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "I ___ finish this report today.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Have to / Need to (Obligation) lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "have to",
+        "has to",
+        "must to",
+        "having to"
+      ]
+    },
+    {
+      "question": "You ___ bring anything.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Have to / Need to (Obligation) lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "don't have to",
+        "doesn't have to",
+        "haven't to",
+        "not have to"
+      ]
+    },
+    {
+      "question": "___ she have to work on Saturdays?",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Have to / Need to (Obligation) lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "Do",
+        "Does",
+        "Is",
+        "Has"
+      ]
+    },
+    {
+      "question": "We ___ leave before 8am.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Have to / Need to (Obligation) lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "needs to",
+        "need to",
+        "needing to",
+        "needed"
+      ]
+    },
+    {
+      "question": "He doesn't ___ to come if he's busy.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Have to / Need to (Obligation) lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "needs",
+        "need",
+        "needing",
+        "needed"
+      ]
+    }
+  ]
+}

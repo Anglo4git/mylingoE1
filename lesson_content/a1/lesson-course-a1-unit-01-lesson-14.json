@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-01-lesson-14",
+  "title": "Lesson: Short-Form Answers",
+  "description": "Practice Short-Form Answers.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Short-Form Answers.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Short-Form Answers",
+      "explanation": "Practice Short-Form Answers."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Short-Form Answers",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "Are you tired?",
+      "category": "Grammar",
+      "tags": "Grammar,A1,QuickCheck",
+      "explanation": "Match the auxiliary 'am' from the question.",
+      "correctIndex": 1,
+      "answers": [
+        "Yes, I am.",
+        "Yes, I do.",
+        "Yes, I can.",
+        "Yes, I be."
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

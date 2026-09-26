@@ -1,0 +1,77 @@
+{
+  "id": "b1-047",
+  "title": "Guessing",
+  "description": "Practice Guessing.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"I'd guess ___ he's about thirty.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Make tentative guesses when unsure.",
+      "correctIndex": 0,
+      "answers": [
+        "that",
+        "about",
+        "if",
+        "for"
+      ]
+    },
+    {
+      "question": "\"It could ___ a mix-up.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Make tentative guesses when unsure.",
+      "correctIndex": 1,
+      "answers": [
+        "being",
+        "be",
+        "is",
+        "been"
+      ]
+    },
+    {
+      "question": "\"My guess would be...\" expresses...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Make tentative guesses when unsure.",
+      "correctIndex": 1,
+      "answers": [
+        "an order",
+        "a tentative guess",
+        "certainty",
+        "an obligation"
+      ]
+    },
+    {
+      "question": "\"I'm not sure, but maybe...\" shows...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Make tentative guesses when unsure.",
+      "correctIndex": 2,
+      "answers": [
+        "a fact",
+        "high confidence",
+        "low confidence/uncertainty",
+        "a rule"
+      ]
+    },
+    {
+      "question": "Guessing language is generally...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Make tentative guesses when unsure.",
+      "correctIndex": 2,
+      "answers": [
+        "very certain",
+        "formal only",
+        "tentative/hedged",
+        "used for facts"
+      ]
+    }
+  ]
+}

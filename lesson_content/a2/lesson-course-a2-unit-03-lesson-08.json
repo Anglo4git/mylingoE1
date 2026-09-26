@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-03-lesson-08",
+  "title": "Lesson: Making Deductions",
+  "description": "Practice: Making Deductions.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice: Making Deductions.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Making Deductions",
+      "explanation": "Practice: Making Deductions."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Making Deductions",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "\"That ___ be John — he's on holiday.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2,QuickCheck",
+      "explanation": "See the Making Deductions lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "can't",
+        "must",
+        "might not",
+        "will not"
+      ]
+    },
+    {
+      "question": "\"That would ___ why she's late.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2,QuickCheck",
+      "explanation": "See the Making Deductions lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "explain",
+        "explains",
+        "explaining",
+        "explained"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

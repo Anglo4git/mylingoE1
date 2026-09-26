@@ -1,0 +1,77 @@
+{
+  "id": "a1-015",
+  "title": "Linking Words: and, but, because, or",
+  "description": "Practice Linking Words.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Which word gives a reason?",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "'Because' introduces a reason.",
+      "correctIndex": 3,
+      "answers": [
+        "and",
+        "but",
+        "because",
+        "or"
+      ]
+    },
+    {
+      "question": "Which word shows a choice between two things?",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "'Or' shows a choice.",
+      "correctIndex": 4,
+      "answers": [
+        "and",
+        "but",
+        "because",
+        "or"
+      ]
+    },
+    {
+      "question": "She is young ___ very wise.",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "'But' shows contrast.",
+      "correctIndex": 2,
+      "answers": [
+        "and",
+        "but",
+        "because",
+        "or"
+      ]
+    },
+    {
+      "question": "I wore a coat ___ it was cold.",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "'Because' gives the reason.",
+      "correctIndex": 3,
+      "answers": [
+        "and",
+        "but",
+        "because",
+        "or"
+      ]
+    },
+    {
+      "question": "Combine: \"It was raining. We stayed inside.\" (because)",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "The reason follows 'because'.",
+      "correctIndex": 1,
+      "answers": [
+        "We stayed inside because it was raining.",
+        "We stayed inside but it was raining.",
+        "We stayed inside it was raining because.",
+        "Because we stayed inside it was raining."
+      ]
+    }
+  ]
+}

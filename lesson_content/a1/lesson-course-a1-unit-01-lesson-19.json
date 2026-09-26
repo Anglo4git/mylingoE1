@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-01-lesson-19",
+  "title": "Lesson: Present Continuous",
+  "description": "Practice Present Continuous.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Present Continuous.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Present Continuous",
+      "explanation": "Practice Present Continuous."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Present Continuous",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "Right now: She ___ a book.",
+      "category": "Grammar",
+      "tags": "Grammar,A1,QuickCheck",
+      "explanation": "Use am/is/are + -ing for now.",
+      "correctIndex": 2,
+      "answers": [
+        "reads",
+        "is reading",
+        "read",
+        "reading"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

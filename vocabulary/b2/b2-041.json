@@ -1,0 +1,77 @@
+{
+  "id": "b2-041",
+  "title": "Euphemisms",
+  "description": "Practice Euphemisms.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"I'm sorry to hear your grandfather ___.\" (softer word for \"died\")",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Euphemisms lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "passed away",
+        "was let go",
+        "was between jobs",
+        "was economical with the truth"
+      ]
+    },
+    {
+      "question": "\"He's ___ at the moment.\" (softer for \"unemployed\")",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Euphemisms lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "let go",
+        "between jobs",
+        "portly",
+        "passed away"
+      ]
+    },
+    {
+      "question": "A euphemism for \"fired\" is...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Euphemisms lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "let go",
+        "passed away",
+        "portly",
+        "between jobs (this describes the state after, not the act)"
+      ]
+    },
+    {
+      "question": "\"Economical with the truth\" is a softer way of saying...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Euphemisms lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "honest",
+        "lying",
+        "generous",
+        "careful"
+      ]
+    },
+    {
+      "question": "Euphemisms are generally used to...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Euphemisms lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "be more direct/blunt",
+        "soften a sensitive topic",
+        "confuse the listener",
+        "sound rude"
+      ]
+    }
+  ]
+}

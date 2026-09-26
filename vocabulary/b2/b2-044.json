@@ -1,0 +1,77 @@
+{
+  "id": "b2-044",
+  "title": "Colloquial expressions",
+  "description": "Practice Colloquial expressions.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"Don't worry, it's ___.\" (not a big deal)",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Colloquial expressions lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "no biggie",
+        "my bad",
+        "a bit much",
+        "knackered"
+      ]
+    },
+    {
+      "question": "\"Sorry, ___ — I forgot to reply.\" (my fault)",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Colloquial expressions lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "no biggie",
+        "my bad",
+        "a bit much",
+        "knackered"
+      ]
+    },
+    {
+      "question": "\"That party was ___ for me.\" (too much/overwhelming)",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Colloquial expressions lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "no biggie",
+        "my bad",
+        "a bit much",
+        "knackered"
+      ]
+    },
+    {
+      "question": "\"I'm absolutely ___.\" (very tired, informal)",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Colloquial expressions lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "knackered",
+        "my bad",
+        "a bit much",
+        "no biggie"
+      ]
+    },
+    {
+      "question": "\"Sort of\" and \"kind of\" are used to...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Colloquial expressions lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "sound very formal",
+        "hedge/soften a statement",
+        "end a conversation",
+        "emphasise strongly"
+      ]
+    }
+  ]
+}

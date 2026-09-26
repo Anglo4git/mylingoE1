@@ -1,0 +1,77 @@
+{
+  "id": "a1-035",
+  "title": "Colours and Size",
+  "description": "Practice Colours and Size.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Which word is a colour?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "'Green' is a colour; the others are size words.",
+      "correctIndex": 2,
+      "answers": [
+        "tall",
+        "green",
+        "short",
+        "big"
+      ]
+    },
+    {
+      "question": "Which word describes size, not colour?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "'Small' describes size.",
+      "correctIndex": 3,
+      "answers": [
+        "yellow",
+        "black",
+        "small",
+        "blue"
+      ]
+    },
+    {
+      "question": "Which order is correct?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Size usually comes before colour.",
+      "correctIndex": 2,
+      "answers": [
+        "a red big car",
+        "a big red car",
+        "a car big red",
+        "a car red big"
+      ]
+    },
+    {
+      "question": "\"This box is too small.\" What's the problem?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "'Too small' means it isn't big enough.",
+      "correctIndex": 3,
+      "answers": [
+        "it's too heavy",
+        "it's too big",
+        "it isn't big enough",
+        "it's the wrong colour"
+      ]
+    },
+    {
+      "question": "\"She wore a long blue dress.\" What colour was the dress?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "The text says 'blue dress'.",
+      "correctIndex": 2,
+      "answers": [
+        "red",
+        "blue",
+        "green",
+        "black"
+      ]
+    }
+  ]
+}

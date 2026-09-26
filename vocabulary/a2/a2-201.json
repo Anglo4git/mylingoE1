@@ -1,0 +1,77 @@
+{
+  "id": "a2-201",
+  "title": "Families",
+  "description": "Practice Families vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Your brother's son is your ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Families lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "nephew",
+        "cousin",
+        "niece",
+        "sibling"
+      ]
+    },
+    {
+      "question": "Your parent's brother is your ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Families lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "nephew",
+        "uncle",
+        "cousin",
+        "in-law"
+      ]
+    },
+    {
+      "question": "A general word for brother or sister is ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Families lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "sibling",
+        "cousin",
+        "relative",
+        "in-law"
+      ]
+    },
+    {
+      "question": "Your husband's mother is your mother-___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Families lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "in-law",
+        "out-law",
+        "step",
+        "half"
+      ]
+    },
+    {
+      "question": "Your parents' parents are your ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Families lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "grandparents",
+        "great-parents",
+        "in-laws",
+        "ancestors"
+      ]
+    }
+  ]
+}

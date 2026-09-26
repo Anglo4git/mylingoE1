@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-02-lesson-10",
+  "title": "Lesson: Jobs",
+  "description": "Practice Jobs.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Jobs.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Jobs",
+      "explanation": "Practice Jobs."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Jobs",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "A person who treats sick people in a hospital is a",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1,QuickCheck",
+      "explanation": "A doctor treats sick people.",
+      "correctIndex": 2,
+      "answers": [
+        "teacher",
+        "doctor",
+        "chef",
+        "driver"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

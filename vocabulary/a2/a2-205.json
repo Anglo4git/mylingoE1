@@ -1,0 +1,77 @@
+{
+  "id": "a2-205",
+  "title": "Buildings and Monuments",
+  "description": "Practice Buildings and Monuments vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "A large, grand royal residence is a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Buildings and Monuments lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "palace",
+        "fortress",
+        "ruin",
+        "tower"
+      ]
+    },
+    {
+      "question": "A very tall modern building is a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Buildings and Monuments lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "cathedral",
+        "skyscraper",
+        "ruin",
+        "monument"
+      ]
+    },
+    {
+      "question": "A large church, often historic, is a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Buildings and Monuments lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "cathedral",
+        "tower",
+        "ruin",
+        "fortress"
+      ]
+    },
+    {
+      "question": "What remains of an old, destroyed structure is called ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Buildings and Monuments lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "a tower",
+        "ruins",
+        "a monument",
+        "a palace"
+      ]
+    },
+    {
+      "question": "A structure built to remember a person/event is a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Buildings and Monuments lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "monument",
+        "fortress",
+        "ruin",
+        "skyscraper"
+      ]
+    }
+  ]
+}

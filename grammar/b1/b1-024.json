@@ -1,0 +1,77 @@
+{
+  "id": "b1-024",
+  "title": "Neither / So Do I",
+  "description": "Practice Neither / So Do I.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"I love pizza.\" \"___ do I.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Agree with positive and negative statements using short forms, including the negative \"Neither do I.\"",
+      "correctIndex": 1,
+      "answers": [
+        "Nor",
+        "So",
+        "Neither",
+        "Not"
+      ]
+    },
+    {
+      "question": "\"I've never been to Japan.\" \"___ have I.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Agree with positive and negative statements using short forms, including the negative \"Neither do I.\"",
+      "correctIndex": 0,
+      "answers": [
+        "Neither",
+        "Not",
+        "So",
+        "Do"
+      ]
+    },
+    {
+      "question": "\"I can't swim.\" \"___ can I.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Agree with positive and negative statements using short forms, including the negative \"Neither do I.\"",
+      "correctIndex": 2,
+      "answers": [
+        "Not",
+        "Neither",
+        "Nor",
+        "So"
+      ]
+    },
+    {
+      "question": "\"I'm not hungry.\" \"___ am I.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Agree with positive and negative statements using short forms, including the negative \"Neither do I.\"",
+      "correctIndex": 2,
+      "answers": [
+        "So",
+        "Not",
+        "Neither",
+        "Nor"
+      ]
+    },
+    {
+      "question": "The auxiliary in the short response must...",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Agree with positive and negative statements using short forms, including the negative \"Neither do I.\"",
+      "correctIndex": 0,
+      "answers": [
+        "match the original verb's auxiliary",
+        "always be \"do\"",
+        "always be \"be\"",
+        "be omitted"
+      ]
+    }
+  ]
+}

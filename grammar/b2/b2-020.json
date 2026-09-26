@@ -1,0 +1,77 @@
+{
+  "id": "b2-020",
+  "title": "Passive — foundational",
+  "description": "Practice Passive — foundational.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"The bridge ___ built in 1889.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Passive — foundational lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "was",
+        "is",
+        "has",
+        "had"
+      ]
+    },
+    {
+      "question": "Passive is preferred when...",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Passive — foundational lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "the agent is important",
+        "the agent is unknown/unimportant",
+        "speaking informally",
+        "never"
+      ]
+    },
+    {
+      "question": "\"The results ___ being analysed.\" (present continuous passive)",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Passive — foundational lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "is",
+        "are",
+        "was",
+        "were"
+      ]
+    },
+    {
+      "question": "Passive is formed with...",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Passive — foundational lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "have + past participle",
+        "be + past participle",
+        "be + -ing",
+        "do + past participle"
+      ]
+    },
+    {
+      "question": "\"Mistakes were made.\" — why choose passive here?",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Passive — foundational lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "to name the agent clearly",
+        "to keep focus off who did it",
+        "it's grammatically required",
+        "no reason, it's random"
+      ]
+    }
+  ]
+}

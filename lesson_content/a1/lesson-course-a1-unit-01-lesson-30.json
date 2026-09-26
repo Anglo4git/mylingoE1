@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-a1-unit-01-lesson-30",
+  "title": "Lesson: Future Facts",
+  "description": "Practice Future Facts: Present Simple and Future Simple.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A1,A1+",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Future Facts: Present Simple and Future Simple.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1+,A1",
+      "media": {},
+      "subprompt": "Future Facts: Present Simple and Future Simple",
+      "explanation": "Practice Future Facts: Present Simple and Future Simple."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Future Facts: Present Simple and Future Simple",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1+,A1"
+    },
+    {
+      "question": "Which tense fits a fixed timetable?",
+      "category": "Grammar",
+      "tags": "Grammar,A1+,QuickCheck",
+      "explanation": "Present simple can describe scheduled future events.",
+      "correctIndex": 1,
+      "answers": [
+        "The train leaves at 8 tomorrow.",
+        "The train will leaves at 8 tomorrow.",
+        "The train leave at 8 tomorrow.",
+        "The train leaving at 8 tomorrow."
+      ]
+    },
+    {
+      "question": "Choose the future simple sentence.",
+      "category": "Grammar",
+      "tags": "Grammar,A1+,QuickCheck",
+      "explanation": "Will + base verb forms the future simple.",
+      "correctIndex": 1,
+      "answers": [
+        "I think it will rain tomorrow.",
+        "I think it rains tomorrow.",
+        "I think it raining tomorrow.",
+        "I think it will rains tomorrow."
+      ]
+    },
+    {
+      "question": "Which is a future fact?",
+      "category": "Grammar",
+      "tags": "Grammar,A1+,QuickCheck",
+      "explanation": "A scheduled future event can use present simple.",
+      "correctIndex": 1,
+      "answers": [
+        "The shop opens at nine tomorrow.",
+        "The shop opened at nine yesterday.",
+        "The shop is opening now.",
+        "The shop opens every day at nine."
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1+"
+    }
+  ]
+}

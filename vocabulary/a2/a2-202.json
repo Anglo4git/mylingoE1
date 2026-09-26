@@ -1,0 +1,77 @@
+{
+  "id": "a2-202",
+  "title": "Restaurants and Leisure Venues",
+  "description": "Practice Restaurants and Leisure Venues vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Before the main course, you might order a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Restaurants and Leisure Venues lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "starter",
+        "bill",
+        "dessert only",
+        "menu only"
+      ]
+    },
+    {
+      "question": "A place with games like darts/bowling is a(n) ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Restaurants and Leisure Venues lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "café",
+        "bowling alley",
+        "cinema",
+        "diner"
+      ]
+    },
+    {
+      "question": "At the end of a meal, you ask for the ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Restaurants and Leisure Venues lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "starter",
+        "bill",
+        "menu",
+        "course"
+      ]
+    },
+    {
+      "question": "A casual place for coffee is a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Restaurants and Leisure Venues lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "café",
+        "fortress",
+        "venue",
+        "court"
+      ]
+    },
+    {
+      "question": "The second, biggest dish of a meal is the ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Restaurants and Leisure Venues lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "starter",
+        "main course",
+        "bill",
+        "snack"
+      ]
+    }
+  ]
+}

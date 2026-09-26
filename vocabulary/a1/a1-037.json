@@ -1,0 +1,77 @@
+{
+  "id": "a1-037",
+  "title": "Food, Meals and Cooking",
+  "description": "Practice Food, Meals and Cooking.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Which meal do people usually eat in the evening?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Dinner is the evening meal.",
+      "correctIndex": 3,
+      "answers": [
+        "breakfast",
+        "lunch",
+        "dinner",
+        "snack"
+      ]
+    },
+    {
+      "question": "We have rice ___ dinner.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Use 'for' + meal.",
+      "correctIndex": 2,
+      "answers": [
+        "at",
+        "for",
+        "in",
+        "on"
+      ]
+    },
+    {
+      "question": "Which verb means to cook something in hot oil?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "'Fry' means to cook in hot oil.",
+      "correctIndex": 2,
+      "answers": [
+        "boil",
+        "fry",
+        "cut",
+        "freeze"
+      ]
+    },
+    {
+      "question": "\"First cut the vegetables, then boil them for ten minutes.\" What happens first?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "The vegetables are cut before being boiled.",
+      "correctIndex": 2,
+      "answers": [
+        "boiling",
+        "cutting",
+        "frying",
+        "eating"
+      ]
+    },
+    {
+      "question": "\"She is cooking dinner right now.\" When is she cooking?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "'Right now' means the present moment.",
+      "correctIndex": 3,
+      "answers": [
+        "every day",
+        "tomorrow",
+        "now",
+        "yesterday"
+      ]
+    }
+  ]
+}

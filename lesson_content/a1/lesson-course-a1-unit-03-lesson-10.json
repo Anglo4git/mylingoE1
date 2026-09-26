@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-03-lesson-10",
+  "title": "Lesson: Requests, Offers and Permission",
+  "description": "Practice Requests, Offers and Permission.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Requests, Offers and Permission.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Requests, Offers and Permission",
+      "explanation": "Practice Requests, Offers and Permission."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Requests, Offers and Permission",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "Offer to help someone.",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1,QuickCheck",
+      "explanation": "\"I'll...\" is used to offer to do something.",
+      "correctIndex": 1,
+      "answers": [
+        "I'll help you.",
+        "Help me.",
+        "Can you help?",
+        "You help me."
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

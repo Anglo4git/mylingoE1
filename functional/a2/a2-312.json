@@ -1,0 +1,77 @@
+{
+  "id": "a2-312",
+  "title": "Requesting",
+  "description": "Practice: Requesting.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Most polite/formal request:",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Requesting lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "\"I was wondering if you could help me.\"",
+        "\"Help me.\"",
+        "\"Can you help.\"",
+        "\"Help now.\""
+      ]
+    },
+    {
+      "question": "\"___ you mind opening the window?\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Requesting lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Would",
+        "Should",
+        "Must",
+        "Will"
+      ]
+    },
+    {
+      "question": "Neutral polite request:",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Requesting lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "\"Could you pass the salt, please?\"",
+        "\"Salt now.\"",
+        "\"Give salt.\"",
+        "\"Pass it.\""
+      ]
+    },
+    {
+      "question": "\"Do you ___ you could send that file today?\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Requesting lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "think",
+        "thought",
+        "thinking",
+        "thinks"
+      ]
+    },
+    {
+      "question": "Ranking politeness — most direct to most polite:",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Requesting lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "\"Pass the salt.\" → \"Could you pass the salt?\" → \"Would you mind passing the salt?\"",
+        "\"Would you mind...\" → \"Pass the salt.\" → \"Could you...\"",
+        "all equally polite",
+        "order doesn't matter"
+      ]
+    }
+  ]
+}

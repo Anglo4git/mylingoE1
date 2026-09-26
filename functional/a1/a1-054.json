@@ -1,0 +1,77 @@
+{
+  "id": "a1-054",
+  "title": "Writing a Postcard",
+  "description": "Practice Writing a Postcard.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Which is a postcard greeting?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "\"Dear Sara,\" is a postcard greeting.",
+      "correctIndex": 1,
+      "answers": [
+        "Dear Sara,",
+        "Yours faithfully,",
+        "To whom it may concern,",
+        "Best regards,"
+      ]
+    },
+    {
+      "question": "Write one sentence about the weather for a postcard.",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "Any reasonable weather sentence is accepted.",
+      "correctIndex": 1,
+      "answers": [
+        "(own answer)",
+        "(leave blank)",
+        "(skip)",
+        "(refuse)"
+      ]
+    },
+    {
+      "question": "Which is a postcard closing?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "\"See you soon!\" closes a postcard.",
+      "correctIndex": 1,
+      "answers": [
+        "See you soon!",
+        "Dear Sara,",
+        "Hi Sara,",
+        "To whom it may concern,"
+      ]
+    },
+    {
+      "question": "\"I'm having a great time in Spain!\" Is the writer enjoying the trip?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "\"Great time\" means they are enjoying it.",
+      "correctIndex": 1,
+      "answers": [
+        "Yes",
+        "No",
+        "Not sure",
+        "They are home"
+      ]
+    },
+    {
+      "question": "Write a 3-line mini postcard: greeting → news → closing.",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "Any reasonable postcard with all three parts is accepted.",
+      "correctIndex": 1,
+      "answers": [
+        "(own answer)",
+        "(leave blank)",
+        "(skip)",
+        "(refuse)"
+      ]
+    }
+  ]
+}

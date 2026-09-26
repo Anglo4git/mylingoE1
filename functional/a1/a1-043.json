@@ -1,0 +1,77 @@
+{
+  "id": "a1-043",
+  "title": "Shopping and Prices",
+  "description": "Practice Shopping and Prices.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Ask the price of a bag.",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "Use \"How much is...?\" for one item.",
+      "correctIndex": 1,
+      "answers": [
+        "How much is this bag?",
+        "How many is this bag?",
+        "How much are this bag?",
+        "How this bag much?"
+      ]
+    },
+    {
+      "question": "Shoes cost $40. Complete: \"They ___ $40.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "Use are with a plural (shoes).",
+      "correctIndex": 1,
+      "answers": [
+        "are",
+        "is",
+        "be",
+        "was"
+      ]
+    },
+    {
+      "question": "Ask for a coffee politely.",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "\"I'd like...\" is polite.",
+      "correctIndex": 2,
+      "answers": [
+        "Give me coffee.",
+        "I'd like a coffee, please.",
+        "Coffee now.",
+        "I want coffee!"
+      ]
+    },
+    {
+      "question": "\"That's too expensive.\" What does the speaker think?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "Too expensive means the price is high.",
+      "correctIndex": 1,
+      "answers": [
+        "the price is high",
+        "the price is low",
+        "the price is fair",
+        "there is no price"
+      ]
+    },
+    {
+      "question": "How do you ask to pay by card?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "\"Can I...?\" politely asks permission.",
+      "correctIndex": 1,
+      "answers": [
+        "Can I pay by card?",
+        "I pay by card.",
+        "Card pay me?",
+        "Paying card can I?"
+      ]
+    }
+  ]
+}

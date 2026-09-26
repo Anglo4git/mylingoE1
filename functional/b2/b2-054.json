@@ -1,0 +1,77 @@
+{
+  "id": "b2-054",
+  "title": "Adding information",
+  "description": "Practice Adding information.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"The flat is cheap. ___, it's close to the station.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Adding information lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "What's more",
+        "Then again",
+        "Owing to",
+        "So as to"
+      ]
+    },
+    {
+      "question": "\"___ did she finish early, but she also helped others.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Adding information lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "Not only",
+        "What's more",
+        "On top of that",
+        "In addition"
+      ]
+    },
+    {
+      "question": "After \"Not only\" at the start of a clause, word order requires...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Adding information lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "no change",
+        "subject-verb inversion",
+        "removing the verb",
+        "a question mark"
+      ]
+    },
+    {
+      "question": "\"In addition to that...\" is used to...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Adding information lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "contrast two ideas",
+        "add supporting information",
+        "make an offer",
+        "express regret"
+      ]
+    },
+    {
+      "question": "\"On top of that\" means similar to...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Adding information lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "however",
+        "furthermore/additionally",
+        "therefore",
+        "unless"
+      ]
+    }
+  ]
+}

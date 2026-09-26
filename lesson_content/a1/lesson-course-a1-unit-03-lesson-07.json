@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-03-lesson-07",
+  "title": "Lesson: Likes, Dislikes and Opinions",
+  "description": "Practice Likes, Dislikes and Opinions.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Likes, Dislikes and Opinions.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Likes, Dislikes and Opinions",
+      "explanation": "Practice Likes, Dislikes and Opinions."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Likes, Dislikes and Opinions",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "Complete: \"She ___ (not like) coffee.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1,QuickCheck",
+      "explanation": "Use doesn't + base verb for he/she/it negatives.",
+      "correctIndex": 1,
+      "answers": [
+        "doesn't like",
+        "not likes",
+        "don't like",
+        "not like"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

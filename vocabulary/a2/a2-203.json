@@ -1,0 +1,77 @@
+{
+  "id": "a2-203",
+  "title": "Personality",
+  "description": "Practice Personality vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Someone who shares generously is ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Personality lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "stubborn",
+        "generous",
+        "moody",
+        "shy"
+      ]
+    },
+    {
+      "question": "Someone who won't change their mind is ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Personality lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "stubborn",
+        "easy-going",
+        "reliable",
+        "confident"
+      ]
+    },
+    {
+      "question": "Someone relaxed and flexible is ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Personality lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "easy-going",
+        "stubborn",
+        "moody",
+        "shy"
+      ]
+    },
+    {
+      "question": "Someone you can always trust to do things is ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Personality lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "moody",
+        "reliable",
+        "shy",
+        "stubborn"
+      ]
+    },
+    {
+      "question": "Someone whose mood changes often is ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Personality lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "moody",
+        "reliable",
+        "honest",
+        "confident"
+      ]
+    }
+  ]
+}

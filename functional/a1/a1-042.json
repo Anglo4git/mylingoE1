@@ -1,0 +1,77 @@
+{
+  "id": "a1-042",
+  "title": "Personal Information",
+  "description": "Practice Personal Information.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Ask someone's country.",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "Use \"Where are you from?\" for country.",
+      "correctIndex": 1,
+      "answers": [
+        "Where are you from?",
+        "What do you do?",
+        "How old are you?",
+        "What's this?"
+      ]
+    },
+    {
+      "question": "Complete: \"I ___ from Brazil.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "Use am with I.",
+      "correctIndex": 1,
+      "answers": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ]
+    },
+    {
+      "question": "\"Brazilian\" describes",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "Brazilian is a nationality.",
+      "correctIndex": 2,
+      "answers": [
+        "a country",
+        "a nationality",
+        "a language",
+        "a city"
+      ]
+    },
+    {
+      "question": "A form asks for \"Address.\" What should you write?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "Address means where you live.",
+      "correctIndex": 2,
+      "answers": [
+        "your job",
+        "where you live",
+        "your age",
+        "your hobby"
+      ]
+    },
+    {
+      "question": "Complete a mini form: Name: ___ / Nationality: ___",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "Any reasonable name and nationality is accepted.",
+      "correctIndex": 1,
+      "answers": [
+        "(own answer)",
+        "(leave blank)",
+        "(skip)",
+        "(refuse)"
+      ]
+    }
+  ]
+}

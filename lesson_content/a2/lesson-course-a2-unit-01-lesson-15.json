@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-01-lesson-15",
+  "title": "Lesson: Present Simple Passive",
+  "description": "Practice Present Simple Passive.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Present Simple Passive.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Present Simple Passive",
+      "explanation": "Practice Present Simple Passive."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Present Simple Passive",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "English ___ in many countries.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "See the Present Simple Passive lesson.",
+      "correctIndex": 2,
+      "answers": [
+        "speaks",
+        "is spoken",
+        "speaking",
+        "spoke"
+      ]
+    },
+    {
+      "question": "The letters ___ every morning.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "See the Present Simple Passive lesson.",
+      "correctIndex": 2,
+      "answers": [
+        "delivers",
+        "are delivered",
+        "delivering",
+        "delivered"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

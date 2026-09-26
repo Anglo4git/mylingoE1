@@ -203,6 +203,664 @@
     "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-09"
   },
   {
+    "lesson_id": "course-a1-unit-01-lesson-10",
+    "unit_id": "course-a1-unit-01",
+    "title": "Pronouns",
+    "category": "Grammar",
+    "order": 10,
+    "revision": {
+      "summary": "Use subject pronouns (I, you, he, she, it, we, they) and object pronouns (me, you, him, her, it, us, them) correctly in simple sentences.",
+      "examples": [
+        "I like her. She likes me.",
+        "He calls him every day.",
+        "We see them at school.",
+        "Give it to me, please.",
+        "They visit us on Sunday."
+      ],
+      "key_terms": [
+        "subject pronoun",
+        "object pronoun",
+        "verb",
+        "preposition"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-013"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-10",
+    "body_content": "<h2>Pronouns — subject and object</h2><p>A pronoun replaces a noun so we don't repeat it. <strong>Subject pronouns</strong> (I, you, he, she, it, we, they) come <em>before</em> the verb and show who does the action. <strong>Object pronouns</strong> (me, you, him, her, it, us, them) come <em>after</em> the verb or a preposition and show who receives the action.</p><h3>1. Subject pronouns</h3><ul><li><strong>I</strong> like coffee.</li><li><strong>She</strong> works here.</li><li><strong>They</strong> live near the school.</li></ul><h3>2. Object pronouns</h3><ul><li>I like <strong>her</strong>.</li><li>He calls <strong>him</strong> every day.</li><li>Give it to <strong>me</strong>, please.</li></ul><p>Note that <strong>you</strong> and <strong>it</strong> don't change form between subject and object.</p><h3>Quick check</h3><ol><li>___ love coffee. (I / me) → <em>I</em></li><li>Can you help ___? (I / me) → <em>me</em></li><li>She sees ___ every day. (they / them) → <em>them</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-11",
+    "unit_id": "course-a1-unit-01",
+    "title": "Prepositions of Time",
+    "category": "Grammar",
+    "order": 11,
+    "revision": {
+      "summary": "Use in, on and at correctly with time expressions such as clock times, days and longer periods.",
+      "examples": [
+        "I wake up at 7 o'clock.",
+        "We have class on Monday.",
+        "She was born in 1990.",
+        "My birthday is in June.",
+        "Let's meet at noon, on Friday."
+      ],
+      "key_terms": [
+        "preposition of time",
+        "in",
+        "on",
+        "at"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-014"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-11",
+    "body_content": "<h2>Prepositions of Time — in, on, at</h2><p>Use <strong>at</strong> with clock times and a few fixed expressions (at 7 o'clock, at night, at the weekend). Use <strong>on</strong> with days and dates (on Monday, on 5 May). Use <strong>in</strong> with longer periods (in the morning, in July, in 2024, in winter).</p><h3>Examples</h3><ul><li>I wake up <strong>at</strong> 7 o'clock.</li><li>We have class <strong>on</strong> Monday.</li><li>She was born <strong>in</strong> 1990.</li><li>My birthday is <strong>in</strong> June.</li><li>Let's meet <strong>at</strong> noon, <strong>on</strong> Friday.</li></ul><h3>Quick check</h3><ol><li>I have lunch ___ 1 o'clock. → <em>at</em></li><li>Her party is ___ Saturday. → <em>on</em></li><li>It's very cold ___ winter. → <em>in</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-12",
+    "unit_id": "course-a1-unit-01",
+    "title": "Linking Words: and, but, because, or",
+    "category": "Grammar",
+    "order": 12,
+    "revision": {
+      "summary": "Join two simple ideas using and, but, because and or.",
+      "examples": [
+        "I like tea and coffee.",
+        "She is tired but happy.",
+        "I stayed home because it was raining.",
+        "Do you want tea or coffee?",
+        "He works hard, but he doesn't earn much."
+      ],
+      "key_terms": [
+        "conjunction",
+        "linking word",
+        "reason",
+        "contrast",
+        "choice"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-015"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-12",
+    "body_content": "<h2>Linking Words — and, but, because, or</h2><p><strong>And</strong> adds information. <strong>But</strong> shows contrast. <strong>Because</strong> gives a reason. <strong>Or</strong> gives a choice or alternative.</p><h3>Examples</h3><ul><li>I like tea <strong>and</strong> coffee.</li><li>She is tired <strong>but</strong> happy.</li><li>I stayed home <strong>because</strong> it was raining.</li><li>Do you want tea <strong>or</strong> coffee?</li><li>He works hard, <strong>but</strong> he doesn't earn much.</li></ul><h3>Quick check</h3><ol><li>Combine: \"It was cold. I wore a coat.\" (because) → <em>I wore a coat because it was cold.</em></li><li>Combine: \"She is young. She is very wise.\" (but) → <em>She is young but very wise.</em></li><li>Choose: Do you want juice ___ water? → <em>or</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-13",
+    "unit_id": "course-a1-unit-01",
+    "title": "Too and Very",
+    "category": "Grammar",
+    "order": 13,
+    "revision": {
+      "summary": "Use too and very to describe degree, and know when too signals a problem.",
+      "examples": [
+        "This coffee is very hot. / This coffee is too hot to drink.",
+        "She is very kind.",
+        "The shoes are too small for me.",
+        "It's very cold today. / It's too cold to swim."
+      ],
+      "key_terms": [
+        "adjective",
+        "degree",
+        "too",
+        "very"
+      ],
+      "estimated_minutes": 4
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-016"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-13",
+    "body_content": "<h2>Too and Very</h2><p><strong>Very</strong> simply makes an adjective stronger (very tired = really tired). <strong>Too</strong> means more than necessary, and it usually causes a problem (too tired = so tired that you can't do something).</p><h3>Examples</h3><ul><li>This coffee is <strong>very</strong> hot. / This coffee is <strong>too</strong> hot to drink.</li><li>She is <strong>very</strong> kind.</li><li>The shoes are <strong>too</strong> small for me.</li><li>It's <strong>very</strong> cold today. / It's <strong>too</strong> cold to swim.</li></ul><h3>Quick check</h3><ol><li>The bag is ___ heavy — I can't lift it. → <em>too</em></li><li>She is ___ happy today. → <em>very</em></li><li>This box is ___ big to fit in the car. → <em>too</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-14",
+    "unit_id": "course-a1-unit-01",
+    "title": "Short-Form Answers",
+    "category": "Grammar",
+    "order": 14,
+    "revision": {
+      "summary": "Answer yes/no questions naturally using the subject plus the matching auxiliary verb (am/is/are, do/does, can).",
+      "examples": [
+        "Are you a teacher? Yes, I am. / No, I'm not.",
+        "Does she speak English? Yes, she does. / No, she doesn't.",
+        "Can you swim? Yes, I can. / No, I can't.",
+        "Is it raining? Yes, it is.",
+        "Do they live here? No, they don't."
+      ],
+      "key_terms": [
+        "auxiliary verb",
+        "short answer"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-017"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-14",
+    "body_content": "<h2>Short-Form Answers</h2><p>Instead of repeating the whole question, English speakers usually answer with a short form: the subject + the same auxiliary verb (am/is/are, do/does, can) + not (for \"no\").</p><h3>Examples</h3><ul><li>Are you a teacher? <strong>Yes, I am.</strong> / <strong>No, I'm not.</strong></li><li>Does she speak English? <strong>Yes, she does.</strong> / <strong>No, she doesn't.</strong></li><li>Can you swim? <strong>Yes, I can.</strong> / <strong>No, I can't.</strong></li><li>Is it raining? <strong>Yes, it is.</strong></li><li>Do they live here? <strong>No, they don't.</strong></li></ul><h3>Quick check</h3><ol><li>Are you tired? → <em>Yes, I am. / No, I'm not.</em></li><li>Does he play football? → <em>Yes, he does. / No, he doesn't.</em></li><li>Can they cook? → <em>Yes, they can. / No, they can't.</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-15",
+    "unit_id": "course-a1-unit-01",
+    "title": "Going To — Future Plans",
+    "category": "Grammar",
+    "order": 15,
+    "revision": {
+      "summary": "Use be + going to + base verb to talk about plans and intentions already decided.",
+      "examples": [
+        "I am going to visit my parents this weekend.",
+        "She is going to study medicine.",
+        "We are not going to travel this year.",
+        "Are you going to call him?",
+        "What are you going to do tonight?"
+      ],
+      "key_terms": [
+        "going to",
+        "future plan",
+        "intention"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-018"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-15",
+    "body_content": "<h2>Going To — Future Plans</h2><p>Use <strong>be + going to + base verb</strong> for something you have already decided to do in the future.</p><h3>Examples</h3><ul><li>I <strong>am going to</strong> visit my parents this weekend.</li><li>She <strong>is going to</strong> study medicine.</li><li>We <strong>are not going to</strong> travel this year.</li><li><strong>Are</strong> you <strong>going to</strong> call him?</li><li>What <strong>are</strong> you <strong>going to</strong> do tonight?</li></ul><h3>Quick check</h3><ol><li>I ___ (going to / study) tonight. → <em>am going to study</em></li><li>She ___ (not / going to / come). → <em>is not going to come</em></li><li>___ you going to visit them? → <em>Are</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-16",
+    "unit_id": "course-a1-unit-01",
+    "title": "Will — Offers",
+    "category": "Grammar",
+    "order": 16,
+    "revision": {
+      "summary": "Use I'll + base verb to offer to do something for someone, decided at the moment of speaking.",
+      "examples": [
+        "I'll carry that bag for you.",
+        "I'll help you with your homework.",
+        "Don't worry, I'll call the doctor.",
+        "I'll open the window.",
+        "I'll get you some water."
+      ],
+      "key_terms": [
+        "will",
+        "offer",
+        "spontaneous decision"
+      ],
+      "estimated_minutes": 4
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-019"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-16",
+    "body_content": "<h2>Will — Offers</h2><p>Use <strong>I'll + base verb</strong> to offer to do something for someone, decided at the moment of speaking — not a plan made earlier (that's <em>going to</em>).</p><h3>Examples</h3><ul><li><strong>I'll</strong> carry that bag for you.</li><li><strong>I'll</strong> help you with your homework.</li><li>Don't worry, <strong>I'll</strong> call the doctor.</li><li><strong>I'll</strong> open the window.</li><li><strong>I'll</strong> get you some water.</li></ul><h3>Quick check</h3><ol><li>Your friend looks cold. Offer to close the window: → <em>I'll close the window.</em></li><li>Someone drops their books. Offer to help: → <em>I'll help you.</em></li><li>Choose the offer, not the plan: \"I'll call you later\" / \"I'm going to call you next week\" → <em>I'll call you later.</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-17",
+    "unit_id": "course-a1-unit-01",
+    "title": "Adverbs of Frequency",
+    "category": "Grammar",
+    "order": 17,
+    "revision": {
+      "summary": "Say how often something happens using always, usually, often, sometimes, rarely and never, in the correct word order.",
+      "examples": [
+        "I always brush my teeth.",
+        "She is usually happy.",
+        "We sometimes go to the cinema.",
+        "He never eats meat.",
+        "They often visit their grandparents."
+      ],
+      "key_terms": [
+        "adverb of frequency",
+        "word order"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-020"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-17",
+    "body_content": "<h2>Adverbs of Frequency</h2><p>Adverbs of frequency usually go <strong>before</strong> the main verb, but <strong>after</strong> the verb \"be.\" Rough order from most to least often: always → usually → often → sometimes → rarely → never.</p><h3>Examples</h3><ul><li>I <strong>always</strong> brush my teeth.</li><li>She <strong>is usually</strong> happy.</li><li>We <strong>sometimes</strong> go to the cinema.</li><li>He <strong>never</strong> eats meat.</li><li>They <strong>often</strong> visit their grandparents.</li></ul><h3>Quick check</h3><ol><li>Put in order: \"coffee / drinks / never / he\" → <em>He never drinks coffee.</em></li><li>Put in order: \"tired / is / usually / she\" → <em>She is usually tired.</em></li><li>Choose the correct position: \"I sometimes am late\" or \"I am sometimes late\"? → <em>I am sometimes late.</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-18",
+    "unit_id": "course-a1-unit-01",
+    "title": "Imperatives",
+    "category": "Grammar",
+    "order": 18,
+    "revision": {
+      "summary": "Give simple instructions, commands and warnings using the base verb, and don't for negatives.",
+      "examples": [
+        "Open your book.",
+        "Close the door, please.",
+        "Don't touch that!",
+        "Turn left at the corner.",
+        "Be careful!"
+      ],
+      "key_terms": [
+        "imperative",
+        "instruction",
+        "base verb"
+      ],
+      "estimated_minutes": 4
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-021"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-18",
+    "body_content": "<h2>Imperatives</h2><p>Use the base verb to give an instruction. Add <strong>don't</strong> to make it negative. Common for directions, instructions, warnings and advice.</p><h3>Examples</h3><ul><li><strong>Open</strong> your book.</li><li><strong>Close</strong> the door, please.</li><li><strong>Don't touch</strong> that!</li><li><strong>Turn</strong> left at the corner.</li><li><strong>Be</strong> careful!</li></ul><h3>Quick check</h3><ol><li>Give an instruction to open a window → <em>Open the window.</em></li><li>Give a warning about hot food → <em>Be careful, it's hot!</em></li><li>Give a negative instruction about talking in class → <em>Don't talk in class.</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-19",
+    "unit_id": "course-a1-unit-01",
+    "title": "Present Continuous",
+    "category": "Grammar",
+    "order": 19,
+    "revision": {
+      "summary": "Describe what is happening right now using am/is/are + verb-ing, and tell it apart from the present simple.",
+      "examples": [
+        "I am writing an email right now.",
+        "She is cooking dinner.",
+        "They are watching a movie.",
+        "He is not sleeping.",
+        "What are you doing?"
+      ],
+      "key_terms": [
+        "present continuous",
+        "-ing form",
+        "now"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-022"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-19",
+    "body_content": "<h2>Present Continuous</h2><p>Use <strong>am/is/are + verb-ing</strong> for actions happening now or around now. The present simple, by contrast, describes routines and general facts.</p><h3>Examples</h3><ul><li>I <strong>am writing</strong> an email right now.</li><li>She <strong>is cooking</strong> dinner.</li><li>They <strong>are watching</strong> a movie.</li><li>He <strong>is not sleeping</strong>.</li><li>What <strong>are</strong> you <strong>doing</strong>?</li></ul><h3>Quick check</h3><ol><li>Right now: She ___ (read) a book. → <em>is reading</em></li><li>Choose simple or continuous: \"I usually ___ (walk) to work\" → <em>walk</em></li><li>Choose simple or continuous: \"Look! It ___ (rain)\" → <em>is raining</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-20",
+    "unit_id": "course-a1-unit-01",
+    "title": "Comparatives",
+    "category": "Grammar",
+    "order": 20,
+    "revision": {
+      "summary": "Compare two things using -er / more...than, depending on the length of the adjective.",
+      "examples": [
+        "My car is faster than yours.",
+        "This book is more interesting than that one.",
+        "She is taller than her brother.",
+        "This exercise is easier than the last one.",
+        "Winter is colder than summer."
+      ],
+      "key_terms": [
+        "comparative",
+        "-er",
+        "more...than"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-023"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-20",
+    "body_content": "<h2>Comparatives</h2><p>Short adjectives add <strong>-er</strong> (+ than). Adjectives ending in -y change to <strong>-ier</strong>. Longer adjectives use <strong>more ... than</strong>.</p><h3>Examples</h3><ul><li>My car is <strong>faster than</strong> yours.</li><li>This book is <strong>more interesting than</strong> that one.</li><li>She is <strong>taller than</strong> her brother.</li><li>This exercise is <strong>easier than</strong> the last one.</li><li>Winter is <strong>colder than</strong> summer.</li></ul><h3>Quick check</h3><ol><li>big → ___ than → <em>bigger than</em></li><li>expensive → ___ than → <em>more expensive than</em></li><li>happy → ___ than → <em>happier than</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-21",
+    "unit_id": "course-a1-unit-01",
+    "title": "Superlatives and Irregular Adverbs",
+    "category": "Grammar",
+    "order": 21,
+    "revision": {
+      "summary": "Describe the extreme of a group using superlatives, and use a few irregular adverbs (good→well, fast, hard) correctly.",
+      "examples": [
+        "She is the tallest student in the class.",
+        "This is the most interesting book I've read.",
+        "He runs fast. (not \"fastly\")",
+        "She works hard.",
+        "He speaks English well. (not \"goodly\")"
+      ],
+      "key_terms": [
+        "superlative",
+        "-est",
+        "the most",
+        "irregular adverb"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-024"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-21",
+    "body_content": "<h2>Superlatives and Irregular Adverbs</h2><p>Short adjectives add <strong>-est</strong> (the ...est). Longer adjectives use <strong>the most ...</strong>. A few common adverbs don't end in -ly and are irregular: <strong>good → well</strong>, <strong>fast → fast</strong>, <strong>hard → hard</strong>.</p><h3>Examples</h3><ul><li>She is <strong>the tallest</strong> student in the class.</li><li>This is <strong>the most interesting</strong> book I've read.</li><li>He runs <strong>fast</strong>. (not \"fastly\")</li><li>She works <strong>hard</strong>.</li><li>He speaks English <strong>well</strong>. (not \"goodly\")</li></ul><h3>Quick check</h3><ol><li>tall → the ___ → <em>the tallest</em></li><li>beautiful → the ___ → <em>the most beautiful</em></li><li>Choose: \"She sings very ___\" (good/well) → <em>well</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-22",
+    "unit_id": "course-a1-unit-01",
+    "title": "Countable and Uncountable Nouns",
+    "category": "Grammar",
+    "order": 22,
+    "revision": {
+      "summary": "Practice countable and uncountable nouns with clear A1+ examples and quick checks.",
+      "examples": [
+        "apple",
+        "I need some water.",
+        "three bottles of water"
+      ],
+      "key_terms": [
+        "Countable",
+        "and",
+        "Uncountable",
+        "Nouns"
+      ],
+      "estimated_minutes": 8
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "lesson-course-a1-unit-01-lesson-22"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-22",
+    "body_content": "<h2>Countable and Uncountable Nouns</h2><p>This A1+ lesson focuses on <strong>Countable and uncountable nouns</strong>. Study the pattern, then check your understanding.</p><h3>Key idea</h3><p>milk</p><h3>Examples</h3><ul><li><strong>apple</strong></li><li><strong>I need some water.</strong></li><li><strong>three bottles of water</strong></li></ul><h3>Quick reminder</h3><p>Choose the form or phrase that matches the meaning and context. Notice the small grammar words that make the sentence natural.</p>"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-23",
+    "unit_id": "course-a1-unit-01",
+    "title": "Too / Not Enough",
+    "category": "Grammar",
+    "order": 23,
+    "revision": {
+      "summary": "Practice too and not enough with clear A1+ examples and quick checks.",
+      "examples": [
+        "too",
+        "enough",
+        "not big enough"
+      ],
+      "key_terms": [
+        "Too",
+        "Not",
+        "Enough"
+      ],
+      "estimated_minutes": 8
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "lesson-course-a1-unit-01-lesson-23"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-23",
+    "body_content": "<h2>Too / Not Enough</h2><p>This A1+ lesson focuses on <strong>Too and Not Enough</strong>. Study the pattern, then check your understanding.</p><h3>Key idea</h3><p>very</p><h3>Examples</h3><ul><li><strong>too</strong></li><li><strong>enough</strong></li><li><strong>not big enough</strong></li></ul><h3>Quick reminder</h3><p>Choose the form or phrase that matches the meaning and context. Notice the small grammar words that make the sentence natural.</p>"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-24",
+    "unit_id": "course-a1-unit-01",
+    "title": "Adjectives and Modifiers",
+    "category": "Grammar",
+    "order": 24,
+    "revision": {
+      "summary": "Practice adjectives and modifiers with clear A1+ examples and quick checks.",
+      "examples": [
+        "careful",
+        "a very small room",
+        "She is really friendly."
+      ],
+      "key_terms": [
+        "Adjectives",
+        "and",
+        "Modifiers"
+      ],
+      "estimated_minutes": 8
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "lesson-course-a1-unit-01-lesson-24"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-24",
+    "body_content": "<h2>Adjectives and Modifiers</h2><p>This A1+ lesson focuses on <strong>Adjectives and Modifiers</strong>. Study the pattern, then check your understanding.</p><h3>Key idea</h3><p>carefulness</p><h3>Examples</h3><ul><li><strong>careful</strong></li><li><strong>a very small room</strong></li><li><strong>She is really friendly.</strong></li></ul><h3>Quick reminder</h3><p>Choose the form or phrase that matches the meaning and context. Notice the small grammar words that make the sentence natural.</p>"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-25",
+    "unit_id": "course-a1-unit-01",
+    "title": "Present Continuous: Temporary Situations",
+    "category": "Grammar",
+    "order": 25,
+    "revision": {
+      "summary": "Practice present continuous: temporary situations with clear A1+ examples and quick checks.",
+      "examples": [
+        "I am staying with my cousin this week.",
+        "is staying",
+        "We are working from home this month."
+      ],
+      "key_terms": [
+        "Present",
+        "Continuous",
+        "Temporary",
+        "Situations"
+      ],
+      "estimated_minutes": 8
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "lesson-course-a1-unit-01-lesson-25"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-25",
+    "body_content": "<h2>Present Continuous: Temporary Situations</h2><p>This A1+ lesson focuses on <strong>Present Continuous: Temporary Situations</strong>. Study the pattern, then check your understanding.</p><h3>Key idea</h3><p>Water boils at 100°C.</p><h3>Examples</h3><ul><li><strong>I am staying with my cousin this week.</strong></li><li><strong>is staying</strong></li><li><strong>We are working from home this month.</strong></li></ul><h3>Quick reminder</h3><p>Choose the form or phrase that matches the meaning and context. Notice the small grammar words that make the sentence natural.</p>"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-26",
+    "unit_id": "course-a1-unit-01",
+    "title": "Present Perfect and Participles",
+    "category": "Grammar",
+    "order": 26,
+    "revision": {
+      "summary": "Practice present perfect and participles with clear A1+ examples and quick checks.",
+      "examples": [
+        "have finished",
+        "gone",
+        "done"
+      ],
+      "key_terms": [
+        "Present",
+        "Perfect",
+        "and",
+        "Participles"
+      ],
+      "estimated_minutes": 8
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "lesson-course-a1-unit-01-lesson-26"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-26",
+    "body_content": "<h2>Present Perfect and Participles</h2><p>This A1+ lesson focuses on <strong>Present Perfect and Participles</strong>. Study the pattern, then check your understanding.</p><h3>Key idea</h3><p>did finished</p><h3>Examples</h3><ul><li><strong>have finished</strong></li><li><strong>gone</strong></li><li><strong>done</strong></li></ul><h3>Quick reminder</h3><p>Choose the form or phrase that matches the meaning and context. Notice the small grammar words that make the sentence natural.</p>"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-27",
+    "unit_id": "course-a1-unit-01",
+    "title": "Should for Advice",
+    "category": "Grammar",
+    "order": 27,
+    "revision": {
+      "summary": "Practice should for advice with clear A1+ examples and quick checks.",
+      "examples": [
+        "should",
+        "You should call the doctor.",
+        "stay up"
+      ],
+      "key_terms": [
+        "Should",
+        "for",
+        "Advice"
+      ],
+      "estimated_minutes": 8
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "lesson-course-a1-unit-01-lesson-27"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-27",
+    "body_content": "<h2>Should for Advice</h2><p>This A1+ lesson focuses on <strong>Should for Advice</strong>. Study the pattern, then check your understanding.</p><h3>Key idea</h3><p>are should</p><h3>Examples</h3><ul><li><strong>should</strong></li><li><strong>You should call the doctor.</strong></li><li><strong>stay up</strong></li></ul><h3>Quick reminder</h3><p>Choose the form or phrase that matches the meaning and context. Notice the small grammar words that make the sentence natural.</p>"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-28",
+    "unit_id": "course-a1-unit-01",
+    "title": "Have To / Need To",
+    "category": "Grammar",
+    "order": 28,
+    "revision": {
+      "summary": "Practice have to / need to with clear A1+ examples and quick checks.",
+      "examples": [
+        "have to",
+        "needs to",
+        "You don't have to come."
+      ],
+      "key_terms": [
+        "Have",
+        "Need"
+      ],
+      "estimated_minutes": 8
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "lesson-course-a1-unit-01-lesson-28"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-28",
+    "body_content": "<h2>Have To / Need To</h2><p>This A1+ lesson focuses on <strong>Have To / Need To</strong>. Study the pattern, then check your understanding.</p><h3>Key idea</h3><p>has to</p><h3>Examples</h3><ul><li><strong>have to</strong></li><li><strong>needs to</strong></li><li><strong>You don&#x27;t have to come.</strong></li></ul><h3>Quick reminder</h3><p>Choose the form or phrase that matches the meaning and context. Notice the small grammar words that make the sentence natural.</p>"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-29",
+    "unit_id": "course-a1-unit-01",
+    "title": "Be Like for Descriptions",
+    "category": "Grammar",
+    "order": 29,
+    "revision": {
+      "summary": "Practice be like for descriptions with clear A1+ examples and quick checks.",
+      "examples": [
+        "like",
+        "She's friendly and patient.",
+        "are"
+      ],
+      "key_terms": [
+        "Like",
+        "for",
+        "Descriptions"
+      ],
+      "estimated_minutes": 8
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "lesson-course-a1-unit-01-lesson-29"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-29",
+    "body_content": "<h2>Be Like for Descriptions</h2><p>This A1+ lesson focuses on <strong>Be Like for Descriptions</strong>. Study the pattern, then check your understanding.</p><h3>Key idea</h3><p>liked</p><h3>Examples</h3><ul><li><strong>like</strong></li><li><strong>She&#x27;s friendly and patient.</strong></li><li><strong>are</strong></li></ul><h3>Quick reminder</h3><p>Choose the form or phrase that matches the meaning and context. Notice the small grammar words that make the sentence natural.</p>"
+  },
+  {
+    "lesson_id": "course-a1-unit-01-lesson-30",
+    "unit_id": "course-a1-unit-01",
+    "title": "Future Facts",
+    "category": "Grammar",
+    "order": 30,
+    "revision": {
+      "summary": "Practice future facts: present simple and future simple with clear A1+ examples and quick checks.",
+      "examples": [
+        "The train leaves at 8 tomorrow.",
+        "I think it will rain tomorrow.",
+        "The shop opens at nine tomorrow."
+      ],
+      "key_terms": [
+        "Future",
+        "Facts"
+      ],
+      "estimated_minutes": 8
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "lesson-course-a1-unit-01-lesson-30"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-30",
+    "body_content": "<h2>Future Facts</h2><p>This A1+ lesson focuses on <strong>Future Facts: Present Simple and Future Simple</strong>. Study the pattern, then check your understanding.</p><h3>Key idea</h3><p>The train leaving at 8 tomorrow.</p><h3>Examples</h3><ul><li><strong>The train leaves at 8 tomorrow.</strong></li><li><strong>I think it will rain tomorrow.</strong></li><li><strong>The shop opens at nine tomorrow.</strong></li></ul><h3>Quick reminder</h3><p>Choose the form or phrase that matches the meaning and context. Notice the small grammar words that make the sentence natural.</p>"
+  },
+  {
     "lesson_id": "course-a1-unit-02-lesson-01",
     "unit_id": "course-a1-unit-02",
     "title": "Everyday Vocabulary",
@@ -220,5 +878,1428 @@
     "version": 1,
     "status": "published",
     "lesson_quiz_id": "lesson-course-a1-unit-02-lesson-01"
+  },
+  {
+    "lesson_id": "course-a1-unit-02-lesson-02",
+    "unit_id": "course-a1-unit-02",
+    "title": "Numbers and Money",
+    "category": "Vocabulary",
+    "order": 2,
+    "revision": {
+      "summary": "Use cardinal and ordinal numbers, and talk about prices and money.",
+      "examples": [
+        "I have three brothers.",
+        "She lives on the fifth floor.",
+        "This costs twenty dollars.",
+        "How much is a coffee here?",
+        "It's my first day at work."
+      ],
+      "key_terms": [
+        "cardinal number",
+        "ordinal number",
+        "price",
+        "currency",
+        "how much"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-025"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-02-lesson-02",
+    "body_content": "<h2>Numbers and Money</h2><p>Cardinal numbers (one, two, three...) count things. Ordinal numbers (first, second, third...) show order or position. For money, say the amount then the currency (five dollars, ten euros), and use \"How much is/are...?\" to ask a price.</p><h3>Examples</h3><ul><li>I have <strong>three</strong> brothers.</li><li>She lives on the <strong>fifth</strong> floor.</li><li>This costs <strong>twenty dollars</strong>.</li><li><strong>How much</strong> is a coffee here?</li><li>It's my <strong>first</strong> day at work.</li></ul><h3>Quick check</h3><ol><li>Turn into an ordinal: four → ___ → <em>fourth</em></li><li>How do you ask a price? ___ is this bag? → <em>How much</em></li><li>Say the price: $15 → ___ → <em>fifteen dollars</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-02-lesson-03",
+    "unit_id": "course-a1-unit-02",
+    "title": "Countries, Nationalities and Languages",
+    "category": "Vocabulary",
+    "order": 3,
+    "revision": {
+      "summary": "Talk about where people are from, their nationality, and what language they speak.",
+      "examples": [
+        "I'm from Brazil. I'm Brazilian.",
+        "He is Japanese. He speaks Japanese.",
+        "They come from Spain.",
+        "What nationality are you?",
+        "She speaks two languages: English and Portuguese."
+      ],
+      "key_terms": [
+        "country",
+        "nationality",
+        "language",
+        "come from",
+        "speak"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-026"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-02-lesson-03",
+    "body_content": "<h2>Countries, Nationalities and Languages</h2><p>A country name is a place (France, Japan). A nationality describes a person from that country (French, Japanese). The language people speak often has the same word as the nationality (She speaks French).</p><h3>Examples</h3><ul><li>I'm from <strong>Brazil</strong>. I'm <strong>Brazilian</strong>.</li><li>He is <strong>Japanese</strong>. He speaks <strong>Japanese</strong>.</li><li>They come from <strong>Spain</strong>.</li><li>What <strong>nationality</strong> are you?</li><li>She speaks two languages: English and Portuguese.</li></ul><h3>Quick check</h3><ol><li>Brazil → ___ → <em>Brazilian</em></li><li>Japan → nationality: ___ → <em>Japanese</em></li><li>Complete: I ___ from Italy. I'm Italian. → <em>come</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-02-lesson-04",
+    "unit_id": "course-a1-unit-02",
+    "title": "Telling the Time and Days",
+    "category": "Vocabulary",
+    "order": 4,
+    "revision": {
+      "summary": "Say the time and the days of the week.",
+      "examples": [
+        "It's nine o'clock.",
+        "It's half past six.",
+        "It's a quarter to five.",
+        "My class is on Tuesday.",
+        "What day is it today?"
+      ],
+      "key_terms": [
+        "o'clock",
+        "half past",
+        "quarter to/past",
+        "day of the week"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-027"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-02-lesson-04",
+    "body_content": "<h2>Telling the Time and Days</h2><p>To tell the time, say the hour first, then the minutes (it's three fifteen, it's half past three). The days of the week are Monday to Sunday. Use \"on\" with days (on Monday).</p><h3>Examples</h3><ul><li>It's <strong>nine o'clock</strong>.</li><li>It's <strong>half past six</strong>.</li><li>It's <strong>a quarter to five</strong>.</li><li>My class is <strong>on Tuesday</strong>.</li><li>What day is it today?</li></ul><h3>Quick check</h3><ol><li>3:30 → It's ___ → <em>half past three</em></li><li>Order: Monday, ___, Wednesday → <em>Tuesday</em></li><li>Ask the time politely: Excuse me, ___? → <em>what time is it</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-02-lesson-05",
+    "unit_id": "course-a1-unit-02",
+    "title": "Dates, Months and Years",
+    "category": "Vocabulary",
+    "order": 5,
+    "revision": {
+      "summary": "Say dates, the months of the year, and years.",
+      "examples": [
+        "My birthday is in July.",
+        "Today is the tenth of March.",
+        "She was born in 2001.",
+        "Christmas is in December.",
+        "What's the date today?"
+      ],
+      "key_terms": [
+        "month",
+        "date",
+        "year",
+        "the ... of"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-028"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-02-lesson-05",
+    "body_content": "<h2>Dates, Months and Years</h2><p>Months go from January to December. To say a date, use the ordinal number for the day (the fifth of May / May fifth) and \"in\" for the month or year alone.</p><h3>Examples</h3><ul><li>My birthday is <strong>in July</strong>.</li><li>Today is <strong>the tenth of March</strong>.</li><li>She was born <strong>in 2001</strong>.</li><li>Christmas is in December.</li><li>What's the date today?</li></ul><h3>Quick check</h3><ol><li>Which month comes after June? → ___ → <em>July</em></li><li>Say the date: 5 May → the ___ of May → <em>fifth</em></li><li>I was born ___ 1998. (in/on) → <em>in</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-02-lesson-06",
+    "unit_id": "course-a1-unit-02",
+    "title": "Seasons and Weather",
+    "category": "Vocabulary",
+    "order": 6,
+    "revision": {
+      "summary": "Name the four seasons and describe the weather.",
+      "examples": [
+        "It's sunny today.",
+        "It's cold in winter.",
+        "It often rains in autumn.",
+        "Summer is hot here.",
+        "It's snowing outside."
+      ],
+      "key_terms": [
+        "season",
+        "weather",
+        "sunny",
+        "rainy",
+        "cloudy"
+      ],
+      "estimated_minutes": 4
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-029"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-02-lesson-06",
+    "body_content": "<h2>Seasons and Weather</h2><p>The seasons are spring, summer, autumn (fall) and winter. Common weather words are sunny, rainy, cloudy, windy, snowy, hot and cold. Use \"It's...\" to describe weather.</p><h3>Examples</h3><ul><li><strong>It's sunny</strong> today.</li><li>It's <strong>cold</strong> in winter.</li><li>It often <strong>rains</strong> in autumn.</li><li>Summer is <strong>hot</strong> here.</li><li>It's <strong>snowing</strong> outside.</li></ul><h3>Quick check</h3><ol><li>Which season is coldest? → ___ → <em>winter</em></li><li>Describe rain weather: It's ___. → <em>rainy</em></li><li>Order the seasons starting with spring → <em>spring, summer, autumn, winter</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-02-lesson-07",
+    "unit_id": "course-a1-unit-02",
+    "title": "Shops and Places in Town",
+    "category": "Vocabulary",
+    "order": 7,
+    "revision": {
+      "summary": "Name common shops and places in town, and say where to go for something.",
+      "examples": [
+        "I need to go to the bakery.",
+        "Where is the nearest pharmacy?",
+        "She works at the bank.",
+        "Let's meet at the park.",
+        "Where can I buy stamps? At the post office."
+      ],
+      "key_terms": [
+        "shop",
+        "place",
+        "supermarket",
+        "pharmacy",
+        "post office"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-030"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-02-lesson-07",
+    "body_content": "<h2>Shops and Places in Town</h2><p>Common places include the supermarket, bakery, pharmacy, bank, post office and park. Use \"Where can I buy...?\" or \"Where is the...?\" to ask about a place.</p><h3>Examples</h3><ul><li>I need to go to the <strong>bakery</strong>.</li><li>Where is the nearest <strong>pharmacy</strong>?</li><li>She works at the <strong>bank</strong>.</li><li>Let's meet at the <strong>park</strong>.</li><li>Where can I buy stamps? At the <strong>post office</strong>.</li></ul><h3>Quick check</h3><ol><li>Where do you buy bread? → the ___ → <em>bakery</em></li><li>Where do you buy medicine? → the ___ → <em>pharmacy</em></li><li>Ask about a place: ___ is the supermarket? → <em>Where</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-02-lesson-08",
+    "unit_id": "course-a1-unit-02",
+    "title": "Interests and Sports",
+    "category": "Vocabulary",
+    "order": 8,
+    "revision": {
+      "summary": "Talk about hobbies, interests and sports you play or like.",
+      "examples": [
+        "I play basketball on weekends.",
+        "She goes swimming every morning.",
+        "He does yoga twice a week.",
+        "I love reading books.",
+        "They enjoy playing video games."
+      ],
+      "key_terms": [
+        "hobby",
+        "interest",
+        "sport",
+        "play/go/do"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-031"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-02-lesson-08",
+    "body_content": "<h2>Interests and Sports</h2><p>Use \"play\" with team sports and ball games (play football, play tennis), \"go\" with -ing activities (go swimming, go running), and \"do\" with other activities (do yoga). Use \"like/love/enjoy\" + -ing to talk about interests.</p><h3>Examples</h3><ul><li>I <strong>play</strong> basketball on weekends.</li><li>She <strong>goes</strong> swimming every morning.</li><li>He <strong>does</strong> yoga twice a week.</li><li>I <strong>love reading</strong> books.</li><li>They <strong>enjoy playing</strong> video games.</li></ul><h3>Quick check</h3><ol><li>play, go or do: ___ football → <em>play</em></li><li>play, go or do: ___ swimming → <em>go</em></li><li>play, go or do: ___ yoga → <em>do</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-02-lesson-09",
+    "unit_id": "course-a1-unit-02",
+    "title": "Everyday Activities",
+    "category": "Vocabulary",
+    "order": 9,
+    "revision": {
+      "summary": "Describe daily activities and how often you do them, using the present simple.",
+      "examples": [
+        "I get up at seven every day.",
+        "She usually has breakfast at home.",
+        "We sometimes go to the gym after work.",
+        "He never skips breakfast.",
+        "They go to bed early on weekdays."
+      ],
+      "key_terms": [
+        "daily routine",
+        "activity",
+        "frequency"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-032"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-02-lesson-09",
+    "body_content": "<h2>Everyday Activities</h2><p>Everyday activities include things like getting up, having breakfast, going to work/school, and going to bed. Combine them with frequency words (always, usually, sometimes, never) to say how often.</p><h3>Examples</h3><ul><li>I <strong>get up</strong> at seven every day.</li><li>She usually <strong>has breakfast</strong> at home.</li><li>We sometimes <strong>go to the gym</strong> after work.</li><li>He never <strong>skips breakfast</strong>.</li><li>They <strong>go to bed</strong> early on weekdays.</li></ul><h3>Quick check</h3><ol><li>I ___ (get up) at 7 every day. → <em>get up</em></li><li>She ___ (have) lunch at school. → <em>has</em></li><li>Add a frequency word: I ___ go to the gym. → <em>sometimes</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-02-lesson-10",
+    "unit_id": "course-a1-unit-02",
+    "title": "Jobs",
+    "category": "Vocabulary",
+    "order": 10,
+    "revision": {
+      "summary": "Name common jobs and talk about what people do for work.",
+      "examples": [
+        "She is a teacher.",
+        "He works as a chef.",
+        "I work at a hospital.",
+        "What do you do? I'm an engineer.",
+        "They work for a big company."
+      ],
+      "key_terms": [
+        "job",
+        "work as",
+        "work at/for",
+        "occupation"
+      ],
+      "estimated_minutes": 4
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-033"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-02-lesson-10",
+    "body_content": "<h2>Jobs</h2><p>Use \"He/She is a...\" + job title, and \"He/She works as a...\" / \"He/She works at/for...\" + place. Ask \"What do you do?\" to ask about someone's job.</p><h3>Examples</h3><ul><li>She <strong>is a</strong> teacher.</li><li>He <strong>works as a</strong> chef.</li><li>I <strong>work at</strong> a hospital.</li><li>What do you do? I'm an engineer.</li><li>They <strong>work for</strong> a big company.</li></ul><h3>Quick check</h3><ol><li>She is a ___ (teaches at school). → <em>teacher</em></li><li>Ask about someone's job: What ___ you do? → <em>do</em></li><li>He works ___ a nurse. (as/at) → <em>as</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-02-lesson-11",
+    "unit_id": "course-a1-unit-02",
+    "title": "The Home: Rooms and Furniture",
+    "category": "Vocabulary",
+    "order": 11,
+    "revision": {
+      "summary": "Name rooms in a house and the furniture found in them, using there is/there are.",
+      "examples": [
+        "There is a bed in the bedroom.",
+        "There are two chairs in the kitchen.",
+        "The sofa is in the living room.",
+        "Is there a wardrobe in your room?",
+        "There isn't a bath in the bathroom, only a shower."
+      ],
+      "key_terms": [
+        "room",
+        "furniture",
+        "there is/are"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-034"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-02-lesson-11",
+    "body_content": "<h2>The Home: Rooms and Furniture</h2><p>Common rooms: kitchen, bedroom, bathroom, living room. Common furniture: bed, table, chair, sofa, wardrobe. Use \"there is\" (singular) and \"there are\" (plural) to say what's in a room.</p><h3>Examples</h3><ul><li><strong>There is</strong> a bed in the bedroom.</li><li><strong>There are</strong> two chairs in the kitchen.</li><li>The sofa is in the living room.</li><li>Is there a wardrobe in your room?</li><li>There isn't a bath in the bathroom, only a shower.</li></ul><h3>Quick check</h3><ol><li>There ___ a table in the kitchen. (is/are) → <em>is</em></li><li>There ___ four chairs. (is/are) → <em>are</em></li><li>Where do you sleep? In the ___. → <em>bedroom</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-02-lesson-12",
+    "unit_id": "course-a1-unit-02",
+    "title": "Colours and Size",
+    "category": "Vocabulary",
+    "order": 12,
+    "revision": {
+      "summary": "Describe things using colours and size words.",
+      "examples": [
+        "I have a blue bag.",
+        "She is wearing a small hat.",
+        "This is a very big house.",
+        "The shirt is too short for him.",
+        "He has a tall, dark green bike."
+      ],
+      "key_terms": [
+        "colour",
+        "size",
+        "adjective"
+      ],
+      "estimated_minutes": 4
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-035"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-02-lesson-12",
+    "body_content": "<h2>Colours and Size</h2><p>Common colours: red, blue, green, yellow, black, white. Common size words: big, small, long, short, tall. Adjectives usually go before the noun (a big red bag).</p><h3>Examples</h3><ul><li>I have a <strong>blue</strong> bag.</li><li>She is wearing a <strong>small</strong> hat.</li><li>This is a very <strong>big</strong> house.</li><li>The shirt is too <strong>short</strong> for him.</li><li>He has a <strong>tall, dark green</strong> bike.</li></ul><h3>Quick check</h3><ol><li>The sky is ___ (colour). → <em>blue</em></li><li>Opposite of small: ___ → <em>big</em></li><li>Put in order: bag / red / big → a ___ ___ bag → <em>big red</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-02-lesson-13",
+    "unit_id": "course-a1-unit-02",
+    "title": "Body and Appearance",
+    "category": "Vocabulary",
+    "order": 13,
+    "revision": {
+      "summary": "Name parts of the body and describe what people look like.",
+      "examples": [
+        "She has long black hair.",
+        "He has blue eyes.",
+        "I hurt my leg.",
+        "He is tall and thin.",
+        "She is short with curly hair."
+      ],
+      "key_terms": [
+        "body part",
+        "appearance",
+        "has/is"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-036"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-02-lesson-13",
+    "body_content": "<h2>Body and Appearance</h2><p>Common body parts: head, hand, arm, leg, eyes, hair. To describe appearance, use \"He/She has...\" for features (has brown hair) and \"He/She is...\" for height/build (is tall).</p><h3>Examples</h3><ul><li>She <strong>has</strong> long black hair.</li><li>He <strong>has</strong> blue eyes.</li><li>I hurt my leg.</li><li>He <strong>is</strong> tall and thin.</li><li>She <strong>is</strong> short with curly hair.</li></ul><h3>Quick check</h3><ol><li>She has brown ___. (hair colour) → <em>hair</em></li><li>Describe height: He ___ tall. (has/is) → <em>is</em></li><li>Describe a feature: She ___ blue eyes. (has/is) → <em>has</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-02-lesson-14",
+    "unit_id": "course-a1-unit-02",
+    "title": "Food, Meals and Cooking",
+    "category": "Vocabulary",
+    "order": 14,
+    "revision": {
+      "summary": "Name common foods and meals, and talk about simple cooking.",
+      "examples": [
+        "I have toast for breakfast.",
+        "We usually have rice for dinner.",
+        "She is cooking chicken.",
+        "First, cut the vegetables.",
+        "He boils the eggs for ten minutes."
+      ],
+      "key_terms": [
+        "meal",
+        "food",
+        "cook/boil/fry/cut"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-037"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-02-lesson-14",
+    "body_content": "<h2>Food, Meals and Cooking</h2><p>Meals: breakfast, lunch, dinner. Common foods: bread, rice, chicken, vegetables, fruit. Simple cooking verbs: cook, boil, fry, cut. Use \"for breakfast/lunch/dinner\" to say what you eat at a meal.</p><h3>Examples</h3><ul><li>I have toast <strong>for breakfast</strong>.</li><li>We usually have rice <strong>for dinner</strong>.</li><li>She is <strong>cooking</strong> chicken.</li><li>First, <strong>cut</strong> the vegetables.</li><li>He <strong>boils</strong> the eggs for ten minutes.</li></ul><h3>Quick check</h3><ol><li>What do you eat in the morning? → ___ → <em>breakfast</em></li><li>Boil, fry or cut: ___ the onions → <em>cut</em></li><li>I have eggs ___ breakfast. (for/at) → <em>for</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-02-lesson-15",
+    "unit_id": "course-a1-unit-02",
+    "title": "Transport",
+    "category": "Vocabulary",
+    "order": 15,
+    "revision": {
+      "summary": "Name types of transport and say how you travel somewhere.",
+      "examples": [
+        "I go to work by bus.",
+        "She travels by train.",
+        "We go there on foot.",
+        "He rides his bike to school.",
+        "They flew by plane to Spain."
+      ],
+      "key_terms": [
+        "transport",
+        "by + transport",
+        "on foot"
+      ],
+      "estimated_minutes": 4
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-038"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-02-lesson-15",
+    "body_content": "<h2>Transport</h2><p>Common transport: car, bus, train, bike, plane, on foot. Use \"by\" with most transport (by bus, by car) but \"on foot\" for walking.</p><h3>Examples</h3><ul><li>I go to work <strong>by bus</strong>.</li><li>She travels <strong>by train</strong>.</li><li>We go there <strong>on foot</strong>.</li><li>He rides his bike to school.</li><li>They flew by plane to Spain.</li></ul><h3>Quick check</h3><ol><li>How do you travel? ___ car (by/on) → <em>by</em></li><li>Walking = ___ foot (by/on) → <em>on</em></li><li>I go to school ___ bike. (by/on) → <em>by</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-02-lesson-16",
+    "unit_id": "course-a1-unit-02",
+    "title": "Health, Feelings and Emotions",
+    "category": "Vocabulary",
+    "order": 16,
+    "revision": {
+      "summary": "Talk about how you feel and simple health problems.",
+      "examples": [
+        "I feel tired today.",
+        "She is very happy.",
+        "He has a headache.",
+        "I'm not feeling well.",
+        "They are excited about the trip."
+      ],
+      "key_terms": [
+        "feeling",
+        "emotion",
+        "health problem",
+        "have a ___"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-039"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-02-lesson-16",
+    "body_content": "<h2>Health, Feelings and Emotions</h2><p>Use \"I feel...\" or \"I'm...\" + adjective for feelings (happy, sad, tired, sick) and \"I have a...\" for a symptom (a headache, a cold).</p><h3>Examples</h3><ul><li>I <strong>feel</strong> tired today.</li><li>She <strong>is</strong> very happy.</li><li>He <strong>has a</strong> headache.</li><li>I'm not feeling well.</li><li>They are excited about the trip.</li></ul><h3>Quick check</h3><ol><li>I ___ tired. (feel/have) → <em>feel</em></li><li>She has a ___. (headache/happy) → <em>headache</em></li><li>Opposite of happy: ___ → <em>sad</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-02-lesson-17",
+    "unit_id": "course-a1-unit-02",
+    "title": "Clothes and Street Directions",
+    "category": "Vocabulary",
+    "order": 17,
+    "revision": {
+      "summary": "Name common clothes for different weather, and follow simple street directions.",
+      "examples": [
+        "Wear a coat — it's cold today.",
+        "Turn left at the corner.",
+        "Go straight on, then turn right.",
+        "The bank is next to the pharmacy.",
+        "She is wearing a red jacket and black shoes."
+      ],
+      "key_terms": [
+        "clothes",
+        "weather-appropriate",
+        "street direction"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-040"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-02-lesson-17",
+    "body_content": "<h2>Clothes and Street Directions</h2><p>Common clothes: shirt, trousers, jacket, shoes, hat. Choose clothes for the weather (a coat for cold weather). Direction words: turn left/right, go straight on, at the corner, next to.</p><h3>Examples</h3><ul><li>Wear a <strong>coat</strong> — it's cold today.</li><li><strong>Turn left</strong> at the corner.</li><li><strong>Go straight on</strong>, then turn right.</li><li>The bank is <strong>next to</strong> the pharmacy.</li><li>She is wearing a red jacket and black shoes.</li></ul><h3>Quick check</h3><ol><li>Cold weather → wear a ___ → <em>coat</em></li><li>Give a direction: ___ left at the corner. (turn/go) → <em>turn</em></li><li>Continue forward: go ___ on. (left/straight) → <em>straight</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-02-lesson-18",
+    "unit_id": "course-a1-unit-02",
+    "title": "Family and Relationships",
+    "category": "Vocabulary",
+    "order": 18,
+    "revision": {
+      "summary": "Practice family and relationships with clear A1+ examples and quick checks.",
+      "examples": [
+        "uncle",
+        "niece",
+        "brother-in-law"
+      ],
+      "key_terms": [
+        "Family",
+        "and",
+        "Relationships"
+      ],
+      "estimated_minutes": 8
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "lesson-course-a1-unit-02-lesson-18"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-02-lesson-18",
+    "body_content": "<h2>Family and Relationships</h2><p>This A1+ lesson focuses on <strong>Family and Relationships</strong>. Study the pattern, then check your understanding.</p><h3>Key idea</h3><p>grandson</p><h3>Examples</h3><ul><li><strong>uncle</strong></li><li><strong>niece</strong></li><li><strong>brother-in-law</strong></li></ul><h3>Quick reminder</h3><p>Choose the form or phrase that matches the meaning and context. Notice the small grammar words that make the sentence natural.</p>"
+  },
+  {
+    "lesson_id": "course-a1-unit-02-lesson-19",
+    "unit_id": "course-a1-unit-02",
+    "title": "Personality",
+    "category": "Vocabulary",
+    "order": 19,
+    "revision": {
+      "summary": "Practice personality with clear A1+ examples and quick checks.",
+      "examples": [
+        "sociable",
+        "honest",
+        "impatient"
+      ],
+      "key_terms": [
+        "Personality"
+      ],
+      "estimated_minutes": 8
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "lesson-course-a1-unit-02-lesson-19"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-02-lesson-19",
+    "body_content": "<h2>Personality</h2><p>This A1+ lesson focuses on <strong>Personality</strong>. Study the pattern, then check your understanding.</p><h3>Key idea</h3><p>quiet</p><h3>Examples</h3><ul><li><strong>sociable</strong></li><li><strong>honest</strong></li><li><strong>impatient</strong></li></ul><h3>Quick reminder</h3><p>Choose the form or phrase that matches the meaning and context. Notice the small grammar words that make the sentence natural.</p>"
+  },
+  {
+    "lesson_id": "course-a1-unit-02-lesson-20",
+    "unit_id": "course-a1-unit-02",
+    "title": "Abilities: Now and as a Child",
+    "category": "Vocabulary",
+    "order": 20,
+    "revision": {
+      "summary": "Practice abilities: now and as a child with clear A1+ examples and quick checks.",
+      "examples": [
+        "I can swim.",
+        "She could read at age four.",
+        "could"
+      ],
+      "key_terms": [
+        "Abilities",
+        "Now",
+        "and",
+        "Child"
+      ],
+      "estimated_minutes": 8
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "lesson-course-a1-unit-02-lesson-20"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-02-lesson-20",
+    "body_content": "<h2>Abilities: Now and as a Child</h2><p>This A1+ lesson focuses on <strong>Abilities: Now and as a Child</strong>. Study the pattern, then check your understanding.</p><h3>Key idea</h3><p>I am swimming yesterday.</p><h3>Examples</h3><ul><li><strong>I can swim.</strong></li><li><strong>She could read at age four.</strong></li><li><strong>could</strong></li></ul><h3>Quick reminder</h3><p>Choose the form or phrase that matches the meaning and context. Notice the small grammar words that make the sentence natural.</p>"
+  },
+  {
+    "lesson_id": "course-a1-unit-02-lesson-21",
+    "unit_id": "course-a1-unit-02",
+    "title": "Word-Building: Common Suffixes",
+    "category": "Vocabulary",
+    "order": 21,
+    "revision": {
+      "summary": "Practice word-building: common suffixes with clear A1+ examples and quick checks.",
+      "examples": [
+        "teacher",
+        "kindness",
+        "worker"
+      ],
+      "key_terms": [
+        "Word",
+        "Building",
+        "Common",
+        "Suffixes"
+      ],
+      "estimated_minutes": 8
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "lesson-course-a1-unit-02-lesson-21"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-02-lesson-21",
+    "body_content": "<h2>Word-Building: Common Suffixes</h2><p>This A1+ lesson focuses on <strong>Word-Building: Common Suffixes</strong>. Study the pattern, then check your understanding.</p><h3>Key idea</h3><p>teachness</p><h3>Examples</h3><ul><li><strong>teacher</strong></li><li><strong>kindness</strong></li><li><strong>worker</strong></li></ul><h3>Quick reminder</h3><p>Choose the form or phrase that matches the meaning and context. Notice the small grammar words that make the sentence natural.</p>"
+  },
+  {
+    "lesson_id": "course-a1-unit-02-lesson-22",
+    "unit_id": "course-a1-unit-02",
+    "title": "Travel and Booking",
+    "category": "Vocabulary",
+    "order": 22,
+    "revision": {
+      "summary": "Practice travel and booking with clear A1+ examples and quick checks.",
+      "examples": [
+        "at the airport",
+        "a reservation",
+        "I'd like to book a room."
+      ],
+      "key_terms": [
+        "Travel",
+        "and",
+        "Booking"
+      ],
+      "estimated_minutes": 8
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "lesson-course-a1-unit-02-lesson-22"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-02-lesson-22",
+    "body_content": "<h2>Travel and Booking</h2><p>This A1+ lesson focuses on <strong>Travel and Booking</strong>. Study the pattern, then check your understanding.</p><h3>Key idea</h3><p>at the cinema</p><h3>Examples</h3><ul><li><strong>at the airport</strong></li><li><strong>a reservation</strong></li><li><strong>I&#x27;d like to book a room.</strong></li></ul><h3>Quick reminder</h3><p>Choose the form or phrase that matches the meaning and context. Notice the small grammar words that make the sentence natural.</p>"
+  },
+  {
+    "lesson_id": "course-a1-unit-02-lesson-23",
+    "unit_id": "course-a1-unit-02",
+    "title": "Machines and Inventions",
+    "category": "Vocabulary",
+    "order": 23,
+    "revision": {
+      "summary": "Practice machines and inventions with clear A1+ examples and quick checks.",
+      "examples": [
+        "telephone",
+        "washing machine",
+        "It puts text or images on paper."
+      ],
+      "key_terms": [
+        "Machines",
+        "and",
+        "Inventions"
+      ],
+      "estimated_minutes": 8
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "lesson-course-a1-unit-02-lesson-23"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-02-lesson-23",
+    "body_content": "<h2>Machines and Inventions</h2><p>This A1+ lesson focuses on <strong>Machines and Inventions</strong>. Study the pattern, then check your understanding.</p><h3>Key idea</h3><p>shoe</p><h3>Examples</h3><ul><li><strong>telephone</strong></li><li><strong>washing machine</strong></li><li><strong>It puts text or images on paper.</strong></li></ul><h3>Quick reminder</h3><p>Choose the form or phrase that matches the meaning and context. Notice the small grammar words that make the sentence natural.</p>"
+  },
+  {
+    "lesson_id": "course-a1-unit-02-lesson-24",
+    "unit_id": "course-a1-unit-02",
+    "title": "Festivals and Celebrations",
+    "category": "Vocabulary",
+    "order": 24,
+    "revision": {
+      "summary": "Practice festivals and celebrations with clear A1+ examples and quick checks.",
+      "examples": [
+        "celebration",
+        "celebrate",
+        "festival"
+      ],
+      "key_terms": [
+        "Festivals",
+        "and",
+        "Celebrations"
+      ],
+      "estimated_minutes": 8
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "lesson-course-a1-unit-02-lesson-24"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-02-lesson-24",
+    "body_content": "<h2>Festivals and Celebrations</h2><p>This A1+ lesson focuses on <strong>Festivals and Celebrations</strong>. Study the pattern, then check your understanding.</p><h3>Key idea</h3><p>direction</p><h3>Examples</h3><ul><li><strong>celebration</strong></li><li><strong>celebrate</strong></li><li><strong>festival</strong></li></ul><h3>Quick reminder</h3><p>Choose the form or phrase that matches the meaning and context. Notice the small grammar words that make the sentence natural.</p>"
+  },
+  {
+    "lesson_id": "course-a1-unit-02-lesson-25",
+    "unit_id": "course-a1-unit-02",
+    "title": "Hotel Situations",
+    "category": "Vocabulary",
+    "order": 25,
+    "revision": {
+      "summary": "Practice hotel situations with clear A1+ examples and quick checks.",
+      "examples": [
+        "reception",
+        "Could you turn up the heating?",
+        "The time you leave the hotel."
+      ],
+      "key_terms": [
+        "Hotel",
+        "Situations"
+      ],
+      "estimated_minutes": 8
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "lesson-course-a1-unit-02-lesson-25"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-02-lesson-25",
+    "body_content": "<h2>Hotel Situations</h2><p>This A1+ lesson focuses on <strong>Hotel Situations</strong>. Study the pattern, then check your understanding.</p><h3>Key idea</h3><p>classroom</p><h3>Examples</h3><ul><li><strong>reception</strong></li><li><strong>Could you turn up the heating?</strong></li><li><strong>The time you leave the hotel.</strong></li></ul><h3>Quick reminder</h3><p>Choose the form or phrase that matches the meaning and context. Notice the small grammar words that make the sentence natural.</p>"
+  },
+  {
+    "lesson_id": "course-a1-unit-03-lesson-01",
+    "unit_id": "course-a1-unit-03",
+    "title": "Greetings and Introductions",
+    "category": "Functional Language",
+    "order": 1,
+    "revision": {
+      "summary": "Greet people and introduce yourself and others using Hello/Hi, I'm..., This is..., and How are you?",
+      "examples": [
+        "Hello! Nice to meet you.",
+        "Hi, I'm Anna. What's your name?",
+        "This is my friend, Tom.",
+        "How are you? — Fine, thanks. And you?",
+        "Good morning! / Good evening!"
+      ],
+      "key_terms": [
+        "greeting",
+        "introduction",
+        "formal/informal"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-041"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-03-lesson-01",
+    "body_content": "<h2>Greetings and Introductions</h2><p>Use <strong>Hello/Hi</strong> to greet someone, <strong>I'm...</strong> to introduce yourself, and <strong>This is...</strong> to introduce someone else. Answer \"How are you?\" with \"Fine, thanks. And you?\"</p><h3>Examples</h3><ul><li>Hello! Nice to meet you.</li><li>Hi, I'm Anna. What's your name?</li><li>This is my friend, Tom.</li><li>How are you? — Fine, thanks. And you?</li><li>Good morning! / Good evening!</li></ul><h3>Quick check</h3><ol><li>Complete: \"Hello, ___ Maria.\" → <em>I'm</em></li><li>Introduce a friend called Tom. → <em>This is Tom.</em></li><li>Answer \"How are you?\" → <em>Fine, thanks.</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-03-lesson-02",
+    "unit_id": "course-a1-unit-03",
+    "title": "Personal Information",
+    "category": "Functional Language",
+    "order": 2,
+    "revision": {
+      "summary": "Ask and answer questions about personal information, and fill in a simple form with name, nationality and address.",
+      "examples": [
+        "What's your name? — My name is Carla.",
+        "Where are you from? — I'm from Brazil. I'm Brazilian.",
+        "How old are you? — I'm 25.",
+        "What's your address? — 12 Green Street, London.",
+        "Form: Name: ___ / Nationality: ___ / Address: ___"
+      ],
+      "key_terms": [
+        "personal information",
+        "nationality",
+        "form"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-042"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-03-lesson-02",
+    "body_content": "<h2>Personal Information</h2><p>Use question words with <strong>be</strong>/<strong>do</strong> to ask about name, age, country and address. Nationality words (Brazilian, Japanese) describe where someone is from. This lesson also practices filling in a simple form — name, nationality, address — the same information used in real forms like a hotel registration.</p><h3>Examples</h3><ul><li>What's your name? — My name is Carla.</li><li>Where are you from? — I'm from Brazil. I'm Brazilian.</li><li>How old are you? — I'm 25.</li><li>What's your address? — 12 Green Street, London.</li><li>Form: Name: ___ / Nationality: ___ / Address: ___</li></ul><h3>Quick check</h3><ol><li>Ask about someone's country. → <em>Where are you from?</em></li><li>Fill in a mini form with your own name, nationality, address.</li><li>Answer \"How old are you?\" with your own age.</li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-03-lesson-03",
+    "unit_id": "course-a1-unit-03",
+    "title": "Shopping and Prices",
+    "category": "Functional Language",
+    "order": 3,
+    "revision": {
+      "summary": "Ask about prices and buy things politely using How much is/are...? and I'd like...",
+      "examples": [
+        "How much is this T-shirt? — It's $15.",
+        "How much are these shoes? — They're $40.",
+        "I'd like a coffee, please.",
+        "Can I pay by card?",
+        "That's too expensive."
+      ],
+      "key_terms": [
+        "price",
+        "shop",
+        "pay"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-043"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-03-lesson-03",
+    "body_content": "<h2>Shopping and Prices</h2><p>Use <strong>How much is/are...?</strong> to ask price and <strong>I'd like...</strong> to ask for something politely.</p><h3>Examples</h3><ul><li>How much is this T-shirt? — It's $15.</li><li>How much are these shoes? — They're $40.</li><li>I'd like a coffee, please.</li><li>Can I pay by card?</li><li>That's too expensive.</li></ul><h3>Quick check</h3><ol><li>Ask the price of a bag. → <em>How much is this bag?</em></li><li>Ask for a coffee politely. → <em>I'd like a coffee, please.</em></li><li>Answer for shoes that cost $40. → <em>They're $40.</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-03-lesson-04",
+    "unit_id": "course-a1-unit-03",
+    "title": "Describing People and Objects",
+    "category": "Functional Language",
+    "order": 4,
+    "revision": {
+      "summary": "Describe people's appearance and objects using adjectives, with adjectives before the noun.",
+      "examples": [
+        "She is tall and friendly.",
+        "He has short black hair.",
+        "It's a small red car.",
+        "They are young and kind.",
+        "This is a big, old house."
+      ],
+      "key_terms": [
+        "adjective",
+        "appearance",
+        "description"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-044"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-03-lesson-04",
+    "body_content": "<h2>Describing People and Objects</h2><p>Use <strong>be + adjective</strong> to describe, and <strong>have/has</strong> for hair/eyes. Adjectives usually go before the noun (small red bag, not red small bag).</p><h3>Examples</h3><ul><li>She is tall and friendly.</li><li>He has short black hair.</li><li>It's a small red car.</li><li>They are young and kind.</li><li>This is a big, old house.</li></ul><h3>Quick check</h3><ol><li>Describe someone's hair. → <em>She has long brown hair.</em></li><li>Describe an object's colour and size. → <em>It's a small blue bag.</em></li><li>Put in order: red / small / bag → <em>small red bag</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-03-lesson-05",
+    "unit_id": "course-a1-unit-03",
+    "title": "Telling the Time and Routines",
+    "category": "Functional Language",
+    "order": 5,
+    "revision": {
+      "summary": "Tell the time (o'clock, half past, quarter to/past) and describe daily routines with Present Simple.",
+      "examples": [
+        "What time is it? — It's half past seven.",
+        "I get up at 7 o'clock.",
+        "She has breakfast at 8.",
+        "We go to bed at 11 at night.",
+        "It's quarter to nine."
+      ],
+      "key_terms": [
+        "time",
+        "routine",
+        "o'clock"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-045"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-03-lesson-05",
+    "body_content": "<h2>Telling the Time and Routines</h2><p>Use <strong>It's + time</strong> (o'clock, half past, quarter to/past). Use Present Simple with time expressions for routines.</p><h3>Examples</h3><ul><li>What time is it? — It's half past seven.</li><li>I get up at 7 o'clock.</li><li>She has breakfast at 8.</li><li>We go to bed at 11 at night.</li><li>It's quarter to nine.</li></ul><h3>Quick check</h3><ol><li>Say the time 3:30. → <em>It's half past three.</em></li><li>Complete: \"I ___ up at seven.\" → <em>get</em></li><li>Say the time 8:45. → <em>It's quarter to nine.</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-03-lesson-06",
+    "unit_id": "course-a1-unit-03",
+    "title": "Frequency and Duration",
+    "category": "Functional Language",
+    "order": 6,
+    "revision": {
+      "summary": "Say how often you do something (adverbs of frequency) and for how long (for/since).",
+      "examples": [
+        "I go swimming twice a week.",
+        "She studies English for one hour every day.",
+        "We have lived here since 2019.",
+        "He never eats breakfast.",
+        "They usually work from 9 to 5."
+      ],
+      "key_terms": [
+        "frequency",
+        "duration",
+        "since",
+        "for"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-046"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-03-lesson-06",
+    "body_content": "<h2>Frequency and Duration</h2><p>Use adverbs of frequency (always, usually, sometimes, never) for how often. Use <strong>for</strong> + a length of time and <strong>since</strong> + a starting point for duration.</p><h3>Examples</h3><ul><li>I go swimming twice a week.</li><li>She studies English for one hour every day.</li><li>We have lived here since 2019.</li><li>He never eats breakfast.</li><li>They usually work from 9 to 5.</li></ul><h3>Quick check</h3><ol><li>Say how often you brush your teeth.</li><li>Complete: \"I have lived here ___ 2019.\" → <em>since</em></li><li>Complete: \"She studies ___ two hours.\" → <em>for</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-03-lesson-07",
+    "unit_id": "course-a1-unit-03",
+    "title": "Likes, Dislikes and Opinions",
+    "category": "Functional Language",
+    "order": 7,
+    "revision": {
+      "summary": "Talk about likes and dislikes with like/love/hate + -ing, and give opinions with I think...",
+      "examples": [
+        "I love swimming.",
+        "She hates cooking.",
+        "I like pizza, but I don't like fish.",
+        "I think this film is great.",
+        "What do you think of this song?"
+      ],
+      "key_terms": [
+        "like",
+        "opinion",
+        "verb + -ing"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-047"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-03-lesson-07",
+    "body_content": "<h2>Likes, Dislikes and Opinions</h2><p>Use <strong>like/love/hate + -ing</strong> or + noun. Use <strong>I think...</strong> to give an opinion.</p><h3>Examples</h3><ul><li>I love swimming.</li><li>She hates cooking.</li><li>I like pizza, but I don't like fish.</li><li>I think this film is great.</li><li>What do you think of this song?</li></ul><h3>Quick check</h3><ol><li>Say something you love doing.</li><li>Give an opinion about a film. → <em>I think it's good.</em></li><li>Complete: \"She ___ (not like) coffee.\" → <em>doesn't like</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-03-lesson-08",
+    "unit_id": "course-a1-unit-03",
+    "title": "Talking About the Past",
+    "category": "Functional Language",
+    "order": 8,
+    "revision": {
+      "summary": "Talk about past experiences using the Past Simple, regular and irregular verbs.",
+      "examples": [
+        "I visited Paris last year.",
+        "She went to the cinema yesterday.",
+        "We didn't watch the match.",
+        "Did you see that film?",
+        "He was born in 1998."
+      ],
+      "key_terms": [
+        "past simple",
+        "irregular verb",
+        "time expression"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-048"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-03-lesson-08",
+    "body_content": "<h2>Talking About the Past</h2><p>Use Past Simple (regular -ed, irregular verbs) with time expressions like yesterday, last week, in 2020.</p><h3>Examples</h3><ul><li>I visited Paris last year.</li><li>She went to the cinema yesterday.</li><li>We didn't watch the match.</li><li>Did you see that film?</li><li>He was born in 1998.</li></ul><h3>Quick check</h3><ol><li>Complete: \"I ___ (visit) Rome last summer.\" → <em>visited</em></li><li>Complete: \"She ___ (go) to school yesterday.\" → <em>went</em></li><li>Ask about a past holiday. → <em>Where did you go on holiday?</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-03-lesson-09",
+    "unit_id": "course-a1-unit-03",
+    "title": "Invitations: Inviting, Accepting, Refusing, Thanking",
+    "category": "Functional Language",
+    "order": 9,
+    "revision": {
+      "summary": "Invite someone (Would you like to...?), accept (Yes, I'd love to), refuse politely, and say thank you.",
+      "examples": [
+        "Would you like to come to my party?",
+        "Yes, I'd love to!",
+        "I'm sorry, I can't. I'm busy that day.",
+        "Thanks for inviting me.",
+        "Thank you so much for the lovely dinner."
+      ],
+      "key_terms": [
+        "invite",
+        "accept",
+        "refuse",
+        "thank"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-049"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-03-lesson-09",
+    "body_content": "<h2>Invitations</h2><p>Invite with <strong>Would you like to...?</strong> Accept with <strong>Yes, I'd love to.</strong> Refuse politely with <strong>I'm sorry, I can't because...</strong> Thank with <strong>Thank you for...</strong></p><h3>Examples</h3><ul><li>Would you like to come to my party?</li><li>Yes, I'd love to!</li><li>I'm sorry, I can't. I'm busy that day.</li><li>Thanks for inviting me.</li><li>Thank you so much for the lovely dinner.</li></ul><h3>Quick check</h3><ol><li>Invite a friend to dinner. → <em>Would you like to come to dinner?</em></li><li>Accept an invitation. → <em>Yes, I'd love to.</em></li><li>Politely refuse. → <em>I'm sorry, I can't.</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-03-lesson-10",
+    "unit_id": "course-a1-unit-03",
+    "title": "Requests, Offers and Permission",
+    "category": "Functional Language",
+    "order": 10,
+    "revision": {
+      "summary": "Make polite requests (Could you...?), offers (I'll...), and ask permission (Can I...?).",
+      "examples": [
+        "Could you help me, please?",
+        "Can you pass the salt?",
+        "I'll carry your bag.",
+        "Would you like some tea?",
+        "Can I open the window?"
+      ],
+      "key_terms": [
+        "request",
+        "offer",
+        "permission"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-050"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-03-lesson-10",
+    "body_content": "<h2>Requests, Offers and Permission</h2><p>Use <strong>Can/Could you...?</strong> for requests. Use <strong>I'll...</strong> or <strong>Would you like...?</strong> for offers. Use <strong>Can/May I...?</strong> for permission.</p><h3>Examples</h3><ul><li>Could you help me, please?</li><li>Can you pass the salt?</li><li>I'll carry your bag.</li><li>Would you like some tea?</li><li>Can I open the window?</li></ul><h3>Quick check</h3><ol><li>Ask someone to close the door politely. → <em>Could you close the door, please?</em></li><li>Offer to help someone. → <em>I'll help you.</em></li><li>Ask permission to leave early. → <em>Can I leave early, please?</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-03-lesson-11",
+    "unit_id": "course-a1-unit-03",
+    "title": "Instructions and Suggestions",
+    "category": "Functional Language",
+    "order": 11,
+    "revision": {
+      "summary": "Give instructions with imperatives, and make suggestions with Let's.../Why don't we...?/How about...?",
+      "examples": [
+        "Turn left at the corner.",
+        "Press the green button to start.",
+        "Let's go to the beach.",
+        "Why don't we watch a film?",
+        "How about pizza for dinner?"
+      ],
+      "key_terms": [
+        "instruction",
+        "suggestion",
+        "imperative"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-051"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-03-lesson-11",
+    "body_content": "<h2>Instructions and Suggestions</h2><p>Use imperatives for instructions (Turn left, Press the button). Use <strong>Let's...</strong>, <strong>Why don't we...?</strong> or <strong>How about...?</strong> for suggestions.</p><h3>Examples</h3><ul><li>Turn left at the corner.</li><li>Press the green button to start.</li><li>Let's go to the beach.</li><li>Why don't we watch a film?</li><li>How about pizza for dinner?</li></ul><h3>Quick check</h3><ol><li>Give a direction instruction. → <em>Turn right.</em></li><li>Suggest an activity with \"Let's.\" → <em>Let's go for a walk.</em></li><li>Suggest with \"How about...?\" → <em>How about coffee?</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-03-lesson-12",
+    "unit_id": "course-a1-unit-03",
+    "title": "Future Arrangements",
+    "category": "Functional Language",
+    "order": 12,
+    "revision": {
+      "summary": "Talk about future arrangements already planned, using Present Continuous.",
+      "examples": [
+        "I'm meeting Ana at 6 tomorrow.",
+        "We're having dinner with friends on Friday.",
+        "What are you doing this weekend?",
+        "She's flying to Spain next week.",
+        "Are you free on Saturday?"
+      ],
+      "key_terms": [
+        "arrangement",
+        "present continuous (future use)"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-052"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-03-lesson-12",
+    "body_content": "<h2>Future Arrangements</h2><p>Use Present Continuous for fixed future arrangements (I'm meeting her tomorrow).</p><h3>Examples</h3><ul><li>I'm meeting Ana at 6 tomorrow.</li><li>We're having dinner with friends on Friday.</li><li>What are you doing this weekend?</li><li>She's flying to Spain next week.</li><li>Are you free on Saturday?</li></ul><h3>Quick check</h3><ol><li>Complete: \"I ___ (meet) John tomorrow.\" → <em>am meeting</em></li><li>Ask about someone's weekend plans. → <em>What are you doing this weekend?</em></li><li>Complete: \"She ___ (fly) to Rome on Monday.\" → <em>is flying</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-03-lesson-13",
+    "unit_id": "course-a1-unit-03",
+    "title": "Applying for a Job",
+    "category": "Functional Language",
+    "order": 13,
+    "revision": {
+      "summary": "Give simple information about jobs and experience, for example when applying for a job.",
+      "examples": [
+        "I am a teacher.",
+        "I work as a waiter in a restaurant.",
+        "I have two years of experience.",
+        "I am looking for a job in a shop.",
+        "Why do you want this job? — I like working with people."
+      ],
+      "key_terms": [
+        "job",
+        "application",
+        "experience"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-053"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-03-lesson-13",
+    "body_content": "<h2>Applying for a Job</h2><p>Use <strong>I am a...</strong>/<strong>I work as a...</strong> for job titles. Use Present Simple for duties, Past Simple for job history. Useful phrases: <strong>I have experience in...</strong>, <strong>I am looking for...</strong></p><h3>Examples</h3><ul><li>I am a teacher.</li><li>I work as a waiter in a restaurant.</li><li>I have two years of experience.</li><li>I am looking for a job in a shop.</li><li>Why do you want this job? — I like working with people.</li></ul><h3>Quick check</h3><ol><li>Say your job (or a job you'd like).</li><li>Complete: \"I ___ (have) two years of experience.\" → <em>have</em></li><li>Answer: \"Why do you want this job?\"</li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-03-lesson-14",
+    "unit_id": "course-a1-unit-03",
+    "title": "Writing a Postcard",
+    "category": "Functional Language",
+    "order": 14,
+    "revision": {
+      "summary": "Write a short, simple postcard about a holiday: a greeting, short news, and a closing.",
+      "examples": [
+        "Dear Sara, / Hi Sara,",
+        "I'm having a great time in Spain!",
+        "The weather is sunny and hot.",
+        "We are visiting the beach every day.",
+        "See you soon! / Love, Anna."
+      ],
+      "key_terms": [
+        "postcard",
+        "greeting",
+        "closing"
+      ],
+      "estimated_minutes": 5
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a1-054"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-03-lesson-14",
+    "body_content": "<h2>Writing a Postcard</h2><p>A postcard has three parts: a <strong>greeting</strong> (Dear.../Hi...), short <strong>news</strong> about the place, weather or activities, and a <strong>closing</strong> (See you soon! / Love,...). Keep sentences short and simple.</p><h3>Examples</h3><ul><li>Dear Sara, / Hi Sara,</li><li>I'm having a great time in Spain!</li><li>The weather is sunny and hot.</li><li>We are visiting the beach every day.</li><li>See you soon! / Love, Anna.</li></ul><h3>Quick check</h3><ol><li>Write a postcard opening line. → <em>Dear ___,</em></li><li>Write one sentence about the weather.</li><li>Write a closing line. → <em>See you soon!</em></li></ol>"
+  },
+  {
+    "lesson_id": "course-a1-unit-03-lesson-15",
+    "unit_id": "course-a1-unit-03",
+    "title": "Giving and Justifying Opinions",
+    "category": "Functional Language",
+    "order": 15,
+    "revision": {
+      "summary": "Practice giving and justifying opinions with clear A1+ examples and quick checks.",
+      "examples": [
+        "I think it's useful.",
+        "because it's easy",
+        "because"
+      ],
+      "key_terms": [
+        "Giving",
+        "and",
+        "Justifying",
+        "Opinions"
+      ],
+      "estimated_minutes": 8
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "lesson-course-a1-unit-03-lesson-15"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-03-lesson-15",
+    "body_content": "<h2>Giving and Justifying Opinions</h2><p>This A1+ lesson focuses on <strong>Giving and Justifying Opinions</strong>. Study the pattern, then check your understanding.</p><h3>Key idea</h3><p>See you tomorrow.</p><h3>Examples</h3><ul><li><strong>I think it&#x27;s useful.</strong></li><li><strong>because it&#x27;s easy</strong></li><li><strong>because</strong></li></ul><h3>Quick reminder</h3><p>Choose the phrase that matches the meaning and context.</p>"
+  },
+  {
+    "lesson_id": "course-a1-unit-03-lesson-16",
+    "unit_id": "course-a1-unit-03",
+    "title": "Possibility and Making Decisions",
+    "category": "Functional Language",
+    "order": 16,
+    "revision": {
+      "summary": "Practice possibility and making decisions with clear A1+ examples and quick checks.",
+      "examples": [
+        "It might rain.",
+        "Let's choose the blue one.",
+        "might"
+      ],
+      "key_terms": [
+        "Possibility",
+        "and",
+        "Making",
+        "Decisions"
+      ],
+      "estimated_minutes": 8
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "lesson-course-a1-unit-03-lesson-16"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-03-lesson-16",
+    "body_content": "<h2>Possibility and Making Decisions</h2><p>This A1+ lesson focuses on <strong>Possibility and Making Decisions</strong>. Study the pattern, then check your understanding.</p><h3>Key idea</h3><p>I am from Kumasi.</p><h3>Examples</h3><ul><li><strong>It might rain.</strong></li><li><strong>Let&#x27;s choose the blue one.</strong></li><li><strong>might</strong></li></ul><h3>Quick reminder</h3><p>Choose the phrase that matches the meaning and context.</p>"
+  },
+  {
+    "lesson_id": "course-a1-unit-03-lesson-17",
+    "unit_id": "course-a1-unit-03",
+    "title": "Expressing Hopes",
+    "category": "Functional Language",
+    "order": 17,
+    "revision": {
+      "summary": "Practice expressing hopes with clear A1+ examples and quick checks.",
+      "examples": [
+        "I hope you pass.",
+        "to",
+        "Thanks! I hope so too."
+      ],
+      "key_terms": [
+        "Expressing",
+        "Hopes"
+      ],
+      "estimated_minutes": 8
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "lesson-course-a1-unit-03-lesson-17"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-03-lesson-17",
+    "body_content": "<h2>Expressing Hopes</h2><p>This A1+ lesson focuses on <strong>Expressing Hopes</strong>. Study the pattern, then check your understanding.</p><h3>Key idea</h3><p>You must pass.</p><h3>Examples</h3><ul><li><strong>I hope you pass.</strong></li><li><strong>to</strong></li><li><strong>Thanks! I hope so too.</strong></li></ul><h3>Quick reminder</h3><p>Choose the phrase that matches the meaning and context.</p>"
+  },
+  {
+    "lesson_id": "course-a1-unit-03-lesson-18",
+    "unit_id": "course-a1-unit-03",
+    "title": "Rules and Obligations",
+    "category": "Functional Language",
+    "order": 18,
+    "revision": {
+      "summary": "Practice rules and obligations with clear A1+ examples and quick checks.",
+      "examples": [
+        "You have to wear a helmet.",
+        "You must show your ID.",
+        "Students have to arrive on time."
+      ],
+      "key_terms": [
+        "Rules",
+        "and",
+        "Obligations"
+      ],
+      "estimated_minutes": 8
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "lesson-course-a1-unit-03-lesson-18"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-03-lesson-18",
+    "body_content": "<h2>Rules and Obligations</h2><p>This A1+ lesson focuses on <strong>Rules and Obligations</strong>. Study the pattern, then check your understanding.</p><h3>Key idea</h3><p>I wore a helmet yesterday.</p><h3>Examples</h3><ul><li><strong>You have to wear a helmet.</strong></li><li><strong>You must show your ID.</strong></li><li><strong>Students have to arrive on time.</strong></li></ul><h3>Quick reminder</h3><p>Choose the phrase that matches the meaning and context.</p>"
+  },
+  {
+    "lesson_id": "course-a1-unit-03-lesson-19",
+    "unit_id": "course-a1-unit-03",
+    "title": "Advising and Suggesting",
+    "category": "Functional Language",
+    "order": 19,
+    "revision": {
+      "summary": "Practice advising and suggesting with clear A1+ examples and quick checks.",
+      "examples": [
+        "You should get some rest.",
+        "Why don't we take the bus?",
+        "should"
+      ],
+      "key_terms": [
+        "Advising",
+        "and",
+        "Suggesting"
+      ],
+      "estimated_minutes": 8
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "lesson-course-a1-unit-03-lesson-19"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-03-lesson-19",
+    "body_content": "<h2>Advising and Suggesting</h2><p>This A1+ lesson focuses on <strong>Advising and Suggesting</strong>. Study the pattern, then check your understanding.</p><h3>Key idea</h3><p>Resting is a room.</p><h3>Examples</h3><ul><li><strong>You should get some rest.</strong></li><li><strong>Why don&#x27;t we take the bus?</strong></li><li><strong>should</strong></li></ul><h3>Quick reminder</h3><p>Choose the phrase that matches the meaning and context.</p>"
+  },
+  {
+    "lesson_id": "course-a1-unit-03-lesson-20",
+    "unit_id": "course-a1-unit-03",
+    "title": "Apologising and Congratulating",
+    "category": "Functional Language",
+    "order": 20,
+    "revision": {
+      "summary": "Practice apologising and congratulating with clear A1+ examples and quick checks.",
+      "examples": [
+        "I'm sorry I'm late.",
+        "Congratulations on your new job!",
+        "That's okay."
+      ],
+      "key_terms": [
+        "Apologising",
+        "and",
+        "Congratulating"
+      ],
+      "estimated_minutes": 8
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "lesson-course-a1-unit-03-lesson-20"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-03-lesson-20",
+    "body_content": "<h2>Apologising and Congratulating</h2><p>This A1+ lesson focuses on <strong>Apologising and Congratulating</strong>. Study the pattern, then check your understanding.</p><h3>Key idea</h3><p>You&#x27;re welcome.</p><h3>Examples</h3><ul><li><strong>I&#x27;m sorry I&#x27;m late.</strong></li><li><strong>Congratulations on your new job!</strong></li><li><strong>That&#x27;s okay.</strong></li></ul><h3>Quick reminder</h3><p>Choose the phrase that matches the meaning and context.</p>"
+  },
+  {
+    "lesson_id": "course-a1-unit-03-lesson-21",
+    "unit_id": "course-a1-unit-03",
+    "title": "Making Comparisons",
+    "category": "Functional Language",
+    "order": 21,
+    "revision": {
+      "summary": "Practice making comparisons with clear A1+ examples and quick checks.",
+      "examples": [
+        "This phone is cheaper than that one.",
+        "lighter",
+        "The train is faster than the bus."
+      ],
+      "key_terms": [
+        "Making",
+        "Comparisons"
+      ],
+      "estimated_minutes": 8
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "lesson-course-a1-unit-03-lesson-21"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a1-unit-03-lesson-21",
+    "body_content": "<h2>Making Comparisons</h2><p>This A1+ lesson focuses on <strong>Making Comparisons</strong>. Study the pattern, then check your understanding.</p><h3>Key idea</h3><p>The phone is black.</p><h3>Examples</h3><ul><li><strong>This phone is cheaper than that one.</strong></li><li><strong>lighter</strong></li><li><strong>The train is faster than the bus.</strong></li></ul><h3>Quick reminder</h3><p>Choose the phrase that matches the meaning and context.</p>"
   }
 ]

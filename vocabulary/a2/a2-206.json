@@ -1,0 +1,77 @@
+{
+  "id": "a2-206",
+  "title": "Weather",
+  "description": "Practice Weather vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Light rain is called ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Weather lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "drizzle",
+        "thunderstorm",
+        "humid",
+        "breezy"
+      ]
+    },
+    {
+      "question": "A sky full of cloud is described as ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Weather lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "breezy",
+        "overcast",
+        "humid",
+        "drizzle"
+      ]
+    },
+    {
+      "question": "Damp, sticky air is described as ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Weather lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "humid",
+        "breezy",
+        "overcast",
+        "drizzle"
+      ]
+    },
+    {
+      "question": "A storm with lightning is a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Weather lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "drizzle",
+        "thunderstorm",
+        "breeze",
+        "overcast"
+      ]
+    },
+    {
+      "question": "The weather report for tomorrow is the ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Weather lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "forecast",
+        "degree",
+        "temperature",
+        "climate"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "a1-049",
+  "title": "Invitations: Inviting, Accepting, Refusing, Thanking",
+  "description": "Practice Invitations: Inviting, Accepting, Refusing, Thanking.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Invite a friend to dinner.",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "\"Would you like to...?\" invites politely.",
+      "correctIndex": 1,
+      "answers": [
+        "Would you like to come to dinner?",
+        "You come to dinner?",
+        "Dinner you like?",
+        "Come dinner you?"
+      ]
+    },
+    {
+      "question": "Accept an invitation.",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "\"Yes, I'd love to\" accepts an invitation.",
+      "correctIndex": 1,
+      "answers": [
+        "Yes, I'd love to.",
+        "Yes, I do.",
+        "Yes, I can.",
+        "Yes, I am."
+      ]
+    },
+    {
+      "question": "Politely refuse.",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "A polite refusal gives an apology.",
+      "correctIndex": 1,
+      "answers": [
+        "I'm sorry, I can't.",
+        "No.",
+        "Never.",
+        "I refuse."
+      ]
+    },
+    {
+      "question": "Thank someone for a gift.",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "\"Thank you so much\" expresses thanks.",
+      "correctIndex": 1,
+      "answers": [
+        "Thank you so much.",
+        "You're welcome.",
+        "No problem.",
+        "Please."
+      ]
+    },
+    {
+      "question": "\"I'm sorry, I can't. I'm busy that day.\" Is this an acceptance or a refusal?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "This is a polite refusal.",
+      "correctIndex": 2,
+      "answers": [
+        "acceptance",
+        "refusal",
+        "invitation",
+        "thanks"
+      ]
+    }
+  ]
+}

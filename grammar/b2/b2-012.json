@@ -1,0 +1,77 @@
+{
+  "id": "b2-012",
+  "title": "Present Perfect Simple and Continuous",
+  "description": "Practice Present Perfect Simple and Continuous.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"I've ___ three emails this morning.\" (result matters)",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Present Perfect Simple and Continuous lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "been writing",
+        "written",
+        "write",
+        "writing"
+      ]
+    },
+    {
+      "question": "\"I've ___ working on it all morning.\" (duration/ongoing)",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Present Perfect Simple and Continuous lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "been",
+        "be",
+        "was",
+        "is"
+      ]
+    },
+    {
+      "question": "Which verb rarely takes the continuous form?",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Present Perfect Simple and Continuous lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "work",
+        "know",
+        "run",
+        "write"
+      ]
+    },
+    {
+      "question": "\"She's known him ___ ten years.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Present Perfect Simple and Continuous lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "since",
+        "for",
+        "from",
+        "during"
+      ]
+    },
+    {
+      "question": "Continuous form emphasises...",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Present Perfect Simple and Continuous lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "the result",
+        "duration/ongoing activity",
+        "a single moment",
+        "the future"
+      ]
+    }
+  ]
+}

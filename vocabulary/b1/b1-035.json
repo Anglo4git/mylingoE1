@@ -1,0 +1,77 @@
+{
+  "id": "b1-035",
+  "title": "Furniture and appliances",
+  "description": "Practice Furniture and appliances.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "You store folded clothes in a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Name household furniture and appliances beyond A2 basics.",
+      "correctIndex": 3,
+      "answers": [
+        "sofa",
+        "wardrobe",
+        "shelf",
+        "chest of drawers"
+      ]
+    },
+    {
+      "question": "A machine that washes dishes is a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Name household furniture and appliances beyond A2 basics.",
+      "correctIndex": 3,
+      "answers": [
+        "washing machine",
+        "fridge",
+        "microwave",
+        "dishwasher"
+      ]
+    },
+    {
+      "question": "You hang clothes in a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Name household furniture and appliances beyond A2 basics.",
+      "correctIndex": 1,
+      "answers": [
+        "chest of drawers",
+        "wardrobe",
+        "shelf",
+        "sofa"
+      ]
+    },
+    {
+      "question": "You sit on a ___ in the living room.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Name household furniture and appliances beyond A2 basics.",
+      "correctIndex": 0,
+      "answers": [
+        "sofa",
+        "chest of drawers",
+        "shelf",
+        "wardrobe"
+      ]
+    },
+    {
+      "question": "You heat food quickly in a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Name household furniture and appliances beyond A2 basics.",
+      "correctIndex": 1,
+      "answers": [
+        "wardrobe",
+        "microwave",
+        "dishwasher",
+        "shelf"
+      ]
+    }
+  ]
+}

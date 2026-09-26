@@ -1,0 +1,77 @@
+{
+  "id": "a2-301",
+  "title": "Asking Personal Questions",
+  "description": "Practice: Asking Personal Questions.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Most natural way to ask someone's job:",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Asking Personal Questions lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "\"What do you do?\"",
+        "\"What is your job number?\"",
+        "\"Job?\"",
+        "\"You work what?\""
+      ]
+    },
+    {
+      "question": "Polite way to introduce a personal question:",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Asking Personal Questions lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "\"Do you mind if I ask...?\"",
+        "\"Answer this.\"",
+        "\"Tell me now.\"",
+        "\"Must you say?\""
+      ]
+    },
+    {
+      "question": "\"Where ___ you from?\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Asking Personal Questions lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "is",
+        "are",
+        "do",
+        "does"
+      ]
+    },
+    {
+      "question": "\"How long ___ you lived here?\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Asking Personal Questions lesson for the rule.",
+      "correctIndex": 3,
+      "answers": [
+        "do",
+        "are",
+        "have",
+        "did"
+      ]
+    },
+    {
+      "question": "Least appropriate opener with a stranger:",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Asking Personal Questions lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "\"What's your name?\"",
+        "\"How much do you earn?\"",
+        "\"Where are you from?\"",
+        "\"What do you do?\""
+      ]
+    }
+  ]
+}

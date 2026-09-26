@@ -1,0 +1,77 @@
+{
+  "id": "b2-043",
+  "title": "Banks / money",
+  "description": "Practice Banks / money.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"I went into my ___ this month.\" (spent more than I have)",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Banks / money lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "overdraft",
+        "interest rate",
+        "direct debit",
+        "savings account"
+      ]
+    },
+    {
+      "question": "\"She set up a ___ for the rent.\" (automatic recurring payment)",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Banks / money lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "overdraft",
+        "direct debit",
+        "interest rate",
+        "withdrawal"
+      ]
+    },
+    {
+      "question": "The percentage charged/earned on money borrowed or saved is the...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Banks / money lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "overdraft",
+        "interest rate",
+        "direct debit",
+        "deposit"
+      ]
+    },
+    {
+      "question": "To take money out of your account is to...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Banks / money lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "deposit",
+        "withdraw",
+        "overdraft",
+        "debit"
+      ]
+    },
+    {
+      "question": "An account for putting money aside is a...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Banks / money lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "overdraft",
+        "direct debit",
+        "savings account",
+        "interest rate"
+      ]
+    }
+  ]
+}

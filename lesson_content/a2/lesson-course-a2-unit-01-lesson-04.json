@@ -1,12 +1,12 @@
 {
   "id": "lesson-course-a2-unit-01-lesson-04",
-  "title": "Lesson: Future: going to",
+  "title": "Lesson: Future: going to / will",
   "description": "Practice Future: going to.",
   "brand": "Mylingo",
   "category": "Grammar",
   "tags": "Lesson,A2",
   "level": "A2",
-  "version": 1,
+  "version": 2,
   "questions": [
     {
       "question": "Practice Future: going to.",
@@ -35,6 +35,19 @@
         "are going to",
         "are go",
         "went"
+      ]
+    },
+    {
+      "question": "I think it ___ rain later.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "Use 'will' for a prediction based on opinion, not evidence.",
+      "correctIndex": 1,
+      "answers": [
+        "will",
+        "is going to",
+        "is",
+        "was"
       ]
     },
     {

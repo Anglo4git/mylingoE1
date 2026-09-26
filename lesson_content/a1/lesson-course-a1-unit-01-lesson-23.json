@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-a1-unit-01-lesson-23",
+  "title": "Lesson: Too / Not Enough",
+  "description": "Practice Too and Not Enough.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A1,A1+",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Too and Not Enough.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1+,A1",
+      "media": {},
+      "subprompt": "Too and Not Enough",
+      "explanation": "Practice Too and Not Enough."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Too and Not Enough",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1+,A1"
+    },
+    {
+      "question": "The coffee is ___ hot to drink.",
+      "category": "Grammar",
+      "tags": "Grammar,A1+,QuickCheck",
+      "explanation": "Too + adjective means more than is comfortable or useful.",
+      "correctIndex": 1,
+      "answers": [
+        "too",
+        "enough",
+        "not enough",
+        "very"
+      ]
+    },
+    {
+      "question": "We don't have ___ chairs for everyone.",
+      "category": "Grammar",
+      "tags": "Grammar,A1+,QuickCheck",
+      "explanation": "Enough means the quantity is sufficient.",
+      "correctIndex": 1,
+      "answers": [
+        "enough",
+        "too",
+        "very",
+        "too much"
+      ]
+    },
+    {
+      "question": "This bag is too small. It is ___ for all my books.",
+      "category": "Grammar",
+      "tags": "Grammar,A1+,QuickCheck",
+      "explanation": "Use adjective + enough: big enough; not big enough means it is insufficient.",
+      "correctIndex": 1,
+      "answers": [
+        "not big enough",
+        "enough big",
+        "too enough",
+        "not too big"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1+"
+    }
+  ]
+}

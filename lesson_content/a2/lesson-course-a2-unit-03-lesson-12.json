@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-03-lesson-12",
+  "title": "Lesson: Requesting",
+  "description": "Practice: Requesting.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice: Requesting.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Requesting",
+      "explanation": "Practice: Requesting."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Requesting",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "Most polite/formal request:",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2,QuickCheck",
+      "explanation": "See the Requesting lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "\"I was wondering if you could help me.\"",
+        "\"Help me.\"",
+        "\"Can you help.\"",
+        "\"Help now.\""
+      ]
+    },
+    {
+      "question": "\"___ you mind opening the window?\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2,QuickCheck",
+      "explanation": "See the Requesting lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "Would",
+        "Should",
+        "Must",
+        "Will"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

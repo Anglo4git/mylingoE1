@@ -1,0 +1,77 @@
+{
+  "id": "a1-028",
+  "title": "Dates, Months and Years",
+  "description": "Practice Dates, Months and Years.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Which month comes before September?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "August comes right before September.",
+      "correctIndex": 2,
+      "answers": [
+        "July",
+        "August",
+        "October",
+        "June"
+      ]
+    },
+    {
+      "question": "My birthday is ___ June.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Use 'in' with months.",
+      "correctIndex": 2,
+      "answers": [
+        "on",
+        "in",
+        "at",
+        "for"
+      ]
+    },
+    {
+      "question": "\"The meeting is on the third of April.\" What is the date?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "'The third of April' = April 3rd.",
+      "correctIndex": 1,
+      "answers": [
+        "April 3rd",
+        "April 30th",
+        "March 3rd",
+        "April 13th"
+      ]
+    },
+    {
+      "question": "Which is a correctly ordered year phrase?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Use 'in' with a year.",
+      "correctIndex": 3,
+      "answers": [
+        "I was born on 1999.",
+        "I was born at 1999.",
+        "I was born in 1999.",
+        "I was born to 1999."
+      ]
+    },
+    {
+      "question": "Ask someone their birth year politely.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "'When were you born?' is the natural question.",
+      "correctIndex": 2,
+      "answers": [
+        "What year you born?",
+        "When were you born?",
+        "You born what year?",
+        "Born when you?"
+      ]
+    }
+  ]
+}

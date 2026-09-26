@@ -1,0 +1,77 @@
+{
+  "id": "b2-059",
+  "title": "Ordering arguments",
+  "description": "Practice Ordering arguments.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"___, safety must come first.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Ordering arguments lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "First and foremost",
+        "Last but not least",
+        "Then again",
+        "On top of that"
+      ]
+    },
+    {
+      "question": "Which signals the final point?",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Ordering arguments lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "First and foremost",
+        "Secondly",
+        "Last but not least",
+        "What's more"
+      ]
+    },
+    {
+      "question": "\"Furthermore\" is used to...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Ordering arguments lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "end an argument",
+        "add a further point in a sequence",
+        "contrast two ideas",
+        "apologise"
+      ]
+    },
+    {
+      "question": "Ordering language helps the listener/reader...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Ordering arguments lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "get confused",
+        "follow the structure of an argument",
+        "ignore the main point",
+        "change topic"
+      ]
+    },
+    {
+      "question": "Which pair correctly shows sequence?",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Ordering arguments lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Finally... First and foremost...",
+        "First and foremost... Finally...",
+        "Last but not least... Secondly...",
+        "Secondly... First and foremost..."
+      ]
+    }
+  ]
+}

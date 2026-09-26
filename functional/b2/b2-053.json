@@ -1,0 +1,77 @@
+{
+  "id": "b2-053",
+  "title": "Stating contrast — conversational",
+  "description": "Practice Stating contrast — conversational.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"The job pays well. ___, the commute is brutal.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Stating contrast — conversational lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "Then again",
+        "What's more",
+        "Congratulations on",
+        "In order to"
+      ]
+    },
+    {
+      "question": "\"It's expensive. ___, the quality is excellent.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Stating contrast — conversational lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "Having said that",
+        "So as to",
+        "Due to",
+        "All things considered"
+      ]
+    },
+    {
+      "question": "\"On the other hand\" introduces...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Stating contrast — conversational lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "an added similar point",
+        "a contrasting point",
+        "a conclusion",
+        "an example"
+      ]
+    },
+    {
+      "question": "\"That said...\" functions similarly to...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Stating contrast — conversational lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "therefore",
+        "however/but",
+        "for instance",
+        "congratulations"
+      ]
+    },
+    {
+      "question": "These contrast phrases are best described as...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Stating contrast — conversational lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "grammar rules for conjunctions",
+        "conversational connector phrases",
+        "formal legal terms",
+        "verb tenses"
+      ]
+    }
+  ]
+}

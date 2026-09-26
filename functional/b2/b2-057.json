@@ -1,0 +1,77 @@
+{
+  "id": "b2-057",
+  "title": "Clarifying",
+  "description": "Practice Clarifying.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"Sorry, could you clarify what you mean ___ 'soon'?\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Clarifying lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "with",
+        "by",
+        "of",
+        "for"
+      ]
+    },
+    {
+      "question": "\"When you say X, do you mean...?\" is used to...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Clarifying lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "give clarification",
+        "ask for clarification",
+        "make an offer",
+        "express regret"
+      ]
+    },
+    {
+      "question": "\"What I meant was...\" is used to...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Clarifying lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "ask for clarification",
+        "give clarification",
+        "summarise",
+        "congratulate"
+      ]
+    },
+    {
+      "question": "\"To put it another way...\" introduces...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Clarifying lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "a rephrasing/clarification",
+        "a contrast",
+        "an offer",
+        "a guess"
+      ]
+    },
+    {
+      "question": "Politely asking for clarification typically starts with...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Clarifying lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "\"Obviously...\"",
+        "\"Sorry, could you...?\"",
+        "\"You're wrong...\"",
+        "\"Never mind...\""
+      ]
+    }
+  ]
+}

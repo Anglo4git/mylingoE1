@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-02-lesson-20",
+  "title": "Lesson: Household Equipment",
+  "description": "Practice Household Equipment vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Household Equipment vocabulary.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Household Equipment",
+      "explanation": "Practice Household Equipment vocabulary."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Household Equipment",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "You use this to clean clothes: a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "See the Household Equipment lesson.",
+      "correctIndex": 2,
+      "answers": [
+        "dishwasher",
+        "washing machine",
+        "kettle",
+        "iron"
+      ]
+    },
+    {
+      "question": "You use this to boil water: a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "See the Household Equipment lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "kettle",
+        "iron",
+        "vacuum cleaner",
+        "dishwasher"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "b2-033",
+  "title": "Crime and punishment — B2 legal process",
+  "description": "Practice Crime and punishment — B2 legal process.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"The ___ was acquitted due to lack of evidence.\"",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Crime and punishment — B2 legal process lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "witness",
+        "defendant",
+        "judge",
+        "juror"
+      ]
+    },
+    {
+      "question": "\"He received a ___ sentence of two years.\"",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Crime and punishment — B2 legal process lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "custodial",
+        "acquitted",
+        "prosecuted",
+        "rehabilitated"
+      ]
+    },
+    {
+      "question": "To formally charge and try someone in court is to...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Crime and punishment — B2 legal process lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "acquit",
+        "prosecute",
+        "rehabilitate",
+        "reoffend"
+      ]
+    },
+    {
+      "question": "To be found not guilty is to be...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Crime and punishment — B2 legal process lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "prosecuted",
+        "sentenced",
+        "acquitted",
+        "reoffended"
+      ]
+    },
+    {
+      "question": "Programmes that reduce someone committing crime again reduce...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Crime and punishment — B2 legal process lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "prosecution",
+        "acquittal",
+        "reoffending",
+        "verdicts"
+      ]
+    }
+  ]
+}

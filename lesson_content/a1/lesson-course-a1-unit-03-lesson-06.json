@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-03-lesson-06",
+  "title": "Lesson: Frequency and Duration",
+  "description": "Practice Frequency and Duration.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Frequency and Duration.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Frequency and Duration",
+      "explanation": "Practice Frequency and Duration."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Frequency and Duration",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "Complete: \"I have lived here ___ 2019.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1,QuickCheck",
+      "explanation": "Use 'since' with a starting point in time.",
+      "correctIndex": 1,
+      "answers": [
+        "since",
+        "for",
+        "during",
+        "at"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

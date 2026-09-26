@@ -1,0 +1,77 @@
+{
+  "id": "a2-308",
+  "title": "Making Deductions",
+  "description": "Practice: Making Deductions.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"That ___ be John — he's on holiday.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Making Deductions lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "can't",
+        "must",
+        "might not",
+        "will not"
+      ]
+    },
+    {
+      "question": "\"That would ___ why she's late.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Making Deductions lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "explain",
+        "explains",
+        "explaining",
+        "explained"
+      ]
+    },
+    {
+      "question": "\"I ___ it's the neighbour's cat.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Making Deductions lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "guess",
+        "guessing",
+        "guessed only",
+        "guesses"
+      ]
+    },
+    {
+      "question": "Strong deduction (near certainty):",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Making Deductions lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "\"It must be...\"",
+        "\"It could be...\"",
+        "\"It might be...\"",
+        "\"Perhaps it's...\""
+      ]
+    },
+    {
+      "question": "\"It ___ be the wind — nothing else moves like that.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Making Deductions lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "can't",
+        "must",
+        "may",
+        "could possibly"
+      ]
+    }
+  ]
+}

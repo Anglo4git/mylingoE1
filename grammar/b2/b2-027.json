@@ -1,0 +1,77 @@
+{
+  "id": "b2-027",
+  "title": "Adverbs of manner and modifiers",
+  "description": "Practice Adverbs of manner and modifiers.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Correct word order:",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Adverbs of manner and modifiers lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "She answered calmly the question.",
+        "She answered the question calmly.",
+        "She calmly the question answered.",
+        "She the question answered calmly."
+      ]
+    },
+    {
+      "question": "\"It's ___ warm today.\" (gradable)",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Adverbs of manner and modifiers lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "absolutely",
+        "fairly",
+        "totally",
+        "utterly"
+      ]
+    },
+    {
+      "question": "\"It was ___ freezing.\" (ungradable adjective)",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Adverbs of manner and modifiers lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "very",
+        "fairly",
+        "absolutely",
+        "rather"
+      ]
+    },
+    {
+      "question": "Modifiers typically go...",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Adverbs of manner and modifiers lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "after the adjective",
+        "before the adjective/adverb they modify",
+        "at the end of the sentence",
+        "before the subject"
+      ]
+    },
+    {
+      "question": "Which pairs correctly?",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Adverbs of manner and modifiers lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "very exhausted",
+        "absolutely tired",
+        "absolutely exhausted",
+        "fairly exhausted only"
+      ]
+    }
+  ]
+}

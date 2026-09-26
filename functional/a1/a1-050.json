@@ -1,0 +1,77 @@
+{
+  "id": "a1-050",
+  "title": "Requests, Offers and Permission",
+  "description": "Practice Requests, Offers and Permission.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Ask someone to close the door politely.",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "\"Could you...?\" is a polite request.",
+      "correctIndex": 1,
+      "answers": [
+        "Could you close the door, please?",
+        "Close the door!",
+        "Door closed you?",
+        "You close door?"
+      ]
+    },
+    {
+      "question": "Offer to help someone carry bags.",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "\"I'll...\" offers to help.",
+      "correctIndex": 1,
+      "answers": [
+        "I'll help you.",
+        "Help me.",
+        "Can you help?",
+        "You help me."
+      ]
+    },
+    {
+      "question": "Ask permission to leave early.",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "\"Can I...?\" asks permission.",
+      "correctIndex": 1,
+      "answers": [
+        "Can I leave early, please?",
+        "I leave early.",
+        "Leaving early I?",
+        "Early I leave?"
+      ]
+    },
+    {
+      "question": "Which is a request, not an offer?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "\"Can you...?\" is a request.",
+      "correctIndex": 2,
+      "answers": [
+        "I'll carry your bag.",
+        "Can you pass the salt?",
+        "I'll help you.",
+        "Would you like tea?"
+      ]
+    },
+    {
+      "question": "\"Would you like some tea?\" Is this a request or an offer?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "\"Would you like...?\" is an offer.",
+      "correctIndex": 2,
+      "answers": [
+        "request",
+        "offer",
+        "permission",
+        "instruction"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "a2-217",
+  "title": "Types of Music and Concerts",
+  "description": "Practice Types of Music and Concerts vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "A style/category of music is a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Types of Music and Concerts lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "genre",
+        "gig",
+        "setlist",
+        "encore"
+      ]
+    },
+    {
+      "question": "An informal word for a live music performance is a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Types of Music and Concerts lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "genre",
+        "gig",
+        "venue",
+        "audience"
+      ]
+    },
+    {
+      "question": "The list of songs a band plans to play is the ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Types of Music and Concerts lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "setlist",
+        "genre",
+        "venue",
+        "audience"
+      ]
+    },
+    {
+      "question": "The place where a concert happens is the ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Types of Music and Concerts lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "genre",
+        "venue",
+        "setlist",
+        "encore"
+      ]
+    },
+    {
+      "question": "An extra song played after the main set, by request, is the ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Types of Music and Concerts lesson for the rule.",
+      "correctIndex": 3,
+      "answers": [
+        "genre",
+        "gig",
+        "encore",
+        "setlist"
+      ]
+    }
+  ]
+}

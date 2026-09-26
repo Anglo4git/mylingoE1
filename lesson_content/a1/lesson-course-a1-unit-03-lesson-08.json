@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-03-lesson-08",
+  "title": "Lesson: Talking About the Past",
+  "description": "Practice Talking About the Past.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Talking About the Past.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Talking About the Past",
+      "explanation": "Practice Talking About the Past."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Talking About the Past",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "Complete: \"She ___ (go) to school yesterday.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1,QuickCheck",
+      "explanation": "'Go' is irregular: went, not goed.",
+      "correctIndex": 1,
+      "answers": [
+        "went",
+        "goed",
+        "gone",
+        "going"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

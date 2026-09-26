@@ -1,0 +1,77 @@
+{
+  "id": "a1-025",
+  "title": "Numbers and Money",
+  "description": "Practice Numbers and Money.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Which is an ordinal number?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Ordinals show order (third), not quantity (three).",
+      "correctIndex": 2,
+      "answers": [
+        "three",
+        "third",
+        "thirty",
+        "threes"
+      ]
+    },
+    {
+      "question": "one → first, two → second, three → ___",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "The ordinal form of 'three' is 'third'.",
+      "correctIndex": 2,
+      "answers": [
+        "threeth",
+        "third",
+        "thirder",
+        "thirdth"
+      ]
+    },
+    {
+      "question": "How do you ask the price of something?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "'How much' asks about price.",
+      "correctIndex": 2,
+      "answers": [
+        "How many is it?",
+        "How much is it?",
+        "How is it much?",
+        "How price is it?"
+      ]
+    },
+    {
+      "question": "\"The ticket costs twelve dollars.\" How much is the ticket?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "\"Twelve dollars\" = $12.",
+      "correctIndex": 2,
+      "answers": [
+        "$2",
+        "$12",
+        "$20",
+        "$21"
+      ]
+    },
+    {
+      "question": "She lives on the ___ floor. (2)",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Use the ordinal number 'second' for floor position.",
+      "correctIndex": 3,
+      "answers": [
+        "two",
+        "twice",
+        "second",
+        "seconds"
+      ]
+    }
+  ]
+}

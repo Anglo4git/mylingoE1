@@ -1,12 +1,12 @@
 {
   "id": "lesson-course-a2-unit-01-lesson-07",
-  "title": "Lesson: Adverbs of Frequency",
+  "title": "Lesson: Adverbs of Frequency and Manner",
   "description": "Practice Adverbs of Frequency.",
   "brand": "Mylingo",
   "category": "Grammar",
   "tags": "Lesson,A2",
   "level": "A2",
-  "version": 1,
+  "version": 2,
   "questions": [
     {
       "question": "Practice Adverbs of Frequency.",
@@ -35,6 +35,19 @@
         "never",
         "rarely",
         "never is"
+      ]
+    },
+    {
+      "question": "She sang the song ___.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "Adverbs of manner usually end in -ly and describe how something happens.",
+      "correctIndex": 2,
+      "answers": [
+        "beautiful",
+        "beautifully",
+        "more beautiful",
+        "beauty"
       ]
     },
     {

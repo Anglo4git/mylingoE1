@@ -1,0 +1,77 @@
+{
+  "id": "a1-045",
+  "title": "Telling the Time and Routines",
+  "description": "Practice Telling the Time and Routines.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "3:30 →",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "Half past three = 3:30.",
+      "correctIndex": 1,
+      "answers": [
+        "It's half past three.",
+        "It's half three past.",
+        "It's past three half.",
+        "It's three half past."
+      ]
+    },
+    {
+      "question": "8:45 →",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "Quarter to nine = 8:45.",
+      "correctIndex": 1,
+      "answers": [
+        "It's quarter to nine.",
+        "It's quarter nine to.",
+        "It's nine quarter to.",
+        "It's to nine quarter."
+      ]
+    },
+    {
+      "question": "Complete: \"I ___ up at 7.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "Use base form 'get' with I.",
+      "correctIndex": 1,
+      "answers": [
+        "get",
+        "getting",
+        "gets",
+        "got"
+      ]
+    },
+    {
+      "question": "\"We go to bed at 11 at night.\" When do they sleep?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "11 at night is late.",
+      "correctIndex": 1,
+      "answers": [
+        "late",
+        "early",
+        "at noon",
+        "in the morning"
+      ]
+    },
+    {
+      "question": "Ask the time.",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "\"What time is it?\" asks the time.",
+      "correctIndex": 1,
+      "answers": [
+        "What time is it?",
+        "What time do you?",
+        "What is time?",
+        "Time what is?"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-02-lesson-03",
+  "title": "Lesson: Families",
+  "description": "Practice Families vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Families vocabulary.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Families",
+      "explanation": "Practice Families vocabulary."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Families",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "Your brother's son is your ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "See the Families lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "nephew",
+        "cousin",
+        "niece",
+        "sibling"
+      ]
+    },
+    {
+      "question": "Your parent's brother is your ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "See the Families lesson.",
+      "correctIndex": 2,
+      "answers": [
+        "nephew",
+        "uncle",
+        "cousin",
+        "in-law"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

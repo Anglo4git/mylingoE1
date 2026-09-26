@@ -1,0 +1,77 @@
+{
+  "id": "a1-031",
+  "title": "Interests and Sports",
+  "description": "Practice Interests and Sports.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "I ___ tennis every Saturday.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Use 'play' with ball/racket sports like tennis.",
+      "correctIndex": 3,
+      "answers": [
+        "go",
+        "do",
+        "play",
+        "make"
+      ]
+    },
+    {
+      "question": "She ___ running in the park.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Use 'go' with -ing activities like running.",
+      "correctIndex": 2,
+      "answers": [
+        "plays",
+        "goes",
+        "does",
+        "makes"
+      ]
+    },
+    {
+      "question": "Which verb goes with 'yoga'?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Use 'do' with activities like yoga.",
+      "correctIndex": 3,
+      "answers": [
+        "play",
+        "go",
+        "do",
+        "make"
+      ]
+    },
+    {
+      "question": "How do you say you like an activity?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Use 'like' + verb-ing.",
+      "correctIndex": 3,
+      "answers": [
+        "I like read.",
+        "I like to reading.",
+        "I like reading.",
+        "I like readed."
+      ]
+    },
+    {
+      "question": "\"He enjoys playing football and going running.\" What are his two interests?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "The text names football and running.",
+      "correctIndex": 2,
+      "answers": [
+        "swimming and yoga",
+        "football and running",
+        "tennis and yoga",
+        "football and swimming"
+      ]
+    }
+  ]
+}

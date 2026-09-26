@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-01-lesson-21",
+  "title": "Lesson: Superlatives and Irregular Adverbs",
+  "description": "Practice Superlatives and Irregular Adverbs.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Superlatives and Irregular Adverbs.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Superlatives and Irregular Adverbs",
+      "explanation": "Practice Superlatives and Irregular Adverbs."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Superlatives and Irregular Adverbs",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "tall → the ___",
+      "category": "Grammar",
+      "tags": "Grammar,A1,QuickCheck",
+      "explanation": "Short adjectives add -est.",
+      "correctIndex": 1,
+      "answers": [
+        "tallest",
+        "most tall",
+        "taller",
+        "more tall"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

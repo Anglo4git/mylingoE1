@@ -1,0 +1,77 @@
+{
+  "id": "b1-030",
+  "title": "Housework",
+  "description": "Practice Housework.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "To clean a floor with a machine is to ___ it.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Talk about household chores and routines.",
+      "correctIndex": 2,
+      "answers": [
+        "dust",
+        "mop",
+        "vacuum",
+        "tidy"
+      ]
+    },
+    {
+      "question": "\"Do the laundry\" means...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Talk about household chores and routines.",
+      "correctIndex": 3,
+      "answers": [
+        "clean windows",
+        "cook dinner",
+        "wash dishes",
+        "wash clothes"
+      ]
+    },
+    {
+      "question": "To remove dirt from surfaces with a cloth is to ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Talk about household chores and routines.",
+      "correctIndex": 0,
+      "answers": [
+        "dust",
+        "sweep",
+        "mop",
+        "vacuum"
+      ]
+    },
+    {
+      "question": "\"Take out the rubbish\" means...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Talk about household chores and routines.",
+      "correctIndex": 1,
+      "answers": [
+        "tidy the bedroom",
+        "empty the bin outside",
+        "clean the kitchen",
+        "do the dishes"
+      ]
+    },
+    {
+      "question": "\"Tidy up\" means...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Talk about household chores and routines.",
+      "correctIndex": 1,
+      "answers": [
+        "wash clothes",
+        "organise/clean a space",
+        "cook",
+        "make things messy"
+      ]
+    }
+  ]
+}

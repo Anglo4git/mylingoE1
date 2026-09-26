@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-01-lesson-16",
+  "title": "Lesson: When / While",
+  "description": "Practice When / While.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice When / While.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "When / While",
+      "explanation": "Practice When / While."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "When / While",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "___ I was cooking, the phone rang.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "See the When / While lesson.",
+      "correctIndex": 2,
+      "answers": [
+        "When",
+        "While",
+        "As soon as",
+        "So"
+      ]
+    },
+    {
+      "question": "___ she arrived, we started the meeting.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "See the When / While lesson.",
+      "correctIndex": 2,
+      "answers": [
+        "While",
+        "When",
+        "Such",
+        "So"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

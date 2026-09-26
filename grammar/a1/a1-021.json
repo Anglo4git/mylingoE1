@@ -1,0 +1,77 @@
+{
+  "id": "a1-021",
+  "title": "Imperatives",
+  "description": "Practice Imperatives.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "You want someone to open a window. What do you say?",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "Use the base verb for an imperative.",
+      "correctIndex": 1,
+      "answers": [
+        "Open the window.",
+        "You open the window?",
+        "You opening window.",
+        "Opens the window."
+      ]
+    },
+    {
+      "question": "Warn someone that food is hot.",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "Use the base verb 'be' for the warning.",
+      "correctIndex": 1,
+      "answers": [
+        "Be careful, it's hot!",
+        "You are careful.",
+        "You be careful hot.",
+        "Careful you are!"
+      ]
+    },
+    {
+      "question": "Negative imperative: tell someone not to touch something.",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "Use don't + base verb for a negative imperative.",
+      "correctIndex": 1,
+      "answers": [
+        "Don't touch that!",
+        "Not touch that!",
+        "You don't touch that!",
+        "No touching that!"
+      ]
+    },
+    {
+      "question": "A sign says \"Do not enter.\" What kind of sentence is this?",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "It gives an instruction, so it's an imperative.",
+      "correctIndex": 2,
+      "answers": [
+        "a question",
+        "an imperative",
+        "a statement",
+        "an offer"
+      ]
+    },
+    {
+      "question": "Which is a correct classroom imperative?",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "Use the base verb for an imperative.",
+      "correctIndex": 1,
+      "answers": [
+        "Sit down, please.",
+        "You sit down please.",
+        "Sitting down please.",
+        "You are sit down."
+      ]
+    }
+  ]
+}

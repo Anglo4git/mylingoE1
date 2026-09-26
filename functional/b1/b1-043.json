@@ -1,0 +1,77 @@
+{
+  "id": "b1-043",
+  "title": "Talking about obligation",
+  "description": "Practice Talking about obligation.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"You ___ show ID at the entrance.\" (necessary)",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Express necessity and lack of necessity.",
+      "correctIndex": 2,
+      "answers": [
+        "might",
+        "could",
+        "have to",
+        "don't have to"
+      ]
+    },
+    {
+      "question": "\"You ___ bring anything, it's provided.\" (not necessary)",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Express necessity and lack of necessity.",
+      "correctIndex": 2,
+      "answers": [
+        "have to",
+        "should",
+        "don't have to",
+        "must"
+      ]
+    },
+    {
+      "question": "\"It's compulsory to...\" means it is...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Express necessity and lack of necessity.",
+      "correctIndex": 0,
+      "answers": [
+        "required",
+        "unusual",
+        "forbidden",
+        "optional"
+      ]
+    },
+    {
+      "question": "\"There's no need to...\" means...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Express necessity and lack of necessity.",
+      "correctIndex": 2,
+      "answers": [
+        "it's forbidden",
+        "it's a guess",
+        "it's not necessary",
+        "it's required"
+      ]
+    },
+    {
+      "question": "Obligation is most closely linked to which modal?",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Express necessity and lack of necessity.",
+      "correctIndex": 1,
+      "answers": [
+        "might",
+        "must/have to",
+        "could",
+        "would"
+      ]
+    }
+  ]
+}

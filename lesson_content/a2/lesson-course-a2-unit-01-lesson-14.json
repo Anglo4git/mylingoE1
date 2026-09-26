@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-01-lesson-14",
+  "title": "Lesson: Have to / Need to (Obligation)",
+  "description": "Practice Have to / Need to (Obligation).",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Have to / Need to (Obligation).",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Have to / Need to (Obligation)",
+      "explanation": "Practice Have to / Need to (Obligation)."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Have to / Need to (Obligation)",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "I ___ finish this report today.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "See the Have to / Need to (Obligation) lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "have to",
+        "has to",
+        "must to",
+        "having to"
+      ]
+    },
+    {
+      "question": "You ___ bring anything.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "See the Have to / Need to (Obligation) lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "don't have to",
+        "doesn't have to",
+        "haven't to",
+        "not have to"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-01-lesson-13",
+  "title": "Lesson: So / Such",
+  "description": "Practice So / Such.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice So / Such.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "So / Such",
+      "explanation": "Practice So / Such."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "So / Such",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "The film was ___ boring.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "See the So / Such lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "so",
+        "such",
+        "such a",
+        "so a"
+      ]
+    },
+    {
+      "question": "It's ___ beautiful city.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "See the So / Such lesson.",
+      "correctIndex": 2,
+      "answers": [
+        "so",
+        "such a",
+        "so a",
+        "such"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-01-lesson-20",
+  "title": "Lesson: Comparatives",
+  "description": "Practice Comparatives.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Comparatives.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Comparatives",
+      "explanation": "Practice Comparatives."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Comparatives",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "big → ___ than",
+      "category": "Grammar",
+      "tags": "Grammar,A1,QuickCheck",
+      "explanation": "Short adjectives add -er.",
+      "correctIndex": 1,
+      "answers": [
+        "bigger",
+        "more big",
+        "biggest",
+        "most big"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

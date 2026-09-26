@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-03-lesson-10",
+  "title": "Lesson: Offering and Suggesting",
+  "description": "Practice: Offering and Suggesting.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice: Offering and Suggesting.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Offering and Suggesting",
+      "explanation": "Practice: Offering and Suggesting."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Offering and Suggesting",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "Offer to help:",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2,QuickCheck",
+      "explanation": "See the Offering and Suggesting lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "\"Shall I carry that for you?\"",
+        "\"Carry that.\"",
+        "\"I carry now.\"",
+        "\"Give me that.\""
+      ]
+    },
+    {
+      "question": "Suggestion phrase:",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2,QuickCheck",
+      "explanation": "See the Offering and Suggesting lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "\"Why don't we go for a walk?\"",
+        "\"We go walk.\"",
+        "\"Walk now we.\"",
+        "\"Must walk.\""
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

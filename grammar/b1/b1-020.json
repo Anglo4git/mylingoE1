@@ -1,0 +1,77 @@
+{
+  "id": "b1-020",
+  "title": "Be allowed to and be supposed to",
+  "description": "Practice Be allowed to and be supposed to.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"Students ___ use phones in class.\" (rule, negative)",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Talk about permission (be allowed to) and expectation/rules (be supposed to).",
+      "correctIndex": 1,
+      "answers": [
+        "don't allow",
+        "aren't allowed to",
+        "not allowed",
+        "aren't supposed"
+      ]
+    },
+    {
+      "question": "\"You're ___ hand in the report by Friday.\" (expectation)",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Talk about permission (be allowed to) and expectation/rules (be supposed to).",
+      "correctIndex": 1,
+      "answers": [
+        "used to",
+        "supposed to",
+        "able to",
+        "allowed to"
+      ]
+    },
+    {
+      "question": "\"Be allowed to\" expresses...",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Talk about permission (be allowed to) and expectation/rules (be supposed to).",
+      "correctIndex": 0,
+      "answers": [
+        "permission",
+        "ability",
+        "expectation",
+        "obligation only"
+      ]
+    },
+    {
+      "question": "\"He's supposed to be here by now\" implies...",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Talk about permission (be allowed to) and expectation/rules (be supposed to).",
+      "correctIndex": 2,
+      "answers": [
+        "he can't come",
+        "he is here",
+        "he isn't here yet, against expectation",
+        "he's not allowed"
+      ]
+    },
+    {
+      "question": "\"Were you ___ leave early?\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Talk about permission (be allowed to) and expectation/rules (be supposed to).",
+      "correctIndex": 3,
+      "answers": [
+        "supposed",
+        "allow to",
+        "allowing",
+        "allowed to"
+      ]
+    }
+  ]
+}

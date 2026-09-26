@@ -1,0 +1,77 @@
+{
+  "id": "a2-306",
+  "title": "Ordering in a Restaurant",
+  "description": "Practice: Ordering in a Restaurant.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Polite order phrase:",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Ordering in a Restaurant lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "\"Could I have the soup, please?\"",
+        "\"Give soup.\"",
+        "\"Soup now.\"",
+        "\"I take soup.\""
+      ]
+    },
+    {
+      "question": "Asking about a dish:",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Ordering in a Restaurant lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "\"Is this dish spicy?\"",
+        "\"Spicy this?\"",
+        "\"This spicy?\"",
+        "\"Dish spicy?\""
+      ]
+    },
+    {
+      "question": "Requesting the bill:",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Ordering in a Restaurant lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "\"Could we get the bill, please?\"",
+        "\"Bill now.\"",
+        "\"Give bill.\"",
+        "\"Pay now.\""
+      ]
+    },
+    {
+      "question": "\"I'll ___ the pasta.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Ordering in a Restaurant lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "has",
+        "have",
+        "having",
+        "had"
+      ]
+    },
+    {
+      "question": "Least polite in a restaurant:",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Ordering in a Restaurant lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "\"Could I have the menu, please?\"",
+        "\"Bring food now.\"",
+        "\"Could we get the bill?\"",
+        "\"Is this dish spicy?\""
+      ]
+    }
+  ]
+}

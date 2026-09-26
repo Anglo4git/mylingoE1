@@ -1,1 +1,1657 @@
-[{"lesson_id":"course-a2-unit-01-lesson-01","unit_id":"course-a2-unit-01","title":"Comparative Adjectives","category":"Grammar","order":1,"revision":{"summary":"Practice Comparative Adjectives."},"presentation_url":null,"youtube_url":null,"exercise_quiz_ids":["a2-001"],"version":1,"status":"published","lesson_quiz_id":"lesson-course-a2-unit-01-lesson-01"},{"lesson_id":"course-a2-unit-01-lesson-02","unit_id":"course-a2-unit-01","title":"Present Continuous","category":"Grammar","order":2,"revision":{"summary":"Practice Present Continuous."},"presentation_url":null,"youtube_url":null,"exercise_quiz_ids":["a2-002"],"version":1,"status":"published","lesson_quiz_id":"lesson-course-a2-unit-01-lesson-02"},{"lesson_id":"course-a2-unit-01-lesson-03","unit_id":"course-a2-unit-01","title":"Past Continuous","category":"Grammar","order":3,"revision":{"summary":"Practice Past Continuous."},"presentation_url":null,"youtube_url":null,"exercise_quiz_ids":["a2-003"],"version":1,"status":"published","lesson_quiz_id":"lesson-course-a2-unit-01-lesson-03"},{"lesson_id":"course-a2-unit-01-lesson-04","unit_id":"course-a2-unit-01","title":"Future: going to","category":"Grammar","order":4,"revision":{"summary":"Practice Future: going to."},"presentation_url":null,"youtube_url":null,"exercise_quiz_ids":["a2-004"],"version":1,"status":"published","lesson_quiz_id":"lesson-course-a2-unit-01-lesson-04"},{"lesson_id":"course-a2-unit-01-lesson-05","unit_id":"course-a2-unit-01","title":"First Conditional","category":"Grammar","order":5,"revision":{"summary":"Practice First Conditional."},"presentation_url":null,"youtube_url":null,"exercise_quiz_ids":["a2-005"],"version":1,"status":"published","lesson_quiz_id":"lesson-course-a2-unit-01-lesson-05"},{"lesson_id":"course-a2-unit-01-lesson-06","unit_id":"course-a2-unit-01","title":"Countable/Uncountable","category":"Grammar","order":6,"revision":{"summary":"Practice Countable/Uncountable."},"presentation_url":null,"youtube_url":null,"exercise_quiz_ids":["a2-006"],"version":1,"status":"published","lesson_quiz_id":"lesson-course-a2-unit-01-lesson-06"},{"lesson_id":"course-a2-unit-01-lesson-07","unit_id":"course-a2-unit-01","title":"Adverbs of Frequency","category":"Grammar","order":7,"revision":{"summary":"Practice Adverbs of Frequency."},"presentation_url":null,"youtube_url":null,"exercise_quiz_ids":["a2-007"],"version":1,"status":"published","lesson_quiz_id":"lesson-course-a2-unit-01-lesson-07"},{"lesson_id":"course-a2-unit-01-lesson-08","unit_id":"course-a2-unit-01","title":"Modal: should","category":"Grammar","order":8,"revision":{"summary":"Practice Modal: should."},"presentation_url":null,"youtube_url":null,"exercise_quiz_ids":["a2-008"],"version":1,"status":"published","lesson_quiz_id":"lesson-course-a2-unit-01-lesson-08"},{"lesson_id":"course-a2-unit-01-lesson-09","unit_id":"course-a2-unit-01","title":"Present Perfect","category":"Grammar","order":9,"revision":{"summary":"Practice Present Perfect."},"presentation_url":null,"youtube_url":null,"exercise_quiz_ids":["a2-009"],"version":1,"status":"published","lesson_quiz_id":"lesson-course-a2-unit-01-lesson-09"},{"lesson_id":"course-a2-unit-02-lesson-01","unit_id":"course-a2-unit-02","title":"Everyday Vocabulary","category":"Vocabulary","order":1,"revision":{"summary":"Practice everyday vocabulary."},"presentation_url":null,"youtube_url":null,"exercise_quiz_ids":["a2-010","a2-media-01"],"version":1,"status":"published","lesson_quiz_id":"lesson-course-a2-unit-02-lesson-01"},{"lesson_id":"course-a2-unit-02-lesson-02","unit_id":"course-a2-unit-02","title":"Everyday Vocabulary Review","category":"Mixed","order":2,"revision":{"summary":"A short mixed review pulling together everyday vocabulary and the present perfect, for learners who want extra practice before moving on.","key_terms":["everyday vocabulary","present perfect"],"examples":["I've already learned these words — now let's use them in context.","Have you used the present perfect correctly in a sentence today?"],"estimated_minutes":8},"presentation_url":null,"youtube_url":null,"exercise_quiz_ids":["a2-010","a2-009"],"version":1,"status":"published","lesson_quiz_id":"lesson-course-a2-unit-02-lesson-02"}]
+[
+  {
+    "lesson_id": "course-a2-unit-01-lesson-01",
+    "unit_id": "course-a2-unit-01",
+    "title": "Comparative and Superlative Adjectives",
+    "category": "Grammar",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Comparative Adjectives.",
+      "note": "Extended this pass to cover a previously PARTIAL syllabus item (see A2_CURRICULUM_ISSUES.md issue F), per Agent 6 default in the absence of an explicit human ruling on issue F specifically — flagged for review."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-001"
+    ],
+    "version": 2,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-01",
+    "body_content": "<h2>Comparative and Superlative Adjectives</h2><p>Practice Comparative Adjectives.</p><h3>Superlative adjectives</h3><p>Use the superlative to compare one thing with the whole group: add <strong>-est</strong> to short adjectives (the fastest) or use <strong>the most</strong> with longer ones (the most expensive). Watch for irregulars: good → the best, bad → the worst.</p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-02",
+    "unit_id": "course-a2-unit-01",
+    "title": "Present Continuous",
+    "category": "Grammar",
+    "order": 2,
+    "revision": {
+      "summary": "Practice Present Continuous."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-002"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-02"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-03",
+    "unit_id": "course-a2-unit-01",
+    "title": "Past Continuous",
+    "category": "Grammar",
+    "order": 3,
+    "revision": {
+      "summary": "Practice Past Continuous."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-003"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-03"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-04",
+    "unit_id": "course-a2-unit-01",
+    "title": "Future: going to / will",
+    "category": "Grammar",
+    "order": 4,
+    "revision": {
+      "summary": "Practice Future: going to.",
+      "note": "Extended this pass to cover a previously PARTIAL syllabus item (see A2_CURRICULUM_ISSUES.md issue F), per Agent 6 default in the absence of an explicit human ruling on issue F specifically — flagged for review."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-004"
+    ],
+    "version": 2,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-04",
+    "body_content": "<h2>Future: going to / will</h2><p>Practice Future: going to.</p><h3>Going further: will</h3><p>Use <strong>will</strong> for predictions based on opinion (I think it will rain) and for decisions made at the moment of speaking (I'll answer that). Use <strong>going to</strong> for plans and predictions based on present evidence (Look at those clouds — it's going to rain).</p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-05",
+    "unit_id": "course-a2-unit-01",
+    "title": "First Conditional",
+    "category": "Grammar",
+    "order": 5,
+    "revision": {
+      "summary": "Practice First Conditional."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-005"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-05"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-06",
+    "unit_id": "course-a2-unit-01",
+    "title": "Countable/Uncountable",
+    "category": "Grammar",
+    "order": 6,
+    "revision": {
+      "summary": "Practice Countable/Uncountable.",
+      "note": "Off-syllabus lesson (not in CURRICULUM_SOURCE.md's A2 list); kept per human decision at the approval gate and revised here with additional depth rather than removed."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-006"
+    ],
+    "version": 2,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-06",
+    "body_content": "<h2>Countable/Uncountable</h2><p>Practice Countable/Uncountable.</p><h3>Going further</h3><p>Some nouns are countable in some languages but uncountable in English (advice, information, furniture, luggage). Use 'a piece of', 'a bit of' or 'some' with these instead of a plural form.</p><h3>More examples</h3><ul><li>She gave me some useful advice.</li><li>I need a few pieces of information.</li><li>We don't have much furniture yet.</li></ul>"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-07",
+    "unit_id": "course-a2-unit-01",
+    "title": "Adverbs of Frequency and Manner",
+    "category": "Grammar",
+    "order": 7,
+    "revision": {
+      "summary": "Practice Adverbs of Frequency.",
+      "note": "Extended this pass to cover a previously PARTIAL syllabus item (see A2_CURRICULUM_ISSUES.md issue F), per Agent 6 default in the absence of an explicit human ruling on issue F specifically — flagged for review."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-007"
+    ],
+    "version": 2,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-07",
+    "body_content": "<h2>Adverbs of Frequency and Manner</h2><p>Practice Adverbs of Frequency.</p><h3>Adverbs of manner</h3><p>Adverbs of manner describe how an action happens and usually end in <strong>-ly</strong> (quickly, carefully, badly). They normally go after the verb (or object): She spoke quietly. Note: good → well, not goodly.</p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-08",
+    "unit_id": "course-a2-unit-01",
+    "title": "Modal: should",
+    "category": "Grammar",
+    "order": 8,
+    "revision": {
+      "summary": "Practice Modal: should.",
+      "note": "Off-syllabus lesson (not in CURRICULUM_SOURCE.md's A2 list); kept per human decision at the approval gate and revised here with additional depth rather than removed."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-008"
+    ],
+    "version": 2,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-08",
+    "body_content": "<h2>Modal: should</h2><p>Practice Modal: should.</p><h3>Going further</h3><p>'Should' gives advice or an opinion, and is weaker than 'must' (obligation) or 'have to' (necessity). Use 'shouldn't' for advice against doing something, and 'should + have + past participle' to talk about a past mistake (You should have called me).</p><h3>More examples</h3><ul><li>You should have called me yesterday.</li><li>I don't think you should say that.</li><li>Should I bring anything to the party?</li></ul>"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-09",
+    "unit_id": "course-a2-unit-01",
+    "title": "Present Perfect",
+    "category": "Grammar",
+    "order": 9,
+    "revision": {
+      "summary": "Practice Present Perfect."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-009"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-09"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-10",
+    "unit_id": "course-a2-unit-01",
+    "title": "Present Simple",
+    "category": "Grammar",
+    "order": 10,
+    "revision": {
+      "summary": "Use the present simple for facts, habits and routines. The present simple describes things that are generally\ntrue or that happen regularly. Add -s/-es for he/she/it. Use don't/\ndoesn't for negatives and questions.",
+      "examples": [
+        "She works in a hospital.",
+        "We don't eat meat.",
+        "Does he live near here?",
+        "The shop opens at nine."
+      ],
+      "key_terms": [
+        "Present Simple"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-101"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-10",
+    "body_content": "<h2>Present Simple</h2><p>Use the present simple for facts, habits and routines. The present simple describes things that are generally\ntrue or that happen regularly. Add -s/-es for he/she/it. Use don't/\ndoesn't for negatives and questions.</p><h3>Going further at A2</h3><p>This builds on A1 basics with more complex sentences, mixed time expressions, and less predictable irregular forms, plus a different practice style (transformation and error-correction rather than simple gap-fill) so learners who already met this at A1 are stretched, not just reminded.</p><h3>Examples</h3><ul><li>She works in a hospital.</li><li>We don't eat meat.</li><li>Does he live near here?</li><li>The shop opens at nine.</li></ul><h3>Key terms</h3><p><strong>Present Simple</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-11",
+    "unit_id": "course-a2-unit-01",
+    "title": "Past Simple",
+    "category": "Grammar",
+    "order": 11,
+    "revision": {
+      "summary": "Talk about finished actions and events in the past. Regular verbs add -ed; many common verbs are\nirregular. Use didn't for negatives and did for questions (base verb\nafter did/didn't).",
+      "examples": [
+        "I visited my grandparents last weekend.",
+        "She went to Paris in June.",
+        "We didn't watch the film.",
+        "Did you call him yesterday?"
+      ],
+      "key_terms": [
+        "Past Simple"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-102"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-11",
+    "body_content": "<h2>Past Simple</h2><p>Talk about finished actions and events in the past. Regular verbs add -ed; many common verbs are\nirregular. Use didn't for negatives and did for questions (base verb\nafter did/didn't).</p><h3>Going further at A2</h3><p>This builds on A1 basics with more complex sentences, mixed time expressions, and less predictable irregular forms, plus a different practice style (transformation and error-correction rather than simple gap-fill) so learners who already met this at A1 are stretched, not just reminded.</p><h3>Examples</h3><ul><li>I visited my grandparents last weekend.</li><li>She went to Paris in June.</li><li>We didn't watch the film.</li><li>Did you call him yesterday?</li></ul><h3>Key terms</h3><p><strong>Past Simple</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-12",
+    "unit_id": "course-a2-unit-01",
+    "title": "Reflexive Pronouns",
+    "category": "Grammar",
+    "order": 12,
+    "revision": {
+      "summary": "Use reflexive pronouns (myself, yourself, himself,\nherself, itself, ourselves, yourselves, themselves) correctly. Use a reflexive pronoun when the subject and object of\na verb are the same person or thing.",
+      "examples": [
+        "I cut myself while cooking.",
+        "She taught herself Spanish.",
+        "They enjoyed themselves at the party.",
+        "Be careful — you might hurt yourself."
+      ],
+      "key_terms": [
+        "Reflexive Pronouns"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-103"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-12",
+    "body_content": "<h2>Reflexive Pronouns</h2><p>Use reflexive pronouns (myself, yourself, himself,\nherself, itself, ourselves, yourselves, themselves) correctly. Use a reflexive pronoun when the subject and object of\na verb are the same person or thing.</p><h3>Examples</h3><ul><li>I cut myself while cooking.</li><li>She taught herself Spanish.</li><li>They enjoyed themselves at the party.</li><li>Be careful — you might hurt yourself.</li></ul><h3>Key terms</h3><p><strong>Reflexive Pronouns</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-13",
+    "unit_id": "course-a2-unit-01",
+    "title": "So / Such",
+    "category": "Grammar",
+    "order": 13,
+    "revision": {
+      "summary": "Use so and such to add emphasis to adjectives and nouns. Use \"so\" directly before an adjective or adverb (\"so\ntired\"). Use \"such\" before a noun, or an adjective + noun (\"such a\nlong day\").",
+      "examples": [
+        "The film was so boring.",
+        "It's such a beautiful city.",
+        "She speaks so quickly.",
+        "They are such good friends."
+      ],
+      "key_terms": [
+        "So / Such"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-104"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-13",
+    "body_content": "<h2>So / Such</h2><p>Use so and such to add emphasis to adjectives and nouns. Use \"so\" directly before an adjective or adverb (\"so\ntired\"). Use \"such\" before a noun, or an adjective + noun (\"such a\nlong day\").</p><h3>Examples</h3><ul><li>The film was so boring.</li><li>It's such a beautiful city.</li><li>She speaks so quickly.</li><li>They are such good friends.</li></ul><h3>Key terms</h3><p><strong>So / Such</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-14",
+    "unit_id": "course-a2-unit-01",
+    "title": "Have to / Need to (Obligation)",
+    "category": "Grammar",
+    "order": 14,
+    "revision": {
+      "summary": "Express obligation and necessity. \"Have to\" and \"need to\" both show something is\nnecessary. Use don't have to / don't need to for \"not necessary\"\n(different meaning from \"must not\").",
+      "examples": [
+        "I have to finish this report today.",
+        "You don't need to bring anything.",
+        "Does she have to work on Saturdays?",
+        "We need to leave before 8am."
+      ],
+      "key_terms": [
+        "Have to / Need to (Obligation)"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-105"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-14",
+    "body_content": "<h2>Have to / Need to (Obligation)</h2><p>Express obligation and necessity. \"Have to\" and \"need to\" both show something is\nnecessary. Use don't have to / don't need to for \"not necessary\"\n(different meaning from \"must not\").</p><h3>Examples</h3><ul><li>I have to finish this report today.</li><li>You don't need to bring anything.</li><li>Does she have to work on Saturdays?</li><li>We need to leave before 8am.</li></ul><h3>Key terms</h3><p><strong>Have to / Need to (Obligation)</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-15",
+    "unit_id": "course-a2-unit-01",
+    "title": "Present Simple Passive",
+    "category": "Grammar",
+    "order": 15,
+    "revision": {
+      "summary": "Form and use the present simple passive. Use am/is/are + past participle when the focus is on\nthe action or the receiver, not who does it.",
+      "examples": [
+        "English is spoken in many countries.",
+        "The letters are delivered every morning.",
+        "Coffee is grown in Brazil.",
+        "This bridge was built... (flagged as past — kept out; present only"
+      ],
+      "key_terms": [
+        "Present Simple Passive"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-106"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-15",
+    "body_content": "<h2>Present Simple Passive</h2><p>Form and use the present simple passive. Use am/is/are + past participle when the focus is on\nthe action or the receiver, not who does it.</p><h3>Examples</h3><ul><li>English is spoken in many countries.</li><li>The letters are delivered every morning.</li><li>Coffee is grown in Brazil.</li><li>This bridge was built... (flagged as past — kept out; present only</li></ul><h3>Key terms</h3><p><strong>Present Simple Passive</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-16",
+    "unit_id": "course-a2-unit-01",
+    "title": "When / While",
+    "category": "Grammar",
+    "order": 16,
+    "revision": {
+      "summary": "Use when and while to connect two actions in time. \"While\" is often used with a longer, ongoing action\n(often past continuous); \"when\" often introduces a shorter action that\ninterrupts or follows.",
+      "examples": [
+        "While I was cooking, the phone rang.",
+        "When she arrived, we started the meeting.",
+        "He read a book while he waited.",
+        "When it rains, I take an umbrella."
+      ],
+      "key_terms": [
+        "When / While"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-107"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-16",
+    "body_content": "<h2>When / While</h2><p>Use when and while to connect two actions in time. \"While\" is often used with a longer, ongoing action\n(often past continuous); \"when\" often introduces a shorter action that\ninterrupts or follows.</p><h3>Examples</h3><ul><li>While I was cooking, the phone rang.</li><li>When she arrived, we started the meeting.</li><li>He read a book while he waited.</li><li>When it rains, I take an umbrella.</li></ul><h3>Key terms</h3><p><strong>When / While</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-17",
+    "unit_id": "course-a2-unit-01",
+    "title": "Must / Might for Deductions",
+    "category": "Grammar",
+    "order": 17,
+    "revision": {
+      "summary": "Make logical deductions about the present. Use \"must\" when you're almost certain something is\ntrue; use \"might\" (or \"may\"/\"could\") when it's only possible.",
+      "examples": [
+        "The lights are off — they must be out.",
+        "She might be at work; I'm not sure.",
+        "He must be tired after that trip.",
+        "It might rain later."
+      ],
+      "key_terms": [
+        "Must / Might for Deductions"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-108"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-17",
+    "body_content": "<h2>Must / Might for Deductions</h2><p>Make logical deductions about the present. Use \"must\" when you're almost certain something is\ntrue; use \"might\" (or \"may\"/\"could\") when it's only possible.</p><h3>Examples</h3><ul><li>The lights are off — they must be out.</li><li>She might be at work; I'm not sure.</li><li>He must be tired after that trip.</li><li>It might rain later.</li></ul><h3>Key terms</h3><p><strong>Must / Might for Deductions</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-18",
+    "unit_id": "course-a2-unit-01",
+    "title": "As Soon As",
+    "category": "Grammar",
+    "order": 18,
+    "revision": {
+      "summary": "Use \"as soon as\" to talk about one action happening\nimmediately after another. \"As soon as\" introduces a time clause; the main clause\noften uses will/going to for a future result.",
+      "examples": [
+        "I'll call you as soon as I land.",
+        "As soon as she gets home, she checks her email.",
+        "We'll start as soon as everyone arrives.",
+        "He left as soon as the meeting ended."
+      ],
+      "key_terms": [
+        "As Soon As"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-109"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-18",
+    "body_content": "<h2>As Soon As</h2><p>Use \"as soon as\" to talk about one action happening\nimmediately after another. \"As soon as\" introduces a time clause; the main clause\noften uses will/going to for a future result.</p><h3>Examples</h3><ul><li>I'll call you as soon as I land.</li><li>As soon as she gets home, she checks her email.</li><li>We'll start as soon as everyone arrives.</li><li>He left as soon as the meeting ended.</li></ul><h3>Key terms</h3><p><strong>As Soon As</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-19",
+    "unit_id": "course-a2-unit-01",
+    "title": "Be Able To / Good At",
+    "category": "Grammar",
+    "order": 19,
+    "revision": {
+      "summary": "Talk about ability and skill. \"Be able to\" describes ability (can be used in more\ntenses than \"can\"); \"good at\" + noun/gerund describes skill level.",
+      "examples": [
+        "I wasn't able to finish on time.",
+        "She's very good at cooking.",
+        "Will you be able to come tomorrow?",
+        "He's good at explaining things clearly."
+      ],
+      "key_terms": [
+        "Be Able To / Good At"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-110"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-19",
+    "body_content": "<h2>Be Able To / Good At</h2><p>Talk about ability and skill. \"Be able to\" describes ability (can be used in more\ntenses than \"can\"); \"good at\" + noun/gerund describes skill level.</p><h3>Examples</h3><ul><li>I wasn't able to finish on time.</li><li>She's very good at cooking.</li><li>Will you be able to come tomorrow?</li><li>He's good at explaining things clearly.</li></ul><h3>Key terms</h3><p><strong>Be Able To / Good At</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-20",
+    "unit_id": "course-a2-unit-01",
+    "title": "Although / However",
+    "category": "Grammar",
+    "order": 20,
+    "revision": {
+      "summary": "Show contrast between two ideas. \"Although\" joins two clauses in one sentence.\n\"However\" usually starts a new sentence and is followed by a comma.",
+      "examples": [
+        "Although it was raining, we went for a walk.",
+        "The trip was long. However, it was worth it.",
+        "She passed the test although she didn't study much.",
+        "He's friendly. However, he's also very shy."
+      ],
+      "key_terms": [
+        "Although / However"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-111"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-20",
+    "body_content": "<h2>Although / However</h2><p>Show contrast between two ideas. \"Although\" joins two clauses in one sentence.\n\"However\" usually starts a new sentence and is followed by a comma.</p><h3>Examples</h3><ul><li>Although it was raining, we went for a walk.</li><li>The trip was long. However, it was worth it.</li><li>She passed the test although she didn't study much.</li><li>He's friendly. However, he's also very shy.</li></ul><h3>Key terms</h3><p><strong>Although / However</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-21",
+    "unit_id": "course-a2-unit-01",
+    "title": "Used To",
+    "category": "Grammar",
+    "order": 21,
+    "revision": {
+      "summary": "Talk about past habits and states that are no longer\ntrue. \"Used to\" + base verb describes a repeated past action\nor state that has changed. Negative: didn't use to.",
+      "examples": [
+        "I used to live in Rome.",
+        "She didn't use to like coffee.",
+        "Did you use to play an instrument?",
+        "We used to walk to school every day."
+      ],
+      "key_terms": [
+        "Used To"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-112"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-21",
+    "body_content": "<h2>Used To</h2><p>Talk about past habits and states that are no longer\ntrue. \"Used to\" + base verb describes a repeated past action\nor state that has changed. Negative: didn't use to.</p><h3>Examples</h3><ul><li>I used to live in Rome.</li><li>She didn't use to like coffee.</li><li>Did you use to play an instrument?</li><li>We used to walk to school every day.</li></ul><h3>Key terms</h3><p><strong>Used To</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-22",
+    "unit_id": "course-a2-unit-01",
+    "title": "Relative Clauses",
+    "category": "Grammar",
+    "order": 22,
+    "revision": {
+      "summary": "Add extra information about a noun using who, which,\nthat, where. \"Who\" for people, \"which\" for things, \"that\" for\neither (informal), \"where\" for places.",
+      "examples": [
+        "The woman who called you is my sister.",
+        "This is the book that I told you about.",
+        "We visited the town where I was born.",
+        "The car, which is new, is parked outside."
+      ],
+      "key_terms": [
+        "Relative Clauses"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-113"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-22",
+    "body_content": "<h2>Relative Clauses</h2><p>Add extra information about a noun using who, which,\nthat, where. \"Who\" for people, \"which\" for things, \"that\" for\neither (informal), \"where\" for places.</p><h3>Examples</h3><ul><li>The woman who called you is my sister.</li><li>This is the book that I told you about.</li><li>We visited the town where I was born.</li><li>The car, which is new, is parked outside.</li></ul><h3>Key terms</h3><p><strong>Relative Clauses</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-02-lesson-01",
+    "unit_id": "course-a2-unit-02",
+    "title": "Everyday Vocabulary",
+    "category": "Vocabulary",
+    "order": 1,
+    "revision": {
+      "summary": "Practice everyday vocabulary."
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-010",
+      "a2-media-01"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-02-lesson-01"
+  },
+  {
+    "lesson_id": "course-a2-unit-02-lesson-02",
+    "unit_id": "course-a2-unit-02",
+    "title": "Everyday Vocabulary Review",
+    "category": "Mixed",
+    "order": 2,
+    "revision": {
+      "summary": "A short mixed review pulling together everyday vocabulary and the present perfect, for learners who want extra practice before moving on.",
+      "key_terms": [
+        "everyday vocabulary",
+        "present perfect"
+      ],
+      "examples": [
+        "I've already learned these words — now let's use them in context.",
+        "Have you used the present perfect correctly in a sentence today?"
+      ],
+      "estimated_minutes": 8
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-010",
+      "a2-009"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-02-lesson-02"
+  },
+  {
+    "lesson_id": "course-a2-unit-02-lesson-03",
+    "unit_id": "course-a2-unit-02",
+    "title": "Families",
+    "category": "Vocabulary",
+    "order": 3,
+    "revision": {
+      "summary": "Name immediate and extended family members.",
+      "examples": [
+        "parent",
+        "sibling",
+        "cousin",
+        "niece",
+        "nephew",
+        "in-law",
+        "grandparent",
+        "stepbrother/sister."
+      ],
+      "key_terms": [
+        "parent",
+        "sibling",
+        "cousin",
+        "niece",
+        "nephew",
+        "in-law"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-201"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-02-lesson-03",
+    "body_content": "<h2>Families</h2><p>Name immediate and extended family members.</p><h3>Examples</h3><ul><li>parent</li><li>sibling</li><li>cousin</li><li>niece</li><li>nephew</li><li>in-law</li><li>grandparent</li><li>stepbrother/sister.</li></ul><h3>Key terms</h3><p><strong>parent</strong>, <strong>sibling</strong>, <strong>cousin</strong>, <strong>niece</strong>, <strong>nephew</strong>, <strong>in-law</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-02-lesson-04",
+    "unit_id": "course-a2-unit-02",
+    "title": "Restaurants and Leisure Venues",
+    "category": "Vocabulary",
+    "order": 4,
+    "revision": {
+      "summary": "Name common places to eat and relax, and order basic items.",
+      "examples": [
+        "café",
+        "diner",
+        "food court",
+        "cinema",
+        "bowling alley",
+        "arcade",
+        "starter",
+        "main course",
+        "bill/check."
+      ],
+      "key_terms": [
+        "café",
+        "diner",
+        "food court",
+        "cinema",
+        "bowling alley",
+        "arcade"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-202"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-02-lesson-04",
+    "body_content": "<h2>Restaurants and Leisure Venues</h2><p>Name common places to eat and relax, and order basic items.</p><h3>Examples</h3><ul><li>café</li><li>diner</li><li>food court</li><li>cinema</li><li>bowling alley</li><li>arcade</li><li>starter</li><li>main course</li><li>bill/check.</li></ul><h3>Key terms</h3><p><strong>café</strong>, <strong>diner</strong>, <strong>food court</strong>, <strong>cinema</strong>, <strong>bowling alley</strong>, <strong>arcade</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-02-lesson-05",
+    "unit_id": "course-a2-unit-02",
+    "title": "Personality",
+    "category": "Vocabulary",
+    "order": 5,
+    "revision": {
+      "summary": "Describe character traits.",
+      "examples": [
+        "confident",
+        "shy",
+        "honest",
+        "stubborn",
+        "generous",
+        "easy-going",
+        "reliable",
+        "moody."
+      ],
+      "key_terms": [
+        "confident",
+        "shy",
+        "honest",
+        "stubborn",
+        "generous",
+        "easy-going"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-203"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-02-lesson-05",
+    "body_content": "<h2>Personality</h2><p>Describe character traits.</p><h3>Examples</h3><ul><li>confident</li><li>shy</li><li>honest</li><li>stubborn</li><li>generous</li><li>easy-going</li><li>reliable</li><li>moody.</li></ul><h3>Key terms</h3><p><strong>confident</strong>, <strong>shy</strong>, <strong>honest</strong>, <strong>stubborn</strong>, <strong>generous</strong>, <strong>easy-going</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-02-lesson-06",
+    "unit_id": "course-a2-unit-02",
+    "title": "Biographical Information",
+    "category": "Vocabulary",
+    "order": 6,
+    "revision": {
+      "summary": "Give and understand basic biographical details.",
+      "examples": [
+        "date of birth",
+        "occupation",
+        "nationality",
+        "marital status",
+        "place of birth",
+        "achievements."
+      ],
+      "key_terms": [
+        "date of birth",
+        "occupation",
+        "nationality",
+        "marital status",
+        "place of birth",
+        "achievements."
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-204"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-02-lesson-06",
+    "body_content": "<h2>Biographical Information</h2><p>Give and understand basic biographical details.</p><h3>Examples</h3><ul><li>date of birth</li><li>occupation</li><li>nationality</li><li>marital status</li><li>place of birth</li><li>achievements.</li></ul><h3>Key terms</h3><p><strong>date of birth</strong>, <strong>occupation</strong>, <strong>nationality</strong>, <strong>marital status</strong>, <strong>place of birth</strong>, <strong>achievements.</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-02-lesson-07",
+    "unit_id": "course-a2-unit-02",
+    "title": "Buildings and Monuments",
+    "category": "Vocabulary",
+    "order": 7,
+    "revision": {
+      "summary": "Describe types of buildings and famous structures.",
+      "examples": [
+        "cathedral",
+        "tower",
+        "palace",
+        "monument",
+        "skyscraper",
+        "ruins",
+        "fortress."
+      ],
+      "key_terms": [
+        "cathedral",
+        "tower",
+        "palace",
+        "monument",
+        "skyscraper",
+        "ruins"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-205"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-02-lesson-07",
+    "body_content": "<h2>Buildings and Monuments</h2><p>Describe types of buildings and famous structures.</p><h3>Examples</h3><ul><li>cathedral</li><li>tower</li><li>palace</li><li>monument</li><li>skyscraper</li><li>ruins</li><li>fortress.</li></ul><h3>Key terms</h3><p><strong>cathedral</strong>, <strong>tower</strong>, <strong>palace</strong>, <strong>monument</strong>, <strong>skyscraper</strong>, <strong>ruins</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-02-lesson-08",
+    "unit_id": "course-a2-unit-02",
+    "title": "Weather",
+    "category": "Vocabulary",
+    "order": 8,
+    "revision": {
+      "summary": "Describe weather conditions and forecasts.",
+      "examples": [
+        "forecast",
+        "humid",
+        "breezy",
+        "thunderstorm",
+        "drizzle",
+        "overcast",
+        "temperature",
+        "degrees."
+      ],
+      "key_terms": [
+        "forecast",
+        "humid",
+        "breezy",
+        "thunderstorm",
+        "drizzle",
+        "overcast"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-206"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-02-lesson-08",
+    "body_content": "<h2>Weather</h2><p>Describe weather conditions and forecasts.</p><h3>Examples</h3><ul><li>forecast</li><li>humid</li><li>breezy</li><li>thunderstorm</li><li>drizzle</li><li>overcast</li><li>temperature</li><li>degrees.</li></ul><h3>Key terms</h3><p><strong>forecast</strong>, <strong>humid</strong>, <strong>breezy</strong>, <strong>thunderstorm</strong>, <strong>drizzle</strong>, <strong>overcast</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-02-lesson-09",
+    "unit_id": "course-a2-unit-02",
+    "title": "Clothes and Accessories",
+    "category": "Vocabulary",
+    "order": 9,
+    "revision": {
+      "summary": "Name common clothing items and accessories.",
+      "examples": [
+        "scarf",
+        "belt",
+        "jacket",
+        "sandals",
+        "jewellery",
+        "handbag",
+        "hoodie."
+      ],
+      "key_terms": [
+        "scarf",
+        "belt",
+        "jacket",
+        "sandals",
+        "jewellery",
+        "handbag"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-207"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-02-lesson-09",
+    "body_content": "<h2>Clothes and Accessories</h2><p>Name common clothing items and accessories.</p><h3>Examples</h3><ul><li>scarf</li><li>belt</li><li>jacket</li><li>sandals</li><li>jewellery</li><li>handbag</li><li>hoodie.</li></ul><h3>Key terms</h3><p><strong>scarf</strong>, <strong>belt</strong>, <strong>jacket</strong>, <strong>sandals</strong>, <strong>jewellery</strong>, <strong>handbag</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-02-lesson-10",
+    "unit_id": "course-a2-unit-02",
+    "title": "Large Numbers",
+    "category": "Vocabulary",
+    "order": 10,
+    "revision": {
+      "summary": "Say and understand large numbers.",
+      "examples": [
+        "hundred",
+        "thousand",
+        "million",
+        "approximately",
+        "roughly",
+        "a couple of",
+        "dozens of."
+      ],
+      "key_terms": [
+        "hundred",
+        "thousand",
+        "million",
+        "approximately",
+        "roughly",
+        "a couple of"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-208"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-02-lesson-10",
+    "body_content": "<h2>Large Numbers</h2><p>Say and understand large numbers.</p><h3>Examples</h3><ul><li>hundred</li><li>thousand</li><li>million</li><li>approximately</li><li>roughly</li><li>a couple of</li><li>dozens of.</li></ul><h3>Key terms</h3><p><strong>hundred</strong>, <strong>thousand</strong>, <strong>million</strong>, <strong>approximately</strong>, <strong>roughly</strong>, <strong>a couple of</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-02-lesson-11",
+    "unit_id": "course-a2-unit-02",
+    "title": "Travel and Tourism",
+    "category": "Vocabulary",
+    "order": 11,
+    "revision": {
+      "summary": "Talk about trips, bookings and travel documents.",
+      "examples": [
+        "itinerary",
+        "boarding pass",
+        "accommodation",
+        "sightseeing",
+        "excursion",
+        "luggage",
+        "visa."
+      ],
+      "key_terms": [
+        "itinerary",
+        "boarding pass",
+        "accommodation",
+        "sightseeing",
+        "excursion",
+        "luggage"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-209"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-02-lesson-11",
+    "body_content": "<h2>Travel and Tourism</h2><p>Talk about trips, bookings and travel documents.</p><h3>Examples</h3><ul><li>itinerary</li><li>boarding pass</li><li>accommodation</li><li>sightseeing</li><li>excursion</li><li>luggage</li><li>visa.</li></ul><h3>Key terms</h3><p><strong>itinerary</strong>, <strong>boarding pass</strong>, <strong>accommodation</strong>, <strong>sightseeing</strong>, <strong>excursion</strong>, <strong>luggage</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-02-lesson-12",
+    "unit_id": "course-a2-unit-02",
+    "title": "Work and Careers",
+    "category": "Vocabulary",
+    "order": 12,
+    "revision": {
+      "summary": "Talk about jobs, workplaces and career steps.",
+      "examples": [
+        "promotion",
+        "colleague",
+        "resign",
+        "apply",
+        "interview",
+        "salary",
+        "part-time/full-time."
+      ],
+      "key_terms": [
+        "promotion",
+        "colleague",
+        "resign",
+        "apply",
+        "interview",
+        "salary"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-210"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-02-lesson-12",
+    "body_content": "<h2>Work and Careers</h2><p>Talk about jobs, workplaces and career steps.</p><h3>Examples</h3><ul><li>promotion</li><li>colleague</li><li>resign</li><li>apply</li><li>interview</li><li>salary</li><li>part-time/full-time.</li></ul><h3>Key terms</h3><p><strong>promotion</strong>, <strong>colleague</strong>, <strong>resign</strong>, <strong>apply</strong>, <strong>interview</strong>, <strong>salary</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-02-lesson-13",
+    "unit_id": "course-a2-unit-02",
+    "title": "Hobbies, Sports and Interests",
+    "category": "Vocabulary",
+    "order": 13,
+    "revision": {
+      "summary": "Talk about free-time activities and interests.",
+      "examples": [
+        "hiking",
+        "painting",
+        "chess",
+        "cycling",
+        "gardening",
+        "to be into (something)",
+        "a fan of."
+      ],
+      "key_terms": [
+        "hiking",
+        "painting",
+        "chess",
+        "cycling",
+        "gardening",
+        "to be into (something)"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-211"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-02-lesson-13",
+    "body_content": "<h2>Hobbies, Sports and Interests</h2><p>Talk about free-time activities and interests.</p><h3>Examples</h3><ul><li>hiking</li><li>painting</li><li>chess</li><li>cycling</li><li>gardening</li><li>to be into (something)</li><li>a fan of.</li></ul><h3>Key terms</h3><p><strong>hiking</strong>, <strong>painting</strong>, <strong>chess</strong>, <strong>cycling</strong>, <strong>gardening</strong>, <strong>to be into (something)</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-02-lesson-14",
+    "unit_id": "course-a2-unit-02",
+    "title": "Education",
+    "category": "Vocabulary",
+    "order": 14,
+    "revision": {
+      "summary": "Talk about school, study and qualifications.",
+      "examples": [
+        "degree",
+        "semester",
+        "assignment",
+        "lecture",
+        "graduate",
+        "tuition",
+        "scholarship."
+      ],
+      "key_terms": [
+        "degree",
+        "semester",
+        "assignment",
+        "lecture",
+        "graduate",
+        "tuition"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-212"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-02-lesson-14",
+    "body_content": "<h2>Education</h2><p>Talk about school, study and qualifications.</p><h3>Examples</h3><ul><li>degree</li><li>semester</li><li>assignment</li><li>lecture</li><li>graduate</li><li>tuition</li><li>scholarship.</li></ul><h3>Key terms</h3><p><strong>degree</strong>, <strong>semester</strong>, <strong>assignment</strong>, <strong>lecture</strong>, <strong>graduate</strong>, <strong>tuition</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-02-lesson-15",
+    "unit_id": "course-a2-unit-02",
+    "title": "Life Changes and Events",
+    "category": "Vocabulary",
+    "order": 15,
+    "revision": {
+      "summary": "Talk about major life events and transitions.",
+      "examples": [
+        "move house",
+        "get married",
+        "retire",
+        "have a baby",
+        "graduate",
+        "change career."
+      ],
+      "key_terms": [
+        "move house",
+        "get married",
+        "retire",
+        "have a baby",
+        "graduate",
+        "change career."
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-213"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-02-lesson-15",
+    "body_content": "<h2>Life Changes and Events</h2><p>Talk about major life events and transitions.</p><h3>Examples</h3><ul><li>move house</li><li>get married</li><li>retire</li><li>have a baby</li><li>graduate</li><li>change career.</li></ul><h3>Key terms</h3><p><strong>move house</strong>, <strong>get married</strong>, <strong>retire</strong>, <strong>have a baby</strong>, <strong>graduate</strong>, <strong>change career.</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-02-lesson-16",
+    "unit_id": "course-a2-unit-02",
+    "title": "Political Systems and Change",
+    "category": "Vocabulary",
+    "order": 16,
+    "revision": {
+      "summary": "Describe basic political systems and processes at a general\nlevel.",
+      "examples": [
+        "government",
+        "election",
+        "vote",
+        "president",
+        "parliament",
+        "policy",
+        "democracy."
+      ],
+      "key_terms": [
+        "government",
+        "election",
+        "vote",
+        "president",
+        "parliament",
+        "policy"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-214"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-02-lesson-16",
+    "body_content": "<h2>Political Systems and Change</h2><p>Describe basic political systems and processes at a general\nlevel.</p><p><em>Note: flagged in A2_CURRICULUM_ISSUES.md (seed item B) as a possibly\nsensitive topic — drafted here at a neutral, definitional level only\n(no country-specific or current-events content), pending human\nconfirmation at the approval gate.</em></p><h3>Examples</h3><ul><li>government</li><li>election</li><li>vote</li><li>president</li><li>parliament</li><li>policy</li><li>democracy.</li></ul><h3>Key terms</h3><p><strong>government</strong>, <strong>election</strong>, <strong>vote</strong>, <strong>president</strong>, <strong>parliament</strong>, <strong>policy</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-02-lesson-17",
+    "unit_id": "course-a2-unit-02",
+    "title": "Animals",
+    "category": "Vocabulary",
+    "order": 17,
+    "revision": {
+      "summary": "Name common animals and animal-related vocabulary.",
+      "examples": [
+        "mammal",
+        "wildlife",
+        "pet",
+        "endangered",
+        "habitat",
+        "species."
+      ],
+      "key_terms": [
+        "mammal",
+        "wildlife",
+        "pet",
+        "endangered",
+        "habitat",
+        "species."
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-215"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-02-lesson-17",
+    "body_content": "<h2>Animals</h2><p>Name common animals and animal-related vocabulary.</p><h3>Examples</h3><ul><li>mammal</li><li>wildlife</li><li>pet</li><li>endangered</li><li>habitat</li><li>species.</li></ul><h3>Key terms</h3><p><strong>mammal</strong>, <strong>wildlife</strong>, <strong>pet</strong>, <strong>endangered</strong>, <strong>habitat</strong>, <strong>species.</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-02-lesson-18",
+    "unit_id": "course-a2-unit-02",
+    "title": "Descriptions of People, Health, Fitness and Illnesses",
+    "category": "Vocabulary",
+    "order": 18,
+    "revision": {
+      "summary": "Describe physical appearance and basic health conditions.",
+      "examples": [
+        "fit",
+        "exhausted",
+        "sore",
+        "symptom",
+        "recover",
+        "allergic",
+        "overweight."
+      ],
+      "key_terms": [
+        "fit",
+        "exhausted",
+        "sore",
+        "symptom",
+        "recover",
+        "allergic"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-216"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-02-lesson-18",
+    "body_content": "<h2>Descriptions of People, Health, Fitness and Illnesses</h2><p>Describe physical appearance and basic health conditions.</p><h3>Examples</h3><ul><li>fit</li><li>exhausted</li><li>sore</li><li>symptom</li><li>recover</li><li>allergic</li><li>overweight.</li></ul><h3>Key terms</h3><p><strong>fit</strong>, <strong>exhausted</strong>, <strong>sore</strong>, <strong>symptom</strong>, <strong>recover</strong>, <strong>allergic</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-02-lesson-19",
+    "unit_id": "course-a2-unit-02",
+    "title": "Types of Music and Concerts",
+    "category": "Vocabulary",
+    "order": 19,
+    "revision": {
+      "summary": "Talk about music genres and live events.",
+      "examples": [
+        "genre",
+        "gig",
+        "venue",
+        "setlist",
+        "band",
+        "audience",
+        "encore."
+      ],
+      "key_terms": [
+        "genre",
+        "gig",
+        "venue",
+        "setlist",
+        "band",
+        "audience"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-217"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-02-lesson-19",
+    "body_content": "<h2>Types of Music and Concerts</h2><p>Talk about music genres and live events.</p><h3>Examples</h3><ul><li>genre</li><li>gig</li><li>venue</li><li>setlist</li><li>band</li><li>audience</li><li>encore.</li></ul><h3>Key terms</h3><p><strong>genre</strong>, <strong>gig</strong>, <strong>venue</strong>, <strong>setlist</strong>, <strong>band</strong>, <strong>audience</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-02-lesson-20",
+    "unit_id": "course-a2-unit-02",
+    "title": "Household Equipment",
+    "category": "Vocabulary",
+    "order": 20,
+    "revision": {
+      "summary": "Name common household appliances and equipment.",
+      "examples": [
+        "washing machine",
+        "vacuum cleaner",
+        "kettle",
+        "microwave",
+        "iron",
+        "dishwasher."
+      ],
+      "key_terms": [
+        "washing machine",
+        "vacuum cleaner",
+        "kettle",
+        "microwave",
+        "iron",
+        "dishwasher."
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-218"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-02-lesson-20",
+    "body_content": "<h2>Household Equipment</h2><p>Name common household appliances and equipment.</p><h3>Examples</h3><ul><li>washing machine</li><li>vacuum cleaner</li><li>kettle</li><li>microwave</li><li>iron</li><li>dishwasher.</li></ul><h3>Key terms</h3><p><strong>washing machine</strong>, <strong>vacuum cleaner</strong>, <strong>kettle</strong>, <strong>microwave</strong>, <strong>iron</strong>, <strong>dishwasher.</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-03-lesson-01",
+    "unit_id": "course-a2-unit-03",
+    "title": "Asking Personal Questions",
+    "category": "Functional Language",
+    "order": 1,
+    "revision": {
+      "summary": "Ask polite personal questions.",
+      "examples": [
+        "What do you do?",
+        "Where are you from?",
+        "How long have you...?",
+        "Do you mind if I ask...?"
+      ],
+      "key_terms": [
+        "What do you do?",
+        "Where are you from?",
+        "How long have you...?",
+        "Do you mind if I ask...?"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-301"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-03-lesson-01",
+    "body_content": "<h2>Asking Personal Questions</h2><p>Ask polite personal questions.</p><h3>Examples</h3><ul><li>What do you do?</li><li>Where are you from?</li><li>How long have you...?</li><li>Do you mind if I ask...?</li></ul><h3>Key terms</h3><p><strong>What do you do?</strong>, <strong>Where are you from?</strong>, <strong>How long have you...?</strong>, <strong>Do you mind if I ask...?</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-03-lesson-02",
+    "unit_id": "course-a2-unit-03",
+    "title": "Talking About Personal Experiences",
+    "category": "Functional Language",
+    "order": 2,
+    "revision": {
+      "summary": "Share past experiences naturally.",
+      "examples": [
+        "I've never...",
+        "One time",
+        "I...",
+        "That reminds me of when...",
+        "Have you ever...?"
+      ],
+      "key_terms": [
+        "I've never...",
+        "One time",
+        "I...",
+        "That reminds me of when..."
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-302"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-03-lesson-02",
+    "body_content": "<h2>Talking About Personal Experiences</h2><p>Share past experiences naturally.</p><h3>Examples</h3><ul><li>I've never...</li><li>One time</li><li>I...</li><li>That reminds me of when...</li><li>Have you ever...?</li></ul><h3>Key terms</h3><p><strong>I've never...</strong>, <strong>One time</strong>, <strong>I...</strong>, <strong>That reminds me of when...</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-03-lesson-03",
+    "unit_id": "course-a2-unit-03",
+    "title": "Asking Directions",
+    "category": "Functional Language",
+    "order": 3,
+    "revision": {
+      "summary": "Ask for and understand directions.",
+      "examples": [
+        "How do I get to...?",
+        "Is it far from here?",
+        "Go straight on",
+        "Turn left at the corner",
+        "It's on your right."
+      ],
+      "key_terms": [
+        "How do I get to...?",
+        "Is it far from here?",
+        "Go straight on",
+        "Turn left at the corner"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-303"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-03-lesson-03",
+    "body_content": "<h2>Asking Directions</h2><p>Ask for and understand directions.</p><h3>Examples</h3><ul><li>How do I get to...?</li><li>Is it far from here?</li><li>Go straight on</li><li>Turn left at the corner</li><li>It's on your right.</li></ul><h3>Key terms</h3><p><strong>How do I get to...?</strong>, <strong>Is it far from here?</strong>, <strong>Go straight on</strong>, <strong>Turn left at the corner</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-03-lesson-04",
+    "unit_id": "course-a2-unit-03",
+    "title": "Describing Personality",
+    "category": "Functional Language",
+    "order": 4,
+    "revision": {
+      "summary": "Describe someone's character in conversation.",
+      "examples": [
+        "She's quite outgoing",
+        "He tends to be...",
+        "What's he like?",
+        "She comes across as..."
+      ],
+      "key_terms": [
+        "She's quite outgoing",
+        "He tends to be...",
+        "What's he like?",
+        "She comes across as..."
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-304"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-03-lesson-04",
+    "body_content": "<h2>Describing Personality</h2><p>Describe someone's character in conversation.</p><h3>Examples</h3><ul><li>She's quite outgoing</li><li>He tends to be...</li><li>What's he like?</li><li>She comes across as...</li></ul><h3>Key terms</h3><p><strong>She's quite outgoing</strong>, <strong>He tends to be...</strong>, <strong>What's he like?</strong>, <strong>She comes across as...</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-03-lesson-05",
+    "unit_id": "course-a2-unit-03",
+    "title": "Making Travel Arrangements",
+    "category": "Functional Language",
+    "order": 5,
+    "revision": {
+      "summary": "Book and arrange travel.",
+      "examples": [
+        "I'd like to book...",
+        "Is there an earlier flight?",
+        "What time does it leave?",
+        "Could I change my reservation?"
+      ],
+      "key_terms": [
+        "I'd like to book...",
+        "Is there an earlier flight?",
+        "What time does it leave?",
+        "Could I change my reservation?"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-305"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-03-lesson-05",
+    "body_content": "<h2>Making Travel Arrangements</h2><p>Book and arrange travel.</p><h3>Examples</h3><ul><li>I'd like to book...</li><li>Is there an earlier flight?</li><li>What time does it leave?</li><li>Could I change my reservation?</li></ul><h3>Key terms</h3><p><strong>I'd like to book...</strong>, <strong>Is there an earlier flight?</strong>, <strong>What time does it leave?</strong>, <strong>Could I change my reservation?</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-03-lesson-06",
+    "unit_id": "course-a2-unit-03",
+    "title": "Ordering in a Restaurant",
+    "category": "Functional Language",
+    "order": 6,
+    "revision": {
+      "summary": "Order food and drink politely.",
+      "examples": [
+        "Could I have...?",
+        "I'll have the...",
+        "Is this dish spicy?",
+        "Could we get the bill",
+        "please?"
+      ],
+      "key_terms": [
+        "Could I have...?",
+        "I'll have the...",
+        "Is this dish spicy?",
+        "Could we get the bill"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-306"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-03-lesson-06",
+    "body_content": "<h2>Ordering in a Restaurant</h2><p>Order food and drink politely.</p><h3>Examples</h3><ul><li>Could I have...?</li><li>I'll have the...</li><li>Is this dish spicy?</li><li>Could we get the bill</li><li>please?</li></ul><h3>Key terms</h3><p><strong>Could I have...?</strong>, <strong>I'll have the...</strong>, <strong>Is this dish spicy?</strong>, <strong>Could we get the bill</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-03-lesson-07",
+    "unit_id": "course-a2-unit-03",
+    "title": "Talking About and Expressing Preferences",
+    "category": "Functional Language",
+    "order": 7,
+    "revision": {
+      "summary": "State likes/dislikes in conversation. Compare two options and choose one politely.",
+      "examples": [
+        "I'd rather...",
+        "I'm more into...",
+        "I can't stand...",
+        "It's not really my thing.",
+        "I'd prefer... to...",
+        "Either is fine",
+        "but...",
+        "If I had to choose..."
+      ],
+      "key_terms": [
+        "I'd rather...",
+        "I'm more into...",
+        "I can't stand...",
+        "It's not really my thing."
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-307"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-03-lesson-07",
+    "body_content": "<h2>Talking About and Expressing Preferences</h2><p>State likes/dislikes in conversation. Compare two options and choose one politely.</p><p><em>Note: Merged per human decision at the approval gate: source lists “talking about preferences” and “expressing preferences” as two items, but they were near-duplicates in practice, so this pass combines them into a single lesson covering both simple preference statements (I'd rather.../I'm more into...) and comparing options (I'd prefer...to.../If I had to choose...).</em></p><h3>Examples</h3><ul><li>I'd rather...</li><li>I'm more into...</li><li>I can't stand...</li><li>It's not really my thing.</li><li>I'd prefer... to...</li><li>Either is fine</li><li>but...</li><li>If I had to choose...</li></ul><h3>Key terms</h3><p><strong>I'd rather...</strong>, <strong>I'm more into...</strong>, <strong>I can't stand...</strong>, <strong>It's not really my thing.</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-03-lesson-08",
+    "unit_id": "course-a2-unit-03",
+    "title": "Making Deductions",
+    "category": "Functional Language",
+    "order": 8,
+    "revision": {
+      "summary": "Draw conclusions from evidence in conversation.",
+      "examples": [
+        "That must be...",
+        "It can't be...",
+        "I guess it's...",
+        "That would explain..."
+      ],
+      "key_terms": [
+        "That must be...",
+        "It can't be...",
+        "I guess it's...",
+        "That would explain..."
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-308"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-03-lesson-08",
+    "body_content": "<h2>Making Deductions</h2><p>Draw conclusions from evidence in conversation.</p><h3>Examples</h3><ul><li>That must be...</li><li>It can't be...</li><li>I guess it's...</li><li>That would explain...</li></ul><h3>Key terms</h3><p><strong>That must be...</strong>, <strong>It can't be...</strong>, <strong>I guess it's...</strong>, <strong>That would explain...</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-03-lesson-09",
+    "unit_id": "course-a2-unit-03",
+    "title": "Making Predictions",
+    "category": "Functional Language",
+    "order": 9,
+    "revision": {
+      "summary": "Predict future outcomes in conversation.",
+      "examples": [
+        "I bet...",
+        "I reckon...",
+        "It's likely to...",
+        "I doubt it'll..."
+      ],
+      "key_terms": [
+        "I bet...",
+        "I reckon...",
+        "It's likely to...",
+        "I doubt it'll..."
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-309"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-03-lesson-09",
+    "body_content": "<h2>Making Predictions</h2><p>Predict future outcomes in conversation.</p><h3>Examples</h3><ul><li>I bet...</li><li>I reckon...</li><li>It's likely to...</li><li>I doubt it'll...</li></ul><h3>Key terms</h3><p><strong>I bet...</strong>, <strong>I reckon...</strong>, <strong>It's likely to...</strong>, <strong>I doubt it'll...</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-03-lesson-10",
+    "unit_id": "course-a2-unit-03",
+    "title": "Offering and Suggesting",
+    "category": "Functional Language",
+    "order": 10,
+    "revision": {
+      "summary": "Offer help or suggest an activity politely.",
+      "examples": [
+        "Shall I...?",
+        "Why don't we...?",
+        "How about...?",
+        "Would you like me to...?"
+      ],
+      "key_terms": [
+        "Shall I...?",
+        "Why don't we...?",
+        "How about...?",
+        "Would you like me to...?"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-310"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-03-lesson-10",
+    "body_content": "<h2>Offering and Suggesting</h2><p>Offer help or suggest an activity politely.</p><h3>Examples</h3><ul><li>Shall I...?</li><li>Why don't we...?</li><li>How about...?</li><li>Would you like me to...?</li></ul><h3>Key terms</h3><p><strong>Shall I...?</strong>, <strong>Why don't we...?</strong>, <strong>How about...?</strong>, <strong>Would you like me to...?</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-03-lesson-11",
+    "unit_id": "course-a2-unit-03",
+    "title": "Talking About Obligation",
+    "category": "Functional Language",
+    "order": 11,
+    "revision": {
+      "summary": "Express what is necessary or required in conversation.",
+      "examples": [
+        "I have to...",
+        "I'm supposed to...",
+        "It's compulsory to...",
+        "You don't have to",
+        "but..."
+      ],
+      "key_terms": [
+        "I have to...",
+        "I'm supposed to...",
+        "It's compulsory to...",
+        "You don't have to"
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-311"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-03-lesson-11",
+    "body_content": "<h2>Talking About Obligation</h2><p>Express what is necessary or required in conversation.</p><h3>Examples</h3><ul><li>I have to...</li><li>I'm supposed to...</li><li>It's compulsory to...</li><li>You don't have to</li><li>but...</li></ul><h3>Key terms</h3><p><strong>I have to...</strong>, <strong>I'm supposed to...</strong>, <strong>It's compulsory to...</strong>, <strong>You don't have to</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-03-lesson-12",
+    "unit_id": "course-a2-unit-03",
+    "title": "Requesting",
+    "category": "Functional Language",
+    "order": 12,
+    "revision": {
+      "summary": "Make polite requests.",
+      "examples": [
+        "Could you...?",
+        "Would you mind...?",
+        "Do you think you could...?",
+        "I was wondering if you could..."
+      ],
+      "key_terms": [
+        "Could you...?",
+        "Would you mind...?",
+        "Do you think you could...?",
+        "I was wondering if you could..."
+      ],
+      "estimated_minutes": 6
+    },
+    "presentation_url": null,
+    "youtube_url": null,
+    "exercise_quiz_ids": [
+      "a2-312"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-03-lesson-12",
+    "body_content": "<h2>Requesting</h2><p>Make polite requests.</p><h3>Examples</h3><ul><li>Could you...?</li><li>Would you mind...?</li><li>Do you think you could...?</li><li>I was wondering if you could...</li></ul><h3>Key terms</h3><p><strong>Could you...?</strong>, <strong>Would you mind...?</strong>, <strong>Do you think you could...?</strong>, <strong>I was wondering if you could...</strong></p>"
+  }
+]

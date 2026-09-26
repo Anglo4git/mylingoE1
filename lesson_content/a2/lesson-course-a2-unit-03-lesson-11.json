@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-03-lesson-11",
+  "title": "Lesson: Talking About Obligation",
+  "description": "Practice: Talking About Obligation.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice: Talking About Obligation.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Talking About Obligation",
+      "explanation": "Practice: Talking About Obligation."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Talking About Obligation",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "\"I'm ___ to hand this in by Friday.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2,QuickCheck",
+      "explanation": "See the Talking About Obligation lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "supposed",
+        "suppose",
+        "supposing",
+        "supposedly"
+      ]
+    },
+    {
+      "question": "\"It's ___ to wear a seatbelt.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2,QuickCheck",
+      "explanation": "See the Talking About Obligation lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "compulsory",
+        "optional",
+        "suggested",
+        "preferred"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

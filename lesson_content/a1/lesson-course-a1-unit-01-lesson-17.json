@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-01-lesson-17",
+  "title": "Lesson: Adverbs of Frequency",
+  "description": "Practice Adverbs of Frequency.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Adverbs of Frequency.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Adverbs of Frequency",
+      "explanation": "Practice Adverbs of Frequency."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Adverbs of Frequency",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "Which word means \"100% of the time\"?",
+      "category": "Grammar",
+      "tags": "Grammar,A1,QuickCheck",
+      "explanation": "'Always' means every time.",
+      "correctIndex": 2,
+      "answers": [
+        "sometimes",
+        "always",
+        "never",
+        "often"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

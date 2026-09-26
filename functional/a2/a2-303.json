@@ -1,0 +1,77 @@
+{
+  "id": "a2-303",
+  "title": "Asking Directions",
+  "description": "Practice: Asking Directions.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"How do I ___ to the station?\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Asking Directions lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "get",
+        "go on",
+        "arrive",
+        "walk to"
+      ]
+    },
+    {
+      "question": "Instruction to keep walking forward:",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Asking Directions lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "Turn left",
+        "Go straight on",
+        "Stop here",
+        "Turn back"
+      ]
+    },
+    {
+      "question": "\"It's ___ your right.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Asking Directions lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "at",
+        "on",
+        "in",
+        "to"
+      ]
+    },
+    {
+      "question": "Polite way to check distance:",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Asking Directions lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "\"Is it far from here?\"",
+        "\"Far?\"",
+        "\"Distance now?\"",
+        "\"How far you?\""
+      ]
+    },
+    {
+      "question": "\"Turn left ___ the corner.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Asking Directions lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "at",
+        "on",
+        "in",
+        "to"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-03-lesson-03",
+  "title": "Lesson: Asking Directions",
+  "description": "Practice: Asking Directions.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice: Asking Directions.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Asking Directions",
+      "explanation": "Practice: Asking Directions."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Asking Directions",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "\"How do I ___ to the station?\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2,QuickCheck",
+      "explanation": "See the Asking Directions lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "get",
+        "go on",
+        "arrive",
+        "walk to"
+      ]
+    },
+    {
+      "question": "Instruction to keep walking forward:",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2,QuickCheck",
+      "explanation": "See the Asking Directions lesson.",
+      "correctIndex": 2,
+      "answers": [
+        "Turn left",
+        "Go straight on",
+        "Stop here",
+        "Turn back"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

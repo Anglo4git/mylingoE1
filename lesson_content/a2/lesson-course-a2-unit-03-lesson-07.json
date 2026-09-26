@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-03-lesson-07",
+  "title": "Lesson: Talking About and Expressing Preferences",
+  "description": "Practice: Talking About and Expressing Preferences.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice: Talking About and Expressing Preferences.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Talking About and Expressing Preferences",
+      "explanation": "Practice: Talking About and Expressing Preferences."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Talking About and Expressing Preferences",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "\"I'd ___ stay in tonight.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2,QuickCheck",
+      "explanation": "See the Talking About and Expressing Preferences lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "rather",
+        "more",
+        "prefer to only",
+        "such"
+      ]
+    },
+    {
+      "question": "\"I'm more ___ jazz than pop.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2,QuickCheck",
+      "explanation": "See the Talking About and Expressing Preferences lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "into",
+        "at",
+        "for",
+        "with"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

@@ -1,12 +1,12 @@
 {
   "id": "a2-004",
-  "title": "Future: going to",
+  "title": "Future: going to / will",
   "description": "Practice Future: going to.",
   "brand": "Mylingo",
   "category": "Grammar",
   "tags": "Grammar,A2",
   "level": "A2",
-  "version": 1,
+  "version": 2,
   "questions": [
     {
       "question": "We ___ visit next weekend.",
@@ -71,6 +71,32 @@
         "going",
         "are go",
         "went"
+      ]
+    },
+    {
+      "question": "I think it ___ rain later.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "Use 'will' for a prediction based on opinion, not evidence.",
+      "correctIndex": 1,
+      "answers": [
+        "will",
+        "is going to",
+        "is",
+        "was"
+      ]
+    },
+    {
+      "question": "The phone's ringing — I ___ get it!",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "Use 'will' for a decision made at the moment of speaking.",
+      "correctIndex": 2,
+      "answers": [
+        "'m going to",
+        "'ll",
+        "am",
+        "was"
       ]
     }
   ]

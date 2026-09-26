@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-02-lesson-04",
+  "title": "Lesson: Restaurants and Leisure Venues",
+  "description": "Practice Restaurants and Leisure Venues vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Restaurants and Leisure Venues vocabulary.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Restaurants and Leisure Venues",
+      "explanation": "Practice Restaurants and Leisure Venues vocabulary."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Restaurants and Leisure Venues",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "Before the main course, you might order a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "See the Restaurants and Leisure Venues lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "starter",
+        "bill",
+        "dessert only",
+        "menu only"
+      ]
+    },
+    {
+      "question": "A place with games like darts/bowling is a(n) ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "See the Restaurants and Leisure Venues lesson.",
+      "correctIndex": 2,
+      "answers": [
+        "café",
+        "bowling alley",
+        "cinema",
+        "diner"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

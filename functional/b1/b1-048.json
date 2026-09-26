@@ -1,0 +1,77 @@
+{
+  "id": "b1-048",
+  "title": "Talking about possibility / probability and certainty",
+  "description": "Practice Talking about possibility / probability and certainty.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"There's a good chance ___ rain later.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Express degrees of certainty accurately.",
+      "correctIndex": 1,
+      "answers": [
+        "of it",
+        "it will",
+        "it's",
+        "it"
+      ]
+    },
+    {
+      "question": "\"I'm certain ___ she already knows.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Express degrees of certainty accurately.",
+      "correctIndex": 3,
+      "answers": [
+        "for",
+        "about",
+        "if",
+        "that"
+      ]
+    },
+    {
+      "question": "\"It's likely that...\" expresses...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Express degrees of certainty accurately.",
+      "correctIndex": 1,
+      "answers": [
+        "an order",
+        "probability",
+        "impossibility",
+        "certainty"
+      ]
+    },
+    {
+      "question": "\"It's possible that...\" expresses...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Express degrees of certainty accurately.",
+      "correctIndex": 3,
+      "answers": [
+        "impossibility",
+        "certainty",
+        "obligation",
+        "a chance, not guaranteed"
+      ]
+    },
+    {
+      "question": "Highest certainty phrase:",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Express degrees of certainty accurately.",
+      "correctIndex": 1,
+      "answers": [
+        "There's a small chance",
+        "I'm certain",
+        "It's possible",
+        "It might"
+      ]
+    }
+  ]
+}

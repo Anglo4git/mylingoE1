@@ -1,0 +1,77 @@
+{
+  "id": "a2-104",
+  "title": "So / Such",
+  "description": "Practice So / Such.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "The film was ___ boring.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the So / Such lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "so",
+        "such",
+        "such a",
+        "so a"
+      ]
+    },
+    {
+      "question": "It's ___ beautiful city.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the So / Such lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "so",
+        "such a",
+        "so a",
+        "such"
+      ]
+    },
+    {
+      "question": "She speaks ___ quickly.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the So / Such lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "such",
+        "so",
+        "such a",
+        "too"
+      ]
+    },
+    {
+      "question": "They are ___ good friends.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the So / Such lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "so",
+        "such",
+        "so a",
+        "such a"
+      ]
+    },
+    {
+      "question": "It was ___ hot day.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the So / Such lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "so",
+        "such a",
+        "so a",
+        "such"
+      ]
+    }
+  ]
+}

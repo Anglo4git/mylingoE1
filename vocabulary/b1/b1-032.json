@@ -1,0 +1,77 @@
+{
+  "id": "b1-032",
+  "title": "Illness",
+  "description": "Practice Illness.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"Come down with\" a cold means...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Describe symptoms and give basic health advice.",
+      "correctIndex": 2,
+      "answers": [
+        "cure it",
+        "recover from it",
+        "start to have it",
+        "avoid it"
+      ]
+    },
+    {
+      "question": "A \"symptom\" is...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Describe symptoms and give basic health advice.",
+      "correctIndex": 1,
+      "answers": [
+        "a hospital",
+        "a sign of illness",
+        "a medicine",
+        "a doctor"
+      ]
+    },
+    {
+      "question": "To \"run a temperature\" means...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Describe symptoms and give basic health advice.",
+      "correctIndex": 2,
+      "answers": [
+        "exercise",
+        "feel cold",
+        "have a fever",
+        "feel hungry"
+      ]
+    },
+    {
+      "question": "A \"prescription\" is...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Describe symptoms and give basic health advice.",
+      "correctIndex": 1,
+      "answers": [
+        "a hospital bill",
+        "a doctor's note for medicine",
+        "a type of exercise",
+        "an illness"
+      ]
+    },
+    {
+      "question": "\"Recover\" means to...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Describe symptoms and give basic health advice.",
+      "correctIndex": 0,
+      "answers": [
+        "get better after illness",
+        "visit a doctor",
+        "get worse",
+        "get sick"
+      ]
+    }
+  ]
+}

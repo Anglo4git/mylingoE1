@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-03-lesson-09",
+  "title": "Lesson: Making Predictions",
+  "description": "Practice: Making Predictions.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice: Making Predictions.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Making Predictions",
+      "explanation": "Practice: Making Predictions."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Making Predictions",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "\"I ___ it'll rain later.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2,QuickCheck",
+      "explanation": "See the Making Predictions lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "bet",
+        "betting",
+        "bets",
+        "betted"
+      ]
+    },
+    {
+      "question": "\"I ___ he'll be late again.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2,QuickCheck",
+      "explanation": "See the Making Predictions lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "reckon",
+        "reckoning",
+        "reckons",
+        "reckoned"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

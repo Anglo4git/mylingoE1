@@ -1,0 +1,77 @@
+{
+  "id": "a2-106",
+  "title": "Present Simple Passive",
+  "description": "Practice Present Simple Passive.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "English ___ in many countries.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Present Simple Passive lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "speaks",
+        "is spoken",
+        "speaking",
+        "spoke"
+      ]
+    },
+    {
+      "question": "The letters ___ every morning.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Present Simple Passive lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "delivers",
+        "are delivered",
+        "delivering",
+        "delivered"
+      ]
+    },
+    {
+      "question": "Coffee ___ in Brazil.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Present Simple Passive lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "grows",
+        "is grown",
+        "growing",
+        "grew"
+      ]
+    },
+    {
+      "question": "This form ___ by hand.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Present Simple Passive lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "fills",
+        "is filled",
+        "filling",
+        "filled"
+      ]
+    },
+    {
+      "question": "These cars ___ in Germany.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Present Simple Passive lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "make",
+        "are made",
+        "making",
+        "made"
+      ]
+    }
+  ]
+}

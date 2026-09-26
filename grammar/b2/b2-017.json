@@ -1,0 +1,77 @@
+{
+  "id": "b2-017",
+  "title": "Phrasal verbs — grammar pattern",
+  "description": "Practice Phrasal verbs — grammar pattern.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"She turned ___ the offer.\" (both orders possible)",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Phrasal verbs — grammar pattern lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "down",
+        "off",
+        "up",
+        "over"
+      ]
+    },
+    {
+      "question": "With a pronoun object, separable phrasal verbs require...",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Phrasal verbs — grammar pattern lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "object after the verb only",
+        "object between verb and particle",
+        "either position",
+        "no object"
+      ]
+    },
+    {
+      "question": "\"Who's looking ___ the dog this weekend?\" (inseparable)",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Phrasal verbs — grammar pattern lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "after",
+        "at",
+        "for",
+        "up"
+      ]
+    },
+    {
+      "question": "Which is correct?",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Phrasal verbs — grammar pattern lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "turn off it",
+        "turn it off",
+        "turn it off up",
+        "off turn it"
+      ]
+    },
+    {
+      "question": "\"I'm looking forward ___ the trip.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Phrasal verbs — grammar pattern lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "to",
+        "for",
+        "at",
+        "on"
+      ]
+    }
+  ]
+}

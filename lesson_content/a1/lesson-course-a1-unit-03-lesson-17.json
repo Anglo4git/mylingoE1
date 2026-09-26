@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-a1-unit-03-lesson-17",
+  "title": "Lesson: Expressing Hopes",
+  "description": "Practice Expressing Hopes.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,A1,A1+",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Expressing Hopes.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1+,A1",
+      "media": {},
+      "subprompt": "Expressing Hopes",
+      "explanation": "Practice Expressing Hopes."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Expressing Hopes",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1+,A1"
+    },
+    {
+      "question": "Which phrase expresses a hope?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1+,QuickCheck",
+      "explanation": "I hope introduces something you want to happen.",
+      "correctIndex": 1,
+      "answers": [
+        "I hope you pass.",
+        "I passed yesterday.",
+        "Pass the salt.",
+        "You must pass."
+      ]
+    },
+    {
+      "question": "Complete: I hope ___ see you soon.",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1+,QuickCheck",
+      "explanation": "Hope can be followed by to + verb: I hope to see you.",
+      "correctIndex": 1,
+      "answers": [
+        "to",
+        "for",
+        "at",
+        "on"
+      ]
+    },
+    {
+      "question": "Which response fits 'I hope you have a good trip'?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1+,QuickCheck",
+      "explanation": "I hope so too is a natural response to a shared good wish.",
+      "correctIndex": 1,
+      "answers": [
+        "Thanks! I hope so too.",
+        "Turn left.",
+        "It's twelve.",
+        "No, I don't."
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1+"
+    }
+  ]
+}

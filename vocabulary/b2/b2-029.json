@@ -1,0 +1,77 @@
+{
+  "id": "b2-029",
+  "title": "Affixes",
+  "description": "Practice Affixes.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"Understand\" + prefix meaning \"wrongly\" = ?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Affixes lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "reunderstand",
+        "misunderstand",
+        "disunderstand",
+        "overunderstand"
+      ]
+    },
+    {
+      "question": "\"Act\" → \"capable of acting\" = ?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Affixes lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "actness",
+        "actify",
+        "active",
+        "actation"
+      ]
+    },
+    {
+      "question": "\"Happy\" → noun form = ?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Affixes lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "happiness",
+        "happiful",
+        "happity",
+        "happiate"
+      ]
+    },
+    {
+      "question": "Which prefix means \"again\"?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Affixes lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "mis-",
+        "re-",
+        "dis-",
+        "under-"
+      ]
+    },
+    {
+      "question": "Which suffix typically forms a verb from an adjective?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Affixes lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "-ness",
+        "-tion",
+        "-ify",
+        "-able"
+      ]
+    }
+  ]
+}

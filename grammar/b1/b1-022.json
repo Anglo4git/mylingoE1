@@ -1,0 +1,77 @@
+{
+  "id": "b1-022",
+  "title": "Although / in spite of / despite",
+  "description": "Practice Although / in spite of / despite.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"___ it was raining, we went for a walk.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Show contrast between two ideas using the correct structure for each connector.",
+      "correctIndex": 3,
+      "answers": [
+        "Despite",
+        "Because of",
+        "In spite of",
+        "Although"
+      ]
+    },
+    {
+      "question": "\"___ the rain, we went for a walk.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Show contrast between two ideas using the correct structure for each connector.",
+      "correctIndex": 1,
+      "answers": [
+        "Although",
+        "In spite of",
+        "Though",
+        "Even though"
+      ]
+    },
+    {
+      "question": "\"Despite\" and \"in spite of\" are followed by...",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Show contrast between two ideas using the correct structure for each connector.",
+      "correctIndex": 0,
+      "answers": [
+        "a noun or -ing form",
+        "an adjective only",
+        "nothing",
+        "a full clause"
+      ]
+    },
+    {
+      "question": "\"___ feeling tired, she finished the race.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Show contrast between two ideas using the correct structure for each connector.",
+      "correctIndex": 2,
+      "answers": [
+        "Because",
+        "So",
+        "Despite",
+        "Although"
+      ]
+    },
+    {
+      "question": "\"He passed ___ he hadn't studied much.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Show contrast between two ideas using the correct structure for each connector.",
+      "correctIndex": 2,
+      "answers": [
+        "despite of",
+        "despite",
+        "although",
+        "in spite of"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "b2-013",
+  "title": "Past Simple, Past Continuous, Past Perfect",
+  "description": "Practice Past Simple, Past Continuous, Past Perfect.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"I ___ dinner when the phone rang.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Past Simple, Past Continuous, Past Perfect lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "cooked",
+        "was cooking",
+        "had cooked",
+        "cook"
+      ]
+    },
+    {
+      "question": "\"By the time she arrived, we ___ already eaten.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Past Simple, Past Continuous, Past Perfect lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "have",
+        "had",
+        "were",
+        "has"
+      ]
+    },
+    {
+      "question": "Which tense shows the event furthest back in the past?",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Past Simple, Past Continuous, Past Perfect lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "past simple",
+        "past continuous",
+        "past perfect",
+        "present perfect"
+      ]
+    },
+    {
+      "question": "\"He left early because he ___ too much.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Past Simple, Past Continuous, Past Perfect lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "drank",
+        "was drinking",
+        "had drunk",
+        "drinks"
+      ]
+    },
+    {
+      "question": "Past continuous is typically used for...",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Past Simple, Past Continuous, Past Perfect lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "the main event",
+        "background/interrupted action",
+        "the earliest event",
+        "future plans"
+      ]
+    }
+  ]
+}

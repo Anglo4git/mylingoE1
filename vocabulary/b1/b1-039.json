@@ -1,0 +1,77 @@
+{
+  "id": "b1-039",
+  "title": "Family relationships",
+  "description": "Practice Family relationships.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Your husband's/wife's parents are your ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Talk about extended family and relationship terms beyond A2 basics.",
+      "correctIndex": 1,
+      "answers": [
+        "siblings",
+        "in-laws",
+        "extended family",
+        "step-parents"
+      ]
+    },
+    {
+      "question": "A \"sibling\" is a...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Talk about extended family and relationship terms beyond A2 basics.",
+      "correctIndex": 1,
+      "answers": [
+        "grandparent",
+        "brother or sister",
+        "cousin",
+        "parent"
+      ]
+    },
+    {
+      "question": "A \"single parent\" raises children...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Talk about extended family and relationship terms beyond A2 basics.",
+      "correctIndex": 1,
+      "answers": [
+        "with a partner",
+        "alone, without a partner",
+        "as a stepchild",
+        "with grandparents only"
+      ]
+    },
+    {
+      "question": "\"Extended family\" includes...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Talk about extended family and relationship terms beyond A2 basics.",
+      "correctIndex": 2,
+      "answers": [
+        "only parents and children",
+        "only in-laws",
+        "aunts, uncles, cousins, grandparents, etc.",
+        "only siblings"
+      ]
+    },
+    {
+      "question": "\"Get along with\" someone means...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Talk about extended family and relationship terms beyond A2 basics.",
+      "correctIndex": 3,
+      "answers": [
+        "avoid them",
+        "not know them",
+        "argue often",
+        "have a good relationship"
+      ]
+    }
+  ]
+}

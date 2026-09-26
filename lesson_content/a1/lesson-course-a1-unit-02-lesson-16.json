@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-02-lesson-16",
+  "title": "Lesson: Health, Feelings and Emotions",
+  "description": "Practice Health, Feelings and Emotions.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Health, Feelings and Emotions.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Health, Feelings and Emotions",
+      "explanation": "Practice Health, Feelings and Emotions."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Health, Feelings and Emotions",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "Which word describes a feeling, not a health problem?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1,QuickCheck",
+      "explanation": "'Happy' is a feeling; the others are health problems.",
+      "correctIndex": 3,
+      "answers": [
+        "headache",
+        "cold",
+        "happy",
+        "fever"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

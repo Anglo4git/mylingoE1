@@ -1,0 +1,77 @@
+{
+  "id": "b2-047",
+  "title": "Expressing regret",
+  "description": "Practice Expressing regret.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"I regret ___ for that job.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Expressing regret lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "not applying",
+        "to not apply",
+        "not to apply",
+        "not applied"
+      ]
+    },
+    {
+      "question": "\"I wish I ___ that.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Expressing regret lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "haven't said",
+        "hadn't said",
+        "didn't say",
+        "not said"
+      ]
+    },
+    {
+      "question": "\"If only I ___ earlier.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Expressing regret lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "leave",
+        "left",
+        "had left",
+        "leaving"
+      ]
+    },
+    {
+      "question": "Expressing regret about a past action typically uses...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Expressing regret lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "present simple",
+        "future forms",
+        "past perfect / \"wish + had\"",
+        "present continuous"
+      ]
+    },
+    {
+      "question": "\"I regret to inform you...\" is typically used in...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Expressing regret lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "very casual chat",
+        "formal/bad-news contexts",
+        "congratulating someone",
+        "making an offer"
+      ]
+    }
+  ]
+}

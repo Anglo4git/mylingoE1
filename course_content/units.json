@@ -13,7 +13,28 @@
       "course-a1-unit-01-lesson-06",
       "course-a1-unit-01-lesson-07",
       "course-a1-unit-01-lesson-08",
-      "course-a1-unit-01-lesson-09"
+      "course-a1-unit-01-lesson-09",
+      "course-a1-unit-01-lesson-10",
+      "course-a1-unit-01-lesson-11",
+      "course-a1-unit-01-lesson-12",
+      "course-a1-unit-01-lesson-13",
+      "course-a1-unit-01-lesson-14",
+      "course-a1-unit-01-lesson-15",
+      "course-a1-unit-01-lesson-16",
+      "course-a1-unit-01-lesson-17",
+      "course-a1-unit-01-lesson-18",
+      "course-a1-unit-01-lesson-19",
+      "course-a1-unit-01-lesson-20",
+      "course-a1-unit-01-lesson-21",
+      "course-a1-unit-01-lesson-22",
+      "course-a1-unit-01-lesson-23",
+      "course-a1-unit-01-lesson-24",
+      "course-a1-unit-01-lesson-25",
+      "course-a1-unit-01-lesson-26",
+      "course-a1-unit-01-lesson-27",
+      "course-a1-unit-01-lesson-28",
+      "course-a1-unit-01-lesson-29",
+      "course-a1-unit-01-lesson-30"
     ]
   },
   {
@@ -22,7 +43,31 @@
     "title": "Vocabulary",
     "order": 2,
     "lesson_ids": [
-      "course-a1-unit-02-lesson-01"
+      "course-a1-unit-02-lesson-01",
+      "course-a1-unit-02-lesson-02",
+      "course-a1-unit-02-lesson-03",
+      "course-a1-unit-02-lesson-04",
+      "course-a1-unit-02-lesson-05",
+      "course-a1-unit-02-lesson-06",
+      "course-a1-unit-02-lesson-07",
+      "course-a1-unit-02-lesson-08",
+      "course-a1-unit-02-lesson-09",
+      "course-a1-unit-02-lesson-10",
+      "course-a1-unit-02-lesson-11",
+      "course-a1-unit-02-lesson-12",
+      "course-a1-unit-02-lesson-13",
+      "course-a1-unit-02-lesson-14",
+      "course-a1-unit-02-lesson-15",
+      "course-a1-unit-02-lesson-16",
+      "course-a1-unit-02-lesson-17",
+      "course-a1-unit-02-lesson-18",
+      "course-a1-unit-02-lesson-19",
+      "course-a1-unit-02-lesson-20",
+      "course-a1-unit-02-lesson-21",
+      "course-a1-unit-02-lesson-22",
+      "course-a1-unit-02-lesson-23",
+      "course-a1-unit-02-lesson-24",
+      "course-a1-unit-02-lesson-25"
     ]
   },
   {
@@ -39,7 +84,20 @@
       "course-a2-unit-01-lesson-06",
       "course-a2-unit-01-lesson-07",
       "course-a2-unit-01-lesson-08",
-      "course-a2-unit-01-lesson-09"
+      "course-a2-unit-01-lesson-09",
+      "course-a2-unit-01-lesson-10",
+      "course-a2-unit-01-lesson-11",
+      "course-a2-unit-01-lesson-12",
+      "course-a2-unit-01-lesson-13",
+      "course-a2-unit-01-lesson-14",
+      "course-a2-unit-01-lesson-15",
+      "course-a2-unit-01-lesson-16",
+      "course-a2-unit-01-lesson-17",
+      "course-a2-unit-01-lesson-18",
+      "course-a2-unit-01-lesson-19",
+      "course-a2-unit-01-lesson-20",
+      "course-a2-unit-01-lesson-21",
+      "course-a2-unit-01-lesson-22"
     ]
   },
   {
@@ -49,7 +107,25 @@
     "order": 2,
     "lesson_ids": [
       "course-a2-unit-02-lesson-01",
-      "course-a2-unit-02-lesson-02"
+      "course-a2-unit-02-lesson-02",
+      "course-a2-unit-02-lesson-03",
+      "course-a2-unit-02-lesson-04",
+      "course-a2-unit-02-lesson-05",
+      "course-a2-unit-02-lesson-06",
+      "course-a2-unit-02-lesson-07",
+      "course-a2-unit-02-lesson-08",
+      "course-a2-unit-02-lesson-09",
+      "course-a2-unit-02-lesson-10",
+      "course-a2-unit-02-lesson-11",
+      "course-a2-unit-02-lesson-12",
+      "course-a2-unit-02-lesson-13",
+      "course-a2-unit-02-lesson-14",
+      "course-a2-unit-02-lesson-15",
+      "course-a2-unit-02-lesson-16",
+      "course-a2-unit-02-lesson-17",
+      "course-a2-unit-02-lesson-18",
+      "course-a2-unit-02-lesson-19",
+      "course-a2-unit-02-lesson-20"
     ]
   },
   {
@@ -211,6 +287,55 @@
     "order": 4,
     "lesson_ids": [
       "course-c2-unit-04-lesson-01"
+    ]
+  },
+  {
+    "unit_id": "course-a1-unit-03",
+    "course_id": "course-a1",
+    "title": "Functional Language",
+    "order": 3,
+    "lesson_ids": [
+      "course-a1-unit-03-lesson-01",
+      "course-a1-unit-03-lesson-02",
+      "course-a1-unit-03-lesson-03",
+      "course-a1-unit-03-lesson-04",
+      "course-a1-unit-03-lesson-05",
+      "course-a1-unit-03-lesson-06",
+      "course-a1-unit-03-lesson-07",
+      "course-a1-unit-03-lesson-08",
+      "course-a1-unit-03-lesson-09",
+      "course-a1-unit-03-lesson-10",
+      "course-a1-unit-03-lesson-11",
+      "course-a1-unit-03-lesson-12",
+      "course-a1-unit-03-lesson-13",
+      "course-a1-unit-03-lesson-14",
+      "course-a1-unit-03-lesson-15",
+      "course-a1-unit-03-lesson-16",
+      "course-a1-unit-03-lesson-17",
+      "course-a1-unit-03-lesson-18",
+      "course-a1-unit-03-lesson-19",
+      "course-a1-unit-03-lesson-20",
+      "course-a1-unit-03-lesson-21"
+    ]
+  },
+  {
+    "unit_id": "course-a2-unit-03",
+    "course_id": "course-a2",
+    "title": "Functional Language",
+    "order": 3,
+    "lesson_ids": [
+      "course-a2-unit-03-lesson-01",
+      "course-a2-unit-03-lesson-02",
+      "course-a2-unit-03-lesson-03",
+      "course-a2-unit-03-lesson-04",
+      "course-a2-unit-03-lesson-05",
+      "course-a2-unit-03-lesson-06",
+      "course-a2-unit-03-lesson-07",
+      "course-a2-unit-03-lesson-08",
+      "course-a2-unit-03-lesson-09",
+      "course-a2-unit-03-lesson-10",
+      "course-a2-unit-03-lesson-11",
+      "course-a2-unit-03-lesson-12"
     ]
   }
 ]

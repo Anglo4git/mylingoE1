@@ -1,0 +1,77 @@
+{
+  "id": "b1-045",
+  "title": "Advising",
+  "description": "Practice Advising.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"___ I were you, I'd talk to your manager.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Give advice politely and directly.",
+      "correctIndex": 3,
+      "answers": [
+        "Unless",
+        "When",
+        "Because",
+        "If"
+      ]
+    },
+    {
+      "question": "\"You should really ___ that.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Give advice politely and directly.",
+      "correctIndex": 0,
+      "answers": [
+        "do",
+        "doing",
+        "does",
+        "to do"
+      ]
+    },
+    {
+      "question": "\"Why don't you ___ earlier next time?\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Give advice politely and directly.",
+      "correctIndex": 1,
+      "answers": [
+        "to book",
+        "book",
+        "booked",
+        "booking"
+      ]
+    },
+    {
+      "question": "\"It might be worth ___ them first.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Give advice politely and directly.",
+      "correctIndex": 1,
+      "answers": [
+        "called",
+        "calling",
+        "call",
+        "to call"
+      ]
+    },
+    {
+      "question": "Which is advice, not obligation?",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Give advice politely and directly.",
+      "correctIndex": 2,
+      "answers": [
+        "You have to go.",
+        "You must go.",
+        "You should go.",
+        "It's compulsory to go."
+      ]
+    }
+  ]
+}

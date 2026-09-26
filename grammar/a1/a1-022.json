@@ -1,0 +1,77 @@
+{
+  "id": "a1-022",
+  "title": "Present Continuous",
+  "description": "Practice Present Continuous.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Right now: She ___ a book.",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "Use am/is/are + -ing for now.",
+      "correctIndex": 2,
+      "answers": [
+        "reads",
+        "is reading",
+        "read",
+        "reading"
+      ]
+    },
+    {
+      "question": "I usually ___ to work. (routine)",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "Routines use the present simple.",
+      "correctIndex": 1,
+      "answers": [
+        "walk",
+        "am walking",
+        "walks",
+        "walking"
+      ]
+    },
+    {
+      "question": "Look! It ___ !",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "An action happening now uses the present continuous.",
+      "correctIndex": 2,
+      "answers": [
+        "rains",
+        "is raining",
+        "rained",
+        "raining"
+      ]
+    },
+    {
+      "question": "\"He is not sleeping\" — is this action happening now or as a routine?",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "The present continuous describes now.",
+      "correctIndex": 1,
+      "answers": [
+        "now",
+        "routine",
+        "past",
+        "future"
+      ]
+    },
+    {
+      "question": "Ask what someone is doing right now.",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "Use the present continuous for actions happening now.",
+      "correctIndex": 2,
+      "answers": [
+        "What do you do?",
+        "What are you doing?",
+        "What you doing?",
+        "What did you do?"
+      ]
+    }
+  ]
+}

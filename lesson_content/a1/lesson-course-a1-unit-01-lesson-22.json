@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-a1-unit-01-lesson-22",
+  "title": "Lesson: Countable and Uncountable Nouns",
+  "description": "Practice Countable and uncountable nouns.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A1,A1+",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Countable and uncountable nouns.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1+,A1",
+      "media": {},
+      "subprompt": "Countable and uncountable nouns",
+      "explanation": "Practice Countable and uncountable nouns."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Countable and uncountable nouns",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1+,A1"
+    },
+    {
+      "question": "Which noun is countable?",
+      "category": "Grammar",
+      "tags": "Grammar,A1+,QuickCheck",
+      "explanation": "An apple is one countable item; you can say one apple or two apples.",
+      "correctIndex": 1,
+      "answers": [
+        "apple",
+        "rice",
+        "water",
+        "milk"
+      ]
+    },
+    {
+      "question": "Which sentence is correct?",
+      "category": "Grammar",
+      "tags": "Grammar,A1+,QuickCheck",
+      "explanation": "Water is normally uncountable, so use some water.",
+      "correctIndex": 1,
+      "answers": [
+        "I need some water.",
+        "I need two waters.",
+        "I need a water.",
+        "I need waters."
+      ]
+    },
+    {
+      "question": "Choose the correct phrase.",
+      "category": "Grammar",
+      "tags": "Grammar,A1+,QuickCheck",
+      "explanation": "Use a countable container such as bottles with an uncountable substance.",
+      "correctIndex": 1,
+      "answers": [
+        "three bottles of water",
+        "three waters",
+        "three water",
+        "three bottle water"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1+"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-a1-unit-02-lesson-22",
+  "title": "Lesson: Travel and Booking",
+  "description": "Practice Travel and Booking.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A1,A1+",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Travel and Booking.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1+,A1",
+      "media": {},
+      "subprompt": "Travel and Booking",
+      "explanation": "Practice Travel and Booking."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Travel and Booking",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1+,A1"
+    },
+    {
+      "question": "Where do you usually check in before a flight?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1+,QuickCheck",
+      "explanation": "You check in for a flight at the airport.",
+      "correctIndex": 1,
+      "answers": [
+        "at the airport",
+        "at the pharmacy",
+        "at the library",
+        "at the cinema"
+      ]
+    },
+    {
+      "question": "What do you need to book a hotel room?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1+,QuickCheck",
+      "explanation": "A reservation is an arrangement to keep a room for you.",
+      "correctIndex": 1,
+      "answers": [
+        "a reservation",
+        "a recipe",
+        "a receipt only",
+        "a timetable"
+      ]
+    },
+    {
+      "question": "Which phrase is useful when booking a room?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1+,QuickCheck",
+      "explanation": "Book a room means arrange to stay in one.",
+      "correctIndex": 1,
+      "answers": [
+        "I'd like to book a room.",
+        "I'd like to drive a room.",
+        "I'd like to cook a room.",
+        "I'd like to wear a room."
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1+"
+    }
+  ]
+}

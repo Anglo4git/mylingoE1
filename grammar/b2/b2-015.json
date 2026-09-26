@@ -1,0 +1,77 @@
+{
+  "id": "b2-015",
+  "title": "Future forms",
+  "description": "Practice Future forms.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"Look at those clouds — it's ___ rain.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Future forms lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "will",
+        "going to",
+        "go to",
+        "will to"
+      ]
+    },
+    {
+      "question": "\"I'll get that, don't worry.\" — this is a...",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Future forms lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "fixed plan",
+        "spontaneous decision",
+        "timetable",
+        "prediction with evidence"
+      ]
+    },
+    {
+      "question": "\"The train ___ at 9:15.\" (timetable)",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Future forms lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "will leave",
+        "is leaving",
+        "leaves",
+        "is going to leave"
+      ]
+    },
+    {
+      "question": "\"I'm meeting Sara at six.\" — this is a...",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Future forms lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "spontaneous decision",
+        "fixed arrangement",
+        "timetable",
+        "prediction"
+      ]
+    },
+    {
+      "question": "Prediction based on present evidence uses...",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Future forms lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "will",
+        "going to",
+        "present simple",
+        "present perfect"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "b2-023",
+  "title": "Relative clauses",
+  "description": "Practice Relative clauses.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"The woman ___ lives next door is a doctor.\" (defining)",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Relative clauses lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "which",
+        "who",
+        "whose",
+        "where"
+      ]
+    },
+    {
+      "question": "\"Paris, ___ I visited last year, was beautiful.\" (non-defining)",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Relative clauses lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "that",
+        "which",
+        "who",
+        "where"
+      ]
+    },
+    {
+      "question": "Non-defining relative clauses require...",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Relative clauses lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "no punctuation",
+        "commas, and never \"that\"",
+        "brackets always",
+        "a colon"
+      ]
+    },
+    {
+      "question": "\"The man standing by the door is my brother.\" — this is a...",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Relative clauses lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "defining clause with pronoun",
+        "reduced relative clause",
+        "non-defining clause",
+        "not a relative clause"
+      ]
+    },
+    {
+      "question": "Defining relative clauses give...",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Relative clauses lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "extra, non-essential info",
+        "essential info to identify the noun",
+        "no information",
+        "only time information"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "b1-028",
+  "title": "Character",
+  "description": "Practice Character.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "A \"reliable\" person is someone who is...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Describe personality traits with precise vocabulary.",
+      "correctIndex": 0,
+      "answers": [
+        "dependable",
+        "funny",
+        "untrustworthy",
+        "shy"
+      ]
+    },
+    {
+      "question": "\"Stubborn\" describes someone who is...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Describe personality traits with precise vocabulary.",
+      "correctIndex": 0,
+      "answers": [
+        "unwilling to change their mind",
+        "flexible",
+        "generous",
+        "outgoing"
+      ]
+    },
+    {
+      "question": "\"Easy-going\" means...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Describe personality traits with precise vocabulary.",
+      "correctIndex": 3,
+      "answers": [
+        "strict",
+        "ambitious",
+        "nervous",
+        "relaxed and calm"
+      ]
+    },
+    {
+      "question": "\"Reserved\" is the opposite of...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Describe personality traits with precise vocabulary.",
+      "correctIndex": 3,
+      "answers": [
+        "ambitious",
+        "sensitive",
+        "generous",
+        "outgoing"
+      ]
+    },
+    {
+      "question": "An \"ambitious\" person...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Describe personality traits with precise vocabulary.",
+      "correctIndex": 3,
+      "answers": [
+        "is always late",
+        "avoids work",
+        "dislikes people",
+        "has strong goals to succeed"
+      ]
+    }
+  ]
+}

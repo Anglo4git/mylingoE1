@@ -1,0 +1,77 @@
+{
+  "id": "a2-110",
+  "title": "Be Able To / Good At",
+  "description": "Practice Be Able To / Good At.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "I ___ finish on time.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Be Able To / Good At lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "wasn't able to",
+        "didn't able to",
+        "not able",
+        "wasn't ability"
+      ]
+    },
+    {
+      "question": "She's very good ___ cooking.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Be Able To / Good At lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "in",
+        "at",
+        "on",
+        "for"
+      ]
+    },
+    {
+      "question": "___ you be able to come tomorrow?",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Be Able To / Good At lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Will",
+        "Do",
+        "Are",
+        "Have"
+      ]
+    },
+    {
+      "question": "He's good ___ explaining things clearly.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Be Able To / Good At lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "at",
+        "in",
+        "on",
+        "for"
+      ]
+    },
+    {
+      "question": "They ___ able to solve the problem.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Be Able To / Good At lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "was",
+        "were",
+        "is",
+        "be"
+      ]
+    }
+  ]
+}

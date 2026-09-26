@@ -1,0 +1,77 @@
+{
+  "id": "a1-034",
+  "title": "The Home: Rooms and Furniture",
+  "description": "Practice Rooms and Furniture.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Where do you cook food?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Food is cooked in the kitchen.",
+      "correctIndex": 2,
+      "answers": [
+        "bathroom",
+        "kitchen",
+        "bedroom",
+        "living room"
+      ]
+    },
+    {
+      "question": "There ___ a sofa in the living room.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Use 'is' for a singular noun after 'there'.",
+      "correctIndex": 1,
+      "answers": [
+        "is",
+        "are",
+        "be",
+        "am"
+      ]
+    },
+    {
+      "question": "There ___ two beds in this room.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Use 'are' for a plural noun after 'there'.",
+      "correctIndex": 2,
+      "answers": [
+        "is",
+        "are",
+        "be",
+        "was"
+      ]
+    },
+    {
+      "question": "Which item is furniture, not a room?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "A wardrobe is furniture; the others are rooms.",
+      "correctIndex": 2,
+      "answers": [
+        "kitchen",
+        "wardrobe",
+        "bathroom",
+        "bedroom"
+      ]
+    },
+    {
+      "question": "\"There isn't a table in the bedroom, only a bed and a wardrobe.\" What furniture IS in the bedroom?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "The text names a bed and a wardrobe.",
+      "correctIndex": 2,
+      "answers": [
+        "a table",
+        "a bed and a wardrobe",
+        "a sofa",
+        "nothing"
+      ]
+    }
+  ]
+}

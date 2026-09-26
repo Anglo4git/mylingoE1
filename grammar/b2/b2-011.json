@@ -1,0 +1,77 @@
+{
+  "id": "b2-011",
+  "title": "Habit in the Present and the Past",
+  "description": "Practice Habit in the Present and the Past.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"He ___ climb that tree every afternoon as a kid.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Habit in the Present and the Past lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "would",
+        "will",
+        "is",
+        "used to"
+      ]
+    },
+    {
+      "question": "Which is correct for a past STATE (not repeated action)?",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Habit in the Present and the Past lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "He would live there.",
+        "He used to live there.",
+        "He would living there.",
+        "He use to live there."
+      ]
+    },
+    {
+      "question": "\"She ___ checking her phone constantly.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Habit in the Present and the Past lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "has a habit of",
+        "has a habit to",
+        "have habit of",
+        "is habit of"
+      ]
+    },
+    {
+      "question": "Present habit, neutral fact: \"They ___ eat out on Fridays.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Habit in the Present and the Past lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "tend to",
+        "tended to",
+        "would",
+        "used to"
+      ]
+    },
+    {
+      "question": "\"Used to\" is used for...",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Habit in the Present and the Past lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "present habits only",
+        "past habits/states that are now different",
+        "future plans",
+        "single completed actions"
+      ]
+    }
+  ]
+}

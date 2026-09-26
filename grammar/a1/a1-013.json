@@ -1,0 +1,77 @@
+{
+  "id": "a1-013",
+  "title": "Pronouns",
+  "description": "Practice Pronouns.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "___ love coffee.",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "Use the subject pronoun before the verb.",
+      "correctIndex": 1,
+      "answers": [
+        "I",
+        "Me",
+        "Him",
+        "Them"
+      ]
+    },
+    {
+      "question": "Can you help ___?",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "Use the object pronoun after the verb.",
+      "correctIndex": 2,
+      "answers": [
+        "I",
+        "me",
+        "he",
+        "they"
+      ]
+    },
+    {
+      "question": "She sees ___ every day.",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "Use the object pronoun after the verb.",
+      "correctIndex": 2,
+      "answers": [
+        "they",
+        "them",
+        "it",
+        "he"
+      ]
+    },
+    {
+      "question": "In \"He gives it to me,\" what receives the giving?",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "\"It\" is the object being given.",
+      "correctIndex": 2,
+      "answers": [
+        "He",
+        "it",
+        "me",
+        "gives"
+      ]
+    },
+    {
+      "question": "Which sentence is correct?",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "Use subject pronoun 'she' and object pronoun 'him'.",
+      "correctIndex": 1,
+      "answers": [
+        "She called him yesterday.",
+        "She called he yesterday.",
+        "Her called him yesterday.",
+        "She call him yesterday."
+      ]
+    }
+  ]
+}

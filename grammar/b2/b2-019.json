@@ -1,0 +1,77 @@
+{
+  "id": "b2-019",
+  "title": "Wish and if only",
+  "description": "Practice Wish and if only.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"I wish I ___ closer to my family.\" (present)",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Wish and if only lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "live",
+        "lived",
+        "had lived",
+        "will live"
+      ]
+    },
+    {
+      "question": "\"If only I ___ studied medicine.\" (past regret)",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Wish and if only lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "have",
+        "had",
+        "did",
+        "would"
+      ]
+    },
+    {
+      "question": "\"I wish you ___ stop interrupting me.\" (frustration)",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Wish and if only lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "will",
+        "would",
+        "wish",
+        "do"
+      ]
+    },
+    {
+      "question": "\"I wish I ___ would stop interrupting me.\" Correct or incorrect?",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Wish and if only lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "correct",
+        "incorrect — the subject and \"would\" can't match",
+        "incorrect — should be \"wished\"",
+        "incorrect — needs \"wishes\""
+      ]
+    },
+    {
+      "question": "\"Wish + past perfect\" expresses regret about...",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Wish and if only lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "the present",
+        "the future",
+        "the past",
+        "habits"
+      ]
+    }
+  ]
+}

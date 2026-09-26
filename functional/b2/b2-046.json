@@ -1,0 +1,77 @@
+{
+  "id": "b2-046",
+  "title": "Summarising",
+  "description": "Practice Summarising.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"___, the project is behind schedule.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Summarising lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "To sum up",
+        "For instance",
+        "Then again",
+        "What's more"
+      ]
+    },
+    {
+      "question": "\"So ___, we need more time.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Summarising lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "basically",
+        "instance",
+        "contrast",
+        "purpose"
+      ]
+    },
+    {
+      "question": "Which phrase signals a summary?",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Summarising lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "On the other hand",
+        "The main point is",
+        "Take, for example",
+        "Congratulations on"
+      ]
+    },
+    {
+      "question": "Summarising means...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Summarising lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "adding new information",
+        "giving the essential point concisely",
+        "contrasting two ideas",
+        "asking a question"
+      ]
+    },
+    {
+      "question": "\"In short...\" is used to...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Summarising lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "start a long explanation",
+        "give a brief conclusion",
+        "express regret",
+        "make an offer"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "a2-309",
+  "title": "Making Predictions",
+  "description": "Practice: Making Predictions.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"I ___ it'll rain later.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Making Predictions lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "bet",
+        "betting",
+        "bets",
+        "betted"
+      ]
+    },
+    {
+      "question": "\"I ___ he'll be late again.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Making Predictions lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "reckon",
+        "reckoning",
+        "reckons",
+        "reckoned"
+      ]
+    },
+    {
+      "question": "\"It's ___ to snow this weekend.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Making Predictions lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "likely",
+        "likes",
+        "like",
+        "liking"
+      ]
+    },
+    {
+      "question": "\"I ___ it'll work out fine.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Making Predictions lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "doubt",
+        "doubts",
+        "doubting",
+        "doubted"
+      ]
+    },
+    {
+      "question": "Most confident prediction:",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Making Predictions lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "\"It's likely to happen.\"",
+        "\"It might maybe happen.\"",
+        "\"Perhaps possibly.\"",
+        "\"I'm not sure.\""
+      ]
+    }
+  ]
+}

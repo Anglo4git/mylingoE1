@@ -1,12 +1,12 @@
 {
   "id": "lesson-course-a2-unit-01-lesson-01",
-  "title": "Lesson: Comparative Adjectives",
+  "title": "Lesson: Comparative and Superlative Adjectives",
   "description": "Practice Comparative Adjectives.",
   "brand": "Mylingo",
   "category": "Grammar",
   "tags": "Lesson,A2",
   "level": "A2",
-  "version": 1,
+  "version": 2,
   "questions": [
     {
       "question": "Practice Comparative Adjectives.",
@@ -35,6 +35,19 @@
         "fastest",
         "more fast",
         "faster"
+      ]
+    },
+    {
+      "question": "Everest is ___ mountain in the world.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "Use 'the' + superlative (-est) to compare three or more things.",
+      "correctIndex": 1,
+      "answers": [
+        "the highest",
+        "higher",
+        "high",
+        "more high"
       ]
     },
     {

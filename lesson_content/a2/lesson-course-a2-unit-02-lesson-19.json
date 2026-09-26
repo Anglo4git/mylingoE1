@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-02-lesson-19",
+  "title": "Lesson: Types of Music and Concerts",
+  "description": "Practice Types of Music and Concerts vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Types of Music and Concerts vocabulary.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Types of Music and Concerts",
+      "explanation": "Practice Types of Music and Concerts vocabulary."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Types of Music and Concerts",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "A style/category of music is a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "See the Types of Music and Concerts lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "genre",
+        "gig",
+        "setlist",
+        "encore"
+      ]
+    },
+    {
+      "question": "An informal word for a live music performance is a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "See the Types of Music and Concerts lesson.",
+      "correctIndex": 2,
+      "answers": [
+        "genre",
+        "gig",
+        "venue",
+        "audience"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

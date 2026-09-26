@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-02-lesson-14",
+  "title": "Lesson: Food, Meals and Cooking",
+  "description": "Practice Food, Meals and Cooking.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Food, Meals and Cooking.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Food, Meals and Cooking",
+      "explanation": "Practice Food, Meals and Cooking."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Food, Meals and Cooking",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "Which meal do people usually eat in the evening?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1,QuickCheck",
+      "explanation": "Dinner is the evening meal.",
+      "correctIndex": 3,
+      "answers": [
+        "breakfast",
+        "lunch",
+        "dinner",
+        "snack"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

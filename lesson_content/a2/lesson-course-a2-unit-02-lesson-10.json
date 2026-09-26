@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-02-lesson-10",
+  "title": "Lesson: Large Numbers",
+  "description": "Practice Large Numbers vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Large Numbers vocabulary.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Large Numbers",
+      "explanation": "Practice Large Numbers vocabulary."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Large Numbers",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "1,000,000 is written in words as one ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "See the Large Numbers lesson.",
+      "correctIndex": 2,
+      "answers": [
+        "thousand",
+        "million",
+        "hundred",
+        "billion"
+      ]
+    },
+    {
+      "question": "\"___ of people\" means a large, unspecified number.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "See the Large Numbers lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "Dozens",
+        "A couple",
+        "Roughly",
+        "Approximately"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "b1-015",
+  "title": "Present Perfect Continuous",
+  "description": "Practice Present Perfect Continuous.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"I've ___ learning English for two years.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Talk about actions that started in the past and are still continuing, or have recently stopped with visible results.",
+      "correctIndex": 0,
+      "answers": [
+        "been",
+        "was",
+        "is",
+        "be"
+      ]
+    },
+    {
+      "question": "\"She's been working all day — she's ___.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Talk about actions that started in the past and are still continuing, or have recently stopped with visible results.",
+      "correctIndex": 0,
+      "answers": [
+        "exhausted",
+        "to exhaust",
+        "exhausting",
+        "exhaust"
+      ]
+    },
+    {
+      "question": "Structure is: have/has + ___ + verb-ing.",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Talk about actions that started in the past and are still continuing, or have recently stopped with visible results.",
+      "correctIndex": 3,
+      "answers": [
+        "be",
+        "was",
+        "being",
+        "been"
+      ]
+    },
+    {
+      "question": "\"How long ___ you been waiting?\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Talk about actions that started in the past and are still continuing, or have recently stopped with visible results.",
+      "correctIndex": 3,
+      "answers": [
+        "are",
+        "did",
+        "do",
+        "have"
+      ]
+    },
+    {
+      "question": "Present Perfect Continuous emphasises...",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Talk about actions that started in the past and are still continuing, or have recently stopped with visible results.",
+      "correctIndex": 2,
+      "answers": [
+        "future plans",
+        "a single finished event",
+        "duration/ongoing process",
+        "hypothetical situations"
+      ]
+    }
+  ]
+}

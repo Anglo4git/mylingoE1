@@ -1,0 +1,77 @@
+{
+  "id": "b1-021",
+  "title": "A few and a little",
+  "description": "Practice A few and a little.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"I have ___ friends in this city.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Quantify countable nouns (a few) and uncountable nouns (a little) correctly.",
+      "correctIndex": 1,
+      "answers": [
+        "little",
+        "a few",
+        "few",
+        "a little"
+      ]
+    },
+    {
+      "question": "\"Could I have ___ sugar?\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Quantify countable nouns (a few) and uncountable nouns (a little) correctly.",
+      "correctIndex": 0,
+      "answers": [
+        "a little",
+        "many",
+        "few",
+        "a few"
+      ]
+    },
+    {
+      "question": "\"A few\" is used with...",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Quantify countable nouns (a few) and uncountable nouns (a little) correctly.",
+      "correctIndex": 3,
+      "answers": [
+        "uncountable nouns",
+        "verbs",
+        "singular nouns",
+        "plural countable nouns"
+      ]
+    },
+    {
+      "question": "\"There's ___ time left — let's hurry.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Quantify countable nouns (a few) and uncountable nouns (a little) correctly.",
+      "correctIndex": 3,
+      "answers": [
+        "a few",
+        "few",
+        "many",
+        "a little"
+      ]
+    },
+    {
+      "question": "Without \"a\", \"few/little\" often sound...",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Quantify countable nouns (a few) and uncountable nouns (a little) correctly.",
+      "correctIndex": 3,
+      "answers": [
+        "grammatically wrong",
+        "more positive",
+        "identical in meaning",
+        "negative/not enough"
+      ]
+    }
+  ]
+}

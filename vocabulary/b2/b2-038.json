@@ -1,0 +1,77 @@
+{
+  "id": "b2-038",
+  "title": "Homonyms",
+  "description": "Practice Homonyms.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"I can't ___ to watch, my hands are ___.\" (homophones)",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Homonyms lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "bear / bare",
+        "bare / bear",
+        "beer / bare",
+        "bear / beer"
+      ]
+    },
+    {
+      "question": "\"Please ___ the way.\" (guide) vs \"The pipe is made of ___.\" (metal) — same spelling, different meaning:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Homonyms lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "lead / lead",
+        "led / lead",
+        "lead / led",
+        "led / led"
+      ]
+    },
+    {
+      "question": "Homophones are words that...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Homonyms lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "are spelled the same, mean different things",
+        "sound the same, may be spelled differently",
+        "are always synonyms",
+        "never appear in speech"
+      ]
+    },
+    {
+      "question": "\"Tear\" (rip) and \"tear\" (from crying) are an example of a...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Homonyms lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "homophone",
+        "homograph",
+        "synonym",
+        "antonym"
+      ]
+    },
+    {
+      "question": "Homographs are words that...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Homonyms lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "sound different but are spelled the same",
+        "sound the same but are spelled differently",
+        "mean exactly the same thing",
+        "are always plural"
+      ]
+    }
+  ]
+}

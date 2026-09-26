@@ -1,0 +1,77 @@
+{
+  "id": "a2-215",
+  "title": "Animals",
+  "description": "Practice Animals vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "An animal that feeds its young with milk is a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Animals lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "reptile",
+        "mammal",
+        "amphibian",
+        "insect"
+      ]
+    },
+    {
+      "question": "Animals living in the wild, not kept as pets, are ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Animals lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "wildlife",
+        "livestock",
+        "pets",
+        "mammals"
+      ]
+    },
+    {
+      "question": "A species at risk of disappearing is ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Animals lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "domestic",
+        "endangered",
+        "wild",
+        "common"
+      ]
+    },
+    {
+      "question": "The natural environment where an animal lives is its ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Animals lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "habitat",
+        "species",
+        "breed",
+        "colony"
+      ]
+    },
+    {
+      "question": "A group of animals of the same kind is a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Animals lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "habitat",
+        "species",
+        "colony",
+        "family only"
+      ]
+    }
+  ]
+}

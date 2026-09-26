@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-a1-unit-02-lesson-19",
+  "title": "Lesson: Personality",
+  "description": "Practice Personality.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A1,A1+",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Personality.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1+,A1",
+      "media": {},
+      "subprompt": "Personality",
+      "explanation": "Practice Personality."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Personality",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1+,A1"
+    },
+    {
+      "question": "A person who likes meeting people is ___ .",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1+,QuickCheck",
+      "explanation": "Sociable describes someone who enjoys being with others.",
+      "correctIndex": 1,
+      "answers": [
+        "sociable",
+        "lazy",
+        "rude",
+        "quiet"
+      ]
+    },
+    {
+      "question": "Someone who always tells the truth is ___ .",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1+,QuickCheck",
+      "explanation": "Honest means truthful.",
+      "correctIndex": 1,
+      "answers": [
+        "honest",
+        "selfish",
+        "noisy",
+        "impatient"
+      ]
+    },
+    {
+      "question": "Someone who gets angry easily may be ___ .",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1+,QuickCheck",
+      "explanation": "Impatient can describe someone who becomes annoyed when waiting.",
+      "correctIndex": 1,
+      "answers": [
+        "impatient",
+        "generous",
+        "friendly",
+        "careful"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1+"
+    }
+  ]
+}

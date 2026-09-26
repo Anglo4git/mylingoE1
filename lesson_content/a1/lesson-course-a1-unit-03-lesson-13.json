@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-03-lesson-13",
+  "title": "Lesson: Applying for a Job",
+  "description": "Practice Applying for a Job.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Applying for a Job.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Applying for a Job",
+      "explanation": "Practice Applying for a Job."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Applying for a Job",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "Complete: \"I ___ (have) two years of experience.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1,QuickCheck",
+      "explanation": "Use 'have' with I.",
+      "correctIndex": 1,
+      "answers": [
+        "have",
+        "has",
+        "having",
+        "haves"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "a1-038",
+  "title": "Transport",
+  "description": "Practice Transport.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "I go to work ___ bus.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Use 'by' with most types of transport.",
+      "correctIndex": 2,
+      "answers": [
+        "on",
+        "by",
+        "in",
+        "at"
+      ]
+    },
+    {
+      "question": "We walked there ___ foot.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "'On foot' is the fixed expression for walking.",
+      "correctIndex": 2,
+      "answers": [
+        "by",
+        "on",
+        "in",
+        "at"
+      ]
+    },
+    {
+      "question": "Which is NOT a type of transport?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "'Kitchen' is a room, not transport.",
+      "correctIndex": 3,
+      "answers": [
+        "bus",
+        "bike",
+        "kitchen",
+        "train"
+      ]
+    },
+    {
+      "question": "\"She flew to Spain by plane.\" How did she travel?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "The text says 'by plane'.",
+      "correctIndex": 2,
+      "answers": [
+        "by car",
+        "by plane",
+        "by train",
+        "on foot"
+      ]
+    },
+    {
+      "question": "Ask how someone gets to work.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "'How do you get to work?' is the correct question form.",
+      "correctIndex": 2,
+      "answers": [
+        "How you get to work?",
+        "How do you get to work?",
+        "How get you to work?",
+        "You get how to work?"
+      ]
+    }
+  ]
+}

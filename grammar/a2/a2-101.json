@@ -1,0 +1,77 @@
+{
+  "id": "a2-101",
+  "title": "Present Simple",
+  "description": "Practice Present Simple.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "She ___ in a hospital.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Present Simple lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "work",
+        "works",
+        "working",
+        "worked"
+      ]
+    },
+    {
+      "question": "We ___ eat meat.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Present Simple lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "don't",
+        "doesn't",
+        "not",
+        "isn't"
+      ]
+    },
+    {
+      "question": "___ he live near here?",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Present Simple lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "Do",
+        "Does",
+        "Is",
+        "Has"
+      ]
+    },
+    {
+      "question": "The shop ___ at nine.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Present Simple lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "open",
+        "opens",
+        "opening",
+        "is open"
+      ]
+    },
+    {
+      "question": "They ___ speak French.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Present Simple lesson for the rule.",
+      "correctIndex": 3,
+      "answers": [
+        "doesn't",
+        "not",
+        "don't",
+        "isn't"
+      ]
+    }
+  ]
+}

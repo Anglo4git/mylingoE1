@@ -1,12 +1,12 @@
 {
   "id": "a2-006",
   "title": "Countable/Uncountable",
-  "description": "Practice Countable/Uncountable.",
+  "description": "Practice Countable/Uncountable (extended with deeper practice).",
   "brand": "Mylingo",
   "category": "Grammar",
   "tags": "Grammar,A2",
   "level": "A2",
-  "version": 1,
+  "version": 2,
   "questions": [
     {
       "question": "How ___ water do you need?",
@@ -71,6 +71,32 @@
         "much",
         "few",
         "a lot"
+      ]
+    },
+    {
+      "question": "There ___ much water left in the bottle.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "Water is uncountable, so it takes a singular verb (is).",
+      "correctIndex": 1,
+      "answers": [
+        "is",
+        "are",
+        "isn't",
+        "aren't"
+      ]
+    },
+    {
+      "question": "How ___ furniture do you need for the new flat?",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "Furniture is uncountable, so use 'much', not 'many'.",
+      "correctIndex": 2,
+      "answers": [
+        "many",
+        "much",
+        "a few",
+        "several"
       ]
     }
   ]

@@ -1,0 +1,77 @@
+{
+  "id": "a2-111",
+  "title": "Although / However",
+  "description": "Practice Although / However.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "___ it was raining, we went for a walk.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Although / However lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "However",
+        "Although",
+        "So",
+        "Such"
+      ]
+    },
+    {
+      "question": "The trip was long. ___, it was worth it.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Although / However lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "Although",
+        "However,",
+        "So",
+        "Such"
+      ]
+    },
+    {
+      "question": "She passed the test ___ she didn't study much.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Although / However lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "although",
+        "however",
+        "so",
+        "such"
+      ]
+    },
+    {
+      "question": "He's friendly. ___, he's also very shy.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Although / However lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "Although",
+        "However,",
+        "So",
+        "Such"
+      ]
+    },
+    {
+      "question": "___ he was tired, he finished the race.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Although / However lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Although",
+        "However",
+        "So",
+        "Such"
+      ]
+    }
+  ]
+}

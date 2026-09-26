@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-a1-unit-01-lesson-24",
+  "title": "Lesson: Adjectives and Modifiers",
+  "description": "Practice Adjectives and Modifiers.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A1,A1+",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Adjectives and Modifiers.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1+,A1",
+      "media": {},
+      "subprompt": "Adjectives and Modifiers",
+      "explanation": "Practice Adjectives and Modifiers."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Adjectives and Modifiers",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1+,A1"
+    },
+    {
+      "question": "Which word is an adjective?",
+      "category": "Grammar",
+      "tags": "Grammar,A1+,QuickCheck",
+      "explanation": "Careful describes a person or thing.",
+      "correctIndex": 1,
+      "answers": [
+        "careful",
+        "carefully",
+        "care",
+        "carefulness"
+      ]
+    },
+    {
+      "question": "Choose the natural phrase.",
+      "category": "Grammar",
+      "tags": "Grammar,A1+,QuickCheck",
+      "explanation": "Very normally comes before an adjective.",
+      "correctIndex": 1,
+      "answers": [
+        "a very small room",
+        "a small very room",
+        "a very small rooms",
+        "a very smalls room"
+      ]
+    },
+    {
+      "question": "Which sentence is correct?",
+      "category": "Grammar",
+      "tags": "Grammar,A1+,QuickCheck",
+      "explanation": "Really can modify an adjective such as friendly.",
+      "correctIndex": 1,
+      "answers": [
+        "She is really friendly.",
+        "She really is friendlys.",
+        "She is friendly really.",
+        "She is a friendly really."
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1+"
+    }
+  ]
+}

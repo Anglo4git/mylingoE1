@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-a1-unit-03-lesson-18",
+  "title": "Lesson: Rules and Obligations",
+  "description": "Practice Rules and Obligations.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,A1,A1+",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Rules and Obligations.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1+,A1",
+      "media": {},
+      "subprompt": "Rules and Obligations",
+      "explanation": "Practice Rules and Obligations."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Rules and Obligations",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1+,A1"
+    },
+    {
+      "question": "Which sign expresses an obligation?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1+,QuickCheck",
+      "explanation": "Have to expresses obligation.",
+      "correctIndex": 1,
+      "answers": [
+        "You have to wear a helmet.",
+        "You might wear a helmet.",
+        "I hope you wear a helmet.",
+        "I wore a helmet yesterday."
+      ]
+    },
+    {
+      "question": "Which sentence explains a rule?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1+,QuickCheck",
+      "explanation": "Must can state a rule or obligation.",
+      "correctIndex": 1,
+      "answers": [
+        "You must show your ID.",
+        "You could show your ID.",
+        "I showed my ID.",
+        "I am showing my ID now."
+      ]
+    },
+    {
+      "question": "What can you say about a school rule?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1+,QuickCheck",
+      "explanation": "Have to is useful for describing rules.",
+      "correctIndex": 1,
+      "answers": [
+        "Students have to arrive on time.",
+        "Students might arrive on time.",
+        "Students hope arrive on time.",
+        "Students arrived tomorrow."
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1+"
+    }
+  ]
+}

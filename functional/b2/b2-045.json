@@ -1,0 +1,77 @@
+{
+  "id": "b2-045",
+  "title": "Giving opinions",
+  "description": "Practice Giving opinions.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Strongest opinion opener:",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Giving opinions lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "I'd say...",
+        "I'm convinced that...",
+        "It seems to me...",
+        "Maybe..."
+      ]
+    },
+    {
+      "question": "Most tentative opener:",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Giving opinions lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "I'm convinced that...",
+        "I'd say...",
+        "I strongly believe...",
+        "There's no doubt that..."
+      ]
+    },
+    {
+      "question": "\"It seems to me that the plan needs work\" is...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Giving opinions lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "very strong",
+        "tentative/hedged",
+        "rude",
+        "a fact, not an opinion"
+      ]
+    },
+    {
+      "question": "A neutral opinion opener is:",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Giving opinions lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "I think...",
+        "I'm 100% sure...",
+        "It's obvious that...",
+        "Without a doubt..."
+      ]
+    },
+    {
+      "question": "Choosing opinion strength depends on...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Giving opinions lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "grammar rules only",
+        "how certain/confident you want to sound",
+        "sentence length",
+        "nothing, they're interchangeable"
+      ]
+    }
+  ]
+}

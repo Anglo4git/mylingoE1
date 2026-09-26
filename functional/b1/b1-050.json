@@ -1,0 +1,77 @@
+{
+  "id": "b1-050",
+  "title": "Describing faulty goods",
+  "description": "Practice Describing faulty goods.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"It's not working ___.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Explain a product problem clearly, e.g. for a return or complaint.",
+      "correctIndex": 0,
+      "answers": [
+        "properly",
+        "propering",
+        "property",
+        "proper"
+      ]
+    },
+    {
+      "question": "\"There's a ___ in the screen.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Explain a product problem clearly, e.g. for a return or complaint.",
+      "correctIndex": 3,
+      "answers": [
+        "cracking",
+        "cracked",
+        "cracks",
+        "crack"
+      ]
+    },
+    {
+      "question": "\"It stopped working ___ one use.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Explain a product problem clearly, e.g. for a return or complaint.",
+      "correctIndex": 3,
+      "answers": [
+        "since",
+        "during",
+        "for",
+        "after"
+      ]
+    },
+    {
+      "question": "Best phrase to describe a broken zip:",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Explain a product problem clearly, e.g. for a return or complaint.",
+      "correctIndex": 3,
+      "answers": [
+        "I don't like the zip.",
+        "The zip is nice.",
+        "It's a bit different.",
+        "The zip broke after one use."
+      ]
+    },
+    {
+      "question": "\"It arrived like this\" implies...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Explain a product problem clearly, e.g. for a return or complaint.",
+      "correctIndex": 0,
+      "answers": [
+        "the fault was already there on arrival",
+        "it's brand new now",
+        "it was fixed on arrival",
+        "it was fine when it arrived"
+      ]
+    }
+  ]
+}

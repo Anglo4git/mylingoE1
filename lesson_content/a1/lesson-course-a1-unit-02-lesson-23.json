@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-a1-unit-02-lesson-23",
+  "title": "Lesson: Machines and Inventions",
+  "description": "Practice Machines and Inventions.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A1,A1+",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Machines and Inventions.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1+,A1",
+      "media": {},
+      "subprompt": "Machines and Inventions",
+      "explanation": "Practice Machines and Inventions."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Machines and Inventions",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1+,A1"
+    },
+    {
+      "question": "Which is an invention used to communicate over distance?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1+,QuickCheck",
+      "explanation": "A telephone lets people communicate over distance.",
+      "correctIndex": 1,
+      "answers": [
+        "telephone",
+        "pillow",
+        "plate",
+        "shoe"
+      ]
+    },
+    {
+      "question": "A machine that washes clothes is a ___ .",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1+,QuickCheck",
+      "explanation": "A washing machine cleans clothes.",
+      "correctIndex": 1,
+      "answers": [
+        "washing machine",
+        "dish",
+        "keyboard",
+        "fridge"
+      ]
+    },
+    {
+      "question": "What does a printer do?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1+,QuickCheck",
+      "explanation": "A printer produces text or images on paper.",
+      "correctIndex": 1,
+      "answers": [
+        "It puts text or images on paper.",
+        "It cooks food.",
+        "It washes clothes.",
+        "It drives a car."
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1+"
+    }
+  ]
+}

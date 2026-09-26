@@ -1,0 +1,77 @@
+{
+  "id": "a2-113",
+  "title": "Relative Clauses",
+  "description": "Practice Relative Clauses.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "The woman ___ called you is my sister.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Relative Clauses lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "which",
+        "who",
+        "where",
+        "what"
+      ]
+    },
+    {
+      "question": "This is the book ___ I told you about.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Relative Clauses lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "who",
+        "that",
+        "where",
+        "which not"
+      ]
+    },
+    {
+      "question": "We visited the town ___ I was born.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Relative Clauses lesson for the rule.",
+      "correctIndex": 3,
+      "answers": [
+        "which",
+        "who",
+        "where",
+        "that"
+      ]
+    },
+    {
+      "question": "The car, ___ is new, is parked outside.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Relative Clauses lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "who",
+        "which",
+        "where",
+        "that"
+      ]
+    },
+    {
+      "question": "That's the man ___ dog won the competition.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Relative Clauses lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "who",
+        "whose",
+        "where",
+        "which"
+      ]
+    }
+  ]
+}

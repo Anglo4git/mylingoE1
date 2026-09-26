@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-02-lesson-05",
+  "title": "Lesson: Personality",
+  "description": "Practice Personality vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Personality vocabulary.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Personality",
+      "explanation": "Practice Personality vocabulary."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Personality",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "Someone who shares generously is ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "See the Personality lesson.",
+      "correctIndex": 2,
+      "answers": [
+        "stubborn",
+        "generous",
+        "moody",
+        "shy"
+      ]
+    },
+    {
+      "question": "Someone who won't change their mind is ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "See the Personality lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "stubborn",
+        "easy-going",
+        "reliable",
+        "confident"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

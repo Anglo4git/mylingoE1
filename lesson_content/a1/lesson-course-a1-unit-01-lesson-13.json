@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-01-lesson-13",
+  "title": "Lesson: Too and Very",
+  "description": "Practice Too and Very.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Too and Very.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Too and Very",
+      "explanation": "Practice Too and Very."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Too and Very",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "Which sentence describes a problem?",
+      "category": "Grammar",
+      "tags": "Grammar,A1,QuickCheck",
+      "explanation": "'Too' signals a problem.",
+      "correctIndex": 2,
+      "answers": [
+        "This tea is very hot.",
+        "This tea is too hot to drink.",
+        "This tea is a hot.",
+        "This tea hot too."
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

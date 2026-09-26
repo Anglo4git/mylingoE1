@@ -1,0 +1,77 @@
+{
+  "id": "a2-304",
+  "title": "Describing Personality",
+  "description": "Practice: Describing Personality.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"What's he ___?\" (asking about personality)",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Describing Personality lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "like",
+        "as",
+        "look",
+        "doing"
+      ]
+    },
+    {
+      "question": "\"She comes ___ as very confident.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Describing Personality lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "across",
+        "up",
+        "out",
+        "over"
+      ]
+    },
+    {
+      "question": "\"He ___ to be quite shy at first.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Describing Personality lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "tends",
+        "trends",
+        "tendency",
+        "tending"
+      ]
+    },
+    {
+      "question": "Most natural:",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Describing Personality lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "\"She's quite outgoing.\"",
+        "\"She's outgoing very.\"",
+        "\"She is much outgoing.\"",
+        "\"She outgoing quite.\""
+      ]
+    },
+    {
+      "question": "Asking for a personality description:",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Describing Personality lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "\"What's she like?\"",
+        "\"What does she like?\"",
+        "\"How she is?\"",
+        "\"What she like?\""
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "b1-049",
+  "title": "Refusing",
+  "description": "Practice Refusing.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"I'm afraid I ___ make it Friday.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Decline requests or offers politely but clearly.",
+      "correctIndex": 2,
+      "answers": [
+        "shouldn't",
+        "can",
+        "can't",
+        "mustn't"
+      ]
+    },
+    {
+      "question": "\"I'd rather not, ___ that's okay.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Decline requests or offers politely but clearly.",
+      "correctIndex": 0,
+      "answers": [
+        "if",
+        "unless",
+        "when",
+        "because"
+      ]
+    },
+    {
+      "question": "Polite refusal:",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Decline requests or offers politely but clearly.",
+      "correctIndex": 2,
+      "answers": [
+        "\"No.\"",
+        "\"Absolutely not.\"",
+        "\"Thanks, but no thanks.\"",
+        "\"Never.\""
+      ]
+    },
+    {
+      "question": "\"I'm afraid I can't...\" is used to...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Decline requests or offers politely but clearly.",
+      "correctIndex": 2,
+      "answers": [
+        "give advice",
+        "make a deduction",
+        "politely decline",
+        "accept an offer"
+      ]
+    },
+    {
+      "question": "Which is the most direct but still polite refusal?",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Decline requests or offers politely but clearly.",
+      "correctIndex": 2,
+      "answers": [
+        "Whatever",
+        "I don't care",
+        "I'd rather not, thanks",
+        "Maybe someday"
+      ]
+    }
+  ]
+}

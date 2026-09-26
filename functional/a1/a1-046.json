@@ -1,0 +1,77 @@
+{
+  "id": "a1-046",
+  "title": "Frequency and Duration",
+  "description": "Practice Frequency and Duration.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"Twice a week\" means",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "Twice = two times.",
+      "correctIndex": 1,
+      "answers": [
+        "two times a week",
+        "every week",
+        "once a week",
+        "every day"
+      ]
+    },
+    {
+      "question": "Complete: \"I have lived here ___ 2019.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "Since + a starting point.",
+      "correctIndex": 2,
+      "answers": [
+        "for",
+        "since",
+        "during",
+        "at"
+      ]
+    },
+    {
+      "question": "Complete: \"She studies ___ two hours.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "For + a length of time.",
+      "correctIndex": 1,
+      "answers": [
+        "for",
+        "since",
+        "from",
+        "at"
+      ]
+    },
+    {
+      "question": "Which shows frequency, not duration?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "\"Usually\" is a frequency word.",
+      "correctIndex": 2,
+      "answers": [
+        "for two hours",
+        "usually",
+        "since Monday",
+        "for a year"
+      ]
+    },
+    {
+      "question": "Say how often you exercise.",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "Any reasonable frequency phrase is accepted.",
+      "correctIndex": 1,
+      "answers": [
+        "(own answer)",
+        "(leave blank)",
+        "(skip)",
+        "(refuse)"
+      ]
+    }
+  ]
+}

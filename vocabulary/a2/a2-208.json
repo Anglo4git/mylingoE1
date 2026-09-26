@@ -1,0 +1,77 @@
+{
+  "id": "a2-208",
+  "title": "Large Numbers",
+  "description": "Practice Large Numbers vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "1,000,000 is written in words as one ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Large Numbers lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "thousand",
+        "million",
+        "hundred",
+        "billion"
+      ]
+    },
+    {
+      "question": "\"___ of people\" means a large, unspecified number.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Large Numbers lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Dozens",
+        "A couple",
+        "Roughly",
+        "Approximately"
+      ]
+    },
+    {
+      "question": "\"About 50\" can be expressed as \"___ 50\".",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Large Numbers lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "approximately",
+        "dozens of",
+        "a couple of",
+        "exactly"
+      ]
+    },
+    {
+      "question": "\"Two or three\" is often expressed as \"a ___ of\".",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Large Numbers lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "dozen",
+        "couple",
+        "hundred",
+        "thousand"
+      ]
+    },
+    {
+      "question": "100 is one ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Large Numbers lesson for the rule.",
+      "correctIndex": 3,
+      "answers": [
+        "thousand",
+        "million",
+        "hundred",
+        "dozen"
+      ]
+    }
+  ]
+}

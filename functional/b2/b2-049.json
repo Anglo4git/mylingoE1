@@ -1,0 +1,77 @@
+{
+  "id": "b2-049",
+  "title": "Making offers",
+  "description": "Practice Making offers.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Most formal offer:",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Making offers lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "Want me to help?",
+        "I'll help.",
+        "Would you like me to help?",
+        "Shall I help?"
+      ]
+    },
+    {
+      "question": "Neutral offer:",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Making offers lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "I'd be happy to...",
+        "Shall I...?",
+        "Want me to...?",
+        "I'll..."
+      ]
+    },
+    {
+      "question": "Most informal offer:",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Making offers lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "Would you like me to...?",
+        "I'd be happy to...",
+        "Want me to...?",
+        "Shall I...?"
+      ]
+    },
+    {
+      "question": "\"I'd be happy to review the document\" is...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Making offers lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "very informal",
+        "formal/polite",
+        "rude",
+        "a question, not an offer"
+      ]
+    },
+    {
+      "question": "Choosing offer language depends on...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Making offers lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "the weather",
+        "the relationship/formality of the situation",
+        "the time of day",
+        "nothing"
+      ]
+    }
+  ]
+}

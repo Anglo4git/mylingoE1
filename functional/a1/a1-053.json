@@ -1,0 +1,77 @@
+{
+  "id": "a1-053",
+  "title": "Applying for a Job",
+  "description": "Practice Applying for a Job.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Complete: \"I ___ (have) two years of experience.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "Use 'have' with I.",
+      "correctIndex": 1,
+      "answers": [
+        "have",
+        "has",
+        "having",
+        "haves"
+      ]
+    },
+    {
+      "question": "State your job.",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "\"I am a...\" states a job.",
+      "correctIndex": 1,
+      "answers": [
+        "I am a teacher.",
+        "I teacher.",
+        "Teacher I am.",
+        "I job teacher."
+      ]
+    },
+    {
+      "question": "Complete: \"I ___ (work) as a waiter.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "Use base form with I.",
+      "correctIndex": 1,
+      "answers": [
+        "work",
+        "working",
+        "works",
+        "worked"
+      ]
+    },
+    {
+      "question": "Which is a polite, complete answer to \"Why do you want this job?\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "A full, polite sentence answers the question.",
+      "correctIndex": 1,
+      "answers": [
+        "I like working with people.",
+        "Money good.",
+        "Job want I.",
+        "I want."
+      ]
+    },
+    {
+      "question": "\"I am looking for a job in a shop.\" Does this person have a job now?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "\"Looking for\" means they don't have one yet.",
+      "correctIndex": 1,
+      "answers": [
+        "No, they are looking",
+        "Yes",
+        "Maybe",
+        "They had one"
+      ]
+    }
+  ]
+}

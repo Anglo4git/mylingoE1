@@ -1,0 +1,77 @@
+{
+  "id": "a2-305",
+  "title": "Making Travel Arrangements",
+  "description": "Practice: Making Travel Arrangements.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Polite booking request:",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Making Travel Arrangements lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "\"I'd like to book a room.\"",
+        "\"Give me a room.\"",
+        "\"Room now.\"",
+        "\"I want room.\""
+      ]
+    },
+    {
+      "question": "\"Is there ___ earlier flight?\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Making Travel Arrangements lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "an",
+        "a",
+        "the",
+        "no"
+      ]
+    },
+    {
+      "question": "Polite request to change a booking:",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Making Travel Arrangements lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "\"Could I change my reservation?\"",
+        "\"Change it.\"",
+        "\"I change now.\"",
+        "\"Must change.\""
+      ]
+    },
+    {
+      "question": "\"What time does it ___?\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Making Travel Arrangements lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "leaves",
+        "leave",
+        "leaving",
+        "left"
+      ]
+    },
+    {
+      "question": "Most appropriate at a check-in desk:",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Making Travel Arrangements lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "\"I'd like to check in, please.\"",
+        "\"Check me in.\"",
+        "\"In now.\"",
+        "\"Room, now.\""
+      ]
+    }
+  ]
+}

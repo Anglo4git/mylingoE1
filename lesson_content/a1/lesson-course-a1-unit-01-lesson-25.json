@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-a1-unit-01-lesson-25",
+  "title": "Lesson: Present Continuous: Temporary Situations",
+  "description": "Practice Present Continuous: Temporary Situations.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A1,A1+",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Present Continuous: Temporary Situations.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1+,A1",
+      "media": {},
+      "subprompt": "Present Continuous: Temporary Situations",
+      "explanation": "Practice Present Continuous: Temporary Situations."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Present Continuous: Temporary Situations",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1+,A1"
+    },
+    {
+      "question": "Which sentence describes a temporary situation?",
+      "category": "Grammar",
+      "tags": "Grammar,A1+,QuickCheck",
+      "explanation": "Present continuous can describe something happening for a limited period.",
+      "correctIndex": 1,
+      "answers": [
+        "I am staying with my cousin this week.",
+        "I live in Accra.",
+        "I know the answer.",
+        "Water boils at 100°C."
+      ]
+    },
+    {
+      "question": "Complete: He ___ in a hotel while his house is repaired.",
+      "category": "Grammar",
+      "tags": "Grammar,A1+,QuickCheck",
+      "explanation": "Use am/is/are + -ing for a temporary activity.",
+      "correctIndex": 1,
+      "answers": [
+        "is staying",
+        "stays",
+        "stay",
+        "staying is"
+      ]
+    },
+    {
+      "question": "Which form is correct?",
+      "category": "Grammar",
+      "tags": "Grammar,A1+,QuickCheck",
+      "explanation": "Use are + working with we.",
+      "correctIndex": 1,
+      "answers": [
+        "We are working from home this month.",
+        "We working from home this month.",
+        "We are work from home this month.",
+        "We is working from home this month."
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1+"
+    }
+  ]
+}

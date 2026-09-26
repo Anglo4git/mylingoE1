@@ -1,0 +1,77 @@
+{
+  "id": "a1-029",
+  "title": "Seasons and Weather",
+  "description": "Practice Seasons and Weather.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Which season usually comes after summer?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Autumn (fall) follows summer.",
+      "correctIndex": 3,
+      "answers": [
+        "winter",
+        "spring",
+        "autumn",
+        "none"
+      ]
+    },
+    {
+      "question": "Which word describes weather with a lot of sun?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "'Sunny' describes sunny weather.",
+      "correctIndex": 2,
+      "answers": [
+        "rainy",
+        "sunny",
+        "snowy",
+        "cloudy"
+      ]
+    },
+    {
+      "question": "___ very cold today.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Use 'It's' (it is) to describe weather.",
+      "correctIndex": 2,
+      "answers": [
+        "It",
+        "It's",
+        "Is",
+        "Its"
+      ]
+    },
+    {
+      "question": "\"It's cold and snowy.\" Which season is it probably?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Cold and snowy weather usually means winter.",
+      "correctIndex": 3,
+      "answers": [
+        "summer",
+        "spring",
+        "winter",
+        "autumn"
+      ]
+    },
+    {
+      "question": "Which pair matches a season with typical weather?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Summer is typically hot.",
+      "correctIndex": 3,
+      "answers": [
+        "summer – snowy",
+        "winter – hot",
+        "summer – hot",
+        "spring – freezing"
+      ]
+    }
+  ]
+}

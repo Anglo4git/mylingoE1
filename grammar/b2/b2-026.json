@@ -1,0 +1,77 @@
+{
+  "id": "b2-026",
+  "title": "Always + present continuous",
+  "description": "Practice Always + present continuous.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"He's always ___ his keys!\" (annoyed)",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Always + present continuous lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "forgets",
+        "forgetting",
+        "forgot",
+        "forget"
+      ]
+    },
+    {
+      "question": "\"He always forgets his keys.\" vs \"He's always forgetting his keys.\" — the continuous form adds...",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Always + present continuous lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "no difference",
+        "an emphatic/annoyed tone",
+        "a future meaning",
+        "a past meaning"
+      ]
+    },
+    {
+      "question": "\"She's always coming up with new ideas!\" expresses...",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Always + present continuous lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "neutral fact only",
+        "surprise/admiration",
+        "anger only",
+        "uncertainty"
+      ]
+    },
+    {
+      "question": "Which structure is used for the annoyance meaning?",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Always + present continuous lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "always + present simple",
+        "always + present continuous",
+        "always + past simple",
+        "always + present perfect"
+      ]
+    },
+    {
+      "question": "A neutral, non-emotional habit statement uses...",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Always + present continuous lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "always + continuous",
+        "always + present simple",
+        "always + past continuous",
+        "always + future"
+      ]
+    }
+  ]
+}

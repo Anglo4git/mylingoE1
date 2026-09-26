@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-02-lesson-15",
+  "title": "Lesson: Transport",
+  "description": "Practice Transport.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Transport.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Transport",
+      "explanation": "Practice Transport."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Transport",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "I go to work ___ bus.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1,QuickCheck",
+      "explanation": "Use 'by' with most types of transport.",
+      "correctIndex": 2,
+      "answers": [
+        "on",
+        "by",
+        "in",
+        "at"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

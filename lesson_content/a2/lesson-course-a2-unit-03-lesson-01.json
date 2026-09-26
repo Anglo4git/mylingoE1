@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-03-lesson-01",
+  "title": "Lesson: Asking Personal Questions",
+  "description": "Practice: Asking Personal Questions.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice: Asking Personal Questions.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Asking Personal Questions",
+      "explanation": "Practice: Asking Personal Questions."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Asking Personal Questions",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "Most natural way to ask someone's job:",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2,QuickCheck",
+      "explanation": "See the Asking Personal Questions lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "\"What do you do?\"",
+        "\"What is your job number?\"",
+        "\"Job?\"",
+        "\"You work what?\""
+      ]
+    },
+    {
+      "question": "Polite way to introduce a personal question:",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2,QuickCheck",
+      "explanation": "See the Asking Personal Questions lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "\"Do you mind if I ask...?\"",
+        "\"Answer this.\"",
+        "\"Tell me now.\"",
+        "\"Must you say?\""
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-02-lesson-11",
+  "title": "Lesson: Travel and Tourism",
+  "description": "Practice Travel and Tourism vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Travel and Tourism vocabulary.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Travel and Tourism",
+      "explanation": "Practice Travel and Tourism vocabulary."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Travel and Tourism",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "Your plan of flights/stops for a trip is your ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "See the Travel and Tourism lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "itinerary",
+        "luggage",
+        "visa",
+        "excursion"
+      ]
+    },
+    {
+      "question": "You need this document to show at the gate before flying: ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "See the Travel and Tourism lesson.",
+      "correctIndex": 2,
+      "answers": [
+        "visa",
+        "boarding pass",
+        "itinerary",
+        "luggage"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

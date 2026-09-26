@@ -1,0 +1,77 @@
+{
+  "id": "b2-052",
+  "title": "Emphasising",
+  "description": "Practice Emphasising.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"___ is that everyone's safe.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Emphasising lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "What really matters",
+        "It was Sara who",
+        "The fact for",
+        "Absolutely that"
+      ]
+    },
+    {
+      "question": "\"It was Sara ___ first raised the issue.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Emphasising lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "which",
+        "who",
+        "that raised she",
+        "whom raised"
+      ]
+    },
+    {
+      "question": "Cleft sentences are used to...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Emphasising lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "hide information",
+        "emphasise a specific part of the sentence",
+        "ask a question",
+        "express regret"
+      ]
+    },
+    {
+      "question": "\"I can't stress enough that...\" signals...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Emphasising lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "uncertainty",
+        "strong emphasis/importance",
+        "an offer",
+        "a summary"
+      ]
+    },
+    {
+      "question": "Which begins a cleft sentence for emphasis?",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Emphasising lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "On the other hand...",
+        "What really matters is...",
+        "So as to...",
+        "Owing to..."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-03-lesson-03",
+  "title": "Lesson: Shopping and Prices",
+  "description": "Practice Shopping and Prices.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Shopping and Prices.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Shopping and Prices",
+      "explanation": "Practice Shopping and Prices."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Shopping and Prices",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "Ask the price of a bag.",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1,QuickCheck",
+      "explanation": "Use \"How much is...?\" for one item.",
+      "correctIndex": 1,
+      "answers": [
+        "How much is this bag?",
+        "How many is this bag?",
+        "How much are this bag?",
+        "How this bag much?"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

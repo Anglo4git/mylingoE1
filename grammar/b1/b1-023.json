@@ -1,0 +1,77 @@
+{
+  "id": "b1-023",
+  "title": "Question tags",
+  "description": "Practice Question tags.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"You're coming, ___?\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Form short questions added to the end of statements to check information or invite agreement.",
+      "correctIndex": 0,
+      "answers": [
+        "aren't you",
+        "are you",
+        "do you",
+        "don't you"
+      ]
+    },
+    {
+      "question": "\"She doesn't like coffee, ___?\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Form short questions added to the end of statements to check information or invite agreement.",
+      "correctIndex": 3,
+      "answers": [
+        "is she",
+        "isn't she",
+        "doesn't she",
+        "does she"
+      ]
+    },
+    {
+      "question": "\"They've finished, ___?\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Form short questions added to the end of statements to check information or invite agreement.",
+      "correctIndex": 2,
+      "answers": [
+        "have they",
+        "don't they",
+        "haven't they",
+        "didn't they"
+      ]
+    },
+    {
+      "question": "\"Let's go, ___?\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Form short questions added to the end of statements to check information or invite agreement.",
+      "correctIndex": 3,
+      "answers": [
+        "do we",
+        "don't we",
+        "will we",
+        "shall we"
+      ]
+    },
+    {
+      "question": "Rule: positive statement → ___ tag.",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Form short questions added to the end of statements to check information or invite agreement.",
+      "correctIndex": 3,
+      "answers": [
+        "question word",
+        "positive",
+        "same",
+        "negative"
+      ]
+    }
+  ]
+}

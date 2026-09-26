@@ -1,0 +1,77 @@
+{
+  "id": "a2-103",
+  "title": "Reflexive Pronouns",
+  "description": "Practice Reflexive Pronouns.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "I cut ___ while cooking.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Reflexive Pronouns lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "me",
+        "myself",
+        "my",
+        "mine"
+      ]
+    },
+    {
+      "question": "She taught ___ Spanish.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Reflexive Pronouns lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "her",
+        "herself",
+        "hers",
+        "she"
+      ]
+    },
+    {
+      "question": "They enjoyed ___ at the party.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Reflexive Pronouns lesson for the rule.",
+      "correctIndex": 3,
+      "answers": [
+        "them",
+        "their",
+        "themselves",
+        "they"
+      ]
+    },
+    {
+      "question": "Be careful — you might hurt ___.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Reflexive Pronouns lesson for the rule.",
+      "correctIndex": 3,
+      "answers": [
+        "you",
+        "your",
+        "yourself",
+        "yours"
+      ]
+    },
+    {
+      "question": "He looked at ___ in the mirror.",
+      "category": "Grammar",
+      "tags": "Grammar,A2",
+      "explanation": "See the Reflexive Pronouns lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "him",
+        "himself",
+        "his",
+        "he"
+      ]
+    }
+  ]
+}

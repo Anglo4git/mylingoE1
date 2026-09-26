@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-01-lesson-20",
+  "title": "Lesson: Although / However",
+  "description": "Practice Although / However.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Although / However.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Although / However",
+      "explanation": "Practice Although / However."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Although / However",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "___ it was raining, we went for a walk.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "See the Although / However lesson.",
+      "correctIndex": 2,
+      "answers": [
+        "However",
+        "Although",
+        "So",
+        "Such"
+      ]
+    },
+    {
+      "question": "The trip was long. ___, it was worth it.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "See the Although / However lesson.",
+      "correctIndex": 2,
+      "answers": [
+        "Although",
+        "However,",
+        "So",
+        "Such"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

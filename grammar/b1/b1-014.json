@@ -1,0 +1,77 @@
+{
+  "id": "b1-014",
+  "title": "Adjectives and their connotations",
+  "description": "Practice Adjectives and their connotations.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Which adjective is negative for \"thin\"?",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Choose adjectives that carry the right positive, neutral, or negative feeling.",
+      "correctIndex": 3,
+      "answers": [
+        "lean",
+        "slim",
+        "slender",
+        "skinny"
+      ]
+    },
+    {
+      "question": "\"Confident\" vs \"arrogant\" differ in...",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Choose adjectives that carry the right positive, neutral, or negative feeling.",
+      "correctIndex": 0,
+      "answers": [
+        "tone/connotation",
+        "spelling only",
+        "tense",
+        "grammar"
+      ]
+    },
+    {
+      "question": "A positive word for a small home is...",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Choose adjectives that carry the right positive, neutral, or negative feeling.",
+      "correctIndex": 0,
+      "answers": [
+        "cosy",
+        "tiny and bad",
+        "cramped",
+        "poky"
+      ]
+    },
+    {
+      "question": "\"He's ___, always thinking he's right.\" (negative)",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Choose adjectives that carry the right positive, neutral, or negative feeling.",
+      "correctIndex": 2,
+      "answers": [
+        "capable",
+        "assured",
+        "arrogant",
+        "confident"
+      ]
+    },
+    {
+      "question": "Neutral word for body size is...",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Choose adjectives that carry the right positive, neutral, or negative feeling.",
+      "correctIndex": 2,
+      "answers": [
+        "fat",
+        "skinny",
+        "thin",
+        "chubby"
+      ]
+    }
+  ]
+}

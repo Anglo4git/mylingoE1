@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-01-lesson-15",
+  "title": "Lesson: Going To — Future Plans",
+  "description": "Practice Going To.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Going To.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Going To — Future Plans",
+      "explanation": "Practice Going To."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Going To — Future Plans",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "I ___ visit my parents this weekend.",
+      "category": "Grammar",
+      "tags": "Grammar,A1,QuickCheck",
+      "explanation": "Use be + going to + base verb.",
+      "correctIndex": 2,
+      "answers": [
+        "am going",
+        "am going to",
+        "go to",
+        "going"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

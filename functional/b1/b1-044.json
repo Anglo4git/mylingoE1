@@ -1,0 +1,77 @@
+{
+  "id": "b1-044",
+  "title": "Reporting requests and orders",
+  "description": "Practice Reporting requests and orders.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"She asked me ___ close the window.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Relay what someone asked or told you to do.",
+      "correctIndex": 0,
+      "answers": [
+        "to",
+        "that",
+        "for",
+        "closing"
+      ]
+    },
+    {
+      "question": "\"He told me not ___ be late.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Relay what someone asked or told you to do.",
+      "correctIndex": 2,
+      "answers": [
+        "for",
+        "that",
+        "to",
+        "being"
+      ]
+    },
+    {
+      "question": "Direct: \"Can you help me?\" → Reported: \"She asked me ___ help her.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Relay what someone asked or told you to do.",
+      "correctIndex": 1,
+      "answers": [
+        "that",
+        "to",
+        "if",
+        "can"
+      ]
+    },
+    {
+      "question": "Reporting an order typically uses...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Relay what someone asked or told you to do.",
+      "correctIndex": 0,
+      "answers": [
+        "told + to-infinitive",
+        "said + that",
+        "tell + base verb",
+        "ask + gerund"
+      ]
+    },
+    {
+      "question": "\"They asked if I could...\" reports a...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1",
+      "explanation": "Relay what someone asked or told you to do.",
+      "correctIndex": 3,
+      "answers": [
+        "command",
+        "refusal",
+        "opinion",
+        "polite request/question"
+      ]
+    }
+  ]
+}

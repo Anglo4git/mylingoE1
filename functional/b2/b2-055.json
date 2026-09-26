@@ -1,0 +1,77 @@
+{
+  "id": "b2-055",
+  "title": "Congratulating",
+  "description": "Practice Congratulating.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Formal congratulation:",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Congratulating lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "Nice one!",
+        "Way to go!",
+        "Congratulations on your promotion!",
+        "No biggie!"
+      ]
+    },
+    {
+      "question": "Informal congratulation:",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Congratulating lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "Congratulations on...",
+        "Well done on...",
+        "Nice one!",
+        "I regret to say..."
+      ]
+    },
+    {
+      "question": "\"Well done on...\" is best described as...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Congratulating lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "very informal",
+        "neutral/moderately formal",
+        "rude",
+        "an apology"
+      ]
+    },
+    {
+      "question": "Congratulating language should match...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Congratulating lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "the time of day",
+        "the formality of the relationship/context",
+        "the weather",
+        "nothing in particular"
+      ]
+    },
+    {
+      "question": "Which is NOT a congratulation phrase?",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Congratulating lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Way to go!",
+        "I'm so sorry to hear that",
+        "Congratulations!",
+        "Nice one!"
+      ]
+    }
+  ]
+}

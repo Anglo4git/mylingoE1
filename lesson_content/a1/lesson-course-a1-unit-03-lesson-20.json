@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-a1-unit-03-lesson-20",
+  "title": "Lesson: Apologising and Congratulating",
+  "description": "Practice Apologising and Congratulating.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,A1,A1+",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Apologising and Congratulating.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1+,A1",
+      "media": {},
+      "subprompt": "Apologising and Congratulating",
+      "explanation": "Practice Apologising and Congratulating."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Apologising and Congratulating",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1+,A1"
+    },
+    {
+      "question": "Which phrase is an apology?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1+,QuickCheck",
+      "explanation": "I'm sorry is a common way to apologise.",
+      "correctIndex": 1,
+      "answers": [
+        "I'm sorry I'm late.",
+        "Congratulations!",
+        "Good luck!",
+        "You're welcome."
+      ]
+    },
+    {
+      "question": "Which phrase congratulates someone?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1+,QuickCheck",
+      "explanation": "Congratulations on... is used to celebrate someone's success.",
+      "correctIndex": 1,
+      "answers": [
+        "Congratulations on your new job!",
+        "I'm sorry about that.",
+        "Excuse me.",
+        "Could you help me?"
+      ]
+    },
+    {
+      "question": "What is a suitable response to 'I'm sorry'?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1+,QuickCheck",
+      "explanation": "That's okay is a common response to an apology.",
+      "correctIndex": 1,
+      "answers": [
+        "That's okay.",
+        "Congratulations!",
+        "Good luck!",
+        "See you yesterday."
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1+"
+    }
+  ]
+}

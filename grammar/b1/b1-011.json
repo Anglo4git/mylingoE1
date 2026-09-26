@@ -1,0 +1,77 @@
+{
+  "id": "b1-011",
+  "title": "Modal verbs",
+  "description": "Practice Modal verbs.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"You ___ wear a seatbelt — it's the law.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Use modal verbs to express ability, permission, obligation, and advice at B1 level.",
+      "correctIndex": 1,
+      "answers": [
+        "might",
+        "must",
+        "could",
+        "should"
+      ]
+    },
+    {
+      "question": "\"It ___ rain later; take an umbrella just in case.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Use modal verbs to express ability, permission, obligation, and advice at B1 level.",
+      "correctIndex": 3,
+      "answers": [
+        "should",
+        "can",
+        "must",
+        "might"
+      ]
+    },
+    {
+      "question": "\"___ you help me carry this?\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Use modal verbs to express ability, permission, obligation, and advice at B1 level.",
+      "correctIndex": 0,
+      "answers": [
+        "Could",
+        "Can to",
+        "Should to",
+        "Must"
+      ]
+    },
+    {
+      "question": "\"You ___ see a doctor about that cough.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Use modal verbs to express ability, permission, obligation, and advice at B1 level.",
+      "correctIndex": 0,
+      "answers": [
+        "should",
+        "may to",
+        "can",
+        "must to"
+      ]
+    },
+    {
+      "question": "Modals are followed by...",
+      "category": "Grammar",
+      "tags": "Grammar,B1",
+      "explanation": "Use modal verbs to express ability, permission, obligation, and advice at B1 level.",
+      "correctIndex": 1,
+      "answers": [
+        "verb-ing",
+        "base verb",
+        "past participle",
+        "to + verb"
+      ]
+    }
+  ]
+}

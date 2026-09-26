@@ -1,0 +1,77 @@
+{
+  "id": "a2-214",
+  "title": "Political Systems and Change",
+  "description": "Practice Political Systems and Change vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "A system where citizens vote for their leaders is a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Political Systems and Change lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "monarchy",
+        "democracy",
+        "dictatorship",
+        "fortress"
+      ]
+    },
+    {
+      "question": "The group of elected representatives that makes laws is the ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Political Systems and Change lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "parliament",
+        "palace",
+        "monument",
+        "itinerary"
+      ]
+    },
+    {
+      "question": "To choose a leader by voting is to ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Political Systems and Change lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "resign",
+        "vote",
+        "graduate",
+        "retire"
+      ]
+    },
+    {
+      "question": "A planned course of action by a government is a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Political Systems and Change lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "policy",
+        "forecast",
+        "itinerary",
+        "scholarship"
+      ]
+    },
+    {
+      "question": "The head of state in many republics is the ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Political Systems and Change lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "colleague",
+        "president",
+        "tenant",
+        "lecturer"
+      ]
+    }
+  ]
+}

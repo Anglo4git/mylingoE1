@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-02-lesson-04",
+  "title": "Lesson: Telling the Time and Days",
+  "description": "Practice Telling the Time and Days.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Telling the Time and Days.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Telling the Time and Days",
+      "explanation": "Practice Telling the Time and Days."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Telling the Time and Days",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "What time is 4:30?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1,QuickCheck",
+      "explanation": "4:30 is 'half past four'.",
+      "correctIndex": 2,
+      "answers": [
+        "quarter past four",
+        "half past four",
+        "quarter to four",
+        "four o'clock"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

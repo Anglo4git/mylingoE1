@@ -1,0 +1,77 @@
+{
+  "id": "b2-016",
+  "title": "Future Perfect",
+  "description": "Practice Future Perfect.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"By next June, I ___ graduated.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Future Perfect lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "will have",
+        "will has",
+        "have",
+        "had"
+      ]
+    },
+    {
+      "question": "\"By the time you arrive, we'll ___ finished dinner.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Future Perfect lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "has",
+        "have",
+        "had",
+        "having"
+      ]
+    },
+    {
+      "question": "Future Perfect describes an action...",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Future Perfect lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "happening now",
+        "completed before a future point",
+        "in the distant past",
+        "that never happened"
+      ]
+    },
+    {
+      "question": "\"In March, she'll have ___ working here for five years.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Future Perfect lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "been",
+        "be",
+        "was",
+        "is"
+      ]
+    },
+    {
+      "question": "Future Perfect is typically used with...",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Future Perfect lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "\"yesterday\"",
+        "\"by [time]\"",
+        "\"ago\"",
+        "\"now\""
+      ]
+    }
+  ]
+}

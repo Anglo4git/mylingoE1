@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-02-lesson-08",
+  "title": "Lesson: Interests and Sports",
+  "description": "Practice Interests and Sports.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Interests and Sports.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Interests and Sports",
+      "explanation": "Practice Interests and Sports."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Interests and Sports",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "I ___ tennis every Saturday.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1,QuickCheck",
+      "explanation": "Use 'play' with ball/racket sports like tennis.",
+      "correctIndex": 3,
+      "answers": [
+        "go",
+        "do",
+        "play",
+        "make"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

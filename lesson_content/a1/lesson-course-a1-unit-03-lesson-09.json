@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-03-lesson-09",
+  "title": "Lesson: Invitations: Inviting, Accepting, Refusing, Thanking",
+  "description": "Practice Invitations: Inviting, Accepting, Refusing, Thanking.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Invitations: Inviting, Accepting, Refusing, Thanking.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Invitations: Inviting, Accepting, Refusing, Thanking",
+      "explanation": "Practice Invitations: Inviting, Accepting, Refusing, Thanking."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Invitations: Inviting, Accepting, Refusing, Thanking",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "Accept an invitation.",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1,QuickCheck",
+      "explanation": "\"Yes, I'd love to\" is the standard way to accept an invitation.",
+      "correctIndex": 1,
+      "answers": [
+        "Yes, I'd love to.",
+        "Yes, I do.",
+        "Yes, I can.",
+        "Yes, I am."
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

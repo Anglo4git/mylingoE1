@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-03-lesson-02",
+  "title": "Lesson: Personal Information",
+  "description": "Practice Personal Information.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Personal Information.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Personal Information",
+      "explanation": "Practice Personal Information."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Personal Information",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "Ask someone's country.",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1,QuickCheck",
+      "explanation": "Use \"Where are you from?\" to ask about someone's country.",
+      "correctIndex": 1,
+      "answers": [
+        "Where are you from?",
+        "What do you do?",
+        "How old are you?",
+        "What's this?"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

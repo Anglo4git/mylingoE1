@@ -1,0 +1,77 @@
+{
+  "id": "a1-051",
+  "title": "Instructions and Suggestions",
+  "description": "Practice Instructions and Suggestions.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Give a direction.",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "An imperative gives a direction.",
+      "correctIndex": 1,
+      "answers": [
+        "Turn right.",
+        "You turn right?",
+        "Right turning.",
+        "Turning you right."
+      ]
+    },
+    {
+      "question": "Suggest an activity with \"Let's.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "\"Let's...\" makes a suggestion.",
+      "correctIndex": 1,
+      "answers": [
+        "Let's go for a walk.",
+        "You go for a walk.",
+        "Walk you go.",
+        "Going for a walk you."
+      ]
+    },
+    {
+      "question": "Which is a suggestion, not an instruction?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "\"How about...?\" is a suggestion.",
+      "correctIndex": 2,
+      "answers": [
+        "Press the button.",
+        "How about coffee?",
+        "Turn left.",
+        "Open the door."
+      ]
+    },
+    {
+      "question": "Negative instruction: don't touch.",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "Don't + base verb for negative imperatives.",
+      "correctIndex": 1,
+      "answers": [
+        "Don't touch that.",
+        "Not touch that.",
+        "Touching not that.",
+        "No touch that."
+      ]
+    },
+    {
+      "question": "\"Why don't we watch a film?\" What is this?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "\"Why don't we...?\" is a suggestion.",
+      "correctIndex": 2,
+      "answers": [
+        "an instruction",
+        "a suggestion",
+        "a request",
+        "an offer"
+      ]
+    }
+  ]
+}

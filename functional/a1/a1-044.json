@@ -1,0 +1,77 @@
+{
+  "id": "a1-044",
+  "title": "Describing People and Objects",
+  "description": "Practice Describing People and Objects.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Complete: \"She ___ long brown hair.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "Use \"has\" for hair with she.",
+      "correctIndex": 2,
+      "answers": [
+        "is",
+        "has",
+        "have",
+        "having"
+      ]
+    },
+    {
+      "question": "Put in order: red / small / bag",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "Size before colour: small red bag.",
+      "correctIndex": 1,
+      "answers": [
+        "small red bag",
+        "red small bag",
+        "bag red small",
+        "small bag red"
+      ]
+    },
+    {
+      "question": "Which word describes size?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "\"Big\" describes size.",
+      "correctIndex": 2,
+      "answers": [
+        "friendly",
+        "big",
+        "kind",
+        "happy"
+      ]
+    },
+    {
+      "question": "\"He is tall and friendly.\" What do we know about his personality?",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "\"Friendly\" describes personality.",
+      "correctIndex": 1,
+      "answers": [
+        "friendly",
+        "tall only",
+        "nothing",
+        "his job"
+      ]
+    },
+    {
+      "question": "Describe an object near you in one sentence.",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1",
+      "explanation": "Any valid adjective + noun description is accepted.",
+      "correctIndex": 1,
+      "answers": [
+        "(own answer)",
+        "(leave blank)",
+        "(skip)",
+        "(refuse)"
+      ]
+    }
+  ]
+}

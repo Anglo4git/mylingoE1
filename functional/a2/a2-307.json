@@ -1,0 +1,77 @@
+{
+  "id": "a2-307",
+  "title": "Talking About and Expressing Preferences",
+  "description": "Practice: Talking About and Expressing Preferences.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"I'd ___ stay in tonight.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Talking About and Expressing Preferences lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "rather",
+        "more",
+        "prefer to only",
+        "such"
+      ]
+    },
+    {
+      "question": "\"I'm more ___ jazz than pop.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Talking About and Expressing Preferences lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "into",
+        "at",
+        "for",
+        "with"
+      ]
+    },
+    {
+      "question": "\"I can't ___ loud music.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Talking About and Expressing Preferences lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "stand",
+        "prefer",
+        "rather",
+        "into"
+      ]
+    },
+    {
+      "question": "\"I'd prefer tea ___ coffee.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Talking About and Expressing Preferences lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "than",
+        "to",
+        "than to",
+        "from"
+      ]
+    },
+    {
+      "question": "\"If I had to choose, I'd pick the ___ one.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2",
+      "explanation": "See the Talking About and Expressing Preferences lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "cheap",
+        "cheaper",
+        "cheapest only",
+        "cheap one only"
+      ]
+    }
+  ]
+}

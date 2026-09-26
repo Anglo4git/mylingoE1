@@ -1,0 +1,77 @@
+{
+  "id": "b2-050",
+  "title": "Describing cause and effect",
+  "description": "Practice Describing cause and effect.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"___ the strike, flights were delayed.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Describing cause and effect lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "Due to",
+        "Therefore",
+        "So as to",
+        "Congratulations on"
+      ]
+    },
+    {
+      "question": "\"The price rose, and ___ demand fell.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Describing cause and effect lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "despite",
+        "consequently",
+        "unless",
+        "whereas"
+      ]
+    },
+    {
+      "question": "\"Owing to\" is followed by...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Describing cause and effect lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "a clause with a subject+verb",
+        "a noun/noun phrase",
+        "an infinitive only",
+        "nothing, it's used alone"
+      ]
+    },
+    {
+      "question": "\"This led to...\" introduces...",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Describing cause and effect lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "a cause",
+        "a result/effect",
+        "an example",
+        "an offer"
+      ]
+    },
+    {
+      "question": "Which is NOT a cause/effect connector?",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2",
+      "explanation": "See the Describing cause and effect lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "as a result of",
+        "due to",
+        "congratulations on",
+        "consequently"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-02-lesson-07",
+  "title": "Lesson: Shops and Places in Town",
+  "description": "Practice Shops and Places in Town.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Shops and Places in Town.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Shops and Places in Town",
+      "explanation": "Practice Shops and Places in Town."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Shops and Places in Town",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "Where do you buy stamps and send letters?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1,QuickCheck",
+      "explanation": "You buy stamps and send letters at the post office.",
+      "correctIndex": 3,
+      "answers": [
+        "bakery",
+        "bank",
+        "post office",
+        "park"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

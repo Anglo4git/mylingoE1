@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-02-lesson-03",
+  "title": "Lesson: Countries, Nationalities and Languages",
+  "description": "Practice Countries, Nationalities and Languages.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Countries, Nationalities and Languages.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Countries, Nationalities and Languages",
+      "explanation": "Practice Countries, Nationalities and Languages."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Countries, Nationalities and Languages",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "Italy → nationality",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1,QuickCheck",
+      "explanation": "The nationality adjective for Italy is 'Italian'.",
+      "correctIndex": 2,
+      "answers": [
+        "Italy",
+        "Italian",
+        "Italish",
+        "Italiano (in English)"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

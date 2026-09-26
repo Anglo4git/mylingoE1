@@ -1,0 +1,77 @@
+{
+  "id": "a1-039",
+  "title": "Health, Feelings and Emotions",
+  "description": "Practice Health, Feelings and Emotions.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Which word describes a feeling, not a health problem?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "'Happy' is a feeling; the others are health problems.",
+      "correctIndex": 3,
+      "answers": [
+        "headache",
+        "cold",
+        "happy",
+        "fever"
+      ]
+    },
+    {
+      "question": "He ___ a bad cold.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Use 'has' + a/an + symptom.",
+      "correctIndex": 2,
+      "answers": [
+        "is",
+        "has",
+        "feels",
+        "have"
+      ]
+    },
+    {
+      "question": "I ___ very tired today.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Use 'feel' + adjective for how someone feels.",
+      "correctIndex": 3,
+      "answers": [
+        "have",
+        "has",
+        "feel",
+        "feels"
+      ]
+    },
+    {
+      "question": "\"She is not feeling well.\" Is she healthy right now?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "'Not feeling well' means she is unwell now.",
+      "correctIndex": 2,
+      "answers": [
+        "Yes",
+        "No",
+        "Maybe",
+        "Always"
+      ]
+    },
+    {
+      "question": "\"He has a headache and feels tired.\" How does he feel?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "A headache and tiredness show he feels unwell.",
+      "correctIndex": 2,
+      "answers": [
+        "great",
+        "unwell",
+        "excited",
+        "hungry"
+      ]
+    }
+  ]
+}

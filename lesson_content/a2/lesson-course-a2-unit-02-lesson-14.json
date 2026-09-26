@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-02-lesson-14",
+  "title": "Lesson: Education",
+  "description": "Practice Education vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Education vocabulary.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Education",
+      "explanation": "Practice Education vocabulary."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Education",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "A piece of set schoolwork is called an ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "See the Education lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "assignment",
+        "degree",
+        "tuition",
+        "lecture"
+      ]
+    },
+    {
+      "question": "A university qualification is a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "See the Education lesson.",
+      "correctIndex": 2,
+      "answers": [
+        "semester",
+        "degree",
+        "lecture",
+        "scholarship"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

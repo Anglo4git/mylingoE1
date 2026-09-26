@@ -1,0 +1,77 @@
+{
+  "id": "a1-033",
+  "title": "Jobs",
+  "description": "Practice Jobs.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "A person who treats sick people in a hospital is a",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "A doctor treats sick people.",
+      "correctIndex": 2,
+      "answers": [
+        "teacher",
+        "doctor",
+        "chef",
+        "driver"
+      ]
+    },
+    {
+      "question": "How do you ask about someone's job?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "'What do you do?' is the standard question.",
+      "correctIndex": 2,
+      "answers": [
+        "What you do?",
+        "What do you do?",
+        "What work you?",
+        "Do you what?"
+      ]
+    },
+    {
+      "question": "She ___ a nurse.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Use 'is' + a/an + job title.",
+      "correctIndex": 1,
+      "answers": [
+        "is",
+        "are",
+        "do",
+        "working"
+      ]
+    },
+    {
+      "question": "He works ___ a big company.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "Use 'works for' + a company/employer.",
+      "correctIndex": 2,
+      "answers": [
+        "in",
+        "for",
+        "to",
+        "on"
+      ]
+    },
+    {
+      "question": "\"I work as a chef in a restaurant.\" What is the speaker's job?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A1",
+      "explanation": "The speaker says they work as a chef.",
+      "correctIndex": 2,
+      "answers": [
+        "waiter",
+        "chef",
+        "driver",
+        "teacher"
+      ]
+    }
+  ]
+}

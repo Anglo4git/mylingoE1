@@ -1,0 +1,77 @@
+{
+  "id": "b1-029",
+  "title": "Make and do (collocations)",
+  "description": "Practice Make and do (collocations).",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"___ a decision\"",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Use the right verb — \"make\" or \"do\" — with common nouns.",
+      "correctIndex": 1,
+      "answers": [
+        "have",
+        "make",
+        "take",
+        "do"
+      ]
+    },
+    {
+      "question": "\"___ homework\"",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Use the right verb — \"make\" or \"do\" — with common nouns.",
+      "correctIndex": 2,
+      "answers": [
+        "have",
+        "take",
+        "do",
+        "make"
+      ]
+    },
+    {
+      "question": "\"___ a mistake\"",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Use the right verb — \"make\" or \"do\" — with common nouns.",
+      "correctIndex": 2,
+      "answers": [
+        "go",
+        "do",
+        "make",
+        "take"
+      ]
+    },
+    {
+      "question": "\"___ a favour\"",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Use the right verb — \"make\" or \"do\" — with common nouns.",
+      "correctIndex": 3,
+      "answers": [
+        "make",
+        "have",
+        "take",
+        "do"
+      ]
+    },
+    {
+      "question": "\"___ an effort\"",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Use the right verb — \"make\" or \"do\" — with common nouns.",
+      "correctIndex": 0,
+      "answers": [
+        "make",
+        "have",
+        "take",
+        "do"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "b1-026",
+  "title": "Appearances",
+  "description": "Practice Appearances.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"Build\" refers to a person's ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Describe how people look.",
+      "correctIndex": 2,
+      "answers": [
+        "clothing",
+        "voice",
+        "body shape",
+        "personality"
+      ]
+    },
+    {
+      "question": "\"She resembles her sister\" means...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Describe how people look.",
+      "correctIndex": 0,
+      "answers": [
+        "she looks similar to her sister",
+        "she is older",
+        "she lives with her sister",
+        "she dislikes her sister"
+      ]
+    },
+    {
+      "question": "\"Well-groomed\" describes someone who looks...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Describe how people look.",
+      "correctIndex": 0,
+      "answers": [
+        "neat and tidy",
+        "tall",
+        "young",
+        "messy"
+      ]
+    },
+    {
+      "question": "\"Complexion\" refers to...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Describe how people look.",
+      "correctIndex": 2,
+      "answers": [
+        "hair style",
+        "height",
+        "skin appearance",
+        "clothing style"
+      ]
+    },
+    {
+      "question": "Opposite of \"well-groomed\" is...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Describe how people look.",
+      "correctIndex": 0,
+      "answers": [
+        "scruffy",
+        "stocky",
+        "slim",
+        "curly"
+      ]
+    }
+  ]
+}

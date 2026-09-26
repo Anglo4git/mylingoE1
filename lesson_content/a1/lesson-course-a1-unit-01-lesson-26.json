@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-a1-unit-01-lesson-26",
+  "title": "Lesson: Present Perfect and Participles",
+  "description": "Practice Present Perfect and Participles.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A1,A1+",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Present Perfect and Participles.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1+,A1",
+      "media": {},
+      "subprompt": "Present Perfect and Participles",
+      "explanation": "Practice Present Perfect and Participles."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Present Perfect and Participles",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1+,A1"
+    },
+    {
+      "question": "Choose the present perfect form.",
+      "category": "Grammar",
+      "tags": "Grammar,A1+,QuickCheck",
+      "explanation": "Present perfect uses have/has + past participle.",
+      "correctIndex": 1,
+      "answers": [
+        "have finished",
+        "finished",
+        "am finish",
+        "did finished"
+      ]
+    },
+    {
+      "question": "Which is the past participle of go?",
+      "category": "Grammar",
+      "tags": "Grammar,A1+,QuickCheck",
+      "explanation": "Gone is the past participle used with have/has.",
+      "correctIndex": 1,
+      "answers": [
+        "gone",
+        "went",
+        "going",
+        "goes"
+      ]
+    },
+    {
+      "question": "Complete: She has ___ her homework.",
+      "category": "Grammar",
+      "tags": "Grammar,A1+,QuickCheck",
+      "explanation": "The past participle of do is done.",
+      "correctIndex": 1,
+      "answers": [
+        "done",
+        "did",
+        "do",
+        "doing"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1+"
+    }
+  ]
+}

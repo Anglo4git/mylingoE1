@@ -1,0 +1,77 @@
+{
+  "id": "b1-031",
+  "title": "Holidays and travel brochures",
+  "description": "Practice Holidays and travel brochures.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"All-inclusive\" means...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Understand and use travel/brochure language.",
+      "correctIndex": 1,
+      "answers": [
+        "very expensive",
+        "meals/drinks are included in the price",
+        "nothing is included",
+        "only flights included"
+      ]
+    },
+    {
+      "question": "An \"itinerary\" is...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Understand and use travel/brochure language.",
+      "correctIndex": 0,
+      "answers": [
+        "a plan of a trip's activities",
+        "a hotel bill",
+        "a suitcase",
+        "a type of visa"
+      ]
+    },
+    {
+      "question": "\"Off the beaten track\" means...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Understand and use travel/brochure language.",
+      "correctIndex": 0,
+      "answers": [
+        "a quiet, less-visited place",
+        "a busy tourist area",
+        "a cheap hotel",
+        "a dangerous area"
+      ]
+    },
+    {
+      "question": "An \"excursion\" is...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Understand and use travel/brochure language.",
+      "correctIndex": 1,
+      "answers": [
+        "a hotel room",
+        "a short trip/outing",
+        "a travel document",
+        "a type of food"
+      ]
+    },
+    {
+      "question": "\"Book in advance\" means...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Understand and use travel/brochure language.",
+      "correctIndex": 0,
+      "answers": [
+        "book early, before the date",
+        "book for free",
+        "cancel a booking",
+        "book at the last minute"
+      ]
+    }
+  ]
+}

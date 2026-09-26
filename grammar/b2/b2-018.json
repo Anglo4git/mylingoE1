@@ -1,0 +1,77 @@
+{
+  "id": "b2-018",
+  "title": "Zero, first, second, third conditionals",
+  "description": "Practice Zero, first, second, third conditionals.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"If you heat water to 100°C, it ___.\" (zero)",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Zero, first, second, third conditionals lesson for the underlying rule.",
+      "correctIndex": 0,
+      "answers": [
+        "boils",
+        "will boil",
+        "would boil",
+        "boiled"
+      ]
+    },
+    {
+      "question": "\"If it rains tomorrow, we ___ cancel.\" (first)",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Zero, first, second, third conditionals lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "cancel",
+        "will",
+        "would",
+        "cancelled"
+      ]
+    },
+    {
+      "question": "\"If I ___ the lottery, I'd travel.\" (second)",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Zero, first, second, third conditionals lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "win",
+        "won",
+        "will win",
+        "had won"
+      ]
+    },
+    {
+      "question": "\"If she ___ earlier, she wouldn't have missed the train.\" (third)",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Zero, first, second, third conditionals lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "left",
+        "leaves",
+        "had left",
+        "would leave"
+      ]
+    },
+    {
+      "question": "Third conditional refers to...",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Zero, first, second, third conditionals lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "general truths",
+        "real future possibility",
+        "unreal past",
+        "unreal present"
+      ]
+    }
+  ]
+}

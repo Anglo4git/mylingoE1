@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-03-lesson-06",
+  "title": "Lesson: Ordering in a Restaurant",
+  "description": "Practice: Ordering in a Restaurant.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice: Ordering in a Restaurant.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Ordering in a Restaurant",
+      "explanation": "Practice: Ordering in a Restaurant."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Ordering in a Restaurant",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "Polite order phrase:",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2,QuickCheck",
+      "explanation": "See the Ordering in a Restaurant lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "\"Could I have the soup, please?\"",
+        "\"Give soup.\"",
+        "\"Soup now.\"",
+        "\"I take soup.\""
+      ]
+    },
+    {
+      "question": "Asking about a dish:",
+      "category": "Functional Language",
+      "tags": "Functional Language,A2,QuickCheck",
+      "explanation": "See the Ordering in a Restaurant lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "\"Is this dish spicy?\"",
+        "\"Spicy this?\"",
+        "\"This spicy?\"",
+        "\"Dish spicy?\""
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

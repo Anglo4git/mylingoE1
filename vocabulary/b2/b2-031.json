@@ -1,0 +1,77 @@
+{
+  "id": "b2-031",
+  "title": "Approximations with -ish",
+  "description": "Practice Approximations with -ish.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"Let's meet at ___.\" (around 7)",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Approximations with -ish lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "seven",
+        "sevenish",
+        "seventy",
+        "sevened"
+      ]
+    },
+    {
+      "question": "\"He's ___, I'd guess.\" (around 40)",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Approximations with -ish lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "forty",
+        "fortyish",
+        "fortieth",
+        "fortying"
+      ]
+    },
+    {
+      "question": "\"The walls are a ___ blue.\" (tending toward green)",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Approximations with -ish lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "green",
+        "greenish",
+        "greened",
+        "greenly"
+      ]
+    },
+    {
+      "question": "\"-ish\" added to a number/time means...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Approximations with -ish lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "exactly",
+        "approximately",
+        "never",
+        "always"
+      ]
+    },
+    {
+      "question": "\"-ish\" added to an adjective often adds a...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2",
+      "explanation": "See the Approximations with -ish lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "very formal tone",
+        "slightly negative/informal nuance",
+        "strongly positive tone",
+        "past-tense meaning"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-a1-unit-01-lesson-27",
+  "title": "Lesson: Should for Advice",
+  "description": "Practice Should for Advice.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A1,A1+",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Should for Advice.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1+,A1",
+      "media": {},
+      "subprompt": "Should for Advice",
+      "explanation": "Practice Should for Advice."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Should for Advice",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1+,A1"
+    },
+    {
+      "question": "You have a headache. You ___ rest.",
+      "category": "Grammar",
+      "tags": "Grammar,A1+,QuickCheck",
+      "explanation": "Should + base verb is used for advice.",
+      "correctIndex": 1,
+      "answers": [
+        "should",
+        "should to",
+        "shoulds",
+        "are should"
+      ]
+    },
+    {
+      "question": "Which is advice?",
+      "category": "Grammar",
+      "tags": "Grammar,A1+,QuickCheck",
+      "explanation": "The correct pattern is should + base verb.",
+      "correctIndex": 1,
+      "answers": [
+        "You should call the doctor.",
+        "You call the doctor yesterday.",
+        "You are call the doctor.",
+        "You should to call the doctor."
+      ]
+    },
+    {
+      "question": "Complete: You shouldn't ___ so late.",
+      "category": "Grammar",
+      "tags": "Grammar,A1+,QuickCheck",
+      "explanation": "After shouldn't, use the base verb.",
+      "correctIndex": 1,
+      "answers": [
+        "stay up",
+        "to stay up",
+        "stays up",
+        "staying up"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A1+"
+    }
+  ]
+}

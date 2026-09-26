@@ -1,0 +1,77 @@
+{
+  "id": "a2-218",
+  "title": "Household Equipment",
+  "description": "Practice Household Equipment vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "You use this to clean clothes: a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Household Equipment lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "dishwasher",
+        "washing machine",
+        "kettle",
+        "iron"
+      ]
+    },
+    {
+      "question": "You use this to boil water: a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Household Equipment lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "kettle",
+        "iron",
+        "vacuum cleaner",
+        "dishwasher"
+      ]
+    },
+    {
+      "question": "You use this to remove creases from clothes: an ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Household Equipment lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "kettle",
+        "iron",
+        "vacuum cleaner",
+        "washing machine"
+      ]
+    },
+    {
+      "question": "You use this to clean carpets/floors: a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Household Equipment lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "vacuum cleaner",
+        "kettle",
+        "iron",
+        "dishwasher"
+      ]
+    },
+    {
+      "question": "You use this to wash plates automatically: a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Household Equipment lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "washing machine",
+        "dishwasher",
+        "kettle",
+        "iron"
+      ]
+    }
+  ]
+}

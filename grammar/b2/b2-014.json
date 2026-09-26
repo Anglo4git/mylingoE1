@@ -1,0 +1,77 @@
+{
+  "id": "b2-014",
+  "title": "Question tags",
+  "description": "Practice Question tags.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"You haven't seen my keys, ___?\"",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Question tags lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "haven't you",
+        "have you",
+        "didn't you",
+        "don't you"
+      ]
+    },
+    {
+      "question": "\"Close the door, ___?\"",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Question tags lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "do you",
+        "don't you",
+        "will you",
+        "won't you"
+      ]
+    },
+    {
+      "question": "\"Let's get coffee, ___?\"",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Question tags lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "do we",
+        "shall we",
+        "will we",
+        "don't we"
+      ]
+    },
+    {
+      "question": "\"I'm right, ___?\"",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Question tags lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "am I not",
+        "aren't I",
+        "isn't I",
+        "am not I"
+      ]
+    },
+    {
+      "question": "A positive statement takes...",
+      "category": "Grammar",
+      "tags": "Grammar,B2",
+      "explanation": "See the Question tags lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "a positive tag",
+        "a negative tag",
+        "no tag",
+        "\"isn't it\" always"
+      ]
+    }
+  ]
+}

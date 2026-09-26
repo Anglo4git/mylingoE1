@@ -1,0 +1,77 @@
+{
+  "id": "b1-040",
+  "title": "Pets and animals",
+  "description": "Practice Pets and animals.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "A \"stray\" animal is one that...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Talk about pets, wild animals, and animal care.",
+      "correctIndex": 0,
+      "answers": [
+        "has no home/owner",
+        "has an owner",
+        "is dangerous",
+        "lives in a zoo"
+      ]
+    },
+    {
+      "question": "A \"breed\" refers to...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Talk about pets, wild animals, and animal care.",
+      "correctIndex": 1,
+      "answers": [
+        "a vet's job",
+        "a type/kind of animal",
+        "an animal's age",
+        "an animal's food"
+      ]
+    },
+    {
+      "question": "\"Endangered\" species are...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Talk about pets, wild animals, and animal care.",
+      "correctIndex": 2,
+      "answers": [
+        "extinct already",
+        "very common",
+        "at risk of disappearing",
+        "domestic pets only"
+      ]
+    },
+    {
+      "question": "A \"vet\" is...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Talk about pets, wild animals, and animal care.",
+      "correctIndex": 1,
+      "answers": [
+        "a pet shop",
+        "an animal doctor",
+        "a wild animal",
+        "a type of food"
+      ]
+    },
+    {
+      "question": "\"Wildlife\" refers to...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1",
+      "explanation": "Talk about pets, wild animals, and animal care.",
+      "correctIndex": 2,
+      "answers": [
+        "pet animals",
+        "farm animals only",
+        "animals living in their natural habitat",
+        "zoo animals only"
+      ]
+    }
+  ]
+}

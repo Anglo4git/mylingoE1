@@ -1,0 +1,77 @@
+{
+  "id": "a2-210",
+  "title": "Work and Careers",
+  "description": "Practice Work and Careers vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Moving to a higher position at work is a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Work and Careers lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "resignation",
+        "promotion",
+        "interview",
+        "salary"
+      ]
+    },
+    {
+      "question": "A person you work with is your ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Work and Careers lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "boss",
+        "colleague",
+        "client",
+        "manager only"
+      ]
+    },
+    {
+      "question": "To formally leave a job, you ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Work and Careers lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "apply",
+        "resign",
+        "promote",
+        "interview"
+      ]
+    },
+    {
+      "question": "The money you earn from your job is your ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Work and Careers lesson for the rule.",
+      "correctIndex": 1,
+      "answers": [
+        "salary",
+        "promotion",
+        "resignation",
+        "application"
+      ]
+    },
+    {
+      "question": "To try to get a job, you ___ for it.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2",
+      "explanation": "See the Work and Careers lesson for the rule.",
+      "correctIndex": 2,
+      "answers": [
+        "resign",
+        "apply",
+        "promote",
+        "interview only"
+      ]
+    }
+  ]
+}

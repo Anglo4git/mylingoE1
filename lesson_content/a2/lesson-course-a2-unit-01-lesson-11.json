@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-01-lesson-11",
+  "title": "Lesson: Past Simple",
+  "description": "Practice Past Simple.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Past Simple.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Past Simple",
+      "explanation": "Practice Past Simple."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Past Simple",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "I ___ my grandparents last weekend.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "See the Past Simple lesson.",
+      "correctIndex": 2,
+      "answers": [
+        "visit",
+        "visited",
+        "visiting",
+        "visits"
+      ]
+    },
+    {
+      "question": "She ___ to Paris in June.",
+      "category": "Grammar",
+      "tags": "Grammar,A2,QuickCheck",
+      "explanation": "See the Past Simple lesson.",
+      "correctIndex": 3,
+      "answers": [
+        "go",
+        "goed",
+        "went",
+        "gone"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

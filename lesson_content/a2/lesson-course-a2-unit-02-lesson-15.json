@@ -1,0 +1,60 @@
+{
+  "id": "lesson-course-a2-unit-02-lesson-15",
+  "title": "Lesson: Life Changes and Events",
+  "description": "Practice Life Changes and Events vocabulary.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Life Changes and Events vocabulary.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Life Changes and Events",
+      "explanation": "Practice Life Changes and Events vocabulary."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Life Changes and Events",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "Stopping work permanently, usually later in life, is to ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "See the Life Changes and Events lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "retire",
+        "graduate",
+        "resign",
+        "apply"
+      ]
+    },
+    {
+      "question": "Moving to a new home is to ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,A2,QuickCheck",
+      "explanation": "See the Life Changes and Events lesson.",
+      "correctIndex": 1,
+      "answers": [
+        "move house",
+        "change career",
+        "retire",
+        "get married"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

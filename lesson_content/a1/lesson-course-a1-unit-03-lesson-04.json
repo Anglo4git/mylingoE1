@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-a1-unit-03-lesson-04",
+  "title": "Lesson: Describing People and Objects",
+  "description": "Practice Describing People and Objects.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Describing People and Objects.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Describing People and Objects",
+      "explanation": "Practice Describing People and Objects."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Describing People and Objects",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "Put in order: red / small / bag",
+      "category": "Functional Language",
+      "tags": "Functional Language,A1,QuickCheck",
+      "explanation": "Size usually comes before colour: small red bag.",
+      "correctIndex": 1,
+      "answers": [
+        "small red bag",
+        "red small bag",
+        "bag red small",
+        "small bag red"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

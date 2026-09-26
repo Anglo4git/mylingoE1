@@ -1,0 +1,77 @@
+{
+  "id": "a1-023",
+  "title": "Comparatives",
+  "description": "Practice Comparatives.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "big → ___ than",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "Short adjectives add -er.",
+      "correctIndex": 1,
+      "answers": [
+        "bigger",
+        "more big",
+        "biggest",
+        "most big"
+      ]
+    },
+    {
+      "question": "expensive → ___ than",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "Longer adjectives use 'more ... than'.",
+      "correctIndex": 2,
+      "answers": [
+        "expensiver",
+        "more expensive",
+        "expensivest",
+        "most expensiver"
+      ]
+    },
+    {
+      "question": "happy → ___ than",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "Adjectives ending in -y change to -ier.",
+      "correctIndex": 1,
+      "answers": [
+        "happier",
+        "more happy",
+        "happyer",
+        "most happy"
+      ]
+    },
+    {
+      "question": "Which sentence is correct?",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "Don't combine -er with 'more'.",
+      "correctIndex": 2,
+      "answers": [
+        "This is more bigger than that.",
+        "This is bigger than that.",
+        "This is big than that.",
+        "This is more big than that."
+      ]
+    },
+    {
+      "question": "\"My car is faster than yours.\" Whose car is faster?",
+      "category": "Grammar",
+      "tags": "Grammar,A1",
+      "explanation": "'My car' belongs to the speaker.",
+      "correctIndex": 2,
+      "answers": [
+        "the listener's",
+        "the speaker's",
+        "nobody's",
+        "both"
+      ]
+    }
+  ]
+}
