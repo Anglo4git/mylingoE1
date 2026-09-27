@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-01-lesson-18",
+  "title": "Lesson: Compounds of some, any, no, every",
+  "description": "Practice Compounds of some, any, no, every.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Compounds of some, any, no, every.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Compounds of some, any, no, every",
+      "explanation": "Practice Compounds of some, any, no, every."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Compounds of some, any, no, every",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "\"___ left this here.\" (affirmative statement)",
+      "category": "Grammar",
+      "tags": "Grammar,B2,QuickCheck",
+      "explanation": "See the Compounds of some, any, no, every lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Anyone",
+        "Someone",
+        "No one",
+        "Nothing"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-05-lesson-06",
+  "title": "Lesson: Describing cause and effect",
+  "description": "Practice Describing cause and effect.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Describing cause and effect.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Describing cause and effect",
+      "explanation": "Practice Describing cause and effect."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Describing cause and effect",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "\"___ the strike, flights were delayed.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2,QuickCheck",
+      "explanation": "See the Describing cause and effect lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Due to",
+        "Therefore",
+        "So as to",
+        "Congratulations on"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

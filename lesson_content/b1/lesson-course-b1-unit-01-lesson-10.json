@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-01-lesson-10",
+  "title": "Lesson: First vs Second Conditional (Contrast)",
+  "description": "Practice First vs Second Conditional (Contrast).",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice First vs Second Conditional (Contrast).",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "First vs Second Conditional (Contrast)",
+      "explanation": "Practice First vs Second Conditional (Contrast)."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "First vs Second Conditional (Contrast)",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "\"If it rains, I ___ stay home.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1,QuickCheck",
+      "explanation": "Talk about real future possibilities (first conditional) and imaginary/unlikely present situations (second conditional).",
+      "correctIndex": 3,
+      "answers": [
+        "would",
+        "stayed",
+        "stay",
+        "will"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

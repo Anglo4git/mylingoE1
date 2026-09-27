@@ -1,0 +1,77 @@
+{
+  "id": "c1-024",
+  "title": "Passive",
+  "description": "Practice Passive.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"It is widely believed that the policy will be reversed\" is an example of:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Passive lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A \"get\" passive",
+        "A passive reporting structure",
+        "An active reporting structure",
+        "A reduced relative clause"
+      ]
+    },
+    {
+      "question": "\"The suspect is alleged to have left the country\" distances the speaker from the claim's source by:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Passive lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Using a passive reporting verb + infinitive",
+        "Using a question tag",
+        "Using the \"get\" passive",
+        "Using a conditional"
+      ]
+    },
+    {
+      "question": "\"My bike got stolen last week\" is:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Passive lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A formal \"be\" passive",
+        "An informal \"get\" passive, implying something happened unexpectedly",
+        "An active sentence",
+        "A passive reporting structure"
+      ]
+    },
+    {
+      "question": "Rewrite \"People say that the deal fell through\" as a passive reporting structure:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Passive lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "It is said that the deal fell through.",
+        "The deal was said by people.",
+        "People are said to fall through.",
+        "It said the deal fell through."
+      ]
+    },
+    {
+      "question": "This lesson assumes which passive content already known from B2, and does not re-test it?",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Passive lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Basic passive formation and Advanced Passive",
+        "Question tags",
+        "Relative clauses",
+        "Reported speech"
+      ]
+    }
+  ]
+}

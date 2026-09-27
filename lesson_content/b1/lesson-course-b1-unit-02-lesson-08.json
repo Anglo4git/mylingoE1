@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-02-lesson-08",
+  "title": "Lesson: Holidays and travel brochures",
+  "description": "Practice Holidays and travel brochures.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Holidays and travel brochures.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Holidays and travel brochures",
+      "explanation": "Practice Holidays and travel brochures."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Holidays and travel brochures",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "\"All-inclusive\" means...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1,QuickCheck",
+      "explanation": "Understand and use travel/brochure language.",
+      "correctIndex": 1,
+      "answers": [
+        "very expensive",
+        "meals/drinks are included in the price",
+        "nothing is included",
+        "only flights included"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "c1-027",
+  "title": "Astrology and religions",
+  "description": "Practice Astrology and religions.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "A person who doubts the truth of a claim, such as astrology, is a:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Astrology and religions lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Believer",
+        "Sceptic",
+        "Denomination",
+        "Ritual"
+      ]
+    },
+    {
+      "question": "A country with no official state religion is described as:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Astrology and religions lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Secular",
+        "Doctrinal",
+        "Devout",
+        "Denominational"
+      ]
+    },
+    {
+      "question": "A recurring symbolic practice within a religion is a:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Astrology and religions lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Horoscope",
+        "Ritual",
+        "Zodiac sign",
+        "Faith"
+      ]
+    },
+    {
+      "question": "\"Denomination\" refers to:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Astrology and religions lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A branch or subgroup within a religion",
+        "A type of horoscope",
+        "A non-believer",
+        "A form of astrology"
+      ]
+    },
+    {
+      "question": "Which sentence uses the vocabulary set neutrally and factually?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Astrology and religions lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "The country is officially secular but has several major denominations.",
+        "Astrology is obviously nonsense.",
+        "Real believers don't need horoscopes.",
+        "All rituals are outdated."
+      ]
+    }
+  ]
+}

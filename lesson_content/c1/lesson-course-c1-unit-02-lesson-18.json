@@ -1,0 +1,47 @@
+{
+    "id": "lesson-course-c1-unit-02-lesson-18",
+    "title": "Lesson: Advertising",
+    "description": "Practice Advertising.",
+    "brand": "Mylingo",
+    "category": "Vocabulary",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "Practice Advertising.",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1",
+            "media": {},
+            "subprompt": "Advertising",
+            "explanation": "Practice Advertising."
+        },
+        {
+            "question": "What you'll practice",
+            "subprompt": "Advertising",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1"
+        },
+        {
+            "question": "\"Target audience\" refers to:",
+            "category": "Vocabulary",
+            "tags": "Vocabulary,C1,QuickCheck",
+            "explanation": "See the Advertising lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "A company's competitors",
+                "The specific group an ad is designed to reach",
+                "A government regulator",
+                "The advertising budget"
+            ]
+        },
+        {
+            "question": "Nice work! Ready for the full exercises?",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1"
+        }
+    ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "c1-019",
+  "title": "Ellipsis and elision",
+  "description": "Practice Ellipsis and elision.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Elision refers to:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Ellipsis and elision lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Omitting words recoverable from context",
+        "Omitting sounds in fast, connected speech",
+        "Reordering words for emphasis",
+        "Reporting speech indirectly"
+      ]
+    },
+    {
+      "question": "Which shows elision rather than ellipsis?",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Ellipsis and elision lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "\"Want some?\" (for \"Do you want some?\")",
+        "\"next day\" pronounced closer to \"nex' day\"",
+        "\"Coming?\" (for \"Are you coming?\")",
+        "\"Nice weather\" (for \"It's nice weather\")"
+      ]
+    },
+    {
+      "question": "\"Could've\" in casual speech/writing is an elided form of:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Ellipsis and elision lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Could of",
+        "Could have",
+        "Could had",
+        "Could been"
+      ]
+    },
+    {
+      "question": "This lesson is deliberately scoped to avoid repeating which already-live lesson?",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Ellipsis and elision lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "c1-006 \"Ellipsis\"",
+        "c1-001 \"Advanced Conditionals\"",
+        "c1-008 \"Inversion after Only\"",
+        "c1-007 \"Lexical Precision\""
+      ]
+    },
+    {
+      "question": "**Scope check:** Does this quiz test word-omission ellipsis (already live) or sound-omission elision (new ground)?",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Ellipsis and elision lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Word-omission ellipsis",
+        "Sound-omission elision",
+        "Both equally",
+        "Neither"
+      ]
+    }
+  ]
+}

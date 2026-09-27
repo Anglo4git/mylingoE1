@@ -1,0 +1,47 @@
+{
+    "id": "lesson-course-c1-unit-05-lesson-13",
+    "title": "Lesson: Comparing and contrasting",
+    "description": "Practice Comparing and contrasting.",
+    "brand": "Mylingo",
+    "category": "Functional Language",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "Practice Comparing and contrasting.",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1",
+            "media": {},
+            "subprompt": "Comparing and contrasting",
+            "explanation": "Practice Comparing and contrasting."
+        },
+        {
+            "question": "What you'll practice",
+            "subprompt": "Comparing and contrasting",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1"
+        },
+        {
+            "question": "\"Whereas the first approach is cheaper, the second is more reliable\" uses \"whereas\" to:",
+            "category": "Functional Language",
+            "tags": "Functional Language,C1,QuickCheck",
+            "explanation": "See the Comparing and contrasting lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "Persuade",
+                "Contrast two ideas",
+                "Give an instruction",
+                "Express regret"
+            ]
+        },
+        {
+            "question": "Nice work! Ready for the full exercises?",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1"
+        }
+    ]
+}

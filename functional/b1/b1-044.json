@@ -13,7 +13,7 @@
       "category": "Functional Language",
       "tags": "Functional Language,B1",
       "explanation": "Relay what someone asked or told you to do.",
-      "correctIndex": 0,
+      "correctIndex": 1,
       "answers": [
         "to",
         "that",
@@ -52,7 +52,7 @@
       "category": "Functional Language",
       "tags": "Functional Language,B1",
       "explanation": "Relay what someone asked or told you to do.",
-      "correctIndex": 0,
+      "correctIndex": 1,
       "answers": [
         "told + to-infinitive",
         "said + that",

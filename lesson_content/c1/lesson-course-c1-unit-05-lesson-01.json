@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-c1-unit-05-lesson-01",
+  "title": "Lesson: Contradicting",
+  "description": "Practice Contradicting.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Contradicting.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,C1",
+      "media": {},
+      "subprompt": "Contradicting",
+      "explanation": "Practice Contradicting."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Contradicting",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,C1"
+    },
+    {
+      "question": "Which is an informal contradiction?",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1,QuickCheck",
+      "explanation": "See the Contradicting lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "That's not quite right, actually...",
+        "With respect, I'd have to disagree.",
+        "I'm afraid that's not entirely accurate.",
+        "I beg to differ, if I may."
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,C1"
+    }
+  ]
+}

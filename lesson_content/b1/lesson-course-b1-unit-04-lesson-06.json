@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-04-lesson-06",
+  "title": "Lesson: Making deductions",
+  "description": "Practice Making deductions.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Making deductions.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Making deductions",
+      "explanation": "Practice Making deductions."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Making deductions",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "\"The lights are off — they ___ be out.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1,QuickCheck",
+      "explanation": "Draw logical conclusions from evidence.",
+      "correctIndex": 2,
+      "answers": [
+        "would",
+        "should",
+        "must",
+        "can"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

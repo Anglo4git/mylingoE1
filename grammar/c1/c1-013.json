@@ -1,0 +1,77 @@
+{
+    "id": "c1-013",
+    "title": "Articles",
+    "description": "Practice Articles.",
+    "brand": "Mylingo",
+    "category": "Grammar",
+    "tags": "Grammar,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "\"___ internet has changed how we communicate.\" Which article?",
+            "category": "Grammar",
+            "tags": "Grammar,C1",
+            "explanation": "See the Articles lesson for the underlying rule.",
+            "correctIndex": 2,
+            "answers": [
+                "A",
+                "An",
+                "The",
+                "No article"
+            ]
+        },
+        {
+            "question": "\"He's in ___ hospital after the accident\" (British fixed expression):",
+            "category": "Grammar",
+            "tags": "Grammar,C1",
+            "explanation": "See the Articles lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "a",
+                "the",
+                "an",
+                "no article"
+            ]
+        },
+        {
+            "question": "\"It was ___ life-changing experience\" — why does \"life\" take \"a\" here?",
+            "category": "Grammar",
+            "tags": "Grammar,C1",
+            "explanation": "See the Articles lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "It's a countable noun",
+                "The abstract noun is specified/modified",
+                "It's a proper noun",
+                "It's plural"
+            ]
+        },
+        {
+            "question": "Which sentence uses generic reference correctly with \"no article\"?",
+            "category": "Grammar",
+            "tags": "Grammar,C1",
+            "explanation": "See the Articles lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "The tigers are dangerous.",
+                "Tigers are dangerous.",
+                "A tiger are dangerous.",
+                "An tiger is dangerous."
+            ]
+        },
+        {
+            "question": "This lesson's quiz focuses on which article cases?",
+            "category": "Grammar",
+            "tags": "Grammar,C1",
+            "explanation": "See the Articles lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "Basic a/an/the rules for countable nouns",
+                "Generic reference, abstract nouns, and fixed expressions",
+                "Articles with proper nouns only",
+                "Plural nouns only"
+            ]
+        }
+    ]
+}

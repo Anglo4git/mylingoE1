@@ -1,0 +1,77 @@
+{
+  "id": "c1-048",
+  "title": "Expressing opinions formally and informally",
+  "description": "Practice Expressing opinions formally and informally.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"Honestly, I think it's a bit of a mess\" is:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Expressing opinions formally and informally lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Formal",
+        "Informal",
+        "Neutral only",
+        "A contradiction"
+      ]
+    },
+    {
+      "question": "\"In my assessment, the approach requires significant revision\" is:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Expressing opinions formally and informally lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Informal",
+        "Formal",
+        "A question",
+        "An instruction"
+      ]
+    },
+    {
+      "question": "\"I reckon it won't work\" (informal) has which formal equivalent?",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Expressing opinions formally and informally lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "I have reservations about the viability of this approach.",
+        "I think it might not work, maybe.",
+        "It won't work, obviously.",
+        "Won't work, I guess."
+      ]
+    },
+    {
+      "question": "This lesson's new C1 angle, building on B2's \"Giving opinions,\" is:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Expressing opinions formally and informally lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Opinion strength (strong/neutral/tentative)",
+        "The formal/informal register axis specifically",
+        "Basic opinion phrases like \"I think\"",
+        "Contradicting opinions"
+      ]
+    },
+    {
+      "question": "**Scope check:** Does this quiz retest opinion *strength* (already covered at B2) or the *register* axis (new at C1)?",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Expressing opinions formally and informally lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Strength",
+        "Register",
+        "Both equally",
+        "Neither"
+      ]
+    }
+  ]
+}

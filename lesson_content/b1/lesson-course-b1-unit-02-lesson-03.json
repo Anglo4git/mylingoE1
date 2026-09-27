@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-02-lesson-03",
+  "title": "Lesson: Appearances",
+  "description": "Practice Appearances.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Appearances.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Appearances",
+      "explanation": "Practice Appearances."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Appearances",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "\"Build\" refers to a person's ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1,QuickCheck",
+      "explanation": "Describe how people look.",
+      "correctIndex": 2,
+      "answers": [
+        "clothing",
+        "voice",
+        "body shape",
+        "personality"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

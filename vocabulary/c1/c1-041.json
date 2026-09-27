@@ -1,0 +1,77 @@
+{
+  "id": "c1-041",
+  "title": "Children's development",
+  "description": "Practice Children's development.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"Milestones\" in child development refer to:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Children's development lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Physical locations",
+        "Key stages/achievements in a child's growth",
+        "School exam results only",
+        "Birthdays"
+      ]
+    },
+    {
+      "question": "\"Cognitive development\" refers to the growth of a child's:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Children's development lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Physical strength",
+        "Thinking and reasoning abilities",
+        "Social circle",
+        "Height"
+      ]
+    },
+    {
+      "question": "\"Nurture vs. nature\" is a debate about:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Children's development lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Diet vs. exercise",
+        "Environment/upbringing vs. genetics as influences on development",
+        "City vs. countryside living",
+        "Public vs. private schooling"
+      ]
+    },
+    {
+      "question": "\"The formative years\" refers to:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Children's development lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A child's teenage years only",
+        "Early years that significantly shape later development",
+        "The years spent in university",
+        "Adulthood"
+      ]
+    },
+    {
+      "question": "\"Attachment\" in child development refers to:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Children's development lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A toy a child prefers",
+        "The emotional bond between a child and caregiver",
+        "A school subject",
+        "A medical condition"
+      ]
+    }
+  ]
+}

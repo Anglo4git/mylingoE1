@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-02-lesson-12",
+  "title": "Lesson: Idiomatic expressions",
+  "description": "Practice Idiomatic expressions.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Idiomatic expressions.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Idiomatic expressions",
+      "explanation": "Practice Idiomatic expressions."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Idiomatic expressions",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "\"He told a joke to ___.\" (ease tension)",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2,QuickCheck",
+      "explanation": "See the Idiomatic expressions lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "hit the nail on the head",
+        "break the ice",
+        "cost an arm and a leg",
+        "once in a blue moon"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

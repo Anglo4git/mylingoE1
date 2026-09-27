@@ -1,0 +1,47 @@
+{
+    "id": "lesson-course-c1-unit-02-lesson-16",
+    "title": "Lesson: Environmental issues",
+    "description": "Practice Environmental issues.",
+    "brand": "Mylingo",
+    "category": "Vocabulary",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "Practice Environmental issues.",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1",
+            "media": {},
+            "subprompt": "Environmental issues",
+            "explanation": "Practice Environmental issues."
+        },
+        {
+            "question": "What you'll practice",
+            "subprompt": "Environmental issues",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1"
+        },
+        {
+            "question": "\"Carbon footprint\" refers to:",
+            "category": "Vocabulary",
+            "tags": "Vocabulary,C1,QuickCheck",
+            "explanation": "See the Environmental issues lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "A type of renewable energy",
+                "The total greenhouse gas emissions caused by a person/organisation",
+                "A conservation area",
+                "A recycling symbol"
+            ]
+        },
+        {
+            "question": "Nice work! Ready for the full exercises?",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1"
+        }
+    ]
+}

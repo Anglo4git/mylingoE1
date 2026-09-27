@@ -1,0 +1,47 @@
+{
+    "id": "lesson-course-c1-unit-02-lesson-12",
+    "title": "Lesson: Diet and health",
+    "description": "Practice Diet and health.",
+    "brand": "Mylingo",
+    "category": "Vocabulary",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "Practice Diet and health.",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1",
+            "media": {},
+            "subprompt": "Diet and health",
+            "explanation": "Practice Diet and health."
+        },
+        {
+            "question": "What you'll practice",
+            "subprompt": "Diet and health",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1"
+        },
+        {
+            "question": "A \"balanced diet\" is one that:",
+            "category": "Vocabulary",
+            "tags": "Vocabulary,C1,QuickCheck",
+            "explanation": "See the Diet and health lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "Excludes entire food groups",
+                "Includes a variety of foods in appropriate proportions",
+                "Focuses only on protein",
+                "Avoids all fats"
+            ]
+        },
+        {
+            "question": "Nice work! Ready for the full exercises?",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1"
+        }
+    ]
+}

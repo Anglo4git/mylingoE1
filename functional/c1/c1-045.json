@@ -1,0 +1,77 @@
+{
+  "id": "c1-045",
+  "title": "Instructing",
+  "description": "Practice Instructing.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Which instructing structure is NOT a plain imperative?",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Instructing lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Save your work.",
+        "Make sure to save your work.",
+        "Save it now.",
+        "Close the file."
+      ]
+    },
+    {
+      "question": "\"The first step is to register your account\" is an example of:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Instructing lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A direct command",
+        "A non-imperative instructing structure",
+        "A polite request",
+        "A hypothetical"
+      ]
+    },
+    {
+      "question": "\"Be sure not to...\" functions to:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Instructing lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Give a warning-style instruction",
+        "Express regret",
+        "Ask a question",
+        "Contradict someone"
+      ]
+    },
+    {
+      "question": "Rewrite \"Close the door\" using \"You'll need to\":",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Instructing lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "You'll need to close the door.",
+        "You'll be closing the door.",
+        "You closed the door.",
+        "Would you close the door?"
+      ]
+    },
+    {
+      "question": "This lesson's quiz tests:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Instructing lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Forming varied instruction structures beyond the imperative",
+        "Basic imperative formation",
+        "Passive voice",
+        "Reported speech"
+      ]
+    }
+  ]
+}

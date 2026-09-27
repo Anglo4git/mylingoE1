@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-04-lesson-03",
+  "title": "Lesson: Talking about obligation",
+  "description": "Practice Talking about obligation.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Talking about obligation.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Talking about obligation",
+      "explanation": "Practice Talking about obligation."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Talking about obligation",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "\"You ___ show ID at the entrance.\" (necessary)",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1,QuickCheck",
+      "explanation": "Express necessity and lack of necessity.",
+      "correctIndex": 2,
+      "answers": [
+        "might",
+        "could",
+        "have to",
+        "don't have to"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

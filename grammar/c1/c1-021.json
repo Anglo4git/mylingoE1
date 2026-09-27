@@ -1,0 +1,77 @@
+{
+  "id": "c1-021",
+  "title": "Future Continuous",
+  "description": "Practice Future Continuous.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"Will you be passing the post office? Could you drop this off?\" uses future continuous to:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Future Continuous lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Make a polite, indirect request",
+        "State a firm decision",
+        "Express regret",
+        "Report someone else's words"
+      ]
+    },
+    {
+      "question": "\"I'll be working late again tonight\" expresses:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Future Continuous lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A sudden decision",
+        "A predicted, assumed routine",
+        "A polite question",
+        "A hypothetical"
+      ]
+    },
+    {
+      "question": "Contrast \"I'll work late tonight\" with \"I'll be working late tonight\" — the second implies:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Future Continuous lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A decision made at the moment of speaking",
+        "Part of an already-existing plan/routine",
+        "A refusal",
+        "A reported statement"
+      ]
+    },
+    {
+      "question": "Which is the more indirect, polite version of \"Can I use the car later?\"",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Future Continuous lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Will you be using the car later?",
+        "You must let me use the car.",
+        "I will use the car later.",
+        "Could you use the car later?"
+      ]
+    },
+    {
+      "question": "This lesson's quiz distinguishes future continuous from:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Future Continuous lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Future simple / \"going to,\" for planned-decision vs. assumed-routine meaning",
+        "Past continuous",
+        "Present perfect",
+        "Present simple"
+      ]
+    }
+  ]
+}

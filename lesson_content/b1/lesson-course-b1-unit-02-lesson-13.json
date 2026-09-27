@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-02-lesson-13",
+  "title": "Lesson: Types of books, films, and TV programmes",
+  "description": "Practice Types of books, films, and TV programmes.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Types of books, films, and TV programmes.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Types of books, films, and TV programmes",
+      "explanation": "Practice Types of books, films, and TV programmes."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Types of books, films, and TV programmes",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "A funny TV series is a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1,QuickCheck",
+      "explanation": "Talk about genres and preferences.",
+      "correctIndex": 3,
+      "answers": [
+        "documentary",
+        "drama",
+        "thriller",
+        "sitcom"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

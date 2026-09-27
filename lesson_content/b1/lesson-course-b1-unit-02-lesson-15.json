@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-02-lesson-15",
+  "title": "Lesson: Political Systems",
+  "description": "Practice Political Systems.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Political Systems.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Political Systems",
+      "explanation": "Practice Political Systems."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Political Systems",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "In a \"democracy\", citizens...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1,QuickCheck",
+      "explanation": "Describe how governments and elections work in general, factual terms.",
+      "correctIndex": 1,
+      "answers": [
+        "vote for their representatives",
+        "have no say in government",
+        "are ruled by a king only",
+        "cannot hold elections"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

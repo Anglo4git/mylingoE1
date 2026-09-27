@@ -1,0 +1,77 @@
+{
+  "id": "c1-032",
+  "title": "Creativity",
+  "description": "Practice Creativity.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"Derivative\" describes work that is:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Creativity lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Highly original",
+        "Copied or unoriginal, based too closely on other work",
+        "Well-funded",
+        "Collaborative"
+      ]
+    },
+    {
+      "question": "\"Innovative\" is the opposite connotation of which term in this set?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Creativity lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Inspiration",
+        "Derivative",
+        "Brainstorm",
+        "Artistic license"
+      ]
+    },
+    {
+      "question": "\"Artistic license\" refers to:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Creativity lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A legal document for artists",
+        "Freedom to alter facts/reality for creative effect",
+        "A membership fee",
+        "A copyright violation"
+      ]
+    },
+    {
+      "question": "\"To think outside the box\" means to:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Creativity lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Follow standard procedure",
+        "Think in unconventional, creative ways",
+        "Refuse new ideas",
+        "Work within strict rules only"
+      ]
+    },
+    {
+      "question": "Which sentence uses \"derivative\" and \"innovative\" with contrasting, correct connotation?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Creativity lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "The design felt derivative, not truly innovative.",
+        "The design felt innovative, not truly derivative, so it was rejected.",
+        "Both words mean the same thing here.",
+        "Innovative work is always derivative."
+      ]
+    }
+  ]
+}

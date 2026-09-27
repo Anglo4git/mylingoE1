@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-01-lesson-14",
+  "title": "Lesson: Phrasal verbs — grammar pattern",
+  "description": "Practice Phrasal verbs — grammar pattern.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Phrasal verbs — grammar pattern.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Phrasal verbs — grammar pattern",
+      "explanation": "Practice Phrasal verbs — grammar pattern."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Phrasal verbs — grammar pattern",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "\"She turned ___ the offer.\" (both orders possible)",
+      "category": "Grammar",
+      "tags": "Grammar,B2,QuickCheck",
+      "explanation": "See the Phrasal verbs — grammar pattern lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "down",
+        "off",
+        "up",
+        "over"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

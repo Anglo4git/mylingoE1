@@ -1,0 +1,77 @@
+{
+  "id": "c1-040",
+  "title": "Environmental issues",
+  "description": "Practice Environmental issues.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"Carbon footprint\" refers to:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Environmental issues lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A type of renewable energy",
+        "The total greenhouse gas emissions caused by a person/organisation",
+        "A conservation area",
+        "A recycling symbol"
+      ]
+    },
+    {
+      "question": "\"Renewable energy\" comes from sources that:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Environmental issues lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Run out permanently once used",
+        "Naturally replenish, like solar or wind",
+        "Are always fossil fuels",
+        "Cannot be used for electricity"
+      ]
+    },
+    {
+      "question": "\"Sustainability\" refers to:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Environmental issues lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Using resources in a way that meets present needs without depleting them for the future",
+        "Using as many resources as possible now",
+        "A type of pollution",
+        "A single-use product"
+      ]
+    },
+    {
+      "question": "\"Single-use plastic\" refers to plastic that is:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Environmental issues lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Reused many times",
+        "Designed to be used once and discarded",
+        "Biodegradable",
+        "Made from renewable materials"
+      ]
+    },
+    {
+      "question": "Which sentence uses the vocabulary factually and neutrally?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Environmental issues lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "The company has pledged to reduce its carbon footprint.",
+        "Anyone who doesn't recycle is a bad person.",
+        "Renewable energy is always cheaper, no exceptions.",
+        "Conservation is a waste of money."
+      ]
+    }
+  ]
+}

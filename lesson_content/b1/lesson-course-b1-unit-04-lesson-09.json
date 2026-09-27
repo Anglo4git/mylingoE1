@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-04-lesson-09",
+  "title": "Lesson: Refusing",
+  "description": "Practice Refusing.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Refusing.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Refusing",
+      "explanation": "Practice Refusing."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Refusing",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "\"I'm afraid I ___ make it Friday.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1,QuickCheck",
+      "explanation": "Decline requests or offers politely but clearly.",
+      "correctIndex": 2,
+      "answers": [
+        "shouldn't",
+        "can",
+        "can't",
+        "mustn't"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-01-lesson-19",
+  "title": "Lesson: Reported speech — B2 extensions",
+  "description": "Practice Reported speech — B2 extensions.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Reported speech — B2 extensions.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Reported speech — B2 extensions",
+      "explanation": "Practice Reported speech — B2 extensions."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Reported speech — B2 extensions",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "\"She suggested ___ for a walk.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B2,QuickCheck",
+      "explanation": "See the Reported speech — B2 extensions lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "to go",
+        "going",
+        "go",
+        "went"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

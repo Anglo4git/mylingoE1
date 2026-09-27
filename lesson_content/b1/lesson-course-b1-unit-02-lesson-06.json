@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-02-lesson-06",
+  "title": "Lesson: Make and do (collocations)",
+  "description": "Practice Make and do (collocations).",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Make and do (collocations).",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Make and do (collocations)",
+      "explanation": "Practice Make and do (collocations)."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Make and do (collocations)",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "\"___ a decision\"",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1,QuickCheck",
+      "explanation": "Use the right verb — \"make\" or \"do\" — with common nouns.",
+      "correctIndex": 1,
+      "answers": [
+        "have",
+        "make",
+        "take",
+        "do"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

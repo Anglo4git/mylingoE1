@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-02-lesson-07",
+  "title": "Lesson: Housework",
+  "description": "Practice Housework.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Housework.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Housework",
+      "explanation": "Practice Housework."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Housework",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "To clean a floor with a machine is to ___ it.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1,QuickCheck",
+      "explanation": "Talk about household chores and routines.",
+      "correctIndex": 2,
+      "answers": [
+        "dust",
+        "mop",
+        "vacuum",
+        "tidy"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

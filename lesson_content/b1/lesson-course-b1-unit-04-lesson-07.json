@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-04-lesson-07",
+  "title": "Lesson: Guessing",
+  "description": "Practice Guessing.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Guessing.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Guessing",
+      "explanation": "Practice Guessing."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Guessing",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "\"I'd guess ___ he's about thirty.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1,QuickCheck",
+      "explanation": "Make tentative guesses when unsure.",
+      "correctIndex": 1,
+      "answers": [
+        "that",
+        "about",
+        "if",
+        "for"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

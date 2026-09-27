@@ -1,0 +1,77 @@
+{
+  "id": "c1-037",
+  "title": "Types of communication",
+  "description": "Practice Types of communication.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"Non-verbal communication\" includes:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Types of communication lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Written emails only",
+        "Body language, facial expressions, and tone",
+        "Only spoken words",
+        "Formal letters"
+      ]
+    },
+    {
+      "question": "\"To read between the lines\" means to:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Types of communication lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Read literally",
+        "Understand an implied meaning not directly stated",
+        "Skip parts of a text",
+        "Translate a text"
+      ]
+    },
+    {
+      "question": "\"Small talk\" refers to:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Types of communication lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Deep, serious conversation",
+        "Light, casual conversation on unimportant topics",
+        "A formal presentation",
+        "A written report"
+      ]
+    },
+    {
+      "question": "\"Miscommunication\" occurs when:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Types of communication lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A message is perfectly understood",
+        "A message is misunderstood or unclear",
+        "No message is sent",
+        "A message is translated correctly"
+      ]
+    },
+    {
+      "question": "\"To get straight to the point\" means to:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Types of communication lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Add lots of detail and background first",
+        "Communicate directly and concisely",
+        "Avoid answering",
+        "Speak formally"
+      ]
+    }
+  ]
+}

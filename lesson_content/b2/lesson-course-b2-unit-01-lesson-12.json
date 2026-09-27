@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-01-lesson-12",
+  "title": "Lesson: Future forms",
+  "description": "Practice Future forms.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Future forms.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Future forms",
+      "explanation": "Practice Future forms."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Future forms",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "\"Look at those clouds — it's ___ rain.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B2,QuickCheck",
+      "explanation": "See the Future forms lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "will",
+        "going to",
+        "go to",
+        "will to"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

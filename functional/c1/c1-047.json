@@ -1,0 +1,77 @@
+{
+  "id": "c1-047",
+  "title": "Advising",
+  "description": "Practice Advising.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Which is the strongest piece of advice?",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Advising lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "You might want to consider it.",
+        "You really must see a doctor.",
+        "I'd suggest seeing a doctor.",
+        "It would be advisable to see a doctor."
+      ]
+    },
+    {
+      "question": "Which is the most tentative?",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Advising lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "You really must...",
+        "You might want to consider...",
+        "I'd suggest...",
+        "It would be advisable to..."
+      ]
+    },
+    {
+      "question": "\"It would be advisable to consult a specialist\" matches which register?",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Advising lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Formal",
+        "Very informal",
+        "Rude",
+        "Childish"
+      ]
+    },
+    {
+      "question": "\"I'd suggest a second opinion\" is an example of which strength of advice?",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Advising lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Strong",
+        "Neutral",
+        "Tentative",
+        "Formal-only"
+      ]
+    },
+    {
+      "question": "This quiz's focus is:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Advising lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Matching advice phrasing to strength and formality",
+        "Basic modal verb meaning",
+        "Question formation",
+        "Passive voice"
+      ]
+    }
+  ]
+}

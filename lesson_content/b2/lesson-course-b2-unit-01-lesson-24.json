@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-01-lesson-24",
+  "title": "Lesson: Adverbs of manner and modifiers",
+  "description": "Practice Adverbs of manner and modifiers.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Adverbs of manner and modifiers.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Adverbs of manner and modifiers",
+      "explanation": "Practice Adverbs of manner and modifiers."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Adverbs of manner and modifiers",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "Correct word order:",
+      "category": "Grammar",
+      "tags": "Grammar,B2,QuickCheck",
+      "explanation": "See the Adverbs of manner and modifiers lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "She answered calmly the question.",
+        "She answered the question calmly.",
+        "She calmly the question answered.",
+        "She the question answered calmly."
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

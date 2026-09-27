@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-02-lesson-07",
+  "title": "Lesson: Phrasal verbs — lexical meaning",
+  "description": "Practice Phrasal verbs — lexical meaning.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Phrasal verbs — lexical meaning.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Phrasal verbs — lexical meaning",
+      "explanation": "Practice Phrasal verbs — lexical meaning."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Phrasal verbs — lexical meaning",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "\"I came ___ an old photo.\" (found by chance)",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2,QuickCheck",
+      "explanation": "See the Phrasal verbs — lexical meaning lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "across",
+        "up with",
+        "over",
+        "into"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

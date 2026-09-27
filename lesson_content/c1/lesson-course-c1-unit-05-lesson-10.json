@@ -1,0 +1,47 @@
+{
+    "id": "lesson-course-c1-unit-05-lesson-10",
+    "title": "Lesson: Speculating",
+    "description": "Practice Speculating.",
+    "brand": "Mylingo",
+    "category": "Functional Language",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "Practice Speculating.",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1",
+            "media": {},
+            "subprompt": "Speculating",
+            "explanation": "Practice Speculating."
+        },
+        {
+            "question": "What you'll practice",
+            "subprompt": "Speculating",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1"
+        },
+        {
+            "question": "\"It's conceivable that...\" introduces:",
+            "category": "Functional Language",
+            "tags": "Functional Language,C1,QuickCheck",
+            "explanation": "See the Speculating lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "A certainty",
+                "A formal, analytical speculation",
+                "An instruction",
+                "A contradiction"
+            ]
+        },
+        {
+            "question": "Nice work! Ready for the full exercises?",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1"
+        }
+    ]
+}

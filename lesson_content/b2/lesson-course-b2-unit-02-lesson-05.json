@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-02-lesson-05",
+  "title": "Lesson: Transport and exploration",
+  "description": "Practice Transport and exploration.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Transport and exploration.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Transport and exploration",
+      "explanation": "Practice Transport and exploration."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Transport and exploration",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "\"My ___ takes 40 minutes each way.\"",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2,QuickCheck",
+      "explanation": "See the Transport and exploration lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "layover",
+        "commute",
+        "detour",
+        "trek"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

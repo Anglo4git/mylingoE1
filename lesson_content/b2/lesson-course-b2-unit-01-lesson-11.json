@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-01-lesson-11",
+  "title": "Lesson: Question tags",
+  "description": "Practice Question tags.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Question tags.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Question tags",
+      "explanation": "Practice Question tags."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Question tags",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "\"You haven't seen my keys, ___?\"",
+      "category": "Grammar",
+      "tags": "Grammar,B2,QuickCheck",
+      "explanation": "See the Question tags lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "haven't you",
+        "have you",
+        "didn't you",
+        "don't you"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

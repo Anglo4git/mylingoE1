@@ -1,0 +1,47 @@
+{
+    "id": "lesson-course-c1-unit-05-lesson-06",
+    "title": "Lesson: Checking and clarifying information",
+    "description": "Practice Checking and clarifying information.",
+    "brand": "Mylingo",
+    "category": "Functional Language",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "Practice Checking and clarifying information.",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1",
+            "media": {},
+            "subprompt": "Checking and clarifying information",
+            "explanation": "Practice Checking and clarifying information."
+        },
+        {
+            "question": "What you'll practice",
+            "subprompt": "Checking and clarifying information",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1"
+        },
+        {
+            "question": "\"Just to confirm, you mean...?\" is used to:",
+            "category": "Functional Language",
+            "tags": "Functional Language,C1,QuickCheck",
+            "explanation": "See the Checking and clarifying information lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "Give advice",
+                "Check understanding",
+                "Contradict someone",
+                "Express regret"
+            ]
+        },
+        {
+            "question": "Nice work! Ready for the full exercises?",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1"
+        }
+    ]
+}

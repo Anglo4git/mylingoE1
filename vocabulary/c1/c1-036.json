@@ -1,0 +1,77 @@
+{
+  "id": "c1-036",
+  "title": "Diet and health",
+  "description": "Practice Diet and health.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "A \"balanced diet\" is one that:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Diet and health lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Excludes entire food groups",
+        "Includes a variety of foods in appropriate proportions",
+        "Focuses only on protein",
+        "Avoids all fats"
+      ]
+    },
+    {
+      "question": "\"Nutrient-dense\" describes food that:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Diet and health lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Is high in calories but low in nutrients",
+        "Provides a high amount of nutrients relative to its calories",
+        "Has no nutritional value",
+        "Is always low-calorie"
+      ]
+    },
+    {
+      "question": "\"Moderation\" in the context of diet means:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Diet and health lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Eating a food in reasonable, balanced amounts",
+        "Never eating a food again",
+        "Eating as much as possible",
+        "Eating only once a day"
+      ]
+    },
+    {
+      "question": "\"Dietary requirements\" most likely refers to:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Diet and health lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Personal food preferences only",
+        "Specific needs due to health, allergy, or belief",
+        "A restaurant's opening hours",
+        "A meal's price"
+      ]
+    },
+    {
+      "question": "Which sentence uses the vocabulary in a neutral, non-judgemental way?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Diet and health lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "It's about moderation, not cutting anything out completely.",
+        "Processed food is always terrible and should be banned.",
+        "Only nutrient-dense food should ever be eaten.",
+        "People with dietary requirements are difficult."
+      ]
+    }
+  ]
+}

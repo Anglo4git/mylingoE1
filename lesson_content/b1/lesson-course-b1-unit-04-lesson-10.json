@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-04-lesson-10",
+  "title": "Lesson: Describing faulty goods",
+  "description": "Practice Describing faulty goods.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Describing faulty goods.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Describing faulty goods",
+      "explanation": "Practice Describing faulty goods."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Describing faulty goods",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "\"It's not working ___.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1,QuickCheck",
+      "explanation": "Explain a product problem clearly, e.g. for a return or complaint.",
+      "correctIndex": 1,
+      "answers": [
+        "properly",
+        "propering",
+        "property",
+        "proper"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+    "id": "lesson-course-c1-unit-05-lesson-09",
+    "title": "Lesson: Persuading and convincing",
+    "description": "Practice Persuading and convincing.",
+    "brand": "Mylingo",
+    "category": "Functional Language",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "Practice Persuading and convincing.",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1",
+            "media": {},
+            "subprompt": "Persuading and convincing",
+            "explanation": "Practice Persuading and convincing."
+        },
+        {
+            "question": "What you'll practice",
+            "subprompt": "Persuading and convincing",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1"
+        },
+        {
+            "question": "\"Surely you'd agree that...\" functions to:",
+            "category": "Functional Language",
+            "tags": "Functional Language,C1,QuickCheck",
+            "explanation": "See the Persuading and convincing lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "Contradict",
+                "Persuade by appealing to shared reasonableness",
+                "Instruct",
+                "Express regret"
+            ]
+        },
+        {
+            "question": "Nice work! Ready for the full exercises?",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1"
+        }
+    ]
+}

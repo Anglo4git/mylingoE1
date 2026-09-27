@@ -1,0 +1,77 @@
+{
+  "id": "c1-028",
+  "title": "Nostalgia",
+  "description": "Practice Nostalgia.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"Bittersweet\" describes a feeling that is:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Nostalgia lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "Purely happy",
+        "Purely sad",
+        "Mixing pleasure and sadness",
+        "Angry"
+      ]
+    },
+    {
+      "question": "\"A trip down memory lane\" means:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Nostalgia lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A literal journey",
+        "Recalling past memories",
+        "Planning for the future",
+        "Forgetting the past"
+      ]
+    },
+    {
+      "question": "An object with \"sentimental value\" is valuable mainly because of:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Nostalgia lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Its market price",
+        "Its emotional/personal significance",
+        "Its rarity",
+        "Its size"
+      ]
+    },
+    {
+      "question": "\"To reminisce\" means:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Nostalgia lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "To worry about the future",
+        "To talk fondly about past experiences",
+        "To argue",
+        "To predict"
+      ]
+    },
+    {
+      "question": "\"Wistful\" best describes someone who feels:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Nostalgia lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Angry about the past",
+        "A gentle, longing sadness for the past",
+        "Excited about the future",
+        "Indifferent"
+      ]
+    }
+  ]
+}

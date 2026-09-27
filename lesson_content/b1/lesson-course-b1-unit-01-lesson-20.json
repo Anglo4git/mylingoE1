@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-01-lesson-20",
+  "title": "Lesson: Although / in spite of / despite",
+  "description": "Practice Although / in spite of / despite.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Although / in spite of / despite.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Although / in spite of / despite",
+      "explanation": "Practice Although / in spite of / despite."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Although / in spite of / despite",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "\"___ it was raining, we went for a walk.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1,QuickCheck",
+      "explanation": "Show contrast between two ideas using the correct structure for each connector.",
+      "correctIndex": 3,
+      "answers": [
+        "Despite",
+        "Because of",
+        "In spite of",
+        "Although"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

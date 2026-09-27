@@ -1,0 +1,77 @@
+{
+  "id": "c1-042",
+  "title": "Advertising",
+  "description": "Practice Advertising.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"Target audience\" refers to:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Advertising lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A company's competitors",
+        "The specific group an ad is designed to reach",
+        "A government regulator",
+        "The advertising budget"
+      ]
+    },
+    {
+      "question": "\"Brand loyalty\" describes:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Advertising lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A one-time purchase",
+        "A consumer's continued preference for a particular brand",
+        "A legal contract",
+        "A type of slogan"
+      ]
+    },
+    {
+      "question": "\"To go viral\" means:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Advertising lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "To spread rapidly online/among people",
+        "To fail completely",
+        "To be banned",
+        "To be shown only on television"
+      ]
+    },
+    {
+      "question": "\"Product placement\" refers to:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Advertising lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Arranging products on a store shelf",
+        "Featuring a product within media content (e.g. a film) as advertising",
+        "Pricing a product",
+        "Shipping a product"
+      ]
+    },
+    {
+      "question": "\"Subliminal messaging\" refers to advertising that:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Advertising lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Is openly and directly stated",
+        "Influences the audience below the level of conscious awareness",
+        "Is required by law to be labelled",
+        "Only appears in print"
+      ]
+    }
+  ]
+}

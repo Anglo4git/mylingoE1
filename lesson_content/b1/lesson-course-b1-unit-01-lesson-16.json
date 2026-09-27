@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-01-lesson-16",
+  "title": "Lesson: Past Perfect Simple",
+  "description": "Practice Past Perfect Simple.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Past Perfect Simple.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Past Perfect Simple",
+      "explanation": "Practice Past Perfect Simple."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Past Perfect Simple",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "\"When I arrived, the film ___ already started.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1,QuickCheck",
+      "explanation": "Show that one past action happened before another past action.",
+      "correctIndex": 1,
+      "answers": [
+        "had",
+        "was",
+        "did",
+        "has"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

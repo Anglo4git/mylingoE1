@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-01-lesson-14",
+  "title": "Lesson: Look + adjective, look like + noun",
+  "description": "Practice Look + adjective, look like + noun.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Look + adjective, look like + noun.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Look + adjective, look like + noun",
+      "explanation": "Practice Look + adjective, look like + noun."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Look + adjective, look like + noun",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "\"You ___ tired today.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1,QuickCheck",
+      "explanation": "Describe appearance correctly using \"look\" with an adjective vs. \"look like\" with a noun.",
+      "correctIndex": 1,
+      "answers": [
+        "look",
+        "looking",
+        "look like",
+        "looks like"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

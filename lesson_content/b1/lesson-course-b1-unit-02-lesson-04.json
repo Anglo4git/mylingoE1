@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-02-lesson-04",
+  "title": "Lesson: Clothes",
+  "description": "Practice Clothes.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Clothes.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Clothes",
+      "explanation": "Practice Clothes."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Clothes",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "If clothes are \"loose\", they are...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1,QuickCheck",
+      "explanation": "Describe clothing, fit, and style in more detail than A2.",
+      "correctIndex": 3,
+      "answers": [
+        "formal",
+        "tight",
+        "expensive",
+        "not tight, roomy"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

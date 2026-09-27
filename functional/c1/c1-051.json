@@ -1,0 +1,77 @@
+{
+  "id": "c1-051",
+  "title": "Expanding and exemplifying",
+  "description": "Practice Expanding and exemplifying.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"To elaborate...\" is used to:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Expanding and exemplifying lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Give an example",
+        "Expand on a point with more detail/reasoning",
+        "Contradict",
+        "Instruct"
+      ]
+    },
+    {
+      "question": "\"For instance...\" (recap from B2) is used to:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Expanding and exemplifying lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Expand a point",
+        "Give an example",
+        "Contradict",
+        "Express regret"
+      ]
+    },
+    {
+      "question": "\"Building on that point, the same pattern shows up in other markets\" is an example of:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Expanding and exemplifying lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Exemplifying",
+        "Expanding",
+        "Contradicting",
+        "Instructing"
+      ]
+    },
+    {
+      "question": "This lesson adds which new function, beyond B2's \"Giving examples\"?",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Expanding and exemplifying lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Expanding — developing a point further, not just illustrating it",
+        "Contradicting",
+        "Basic example phrases",
+        "Question tags"
+      ]
+    },
+    {
+      "question": "**Scope check:** Which of these tests the *expanding* function specifically, distinct from B2's example-only focus?",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Expanding and exemplifying lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "\"To elaborate, the delay wasn't just due to weather — staffing was an issue too.\"",
+        "\"For instance, sales dropped in March.\"",
+        "\"For example, the report was late.\"",
+        "\"As an illustration, here's one case.\""
+      ]
+    }
+  ]
+}

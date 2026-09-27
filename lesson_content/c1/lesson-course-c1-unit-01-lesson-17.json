@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-c1-unit-01-lesson-17",
+  "title": "Lesson: Relative clauses",
+  "description": "Practice Relative clauses.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Relative clauses.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C1",
+      "media": {},
+      "subprompt": "Relative clauses",
+      "explanation": "Practice Relative clauses."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Relative clauses",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C1"
+    },
+    {
+      "question": "Which is the formal, preposition-fronted version of \"the man who I spoke to\"?",
+      "category": "Grammar",
+      "tags": "Grammar,C1,QuickCheck",
+      "explanation": "See the Relative clauses lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "The man to whom I spoke.",
+        "The man whom I spoke.",
+        "The man who spoke to me.",
+        "The man I spoke to whom."
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C1"
+    }
+  ]
+}

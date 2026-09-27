@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-02-lesson-16",
+  "title": "Lesson: Family relationships",
+  "description": "Practice Family relationships.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Family relationships.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Family relationships",
+      "explanation": "Practice Family relationships."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Family relationships",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "Your husband's/wife's parents are your ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1,QuickCheck",
+      "explanation": "Talk about extended family and relationship terms beyond A2 basics.",
+      "correctIndex": 1,
+      "answers": [
+        "siblings",
+        "in-laws",
+        "extended family",
+        "step-parents"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

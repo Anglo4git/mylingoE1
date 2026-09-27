@@ -13,7 +13,7 @@
       "category": "Grammar",
       "tags": "Grammar,B1",
       "explanation": "Show that one past action happened before another past action.",
-      "correctIndex": 0,
+      "correctIndex": 1,
       "answers": [
         "had",
         "was",
@@ -26,7 +26,7 @@
       "category": "Grammar",
       "tags": "Grammar,B1",
       "explanation": "Show that one past action happened before another past action.",
-      "correctIndex": 0,
+      "correctIndex": 1,
       "answers": [
         "past participle",
         "base verb",
@@ -52,7 +52,7 @@
       "category": "Grammar",
       "tags": "Grammar,B1",
       "explanation": "Show that one past action happened before another past action.",
-      "correctIndex": 0,
+      "correctIndex": 1,
       "answers": [
         "the earlier of two past events",
         "the later of two past events",

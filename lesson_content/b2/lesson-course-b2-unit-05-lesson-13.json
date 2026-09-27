@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-05-lesson-13",
+  "title": "Lesson: Clarifying",
+  "description": "Practice Clarifying.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Clarifying.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Clarifying",
+      "explanation": "Practice Clarifying."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Clarifying",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "\"Sorry, could you clarify what you mean ___ 'soon'?\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2,QuickCheck",
+      "explanation": "See the Clarifying lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "with",
+        "by",
+        "of",
+        "for"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

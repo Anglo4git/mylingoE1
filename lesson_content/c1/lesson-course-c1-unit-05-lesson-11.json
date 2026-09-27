@@ -1,0 +1,47 @@
+{
+    "id": "lesson-course-c1-unit-05-lesson-11",
+    "title": "Lesson: Expressing annoyance",
+    "description": "Practice Expressing annoyance.",
+    "brand": "Mylingo",
+    "category": "Functional Language",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "Practice Expressing annoyance.",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1",
+            "media": {},
+            "subprompt": "Expressing annoyance",
+            "explanation": "Practice Expressing annoyance."
+        },
+        {
+            "question": "What you'll practice",
+            "subprompt": "Expressing annoyance",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1"
+        },
+        {
+            "question": "\"This is driving me up the wall\" is:",
+            "category": "Functional Language",
+            "tags": "Functional Language,C1,QuickCheck",
+            "explanation": "See the Expressing annoyance lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "Formal",
+                "Informal",
+                "Neutral only",
+                "A contradiction"
+            ]
+        },
+        {
+            "question": "Nice work! Ready for the full exercises?",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1"
+        }
+    ]
+}

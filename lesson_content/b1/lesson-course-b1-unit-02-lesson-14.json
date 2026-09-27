@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-02-lesson-14",
+  "title": "Lesson: Crime and Punishment",
+  "description": "Practice Crime and Punishment.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Crime and Punishment.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Crime and Punishment",
+      "explanation": "Practice Crime and Punishment."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Crime and Punishment",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "\"Theft\" means...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1,QuickCheck",
+      "explanation": "Understand basic vocabulary for crime and the justice system.",
+      "correctIndex": 1,
+      "answers": [
+        "stealing",
+        "lying",
+        "an argument",
+        "a car accident"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

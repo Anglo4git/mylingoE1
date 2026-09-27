@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-02-lesson-04",
+  "title": "Lesson: Approximations with -ish",
+  "description": "Practice Approximations with -ish.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Approximations with -ish.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Approximations with -ish",
+      "explanation": "Practice Approximations with -ish."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Approximations with -ish",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "\"Let's meet at ___.\" (around 7)",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2,QuickCheck",
+      "explanation": "See the Approximations with -ish lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "seven",
+        "sevenish",
+        "seventy",
+        "sevened"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

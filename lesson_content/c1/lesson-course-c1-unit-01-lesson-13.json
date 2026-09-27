@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-c1-unit-01-lesson-13",
+  "title": "Lesson: Modal verbs",
+  "description": "Practice Modal verbs.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Modal verbs.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C1",
+      "media": {},
+      "subprompt": "Modal verbs",
+      "explanation": "Practice Modal verbs."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Modal verbs",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C1"
+    },
+    {
+      "question": "\"You might want to double-check those figures\" is an example of:",
+      "category": "Grammar",
+      "tags": "Grammar,C1,QuickCheck",
+      "explanation": "See the Modal verbs lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Hedged/formal criticism",
+        "A strong obligation",
+        "A polite request",
+        "Past deduction"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C1"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+    "id": "lesson-course-c1-unit-02-lesson-17",
+    "title": "Lesson: Children's development",
+    "description": "Practice Children's development.",
+    "brand": "Mylingo",
+    "category": "Vocabulary",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "Practice Children's development.",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1",
+            "media": {},
+            "subprompt": "Children's development",
+            "explanation": "Practice Children's development."
+        },
+        {
+            "question": "What you'll practice",
+            "subprompt": "Children's development",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1"
+        },
+        {
+            "question": "\"Milestones\" in child development refer to:",
+            "category": "Vocabulary",
+            "tags": "Vocabulary,C1,QuickCheck",
+            "explanation": "See the Children's development lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "Physical locations",
+                "Key stages/achievements in a child's growth",
+                "School exam results only",
+                "Birthdays"
+            ]
+        },
+        {
+            "question": "Nice work! Ready for the full exercises?",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1"
+        }
+    ]
+}

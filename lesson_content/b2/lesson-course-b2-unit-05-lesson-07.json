@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-05-lesson-07",
+  "title": "Lesson: Stating purpose",
+  "description": "Practice Stating purpose.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Stating purpose.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Stating purpose",
+      "explanation": "Practice Stating purpose."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Stating purpose",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "\"We met ___ finalise the budget.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2,QuickCheck",
+      "explanation": "See the Stating purpose lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "in order to",
+        "so that to",
+        "with aim",
+        "for to"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

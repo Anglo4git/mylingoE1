@@ -1,0 +1,47 @@
+{
+    "id": "lesson-course-c1-unit-01-lesson-19",
+    "title": "Lesson: Passive",
+    "description": "Practice Passive.",
+    "brand": "Mylingo",
+    "category": "Grammar",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "Practice Passive.",
+            "question_type": "banner",
+            "category": "Grammar",
+            "tags": "Lesson,C1",
+            "media": {},
+            "subprompt": "Passive",
+            "explanation": "Practice Passive."
+        },
+        {
+            "question": "What you'll practice",
+            "subprompt": "Passive",
+            "question_type": "banner",
+            "category": "Grammar",
+            "tags": "Lesson,C1"
+        },
+        {
+            "question": "\"It is widely believed that the policy will be reversed\" is an example of:",
+            "category": "Grammar",
+            "tags": "Grammar,C1,QuickCheck",
+            "explanation": "See the Passive lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "A \"get\" passive",
+                "A passive reporting structure",
+                "An active reporting structure",
+                "A reduced relative clause"
+            ]
+        },
+        {
+            "question": "Nice work! Ready for the full exercises?",
+            "question_type": "banner",
+            "category": "Grammar",
+            "tags": "Lesson,C1"
+        }
+    ]
+}

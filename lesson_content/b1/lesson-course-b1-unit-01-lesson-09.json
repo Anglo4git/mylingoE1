@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-01-lesson-09",
+  "title": "Lesson: Modal verbs",
+  "description": "Practice Modal verbs.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Modal verbs.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Modal verbs",
+      "explanation": "Practice Modal verbs."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Modal verbs",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "\"You ___ wear a seatbelt — it's the law.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1,QuickCheck",
+      "explanation": "Use modal verbs to express ability, permission, obligation, and advice at B1 level.",
+      "correctIndex": 1,
+      "answers": [
+        "might",
+        "must",
+        "could",
+        "should"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

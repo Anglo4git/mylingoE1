@@ -1,0 +1,77 @@
+{
+  "id": "c1-052",
+  "title": "Persuading and convincing",
+  "description": "Practice Persuading and convincing.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"Surely you'd agree that...\" functions to:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Persuading and convincing lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Contradict",
+        "Persuade by appealing to shared reasonableness",
+        "Instruct",
+        "Express regret"
+      ]
+    },
+    {
+      "question": "\"It stands to reason that...\" introduces:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Persuading and convincing lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A logical, persuasive point",
+        "A contradiction",
+        "A question",
+        "An apology"
+      ]
+    },
+    {
+      "question": "\"Consider the alternative — what happens if we do nothing?\" is a persuasive technique that:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Persuading and convincing lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Ignores consequences",
+        "Highlights the risk of inaction to persuade",
+        "Contradicts the listener",
+        "Expresses regret"
+      ]
+    },
+    {
+      "question": "\"The evidence clearly points to...\" is used to:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Persuading and convincing lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Speculate vaguely",
+        "Persuade using evidence-based reasoning",
+        "Give an instruction",
+        "Check understanding"
+      ]
+    },
+    {
+      "question": "This quiz tests:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Persuading and convincing lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Recognising/producing C1-level persuasive structures",
+        "Basic opinion phrases",
+        "Question tag formation",
+        "Passive voice"
+      ]
+    }
+  ]
+}

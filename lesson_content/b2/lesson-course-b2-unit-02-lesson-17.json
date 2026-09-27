@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-02-lesson-17",
+  "title": "Lesson: Colloquial expressions",
+  "description": "Practice Colloquial expressions.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Colloquial expressions.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Colloquial expressions",
+      "explanation": "Practice Colloquial expressions."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Colloquial expressions",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "\"Don't worry, it's ___.\" (not a big deal)",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2,QuickCheck",
+      "explanation": "See the Colloquial expressions lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "no biggie",
+        "my bad",
+        "a bit much",
+        "knackered"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

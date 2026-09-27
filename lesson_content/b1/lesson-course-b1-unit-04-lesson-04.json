@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-04-lesson-04",
+  "title": "Lesson: Reporting requests and orders",
+  "description": "Practice Reporting requests and orders.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Reporting requests and orders.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Reporting requests and orders",
+      "explanation": "Practice Reporting requests and orders."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Reporting requests and orders",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "\"She asked me ___ close the window.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1,QuickCheck",
+      "explanation": "Relay what someone asked or told you to do.",
+      "correctIndex": 1,
+      "answers": [
+        "to",
+        "that",
+        "for",
+        "closing"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

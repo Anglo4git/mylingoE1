@@ -1,0 +1,47 @@
+{
+    "id": "lesson-course-c1-unit-05-lesson-05",
+    "title": "Lesson: Expressing opinions formally and informally",
+    "description": "Practice Expressing opinions formally and informally.",
+    "brand": "Mylingo",
+    "category": "Functional Language",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "Practice Expressing opinions formally and informally.",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1",
+            "media": {},
+            "subprompt": "Expressing opinions formally and informally",
+            "explanation": "Practice Expressing opinions formally and informally."
+        },
+        {
+            "question": "What you'll practice",
+            "subprompt": "Expressing opinions formally and informally",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1"
+        },
+        {
+            "question": "\"Honestly, I think it's a bit of a mess\" is:",
+            "category": "Functional Language",
+            "tags": "Functional Language,C1,QuickCheck",
+            "explanation": "See the Expressing opinions formally and informally lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "Formal",
+                "Informal",
+                "Neutral only",
+                "A contradiction"
+            ]
+        },
+        {
+            "question": "Nice work! Ready for the full exercises?",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1"
+        }
+    ]
+}

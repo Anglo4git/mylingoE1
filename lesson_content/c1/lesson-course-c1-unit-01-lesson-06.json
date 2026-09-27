@@ -1,0 +1,47 @@
+{
+    "id": "lesson-course-c1-unit-01-lesson-06",
+    "title": "Lesson: Uses of continuous tenses",
+    "description": "Practice Uses of continuous tenses.",
+    "brand": "Mylingo",
+    "category": "Grammar",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "Practice Uses of continuous tenses.",
+            "question_type": "banner",
+            "category": "Grammar",
+            "tags": "Lesson,C1",
+            "media": {},
+            "subprompt": "Uses of continuous tenses",
+            "explanation": "Practice Uses of continuous tenses."
+        },
+        {
+            "question": "What you'll practice",
+            "subprompt": "Uses of continuous tenses",
+            "question_type": "banner",
+            "category": "Grammar",
+            "tags": "Lesson,C1"
+        },
+        {
+            "question": "Which sentence uses continuous aspect to *soften* a request?",
+            "category": "Grammar",
+            "tags": "Grammar,C1,QuickCheck",
+            "explanation": "See the Uses of continuous tenses lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "I want to ask you something.",
+                "I was wondering if you'd be free Thursday.",
+                "I ask you this every week.",
+                "I have asked you before."
+            ]
+        },
+        {
+            "question": "Nice work! Ready for the full exercises?",
+            "question_type": "banner",
+            "category": "Grammar",
+            "tags": "Lesson,C1"
+        }
+    ]
+}

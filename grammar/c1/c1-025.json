@@ -1,0 +1,77 @@
+{
+  "id": "c1-025",
+  "title": "Inversions and negative adverbials",
+  "description": "Practice Inversions and negative adverbials.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"No sooner had she arrived than the phone rang\" fronts which type of element to trigger inversion?",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Inversions and negative adverbials lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A negative/limiting adverbial",
+        "A relative pronoun",
+        "A modal verb",
+        "A reporting verb"
+      ]
+    },
+    {
+      "question": "\"Rarely have I seen such dedication\" is an example of:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Inversions and negative adverbials lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Subject-auxiliary inversion after a limiting adverbial",
+        "A passive structure",
+        "A conditional",
+        "A question tag"
+      ]
+    },
+    {
+      "question": "\"Under no circumstances should you share this information\" places emphasis by:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Inversions and negative adverbials lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Fronting a negative phrase and inverting subject/auxiliary",
+        "Using the passive voice",
+        "Adding a question tag",
+        "Using a relative clause"
+      ]
+    },
+    {
+      "question": "Which adverbial is deliberately EXCLUDED from this lesson because it's already covered by a live lesson?",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Inversions and negative adverbials lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Only",
+        "Rarely",
+        "Never",
+        "No sooner"
+      ]
+    },
+    {
+      "question": "Rewrite \"I have never seen such a mess\" using fronted inversion:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Inversions and negative adverbials lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Never have I seen such a mess.",
+        "Never I have seen such a mess.",
+        "I never have seen such a mess.",
+        "Have never I seen such a mess."
+      ]
+    }
+  ]
+}

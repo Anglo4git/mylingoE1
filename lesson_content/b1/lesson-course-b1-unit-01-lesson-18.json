@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-01-lesson-18",
+  "title": "Lesson: Be allowed to and be supposed to",
+  "description": "Practice Be allowed to and be supposed to.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Be allowed to and be supposed to.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Be allowed to and be supposed to",
+      "explanation": "Practice Be allowed to and be supposed to."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Be allowed to and be supposed to",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "\"Students ___ use phones in class.\" (rule, negative)",
+      "category": "Grammar",
+      "tags": "Grammar,B1,QuickCheck",
+      "explanation": "Talk about permission (be allowed to) and expectation/rules (be supposed to).",
+      "correctIndex": 1,
+      "answers": [
+        "don't allow",
+        "aren't allowed to",
+        "not allowed",
+        "aren't supposed"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

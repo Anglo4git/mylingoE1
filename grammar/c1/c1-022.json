@@ -1,0 +1,77 @@
+{
+  "id": "c1-022",
+  "title": "Relative clauses",
+  "description": "Practice Relative clauses.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Which is the formal, preposition-fronted version of \"the man who I spoke to\"?",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Relative clauses lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "The man to whom I spoke.",
+        "The man whom I spoke.",
+        "The man who spoke to me.",
+        "The man I spoke to whom."
+      ]
+    },
+    {
+      "question": "\"This is the reason for which the project was delayed\" is an example of:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Relative clauses lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A defining relative clause with a stranded preposition",
+        "A formal fronted-preposition relative clause",
+        "A non-defining relative clause",
+        "A reduced relative clause"
+      ]
+    },
+    {
+      "question": "\"The committee, to whom the report was submitted, raised no objections\" — this register is:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Relative clauses lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Informal/neutral",
+        "Formal",
+        "Colloquial",
+        "Archaic and no longer used"
+      ]
+    },
+    {
+      "question": "Which pair contrasts formal vs. neutral register correctly?",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Relative clauses lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "\"the man to whom I spoke\" (formal) vs. \"the man who I spoke to\" (neutral)",
+        "\"the man who I spoke to\" (formal) vs. \"the man to whom I spoke\" (neutral)",
+        "Both are equally formal",
+        "Neither is used in modern English"
+      ]
+    },
+    {
+      "question": "This lesson assumes which relative-clause content is already known, and does not re-test it?",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Relative clauses lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Defining/non-defining clauses and clause reduction (from B2)",
+        "Passive voice",
+        "Modal verbs",
+        "Reported speech"
+      ]
+    }
+  ]
+}

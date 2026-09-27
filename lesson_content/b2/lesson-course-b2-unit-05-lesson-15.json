@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-05-lesson-15",
+  "title": "Lesson: Ordering arguments",
+  "description": "Practice Ordering arguments.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Ordering arguments.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Ordering arguments",
+      "explanation": "Practice Ordering arguments."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Ordering arguments",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "\"___, safety must come first.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2,QuickCheck",
+      "explanation": "See the Ordering arguments lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "First and foremost",
+        "Last but not least",
+        "Then again",
+        "On top of that"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

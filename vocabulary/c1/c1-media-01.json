@@ -20,7 +20,7 @@
           "alt": "a means of access"
         }
       },
-      "correctIndex": 4,
+      "correctIndex": 3,
       "answers": [
         "a means of timekeeping",
         "a means of transport",
@@ -40,7 +40,7 @@
           "alt": "a means of communication"
         }
       },
-      "correctIndex": 2,
+      "correctIndex": 1,
       "answers": [
         "a means of timekeeping",
         "a means of communication",
@@ -80,7 +80,7 @@
           "alt": "a stimulant beverage"
         }
       },
-      "correctIndex": 2,
+      "correctIndex": 1,
       "answers": [
         "an instrument for measuring time",
         "a stimulant beverage",
@@ -120,7 +120,7 @@
           "label": "Listen to the sentence"
         }
       },
-      "correctIndex": 4,
+      "correctIndex": 3,
       "answers": [
         "key",
         "phone",

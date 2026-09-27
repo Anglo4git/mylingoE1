@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-01-lesson-10",
+  "title": "Lesson: Past Simple, Past Continuous, Past Perfect",
+  "description": "Practice Past Simple, Past Continuous, Past Perfect.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Past Simple, Past Continuous, Past Perfect.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Past Simple, Past Continuous, Past Perfect",
+      "explanation": "Practice Past Simple, Past Continuous, Past Perfect."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Past Simple, Past Continuous, Past Perfect",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "\"I ___ dinner when the phone rang.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B2,QuickCheck",
+      "explanation": "See the Past Simple, Past Continuous, Past Perfect lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "cooked",
+        "was cooking",
+        "had cooked",
+        "cook"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

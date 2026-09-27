@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-02-lesson-11",
+  "title": "Lesson: Weather",
+  "description": "Practice Weather.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Weather.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Weather",
+      "explanation": "Practice Weather."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Weather",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "\"Humid\" weather feels...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1,QuickCheck",
+      "explanation": "Describe weather conditions and changes in more detail.",
+      "correctIndex": 1,
+      "answers": [
+        "damp and sticky",
+        "very windy",
+        "dry and cold",
+        "freezing"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

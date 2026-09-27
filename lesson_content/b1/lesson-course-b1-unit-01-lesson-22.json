@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-01-lesson-22",
+  "title": "Lesson: Neither / So Do I",
+  "description": "Practice Neither / So Do I.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Neither / So Do I.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Neither / So Do I",
+      "explanation": "Practice Neither / So Do I."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Neither / So Do I",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "\"I love pizza.\" \"___ do I.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1,QuickCheck",
+      "explanation": "Agree with positive and negative statements using short forms, including the negative \"Neither do I.\"",
+      "correctIndex": 1,
+      "answers": [
+        "Nor",
+        "So",
+        "Neither",
+        "Not"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

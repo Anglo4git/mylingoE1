@@ -1,0 +1,77 @@
+{
+  "id": "c1-054",
+  "title": "Expressing annoyance",
+  "description": "Practice Expressing annoyance.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"This is driving me up the wall\" is:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Expressing annoyance lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Formal",
+        "Informal",
+        "Neutral only",
+        "A contradiction"
+      ]
+    },
+    {
+      "question": "\"I must say, I find this rather frustrating\" is:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Expressing annoyance lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Controlled/formal",
+        "Very informal",
+        "Rude",
+        "A compliment"
+      ]
+    },
+    {
+      "question": "\"You're always doing this\" connects annoyance to which other lesson's grammar point?",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Expressing annoyance lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "G1's continuous-aspect-for-annoyance nuance",
+        "G14's passive",
+        "G12's relative clauses",
+        "G3's articles"
+      ]
+    },
+    {
+      "question": "Which register does \"Honestly, this is driving me up the wall\" best fit?",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Expressing annoyance lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A formal complaint letter",
+        "An informal conversation with a friend",
+        "A legal document",
+        "An academic essay"
+      ]
+    },
+    {
+      "question": "This quiz's focus is:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Expressing annoyance lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Register-appropriate annoyance phrasing",
+        "Basic vocabulary for emotions",
+        "Question tag formation",
+        "Passive voice"
+      ]
+    }
+  ]
+}

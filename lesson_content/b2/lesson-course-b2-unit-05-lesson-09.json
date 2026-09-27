@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-05-lesson-09",
+  "title": "Lesson: Stating contrast — conversational",
+  "description": "Practice Stating contrast — conversational.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Stating contrast — conversational.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Stating contrast — conversational",
+      "explanation": "Practice Stating contrast — conversational."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Stating contrast — conversational",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "\"The job pays well. ___, the commute is brutal.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2,QuickCheck",
+      "explanation": "See the Stating contrast — conversational lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Then again",
+        "What's more",
+        "Congratulations on",
+        "In order to"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

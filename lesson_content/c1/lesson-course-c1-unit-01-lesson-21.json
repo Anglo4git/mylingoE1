@@ -1,0 +1,47 @@
+{
+    "id": "lesson-course-c1-unit-01-lesson-21",
+    "title": "Lesson: Reported speech",
+    "description": "Practice Reported speech.",
+    "brand": "Mylingo",
+    "category": "Grammar",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "Practice Reported speech.",
+            "question_type": "banner",
+            "category": "Grammar",
+            "tags": "Lesson,C1",
+            "media": {},
+            "subprompt": "Reported speech",
+            "explanation": "Practice Reported speech."
+        },
+        {
+            "question": "What you'll practice",
+            "subprompt": "Reported speech",
+            "question_type": "banner",
+            "category": "Grammar",
+            "tags": "Lesson,C1"
+        },
+        {
+            "question": "\"He wasn't coming. That much was certain\" (with no \"he said/thought that\") is an example of:",
+            "category": "Grammar",
+            "tags": "Grammar,C1,QuickCheck",
+            "explanation": "See the Reported speech lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "Direct speech",
+                "Free indirect style",
+                "A passive reporting structure",
+                "A question tag"
+            ]
+        },
+        {
+            "question": "Nice work! Ready for the full exercises?",
+            "question_type": "banner",
+            "category": "Grammar",
+            "tags": "Lesson,C1"
+        }
+    ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "c1-029",
+  "title": "Coincidences and experiences",
+  "description": "Practice Coincidences and experiences.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"What a small world!\" is said when:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Coincidences and experiences lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Something is physically tiny",
+        "An unexpected connection/coincidence occurs",
+        "Someone travels far",
+        "Something is very common"
+      ]
+    },
+    {
+      "question": "\"Against all odds\" means:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Coincidences and experiences lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "As expected",
+        "Despite very low likelihood of success",
+        "By calculation",
+        "Never"
+      ]
+    },
+    {
+      "question": "\"Uncanny\" describes a coincidence that is:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Coincidences and experiences lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Boring",
+        "Strangely surprising",
+        "Predictable",
+        "Deliberate"
+      ]
+    },
+    {
+      "question": "\"A one-off\" refers to something that:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Coincidences and experiences lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Happens repeatedly",
+        "Happens only once",
+        "Is guaranteed",
+        "Never happens"
+      ]
+    },
+    {
+      "question": "\"A twist of fate\" implies:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Coincidences and experiences lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A planned outcome",
+        "An unexpected turn of events, often ironic",
+        "A routine event",
+        "A financial decision"
+      ]
+    }
+  ]
+}

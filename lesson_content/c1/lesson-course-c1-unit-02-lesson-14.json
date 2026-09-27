@@ -1,0 +1,47 @@
+{
+    "id": "lesson-course-c1-unit-02-lesson-14",
+    "title": "Lesson: Moral and personal dilemmas",
+    "description": "Practice Moral and personal dilemmas.",
+    "brand": "Mylingo",
+    "category": "Vocabulary",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "Practice Moral and personal dilemmas.",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1",
+            "media": {},
+            "subprompt": "Moral and personal dilemmas",
+            "explanation": "Practice Moral and personal dilemmas."
+        },
+        {
+            "question": "What you'll practice",
+            "subprompt": "Moral and personal dilemmas",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1"
+        },
+        {
+            "question": "\"The lesser of two evils\" describes a choice between:",
+            "category": "Vocabulary",
+            "tags": "Vocabulary,C1,QuickCheck",
+            "explanation": "See the Moral and personal dilemmas lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "Two equally good options",
+                "Two undesirable options, picking the less bad one",
+                "A clearly right and wrong option",
+                "No available options"
+            ]
+        },
+        {
+            "question": "Nice work! Ready for the full exercises?",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1"
+        }
+    ]
+}

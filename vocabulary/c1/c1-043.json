@@ -1,0 +1,77 @@
+{
+  "id": "c1-043",
+  "title": "Architecture",
+  "description": "Practice Architecture.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "The \"facade\" of a building refers to its:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Architecture lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Interior layout",
+        "Front/exterior face",
+        "Foundation",
+        "Roof structure only"
+      ]
+    },
+    {
+      "question": "\"Minimalist\" architecture is characterised by:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Architecture lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Elaborate decoration",
+        "Simplicity and lack of ornamentation",
+        "Historical style only",
+        "Bright colours"
+      ]
+    },
+    {
+      "question": "\"Ornate\" describes a style that is:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Architecture lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Plain and simple",
+        "Elaborately decorated",
+        "Environmentally friendly",
+        "Temporary"
+      ]
+    },
+    {
+      "question": "\"Urban sprawl\" refers to:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Architecture lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A compact city centre",
+        "The uncontrolled expansion of urban areas into surrounding land",
+        "A famous landmark",
+        "A style of building facade"
+      ]
+    },
+    {
+      "question": "\"Sustainable design\" in architecture prioritises:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Architecture lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Low-cost materials only",
+        "Minimising environmental impact",
+        "Maximum decoration",
+        "Speed of construction only"
+      ]
+    }
+  ]
+}

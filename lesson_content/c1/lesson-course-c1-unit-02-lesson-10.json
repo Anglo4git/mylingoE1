@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-c1-unit-02-lesson-10",
+  "title": "Lesson: Gender",
+  "description": "Practice Gender.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Gender.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,C1",
+      "media": {},
+      "subprompt": "Gender",
+      "explanation": "Practice Gender."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Gender",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,C1"
+    },
+    {
+      "question": "\"Gender pay gap\" refers to:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1,QuickCheck",
+      "explanation": "See the Gender lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A difference in average pay between genders",
+        "A tax on gendered products",
+        "A hiring quota",
+        "A workplace holiday"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,C1"
+    }
+  ]
+}

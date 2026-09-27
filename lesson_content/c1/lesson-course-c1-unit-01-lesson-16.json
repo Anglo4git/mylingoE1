@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-c1-unit-01-lesson-16",
+  "title": "Lesson: Future Continuous",
+  "description": "Practice Future Continuous.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Future Continuous.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C1",
+      "media": {},
+      "subprompt": "Future Continuous",
+      "explanation": "Practice Future Continuous."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Future Continuous",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C1"
+    },
+    {
+      "question": "\"Will you be passing the post office? Could you drop this off?\" uses future continuous to:",
+      "category": "Grammar",
+      "tags": "Grammar,C1,QuickCheck",
+      "explanation": "See the Future Continuous lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Make a polite, indirect request",
+        "State a firm decision",
+        "Express regret",
+        "Report someone else's words"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,C1"
+    }
+  ]
+}

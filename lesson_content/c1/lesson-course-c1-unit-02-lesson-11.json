@@ -1,0 +1,47 @@
+{
+    "id": "lesson-course-c1-unit-02-lesson-11",
+    "title": "Lesson: Current affairs",
+    "description": "Practice Current affairs.",
+    "brand": "Mylingo",
+    "category": "Vocabulary",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "Practice Current affairs.",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1",
+            "media": {},
+            "subprompt": "Current affairs",
+            "explanation": "Practice Current affairs."
+        },
+        {
+            "question": "What you'll practice",
+            "subprompt": "Current affairs",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1"
+        },
+        {
+            "question": "\"A developing story\" refers to news that is:",
+            "category": "Vocabulary",
+            "tags": "Vocabulary,C1,QuickCheck",
+            "explanation": "See the Current affairs lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "Finished and resolved",
+                "Still unfolding, with new details emerging",
+                "Historical",
+                "Fictional"
+            ]
+        },
+        {
+            "question": "Nice work! Ready for the full exercises?",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1"
+        }
+    ]
+}

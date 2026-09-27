@@ -1,41 +1,51 @@
 ----- BEGIN HANDOFF PACKAGE -----
-AGENT: 5
-DATE: 2026-09-23
-STEP: 5
-STATUS: complete (config committed, evidence-based; effectiveness UNVERIFIED — no live site to test against — see below)
+AGENT: Agent 237
+DATE: 2026-09-27
+PHASE: 3 — UI MODERNIZATION / PHASE 4 — UX POLISH / RELEASE AUDIT
+STATUS: complete
 
-## DONE THIS TURN
-- STEP 5 (SECURITY HEADERS) — `netlify.toml` updated (consolidated `/*` headers block), `SECURITY.md` created — evidence: full grep sweep of the tree logged in SECURITY.md's evidence table before any directive was written; `netlify.toml` re-validated with `tomllib` (single `/*` block, 6 header keys); `node tests/run.js` re-run after (954 passed, 0 failed, unchanged).
+## WHAT WAS DONE THIS TURN
+- Audited the Agent 236 release from a clean unzip.
+- Re-ran the full project regression suite: 970/970 passed.
+- Ran the quick release verifier: all gates passed; CSP is current and source/dist are byte-identical across 709 files.
+- Audited lesson media coverage: the requested YouTube URL is present in all 308 published lesson records (76 A1, 54 A2, 50 B1, 60 B2, 58 C1, 10 C2).
+- Repackaged and clean-unzip verified the release: 998 archive entries, all gates passed.
+- Added `AGENT_237_RELEASE_AUDIT.md` documenting the evidence and the optional browser-sweep limitation.
 
 ## CURRENT STATE
-- Tests: pass (954/954)
-- Deployed: no
-- Browser pass: no (Step 6) — **this policy has never been loaded by a real browser; watch the console for CSP violations on first real load**
-- Device pass: no (Step 7)
-- Open blockers: same standing account/repo/network blockers from Steps 1–4.
+- App runs: yes
+- Build/release verification: pass
+- Typecheck: N/A — no package.json/typecheck script
+- Lint: N/A — no package.json/lint script
+- Tests: pass — 970/970
+- Lesson sample video coverage: 308/308
+- Archive verification: pass — 998 entries
+- Known application defects found this turn: none
 
-## FILES CHANGED / CREATED
-- netlify.toml — updated — consolidated all `/*`-path headers (HSTS + new CSP/X-Content-Type-Options/Referrer-Policy/Permissions-Policy/X-Frame-Options) into one block.
-- SECURITY.md — created — evidence table, per-directive rationale, honest verification limits, recorded (unattempted) future-hardening recommendation.
-- STATE.md — updated with Step 5 summary.
+## FILES CHANGED
+- `AGENT_237_RELEASE_AUDIT.md` — release audit evidence
+- `HANDOFF_PACKAGE.md` — current agent handoff
+- `CHANGELOG.md` — Agent 237 audit entry
+
+## ENVIRONMENT LIMITATION
+- `node tools/csp-sweep.js` was attempted but could not run because `playwright` is not installed in the project environment. Do not report the browser-level CSP sweep as passed unless a future environment supplies Playwright and the sweep completes successfully.
 
 ## NEXT AGENT — START HERE
-1. STEP 6 (REAL BROWSER PASS) is next in sequence but **cannot produce real evidence from this sandboxed, no-network-egress environment** — there is no way to actually open Chrome/Safari/Firefox against a live URL here, and this repo still isn't deployed anywhere (Steps 2–3 are config-only, never run). Two honest paths: (a) skip ahead to a step that doesn't need a live browser (e.g. Step 9's static portions, Step 10's code-level accessibility checks, Step 14 SEO/meta, Step 15 offline-pack integrity re-check) and come back to Step 6 once a real deploy exists, or (b) stop here and tell the user directly that Steps 6–9 (browser, device, PWA install, Lighthouix) all require an actual deployed URL and a real browser/device, which this environment cannot supply — recommend (b) unless the user has since provided real browser/device tool access.
-2. Do not mark Step 6 "complete" with fabricated screenshot paths or invented console output — if no real browser is available, say so plainly rather than stretch the "config-only, unverified" pattern into something Step 6 doesn't actually support (Steps 2–5 could legitimately produce real config files as partial progress; Step 6 has no config-file equivalent — it is either observed or not done at all).
+1. Treat `MYLINGO_AGENT237_RELEASE.zip` as the verified baseline.
+2. Read this handoff and `AGENT_237_RELEASE_AUDIT.md` first.
+3. If continuing release hardening, perform the next substantive product/UX audit rather than repeating the same packaging-only verification.
+4. Preserve the exact lesson sample video URL unless the user explicitly requests a different one.
+5. Any source change must be followed by `node tests/run.js`, `node tools/verify-all.js --quick`, and `node tools/package.js <output.zip>`.
 
-## BLOCKERS / DECISION-GATED
-- Same standing blockers from Steps 1–4 (no git repo, no Netlify account, no domain).
-- NEW: Steps 6–9 need an actual live URL + real browser/device access that does not exist in this tool environment at all — this is a harder blocker than "config not yet verified," it's "this step cannot be attempted here regardless of config."
-- Recorded, not resolved: removing `'unsafe-inline'` from CSP would need a 33-onclick + 91-inline-style refactor across 22 pages, itself needing full browser re-verification — flagged in SECURITY.md as future work, not attempted.
+## BLOCKERS
+- No application blocker.
+- Browser-level CSP sweep requires an environment with Playwright installed.
 
-## ASSUMPTIONS
-- None new this step beyond what SECURITY.md documents as evidence-based decisions (not assumptions) — every directive traces to a grep result, not a guess.
-
-## ARTIFACTS
-- app-production-agent5.zip — full current tree including updated netlify.toml, new SECURITY.md, updated DEPLOY.md/STATE.md, this HANDOFF_PACKAGE.md.
-- SECURITY.md — Step 5's full deliverable.
-- STATE.md — full recon + Steps 2–5 log.
+## ARTIFACTS PRODUCED
+- `AGENT_237_RELEASE_AUDIT.md`
+- `HANDOFF_PACKAGE.md`
+- `MYLINGO_AGENT237_RELEASE.zip`
 
 ## RESUME COMMAND
-"Resume from HANDOFF PACKAGE above. You are Agent 6. Read NEXT AGENT — START HERE before attempting Step 6 — it may not be attemptable in a sandboxed environment without real browser/device tools."
+"Resume from HANDOFF PACKAGE above. You are Agent 238. Continue with the next substantive product/UX audit from the verified Agent 237 baseline."
 ----- END HANDOFF PACKAGE -----

@@ -1,0 +1,77 @@
+{
+  "id": "c1-044",
+  "title": "Contradicting",
+  "description": "Practice Contradicting.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Which is an informal contradiction?",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Contradicting lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "That's not quite right, actually...",
+        "With respect, I'd have to disagree.",
+        "I'm afraid that's not entirely accurate.",
+        "I beg to differ, if I may."
+      ]
+    },
+    {
+      "question": "Which is a formal contradiction?",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Contradicting lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "That's not quite right, actually.",
+        "Nah, that's wrong.",
+        "With respect, I'd have to disagree.",
+        "No way."
+      ]
+    },
+    {
+      "question": "\"I'm afraid that's not entirely accurate\" is best matched to which context?",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Contradicting lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A casual chat with a friend",
+        "A formal meeting or professional setting",
+        "A text message",
+        "An argument between children"
+      ]
+    },
+    {
+      "question": "Match the register: \"Actually, that's not quite how it happened\" is:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Contradicting lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Formal",
+        "Informal",
+        "Archaic",
+        "Legalistic"
+      ]
+    },
+    {
+      "question": "This quiz's focus is:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Contradicting lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Matching contradiction phrasing to formality level",
+        "Basic sentence negation",
+        "Question tag formation",
+        "Reported speech"
+      ]
+    }
+  ]
+}

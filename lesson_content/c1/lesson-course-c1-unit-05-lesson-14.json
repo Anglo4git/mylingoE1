@@ -1,0 +1,47 @@
+{
+    "id": "lesson-course-c1-unit-05-lesson-14",
+    "title": "Lesson: Describing people and things and situations",
+    "description": "Practice Describing people and things and situations.",
+    "brand": "Mylingo",
+    "category": "Functional Language",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "Practice Describing people and things and situations.",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1",
+            "media": {},
+            "subprompt": "Describing people and things and situations",
+            "explanation": "Practice Describing people and things and situations."
+        },
+        {
+            "question": "What you'll practice",
+            "subprompt": "Describing people and things and situations",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1"
+        },
+        {
+            "question": "\"She comes across as reserved, but she's actually very funny once you know her\" describes:",
+            "category": "Functional Language",
+            "tags": "Functional Language,C1,QuickCheck",
+            "explanation": "See the Describing people and things and situations lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "A place",
+                "A person",
+                "A process",
+                "A situation only"
+            ]
+        },
+        {
+            "question": "Nice work! Ready for the full exercises?",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1"
+        }
+    ]
+}

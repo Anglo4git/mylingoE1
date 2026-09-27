@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-02-lesson-02",
+  "title": "Lesson: Education",
+  "description": "Practice Education.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Education.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Education",
+      "explanation": "Practice Education."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Education",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "A \"___\" is a qualification you get after university.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1,QuickCheck",
+      "explanation": "Talk about schooling, subjects, and qualifications.",
+      "correctIndex": 1,
+      "answers": [
+        "revision",
+        "degree",
+        "tuition",
+        "timetable"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

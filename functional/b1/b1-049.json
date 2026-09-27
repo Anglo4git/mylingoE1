@@ -26,7 +26,7 @@
       "category": "Functional Language",
       "tags": "Functional Language,B1",
       "explanation": "Decline requests or offers politely but clearly.",
-      "correctIndex": 0,
+      "correctIndex": 1,
       "answers": [
         "if",
         "unless",

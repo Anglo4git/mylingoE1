@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-05-lesson-02",
+  "title": "Lesson: Summarising",
+  "description": "Practice Summarising.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Summarising.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Summarising",
+      "explanation": "Practice Summarising."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Summarising",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "\"___, the project is behind schedule.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2,QuickCheck",
+      "explanation": "See the Summarising lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "To sum up",
+        "For instance",
+        "Then again",
+        "What's more"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

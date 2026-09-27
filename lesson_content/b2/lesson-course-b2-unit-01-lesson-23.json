@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-01-lesson-23",
+  "title": "Lesson: Always + present continuous",
+  "description": "Practice Always + present continuous.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Always + present continuous.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Always + present continuous",
+      "explanation": "Practice Always + present continuous."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Always + present continuous",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "\"He's always ___ his keys!\" (annoyed)",
+      "category": "Grammar",
+      "tags": "Grammar,B2,QuickCheck",
+      "explanation": "See the Always + present continuous lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "forgets",
+        "forgetting",
+        "forgot",
+        "forget"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

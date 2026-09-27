@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-02-lesson-06",
+  "title": "Lesson: Crime and punishment — B2 legal process",
+  "description": "Practice Crime and punishment — B2 legal process.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Crime and punishment — B2 legal process.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Crime and punishment — B2 legal process",
+      "explanation": "Practice Crime and punishment — B2 legal process."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Crime and punishment — B2 legal process",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "\"The ___ was acquitted due to lack of evidence.\"",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2,QuickCheck",
+      "explanation": "See the Crime and punishment — B2 legal process lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "witness",
+        "defendant",
+        "judge",
+        "juror"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

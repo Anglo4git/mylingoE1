@@ -1,0 +1,77 @@
+{
+  "id": "c1-017",
+  "title": "Participles",
+  "description": "Practice Participles.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"Having finished the report, she left\" uses a participle clause to express:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Participles lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Contrast",
+        "Reason/time",
+        "Purpose",
+        "Condition"
+      ]
+    },
+    {
+      "question": "\"Not having received a reply, she called again\" is an example of:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Participles lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A negative participle clause",
+        "A reduced relative clause",
+        "A cleft sentence",
+        "A passive reporting structure"
+      ]
+    },
+    {
+      "question": "\"Written in 1997, the novel remains popular today\" uses a past participle to convey:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Participles lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Active meaning",
+        "Passive meaning",
+        "A hypothetical",
+        "A polite request"
+      ]
+    },
+    {
+      "question": "Combine: \"He felt exhausted. He went to bed.\" → best participle-clause version:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Participles lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Feeling exhausted, he went to bed.",
+        "Having exhausted, he went to bed.",
+        "Exhaust, he went to bed.",
+        "He going to bed, felt exhausted."
+      ]
+    },
+    {
+      "question": "This lesson explicitly does NOT re-test which content, already covered at B2?",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Participles lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "The -ed/-ing adjective distinction (bored/boring)",
+        "Passive voice formation",
+        "Reported speech",
+        "Modal verbs"
+      ]
+    }
+  ]
+}

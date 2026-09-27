@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-01-lesson-20",
+  "title": "Lesson: Relative clauses",
+  "description": "Practice Relative clauses.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Relative clauses.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Relative clauses",
+      "explanation": "Practice Relative clauses."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Relative clauses",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "\"The woman ___ lives next door is a doctor.\" (defining)",
+      "category": "Grammar",
+      "tags": "Grammar,B2,QuickCheck",
+      "explanation": "See the Relative clauses lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "which",
+        "who",
+        "whose",
+        "where"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

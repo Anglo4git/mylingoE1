@@ -1,0 +1,77 @@
+{
+  "id": "c1-023",
+  "title": "Mixed conditionals",
+  "description": "Practice Mixed conditionals.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"Had I known you were coming, I'd have cooked more\" is an example of:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Mixed conditionals lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A standard \"if\" conditional",
+        "An inverted conditional (no \"if\")",
+        "A passive structure",
+        "A reported conditional"
+      ]
+    },
+    {
+      "question": "\"Given that she'd studied the material, she found the exam manageable\" conveys conditional meaning using:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Mixed conditionals lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "\"If\"",
+        "\"Given that\"",
+        "A question tag",
+        "A participle clause"
+      ]
+    },
+    {
+      "question": "\"Were it not for his support, the project would have failed\" is a formal alternative expressing:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Mixed conditionals lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A present unreal condition",
+        "A future prediction",
+        "A past habitual fact",
+        "A polite request"
+      ]
+    },
+    {
+      "question": "Which sentence correctly uses \"provided that\" for a real (not counterfactual) condition?",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Mixed conditionals lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Provided that you submit the form by Friday, your application will be processed.",
+        "Provided that he supported me, I would have failed.",
+        "Provided I fail, he supports me.",
+        "I would have failed, provided his support."
+      ]
+    },
+    {
+      "question": "**Scope check:** This quiz explicitly does NOT re-test which content, assumed already covered by the live \"Advanced Conditionals\" lesson?",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Mixed conditionals lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "The mixed-conditional forms themselves (past condition/present result, etc.)",
+        "Formal alternatives to \"if\" (inversion, given that, provided that, were it not for)",
+        "Natural spoken fluency",
+        "None — it retests everything"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-01-lesson-15",
+  "title": "Lesson: Zero, first, second, third conditionals",
+  "description": "Practice Zero, first, second, third conditionals.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Zero, first, second, third conditionals.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Zero, first, second, third conditionals",
+      "explanation": "Practice Zero, first, second, third conditionals."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Zero, first, second, third conditionals",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "\"If you heat water to 100°C, it ___.\" (zero)",
+      "category": "Grammar",
+      "tags": "Grammar,B2,QuickCheck",
+      "explanation": "See the Zero, first, second, third conditionals lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "boils",
+        "will boil",
+        "would boil",
+        "boiled"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

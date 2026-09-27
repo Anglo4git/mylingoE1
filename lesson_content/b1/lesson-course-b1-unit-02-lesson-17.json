@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-02-lesson-17",
+  "title": "Lesson: Pets and animals",
+  "description": "Practice Pets and animals.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Pets and animals.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Pets and animals",
+      "explanation": "Practice Pets and animals."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Pets and animals",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "A \"stray\" animal is one that...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1,QuickCheck",
+      "explanation": "Talk about pets, wild animals, and animal care.",
+      "correctIndex": 1,
+      "answers": [
+        "has no home/owner",
+        "has an owner",
+        "is dangerous",
+        "lives in a zoo"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-04-lesson-08",
+  "title": "Lesson: Talking about possibility / probability and certainty",
+  "description": "Practice Talking about possibility / probability and certainty.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Talking about possibility / probability and certainty.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Talking about possibility / probability and certainty",
+      "explanation": "Practice Talking about possibility / probability and certainty."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Talking about possibility / probability and certainty",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "\"There's a good chance ___ rain later.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1,QuickCheck",
+      "explanation": "Express degrees of certainty accurately.",
+      "correctIndex": 1,
+      "answers": [
+        "of it",
+        "it will",
+        "it's",
+        "it"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+    "id": "lesson-course-c1-unit-02-lesson-03",
+    "title": "Lesson: Astrology and religions",
+    "description": "Practice Astrology and religions.",
+    "brand": "Mylingo",
+    "category": "Vocabulary",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "Practice Astrology and religions.",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1",
+            "media": {},
+            "subprompt": "Astrology and religions",
+            "explanation": "Practice Astrology and religions."
+        },
+        {
+            "question": "What you'll practice",
+            "subprompt": "Astrology and religions",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1"
+        },
+        {
+            "question": "A person who doubts the truth of a claim, such as astrology, is a:",
+            "category": "Vocabulary",
+            "tags": "Vocabulary,C1,QuickCheck",
+            "explanation": "See the Astrology and religions lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "Believer",
+                "Sceptic",
+                "Denomination",
+                "Ritual"
+            ]
+        },
+        {
+            "question": "Nice work! Ready for the full exercises?",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1"
+        }
+    ]
+}

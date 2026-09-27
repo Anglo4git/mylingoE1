@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-01-lesson-15",
+  "title": "Lesson: Be able to / can / manage to",
+  "description": "Practice Be able to / can / manage to.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Be able to / can / manage to.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Be able to / can / manage to",
+      "explanation": "Practice Be able to / can / manage to."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Be able to / can / manage to",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "Future ability: \"I ___ help tomorrow.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1,QuickCheck",
+      "explanation": "Express ability in past, present, and future correctly.",
+      "correctIndex": 3,
+      "answers": [
+        "could",
+        "can",
+        "manage to",
+        "will be able to"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

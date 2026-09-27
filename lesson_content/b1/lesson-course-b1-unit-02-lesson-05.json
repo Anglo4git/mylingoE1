@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-02-lesson-05",
+  "title": "Lesson: Character",
+  "description": "Practice Character.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Character.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Character",
+      "explanation": "Practice Character."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Character",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "A \"reliable\" person is someone who is...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1,QuickCheck",
+      "explanation": "Describe personality traits with precise vocabulary.",
+      "correctIndex": 1,
+      "answers": [
+        "dependable",
+        "funny",
+        "untrustworthy",
+        "shy"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "c1-011",
+  "title": "Uses of continuous tenses",
+  "description": "Practice Uses of continuous tenses.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Which sentence uses continuous aspect to *soften* a request?",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Uses of continuous tenses lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "I want to ask you something.",
+        "I was wondering if you'd be free Thursday.",
+        "I ask you this every week.",
+        "I have asked you before."
+      ]
+    },
+    {
+      "question": "\"She's living in Paris\" (vs. \"She lives in Paris\") signals:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Uses of continuous tenses lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A permanent fact",
+        "A temporary arrangement",
+        "A past habit",
+        "A future plan"
+      ]
+    },
+    {
+      "question": "Which use of continuous aspect adds emotional colour to a repeated action?",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Uses of continuous tenses lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "\"He's always been sending me weird links.\"",
+        "\"He sent me a link.\"",
+        "\"He will send me a link.\"",
+        "\"He has sent me a link.\""
+      ]
+    },
+    {
+      "question": "\"We're flying to Rome next week\" uses continuous aspect to express:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Uses of continuous tenses lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "An action happening right now",
+        "A fixed future plan",
+        "A polite request",
+        "A past habit"
+      ]
+    },
+    {
+      "question": "Which best describes the C1-level focus of this lesson, beyond basic tense formation?",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Uses of continuous tenses lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Forming the present continuous correctly",
+        "Recognising softening, temporariness, and emotional nuance",
+        "Distinguishing present from past continuous",
+        "Using continuous tenses only in questions"
+      ]
+    }
+  ]
+}

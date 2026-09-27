@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-05-lesson-10",
+  "title": "Lesson: Adding information",
+  "description": "Practice Adding information.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Adding information.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Adding information",
+      "explanation": "Practice Adding information."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Adding information",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "\"The flat is cheap. ___, it's close to the station.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2,QuickCheck",
+      "explanation": "See the Adding information lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "What's more",
+        "Then again",
+        "Owing to",
+        "So as to"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

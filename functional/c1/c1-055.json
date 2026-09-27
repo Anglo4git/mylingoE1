@@ -1,0 +1,77 @@
+{
+  "id": "c1-055",
+  "title": "Expressing regrets",
+  "description": "Practice Expressing regrets.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"In hindsight, I should have asked more questions\" uses which framing?",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Expressing regrets lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Direct, present-tense regret",
+        "Hindsight/looking-back framing",
+        "A contradiction",
+        "A persuasive appeal"
+      ]
+    },
+    {
+      "question": "\"Looking back, it was a mistake to rush the decision\" is:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Expressing regrets lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A basic \"I regret...\" statement",
+        "A more nuanced, hindsight-framed regret",
+        "An instruction",
+        "A question"
+      ]
+    },
+    {
+      "question": "This lesson adds range beyond which B2 lesson's basic \"I regret.../I wish...\" set?",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Expressing regrets lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "B2's \"Expressing regret\"",
+        "B2's \"Giving opinions\"",
+        "B2's \"Clarifying\"",
+        "B2's \"Guessing\""
+      ]
+    },
+    {
+      "question": "\"If I'm honest, I have some regrets about...\" is an example of:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Expressing regrets lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A direct command",
+        "A more formal, nuanced regret expression",
+        "A contradiction",
+        "A persuasive technique"
+      ]
+    },
+    {
+      "question": "**Scope check:** Which phrase best matches this lesson's hindsight-framing focus, vs. B2's direct regret phrases?",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Expressing regrets lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "\"I regret that.\"",
+        "\"In hindsight, I should have asked more questions.\"",
+        "\"I wish I hadn't done that.\"",
+        "\"Sorry about that.\""
+      ]
+    }
+  ]
+}

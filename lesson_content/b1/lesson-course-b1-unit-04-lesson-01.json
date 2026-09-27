@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-04-lesson-01",
+  "title": "Lesson: Describing location of people and things",
+  "description": "Practice Describing location of people and things.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Describing location of people and things.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Describing location of people and things",
+      "explanation": "Practice Describing location of people and things."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Describing location of people and things",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "\"The pharmacy is ___ the bank.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1,QuickCheck",
+      "explanation": "Give precise spatial descriptions.",
+      "correctIndex": 1,
+      "answers": [
+        "opposite",
+        "opposited",
+        "opposite of",
+        "opposite to"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

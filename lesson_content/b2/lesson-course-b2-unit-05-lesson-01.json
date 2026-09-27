@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-05-lesson-01",
+  "title": "Lesson: Giving opinions",
+  "description": "Practice Giving opinions.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Giving opinions.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Giving opinions",
+      "explanation": "Practice Giving opinions."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Giving opinions",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "Strongest opinion opener:",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2,QuickCheck",
+      "explanation": "See the Giving opinions lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "I'd say...",
+        "I'm convinced that...",
+        "It seems to me...",
+        "Maybe..."
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

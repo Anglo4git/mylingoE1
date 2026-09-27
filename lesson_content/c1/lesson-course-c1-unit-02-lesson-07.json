@@ -1,0 +1,47 @@
+{
+    "id": "lesson-course-c1-unit-02-lesson-07",
+    "title": "Lesson: Eccentricity and individuality",
+    "description": "Practice Eccentricity and individuality.",
+    "brand": "Mylingo",
+    "category": "Vocabulary",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "Practice Eccentricity and individuality.",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1",
+            "media": {},
+            "subprompt": "Eccentricity and individuality",
+            "explanation": "Practice Eccentricity and individuality."
+        },
+        {
+            "question": "What you'll practice",
+            "subprompt": "Eccentricity and individuality",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1"
+        },
+        {
+            "question": "\"Eccentric\" most nearly means:",
+            "category": "Vocabulary",
+            "tags": "Vocabulary,C1,QuickCheck",
+            "explanation": "See the Eccentricity and individuality lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "Boringly conventional",
+                "Unconventional in a distinctive, often likeable way",
+                "Rude",
+                "Lazy"
+            ]
+        },
+        {
+            "question": "Nice work! Ready for the full exercises?",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1"
+        }
+    ]
+}

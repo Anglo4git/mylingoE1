@@ -1,0 +1,47 @@
+{
+    "id": "lesson-course-c1-unit-05-lesson-08",
+    "title": "Lesson: Expanding and exemplifying",
+    "description": "Practice Expanding and exemplifying.",
+    "brand": "Mylingo",
+    "category": "Functional Language",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "Practice Expanding and exemplifying.",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1",
+            "media": {},
+            "subprompt": "Expanding and exemplifying",
+            "explanation": "Practice Expanding and exemplifying."
+        },
+        {
+            "question": "What you'll practice",
+            "subprompt": "Expanding and exemplifying",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1"
+        },
+        {
+            "question": "\"To elaborate...\" is used to:",
+            "category": "Functional Language",
+            "tags": "Functional Language,C1,QuickCheck",
+            "explanation": "See the Expanding and exemplifying lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "Give an example",
+                "Expand on a point with more detail/reasoning",
+                "Contradict",
+                "Instruct"
+            ]
+        },
+        {
+            "question": "Nice work! Ready for the full exercises?",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-02-lesson-08",
+  "title": "Lesson: Relationships",
+  "description": "Practice Relationships.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Relationships.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Relationships",
+      "explanation": "Practice Relationships."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Relationships",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "A person you know slightly but not well is an...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2,QuickCheck",
+      "explanation": "See the Relationships lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "estranged relative",
+        "acquaintance",
+        "confidant",
+        "ex"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

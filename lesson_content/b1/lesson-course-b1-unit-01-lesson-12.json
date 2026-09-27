@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-01-lesson-12",
+  "title": "Lesson: Adjectives and their connotations",
+  "description": "Practice Adjectives and their connotations.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Adjectives and their connotations.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Adjectives and their connotations",
+      "explanation": "Practice Adjectives and their connotations."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Adjectives and their connotations",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "Which adjective is negative for \"thin\"?",
+      "category": "Grammar",
+      "tags": "Grammar,B1,QuickCheck",
+      "explanation": "Choose adjectives that carry the right positive, neutral, or negative feeling.",
+      "correctIndex": 3,
+      "answers": [
+        "lean",
+        "slim",
+        "slender",
+        "skinny"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

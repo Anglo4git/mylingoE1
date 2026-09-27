@@ -1,0 +1,47 @@
+{
+    "id": "lesson-course-c1-unit-01-lesson-18",
+    "title": "Lesson: Mixed conditionals",
+    "description": "Practice Mixed conditionals.",
+    "brand": "Mylingo",
+    "category": "Grammar",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "Practice Mixed conditionals.",
+            "question_type": "banner",
+            "category": "Grammar",
+            "tags": "Lesson,C1",
+            "media": {},
+            "subprompt": "Mixed conditionals",
+            "explanation": "Practice Mixed conditionals."
+        },
+        {
+            "question": "What you'll practice",
+            "subprompt": "Mixed conditionals",
+            "question_type": "banner",
+            "category": "Grammar",
+            "tags": "Lesson,C1"
+        },
+        {
+            "question": "\"Had I known you were coming, I'd have cooked more\" is an example of:",
+            "category": "Grammar",
+            "tags": "Grammar,C1,QuickCheck",
+            "explanation": "See the Mixed conditionals lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "A standard \"if\" conditional",
+                "An inverted conditional (no \"if\")",
+                "A passive structure",
+                "A reported conditional"
+            ]
+        },
+        {
+            "question": "Nice work! Ready for the full exercises?",
+            "question_type": "banner",
+            "category": "Grammar",
+            "tags": "Lesson,C1"
+        }
+    ]
+}

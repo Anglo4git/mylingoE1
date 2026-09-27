@@ -1,0 +1,47 @@
+{
+    "id": "lesson-course-c1-unit-01-lesson-09",
+    "title": "Lesson: Past Perfect",
+    "description": "Practice Past Perfect.",
+    "brand": "Mylingo",
+    "category": "Grammar",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "Practice Past Perfect.",
+            "question_type": "banner",
+            "category": "Grammar",
+            "tags": "Lesson,C1",
+            "media": {},
+            "subprompt": "Past Perfect",
+            "explanation": "Practice Past Perfect."
+        },
+        {
+            "question": "What you'll practice",
+            "subprompt": "Past Perfect",
+            "question_type": "banner",
+            "category": "Grammar",
+            "tags": "Lesson,C1"
+        },
+        {
+            "question": "\"By the time the ambulance arrived, the situation had already changed dramatically\" — the past perfect here signals:",
+            "category": "Grammar",
+            "tags": "Grammar,C1,QuickCheck",
+            "explanation": "See the Past Perfect lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "A basic earlier event",
+                "A narrative flashback marker",
+                "A polite request",
+                "A future plan"
+            ]
+        },
+        {
+            "question": "Nice work! Ready for the full exercises?",
+            "question_type": "banner",
+            "category": "Grammar",
+            "tags": "Lesson,C1"
+        }
+    ]
+}

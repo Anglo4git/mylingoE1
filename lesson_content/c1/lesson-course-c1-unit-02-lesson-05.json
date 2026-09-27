@@ -1,0 +1,47 @@
+{
+    "id": "lesson-course-c1-unit-02-lesson-05",
+    "title": "Lesson: Coincidences and experiences",
+    "description": "Practice Coincidences and experiences.",
+    "brand": "Mylingo",
+    "category": "Vocabulary",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "Practice Coincidences and experiences.",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1",
+            "media": {},
+            "subprompt": "Coincidences and experiences",
+            "explanation": "Practice Coincidences and experiences."
+        },
+        {
+            "question": "What you'll practice",
+            "subprompt": "Coincidences and experiences",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1"
+        },
+        {
+            "question": "\"What a small world!\" is said when:",
+            "category": "Vocabulary",
+            "tags": "Vocabulary,C1,QuickCheck",
+            "explanation": "See the Coincidences and experiences lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "Something is physically tiny",
+                "An unexpected connection/coincidence occurs",
+                "Someone travels far",
+                "Something is very common"
+            ]
+        },
+        {
+            "question": "Nice work! Ready for the full exercises?",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1"
+        }
+    ]
+}

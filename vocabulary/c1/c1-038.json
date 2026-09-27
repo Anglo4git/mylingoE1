@@ -1,0 +1,77 @@
+{
+  "id": "c1-038",
+  "title": "Moral and personal dilemmas",
+  "description": "Practice Moral and personal dilemmas.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"The lesser of two evils\" describes a choice between:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Moral and personal dilemmas lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Two equally good options",
+        "Two undesirable options, picking the less bad one",
+        "A clearly right and wrong option",
+        "No available options"
+      ]
+    },
+    {
+      "question": "\"A grey area\" refers to a situation that is:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Moral and personal dilemmas lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Clearly right or wrong",
+        "Ambiguous, without a clear right answer",
+        "Illegal",
+        "Simple to resolve"
+      ]
+    },
+    {
+      "question": "\"Torn between\" two choices means feeling:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Moral and personal dilemmas lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Confident about one option",
+        "Conflicted, unable to decide",
+        "Indifferent",
+        "Angry"
+      ]
+    },
+    {
+      "question": "\"To weigh up the pros and cons\" means to:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Moral and personal dilemmas lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Ignore the downsides",
+        "Consider the advantages and disadvantages before deciding",
+        "Choose randomly",
+        "Ask someone else to decide"
+      ]
+    },
+    {
+      "question": "Which sentence uses the vocabulary without requiring the learner to take a moral position?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Moral and personal dilemmas lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "It's a grey area — there's no clearly right answer.",
+        "The right choice is obvious, and anyone who disagrees is wrong.",
+        "Only weak people feel torn between choices.",
+        "There's never a lesser evil."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+    "id": "lesson-course-c1-unit-05-lesson-03",
+    "title": "Lesson: Describing",
+    "description": "Practice Describing.",
+    "brand": "Mylingo",
+    "category": "Functional Language",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "Practice Describing.",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1",
+            "media": {},
+            "subprompt": "Describing",
+            "explanation": "Practice Describing."
+        },
+        {
+            "question": "What you'll practice",
+            "subprompt": "Describing",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1"
+        },
+        {
+            "question": "\"What strikes you first is the sheer scale of the place\" is an opener used to describe:",
+            "category": "Functional Language",
+            "tags": "Functional Language,C1,QuickCheck",
+            "explanation": "See the Describing lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "A person's personality",
+                "A place or concept",
+                "A situation's atmosphere only",
+                "A grammatical rule"
+            ]
+        },
+        {
+            "question": "Nice work! Ready for the full exercises?",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1"
+        }
+    ]
+}

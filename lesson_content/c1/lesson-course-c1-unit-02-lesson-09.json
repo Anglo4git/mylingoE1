@@ -1,0 +1,47 @@
+{
+    "id": "lesson-course-c1-unit-02-lesson-09",
+    "title": "Lesson: Age and cultural differences",
+    "description": "Practice Age and cultural differences.",
+    "brand": "Mylingo",
+    "category": "Vocabulary",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "Practice Age and cultural differences.",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1",
+            "media": {},
+            "subprompt": "Age and cultural differences",
+            "explanation": "Practice Age and cultural differences."
+        },
+        {
+            "question": "What you'll practice",
+            "subprompt": "Age and cultural differences",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1"
+        },
+        {
+            "question": "\"Generation gap\" refers to:",
+            "category": "Vocabulary",
+            "tags": "Vocabulary,C1,QuickCheck",
+            "explanation": "See the Age and cultural differences lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "A difference in age between siblings",
+                "Differences in attitudes/values between age groups",
+                "A gap year",
+                "A retirement age"
+            ]
+        },
+        {
+            "question": "Nice work! Ready for the full exercises?",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1"
+        }
+    ]
+}

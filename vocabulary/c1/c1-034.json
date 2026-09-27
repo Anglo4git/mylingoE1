@@ -1,0 +1,77 @@
+{
+  "id": "c1-034",
+  "title": "Gender",
+  "description": "Practice Gender.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"Gender pay gap\" refers to:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Gender lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A difference in average pay between genders",
+        "A tax on gendered products",
+        "A hiring quota",
+        "A workplace holiday"
+      ]
+    },
+    {
+      "question": "\"Gender-neutral\" (as in a job title) means:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Gender lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Specific to one gender",
+        "Not specifying or implying a particular gender",
+        "Related to age, not gender",
+        "Illegal in most countries"
+      ]
+    },
+    {
+      "question": "\"Gender roles\" refers to:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Gender lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Job titles only",
+        "Social expectations associated with a gender",
+        "Legal gender categories",
+        "A type of contract"
+      ]
+    },
+    {
+      "question": "In this lesson, \"bias\" is used to mean:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Gender lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "An illegal act",
+        "A tendency to favour one thing over another, described factually",
+        "A type of pay gap",
+        "A synonym for stereotype only"
+      ]
+    },
+    {
+      "question": "Which sentence matches the lesson's neutral, factual register?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Gender lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "The report highlighted the persistent gender pay gap in the industry.",
+        "Gender roles are obviously outdated and wrong.",
+        "Everyone should think the same way about gender.",
+        "Gender-neutral titles are a bad idea."
+      ]
+    }
+  ]
+}

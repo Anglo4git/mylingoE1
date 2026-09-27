@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-04-lesson-02",
+  "title": "Lesson: Stating preferences and opinions",
+  "description": "Practice Stating preferences and opinions.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Stating preferences and opinions.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Stating preferences and opinions",
+      "explanation": "Practice Stating preferences and opinions."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Stating preferences and opinions",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "\"___, the book was better.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B1,QuickCheck",
+      "explanation": "Give and support opinions politely.",
+      "correctIndex": 3,
+      "answers": [
+        "I opinion",
+        "My opinion that",
+        "Opinion I have",
+        "In my opinion"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

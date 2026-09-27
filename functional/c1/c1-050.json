@@ -1,0 +1,77 @@
+{
+  "id": "c1-050",
+  "title": "Paraphrasing",
+  "description": "Practice Paraphrasing.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"In other words...\" is used to:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Paraphrasing lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Contradict",
+        "Introduce a paraphrase",
+        "Give an instruction",
+        "Express regret"
+      ]
+    },
+    {
+      "question": "Which is a genuine paraphrase of \"The proposal was rejected due to budgetary constraints\"?",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Paraphrasing lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "In other words, there wasn't enough money for it.",
+        "The proposal was rejected because of budget.",
+        "The proposal budget was rejected.",
+        "Budgetary constraints rejected the proposal."
+      ]
+    },
+    {
+      "question": "Effective paraphrasing should:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Paraphrasing lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Only swap individual words for synonyms",
+        "Change structure and word choice substantially",
+        "Copy the original exactly",
+        "Add new, unrelated information"
+      ]
+    },
+    {
+      "question": "\"What that essentially means is...\" functions to:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Paraphrasing lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Contradict a claim",
+        "Introduce a simplified restatement",
+        "Give a warning",
+        "Express annoyance"
+      ]
+    },
+    {
+      "question": "This quiz tests:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Paraphrasing lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Genuine restructuring, not word-for-word synonym swapping",
+        "Basic vocabulary recognition",
+        "Grammar accuracy only",
+        "Question formation"
+      ]
+    }
+  ]
+}

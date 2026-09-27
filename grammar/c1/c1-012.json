@@ -1,0 +1,77 @@
+{
+  "id": "c1-012",
+  "title": "Uses of would",
+  "description": "Practice Uses of would.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"He wouldn't listen no matter what I said\" — this use of \"would\" expresses:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Uses of would lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A polite request",
+        "Refusal/insistence in the past",
+        "A hypothetical",
+        "A past habit"
+      ]
+    },
+    {
+      "question": "\"I would think that's the right approach\" is an example of:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Uses of would lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Reported future",
+        "A hedged opinion",
+        "A polite request",
+        "A past habit"
+      ]
+    },
+    {
+      "question": "\"She said she would call once she landed\" illustrates:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Uses of would lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Reported future",
+        "Refusal",
+        "Hypothetical meaning",
+        "Polite distancing"
+      ]
+    },
+    {
+      "question": "Which sentence uses \"would\" for polite distancing?",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Uses of would lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Would you mind closing the window?",
+        "He would always complain.",
+        "I would help if I could.",
+        "The car wouldn't start."
+      ]
+    },
+    {
+      "question": "This quiz distinguishes the C1-level uses of \"would\" from which meaning already covered at B2?",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Uses of would lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Hypothetical conditional",
+        "Past habit",
+        "Reported future",
+        "Refusal"
+      ]
+    }
+  ]
+}

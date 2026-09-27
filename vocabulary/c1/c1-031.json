@@ -1,0 +1,77 @@
+{
+  "id": "c1-031",
+  "title": "Eccentricity and individuality",
+  "description": "Practice Eccentricity and individuality.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"Eccentric\" most nearly means:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Eccentricity and individuality lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Boringly conventional",
+        "Unconventional in a distinctive, often likeable way",
+        "Rude",
+        "Lazy"
+      ]
+    },
+    {
+      "question": "\"To march to the beat of your own drum\" means to:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Eccentricity and individuality lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Follow the crowd",
+        "Live/act according to one's own values, not others'",
+        "Play music",
+        "Be indecisive"
+      ]
+    },
+    {
+      "question": "Which term contrasts with \"eccentric\" or \"quirky\" in this set?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Eccentricity and individuality lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "Idiosyncratic",
+        "Unorthodox",
+        "Conformist",
+        "Individuality"
+      ]
+    },
+    {
+      "question": "\"Idiosyncratic\" describes something:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Eccentricity and individuality lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Copied from others",
+        "Peculiar to a particular individual",
+        "Extremely common",
+        "Officially approved"
+      ]
+    },
+    {
+      "question": "Which framing is more critical than neutral, based on context?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Eccentricity and individuality lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "Quirky",
+        "Idiosyncratic",
+        "Unorthodox",
+        "Eccentric (used affectionately)"
+      ]
+    }
+  ]
+}

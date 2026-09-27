@@ -1,0 +1,77 @@
+{
+  "id": "c1-049",
+  "title": "Checking and clarifying information",
+  "description": "Practice Checking and clarifying information.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"Just to confirm, you mean...?\" is used to:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Checking and clarifying information lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Give advice",
+        "Check understanding",
+        "Contradict someone",
+        "Express regret"
+      ]
+    },
+    {
+      "question": "\"Am I right in thinking you'd prefer the online option?\" functions to:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Checking and clarifying information lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Instruct",
+        "Check/confirm an assumption",
+        "Persuade",
+        "Speculate"
+      ]
+    },
+    {
+      "question": "This lesson focuses on which side of clarification, distinct from B2's \"Clarifying\" lesson?",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Checking and clarifying information lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Giving clarification",
+        "Checking/confirming understanding",
+        "Refusing to clarify",
+        "Formal apologies"
+      ]
+    },
+    {
+      "question": "Which is a checking question for an ambiguous scenario (\"the deadline might be Friday or Thursday\")?",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Checking and clarifying information lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Just to confirm, the deadline is Friday, not Thursday?",
+        "The deadline is Friday.",
+        "I think the deadline is fine.",
+        "Let's ignore the deadline."
+      ]
+    },
+    {
+      "question": "**Scope check:** This quiz targets checking/confirming questions, not B2's focus on:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Checking and clarifying information lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Giving clarification when asked",
+        "Basic yes/no questions",
+        "Passive voice",
+        "Reported speech"
+      ]
+    }
+  ]
+}

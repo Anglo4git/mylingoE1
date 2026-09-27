@@ -1,0 +1,77 @@
+{
+  "id": "c1-014",
+  "title": "Past Perfect",
+  "description": "Practice Past Perfect.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"By the time the ambulance arrived, the situation had already changed dramatically\" — the past perfect here signals:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Past Perfect lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A basic earlier event",
+        "A narrative flashback marker",
+        "A polite request",
+        "A future plan"
+      ]
+    },
+    {
+      "question": "\"She was exhausted — she'd been studying for twelve hours straight\" uses past perfect continuous to show:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Past Perfect lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Sequence only",
+        "Cause",
+        "A hypothetical",
+        "A reported statement"
+      ]
+    },
+    {
+      "question": "\"If only I had known\" connects past perfect to:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Past Perfect lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A hypothetical regret",
+        "A simple past narrative",
+        "A polite request",
+        "A future prediction"
+      ]
+    },
+    {
+      "question": "Which use of past perfect is the specific C1 focus, distinct from the basic B1/B2 \"earlier past event\" rule?",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Past Perfect lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Stylistic/narrative flashback and tense-shifted hypotheticals",
+        "Forming the past perfect with \"had\"",
+        "Using past perfect in yes/no questions",
+        "Past perfect with time expressions like \"already\""
+      ]
+    },
+    {
+      "question": "In reported speech, a past perfect often results from tense-shifting which original tense?",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Past Perfect lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Present perfect or past simple",
+        "Future simple",
+        "Present continuous",
+        "Present simple"
+      ]
+    }
+  ]
+}

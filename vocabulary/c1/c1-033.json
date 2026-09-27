@@ -1,0 +1,77 @@
+{
+  "id": "c1-033",
+  "title": "Age and cultural differences",
+  "description": "Practice Age and cultural differences.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"Generation gap\" refers to:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Age and cultural differences lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A difference in age between siblings",
+        "Differences in attitudes/values between age groups",
+        "A gap year",
+        "A retirement age"
+      ]
+    },
+    {
+      "question": "\"Culture shock\" describes the feeling of:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Age and cultural differences lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Comfort in a familiar place",
+        "Disorientation when encountering an unfamiliar culture",
+        "Excitement about travel plans",
+        "Boredom"
+      ]
+    },
+    {
+      "question": "\"To assimilate\" means to:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Age and cultural differences lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Reject a new culture entirely",
+        "Adapt and become part of a new culture/group",
+        "Travel frequently",
+        "Teach a culture to others"
+      ]
+    },
+    {
+      "question": "\"Melting pot\" describes a society characterised by:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Age and cultural differences lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A single dominant culture",
+        "A blend of many cultures",
+        "Strict cultural segregation",
+        "No cultural diversity"
+      ]
+    },
+    {
+      "question": "\"Cultural norms\" refers to:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Age and cultural differences lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Laws enforced by government",
+        "Shared expected behaviours within a culture",
+        "Tourist attractions",
+        "Economic policies"
+      ]
+    }
+  ]
+}

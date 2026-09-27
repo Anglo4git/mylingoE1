@@ -1,0 +1,77 @@
+{
+  "id": "c1-046",
+  "title": "Describing",
+  "description": "Practice Describing.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"What strikes you first is the sheer scale of the place\" is an opener used to describe:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Describing lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A person's personality",
+        "A place or concept",
+        "A situation's atmosphere only",
+        "A grammatical rule"
+      ]
+    },
+    {
+      "question": "\"In essence, it's a simplified version of the original process\" is used to describe:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Describing lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A person",
+        "A process",
+        "An object's colour",
+        "A feeling"
+      ]
+    },
+    {
+      "question": "\"It's best described as...\" is a general opener for describing:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Describing lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Only people",
+        "Concepts, processes, or places",
+        "Only emotions",
+        "Only numbers"
+      ]
+    },
+    {
+      "question": "\"Picture a...\" is used to:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Describing lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Give a literal photograph",
+        "Invite the listener to visualise something being described",
+        "Contradict a statement",
+        "Give an instruction"
+      ]
+    },
+    {
+      "question": "**Scope check:** This quiz tests general descriptive openers for concepts/processes/places — distinct from which other lesson's focus?",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Describing lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "F14's description of people, objects, and situations specifically",
+        "G1's continuous tenses",
+        "V17's architecture vocabulary",
+        "F9's persuading language"
+      ]
+    }
+  ]
+}

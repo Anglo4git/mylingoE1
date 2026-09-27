@@ -1,0 +1,77 @@
+{
+  "id": "c1-016",
+  "title": "Order of adjectives",
+  "description": "Practice Order of adjectives.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Which follows the correct adjective order (opinion→size→age→shape→colour→origin→material→purpose)?",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Order of adjectives lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "an old beautiful small round wooden Italian table",
+        "a beautiful small old round wooden Italian table",
+        "a wooden small beautiful old round Italian table",
+        "an Italian old wooden beautiful table"
+      ]
+    },
+    {
+      "question": "\"an interesting new French film\" follows which sequence?",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Order of adjectives lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "opinion, age, origin",
+        "origin, age, opinion",
+        "age, opinion, origin",
+        "opinion, origin, age"
+      ]
+    },
+    {
+      "question": "Which is correctly ordered?",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Order of adjectives lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "a round small table",
+        "a small round table",
+        "a table small round",
+        "small a round table"
+      ]
+    },
+    {
+      "question": "In \"a small round wooden table,\" which two adjective types are adjacent with no comma?",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Order of adjectives lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "size and shape",
+        "shape and material",
+        "size and material",
+        "shape and colour"
+      ]
+    },
+    {
+      "question": "This quiz's focus is:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Order of adjectives lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Ordering a single adjective correctly",
+        "The standard multi-adjective sequence across several combinations",
+        "Choosing between adjectives and adverbs",
+        "Comparative and superlative forms"
+      ]
+    }
+  ]
+}

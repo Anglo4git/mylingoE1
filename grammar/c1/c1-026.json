@@ -1,0 +1,77 @@
+{
+  "id": "c1-026",
+  "title": "Reported speech",
+  "description": "Practice Reported speech.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"He wasn't coming. That much was certain\" (with no \"he said/thought that\") is an example of:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Reported speech lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Direct speech",
+        "Free indirect style",
+        "A passive reporting structure",
+        "A question tag"
+      ]
+    },
+    {
+      "question": "\"She conceded that he had a point\" — the reporting verb \"conceded\" conveys:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Reported speech lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Irritation",
+        "Reluctant agreement",
+        "Certainty",
+        "Refusal"
+      ]
+    },
+    {
+      "question": "\"He muttered that it wasn't his problem\" — \"muttered\" conveys:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Reported speech lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Enthusiasm",
+        "Irritation",
+        "Politeness",
+        "Confusion"
+      ]
+    },
+    {
+      "question": "Which best exemplifies free indirect style?",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Reported speech lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "He said that he would be there tomorrow.",
+        "She would be there tomorrow, she was sure of it.",
+        "\"I'll be there tomorrow,\" he said.",
+        "He asked if he would be there tomorrow."
+      ]
+    },
+    {
+      "question": "This lesson assumes which reported-speech content already known from B1/B2, and does not re-test it?",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Reported speech lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Basic reported speech and B2's extended reporting-verb patterns",
+        "The passive voice",
+        "Relative clauses",
+        "Question tags"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+    "id": "lesson-course-c1-unit-02-lesson-08",
+    "title": "Lesson: Creativity",
+    "description": "Practice Creativity.",
+    "brand": "Mylingo",
+    "category": "Vocabulary",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "Practice Creativity.",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1",
+            "media": {},
+            "subprompt": "Creativity",
+            "explanation": "Practice Creativity."
+        },
+        {
+            "question": "What you'll practice",
+            "subprompt": "Creativity",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1"
+        },
+        {
+            "question": "\"Derivative\" describes work that is:",
+            "category": "Vocabulary",
+            "tags": "Vocabulary,C1,QuickCheck",
+            "explanation": "See the Creativity lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "Highly original",
+                "Copied or unoriginal, based too closely on other work",
+                "Well-funded",
+                "Collaborative"
+            ]
+        },
+        {
+            "question": "Nice work! Ready for the full exercises?",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1"
+        }
+    ]
+}

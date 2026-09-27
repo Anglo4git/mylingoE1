@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-01-lesson-11",
+  "title": "Lesson: Adverbs of Manner and Modifiers",
+  "description": "Practice Adverbs of Manner and Modifiers.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Adverbs of Manner and Modifiers.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Adverbs of Manner and Modifiers",
+      "explanation": "Practice Adverbs of Manner and Modifiers."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Adverbs of Manner and Modifiers",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "\"She sang ___.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1,QuickCheck",
+      "explanation": "Describe how actions happen, and modify adjectives/adverbs with intensity words.",
+      "correctIndex": 1,
+      "answers": [
+        "beauty",
+        "beautifully",
+        "more beautiful",
+        "beautiful"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

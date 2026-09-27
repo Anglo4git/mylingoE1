@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-01-lesson-21",
+  "title": "Lesson: Conjunctions: although, despite, in spite of, otherwise, unless",
+  "description": "Practice Conjunctions: although, despite, in spite of, otherwise, unless.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Conjunctions: although, despite, in spite of, otherwise, unless.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Conjunctions: although, despite, in spite of, otherwise, unless",
+      "explanation": "Practice Conjunctions: although, despite, in spite of, otherwise, unless."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Conjunctions: although, despite, in spite of, otherwise, unless",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "\"___ it was raining, we went for a walk.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B2,QuickCheck",
+      "explanation": "See the Conjunctions: although, despite, in spite of, otherwise, unless lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "Despite",
+        "In spite of",
+        "Although",
+        "Otherwise"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

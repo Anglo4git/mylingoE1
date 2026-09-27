@@ -1,0 +1,47 @@
+{
+    "id": "lesson-course-c1-unit-01-lesson-12",
+    "title": "Lesson: Participles",
+    "description": "Practice Participles.",
+    "brand": "Mylingo",
+    "category": "Grammar",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "Practice Participles.",
+            "question_type": "banner",
+            "category": "Grammar",
+            "tags": "Lesson,C1",
+            "media": {},
+            "subprompt": "Participles",
+            "explanation": "Practice Participles."
+        },
+        {
+            "question": "What you'll practice",
+            "subprompt": "Participles",
+            "question_type": "banner",
+            "category": "Grammar",
+            "tags": "Lesson,C1"
+        },
+        {
+            "question": "\"Having finished the report, she left\" uses a participle clause to express:",
+            "category": "Grammar",
+            "tags": "Grammar,C1,QuickCheck",
+            "explanation": "See the Participles lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "Contrast",
+                "Reason/time",
+                "Purpose",
+                "Condition"
+            ]
+        },
+        {
+            "question": "Nice work! Ready for the full exercises?",
+            "question_type": "banner",
+            "category": "Grammar",
+            "tags": "Lesson,C1"
+        }
+    ]
+}

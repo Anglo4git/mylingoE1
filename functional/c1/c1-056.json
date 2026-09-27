@@ -1,0 +1,77 @@
+{
+  "id": "c1-056",
+  "title": "Comparing and contrasting",
+  "description": "Practice Comparing and contrasting.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"Whereas the first approach is cheaper, the second is more reliable\" uses \"whereas\" to:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Comparing and contrasting lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Persuade",
+        "Contrast two ideas",
+        "Give an instruction",
+        "Express regret"
+      ]
+    },
+    {
+      "question": "\"By the same token\" is used to:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Comparing and contrasting lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Introduce a contrast",
+        "Introduce a similar point/extension of the same logic",
+        "Give an example",
+        "Contradict"
+      ]
+    },
+    {
+      "question": "\"In contrast to...\" introduces:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Comparing and contrasting lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A similarity",
+        "A difference",
+        "An instruction",
+        "A regret"
+      ]
+    },
+    {
+      "question": "\"Unlike... , ...\" is used to express:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Comparing and contrasting lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Similarity",
+        "Difference",
+        "Cause",
+        "Sequence"
+      ]
+    },
+    {
+      "question": "This quiz tests:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Comparing and contrasting lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A range of comparison/contrast structures beyond basic comparative adjectives",
+        "Basic comparative adjective formation (\"bigger,\" \"smaller\")",
+        "Passive voice",
+        "Question tags"
+      ]
+    }
+  ]
+}

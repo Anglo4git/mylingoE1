@@ -27,7 +27,7 @@
       "estimated_minutes": 8
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-001",
       "a1-011"
@@ -36,98 +36,6 @@
     "status": "published",
     "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-01",
     "body_content": "<h2>Present Simple — the everyday tense</h2><p>Use the <strong>present simple</strong> for routines, habits, repeated actions, facts, schedules, and things that are generally true. Think: <em>What happens regularly?</em></p><h3>1. Positive sentences</h3><p>With <strong>I, you, we, they</strong>, use the base verb:</p><ul><li>I <strong>work</strong> in Accra.</li><li>You <strong>study</strong> English every day.</li><li>We <strong>play</strong> football on Saturdays.</li><li>They <strong>live</strong> near the school.</li></ul><p>With <strong>he, she, it</strong>, usually add <strong>-s</strong>:</p><ul><li>He <strong>works</strong> in a bank.</li><li>She <strong>studies</strong> English every evening.</li><li>It <strong>rains</strong> a lot here.</li></ul><h3>2. The third-person -s rules</h3><ul><li>Most verbs: <strong>work → works</strong>, <strong>read → reads</strong>, <strong>play → plays</strong>.</li><li>Verbs ending in <strong>-s, -sh, -ch, -x, -o</strong>: add <strong>-es</strong>: <strong>watch → watches</strong>, <strong>go → goes</strong>, <strong>fix → fixes</strong>.</li><li>Consonant + <strong>y</strong>: change <strong>y → ies</strong>: <strong>study → studies</strong>, <strong>try → tries</strong>.</li><li>Vowel + <strong>y</strong>: keep <strong>y</strong>: <strong>play → plays</strong>, <strong>enjoy → enjoys</strong>.</li></ul><h3>3. Negative sentences</h3><p>Use <strong>do not / don't</strong> with I/you/we/they and <strong>does not / doesn't</strong> with he/she/it. After <strong>doesn't</strong>, the main verb returns to its base form.</p><ul><li>I <strong>don't work</strong> on Sunday.</li><li>They <strong>don't watch</strong> TV every night.</li><li>He <strong>doesn't work</strong> on Sunday. <em>Not: doesn't works.</em></li><li>She <strong>doesn't like</strong> coffee.</li></ul><h3>4. Questions</h3><p>Put <strong>Do</strong> or <strong>Does</strong> before the subject:</p><ul><li><strong>Do</strong> you speak English?</li><li><strong>Do</strong> they live here?</li><li><strong>Does</strong> he play football?</li><li><strong>Does</strong> she study every day?</li></ul><p>Short answers: <strong>Yes, I do. / No, I don't. / Yes, he does. / No, she doesn't.</strong></p><h3>5. Frequency words</h3><p>Common words are <strong>always, usually, often, sometimes, rarely, never</strong>. They normally come before the main verb: <em>I usually walk to work. She often reads at night.</em> With <strong>be</strong>, the frequency word normally comes after be: <em>He is always early.</em></p><h3>6. Time expressions</h3><p>Present simple often appears with <strong>every day, every week, on Mondays, in the morning, at weekends, once a month</strong>.</p><ul><li>I exercise <strong>every morning</strong>.</li><li>We visit our family <strong>on Sundays</strong>.</li><li>She has an English class <strong>twice a week</strong>.</li></ul><h3>7. Facts and general truths</h3><ul><li>Water <strong>boils</strong> at 100°C.</li><li>The sun <strong>rises</strong> in the east.</li><li>Birds <strong>have</strong> wings.</li></ul><h3>Common mistakes</h3><div class=\"tutor-notice-box\"><strong>Watch the helper verb.</strong><br>He <strong>works</strong> here. → Does he <strong>work</strong> here?<br>He <strong>doesn't work</strong> here.<br><br><strong>Don't use -s after does/doesn't.</strong> The <em>does</em> already carries the third-person grammar.</div><h3>Quick pattern</h3><p><strong>Positive:</strong> Subject + verb (+s for he/she/it).<br><strong>Negative:</strong> Subject + don't/doesn't + base verb.<br><strong>Question:</strong> Do/Does + subject + base verb?</p>"
-  },
-  {
-    "lesson_id": "course-a2-unit-01-lesson-01",
-    "unit_id": "course-a2-unit-01",
-    "title": "Comparative and Superlative Adjectives",
-    "category": "Grammar",
-    "order": 1,
-    "revision": {
-      "summary": "Practice Comparative Adjectives.",
-      "note": "Extended this pass to cover a previously PARTIAL syllabus item (see A2_CURRICULUM_ISSUES.md issue F), per Agent 6 default in the absence of an explicit human ruling on issue F specifically — flagged for review."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "a2-001"
-    ],
-    "version": 2,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-01",
-    "body_content": "<h2>Comparative and Superlative Adjectives</h2><p>Practice Comparative Adjectives.</p><h3>Superlative adjectives</h3><p>Use the superlative to compare one thing with the whole group: add <strong>-est</strong> to short adjectives (the fastest) or use <strong>the most</strong> with longer ones (the most expensive). Watch for irregulars: good → the best, bad → the worst.</p>"
-  },
-  {
-    "lesson_id": "course-b1-unit-01-lesson-01",
-    "unit_id": "course-b1-unit-01",
-    "title": "Present Perfect vs Past Simple",
-    "category": "Grammar",
-    "order": 1,
-    "revision": {
-      "summary": "Practice Present Perfect vs Past Simple."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "b1-001"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-b1-unit-01-lesson-01"
-  },
-  {
-    "lesson_id": "course-b2-unit-01-lesson-01",
-    "unit_id": "course-b2-unit-01",
-    "title": "Mixed Conditionals",
-    "category": "Grammar",
-    "order": 1,
-    "revision": {
-      "summary": "Practice Mixed Conditionals."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "b2-001"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-b2-unit-01-lesson-01"
-  },
-  {
-    "lesson_id": "course-c1-unit-01-lesson-01",
-    "unit_id": "course-c1-unit-01",
-    "title": "Advanced Conditionals",
-    "category": "Grammar",
-    "order": 1,
-    "revision": {
-      "summary": "Practice Advanced Conditionals."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "c1-001"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-c1-unit-01-lesson-01"
-  },
-  {
-    "lesson_id": "course-c2-unit-01-lesson-01",
-    "unit_id": "course-c2-unit-01",
-    "title": "Nuanced Modality",
-    "category": "Grammar",
-    "order": 1,
-    "revision": {
-      "summary": "Practice Nuanced Modality."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "c2-001"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-c2-unit-01-lesson-01"
   },
   {
     "lesson_id": "course-a1-unit-01-lesson-02",
@@ -158,7 +66,7 @@
       "estimated_minutes": 8
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-002",
       "a1-012"
@@ -167,96 +75,6 @@
     "status": "published",
     "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-02",
     "body_content": "<h2>Be: am / is / are — the verb that connects</h2><p>The verb <strong>be</strong> is one of the most important English verbs. In the present tense it changes to <strong>am, is,</strong> or <strong>are</strong>. Use it to talk about identity, description, age, location, feelings, jobs, and states.</p><h3>1. Choose the correct form</h3><ul><li><strong>I am</strong> ready.</li><li><strong>You are</strong> my friend.</li><li><strong>He is</strong> a teacher.</li><li><strong>She is</strong> happy.</li><li><strong>It is</strong> cold.</li><li><strong>We are</strong> at home.</li><li><strong>They are</strong> students.</li></ul><h3>2. The core pattern</h3><div class=\"tutor-notice-box\"><strong>I → am</strong><br><strong>He / She / It → is</strong><br><strong>You / We / They → are</strong></div><h3>3. Contractions</h3><ul><li>I <strong>am</strong> → <strong>I'm</strong></li><li>He <strong>is</strong> → <strong>He's</strong></li><li>She <strong>is</strong> → <strong>She's</strong></li><li>It <strong>is</strong> → <strong>It's</strong></li><li>You <strong>are</strong> → <strong>You're</strong></li><li>We <strong>are</strong> → <strong>We're</strong></li><li>They <strong>are</strong> → <strong>They're</strong></li></ul><h3>4. Uses of be</h3><ul><li><strong>Identity:</strong> I am Daniel. She is my sister.</li><li><strong>Job:</strong> He is a doctor. They are teachers.</li><li><strong>Location:</strong> We are at school. The keys are on the table.</li><li><strong>Feelings/states:</strong> I am tired. You are hungry.</li><li><strong>Age:</strong> I am 20 years old. She is ten.</li><li><strong>Description:</strong> The room is small. They are friendly.</li></ul><h3>5. Negative sentences</h3><p>Add <strong>not</strong> after am/is/are:</p><ul><li>I <strong>am not</strong> tired.</li><li>He <strong>is not</strong> at work.</li><li>She <strong>isn't</strong> angry.</li><li>We <strong>aren't</strong> late.</li><li>They <strong>aren't</strong> from Ghana.</li></ul><p>Notice that we do <strong>not</strong> use <em>do/does</em> with be: <strong>She isn't happy.</strong> Not: <em>She doesn't be happy.</em></p><h3>6. Questions with be</h3><p>Move am/is/are before the subject:</p><ul><li><strong>Am I</strong> late?</li><li><strong>Is he</strong> your brother?</li><li><strong>Is she</strong> at home?</li><li><strong>Are you</strong> ready?</li><li><strong>Are they</strong> students?</li></ul><p>Short answers: <strong>Yes, I am. / No, I'm not. / Yes, he is. / No, he isn't. / Yes, they are. / No, they aren't.</strong></p><h3>7. Be vs. ordinary verbs</h3><p>Use <strong>be</strong> for a state or identity: <em>She is tired.</em> Use an ordinary verb for an action: <em>She works every day.</em></p><ul><li>He <strong>is</strong> a teacher. → identity/job</li><li>He <strong>teaches</strong> English. → action</li><li>They <strong>are</strong> at home. → location</li><li>They <strong>watch</strong> TV. → action</li></ul><h3>Common mistakes</h3><div class=\"tutor-notice-box\"><strong>Match the subject and be.</strong><br>I <strong>am</strong> happy. <span>✓</span><br>She <strong>is</strong> happy. <span>✓</span><br>They <strong>are</strong> happy. <span>✓</span><br><br><strong>Don't add do/does.</strong> Are you ready? ✓ &nbsp; Do you are ready? ✗</div><h3>Quick pattern</h3><p><strong>Positive:</strong> Subject + am/is/are + complement.<br><strong>Negative:</strong> Subject + am/is/are + not + complement.<br><strong>Question:</strong> Am/Is/Are + subject + complement?</p>"
-  },
-  {
-    "lesson_id": "course-a2-unit-01-lesson-02",
-    "unit_id": "course-a2-unit-01",
-    "title": "Present Continuous",
-    "category": "Grammar",
-    "order": 2,
-    "revision": {
-      "summary": "Practice Present Continuous."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "a2-002"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-02"
-  },
-  {
-    "lesson_id": "course-b1-unit-01-lesson-02",
-    "unit_id": "course-b1-unit-01",
-    "title": "Second Conditional",
-    "category": "Grammar",
-    "order": 2,
-    "revision": {
-      "summary": "Practice Second Conditional."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "b1-002"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-b1-unit-01-lesson-02"
-  },
-  {
-    "lesson_id": "course-b2-unit-01-lesson-02",
-    "unit_id": "course-b2-unit-01",
-    "title": "Inversion",
-    "category": "Grammar",
-    "order": 2,
-    "revision": {
-      "summary": "Practice Inversion."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "b2-002"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-b2-unit-01-lesson-02"
-  },
-  {
-    "lesson_id": "course-c1-unit-01-lesson-02",
-    "unit_id": "course-c1-unit-01",
-    "title": "Subjunctive",
-    "category": "Grammar",
-    "order": 2,
-    "revision": {
-      "summary": "Practice Subjunctive."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "c1-002"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-c1-unit-01-lesson-02"
-  },
-  {
-    "lesson_id": "course-c2-unit-01-lesson-02",
-    "unit_id": "course-c2-unit-01",
-    "title": "Concessive Inversion",
-    "category": "Grammar",
-    "order": 2,
-    "revision": {
-      "summary": "Practice Concessive Inversion."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "c2-002"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-c2-unit-01-lesson-02"
   },
   {
     "lesson_id": "course-a1-unit-01-lesson-03",
@@ -268,103 +86,13 @@
       "summary": "Practice Articles."
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-003"
     ],
     "version": 1,
     "status": "published",
     "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-03"
-  },
-  {
-    "lesson_id": "course-a2-unit-01-lesson-03",
-    "unit_id": "course-a2-unit-01",
-    "title": "Past Continuous",
-    "category": "Grammar",
-    "order": 3,
-    "revision": {
-      "summary": "Practice Past Continuous."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "a2-003"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-03"
-  },
-  {
-    "lesson_id": "course-b1-unit-01-lesson-03",
-    "unit_id": "course-b1-unit-01",
-    "title": "Relative Clauses",
-    "category": "Grammar",
-    "order": 3,
-    "revision": {
-      "summary": "Practice Relative Clauses."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "b1-003"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-b1-unit-01-lesson-03"
-  },
-  {
-    "lesson_id": "course-b2-unit-01-lesson-03",
-    "unit_id": "course-b2-unit-01",
-    "title": "Modal Perfect",
-    "category": "Grammar",
-    "order": 3,
-    "revision": {
-      "summary": "Practice Modal Perfect."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "b2-003"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-b2-unit-01-lesson-03"
-  },
-  {
-    "lesson_id": "course-c1-unit-01-lesson-03",
-    "unit_id": "course-c1-unit-01",
-    "title": "Cleft Sentences",
-    "category": "Grammar",
-    "order": 3,
-    "revision": {
-      "summary": "Practice Cleft Sentences."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "c1-003"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-c1-unit-01-lesson-03"
-  },
-  {
-    "lesson_id": "course-c2-unit-01-lesson-03",
-    "unit_id": "course-c2-unit-01",
-    "title": "Fronting",
-    "category": "Grammar",
-    "order": 3,
-    "revision": {
-      "summary": "Practice Fronting."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "c2-003"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-c2-unit-01-lesson-03"
   },
   {
     "lesson_id": "course-a1-unit-01-lesson-04",
@@ -376,105 +104,13 @@
       "summary": "Practice Plural Nouns."
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-004"
     ],
     "version": 1,
     "status": "published",
     "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-04"
-  },
-  {
-    "lesson_id": "course-a2-unit-01-lesson-04",
-    "unit_id": "course-a2-unit-01",
-    "title": "Future: going to / will",
-    "category": "Grammar",
-    "order": 4,
-    "revision": {
-      "summary": "Practice Future: going to.",
-      "note": "Extended this pass to cover a previously PARTIAL syllabus item (see A2_CURRICULUM_ISSUES.md issue F), per Agent 6 default in the absence of an explicit human ruling on issue F specifically — flagged for review."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "a2-004"
-    ],
-    "version": 2,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-04",
-    "body_content": "<h2>Future: going to / will</h2><p>Practice Future: going to.</p><h3>Going further: will</h3><p>Use <strong>will</strong> for predictions based on opinion (I think it will rain) and for decisions made at the moment of speaking (I'll answer that). Use <strong>going to</strong> for plans and predictions based on present evidence (Look at those clouds — it's going to rain).</p>"
-  },
-  {
-    "lesson_id": "course-b1-unit-01-lesson-04",
-    "unit_id": "course-b1-unit-01",
-    "title": "Reported Speech",
-    "category": "Grammar",
-    "order": 4,
-    "revision": {
-      "summary": "Practice Reported Speech."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "b1-004"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-b1-unit-01-lesson-04"
-  },
-  {
-    "lesson_id": "course-b2-unit-01-lesson-04",
-    "unit_id": "course-b2-unit-01",
-    "title": "Causative",
-    "category": "Grammar",
-    "order": 4,
-    "revision": {
-      "summary": "Practice Causative."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "b2-004"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-b2-unit-01-lesson-04"
-  },
-  {
-    "lesson_id": "course-c1-unit-01-lesson-04",
-    "unit_id": "course-c1-unit-01",
-    "title": "Ellipsis",
-    "category": "Grammar",
-    "order": 4,
-    "revision": {
-      "summary": "Practice Ellipsis."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "c1-006"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-c1-unit-01-lesson-04"
-  },
-  {
-    "lesson_id": "course-c2-unit-01-lesson-04",
-    "unit_id": "course-c2-unit-01",
-    "title": "Advanced Relative Construction",
-    "category": "Grammar",
-    "order": 4,
-    "revision": {
-      "summary": "Practice Advanced Relative Construction."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "c2-006"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-c2-unit-01-lesson-04"
   },
   {
     "lesson_id": "course-a1-unit-01-lesson-05",
@@ -486,103 +122,13 @@
       "summary": "Practice There is / There are."
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-005"
     ],
     "version": 1,
     "status": "published",
     "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-05"
-  },
-  {
-    "lesson_id": "course-a2-unit-01-lesson-05",
-    "unit_id": "course-a2-unit-01",
-    "title": "First Conditional",
-    "category": "Grammar",
-    "order": 5,
-    "revision": {
-      "summary": "Practice First Conditional."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "a2-005"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-05"
-  },
-  {
-    "lesson_id": "course-b1-unit-01-lesson-05",
-    "unit_id": "course-b1-unit-01",
-    "title": "Gerunds and Infinitives",
-    "category": "Grammar",
-    "order": 5,
-    "revision": {
-      "summary": "Practice Gerunds and Infinitives."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "b1-005"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-b1-unit-01-lesson-05"
-  },
-  {
-    "lesson_id": "course-b2-unit-01-lesson-05",
-    "unit_id": "course-b2-unit-01",
-    "title": "Participle Clauses",
-    "category": "Grammar",
-    "order": 5,
-    "revision": {
-      "summary": "Practice Participle Clauses."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "b2-005"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-b2-unit-01-lesson-05"
-  },
-  {
-    "lesson_id": "course-c1-unit-01-lesson-05",
-    "unit_id": "course-c1-unit-01",
-    "title": "Inversion after Only",
-    "category": "Grammar",
-    "order": 5,
-    "revision": {
-      "summary": "Practice Inversion after Only."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "c1-008"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-c1-unit-01-lesson-05"
-  },
-  {
-    "lesson_id": "course-c2-unit-01-lesson-05",
-    "unit_id": "course-c2-unit-01",
-    "title": "Inversion with Negative Adverbial",
-    "category": "Grammar",
-    "order": 5,
-    "revision": {
-      "summary": "Practice Inversion with Negative Adverbial."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "c2-007"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-c2-unit-01-lesson-05"
   },
   {
     "lesson_id": "course-a1-unit-01-lesson-06",
@@ -594,69 +140,13 @@
       "summary": "Practice Can."
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-006"
     ],
     "version": 1,
     "status": "published",
     "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-06"
-  },
-  {
-    "lesson_id": "course-a2-unit-01-lesson-06",
-    "unit_id": "course-a2-unit-01",
-    "title": "Countable/Uncountable",
-    "category": "Grammar",
-    "order": 6,
-    "revision": {
-      "summary": "Practice Countable/Uncountable.",
-      "note": "Off-syllabus lesson (not in CURRICULUM_SOURCE.md's A2 list); kept per human decision at the approval gate and revised here with additional depth rather than removed."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "a2-006"
-    ],
-    "version": 2,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-06",
-    "body_content": "<h2>Countable/Uncountable</h2><p>Practice Countable/Uncountable.</p><h3>Going further</h3><p>Some nouns are countable in some languages but uncountable in English (advice, information, furniture, luggage). Use 'a piece of', 'a bit of' or 'some' with these instead of a plural form.</p><h3>More examples</h3><ul><li>She gave me some useful advice.</li><li>I need a few pieces of information.</li><li>We don't have much furniture yet.</li></ul>"
-  },
-  {
-    "lesson_id": "course-b1-unit-01-lesson-06",
-    "unit_id": "course-b1-unit-01",
-    "title": "Modal Deduction",
-    "category": "Grammar",
-    "order": 6,
-    "revision": {
-      "summary": "Practice Modal Deduction."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "b1-006"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-b1-unit-01-lesson-06"
-  },
-  {
-    "lesson_id": "course-b2-unit-01-lesson-06",
-    "unit_id": "course-b2-unit-01",
-    "title": "Advanced Passive",
-    "category": "Grammar",
-    "order": 6,
-    "revision": {
-      "summary": "Practice Advanced Passive."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "b2-006"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-b2-unit-01-lesson-06"
   },
   {
     "lesson_id": "course-a1-unit-01-lesson-07",
@@ -668,69 +158,13 @@
       "summary": "Practice Past Simple."
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-007"
     ],
     "version": 1,
     "status": "published",
     "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-07"
-  },
-  {
-    "lesson_id": "course-a2-unit-01-lesson-07",
-    "unit_id": "course-a2-unit-01",
-    "title": "Adverbs of Frequency and Manner",
-    "category": "Grammar",
-    "order": 7,
-    "revision": {
-      "summary": "Practice Adverbs of Frequency.",
-      "note": "Extended this pass to cover a previously PARTIAL syllabus item (see A2_CURRICULUM_ISSUES.md issue F), per Agent 6 default in the absence of an explicit human ruling on issue F specifically — flagged for review."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "a2-007"
-    ],
-    "version": 2,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-07",
-    "body_content": "<h2>Adverbs of Frequency and Manner</h2><p>Practice Adverbs of Frequency.</p><h3>Adverbs of manner</h3><p>Adverbs of manner describe how an action happens and usually end in <strong>-ly</strong> (quickly, carefully, badly). They normally go after the verb (or object): She spoke quietly. Note: good → well, not goodly.</p>"
-  },
-  {
-    "lesson_id": "course-b1-unit-01-lesson-07",
-    "unit_id": "course-b1-unit-01",
-    "title": "Passive Voice",
-    "category": "Grammar",
-    "order": 7,
-    "revision": {
-      "summary": "Practice Passive Voice."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "b1-007"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-b1-unit-01-lesson-07"
-  },
-  {
-    "lesson_id": "course-b2-unit-01-lesson-07",
-    "unit_id": "course-b2-unit-01",
-    "title": "Concession",
-    "category": "Grammar",
-    "order": 7,
-    "revision": {
-      "summary": "Practice Concession."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "b2-009"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-b2-unit-01-lesson-07"
   },
   {
     "lesson_id": "course-a1-unit-01-lesson-08",
@@ -742,51 +176,13 @@
       "summary": "Practice Possessive Adjectives."
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-008"
     ],
     "version": 1,
     "status": "published",
     "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-08"
-  },
-  {
-    "lesson_id": "course-a2-unit-01-lesson-08",
-    "unit_id": "course-a2-unit-01",
-    "title": "Modal: should",
-    "category": "Grammar",
-    "order": 8,
-    "revision": {
-      "summary": "Practice Modal: should.",
-      "note": "Off-syllabus lesson (not in CURRICULUM_SOURCE.md's A2 list); kept per human decision at the approval gate and revised here with additional depth rather than removed."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "a2-008"
-    ],
-    "version": 2,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-08",
-    "body_content": "<h2>Modal: should</h2><p>Practice Modal: should.</p><h3>Going further</h3><p>'Should' gives advice or an opinion, and is weaker than 'must' (obligation) or 'have to' (necessity). Use 'shouldn't' for advice against doing something, and 'should + have + past participle' to talk about a past mistake (You should have called me).</p><h3>More examples</h3><ul><li>You should have called me yesterday.</li><li>I don't think you should say that.</li><li>Should I bring anything to the party?</li></ul>"
-  },
-  {
-    "lesson_id": "course-b1-unit-01-lesson-08",
-    "unit_id": "course-b1-unit-01",
-    "title": "Used to",
-    "category": "Grammar",
-    "order": 8,
-    "revision": {
-      "summary": "Practice Used to."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "b1-009"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-b1-unit-01-lesson-08"
   },
   {
     "lesson_id": "course-a1-unit-01-lesson-09",
@@ -798,31 +194,13 @@
       "summary": "Practice Prepositions."
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-009"
     ],
     "version": 1,
     "status": "published",
     "lesson_quiz_id": "lesson-course-a1-unit-01-lesson-09"
-  },
-  {
-    "lesson_id": "course-a2-unit-01-lesson-09",
-    "unit_id": "course-a2-unit-01",
-    "title": "Present Perfect",
-    "category": "Grammar",
-    "order": 9,
-    "revision": {
-      "summary": "Practice Present Perfect."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "a2-009"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-09"
   },
   {
     "lesson_id": "course-a1-unit-01-lesson-10",
@@ -848,7 +226,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-013"
     ],
@@ -881,7 +259,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-014"
     ],
@@ -915,7 +293,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-015"
     ],
@@ -947,7 +325,7 @@
       "estimated_minutes": 4
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-016"
     ],
@@ -978,7 +356,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-017"
     ],
@@ -1010,7 +388,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-018"
     ],
@@ -1042,7 +420,7 @@
       "estimated_minutes": 4
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-019"
     ],
@@ -1073,7 +451,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-020"
     ],
@@ -1105,7 +483,7 @@
       "estimated_minutes": 4
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-021"
     ],
@@ -1137,7 +515,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-022"
     ],
@@ -1169,7 +547,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-023"
     ],
@@ -1202,7 +580,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-024"
     ],
@@ -1233,7 +611,7 @@
       "estimated_minutes": 8
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "lesson-course-a1-unit-01-lesson-22"
     ],
@@ -1263,7 +641,7 @@
       "estimated_minutes": 8
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "lesson-course-a1-unit-01-lesson-23"
     ],
@@ -1293,7 +671,7 @@
       "estimated_minutes": 8
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "lesson-course-a1-unit-01-lesson-24"
     ],
@@ -1324,7 +702,7 @@
       "estimated_minutes": 8
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "lesson-course-a1-unit-01-lesson-25"
     ],
@@ -1355,7 +733,7 @@
       "estimated_minutes": 8
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "lesson-course-a1-unit-01-lesson-26"
     ],
@@ -1385,7 +763,7 @@
       "estimated_minutes": 8
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "lesson-course-a1-unit-01-lesson-27"
     ],
@@ -1414,7 +792,7 @@
       "estimated_minutes": 8
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "lesson-course-a1-unit-01-lesson-28"
     ],
@@ -1444,7 +822,7 @@
       "estimated_minutes": 8
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "lesson-course-a1-unit-01-lesson-29"
     ],
@@ -1473,7 +851,7 @@
       "estimated_minutes": 8
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "lesson-course-a1-unit-01-lesson-30"
     ],
@@ -1492,7 +870,7 @@
       "summary": "Practice everyday vocabulary."
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-010",
       "a1-media-01"
@@ -1500,165 +878,6 @@
     "version": 1,
     "status": "published",
     "lesson_quiz_id": "lesson-course-a1-unit-02-lesson-01"
-  },
-  {
-    "lesson_id": "course-a2-unit-02-lesson-01",
-    "unit_id": "course-a2-unit-02",
-    "title": "Everyday Vocabulary",
-    "category": "Vocabulary",
-    "order": 1,
-    "revision": {
-      "summary": "Practice everyday vocabulary."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "a2-010",
-      "a2-media-01"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-a2-unit-02-lesson-01"
-  },
-  {
-    "lesson_id": "course-b1-unit-02-lesson-01",
-    "unit_id": "course-b1-unit-02",
-    "title": "Phrasal Verbs",
-    "category": "Vocabulary",
-    "order": 1,
-    "revision": {
-      "summary": "Practice Phrasal Verbs."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "b1-010",
-      "b1-media-01"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-b1-unit-02-lesson-01"
-  },
-  {
-    "lesson_id": "course-b2-unit-02-lesson-01",
-    "unit_id": "course-b2-unit-02",
-    "title": "Collocation",
-    "category": "Vocabulary",
-    "order": 1,
-    "revision": {
-      "summary": "Practice Collocation."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "b2-008",
-      "b2-media-01"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-b2-unit-02-lesson-01"
-  },
-  {
-    "lesson_id": "course-c1-unit-02-lesson-01",
-    "unit_id": "course-c1-unit-02",
-    "title": "Lexical Precision",
-    "category": "Vocabulary",
-    "order": 1,
-    "revision": {
-      "summary": "Practice Lexical Precision."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "c1-007",
-      "c1-media-01"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-c1-unit-02-lesson-01"
-  },
-  {
-    "lesson_id": "course-c2-unit-02-lesson-01",
-    "unit_id": "course-c2-unit-02",
-    "title": "Semantic Nuance",
-    "category": "Vocabulary",
-    "order": 1,
-    "revision": {
-      "summary": "Practice Semantic Nuance."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "c2-005",
-      "c2-media-01"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-c2-unit-02-lesson-01"
-  },
-  {
-    "lesson_id": "course-c1-unit-02-lesson-02",
-    "unit_id": "course-c1-unit-02",
-    "title": "Collocation",
-    "category": "Vocabulary",
-    "order": 2,
-    "revision": {
-      "summary": "Practice Collocation."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "c1-010"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-c1-unit-02-lesson-02"
-  },
-  {
-    "lesson_id": "course-c2-unit-02-lesson-02",
-    "unit_id": "course-c2-unit-02",
-    "title": "Pragmatics",
-    "category": "Vocabulary",
-    "order": 2,
-    "revision": {
-      "summary": "Practice Pragmatics."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "c2-008"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-c2-unit-02-lesson-02"
-  },
-  {
-    "lesson_id": "course-a2-unit-02-lesson-02",
-    "unit_id": "course-a2-unit-02",
-    "title": "Everyday Vocabulary Review",
-    "category": "Mixed",
-    "order": 2,
-    "revision": {
-      "summary": "A short mixed review pulling together everyday vocabulary and the present perfect, for learners who want extra practice before moving on.",
-      "key_terms": [
-        "everyday vocabulary",
-        "present perfect"
-      ],
-      "examples": [
-        "I've already learned these words — now let's use them in context.",
-        "Have you used the present perfect correctly in a sentence today?"
-      ],
-      "estimated_minutes": 8
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "a2-010",
-      "a2-009"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-a2-unit-02-lesson-02"
   },
   {
     "lesson_id": "course-a1-unit-02-lesson-02",
@@ -1685,7 +904,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-025"
     ],
@@ -1693,24 +912,6 @@
     "status": "published",
     "lesson_quiz_id": "lesson-course-a1-unit-02-lesson-02",
     "body_content": "<h2>Numbers and Money</h2><p>Cardinal numbers (one, two, three...) count things. Ordinal numbers (first, second, third...) show order or position. For money, say the amount then the currency (five dollars, ten euros), and use \"How much is/are...?\" to ask a price.</p><h3>Examples</h3><ul><li>I have <strong>three</strong> brothers.</li><li>She lives on the <strong>fifth</strong> floor.</li><li>This costs <strong>twenty dollars</strong>.</li><li><strong>How much</strong> is a coffee here?</li><li>It's my <strong>first</strong> day at work.</li></ul><h3>Quick check</h3><ol><li>Turn into an ordinal: four → ___ → <em>fourth</em></li><li>How do you ask a price? ___ is this bag? → <em>How much</em></li><li>Say the price: $15 → ___ → <em>fifteen dollars</em></li></ol>"
-  },
-  {
-    "lesson_id": "course-c2-unit-02-lesson-03",
-    "unit_id": "course-c2-unit-02",
-    "title": "Idiomatic Precision",
-    "category": "Vocabulary",
-    "order": 3,
-    "revision": {
-      "summary": "Practice Idiomatic Precision."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "c2-009"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-c2-unit-02-lesson-03"
   },
   {
     "lesson_id": "course-a1-unit-02-lesson-03",
@@ -1737,7 +938,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-026"
     ],
@@ -1770,7 +971,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-027"
     ],
@@ -1803,7 +1004,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-028"
     ],
@@ -1837,7 +1038,7 @@
       "estimated_minutes": 4
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-029"
     ],
@@ -1871,7 +1072,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-030"
     ],
@@ -1904,7 +1105,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-031"
     ],
@@ -1936,7 +1137,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-032"
     ],
@@ -1969,7 +1170,7 @@
       "estimated_minutes": 4
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-033"
     ],
@@ -2001,7 +1202,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-034"
     ],
@@ -2033,7 +1234,7 @@
       "estimated_minutes": 4
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-035"
     ],
@@ -2065,7 +1266,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-036"
     ],
@@ -2097,7 +1298,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-037"
     ],
@@ -2129,7 +1330,7 @@
       "estimated_minutes": 4
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-038"
     ],
@@ -2162,7 +1363,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-039"
     ],
@@ -2194,7 +1395,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-040"
     ],
@@ -2224,7 +1425,7 @@
       "estimated_minutes": 8
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "lesson-course-a1-unit-02-lesson-18"
     ],
@@ -2252,7 +1453,7 @@
       "estimated_minutes": 8
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "lesson-course-a1-unit-02-lesson-19"
     ],
@@ -2283,7 +1484,7 @@
       "estimated_minutes": 8
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "lesson-course-a1-unit-02-lesson-20"
     ],
@@ -2314,7 +1515,7 @@
       "estimated_minutes": 8
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "lesson-course-a1-unit-02-lesson-21"
     ],
@@ -2344,7 +1545,7 @@
       "estimated_minutes": 8
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "lesson-course-a1-unit-02-lesson-22"
     ],
@@ -2374,7 +1575,7 @@
       "estimated_minutes": 8
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "lesson-course-a1-unit-02-lesson-23"
     ],
@@ -2404,7 +1605,7 @@
       "estimated_minutes": 8
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "lesson-course-a1-unit-02-lesson-24"
     ],
@@ -2433,7 +1634,7 @@
       "estimated_minutes": 8
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "lesson-course-a1-unit-02-lesson-25"
     ],
@@ -2441,78 +1642,6 @@
     "status": "published",
     "lesson_quiz_id": "lesson-course-a1-unit-02-lesson-25",
     "body_content": "<h2>Hotel Situations</h2><p>This A1+ lesson focuses on <strong>Hotel Situations</strong>. Study the pattern, then check your understanding.</p><h3>Key idea</h3><p>classroom</p><h3>Examples</h3><ul><li><strong>reception</strong></li><li><strong>Could you turn up the heating?</strong></li><li><strong>The time you leave the hotel.</strong></li></ul><h3>Quick reminder</h3><p>Choose the form or phrase that matches the meaning and context. Notice the small grammar words that make the sentence natural.</p>"
-  },
-  {
-    "lesson_id": "course-b1-unit-03-lesson-01",
-    "unit_id": "course-b1-unit-03",
-    "title": "Linkers",
-    "category": "Writing",
-    "order": 1,
-    "revision": {
-      "summary": "Practice Linkers."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "b1-008"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-b1-unit-03-lesson-01"
-  },
-  {
-    "lesson_id": "course-b2-unit-03-lesson-01",
-    "unit_id": "course-b2-unit-03",
-    "title": "Register",
-    "category": "Writing",
-    "order": 1,
-    "revision": {
-      "summary": "Practice Register."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "b2-010"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-b2-unit-03-lesson-01"
-  },
-  {
-    "lesson_id": "course-c1-unit-03-lesson-01",
-    "unit_id": "course-c1-unit-03",
-    "title": "Discourse Markers",
-    "category": "Writing",
-    "order": 1,
-    "revision": {
-      "summary": "Practice Discourse Markers."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "c1-004"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-c1-unit-03-lesson-01"
-  },
-  {
-    "lesson_id": "course-c2-unit-03-lesson-01",
-    "unit_id": "course-c2-unit-03",
-    "title": "Register and Tone",
-    "category": "Writing",
-    "order": 1,
-    "revision": {
-      "summary": "Practice Register and Tone."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "c2-004"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-c2-unit-03-lesson-01"
   },
   {
     "lesson_id": "course-a1-unit-03-lesson-01",
@@ -2537,7 +1666,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-041"
     ],
@@ -2569,7 +1698,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-042"
     ],
@@ -2601,7 +1730,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-043"
     ],
@@ -2633,7 +1762,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-044"
     ],
@@ -2665,7 +1794,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-045"
     ],
@@ -2698,7 +1827,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-046"
     ],
@@ -2730,7 +1859,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-047"
     ],
@@ -2762,7 +1891,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-048"
     ],
@@ -2795,7 +1924,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-049"
     ],
@@ -2827,7 +1956,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-050"
     ],
@@ -2859,7 +1988,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-051"
     ],
@@ -2890,7 +2019,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-052"
     ],
@@ -2922,7 +2051,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-053"
     ],
@@ -2954,7 +2083,7 @@
       "estimated_minutes": 5
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a1-054"
     ],
@@ -2985,7 +2114,7 @@
       "estimated_minutes": 8
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "lesson-course-a1-unit-03-lesson-15"
     ],
@@ -3016,7 +2145,7 @@
       "estimated_minutes": 8
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "lesson-course-a1-unit-03-lesson-16"
     ],
@@ -3045,7 +2174,7 @@
       "estimated_minutes": 8
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "lesson-course-a1-unit-03-lesson-17"
     ],
@@ -3075,7 +2204,7 @@
       "estimated_minutes": 8
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "lesson-course-a1-unit-03-lesson-18"
     ],
@@ -3105,7 +2234,7 @@
       "estimated_minutes": 8
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "lesson-course-a1-unit-03-lesson-19"
     ],
@@ -3135,7 +2264,7 @@
       "estimated_minutes": 8
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "lesson-course-a1-unit-03-lesson-20"
     ],
@@ -3164,7 +2293,7 @@
       "estimated_minutes": 8
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "lesson-course-a1-unit-03-lesson-21"
     ],
@@ -3174,106 +2303,176 @@
     "body_content": "<h2>Making Comparisons</h2><p>This A1+ lesson focuses on <strong>Making Comparisons</strong>. Study the pattern, then check your understanding.</p><h3>Key idea</h3><p>The phone is black.</p><h3>Examples</h3><ul><li><strong>This phone is cheaper than that one.</strong></li><li><strong>lighter</strong></li><li><strong>The train is faster than the bus.</strong></li></ul><h3>Quick reminder</h3><p>Choose the phrase that matches the meaning and context.</p>"
   },
   {
-    "lesson_id": "course-b2-unit-04-lesson-01",
-    "unit_id": "course-b2-unit-04",
-    "title": "Hedging",
-    "category": "Academic English",
+    "lesson_id": "course-a2-unit-01-lesson-01",
+    "unit_id": "course-a2-unit-01",
+    "title": "Comparative and Superlative Adjectives",
+    "category": "Grammar",
     "order": 1,
     "revision": {
-      "summary": "Practice Hedging."
+      "summary": "Practice Comparative Adjectives.",
+      "note": "Extended this pass to cover a previously PARTIAL syllabus item (see A2_CURRICULUM_ISSUES.md issue F), per Agent 6 default in the absence of an explicit human ruling on issue F specifically — flagged for review."
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
-      "b2-007"
+      "a2-001"
     ],
-    "version": 1,
+    "version": 2,
     "status": "published",
-    "lesson_quiz_id": "lesson-course-b2-unit-04-lesson-01"
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-01",
+    "body_content": "<h2>Comparative and Superlative Adjectives</h2><p>Practice Comparative Adjectives.</p><h3>Superlative adjectives</h3><p>Use the superlative to compare one thing with the whole group: add <strong>-est</strong> to short adjectives (the fastest) or use <strong>the most</strong> with longer ones (the most expensive). Watch for irregulars: good → the best, bad → the worst.</p>"
   },
   {
-    "lesson_id": "course-c1-unit-04-lesson-01",
-    "unit_id": "course-c1-unit-04",
-    "title": "Nominalisation",
-    "category": "Academic English",
-    "order": 1,
-    "revision": {
-      "summary": "Practice Nominalisation."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "c1-005"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-c1-unit-04-lesson-01"
-  },
-  {
-    "lesson_id": "course-c2-unit-04-lesson-01",
-    "unit_id": "course-c2-unit-04",
-    "title": "Synthesis",
-    "category": "Academic English",
-    "order": 1,
-    "revision": {
-      "summary": "Practice Synthesis."
-    },
-    "presentation_url": null,
-    "youtube_url": null,
-    "exercise_quiz_ids": [
-      "c2-010"
-    ],
-    "version": 1,
-    "status": "published",
-    "lesson_quiz_id": "lesson-course-c2-unit-04-lesson-01"
-  },
-  {
-    "lesson_id": "course-c1-unit-04-lesson-02",
-    "unit_id": "course-c1-unit-04",
-    "title": "Academic Stance",
-    "category": "Academic English",
+    "lesson_id": "course-a2-unit-01-lesson-02",
+    "unit_id": "course-a2-unit-01",
+    "title": "Present Continuous",
+    "category": "Grammar",
     "order": 2,
     "revision": {
-      "summary": "Practice Academic Stance."
+      "summary": "Practice Present Continuous."
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
-      "c1-009"
+      "a2-002"
     ],
     "version": 1,
     "status": "published",
-    "lesson_quiz_id": "lesson-course-c1-unit-04-lesson-02"
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-02"
   },
   {
-    "lesson_id": "course-c1-unit-04-lesson-03",
-    "unit_id": "course-c1-unit-04",
-    "title": "Academic Writing Integration",
-    "category": "Mixed",
+    "lesson_id": "course-a2-unit-01-lesson-03",
+    "unit_id": "course-a2-unit-01",
+    "title": "Past Continuous",
+    "category": "Grammar",
     "order": 3,
     "revision": {
-      "summary": "An integrative revision lesson combining nominalisation, academic stance, and discourse markers for learners consolidating academic writing skills.",
-      "key_terms": [
-        "nominalisation",
-        "academic stance",
-        "discourse markers"
-      ],
-      "examples": [
-        "Turning verbs into nouns can make writing sound more formal and academic.",
-        "Discourse markers like 'however' and 'furthermore' help structure an argument."
-      ],
-      "estimated_minutes": 10
+      "summary": "Practice Past Continuous."
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
-      "c1-005",
-      "c1-009",
-      "c1-004"
+      "a2-003"
     ],
     "version": 1,
     "status": "published",
-    "lesson_quiz_id": "lesson-course-c1-unit-04-lesson-03"
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-03"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-04",
+    "unit_id": "course-a2-unit-01",
+    "title": "Future: going to / will",
+    "category": "Grammar",
+    "order": 4,
+    "revision": {
+      "summary": "Practice Future: going to.",
+      "note": "Extended this pass to cover a previously PARTIAL syllabus item (see A2_CURRICULUM_ISSUES.md issue F), per Agent 6 default in the absence of an explicit human ruling on issue F specifically — flagged for review."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "a2-004"
+    ],
+    "version": 2,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-04",
+    "body_content": "<h2>Future: going to / will</h2><p>Practice Future: going to.</p><h3>Going further: will</h3><p>Use <strong>will</strong> for predictions based on opinion (I think it will rain) and for decisions made at the moment of speaking (I'll answer that). Use <strong>going to</strong> for plans and predictions based on present evidence (Look at those clouds — it's going to rain).</p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-05",
+    "unit_id": "course-a2-unit-01",
+    "title": "First Conditional",
+    "category": "Grammar",
+    "order": 5,
+    "revision": {
+      "summary": "Practice First Conditional."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "a2-005"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-05"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-06",
+    "unit_id": "course-a2-unit-01",
+    "title": "Countable/Uncountable",
+    "category": "Grammar",
+    "order": 6,
+    "revision": {
+      "summary": "Practice Countable/Uncountable.",
+      "note": "Off-syllabus lesson (not in CURRICULUM_SOURCE.md's A2 list); kept per human decision at the approval gate and revised here with additional depth rather than removed."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "a2-006"
+    ],
+    "version": 2,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-06",
+    "body_content": "<h2>Countable/Uncountable</h2><p>Practice Countable/Uncountable.</p><h3>Going further</h3><p>Some nouns are countable in some languages but uncountable in English (advice, information, furniture, luggage). Use 'a piece of', 'a bit of' or 'some' with these instead of a plural form.</p><h3>More examples</h3><ul><li>She gave me some useful advice.</li><li>I need a few pieces of information.</li><li>We don't have much furniture yet.</li></ul>"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-07",
+    "unit_id": "course-a2-unit-01",
+    "title": "Adverbs of Frequency and Manner",
+    "category": "Grammar",
+    "order": 7,
+    "revision": {
+      "summary": "Practice Adverbs of Frequency.",
+      "note": "Extended this pass to cover a previously PARTIAL syllabus item (see A2_CURRICULUM_ISSUES.md issue F), per Agent 6 default in the absence of an explicit human ruling on issue F specifically — flagged for review."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "a2-007"
+    ],
+    "version": 2,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-07",
+    "body_content": "<h2>Adverbs of Frequency and Manner</h2><p>Practice Adverbs of Frequency.</p><h3>Adverbs of manner</h3><p>Adverbs of manner describe how an action happens and usually end in <strong>-ly</strong> (quickly, carefully, badly). They normally go after the verb (or object): She spoke quietly. Note: good → well, not goodly.</p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-08",
+    "unit_id": "course-a2-unit-01",
+    "title": "Modal: should",
+    "category": "Grammar",
+    "order": 8,
+    "revision": {
+      "summary": "Practice Modal: should.",
+      "note": "Off-syllabus lesson (not in CURRICULUM_SOURCE.md's A2 list); kept per human decision at the approval gate and revised here with additional depth rather than removed."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "a2-008"
+    ],
+    "version": 2,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-08",
+    "body_content": "<h2>Modal: should</h2><p>Practice Modal: should.</p><h3>Going further</h3><p>'Should' gives advice or an opinion, and is weaker than 'must' (obligation) or 'have to' (necessity). Use 'shouldn't' for advice against doing something, and 'should + have + past participle' to talk about a past mistake (You should have called me).</p><h3>More examples</h3><ul><li>You should have called me yesterday.</li><li>I don't think you should say that.</li><li>Should I bring anything to the party?</li></ul>"
+  },
+  {
+    "lesson_id": "course-a2-unit-01-lesson-09",
+    "unit_id": "course-a2-unit-01",
+    "title": "Present Perfect",
+    "category": "Grammar",
+    "order": 9,
+    "revision": {
+      "summary": "Practice Present Perfect."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "a2-009"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-09"
   },
   {
     "lesson_id": "course-a2-unit-01-lesson-10",
@@ -3295,7 +2494,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-101"
     ],
@@ -3324,7 +2523,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-102"
     ],
@@ -3353,7 +2552,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-103"
     ],
@@ -3382,7 +2581,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-104"
     ],
@@ -3411,7 +2610,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-105"
     ],
@@ -3440,7 +2639,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-106"
     ],
@@ -3469,7 +2668,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-107"
     ],
@@ -3498,7 +2697,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-108"
     ],
@@ -3527,7 +2726,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-109"
     ],
@@ -3556,7 +2755,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-110"
     ],
@@ -3585,7 +2784,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-111"
     ],
@@ -3614,7 +2813,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-112"
     ],
@@ -3643,7 +2842,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-113"
     ],
@@ -3651,6 +2850,53 @@
     "status": "published",
     "lesson_quiz_id": "lesson-course-a2-unit-01-lesson-22",
     "body_content": "<h2>Relative Clauses</h2><p>Add extra information about a noun using who, which,\nthat, where. \"Who\" for people, \"which\" for things, \"that\" for\neither (informal), \"where\" for places.</p><h3>Examples</h3><ul><li>The woman who called you is my sister.</li><li>This is the book that I told you about.</li><li>We visited the town where I was born.</li><li>The car, which is new, is parked outside.</li></ul><h3>Key terms</h3><p><strong>Relative Clauses</strong></p>"
+  },
+  {
+    "lesson_id": "course-a2-unit-02-lesson-01",
+    "unit_id": "course-a2-unit-02",
+    "title": "Everyday Vocabulary",
+    "category": "Vocabulary",
+    "order": 1,
+    "revision": {
+      "summary": "Practice everyday vocabulary."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "a2-010",
+      "a2-media-01"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-02-lesson-01"
+  },
+  {
+    "lesson_id": "course-a2-unit-02-lesson-02",
+    "unit_id": "course-a2-unit-02",
+    "title": "Everyday Vocabulary Review",
+    "category": "Mixed",
+    "order": 2,
+    "revision": {
+      "summary": "A short mixed review pulling together everyday vocabulary and the present perfect, for learners who want extra practice before moving on.",
+      "key_terms": [
+        "everyday vocabulary",
+        "present perfect"
+      ],
+      "examples": [
+        "I've already learned these words — now let's use them in context.",
+        "Have you used the present perfect correctly in a sentence today?"
+      ],
+      "estimated_minutes": 8
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "a2-010",
+      "a2-009"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-a2-unit-02-lesson-02"
   },
   {
     "lesson_id": "course-a2-unit-02-lesson-03",
@@ -3681,7 +2927,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-201"
     ],
@@ -3720,7 +2966,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-202"
     ],
@@ -3758,7 +3004,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-203"
     ],
@@ -3794,7 +3040,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-204"
     ],
@@ -3831,7 +3077,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-205"
     ],
@@ -3869,7 +3115,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-206"
     ],
@@ -3906,7 +3152,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-207"
     ],
@@ -3943,7 +3189,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-208"
     ],
@@ -3980,7 +3226,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-209"
     ],
@@ -4017,7 +3263,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-210"
     ],
@@ -4054,7 +3300,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-211"
     ],
@@ -4091,7 +3337,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-212"
     ],
@@ -4127,7 +3373,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-213"
     ],
@@ -4164,7 +3410,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-214"
     ],
@@ -4200,7 +3446,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-215"
     ],
@@ -4237,7 +3483,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-216"
     ],
@@ -4274,7 +3520,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-217"
     ],
@@ -4310,7 +3556,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-218"
     ],
@@ -4342,7 +3588,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-301"
     ],
@@ -4375,7 +3621,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-302"
     ],
@@ -4408,7 +3654,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-303"
     ],
@@ -4440,7 +3686,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-304"
     ],
@@ -4472,7 +3718,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-305"
     ],
@@ -4505,7 +3751,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-306"
     ],
@@ -4541,7 +3787,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-307"
     ],
@@ -4573,7 +3819,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-308"
     ],
@@ -4605,7 +3851,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-309"
     ],
@@ -4637,7 +3883,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-310"
     ],
@@ -4670,7 +3916,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-311"
     ],
@@ -4702,7 +3948,7 @@
       "estimated_minutes": 6
     },
     "presentation_url": null,
-    "youtube_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
     "exercise_quiz_ids": [
       "a2-312"
     ],
@@ -4710,5 +3956,3088 @@
     "status": "published",
     "lesson_quiz_id": "lesson-course-a2-unit-03-lesson-12",
     "body_content": "<h2>Requesting</h2><p>Make polite requests.</p><h3>Examples</h3><ul><li>Could you...?</li><li>Would you mind...?</li><li>Do you think you could...?</li><li>I was wondering if you could...</li></ul><h3>Key terms</h3><p><strong>Could you...?</strong>, <strong>Would you mind...?</strong>, <strong>Do you think you could...?</strong>, <strong>I was wondering if you could...</strong></p>"
+  },
+  {
+    "lesson_id": "course-b1-unit-01-lesson-01",
+    "unit_id": "course-b1-unit-01",
+    "title": "Present Perfect vs Past Simple",
+    "category": "Grammar",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Present Perfect vs Past Simple."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-001"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b1-unit-01-lesson-01"
+  },
+  {
+    "lesson_id": "course-b1-unit-01-lesson-02",
+    "unit_id": "course-b1-unit-01",
+    "title": "Second Conditional",
+    "category": "Grammar",
+    "order": 2,
+    "revision": {
+      "summary": "Practice Second Conditional."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-002"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b1-unit-01-lesson-02"
+  },
+  {
+    "lesson_id": "course-b1-unit-01-lesson-03",
+    "unit_id": "course-b1-unit-01",
+    "title": "Relative Clauses",
+    "category": "Grammar",
+    "order": 3,
+    "revision": {
+      "summary": "Practice Relative Clauses."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-003"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b1-unit-01-lesson-03"
+  },
+  {
+    "lesson_id": "course-b1-unit-01-lesson-04",
+    "unit_id": "course-b1-unit-01",
+    "title": "Reported Speech",
+    "category": "Grammar",
+    "order": 4,
+    "revision": {
+      "summary": "Practice Reported Speech."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-004"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b1-unit-01-lesson-04"
+  },
+  {
+    "lesson_id": "course-b1-unit-01-lesson-05",
+    "unit_id": "course-b1-unit-01",
+    "title": "Gerunds and Infinitives",
+    "category": "Grammar",
+    "order": 5,
+    "revision": {
+      "summary": "Practice Gerunds and Infinitives."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-005"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b1-unit-01-lesson-05"
+  },
+  {
+    "lesson_id": "course-b1-unit-01-lesson-06",
+    "unit_id": "course-b1-unit-01",
+    "title": "Modal Deduction",
+    "category": "Grammar",
+    "order": 6,
+    "revision": {
+      "summary": "Practice Modal Deduction."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-006"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b1-unit-01-lesson-06"
+  },
+  {
+    "lesson_id": "course-b1-unit-01-lesson-07",
+    "unit_id": "course-b1-unit-01",
+    "title": "Passive Voice",
+    "category": "Grammar",
+    "order": 7,
+    "revision": {
+      "summary": "Practice Passive Voice."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-007"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b1-unit-01-lesson-07"
+  },
+  {
+    "lesson_id": "course-b1-unit-01-lesson-08",
+    "unit_id": "course-b1-unit-01",
+    "title": "Used to",
+    "category": "Grammar",
+    "order": 8,
+    "revision": {
+      "summary": "Practice Used to."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-009"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b1-unit-01-lesson-08"
+  },
+  {
+    "lesson_id": "course-b1-unit-02-lesson-01",
+    "unit_id": "course-b1-unit-02",
+    "title": "Phrasal Verbs",
+    "category": "Vocabulary",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Phrasal Verbs."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-010",
+      "b1-media-01"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b1-unit-02-lesson-01"
+  },
+  {
+    "lesson_id": "course-b1-unit-03-lesson-01",
+    "unit_id": "course-b1-unit-03",
+    "title": "Linkers",
+    "category": "Writing",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Linkers."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-008"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b1-unit-03-lesson-01"
+  },
+  {
+    "lesson_id": "course-b1-unit-01-lesson-09",
+    "unit_id": "course-b1-unit-01",
+    "title": "Modal verbs",
+    "category": "Grammar",
+    "order": 9,
+    "revision": {
+      "summary": "Practice Modal verbs."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-011"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-01-lesson-10",
+    "unit_id": "course-b1-unit-01",
+    "title": "First vs Second Conditional (Contrast)",
+    "category": "Grammar",
+    "order": 10,
+    "revision": {
+      "summary": "Practice First vs Second Conditional (Contrast)."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-012"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-01-lesson-11",
+    "unit_id": "course-b1-unit-01",
+    "title": "Adverbs of Manner and Modifiers",
+    "category": "Grammar",
+    "order": 11,
+    "revision": {
+      "summary": "Practice Adverbs of Manner and Modifiers."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-013"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-01-lesson-12",
+    "unit_id": "course-b1-unit-01",
+    "title": "Adjectives and their connotations",
+    "category": "Grammar",
+    "order": 12,
+    "revision": {
+      "summary": "Practice Adjectives and their connotations."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-014"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-01-lesson-13",
+    "unit_id": "course-b1-unit-01",
+    "title": "Present Perfect Continuous",
+    "category": "Grammar",
+    "order": 13,
+    "revision": {
+      "summary": "Practice Present Perfect Continuous."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-015"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-01-lesson-14",
+    "unit_id": "course-b1-unit-01",
+    "title": "Look + adjective, look like + noun",
+    "category": "Grammar",
+    "order": 14,
+    "revision": {
+      "summary": "Practice Look + adjective, look like + noun."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-016"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-01-lesson-15",
+    "unit_id": "course-b1-unit-01",
+    "title": "Be able to / can / manage to",
+    "category": "Grammar",
+    "order": 15,
+    "revision": {
+      "summary": "Practice Be able to / can / manage to."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-017"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-01-lesson-16",
+    "unit_id": "course-b1-unit-01",
+    "title": "Past Perfect Simple",
+    "category": "Grammar",
+    "order": 16,
+    "revision": {
+      "summary": "Practice Past Perfect Simple."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-018"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-01-lesson-17",
+    "unit_id": "course-b1-unit-01",
+    "title": "Have and have got",
+    "category": "Grammar",
+    "order": 17,
+    "revision": {
+      "summary": "Practice Have and have got."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-019"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-01-lesson-18",
+    "unit_id": "course-b1-unit-01",
+    "title": "Be allowed to and be supposed to",
+    "category": "Grammar",
+    "order": 18,
+    "revision": {
+      "summary": "Practice Be allowed to and be supposed to."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-020"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-01-lesson-19",
+    "unit_id": "course-b1-unit-01",
+    "title": "A few and a little",
+    "category": "Grammar",
+    "order": 19,
+    "revision": {
+      "summary": "Practice A few and a little."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-021"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-01-lesson-20",
+    "unit_id": "course-b1-unit-01",
+    "title": "Although / in spite of / despite",
+    "category": "Grammar",
+    "order": 20,
+    "revision": {
+      "summary": "Practice Although / in spite of / despite."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-022"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-01-lesson-21",
+    "unit_id": "course-b1-unit-01",
+    "title": "Question tags",
+    "category": "Grammar",
+    "order": 21,
+    "revision": {
+      "summary": "Practice Question tags."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-023"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-01-lesson-22",
+    "unit_id": "course-b1-unit-01",
+    "title": "Neither / So Do I",
+    "category": "Grammar",
+    "order": 22,
+    "revision": {
+      "summary": "Practice Neither / So Do I."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-024"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-02-lesson-02",
+    "unit_id": "course-b1-unit-02",
+    "title": "Education",
+    "category": "Vocabulary",
+    "order": 2,
+    "revision": {
+      "summary": "Practice Education."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-025"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-02-lesson-03",
+    "unit_id": "course-b1-unit-02",
+    "title": "Appearances",
+    "category": "Vocabulary",
+    "order": 3,
+    "revision": {
+      "summary": "Practice Appearances."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-026"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-02-lesson-04",
+    "unit_id": "course-b1-unit-02",
+    "title": "Clothes",
+    "category": "Vocabulary",
+    "order": 4,
+    "revision": {
+      "summary": "Practice Clothes."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-027"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-02-lesson-05",
+    "unit_id": "course-b1-unit-02",
+    "title": "Character",
+    "category": "Vocabulary",
+    "order": 5,
+    "revision": {
+      "summary": "Practice Character."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-028"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-02-lesson-06",
+    "unit_id": "course-b1-unit-02",
+    "title": "Make and do (collocations)",
+    "category": "Vocabulary",
+    "order": 6,
+    "revision": {
+      "summary": "Practice Make and do (collocations)."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-029"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-02-lesson-07",
+    "unit_id": "course-b1-unit-02",
+    "title": "Housework",
+    "category": "Vocabulary",
+    "order": 7,
+    "revision": {
+      "summary": "Practice Housework."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-030"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-02-lesson-08",
+    "unit_id": "course-b1-unit-02",
+    "title": "Holidays and travel brochures",
+    "category": "Vocabulary",
+    "order": 8,
+    "revision": {
+      "summary": "Practice Holidays and travel brochures."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-031"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-02-lesson-09",
+    "unit_id": "course-b1-unit-02",
+    "title": "Illness",
+    "category": "Vocabulary",
+    "order": 9,
+    "revision": {
+      "summary": "Practice Illness."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-032"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-02-lesson-10",
+    "unit_id": "course-b1-unit-02",
+    "title": "Cooking",
+    "category": "Vocabulary",
+    "order": 10,
+    "revision": {
+      "summary": "Practice Cooking."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-033"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-02-lesson-11",
+    "unit_id": "course-b1-unit-02",
+    "title": "Weather",
+    "category": "Vocabulary",
+    "order": 11,
+    "revision": {
+      "summary": "Practice Weather."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-034"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-02-lesson-12",
+    "unit_id": "course-b1-unit-02",
+    "title": "Furniture and appliances",
+    "category": "Vocabulary",
+    "order": 12,
+    "revision": {
+      "summary": "Practice Furniture and appliances."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-035"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-02-lesson-13",
+    "unit_id": "course-b1-unit-02",
+    "title": "Types of books, films, and TV programmes",
+    "category": "Vocabulary",
+    "order": 13,
+    "revision": {
+      "summary": "Practice Types of books, films, and TV programmes."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-036"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-02-lesson-14",
+    "unit_id": "course-b1-unit-02",
+    "title": "Crime and Punishment",
+    "category": "Vocabulary",
+    "order": 14,
+    "revision": {
+      "summary": "Practice Crime and Punishment."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-037"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-02-lesson-15",
+    "unit_id": "course-b1-unit-02",
+    "title": "Political Systems",
+    "category": "Vocabulary",
+    "order": 15,
+    "revision": {
+      "summary": "Practice Political Systems."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-038"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-02-lesson-16",
+    "unit_id": "course-b1-unit-02",
+    "title": "Family relationships",
+    "category": "Vocabulary",
+    "order": 16,
+    "revision": {
+      "summary": "Practice Family relationships."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-039"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-02-lesson-17",
+    "unit_id": "course-b1-unit-02",
+    "title": "Pets and animals",
+    "category": "Vocabulary",
+    "order": 17,
+    "revision": {
+      "summary": "Practice Pets and animals."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-040"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-04-lesson-01",
+    "unit_id": "course-b1-unit-04",
+    "title": "Describing location of people and things",
+    "category": "Functional Language",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Describing location of people and things."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-041"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-04-lesson-02",
+    "unit_id": "course-b1-unit-04",
+    "title": "Stating preferences and opinions",
+    "category": "Functional Language",
+    "order": 2,
+    "revision": {
+      "summary": "Practice Stating preferences and opinions."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-042"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-04-lesson-03",
+    "unit_id": "course-b1-unit-04",
+    "title": "Talking about obligation",
+    "category": "Functional Language",
+    "order": 3,
+    "revision": {
+      "summary": "Practice Talking about obligation."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-043"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-04-lesson-04",
+    "unit_id": "course-b1-unit-04",
+    "title": "Reporting requests and orders",
+    "category": "Functional Language",
+    "order": 4,
+    "revision": {
+      "summary": "Practice Reporting requests and orders."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-044"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-04-lesson-05",
+    "unit_id": "course-b1-unit-04",
+    "title": "Advising",
+    "category": "Functional Language",
+    "order": 5,
+    "revision": {
+      "summary": "Practice Advising."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-045"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-04-lesson-06",
+    "unit_id": "course-b1-unit-04",
+    "title": "Making deductions",
+    "category": "Functional Language",
+    "order": 6,
+    "revision": {
+      "summary": "Practice Making deductions."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-046"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-04-lesson-07",
+    "unit_id": "course-b1-unit-04",
+    "title": "Guessing",
+    "category": "Functional Language",
+    "order": 7,
+    "revision": {
+      "summary": "Practice Guessing."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-047"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-04-lesson-08",
+    "unit_id": "course-b1-unit-04",
+    "title": "Talking about possibility / probability and certainty",
+    "category": "Functional Language",
+    "order": 8,
+    "revision": {
+      "summary": "Practice Talking about possibility / probability and certainty."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-048"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-04-lesson-09",
+    "unit_id": "course-b1-unit-04",
+    "title": "Refusing",
+    "category": "Functional Language",
+    "order": 9,
+    "revision": {
+      "summary": "Practice Refusing."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-049"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-04-lesson-10",
+    "unit_id": "course-b1-unit-04",
+    "title": "Describing faulty goods",
+    "category": "Functional Language",
+    "order": 10,
+    "revision": {
+      "summary": "Practice Describing faulty goods."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b1-050"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-01-lesson-01",
+    "unit_id": "course-b2-unit-01",
+    "title": "Mixed Conditionals",
+    "category": "Grammar",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Mixed Conditionals."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-001"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b2-unit-01-lesson-01"
+  },
+  {
+    "lesson_id": "course-b2-unit-01-lesson-02",
+    "unit_id": "course-b2-unit-01",
+    "title": "Inversion",
+    "category": "Grammar",
+    "order": 2,
+    "revision": {
+      "summary": "Practice Inversion."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-002"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b2-unit-01-lesson-02"
+  },
+  {
+    "lesson_id": "course-b2-unit-01-lesson-03",
+    "unit_id": "course-b2-unit-01",
+    "title": "Modal Perfect",
+    "category": "Grammar",
+    "order": 3,
+    "revision": {
+      "summary": "Practice Modal Perfect."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-003"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b2-unit-01-lesson-03"
+  },
+  {
+    "lesson_id": "course-b2-unit-01-lesson-04",
+    "unit_id": "course-b2-unit-01",
+    "title": "Causative",
+    "category": "Grammar",
+    "order": 4,
+    "revision": {
+      "summary": "Practice Causative."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-004"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b2-unit-01-lesson-04"
+  },
+  {
+    "lesson_id": "course-b2-unit-01-lesson-05",
+    "unit_id": "course-b2-unit-01",
+    "title": "Participle Clauses",
+    "category": "Grammar",
+    "order": 5,
+    "revision": {
+      "summary": "Practice Participle Clauses."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-005"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b2-unit-01-lesson-05"
+  },
+  {
+    "lesson_id": "course-b2-unit-01-lesson-06",
+    "unit_id": "course-b2-unit-01",
+    "title": "Advanced Passive",
+    "category": "Grammar",
+    "order": 6,
+    "revision": {
+      "summary": "Practice Advanced Passive."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-006"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b2-unit-01-lesson-06"
+  },
+  {
+    "lesson_id": "course-b2-unit-01-lesson-07",
+    "unit_id": "course-b2-unit-01",
+    "title": "Concession",
+    "category": "Grammar",
+    "order": 7,
+    "revision": {
+      "summary": "Practice Concession."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-009"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b2-unit-01-lesson-07"
+  },
+  {
+    "lesson_id": "course-b2-unit-02-lesson-01",
+    "unit_id": "course-b2-unit-02",
+    "title": "Collocation",
+    "category": "Vocabulary",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Collocation."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-008",
+      "b2-media-01"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b2-unit-02-lesson-01"
+  },
+  {
+    "lesson_id": "course-b2-unit-03-lesson-01",
+    "unit_id": "course-b2-unit-03",
+    "title": "Register",
+    "category": "Writing",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Register."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-010"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b2-unit-03-lesson-01"
+  },
+  {
+    "lesson_id": "course-b2-unit-04-lesson-01",
+    "unit_id": "course-b2-unit-04",
+    "title": "Hedging",
+    "category": "Academic English",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Hedging."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-007"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b2-unit-04-lesson-01"
+  },
+  {
+    "lesson_id": "course-b2-unit-01-lesson-08",
+    "unit_id": "course-b2-unit-01",
+    "title": "Habit in the Present and the Past",
+    "category": "Grammar",
+    "order": 8,
+    "revision": {
+      "summary": "Practice Habit in the Present and the Past."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-011"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-01-lesson-09",
+    "unit_id": "course-b2-unit-01",
+    "title": "Present Perfect Simple and Continuous",
+    "category": "Grammar",
+    "order": 9,
+    "revision": {
+      "summary": "Practice Present Perfect Simple and Continuous."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-012"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-01-lesson-10",
+    "unit_id": "course-b2-unit-01",
+    "title": "Past Simple, Past Continuous, Past Perfect",
+    "category": "Grammar",
+    "order": 10,
+    "revision": {
+      "summary": "Practice Past Simple, Past Continuous, Past Perfect."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-013"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-01-lesson-11",
+    "unit_id": "course-b2-unit-01",
+    "title": "Question tags",
+    "category": "Grammar",
+    "order": 11,
+    "revision": {
+      "summary": "Practice Question tags."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-014"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-01-lesson-12",
+    "unit_id": "course-b2-unit-01",
+    "title": "Future forms",
+    "category": "Grammar",
+    "order": 12,
+    "revision": {
+      "summary": "Practice Future forms."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-015"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-01-lesson-13",
+    "unit_id": "course-b2-unit-01",
+    "title": "Future Perfect",
+    "category": "Grammar",
+    "order": 13,
+    "revision": {
+      "summary": "Practice Future Perfect."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-016"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-01-lesson-14",
+    "unit_id": "course-b2-unit-01",
+    "title": "Phrasal verbs — grammar pattern",
+    "category": "Grammar",
+    "order": 14,
+    "revision": {
+      "summary": "Practice Phrasal verbs — grammar pattern."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-017"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-01-lesson-15",
+    "unit_id": "course-b2-unit-01",
+    "title": "Zero, first, second, third conditionals",
+    "category": "Grammar",
+    "order": 15,
+    "revision": {
+      "summary": "Practice Zero, first, second, third conditionals."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-018"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-01-lesson-16",
+    "unit_id": "course-b2-unit-01",
+    "title": "Wish and if only",
+    "category": "Grammar",
+    "order": 16,
+    "revision": {
+      "summary": "Practice Wish and if only."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-019"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-01-lesson-17",
+    "unit_id": "course-b2-unit-01",
+    "title": "Passive — foundational",
+    "category": "Grammar",
+    "order": 17,
+    "revision": {
+      "summary": "Practice Passive — foundational."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-020"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-01-lesson-18",
+    "unit_id": "course-b2-unit-01",
+    "title": "Compounds of some, any, no, every",
+    "category": "Grammar",
+    "order": 18,
+    "revision": {
+      "summary": "Practice Compounds of some, any, no, every."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-021"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-01-lesson-19",
+    "unit_id": "course-b2-unit-01",
+    "title": "Reported speech — B2 extensions",
+    "category": "Grammar",
+    "order": 19,
+    "revision": {
+      "summary": "Practice Reported speech — B2 extensions."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-022"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-01-lesson-20",
+    "unit_id": "course-b2-unit-01",
+    "title": "Relative clauses",
+    "category": "Grammar",
+    "order": 20,
+    "revision": {
+      "summary": "Practice Relative clauses."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-023"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-01-lesson-21",
+    "unit_id": "course-b2-unit-01",
+    "title": "Conjunctions: although, despite, in spite of, otherwise, unless",
+    "category": "Grammar",
+    "order": 21,
+    "revision": {
+      "summary": "Practice Conjunctions: although, despite, in spite of, otherwise, unless."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-024"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-01-lesson-22",
+    "unit_id": "course-b2-unit-01",
+    "title": "Modals: present",
+    "category": "Grammar",
+    "order": 22,
+    "revision": {
+      "summary": "Practice Modals: present."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-025"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-01-lesson-23",
+    "unit_id": "course-b2-unit-01",
+    "title": "Always + present continuous",
+    "category": "Grammar",
+    "order": 23,
+    "revision": {
+      "summary": "Practice Always + present continuous."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-026"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-01-lesson-24",
+    "unit_id": "course-b2-unit-01",
+    "title": "Adverbs of manner and modifiers",
+    "category": "Grammar",
+    "order": 24,
+    "revision": {
+      "summary": "Practice Adverbs of manner and modifiers."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-027"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-01-lesson-25",
+    "unit_id": "course-b2-unit-01",
+    "title": "Participle adjectives",
+    "category": "Grammar",
+    "order": 25,
+    "revision": {
+      "summary": "Practice Participle adjectives."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-028"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-02-lesson-02",
+    "unit_id": "course-b2-unit-02",
+    "title": "Affixes",
+    "category": "Vocabulary",
+    "order": 2,
+    "revision": {
+      "summary": "Practice Affixes."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-029"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-02-lesson-03",
+    "unit_id": "course-b2-unit-02",
+    "title": "Work, working conditions",
+    "category": "Vocabulary",
+    "order": 3,
+    "revision": {
+      "summary": "Practice Work, working conditions."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-030"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-02-lesson-04",
+    "unit_id": "course-b2-unit-02",
+    "title": "Approximations with -ish",
+    "category": "Vocabulary",
+    "order": 4,
+    "revision": {
+      "summary": "Practice Approximations with -ish."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-031"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-02-lesson-05",
+    "unit_id": "course-b2-unit-02",
+    "title": "Transport and exploration",
+    "category": "Vocabulary",
+    "order": 5,
+    "revision": {
+      "summary": "Practice Transport and exploration."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-032"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-02-lesson-06",
+    "unit_id": "course-b2-unit-02",
+    "title": "Crime and punishment — B2 legal process",
+    "category": "Vocabulary",
+    "order": 6,
+    "revision": {
+      "summary": "Practice Crime and punishment — B2 legal process."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-033"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-02-lesson-07",
+    "unit_id": "course-b2-unit-02",
+    "title": "Phrasal verbs — lexical meaning",
+    "category": "Vocabulary",
+    "order": 7,
+    "revision": {
+      "summary": "Practice Phrasal verbs — lexical meaning."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-034"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-02-lesson-08",
+    "unit_id": "course-b2-unit-02",
+    "title": "Relationships",
+    "category": "Vocabulary",
+    "order": 8,
+    "revision": {
+      "summary": "Practice Relationships."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-035"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-02-lesson-09",
+    "unit_id": "course-b2-unit-02",
+    "title": "Festivals and celebrations",
+    "category": "Vocabulary",
+    "order": 9,
+    "revision": {
+      "summary": "Practice Festivals and celebrations."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-036"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-02-lesson-10",
+    "unit_id": "course-b2-unit-02",
+    "title": "Connotation",
+    "category": "Vocabulary",
+    "order": 10,
+    "revision": {
+      "summary": "Practice Connotation."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-037"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-02-lesson-11",
+    "unit_id": "course-b2-unit-02",
+    "title": "Homonyms",
+    "category": "Vocabulary",
+    "order": 11,
+    "revision": {
+      "summary": "Practice Homonyms."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-038"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-02-lesson-12",
+    "unit_id": "course-b2-unit-02",
+    "title": "Idiomatic expressions",
+    "category": "Vocabulary",
+    "order": 12,
+    "revision": {
+      "summary": "Practice Idiomatic expressions."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-039"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-02-lesson-13",
+    "unit_id": "course-b2-unit-02",
+    "title": "Sport and leisure",
+    "category": "Vocabulary",
+    "order": 13,
+    "revision": {
+      "summary": "Practice Sport and leisure."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-040"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-02-lesson-14",
+    "unit_id": "course-b2-unit-02",
+    "title": "Euphemisms",
+    "category": "Vocabulary",
+    "order": 14,
+    "revision": {
+      "summary": "Practice Euphemisms."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-041"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-02-lesson-15",
+    "unit_id": "course-b2-unit-02",
+    "title": "Geography and climate",
+    "category": "Vocabulary",
+    "order": 15,
+    "revision": {
+      "summary": "Practice Geography and climate."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-042"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-02-lesson-16",
+    "unit_id": "course-b2-unit-02",
+    "title": "Banks / money",
+    "category": "Vocabulary",
+    "order": 16,
+    "revision": {
+      "summary": "Practice Banks / money."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-043"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-02-lesson-17",
+    "unit_id": "course-b2-unit-02",
+    "title": "Colloquial expressions",
+    "category": "Vocabulary",
+    "order": 17,
+    "revision": {
+      "summary": "Practice Colloquial expressions."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-044"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-05-lesson-01",
+    "unit_id": "course-b2-unit-05",
+    "title": "Giving opinions",
+    "category": "Functional Language",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Giving opinions."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-045"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-05-lesson-02",
+    "unit_id": "course-b2-unit-05",
+    "title": "Summarising",
+    "category": "Functional Language",
+    "order": 2,
+    "revision": {
+      "summary": "Practice Summarising."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-046"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-05-lesson-03",
+    "unit_id": "course-b2-unit-05",
+    "title": "Expressing regret",
+    "category": "Functional Language",
+    "order": 3,
+    "revision": {
+      "summary": "Practice Expressing regret."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-047"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-05-lesson-04",
+    "unit_id": "course-b2-unit-05",
+    "title": "Drawing conclusions",
+    "category": "Functional Language",
+    "order": 4,
+    "revision": {
+      "summary": "Practice Drawing conclusions."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-048"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-05-lesson-05",
+    "unit_id": "course-b2-unit-05",
+    "title": "Making offers",
+    "category": "Functional Language",
+    "order": 5,
+    "revision": {
+      "summary": "Practice Making offers."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-049"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-05-lesson-06",
+    "unit_id": "course-b2-unit-05",
+    "title": "Describing cause and effect",
+    "category": "Functional Language",
+    "order": 6,
+    "revision": {
+      "summary": "Practice Describing cause and effect."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-050"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-05-lesson-07",
+    "unit_id": "course-b2-unit-05",
+    "title": "Stating purpose",
+    "category": "Functional Language",
+    "order": 7,
+    "revision": {
+      "summary": "Practice Stating purpose."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-051"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-05-lesson-08",
+    "unit_id": "course-b2-unit-05",
+    "title": "Emphasising",
+    "category": "Functional Language",
+    "order": 8,
+    "revision": {
+      "summary": "Practice Emphasising."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-052"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-05-lesson-09",
+    "unit_id": "course-b2-unit-05",
+    "title": "Stating contrast — conversational",
+    "category": "Functional Language",
+    "order": 9,
+    "revision": {
+      "summary": "Practice Stating contrast — conversational."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-053"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-05-lesson-10",
+    "unit_id": "course-b2-unit-05",
+    "title": "Adding information",
+    "category": "Functional Language",
+    "order": 10,
+    "revision": {
+      "summary": "Practice Adding information."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-054"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-05-lesson-11",
+    "unit_id": "course-b2-unit-05",
+    "title": "Congratulating",
+    "category": "Functional Language",
+    "order": 11,
+    "revision": {
+      "summary": "Practice Congratulating."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-055"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-05-lesson-12",
+    "unit_id": "course-b2-unit-05",
+    "title": "Commiserating",
+    "category": "Functional Language",
+    "order": 12,
+    "revision": {
+      "summary": "Practice Commiserating."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-056"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-05-lesson-13",
+    "unit_id": "course-b2-unit-05",
+    "title": "Clarifying",
+    "category": "Functional Language",
+    "order": 13,
+    "revision": {
+      "summary": "Practice Clarifying."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-057"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-05-lesson-14",
+    "unit_id": "course-b2-unit-05",
+    "title": "Guessing",
+    "category": "Functional Language",
+    "order": 14,
+    "revision": {
+      "summary": "Practice Guessing."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-058"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-05-lesson-15",
+    "unit_id": "course-b2-unit-05",
+    "title": "Ordering arguments",
+    "category": "Functional Language",
+    "order": 15,
+    "revision": {
+      "summary": "Practice Ordering arguments."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-059"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-05-lesson-16",
+    "unit_id": "course-b2-unit-05",
+    "title": "Giving examples",
+    "category": "Functional Language",
+    "order": 16,
+    "revision": {
+      "summary": "Practice Giving examples."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "b2-060"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-01-lesson-01",
+    "unit_id": "course-c1-unit-01",
+    "title": "Advanced Conditionals",
+    "category": "Grammar",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Advanced Conditionals."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-001"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c1-unit-01-lesson-01"
+  },
+  {
+    "lesson_id": "course-c1-unit-01-lesson-02",
+    "unit_id": "course-c1-unit-01",
+    "title": "Subjunctive",
+    "category": "Grammar",
+    "order": 2,
+    "revision": {
+      "summary": "Practice Subjunctive."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-002"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c1-unit-01-lesson-02"
+  },
+  {
+    "lesson_id": "course-c1-unit-01-lesson-03",
+    "unit_id": "course-c1-unit-01",
+    "title": "Cleft Sentences",
+    "category": "Grammar",
+    "order": 3,
+    "revision": {
+      "summary": "Practice Cleft Sentences."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-003"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c1-unit-01-lesson-03"
+  },
+  {
+    "lesson_id": "course-c1-unit-01-lesson-04",
+    "unit_id": "course-c1-unit-01",
+    "title": "Ellipsis",
+    "category": "Grammar",
+    "order": 4,
+    "revision": {
+      "summary": "Practice Ellipsis."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-006"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c1-unit-01-lesson-04"
+  },
+  {
+    "lesson_id": "course-c1-unit-01-lesson-05",
+    "unit_id": "course-c1-unit-01",
+    "title": "Inversion after Only",
+    "category": "Grammar",
+    "order": 5,
+    "revision": {
+      "summary": "Practice Inversion after Only."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-008"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c1-unit-01-lesson-05"
+  },
+  {
+    "lesson_id": "course-c1-unit-02-lesson-01",
+    "unit_id": "course-c1-unit-02",
+    "title": "Lexical Precision",
+    "category": "Vocabulary",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Lexical Precision."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-007",
+      "c1-media-01"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c1-unit-02-lesson-01"
+  },
+  {
+    "lesson_id": "course-c1-unit-02-lesson-02",
+    "unit_id": "course-c1-unit-02",
+    "title": "Collocation",
+    "category": "Vocabulary",
+    "order": 2,
+    "revision": {
+      "summary": "Practice Collocation."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-010"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c1-unit-02-lesson-02"
+  },
+  {
+    "lesson_id": "course-c1-unit-03-lesson-01",
+    "unit_id": "course-c1-unit-03",
+    "title": "Discourse Markers",
+    "category": "Writing",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Discourse Markers."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-004"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c1-unit-03-lesson-01"
+  },
+  {
+    "lesson_id": "course-c1-unit-04-lesson-01",
+    "unit_id": "course-c1-unit-04",
+    "title": "Nominalisation",
+    "category": "Academic English",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Nominalisation."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-005"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c1-unit-04-lesson-01"
+  },
+  {
+    "lesson_id": "course-c1-unit-04-lesson-02",
+    "unit_id": "course-c1-unit-04",
+    "title": "Academic Stance",
+    "category": "Academic English",
+    "order": 2,
+    "revision": {
+      "summary": "Practice Academic Stance."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-009"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c1-unit-04-lesson-02"
+  },
+  {
+    "lesson_id": "course-c1-unit-04-lesson-03",
+    "unit_id": "course-c1-unit-04",
+    "title": "Academic Writing Integration",
+    "category": "Mixed",
+    "order": 3,
+    "revision": {
+      "summary": "An integrative revision lesson combining nominalisation, academic stance, and discourse markers for learners consolidating academic writing skills.",
+      "key_terms": [
+        "nominalisation",
+        "academic stance",
+        "discourse markers"
+      ],
+      "examples": [
+        "Turning verbs into nouns can make writing sound more formal and academic.",
+        "Discourse markers like 'however' and 'furthermore' help structure an argument."
+      ],
+      "estimated_minutes": 10
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-005",
+      "c1-009",
+      "c1-004"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c1-unit-04-lesson-03"
+  },
+  {
+    "lesson_id": "course-c1-unit-01-lesson-06",
+    "unit_id": "course-c1-unit-01",
+    "title": "Uses of continuous tenses",
+    "category": "Grammar",
+    "order": 6,
+    "revision": {
+      "summary": "Practice Uses of continuous tenses."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-011"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-01-lesson-07",
+    "unit_id": "course-c1-unit-01",
+    "title": "Uses of would",
+    "category": "Grammar",
+    "order": 7,
+    "revision": {
+      "summary": "Practice Uses of would."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-012"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-01-lesson-08",
+    "unit_id": "course-c1-unit-01",
+    "title": "Articles",
+    "category": "Grammar",
+    "order": 8,
+    "revision": {
+      "summary": "Practice Articles."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-013"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-01-lesson-09",
+    "unit_id": "course-c1-unit-01",
+    "title": "Past Perfect",
+    "category": "Grammar",
+    "order": 9,
+    "revision": {
+      "summary": "Practice Past Perfect."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-014"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-01-lesson-10",
+    "unit_id": "course-c1-unit-01",
+    "title": "Order of adverbs",
+    "category": "Grammar",
+    "order": 10,
+    "revision": {
+      "summary": "Practice Order of adverbs."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-015"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-01-lesson-11",
+    "unit_id": "course-c1-unit-01",
+    "title": "Order of adjectives",
+    "category": "Grammar",
+    "order": 11,
+    "revision": {
+      "summary": "Practice Order of adjectives."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-016"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-01-lesson-12",
+    "unit_id": "course-c1-unit-01",
+    "title": "Participles",
+    "category": "Grammar",
+    "order": 12,
+    "revision": {
+      "summary": "Practice Participles."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-017"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-01-lesson-13",
+    "unit_id": "course-c1-unit-01",
+    "title": "Modal verbs",
+    "category": "Grammar",
+    "order": 13,
+    "revision": {
+      "summary": "Practice Modal verbs."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-018"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-01-lesson-14",
+    "unit_id": "course-c1-unit-01",
+    "title": "Ellipsis and elision",
+    "category": "Grammar",
+    "order": 14,
+    "revision": {
+      "summary": "Practice Ellipsis and elision."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-019"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-01-lesson-15",
+    "unit_id": "course-c1-unit-01",
+    "title": "Question tags",
+    "category": "Grammar",
+    "order": 15,
+    "revision": {
+      "summary": "Practice Question tags."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-020"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-01-lesson-16",
+    "unit_id": "course-c1-unit-01",
+    "title": "Future Continuous",
+    "category": "Grammar",
+    "order": 16,
+    "revision": {
+      "summary": "Practice Future Continuous."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-021"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-01-lesson-17",
+    "unit_id": "course-c1-unit-01",
+    "title": "Relative clauses",
+    "category": "Grammar",
+    "order": 17,
+    "revision": {
+      "summary": "Practice Relative clauses."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-022"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-01-lesson-18",
+    "unit_id": "course-c1-unit-01",
+    "title": "Mixed conditionals",
+    "category": "Grammar",
+    "order": 18,
+    "revision": {
+      "summary": "Practice Mixed conditionals."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-023"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-01-lesson-19",
+    "unit_id": "course-c1-unit-01",
+    "title": "Passive",
+    "category": "Grammar",
+    "order": 19,
+    "revision": {
+      "summary": "Practice Passive."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-024"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-01-lesson-20",
+    "unit_id": "course-c1-unit-01",
+    "title": "Inversions and negative adverbials",
+    "category": "Grammar",
+    "order": 20,
+    "revision": {
+      "summary": "Practice Inversions and negative adverbials."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-025"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-01-lesson-21",
+    "unit_id": "course-c1-unit-01",
+    "title": "Reported speech",
+    "category": "Grammar",
+    "order": 21,
+    "revision": {
+      "summary": "Practice Reported speech."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-026"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-02-lesson-03",
+    "unit_id": "course-c1-unit-02",
+    "title": "Astrology and religions",
+    "category": "Vocabulary",
+    "order": 3,
+    "revision": {
+      "summary": "Practice Astrology and religions."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-027"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-02-lesson-04",
+    "unit_id": "course-c1-unit-02",
+    "title": "Nostalgia",
+    "category": "Vocabulary",
+    "order": 4,
+    "revision": {
+      "summary": "Practice Nostalgia."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-028"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-02-lesson-05",
+    "unit_id": "course-c1-unit-02",
+    "title": "Coincidences and experiences",
+    "category": "Vocabulary",
+    "order": 5,
+    "revision": {
+      "summary": "Practice Coincidences and experiences."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-029"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-02-lesson-06",
+    "unit_id": "course-c1-unit-02",
+    "title": "Learning and educational systems",
+    "category": "Vocabulary",
+    "order": 6,
+    "revision": {
+      "summary": "Practice Learning and educational systems."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-030"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-02-lesson-07",
+    "unit_id": "course-c1-unit-02",
+    "title": "Eccentricity and individuality",
+    "category": "Vocabulary",
+    "order": 7,
+    "revision": {
+      "summary": "Practice Eccentricity and individuality."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-031"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-02-lesson-08",
+    "unit_id": "course-c1-unit-02",
+    "title": "Creativity",
+    "category": "Vocabulary",
+    "order": 8,
+    "revision": {
+      "summary": "Practice Creativity."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-032"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-02-lesson-09",
+    "unit_id": "course-c1-unit-02",
+    "title": "Age and cultural differences",
+    "category": "Vocabulary",
+    "order": 9,
+    "revision": {
+      "summary": "Practice Age and cultural differences."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-033"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-02-lesson-10",
+    "unit_id": "course-c1-unit-02",
+    "title": "Gender",
+    "category": "Vocabulary",
+    "order": 10,
+    "revision": {
+      "summary": "Practice Gender."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-034"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-02-lesson-11",
+    "unit_id": "course-c1-unit-02",
+    "title": "Current affairs",
+    "category": "Vocabulary",
+    "order": 11,
+    "revision": {
+      "summary": "Practice Current affairs."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-035"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-02-lesson-12",
+    "unit_id": "course-c1-unit-02",
+    "title": "Diet and health",
+    "category": "Vocabulary",
+    "order": 12,
+    "revision": {
+      "summary": "Practice Diet and health."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-036"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-02-lesson-13",
+    "unit_id": "course-c1-unit-02",
+    "title": "Types of communication",
+    "category": "Vocabulary",
+    "order": 13,
+    "revision": {
+      "summary": "Practice Types of communication."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-037"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-02-lesson-14",
+    "unit_id": "course-c1-unit-02",
+    "title": "Moral and personal dilemmas",
+    "category": "Vocabulary",
+    "order": 14,
+    "revision": {
+      "summary": "Practice Moral and personal dilemmas."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-038"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-02-lesson-15",
+    "unit_id": "course-c1-unit-02",
+    "title": "Road and home safety and risk",
+    "category": "Vocabulary",
+    "order": 15,
+    "revision": {
+      "summary": "Practice Road and home safety and risk."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-039"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-02-lesson-16",
+    "unit_id": "course-c1-unit-02",
+    "title": "Environmental issues",
+    "category": "Vocabulary",
+    "order": 16,
+    "revision": {
+      "summary": "Practice Environmental issues."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-040"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-02-lesson-17",
+    "unit_id": "course-c1-unit-02",
+    "title": "Children's development",
+    "category": "Vocabulary",
+    "order": 17,
+    "revision": {
+      "summary": "Practice Children's development."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-041"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-02-lesson-18",
+    "unit_id": "course-c1-unit-02",
+    "title": "Advertising",
+    "category": "Vocabulary",
+    "order": 18,
+    "revision": {
+      "summary": "Practice Advertising."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-042"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-02-lesson-19",
+    "unit_id": "course-c1-unit-02",
+    "title": "Architecture",
+    "category": "Vocabulary",
+    "order": 19,
+    "revision": {
+      "summary": "Practice Architecture."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-043"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-05-lesson-01",
+    "unit_id": "course-c1-unit-05",
+    "title": "Contradicting",
+    "category": "Functional Language",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Contradicting."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-044"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-05-lesson-02",
+    "unit_id": "course-c1-unit-05",
+    "title": "Instructing",
+    "category": "Functional Language",
+    "order": 2,
+    "revision": {
+      "summary": "Practice Instructing."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-045"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-05-lesson-03",
+    "unit_id": "course-c1-unit-05",
+    "title": "Describing",
+    "category": "Functional Language",
+    "order": 3,
+    "revision": {
+      "summary": "Practice Describing."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-046"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-05-lesson-04",
+    "unit_id": "course-c1-unit-05",
+    "title": "Advising",
+    "category": "Functional Language",
+    "order": 4,
+    "revision": {
+      "summary": "Practice Advising."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-047"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-05-lesson-05",
+    "unit_id": "course-c1-unit-05",
+    "title": "Expressing opinions formally and informally",
+    "category": "Functional Language",
+    "order": 5,
+    "revision": {
+      "summary": "Practice Expressing opinions formally and informally."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-048"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-05-lesson-06",
+    "unit_id": "course-c1-unit-05",
+    "title": "Checking and clarifying information",
+    "category": "Functional Language",
+    "order": 6,
+    "revision": {
+      "summary": "Practice Checking and clarifying information."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-049"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-05-lesson-07",
+    "unit_id": "course-c1-unit-05",
+    "title": "Paraphrasing",
+    "category": "Functional Language",
+    "order": 7,
+    "revision": {
+      "summary": "Practice Paraphrasing."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-050"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-05-lesson-08",
+    "unit_id": "course-c1-unit-05",
+    "title": "Expanding and exemplifying",
+    "category": "Functional Language",
+    "order": 8,
+    "revision": {
+      "summary": "Practice Expanding and exemplifying."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-051"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-05-lesson-09",
+    "unit_id": "course-c1-unit-05",
+    "title": "Persuading and convincing",
+    "category": "Functional Language",
+    "order": 9,
+    "revision": {
+      "summary": "Practice Persuading and convincing."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-052"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-05-lesson-10",
+    "unit_id": "course-c1-unit-05",
+    "title": "Speculating",
+    "category": "Functional Language",
+    "order": 10,
+    "revision": {
+      "summary": "Practice Speculating."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-053"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-05-lesson-11",
+    "unit_id": "course-c1-unit-05",
+    "title": "Expressing annoyance",
+    "category": "Functional Language",
+    "order": 11,
+    "revision": {
+      "summary": "Practice Expressing annoyance."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-054"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-05-lesson-12",
+    "unit_id": "course-c1-unit-05",
+    "title": "Expressing regrets",
+    "category": "Functional Language",
+    "order": 12,
+    "revision": {
+      "summary": "Practice Expressing regrets."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-055"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-05-lesson-13",
+    "unit_id": "course-c1-unit-05",
+    "title": "Comparing and contrasting",
+    "category": "Functional Language",
+    "order": 13,
+    "revision": {
+      "summary": "Practice Comparing and contrasting."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-056"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-05-lesson-14",
+    "unit_id": "course-c1-unit-05",
+    "title": "Describing people and things and situations",
+    "category": "Functional Language",
+    "order": 14,
+    "revision": {
+      "summary": "Practice Describing people and things and situations."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c1-057"
+    ],
+    "version": 1,
+    "status": "published"
+  },
+  {
+    "lesson_id": "course-c2-unit-01-lesson-01",
+    "unit_id": "course-c2-unit-01",
+    "title": "Nuanced Modality",
+    "category": "Grammar",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Nuanced Modality."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c2-001"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c2-unit-01-lesson-01"
+  },
+  {
+    "lesson_id": "course-c2-unit-01-lesson-02",
+    "unit_id": "course-c2-unit-01",
+    "title": "Concessive Inversion",
+    "category": "Grammar",
+    "order": 2,
+    "revision": {
+      "summary": "Practice Concessive Inversion."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c2-002"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c2-unit-01-lesson-02"
+  },
+  {
+    "lesson_id": "course-c2-unit-01-lesson-03",
+    "unit_id": "course-c2-unit-01",
+    "title": "Fronting",
+    "category": "Grammar",
+    "order": 3,
+    "revision": {
+      "summary": "Practice Fronting."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c2-003"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c2-unit-01-lesson-03"
+  },
+  {
+    "lesson_id": "course-c2-unit-01-lesson-04",
+    "unit_id": "course-c2-unit-01",
+    "title": "Advanced Relative Construction",
+    "category": "Grammar",
+    "order": 4,
+    "revision": {
+      "summary": "Practice Advanced Relative Construction."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c2-006"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c2-unit-01-lesson-04"
+  },
+  {
+    "lesson_id": "course-c2-unit-01-lesson-05",
+    "unit_id": "course-c2-unit-01",
+    "title": "Inversion with Negative Adverbial",
+    "category": "Grammar",
+    "order": 5,
+    "revision": {
+      "summary": "Practice Inversion with Negative Adverbial."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c2-007"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c2-unit-01-lesson-05"
+  },
+  {
+    "lesson_id": "course-c2-unit-02-lesson-01",
+    "unit_id": "course-c2-unit-02",
+    "title": "Semantic Nuance",
+    "category": "Vocabulary",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Semantic Nuance."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c2-005",
+      "c2-media-01"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c2-unit-02-lesson-01"
+  },
+  {
+    "lesson_id": "course-c2-unit-02-lesson-02",
+    "unit_id": "course-c2-unit-02",
+    "title": "Pragmatics",
+    "category": "Vocabulary",
+    "order": 2,
+    "revision": {
+      "summary": "Practice Pragmatics."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c2-008"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c2-unit-02-lesson-02"
+  },
+  {
+    "lesson_id": "course-c2-unit-02-lesson-03",
+    "unit_id": "course-c2-unit-02",
+    "title": "Idiomatic Precision",
+    "category": "Vocabulary",
+    "order": 3,
+    "revision": {
+      "summary": "Practice Idiomatic Precision."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c2-009"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c2-unit-02-lesson-03"
+  },
+  {
+    "lesson_id": "course-c2-unit-03-lesson-01",
+    "unit_id": "course-c2-unit-03",
+    "title": "Register and Tone",
+    "category": "Writing",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Register and Tone."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c2-004"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c2-unit-03-lesson-01"
+  },
+  {
+    "lesson_id": "course-c2-unit-04-lesson-01",
+    "unit_id": "course-c2-unit-04",
+    "title": "Synthesis",
+    "category": "Academic English",
+    "order": 1,
+    "revision": {
+      "summary": "Practice Synthesis."
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "c2-010"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c2-unit-04-lesson-01"
   }
 ]

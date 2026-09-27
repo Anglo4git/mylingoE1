@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-01-lesson-16",
+  "title": "Lesson: Wish and if only",
+  "description": "Practice Wish and if only.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Wish and if only.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Wish and if only",
+      "explanation": "Practice Wish and if only."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Wish and if only",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "\"I wish I ___ closer to my family.\" (present)",
+      "category": "Grammar",
+      "tags": "Grammar,B2,QuickCheck",
+      "explanation": "See the Wish and if only lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "live",
+        "lived",
+        "had lived",
+        "will live"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

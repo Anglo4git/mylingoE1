@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-02-lesson-09",
+  "title": "Lesson: Illness",
+  "description": "Practice Illness.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Illness.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Illness",
+      "explanation": "Practice Illness."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Illness",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "\"Come down with\" a cold means...",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1,QuickCheck",
+      "explanation": "Describe symptoms and give basic health advice.",
+      "correctIndex": 2,
+      "answers": [
+        "cure it",
+        "recover from it",
+        "start to have it",
+        "avoid it"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

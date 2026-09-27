@@ -1,0 +1,47 @@
+{
+    "id": "lesson-course-c1-unit-01-lesson-08",
+    "title": "Lesson: Articles",
+    "description": "Practice Articles.",
+    "brand": "Mylingo",
+    "category": "Grammar",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "Practice Articles.",
+            "question_type": "banner",
+            "category": "Grammar",
+            "tags": "Lesson,C1",
+            "media": {},
+            "subprompt": "Articles",
+            "explanation": "Practice Articles."
+        },
+        {
+            "question": "What you'll practice",
+            "subprompt": "Articles",
+            "question_type": "banner",
+            "category": "Grammar",
+            "tags": "Lesson,C1"
+        },
+        {
+            "question": "\"___ internet has changed how we communicate.\" Which article?",
+            "category": "Grammar",
+            "tags": "Grammar,C1,QuickCheck",
+            "explanation": "See the Articles lesson for the underlying rule.",
+            "correctIndex": 2,
+            "answers": [
+                "A",
+                "An",
+                "The",
+                "No article"
+            ]
+        },
+        {
+            "question": "Nice work! Ready for the full exercises?",
+            "question_type": "banner",
+            "category": "Grammar",
+            "tags": "Lesson,C1"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-02-lesson-10",
+  "title": "Lesson: Cooking",
+  "description": "Practice Cooking.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Cooking.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Cooking",
+      "explanation": "Practice Cooking."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Cooking",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "To cut food into small pieces is to ___ it.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1,QuickCheck",
+      "explanation": "Describe cooking methods and kitchen actions.",
+      "correctIndex": 1,
+      "answers": [
+        "season",
+        "chop",
+        "boil",
+        "simmer"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

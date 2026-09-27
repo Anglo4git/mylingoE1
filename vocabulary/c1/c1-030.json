@@ -1,0 +1,77 @@
+{
+  "id": "c1-030",
+  "title": "Learning and educational systems",
+  "description": "Practice Learning and educational systems.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"Rote learning\" refers to:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Learning and educational systems lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Learning through memorisation and repetition",
+        "Learning through critical thinking",
+        "Learning outside school",
+        "Learning a trade"
+      ]
+    },
+    {
+      "question": "\"Vocational training\" prepares students mainly for:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Learning and educational systems lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Academic research",
+        "A specific trade or profession",
+        "Standardised tests",
+        "Lifelong hobbies"
+      ]
+    },
+    {
+      "question": "\"Lifelong learning\" describes:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Learning and educational systems lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Education that ends at graduation",
+        "Continued learning throughout one's life",
+        "Only childhood education",
+        "Learning only one subject"
+      ]
+    },
+    {
+      "question": "\"Streaming/tracking\" in education refers to:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Learning and educational systems lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Watching online lessons",
+        "Grouping students by ability level",
+        "Testing at the end of the year",
+        "Studying abroad"
+      ]
+    },
+    {
+      "question": "\"Standardised testing\" means:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Learning and educational systems lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Tests that vary for each student",
+        "Uniform tests given to all students for comparison",
+        "Oral exams only",
+        "Optional coursework"
+      ]
+    }
+  ]
+}

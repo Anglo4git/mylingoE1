@@ -1,0 +1,47 @@
+{
+    "id": "lesson-course-c1-unit-02-lesson-19",
+    "title": "Lesson: Architecture",
+    "description": "Practice Architecture.",
+    "brand": "Mylingo",
+    "category": "Vocabulary",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "Practice Architecture.",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1",
+            "media": {},
+            "subprompt": "Architecture",
+            "explanation": "Practice Architecture."
+        },
+        {
+            "question": "What you'll practice",
+            "subprompt": "Architecture",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1"
+        },
+        {
+            "question": "The \"facade\" of a building refers to its:",
+            "category": "Vocabulary",
+            "tags": "Vocabulary,C1,QuickCheck",
+            "explanation": "See the Architecture lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "Interior layout",
+                "Front/exterior face",
+                "Foundation",
+                "Roof structure only"
+            ]
+        },
+        {
+            "question": "Nice work! Ready for the full exercises?",
+            "question_type": "banner",
+            "category": "Vocabulary",
+            "tags": "Lesson,C1"
+        }
+    ]
+}

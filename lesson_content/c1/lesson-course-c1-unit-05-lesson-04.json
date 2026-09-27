@@ -1,0 +1,47 @@
+{
+    "id": "lesson-course-c1-unit-05-lesson-04",
+    "title": "Lesson: Advising",
+    "description": "Practice Advising.",
+    "brand": "Mylingo",
+    "category": "Functional Language",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "Practice Advising.",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1",
+            "media": {},
+            "subprompt": "Advising",
+            "explanation": "Practice Advising."
+        },
+        {
+            "question": "What you'll practice",
+            "subprompt": "Advising",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1"
+        },
+        {
+            "question": "Which is the strongest piece of advice?",
+            "category": "Functional Language",
+            "tags": "Functional Language,C1,QuickCheck",
+            "explanation": "See the Advising lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "You might want to consider it.",
+                "You really must see a doctor.",
+                "I'd suggest seeing a doctor.",
+                "It would be advisable to see a doctor."
+            ]
+        },
+        {
+            "question": "Nice work! Ready for the full exercises?",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1"
+        }
+    ]
+}

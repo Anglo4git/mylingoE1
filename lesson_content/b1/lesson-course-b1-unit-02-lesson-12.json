@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-02-lesson-12",
+  "title": "Lesson: Furniture and appliances",
+  "description": "Practice Furniture and appliances.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Furniture and appliances.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Furniture and appliances",
+      "explanation": "Practice Furniture and appliances."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Furniture and appliances",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "You store folded clothes in a ___.",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B1,QuickCheck",
+      "explanation": "Name household furniture and appliances beyond A2 basics.",
+      "correctIndex": 3,
+      "answers": [
+        "sofa",
+        "wardrobe",
+        "shelf",
+        "chest of drawers"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

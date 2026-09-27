@@ -1,0 +1,47 @@
+{
+    "id": "lesson-course-c1-unit-05-lesson-02",
+    "title": "Lesson: Instructing",
+    "description": "Practice Instructing.",
+    "brand": "Mylingo",
+    "category": "Functional Language",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "Practice Instructing.",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1",
+            "media": {},
+            "subprompt": "Instructing",
+            "explanation": "Practice Instructing."
+        },
+        {
+            "question": "What you'll practice",
+            "subprompt": "Instructing",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1"
+        },
+        {
+            "question": "Which instructing structure is NOT a plain imperative?",
+            "category": "Functional Language",
+            "tags": "Functional Language,C1,QuickCheck",
+            "explanation": "See the Instructing lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "Save your work.",
+                "Make sure to save your work.",
+                "Save it now.",
+                "Close the file."
+            ]
+        },
+        {
+            "question": "Nice work! Ready for the full exercises?",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1"
+        }
+    ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "c1-039",
+  "title": "Road and home safety and risk",
+  "description": "Practice Road and home safety and risk.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"A near miss\" refers to:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Road and home safety and risk lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "An accident that happened",
+        "A dangerous situation narrowly avoided",
+        "A minor injury",
+        "A planned risk"
+      ]
+    },
+    {
+      "question": "\"A hazard\" is:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Road and home safety and risk lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A source of potential danger",
+        "A safety certificate",
+        "A type of insurance",
+        "A traffic law"
+      ]
+    },
+    {
+      "question": "\"Reckless\" behaviour is best contrasted with:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Road and home safety and risk lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Careless",
+        "Cautious",
+        "Risky",
+        "Dangerous"
+      ]
+    },
+    {
+      "question": "\"Childproof\" describes something designed to:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Road and home safety and risk lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Be used only by children",
+        "Prevent children from accessing or being harmed by it",
+        "Teach children safety rules",
+        "Entertain children"
+      ]
+    },
+    {
+      "question": "\"A precaution\" is:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Road and home safety and risk lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "An action taken in advance to prevent harm",
+        "A punishment after an accident",
+        "A type of hazard",
+        "A legal requirement only"
+      ]
+    }
+  ]
+}

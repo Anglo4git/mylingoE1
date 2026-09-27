@@ -1,0 +1,77 @@
+{
+  "id": "c1-018",
+  "title": "Modal verbs",
+  "description": "Practice Modal verbs.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"You might want to double-check those figures\" is an example of:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Modal verbs lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Hedged/formal criticism",
+        "A strong obligation",
+        "A polite request",
+        "Past deduction"
+      ]
+    },
+    {
+      "question": "\"One could argue that the policy backfired\" illustrates:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Modal verbs lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Tentative, academic-register suggestion",
+        "A direct command",
+        "A polite refusal",
+        "Certainty"
+      ]
+    },
+    {
+      "question": "\"He said he could help the following week\" shows a modal shift in:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Modal verbs lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Direct speech",
+        "Reported speech",
+        "A conditional",
+        "A passive structure"
+      ]
+    },
+    {
+      "question": "Rewriting \"That's wrong\" as hedged formal feedback, which is best?",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Modal verbs lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "You might want to reconsider that.",
+        "That's completely wrong.",
+        "You must fix that now.",
+        "I demand you change that."
+      ]
+    },
+    {
+      "question": "This quiz targets which modal function, distinct from B2's ability/obligation/permission coverage?",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Modal verbs lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Formal hedging, tentative suggestion, and modal shift in reported contexts",
+        "Basic permission (\"can I...?\")",
+        "Basic obligation (\"must\")",
+        "Basic ability (\"can\")"
+      ]
+    }
+  ]
+}

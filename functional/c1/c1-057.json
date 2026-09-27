@@ -1,0 +1,77 @@
+{
+  "id": "c1-057",
+  "title": "Describing people and things and situations",
+  "description": "Practice Describing people and things and situations.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"She comes across as reserved, but she's actually very funny once you know her\" describes:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Describing people and things and situations lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A place",
+        "A person",
+        "A process",
+        "A situation only"
+      ]
+    },
+    {
+      "question": "\"It has a certain... quality\" is an opener used to describe:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Describing people and things and situations lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A person's personality only",
+        "A thing/object",
+        "A process",
+        "A grammatical rule"
+      ]
+    },
+    {
+      "question": "\"The atmosphere in the room was tense, to say the least\" describes:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Describing people and things and situations lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "A person",
+        "A thing",
+        "A situation",
+        "A process"
+      ]
+    },
+    {
+      "question": "\"There's something about him that...\" is an opener specifically used for describing:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Describing people and things and situations lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "People",
+        "Abstract processes",
+        "Places",
+        "Concepts"
+      ]
+    },
+    {
+      "question": "**Scope check:** This quiz tests description of people/things/situations specifically — distinct from which other lesson's focus?",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Describing people and things and situations lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "F3's general concepts/processes/places",
+        "F9's persuading language",
+        "G6's adjective order",
+        "V5's eccentricity vocabulary"
+      ]
+    }
+  ]
+}

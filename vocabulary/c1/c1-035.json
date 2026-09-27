@@ -1,0 +1,77 @@
+{
+  "id": "c1-035",
+  "title": "Current affairs",
+  "description": "Practice Current affairs.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Vocabulary,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"A developing story\" refers to news that is:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Current affairs lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Finished and resolved",
+        "Still unfolding, with new details emerging",
+        "Historical",
+        "Fictional"
+      ]
+    },
+    {
+      "question": "\"In the headlines\" means a topic is:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Current affairs lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Ignored by the media",
+        "Prominently covered by the news",
+        "Only discussed privately",
+        "Banned from discussion"
+      ]
+    },
+    {
+      "question": "\"Public opinion is divided\" means:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Current affairs lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Everyone agrees",
+        "People hold differing views on the issue",
+        "No one has an opinion",
+        "The government has decided"
+      ]
+    },
+    {
+      "question": "\"A hot topic\" refers to something that is:",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Current affairs lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Literally about temperature",
+        "Currently attracting a lot of attention/debate",
+        "Old news",
+        "Unimportant"
+      ]
+    },
+    {
+      "question": "Which sentence discusses current affairs using the target vocabulary without naming a specific real event?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,C1",
+      "explanation": "See the Current affairs lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "It's been a developing story all week, and public opinion is divided.",
+        "The election in [a specific real country/year] was controversial.",
+        "Yesterday's real headline about [specific event] shocked everyone.",
+        "The war in [specific real place] dominated the news."
+      ]
+    }
+  ]
+}

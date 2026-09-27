@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-01-lesson-25",
+  "title": "Lesson: Participle adjectives",
+  "description": "Practice Participle adjectives.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Participle adjectives.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Participle adjectives",
+      "explanation": "Practice Participle adjectives."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Participle adjectives",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "\"I'm ___.\" (how I feel)",
+      "category": "Grammar",
+      "tags": "Grammar,B2,QuickCheck",
+      "explanation": "See the Participle adjectives lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "boring",
+        "bored",
+        "bore",
+        "bores"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

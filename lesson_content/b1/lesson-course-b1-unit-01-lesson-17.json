@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-01-lesson-17",
+  "title": "Lesson: Have and have got",
+  "description": "Practice Have and have got.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Have and have got.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Have and have got",
+      "explanation": "Practice Have and have got."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Have and have got",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "\"I ___ two brothers.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1,QuickCheck",
+      "explanation": "Use both forms of \"have\" for possession, relationships, and features, especially in British English.",
+      "correctIndex": 2,
+      "answers": [
+        "having",
+        "am having",
+        "have got",
+        "has got"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

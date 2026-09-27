@@ -1,0 +1,47 @@
+{
+    "id": "lesson-course-c1-unit-05-lesson-12",
+    "title": "Lesson: Expressing regrets",
+    "description": "Practice Expressing regrets.",
+    "brand": "Mylingo",
+    "category": "Functional Language",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "Practice Expressing regrets.",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1",
+            "media": {},
+            "subprompt": "Expressing regrets",
+            "explanation": "Practice Expressing regrets."
+        },
+        {
+            "question": "What you'll practice",
+            "subprompt": "Expressing regrets",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1"
+        },
+        {
+            "question": "\"In hindsight, I should have asked more questions\" uses which framing?",
+            "category": "Functional Language",
+            "tags": "Functional Language,C1,QuickCheck",
+            "explanation": "See the Expressing regrets lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "Direct, present-tense regret",
+                "Hindsight/looking-back framing",
+                "A contradiction",
+                "A persuasive appeal"
+            ]
+        },
+        {
+            "question": "Nice work! Ready for the full exercises?",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1"
+        }
+    ]
+}

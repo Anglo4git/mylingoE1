@@ -1,0 +1,77 @@
+{
+  "id": "c1-053",
+  "title": "Speculating",
+  "description": "Practice Speculating.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Functional Language,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"It's conceivable that...\" introduces:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Speculating lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A certainty",
+        "A formal, analytical speculation",
+        "An instruction",
+        "A contradiction"
+      ]
+    },
+    {
+      "question": "\"This could be attributed to a shift in consumer behaviour\" speculates about:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Speculating lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A cause",
+        "An instruction",
+        "A contradiction",
+        "A basic fact"
+      ]
+    },
+    {
+      "question": "\"It remains to be seen whether...\" expresses:",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Speculating lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Certainty about the outcome",
+        "Genuine, open uncertainty about a future outcome",
+        "A firm decision",
+        "A contradiction"
+      ]
+    },
+    {
+      "question": "This lesson's register is deliberately more formal/analytical than which B2 lesson?",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Speculating lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "B2's \"Guessing\"",
+        "B2's \"Clarifying\"",
+        "B2's \"Giving opinions\"",
+        "B2's \"Expressing regret\""
+      ]
+    },
+    {
+      "question": "**Scope check:** Which phrase best fits this lesson's more formal/analytical register, vs. B2's everyday guessing?",
+      "category": "Functional Language",
+      "tags": "Functional Language,C1",
+      "explanation": "See the Speculating lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "\"Maybe it's because of the weather.\"",
+        "\"One possibility is that demand shifted.\"",
+        "\"I guess it's the weather.\"",
+        "\"Who knows, really.\""
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "c1-015",
+  "title": "Order of adverbs",
+  "description": "Practice Order of adverbs.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Which sentence follows correct manner-place-time order?",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "(also acceptable as a variant order, but the standard end-position sequence is manner→place→time)",
+      "correctIndex": 1,
+      "answers": [
+        "She sang beautifully at the concert last night.",
+        "She sang last night beautifully at the concert.",
+        "She sang at the concert last night beautifully.",
+        "Last night she sang beautifully."
+      ]
+    },
+    {
+      "question": "\"He works out regularly at the gym\" — where does the frequency-type adverb \"regularly\" go relative to \"at the gym\"?",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Order of adverbs lesson for the underlying rule.",
+      "correctIndex": 2,
+      "answers": [
+        "After the place phrase",
+        "Before the main verb only",
+        "Immediately after the verb/verb phrase, before the place",
+        "At the very start of the sentence"
+      ]
+    },
+    {
+      "question": "Reorder: (a few minutes ago / quietly / the room / left / they)",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Order of adverbs lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "They left quietly the room a few minutes ago.",
+        "They quietly left the room a few minutes ago.",
+        "They left the room quietly a few minutes ago.",
+        "A few minutes ago they left quietly the room."
+      ]
+    },
+    {
+      "question": "When several end-position adverbials combine, the usual order is:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Order of adverbs lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Time → place → manner",
+        "Manner → place → time",
+        "Place → manner → time",
+        "Time → manner → place"
+      ]
+    },
+    {
+      "question": "This lesson's quiz tests:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Order of adverbs lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Single adverb placement",
+        "Ordering multiple adverbials together",
+        "Choosing between adverbs and adjectives",
+        "Forming adverbs from adjectives"
+      ]
+    }
+  ]
+}

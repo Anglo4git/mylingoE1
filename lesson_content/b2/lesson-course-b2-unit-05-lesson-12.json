@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-05-lesson-12",
+  "title": "Lesson: Commiserating",
+  "description": "Practice Commiserating.",
+  "brand": "Mylingo",
+  "category": "Functional Language",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Commiserating.",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Commiserating",
+      "explanation": "Practice Commiserating."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Commiserating",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "\"I'm so sorry to hear about the job — ___.\"",
+      "category": "Functional Language",
+      "tags": "Functional Language,B2,QuickCheck",
+      "explanation": "See the Commiserating lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "way to go",
+        "that's rough",
+        "congratulations",
+        "nice one"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Functional Language",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

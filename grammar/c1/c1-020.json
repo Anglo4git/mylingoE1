@@ -1,0 +1,77 @@
+{
+  "id": "c1-020",
+  "title": "Question tags",
+  "description": "Practice Question tags.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Grammar,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "\"You're coming, aren't you?\" with falling intonation typically signals:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Question tags lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A genuine question, unsure of the answer",
+        "Seeking agreement/confirmation",
+        "A formal request",
+        "Surprise"
+      ]
+    },
+    {
+      "question": "The same tag with rising intonation signals:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Question tags lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Genuine uncertainty",
+        "Confirmation-seeking only",
+        "Sarcasm",
+        "A command"
+      ]
+    },
+    {
+      "question": "In formal register, question tags are often replaced with:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Question tags lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "A blunt statement",
+        "Phrases like \"wouldn't you agree?\" or restructuring",
+        "A double negative",
+        "The imperative"
+      ]
+    },
+    {
+      "question": "Rewrite \"This approach seems most effective, doesn't it?\" in a more formal way:",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Question tags lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "This approach seems most effective, wouldn't you agree?",
+        "This is effective, right?",
+        "Effective, isn't it, this approach?",
+        "Isn't this approach effective, yeah?"
+      ]
+    },
+    {
+      "question": "This quiz assumes which is already known from B1/B2, and does NOT re-test it?",
+      "category": "Grammar",
+      "tags": "Grammar,C1",
+      "explanation": "See the Question tags lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "Basic tag formation and special cases (imperatives, \"Let's,\" \"I am → aren't I\")",
+        "Passive voice",
+        "Reported speech",
+        "Relative clauses"
+      ]
+    }
+  ]
+}

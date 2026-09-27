@@ -1,0 +1,47 @@
+{
+    "id": "lesson-course-c1-unit-05-lesson-07",
+    "title": "Lesson: Paraphrasing",
+    "description": "Practice Paraphrasing.",
+    "brand": "Mylingo",
+    "category": "Functional Language",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "Practice Paraphrasing.",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1",
+            "media": {},
+            "subprompt": "Paraphrasing",
+            "explanation": "Practice Paraphrasing."
+        },
+        {
+            "question": "What you'll practice",
+            "subprompt": "Paraphrasing",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1"
+        },
+        {
+            "question": "\"In other words...\" is used to:",
+            "category": "Functional Language",
+            "tags": "Functional Language,C1,QuickCheck",
+            "explanation": "See the Paraphrasing lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "Contradict",
+                "Introduce a paraphrase",
+                "Give an instruction",
+                "Express regret"
+            ]
+        },
+        {
+            "question": "Nice work! Ready for the full exercises?",
+            "question_type": "banner",
+            "category": "Functional Language",
+            "tags": "Lesson,C1"
+        }
+    ]
+}

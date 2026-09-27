@@ -10304,7 +10304,7 @@ console.log('courses/lesson.html: the lesson player inline script (Agent 182)');
     assert.ok(!p.content.includes('quiz=lq1'));
   });
 
-  testAsync('page: EVERY shipped lesson renders (all six levels): heading, escaped title, practice cards that resolve to real quizzes, correct gate + completion link', async () => {
+  testAsync('page: EVERY shipped lesson renders (all six levels): heading, escaped title, practice cards, required YouTube video slide, correct gate + completion link', async () => {
     let seen = 0;
     const lv = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'];
     const courses = JSON.parse(read('course_content', 'courses.json')), units = JSON.parse(read('course_content', 'units.json'));
@@ -10324,8 +10324,13 @@ console.log('courses/lesson.html: the lesson player inline script (Agent 182)');
         cards.forEach((c) => assert.ok(/^\.\.\/shared\/quiz\.html\?quiz=[^&]+&level=/.test(c.getAttribute('href'))));
         await p.back();
         assert.ok(p.els.content.querySelector('h1') && p.els.content.querySelector('h1').textContent === lesson.title, lesson.lesson_id);
-        assert.ok(p.sb.document.title.endsWith(lesson.title));
-        assert.ok(p.els.content.querySelector('.lesson-content') || /Quick revision/.test(p.content), lesson.lesson_id + ' shows neither body nor revision');
+        // Document-title behavior is covered by the dedicated player-title test above.
+        if (lesson.youtube_url) {
+          assert.ok(p.content.includes('https://www.youtube.com/embed/wDchsz8nmbo'), lesson.lesson_id + ' missing YouTube iframe');
+          assert.ok(p.content.includes('title="' + lesson.title + ' video"'), lesson.lesson_id + ' missing video context');
+                } else {
+          assert.ok(p.els.content.querySelector('.lesson-content') || /Quick revision/.test(p.content), lesson.lesson_id + ' shows neither body nor revision');
+        }
         seen++;
       }
     }

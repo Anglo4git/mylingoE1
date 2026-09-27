@@ -1,0 +1,47 @@
+{
+    "id": "lesson-course-c1-unit-01-lesson-07",
+    "title": "Lesson: Uses of would",
+    "description": "Practice Uses of would.",
+    "brand": "Mylingo",
+    "category": "Grammar",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "version": 1,
+    "questions": [
+        {
+            "question": "Practice Uses of would.",
+            "question_type": "banner",
+            "category": "Grammar",
+            "tags": "Lesson,C1",
+            "media": {},
+            "subprompt": "Uses of would",
+            "explanation": "Practice Uses of would."
+        },
+        {
+            "question": "What you'll practice",
+            "subprompt": "Uses of would",
+            "question_type": "banner",
+            "category": "Grammar",
+            "tags": "Lesson,C1"
+        },
+        {
+            "question": "\"He wouldn't listen no matter what I said\" — this use of \"would\" expresses:",
+            "category": "Grammar",
+            "tags": "Grammar,C1,QuickCheck",
+            "explanation": "See the Uses of would lesson for the underlying rule.",
+            "correctIndex": 1,
+            "answers": [
+                "A polite request",
+                "Refusal/insistence in the past",
+                "A hypothetical",
+                "A past habit"
+            ]
+        },
+        {
+            "question": "Nice work! Ready for the full exercises?",
+            "question_type": "banner",
+            "category": "Grammar",
+            "tags": "Lesson,C1"
+        }
+    ]
+}

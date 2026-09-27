@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-02-lesson-10",
+  "title": "Lesson: Connotation",
+  "description": "Practice Connotation.",
+  "brand": "Mylingo",
+  "category": "Vocabulary",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Connotation.",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Connotation",
+      "explanation": "Practice Connotation."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Connotation",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "Which word has a POSITIVE connotation for \"careful with money\"?",
+      "category": "Vocabulary",
+      "tags": "Vocabulary,B2,QuickCheck",
+      "explanation": "See the Connotation lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "stingy",
+        "thrifty",
+        "cheap",
+        "miserly"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Vocabulary",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b1-unit-01-lesson-13",
+  "title": "Lesson: Present Perfect Continuous",
+  "description": "Practice Present Perfect Continuous.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Present Perfect Continuous.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Present Perfect Continuous",
+      "explanation": "Practice Present Perfect Continuous."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Present Perfect Continuous",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "\"I've ___ learning English for two years.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B1,QuickCheck",
+      "explanation": "Talk about actions that started in the past and are still continuing, or have recently stopped with visible results.",
+      "correctIndex": 1,
+      "answers": [
+        "been",
+        "was",
+        "is",
+        "be"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

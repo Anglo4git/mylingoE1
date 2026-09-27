@@ -1,0 +1,47 @@
+{
+  "id": "lesson-course-b2-unit-01-lesson-08",
+  "title": "Lesson: Habit in the Present and the Past",
+  "description": "Practice Habit in the Present and the Past.",
+  "brand": "Mylingo",
+  "category": "Grammar",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Habit in the Present and the Past.",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Habit in the Present and the Past",
+      "explanation": "Practice Habit in the Present and the Past."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Habit in the Present and the Past",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "\"He ___ climb that tree every afternoon as a kid.\"",
+      "category": "Grammar",
+      "tags": "Grammar,B2,QuickCheck",
+      "explanation": "See the Habit in the Present and the Past lesson for the underlying rule.",
+      "correctIndex": 1,
+      "answers": [
+        "would",
+        "will",
+        "is",
+        "used to"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Grammar",
+      "tags": "Lesson,B2"
+    }
+  ]
+}
