@@ -27,7 +27,7 @@ const srv = http.createServer((req, res) => {
 const first = JSON.parse(fs.readFileSync(path.join(root, 'a1/quizzes.json'), 'utf8'))[0].id;
 const PAGES = ['index.html', 'main/index.html', 'main/placement.html', 'main/progress.html', 'main/practice.html', 'courses/index.html',
   ...['a1', 'a2', 'b1', 'b2', 'c1', 'c2'].flatMap(l => [`${l}/index.html`, `${l}/dashboard.html`, `courses/course.html?level=${l}`]),
-  'courses/journey.html?level=a1', 'courses/lesson.html?lesson=a1-unit-01-lesson-01&level=a1',
+  'courses/journey.html?level=a1', 'courses/lesson.html?lesson=course-a1-unit-01-lesson-01&level=a1',
   `shared/quiz.html?quiz=${first}&level=a1&recommended=1`];
 (async () => {
   const { chromium } = require('playwright');

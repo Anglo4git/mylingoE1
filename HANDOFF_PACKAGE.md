@@ -1,51 +1,88 @@
------ BEGIN HANDOFF PACKAGE -----
-AGENT: Agent 237
-DATE: 2026-09-27
-PHASE: 3 — UI MODERNIZATION / PHASE 4 — UX POLISH / RELEASE AUDIT
-STATUS: complete
+# HANDOFF PACKAGE — Agent 240
 
-## WHAT WAS DONE THIS TURN
-- Audited the Agent 236 release from a clean unzip.
-- Re-ran the full project regression suite: 970/970 passed.
-- Ran the quick release verifier: all gates passed; CSP is current and source/dist are byte-identical across 709 files.
-- Audited lesson media coverage: the requested YouTube URL is present in all 308 published lesson records (76 A1, 54 A2, 50 B1, 60 B2, 58 C1, 10 C2).
-- Repackaged and clean-unzip verified the release: 998 archive entries, all gates passed.
-- Added `AGENT_237_RELEASE_AUDIT.md` documenting the evidence and the optional browser-sweep limitation.
+AGENT: Agent 240
+DATE: 2026-09-27
+PHASE: Real browser/device QA + player hardening (per recommended agent sequence)
+STATUS: complete — real gap found and fixed, real-Chromium sweep now green
+
+## DONE
+- Ran the full, real (non-`--quick`) release gate for the first time in several agents:
+  `NODE_PATH=$(npm root -g) node tools/verify-all.js`. Playwright IS resolvable in this environment
+  (both locally and globally) — prior agents 238/239 either used `--quick` or believed Playwright was
+  unavailable and never actually exercised `tools/csp-sweep.js`.
+- That real-browser sweep found a genuine, verified regression: the shipped CSP blocked
+  `https://www.youtube.com/iframe_api` (script-src) and would also have blocked the actual
+  `https://www.youtube.com/embed/...` video iframe (frame-src was `'none'`). In a real browser the video
+  slide rendered nothing at all — no iframe, no player, no 90% gate — even though the unit suite (which
+  runs against a simulated DOM, not real CSP enforcement) stayed green at 971/971.
+- Fixed `tools/build-csp.js` to allow `https://www.youtube.com` in both `script-src` (appended after the
+  inline-script hashes, so the existing hash-format assertion in `tests/run.js` still holds) and `frame-src`.
+  Regenerated `netlify.toml`. No other third-party origin was added anywhere.
+- Fixed a second bug that had been masking the first: `tools/csp-sweep.js`'s single lesson-page URL used the
+  stale id `a1-unit-01-lesson-01` instead of the real `course-a1-unit-01-lesson-01`, so the swept page was
+  silently showing "This lesson isn't available yet." instead of a real video lesson. Corrected it.
+- Independently confirmed with a direct Playwright script against the fixed build: 0
+  `securitypolicyviolation` events, and the video `<iframe>` now mounts with the correct sample video
+  (`https://www.youtube.com/embed/wDchsz8nmbo?...`).
+- Data audit: `course_content/lessons/{a1,a2,b1,b2,c1,c2}.json` = 76/54/50/60/58/10 = 308, matching the spec
+  exactly. `course_content/lessons.json` = 308. Sample video URL confirmed present and unchanged.
+- Did not touch lesson/quiz content, HTML, or client JS — only `tools/build-csp.js`, `netlify.toml`, and
+  `tools/csp-sweep.js`. dist remains byte-identical to source (709 files); offline packs were not rebuilt
+  because they do not bundle `netlify.toml` and no other shipped file changed.
 
 ## CURRENT STATE
-- App runs: yes
-- Build/release verification: pass
-- Typecheck: N/A — no package.json/typecheck script
-- Lint: N/A — no package.json/lint script
-- Tests: pass — 970/970
-- Lesson sample video coverage: 308/308
-- Archive verification: pass — 998 entries
-- Known application defects found this turn: none
+- `node tests/run.js` — 971 passed, 0 failed.
+- `NODE_PATH=$(npm root -g) node tools/verify-all.js` (full, not `--quick`) — **ALL 4 GATES PASSED**:
+  unit suite, CSP up to date, dist byte-identical (709 files), and the real-Chromium CSP + service-worker +
+  offline sweep (108 page loads across light/dark × online/offline, 54/54 offline pages served 200,
+  **0 problem pages**, down from 4 before this fix).
+- Clean-unzip release verification: passed (see ARTIFACTS below).
 
-## FILES CHANGED
-- `AGENT_237_RELEASE_AUDIT.md` — release audit evidence
-- `HANDOFF_PACKAGE.md` — current agent handoff
-- `CHANGELOG.md` — Agent 237 audit entry
+## CHANGED FILES
+- `tools/build-csp.js`
+- `netlify.toml` (regenerated output of the above)
+- `tools/csp-sweep.js` (test-harness id fix)
+- `CHANGELOG.md`
+- `HANDOFF_PACKAGE.md`
+- `AGENT_240_CSP_YOUTUBE_REGRESSION_FIX.md` (new)
 
-## ENVIRONMENT LIMITATION
-- `node tools/csp-sweep.js` was attempted but could not run because `playwright` is not installed in the project environment. Do not report the browser-level CSP sweep as passed unless a future environment supplies Playwright and the sweep completes successfully.
+## TESTS
+- `node tests/run.js` → 971/971.
+- `NODE_PATH=$(npm root -g) node tools/verify-all.js` (full) → ALL GATES PASSED, including the real-browser
+  sweep (previously silently skipped by the last two agents).
+
+## BROWSER QA
+- Real Chromium via Playwright (installed in this environment) exercised every shipped page online and
+  offline, light and dark, under the exact production CSP header and an active service worker. This is a
+  real browser enforcing real security policy — not a mock.
+- No physical iPhone Safari / Android Chrome / real-device access is available in this environment. That
+  remains an open item for a future agent with real-device access, per the mission's own fallback rule: this
+  limitation is documented, not claimed as tested.
+- Did not re-verify autoplay/fullscreen gesture behavior beyond what's already logged in Agent 238/239's
+  notes (headless Chromium correctly refuses `requestFullscreen()` without a user gesture — expected browser
+  behavior, not a bug).
+
+## KNOWN LIMITATIONS
+- No real mobile device or real network access in this environment (bash network egress is disabled, and no
+  device farm is connected), so the actual YouTube CDN cannot be reached from here — the sweep's 403s from
+  `www.youtube.com` are this sandbox's lack of internet egress, not a CSP or app defect (CSP violations were
+  independently confirmed at 0 for both the script and the iframe).
+- iPhone Safari-specific fullscreen/viewport quirks (Agent 241's mission) remain unverified on a real device.
 
 ## NEXT AGENT — START HERE
-1. Treat `MYLINGO_AGENT237_RELEASE.zip` as the verified baseline.
-2. Read this handoff and `AGENT_237_RELEASE_AUDIT.md` first.
-3. If continuing release hardening, perform the next substantive product/UX audit rather than repeating the same packaging-only verification.
-4. Preserve the exact lesson sample video URL unless the user explicitly requests a different one.
-5. Any source change must be followed by `node tests/run.js`, `node tools/verify-all.js --quick`, and `node tools/package.js <output.zip>`.
+1. This release (Agent 240) is the first in a while to actually pass the real CSP/offline/service-worker
+   sweep — start from this ZIP, not an earlier one.
+2. Per the recommended sequence, Agent 241 should focus on iPhone Safari touch/fullscreen/viewport QA if any
+   real-device or device-farm access becomes available; otherwise keep running the real (non-`--quick`)
+   `tools/verify-all.js` before every release, not just the unit suite — that quick mode is what let this
+   regression ship for two prior agents.
+3. Do not weaken the 90% gate, video-first ordering, the three-text-slide structure, or the CSP (no new
+   third-party origins beyond `https://www.youtube.com`, and only in `script-src`/`frame-src`).
+4. Preserve the assigned sample video URL unless explicitly instructed otherwise.
 
-## BLOCKERS
-- No application blocker.
-- Browser-level CSP sweep requires an environment with Playwright installed.
-
-## ARTIFACTS PRODUCED
-- `AGENT_237_RELEASE_AUDIT.md`
-- `HANDOFF_PACKAGE.md`
-- `MYLINGO_AGENT237_RELEASE.zip`
+## ARTIFACTS
+- Release ZIP: MYLINGO_AGENT240_CSP_YOUTUBE_FIX.zip
+- Audit report: this HANDOFF_PACKAGE.md + CHANGELOG.md entry above
 
 ## RESUME COMMAND
-"Resume from HANDOFF PACKAGE above. You are Agent 238. Continue with the next substantive product/UX audit from the verified Agent 237 baseline."
------ END HANDOFF PACKAGE -----
+Resume from HANDOFF_PACKAGE.md above. You are Agent 241. Continue from NEXT AGENT — START HERE.

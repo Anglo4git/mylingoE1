@@ -89,6 +89,12 @@ h1{margin:6px 0 8px;font-size:24px;color:var(--ink)}
 /* ---- Video wrapper: cinema-style 16:9 canvas (spotlight aesthetic) ---- */
 .video-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:14px;background:#000;box-shadow:0 12px 34px rgba(0,0,0,.5)}
 .video-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video-slide .video-wrap{position:fixed;inset:0;width:100vw;height:100dvh;padding:0;border-radius:0;z-index:50;box-shadow:none}
+.video-slide .video-wrap iframe{width:100%;height:100%;pointer-events:none;user-select:none;-webkit-user-select:none}
+.video-lock{position:absolute;left:12px;bottom:12px;padding:7px 10px;border-radius:999px;background:rgba(0,0,0,.72);color:#fff;font-size:11px;font-weight:800;pointer-events:none}
+.video-progress{position:fixed;left:50%;bottom:calc(22px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:60;margin:0;padding:9px 14px;border-radius:999px;background:rgba(0,0,0,.78);color:#fff;font-size:12px;font-weight:800;white-space:nowrap}
+.video-next-locked{display:block;flex:1 1 auto;text-align:center;padding:14px 18px;border-radius:999px;background:#e5e7eb;color:#4b5563;font-size:14px;font-weight:900;min-height:48px}
+.video-slide + *{}
 .video-fallback{background:var(--panel);border:1px dashed var(--line);border-radius:12px;padding:16px;color:var(--muted);font-size:13px;text-align:center}
 .video-link{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:800;font-size:13px;color:var(--brand);margin-top:10px}
 
@@ -158,7 +164,7 @@ h1{margin:6px 0 8px;font-size:24px;color:var(--ink)}
 <main id="main-content">
   <div id="content"><div class="loading" role="status" aria-live="polite">Loading lesson…</div></div>
 </main>
-<script src="../shared/js/safe-url.js"></script>
+<script src="../shared/js/safe-url.js"></script><script src="https://www.youtube.com/iframe_api"></script>
 <script>
 (function(){
 'use strict';
@@ -231,7 +237,38 @@ function youtubeId(url){
 // consistent everywhere a video is embedded.
 function youtubeEmbedSrc(vid){
   if(!vid) return '';
-  return 'https://www.youtube.com/embed/'+encodeURIComponent(vid)+'?rel=0&modestbranding=1&playsinline=1';
+  var origin=(typeof location!=='undefined'&&location.origin)||''; return 'https://www.youtube.com/embed/'+encodeURIComponent(vid)+'?autoplay=1&mute=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&rel=0&modestbranding=1&playsinline=0&enablejsapi=1'+(origin?'&origin='+encodeURIComponent(origin):'');
+}
+
+function splitIntoThreeTextSlides(html,revision){
+  var clean=sanitizeHtml(html||'');
+  var blocks=[];
+  if(clean){
+    var doc=new DOMParser().parseFromString('<div>'+clean+'</div>','text/html');
+    var root=doc.body.firstChild;
+    blocks=Array.prototype.map.call(root.childNodes,function(n){return n.outerHTML||n.textContent||''}).filter(function(x){return String(x).trim()});
+  }
+  var rev=revision||{};
+  var examples=(rev.examples||[]).filter(Boolean);
+  var terms=(rev.key_terms||[]).filter(Boolean);
+  if(!blocks.length){
+    var summary=rev.summary&&String(rev.summary).trim();
+    if(summary) blocks.push('<p>'+esc(summary)+'</p>');
+    if(examples.length) blocks.push('<h3>Examples</h3><ul>'+examples.map(function(e){return '<li>'+esc(e)+'</li>'}).join('')+'</ul>');
+    if(terms.length) blocks.push('<h3>Key terms</h3><p>'+terms.map(function(t){return '<span class=\"term\">'+esc(t)+'</span>'}).join(' ')+'</p>');
+  }
+  var groups=[[],[],[]];
+  if(blocks.length){
+    blocks.forEach(function(block,i){groups[Math.min(2,Math.floor(i*3/blocks.length))].push(block)});
+  }
+  var labels=['1 · Intro & explanation','2 · Usage & examples','3 · More details'];
+  return groups.map(function(group,i){
+    if(!group.length){
+      var fallback=i===1?(examples.length?'<h3>Usage & examples</h3><ul>'+examples.map(function(e){return '<li>'+esc(e)+'</li>'}).join('')+'</ul>':'<p>Use the explanation from slide 1 and try the lesson practice next.</p>'):(i===2?(terms.length?'<h3>More details</h3><p>'+terms.map(function(t){return '<span class=\"term\">'+esc(t)+'</span>'}).join(' ')+'</p>':'<h3>More details</h3><p>Review the key idea, then continue to practice.</p>'):'<p>Review this lesson introduction before continuing.</p>');
+      group=[fallback];
+    }
+    return {label:labels[i],html:group.join('')};
+  });
 }
 
 // Renders the "Watch" slide's media markup: the video wrapper (or its
@@ -253,13 +290,13 @@ function mediaEntries(lesson){
     audios:normalize(lesson.audio_urls||lesson.audios, lesson.audio_url)
   };
 }
-function renderMediaItem(entry,kind,title,isOnline){
+function renderMediaItem(entry,kind,title,isOnline,index){
   var safe=window.MylingoSafeUrl&&window.MylingoSafeUrl.isSafeMediaUrl(entry.url);
   if(!safe) return '<div class="card"><h2>'+esc(kind==='video'?'Video':'Audio')+'</h2><div class="video-fallback">This media link is not available.</div></div>';
   if(!isOnline) return '<div class="card"><h2>'+esc(kind==='video'?'Video':'Audio')+'</h2><div class="video-fallback">Media unavailable offline. Continue with the lesson text.</div></div>';
   if(kind==='video'){
     var vid=youtubeId(entry.url);
-    if(vid) return '<div class="card"><h2>'+esc(entry.title||'Video')+'</h2><div class="video-wrap"><iframe src="'+esc(youtubeEmbedSrc(vid))+'" title="'+esc(entry.title||title)+' video" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe></div></div>';
+    if(vid) return '<div class="card video-card"><h2>'+esc(entry.title||'Video')+'</h2><div class="video-wrap"><iframe id="youtube-player-'+String(index||0)+'" src="'+esc(youtubeEmbedSrc(vid))+'" title="'+esc(entry.title||title)+' video" loading="eager" allow="autoplay; fullscreen; encrypted-media" allowfullscreen tabindex="-1"></iframe><div class="video-lock" aria-hidden="true">Learning mode · external YouTube controls hidden</div></div><p class="video-progress" id="video-progress">Watch 90% to unlock Continue.</p></div>';
     return '<div class="card"><h2>'+esc(entry.title||'Video')+'</h2><video controls playsinline preload="metadata" style="width:100%;border-radius:14px;background:#000" src="'+esc(entry.url)+'"></video></div>';
   }
   return '<div class="card"><h2>'+esc(entry.title||'Audio lesson')+'</h2><audio controls preload="metadata" style="width:100%" src="'+esc(entry.url)+'"></audio></div>';
@@ -374,26 +411,20 @@ lessonsFetch.catch(function(){
       '<h1>'+esc(lesson.title)+'</h1>'+
       '<p class="readtime"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg> ~'+minutes+' min read</p>';
 
-    // ---- Slide deck: authored chapters -> videos -> audio -> practice.
-    // Backward compatible: one body_content still renders as one text slide;
-    // richer lessons can add chapters[], video_urls/videos[], audio_urls/audios[].
+    // ---- Slide deck: videos -> exactly three text slides -> audio -> practice.
+    // Every published lesson gets a predictable three-part text sequence:
+    // 1) intro/explanation, 2) usage/examples, 3) more details. Videos always
+    // lead the lesson so the learner starts with the media experience.
     var bodyContent=lesson.body_content && String(lesson.body_content).trim();
     var chapters=Array.isArray(lesson.chapters)?lesson.chapters.filter(function(c){return c&&String(c.body_content||c.html||c.body||'').trim()}):[];
+    if(chapters.length) bodyContent=chapters.map(function(ch){return '<h3>'+esc(ch.title||'')+'</h3>'+String(ch.body_content||ch.html||ch.body||'')}).join('');
     var media=mediaEntries(lesson);
     var slides=[];
-    if(chapters.length){
-      chapters.forEach(function(ch,index){
-        var html=String(ch.body_content||ch.html||ch.body||'');
-        slides.push({key:'text-'+index,label:ch.title||('Chapter '+(index+1)),kind:'text',html:headerHtml+'<div class="card"><div class="lesson-content">'+sanitizeHtml(html)+'</div></div>'});
-      });
-    } else {
-      var lessonSlideHtml;
-      if(bodyContent){ lessonSlideHtml=headerHtml+'<div class="card"><div class="lesson-content">'+sanitizeHtml(bodyContent)+'</div></div>'; }
-      else { lessonSlideHtml=headerHtml+'<div class="card"><h2>Quick revision</h2>'+(hasSummary?'<p class="summary">'+esc(revision.summary)+'</p>':'<p class="summary">No revision notes yet for this lesson — you can still practice.</p>')+'</div>'+(examples.length?'<div class="card"><h2>Examples</h2><ul class="examples">'+examples.map(function(e){return '<li>'+esc(e)+'</li>'}).join('')+'</ul></div>':'')+(terms.length?'<div class="card"><h2>Key terms</h2><div class="terms">'+terms.map(function(t){return '<span class="term">'+esc(t)+'</span>'}).join('')+'</div></div>':''); }
-      slides.push({key:'text',label:'Lesson',kind:'text',html:lessonSlideHtml});
-    }
-    media.videos.forEach(function(entry,index){ slides.push({key:'video-'+index,label:entry.title||('Video '+(index+1)),kind:'video',html:headerHtml+renderMediaItem(entry,'video',lesson.title,isOnline)}); });
-    media.audios.forEach(function(entry,index){ slides.push({key:'audio-'+index,label:entry.title||('Audio '+(index+1)),kind:'audio',html:headerHtml+renderMediaItem(entry,'audio',lesson.title,isOnline)}); });
+    media.videos.forEach(function(entry,index){ slides.push({key:'video-'+index,label:entry.title||('Video '+(index+1)),kind:'video',html:headerHtml+renderMediaItem(entry,'video',lesson.title,isOnline,index)}); });
+    splitIntoThreeTextSlides(bodyContent,revision).forEach(function(part,index){
+      slides.push({key:'text-'+index,label:part.label,kind:'text',html:headerHtml+'<div class="card"><div class="lesson-content">'+part.html+'</div></div>'});
+    });
+    media.audios.forEach(function(entry,index){ slides.push({key:'audio-'+index,label:entry.title||('Audio '+(index+1)),kind:'audio',html:headerHtml+renderMediaItem(entry,'audio',lesson.title,isOnline,index)}); });
     var exercisesHtml='';
     var savedProgress=window.MylingoCourseProgress?window.MylingoCourseProgress.readProgress():{};
     if(exerciseIds.length){ exercisesHtml='<div class="card"><h2>Practice in this lesson</h2><p class="small" style="margin:0 0 12px;color:var(--muted)">Pass '+(window.MylingoCourseProgress&&window.MylingoCourseProgress.LESSON_COMPLETION_THRESHOLD||90)+'% of these quizzes to unlock the next lesson.</p><div class="exercise-cards">'+exerciseIds.map(function(id){var q=quizMap[id]||{};var title=q.title||id;var count=q.questions?String(q.questions)+' question'+(q.questions===1?'':'s'):'';var passed=window.MylingoCourseProgress&&window.MylingoCourseProgress.isMastered(savedProgress[id]);return '<a class="exercise-card'+(passed?' passed':'')+'" href="'+quizUrl(id,level,practiceReturnUrl,course.title,unit.title,lesson.lesson_id)+'"><div><h3>'+esc(title)+'</h3>'+(count?'<small>'+esc(count)+'</small>':'')+'</div><span class="status" aria-label="'+(passed?'Passed':'Not passed')+'">'+(passed?'✓':'○')+'</span><span class="chev" aria-hidden="true">→</span></a>';}).join('')+'</div></div>'; }
@@ -402,6 +433,60 @@ lessonsFetch.catch(function(){
 
     var currentIndex=0;
     var maxReached=0; // furthest slide index reached so far; gates chapter-trail clicks below
+    var videoWatchReady=false;
+    var activeYoutubePlayer=null;
+    var videoPollTimer=null;
+    var videoPollStartedAt=0;
+    var YTReadyQueue=window.__mylingoYTReadyQueue=window.__mylingoYTReadyQueue||[];
+    function whenYouTubeReady(fn){
+      if(window.YT&&window.YT.Player){fn();return;}
+      YTReadyQueue.push(fn);
+      if(!window.__mylingoYTCallbackInstalled){
+        window.__mylingoYTCallbackInstalled=true;
+        window.onYouTubeIframeAPIReady=function(){
+          var q=window.__mylingoYTReadyQueue||[]; window.__mylingoYTReadyQueue=[];
+          q.forEach(function(cb){try{cb()}catch(e){}});
+        };
+      }
+    }
+    function stopVideoTracking(){
+      if(videoPollTimer){clearInterval(videoPollTimer);videoPollTimer=null;}
+      if(activeYoutubePlayer&&typeof activeYoutubePlayer.destroy==='function'){try{activeYoutubePlayer.destroy()}catch(e){}}
+      activeYoutubePlayer=null; videoPollStartedAt=0;
+    }
+    function unlockVideoNext(){
+      if(videoWatchReady)return;
+      videoWatchReady=true;
+      var p=document.getElementById('video-progress'); if(p)p.textContent='90% watched · Continue unlocked.';
+      renderNav();
+    }
+    function enterFullscreen(iframe){
+      if(!iframe)return;
+      var target=iframe;
+      try{if(document.fullscreenElement)return; var fn=target.requestFullscreen||target.webkitRequestFullscreen||target.webkitEnterFullscreen; if(fn){var r=fn.call(target); if(r&&r.catch)r.catch(function(){})}}catch(e){}
+    }
+    function setupVideoSlide(slide){
+      stopVideoTracking(); videoWatchReady=false;
+      if(slide.kind!=='video')return;
+      var iframe=document.querySelector('iframe');
+      if(!iframe){unlockVideoNext();return;}
+      if(('onLine' in navigator) && !navigator.onLine){unlockVideoNext();return;}
+      // Autoplay is muted so modern browser autoplay policies permit it. Fullscreen
+      // is attempted immediately and again from the first player-ready callback;
+      // browsers may reject it on an initial page load because fullscreen requires
+      // a user gesture. Once the learner taps Continue into a video slide, the same
+      // call is within the navigation gesture path and normally succeeds.
+      enterFullscreen(iframe);
+      var vid=youtubeId((media.videos[Number(slide.key.split('-')[1])]||{}).url);
+      if(!vid)return;
+      var init=function(){
+        if(!window.YT||!window.YT.Player)return;
+        activeYoutubePlayer=new window.YT.Player(iframe.id,{videoId:vid,playerVars:{autoplay:1,mute:1,controls:0,disablekb:1,fs:0,rel:0,modestbranding:1,iv_load_policy:3,playsinline:0},events:{onReady:function(e){try{e.target.mute();e.target.playVideo()}catch(x){} enterFullscreen(iframe); videoPollStartedAt=Date.now(); videoPollTimer=setInterval(function(){
+          try{var d=Number(e.target.getDuration()),t=Number(e.target.getCurrentTime()); if(d>0&&t/d>=.9)unlockVideoNext();}catch(x){}
+        },500);},onStateChange:function(e){if(e.data===0){unlockVideoNext();}}}});
+      };
+      whenYouTubeReady(init);
+    }
     var initialPractice=slides.findIndex(function(s){return s.key==='practice'});
     var savedCompletion=window.MylingoCourseProgress?window.MylingoCourseProgress.lessonCompletionRecord(lesson,savedProgress):{completed:false,progress:0};
     var lessonPassReady=!!savedCompletion.completed;
@@ -443,6 +528,8 @@ lessonsFetch.catch(function(){
         }else{
           nextHtml='<button type="button" class="btn primary" id="navNext" disabled style="opacity:.5;cursor:not-allowed" title="Pass 90% of lesson quizzes first" aria-describedby="navHint">'+esc(lastCtaLabel)+'</button><span class="sr-only" id="navHint">Pass 90% of the lesson quizzes to unlock this.</span>';
         }
+      } else if(slides[currentIndex].kind==='video' && !videoWatchReady){
+        nextHtml='<span class="video-next-locked" role="status" aria-live="polite">Watch 90% to unlock Continue</span>';
       } else {
         nextHtml='<button type="button" class="btn primary" id="navNext">Continue</button>';
       }
@@ -455,8 +542,12 @@ lessonsFetch.catch(function(){
       idx=Math.max(0,Math.min(slides.length-1,idx));
       currentIndex=idx;
       if(idx>maxReached) maxReached=idx;
-      $('content').innerHTML='<div class="slide" tabindex="-1" role="region" aria-label="Slide '+(idx+1)+' of '+slides.length+': '+esc(slides[idx].label)+'">'+slides[idx].html+'</div>';
+      if(document.body&&document.body.classList&&document.body.classList.toggle) document.body.classList.toggle('video-immersive', slides[idx].kind==='video');
+      stopVideoTracking();
+      $('content').innerHTML='<div class="slide '+(slides[idx].kind==='video'?'video-slide':'')+'" tabindex="-1" role="region" aria-label="Slide '+(idx+1)+' of '+slides.length+': '+esc(slides[idx].label)+'">'+slides[idx].html+'</div>';
       renderTrail();
+      renderNav();
+      setupVideoSlide(slides[idx]);
       renderNav();
       var reduce=false; try{reduce=typeof window.matchMedia==='function'&&window.matchMedia('(prefers-reduced-motion: reduce)').matches}catch(e){}
       window.scrollTo({top:0,behavior:reduce?'auto':'smooth'});

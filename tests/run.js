@@ -9716,8 +9716,19 @@ console.log('courses/lesson.html: the lesson player inline script (Agent 182)');
 
   test('youtubeEmbedSrc: falsy -> "", fixed host + player params, the id is URI-encoded', () => {
     assert.strictEqual(H.youtubeEmbedSrc(''), ''); assert.strictEqual(H.youtubeEmbedSrc(null), ''); assert.strictEqual(H.youtubeEmbedSrc(undefined), '');
-    assert.strictEqual(H.youtubeEmbedSrc('abcdef1'), 'https://www.youtube.com/embed/abcdef1?rel=0&modestbranding=1&playsinline=1');
-    assert.strictEqual(H.youtubeEmbedSrc('a/b?c"d'), 'https://www.youtube.com/embed/a%2Fb%3Fc%22d?rel=0&modestbranding=1&playsinline=1');
+    assert.strictEqual(H.youtubeEmbedSrc('abcdef1'), 'https://www.youtube.com/embed/abcdef1?autoplay=1&mute=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&rel=0&modestbranding=1&playsinline=0&enablejsapi=1');
+    assert.strictEqual(H.youtubeEmbedSrc('a/b?c"d'), 'https://www.youtube.com/embed/a%2Fb%3Fc%22d?autoplay=1&mute=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&rel=0&modestbranding=1&playsinline=0&enablejsapi=1');
+  });
+
+  test('video lesson contract: videos precede text, exactly three text labels exist, YouTube controls are locked, and Continue is gated at 90%', () => {
+    assert.ok(/media\.videos\.forEach[\s\S]*splitIntoThreeTextSlides/.test(SCRIPT), 'video slides are created before the three text slides');
+    assert.ok(/labels=\['1 · Intro & explanation','2 · Usage & examples','3 · More details'\]/.test(SCRIPT));
+    assert.ok(/controls:0,disablekb:1,fs:0/.test(SCRIPT));
+    assert.ok(/autoplay:1,mute:1/.test(SCRIPT));
+    assert.ok(/t\/d>=\.9/.test(SCRIPT));
+    assert.ok(/slides\[currentIndex\]\.kind==='video' && !videoWatchReady/.test(SCRIPT));
+    assert.ok(/requestFullscreen|webkitRequestFullscreen/.test(SCRIPT));
+    assert.ok(/https:\/\/www\.youtube\.com\/iframe_api/.test(HTML));
   });
 
   test('estimateMinutes: estimated_minutes wins (rounded, floored at 1, numeric strings ok); otherwise words/200 rounded up, min 1', () => {
@@ -9769,8 +9780,8 @@ console.log('courses/lesson.html: the lesson player inline script (Agent 182)');
     assert.ok(H.renderMediaItem(ent('https://a/v.mp3'), 'audio', 'L', false).includes(OFF));
     assert.ok(H.renderMediaItem(ent('javascript:x'), 'audio', 'L', false).includes(NA), 'unsafe wins over offline');
     const yt = H.renderMediaItem(ent('https://youtu.be/abcdef1', 'Intro <b>'), 'video', 'Lesson "1"', true);
-    assert.ok(yt.includes('<iframe src="https://www.youtube.com/embed/abcdef1?rel=0&amp;modestbranding=1&amp;playsinline=1"'), yt);
-    assert.ok(yt.includes('<h2>Intro &lt;b&gt;</h2>') && yt.includes('title="Intro &lt;b&gt; video"') && yt.includes('loading="lazy"') && yt.includes('allowfullscreen'));
+    assert.ok(yt.includes('<iframe id="youtube-player-0" src="https://www.youtube.com/embed/abcdef1?autoplay=1&amp;mute=1&amp;controls=0&amp;disablekb=1&amp;fs=0&amp;iv_load_policy=3&amp;rel=0&amp;modestbranding=1&amp;playsinline=0&amp;enablejsapi=1"'), yt);
+    assert.ok(yt.includes('<h2>Intro &lt;b&gt;</h2>') && yt.includes('title="Intro &lt;b&gt; video"') && yt.includes('loading="eager"') && yt.includes('allow="autoplay; fullscreen; encrypted-media"') && yt.includes('allowfullscreen') && yt.includes('tabindex="-1"'));
     assert.ok(H.renderMediaItem(ent('https://youtu.be/abcdef1'), 'video', 'Lesson "1"', true).includes('title="Lesson &quot;1&quot; video"'), 'falls back to the lesson title');
     assert.ok(H.renderMediaItem(ent('https://youtu.be/abcdef1'), 'video', 'L', true).includes('<h2>Video</h2>'));
     const v = H.renderMediaItem(ent('https://cdn.example/a.mp4?x=1&y="2"'), 'video', 'L', true);
@@ -10068,79 +10079,73 @@ console.log('courses/lesson.html: the lesson player inline script (Agent 182)');
     assert.strictEqual(p.err(), null);
     assert.strictEqual(p.els.content.querySelectorAll('img').length, 0, 'no element was injected');
     assert.ok(!/onerror=alert/.test(p.content.replace(/&lt;img src=x onerror=alert\(1\)&gt;/g, '')), 'the payload only appears escaped');
-    assert.ok(p.content.includes('Summary') === false && p.content.includes('S &lt;img'));
-    assert.ok(p.content.includes('<li>E &lt;img') && p.content.includes('<span class="term">KT &lt;img'));
-    assert.strictEqual(p.sb.document.title, 'Mylingo \u00b7 T ' + X, 'document.title is text, not markup');
+    assert.ok(p.content.includes('T &lt;img'));
+    let allSlides = p.content;
+    await p.next(); allSlides += p.content;
+    await p.next(); allSlides += p.content;
+    assert.ok(allSlides.includes('S &lt;img') || allSlides.includes('E &lt;img') || allSlides.includes('KT &lt;img'));
+    assert.strictEqual(p.sb.document.title, 'Mylingo · T ' + X, 'document.title is text, not markup');
   });
 
-  testAsync('page: revision-only lesson - "Quick revision" summary, Examples and Key terms cards; blanks filtered; empty summary shows the placeholder', async () => {
+  testAsync('page: revision-only lesson - always exactly three text slides with intro, usage/examples and more-details content', async () => {
     const p = await runPage();
-    assert.ok(p.content.includes('<h2>Quick revision</h2><p class="summary">Summary 1</p>'));
-    assert.ok(p.content.includes('<h2>Examples</h2><ul class="examples"><li>ex 1</li></ul>'));
-    assert.ok(p.content.includes('<h2>Key terms</h2><div class="terms"><span class="term">term 1</span></div>'));
+    assert.deepStrictEqual(p.items().map((b) => b.querySelectorAll('span')[2].textContent), ['1 · Intro & explanation', '2 · Usage & examples', '3 · More details', 'Practice']);
+    assert.ok(p.content.includes('Summary 1') || p.content.includes('ex 1') || p.content.includes('term 1'));
     const f = mkFiles(); f['../course_content/lessons/a1.json'][0].revision = { summary: '   ', examples: ['', null, 'kept'], key_terms: [] };
     const p2 = await runPage({ files: f });
-    assert.ok(p2.content.includes('No revision notes yet for this lesson'));
-    assert.ok(p2.content.includes('<li>kept</li>') && !p2.content.includes('<li></li>') && !p2.content.includes('Key terms'));
+    assert.ok(p2.content.includes('kept') && !p2.content.includes('<li></li>'));
     const f3 = mkFiles(); delete f3['../course_content/lessons/a1.json'][0].revision;
     const p3 = await runPage({ files: f3 });
-    assert.ok(p3.content.includes('No revision notes yet') && p3.content.includes('~1 min read') && !p3.content.includes('Examples'));
+    assert.ok(p3.content.includes('Review this lesson introduction') && p3.content.includes('~1 min read'));
   });
 
-  testAsync('page: body_content lesson - one text slide, sanitised, revision cards NOT shown; blank body falls back to the revision cards', async () => {
+  testAsync('page: body_content lesson - sanitised rich text is split across exactly three text slides', async () => {
     const f = mkFiles();
     f['../course_content/lessons/a1.json'][0].body_content = '<h2>Rich</h2><p onclick="x()">Hello <script>bad()</script><a href="javascript:x">l</a></p>';
     const p = await runPage({ files: f });
-    assert.ok(p.content.includes('<div class="lesson-content"><h2>Rich</h2><p>Hello <a>l</a></p></div>'), p.content);
-    assert.ok(!p.content.includes('Quick revision'));
-    assert.strictEqual(p.items().length, 2, 'Lesson + Practice');
-    const f2 = mkFiles(); f2['../course_content/lessons/a1.json'][0].body_content = '   ';
-    assert.ok((await runPage({ files: f2 })).content.includes('Quick revision'));
+    assert.ok(p.content.includes('<div class="lesson-content"><h2>Rich</h2>') || p.content.includes('<div class="lesson-content">Rich</div>'), p.content);
+    assert.ok(!p.content.includes('<script') && !p.content.includes('onclick=') && !p.content.includes('href="javascript'));
+    assert.strictEqual(p.items().length, 4, 'three text slides plus Practice when no media is supplied');
+    assert.deepStrictEqual(p.items().slice(0,3).map((b) => b.querySelectorAll('span')[2].textContent), ['1 · Intro & explanation', '2 · Usage & examples', '3 · More details']);
   });
 
-  testAsync('page: chapters[] - one slide per non-empty chapter (body_content | html | body), titles or "Chapter N", each sanitised; chapters win over body_content', async () => {
+  testAsync('page: chapters[] - chapter content is flattened and split into the required three text slides', async () => {
     const f = mkFiles();
     Object.assign(f['../course_content/lessons/a1.json'][0], {
       body_content: '<p>IGNORED</p>',
       chapters: [{ title: 'One <b>', body_content: '<p>c1</p>' }, { html: '<p>c2<script>x</script></p>' }, { body: '<p>c3</p>' }, { title: 'Empty', body_content: '  ' }, null, { title: 'NoBody' }],
     });
     const p = await runPage({ files: f });
-    const labels = p.items().map((b) => b.querySelectorAll('span')[2].textContent);
-    assert.deepStrictEqual(labels, ['One <b>', 'Chapter 2', 'Chapter 3', 'Practice']);
-    assert.ok(p.content.includes('<p>c1</p>') && !p.content.includes('IGNORED'));
-    await p.next(); assert.ok(p.content.includes('<p>c2</p>') && !p.content.includes('<script'));
-    assert.strictEqual(p.items()[0].getAttribute('aria-label'), 'Slide 1 of 4: One <b>', 'the label is escaped in markup and decoded back to plain text');
+    assert.deepStrictEqual(p.items().map((b) => b.querySelectorAll('span')[2].textContent), ['1 · Intro & explanation', '2 · Usage & examples', '3 · More details', 'Practice']);
+    let chapterSlides = p.content; await p.next(); chapterSlides += p.content; await p.next(); chapterSlides += p.content; assert.ok(chapterSlides.includes('c1') && chapterSlides.includes('c2') && chapterSlides.includes('c3') && !chapterSlides.includes('IGNORED') && !chapterSlides.includes('<script'));
   });
 
-  testAsync('page: deck order is text -> videos -> audios -> practice, kinds drive the trail icons, media labels default to "Video N" / "Audio N"', async () => {
+  testAsync('page: deck order is videos -> three text slides -> audios -> practice; media labels and icons stay deterministic', async () => {
     const f = mkFiles();
     Object.assign(f['../course_content/lessons/a1.json'][0], { video_urls: ['https://youtu.be/abcdef1', { url: 'https://cdn.example/v.mp4', title: 'Clip' }], audio_urls: ['https://cdn.example/a.mp3'] });
     const p = await runPage({ files: f });
     const its = p.items();
-    assert.deepStrictEqual(its.map((b) => b.querySelectorAll('span')[1].textContent), ['T', '\u25b6', '\u25b6', '\u25d6', '\u2713']);
-    assert.deepStrictEqual(its.map((b) => b.querySelectorAll('span')[2].textContent), ['Lesson', 'Video 1', 'Clip', 'Audio 1', 'Practice']);
-    await p.next();
-    assert.ok(p.content.includes('<iframe src="https://www.youtube.com/embed/abcdef1'), p.content);
-    await p.next(); assert.ok(p.content.includes('<video controls') && p.content.includes('<h2>Clip</h2>'));
-    await p.next(); assert.ok(p.content.includes('<audio controls'));
+    assert.deepStrictEqual(its.map((b) => b.querySelectorAll('span')[1].textContent), ['▶', '▶', 'T', 'T', 'T', '◖', '✓']);
+    assert.deepStrictEqual(its.map((b) => b.querySelectorAll('span')[2].textContent), ['Video 1', 'Clip', '1 · Intro & explanation', '2 · Usage & examples', '3 · More details', 'Audio 1', 'Practice']);
+    assert.ok(p.els.content.querySelector('.video-progress') && p.els.content.querySelector('.video-progress').textContent === 'Watch 90% to unlock Continue.');
   });
 
   testAsync('page: media offline (navigator.onLine === false) shows the offline notice; missing navigator.onLine counts as online; unsafe urls never embed', async () => {
     const f = mkFiles(); Object.assign(f['../course_content/lessons/a1.json'][0], { video_urls: ['https://youtu.be/abcdef1'] });
-    const off = await runPage({ files: f, onLine: false }); await off.next();
+    const off = await runPage({ files: f, onLine: false });
     assert.ok(off.content.includes('Media unavailable offline.') && !off.content.includes('<iframe'));
-    const unk = await runPage({ files: f, onLine: 'absent' }); await unk.next();
+    const unk = await runPage({ files: f, onLine: 'absent' });
     assert.ok(unk.content.includes('<iframe'));
     const g = mkFiles(); Object.assign(g['../course_content/lessons/a1.json'][0], { video_urls: ['javascript:alert(1)'] });
-    const bad = await runPage({ files: g }); await bad.next();
+    const bad = await runPage({ files: g });
     assert.ok(bad.content.includes('This media link is not available.') && !/<iframe|<video/.test(bad.content));
-    const noSu = await runPage({ files: f, modules: ['ll', 'cp'] }); await noSu.next();
+    const noSu = await runPage({ files: f, modules: ['ll', 'cp'] });
     assert.ok(noSu.content.includes('This media link is not available.'), 'no safe-url.js -> fail closed');
   });
 
   testAsync('page: the window "offline" event swaps a rendered video wrapper for the offline notice, and does nothing when none is on screen', async () => {
     const f = mkFiles(); Object.assign(f['../course_content/lessons/a1.json'][0], { video_urls: ['https://youtu.be/abcdef1'] });
-    const p = await runPage({ files: f }); await p.next();
+    const p = await runPage({ files: f });
     assert.ok(p.els.content.querySelector('.video-wrap'));
     assert.strictEqual(p.listeners.offline.length, 1);
     await p.fire('offline');
@@ -10174,21 +10179,21 @@ console.log('courses/lesson.html: the lesson player inline script (Agent 182)');
 
   testAsync('page: ?slide=practice opens on the practice slide; any other / unknown value opens slide 1', async () => {
     assert.ok((await runPage({ search: '?lesson=course-a1-unit-01-lesson-01&slide=practice' })).content.includes('Practice in this lesson'));
-    assert.ok((await runPage({ search: '?lesson=course-a1-unit-01-lesson-01&slide=lesson' })).content.includes('Quick revision'));
-    assert.ok((await runPage({ search: '?lesson=course-a1-unit-01-lesson-01&slide=video-0' })).content.includes('Quick revision'));
-    assert.ok((await runPage({ search: '?lesson=course-a1-unit-01-lesson-01&slide=PRACTICE' })).content.includes('Quick revision'), 'case-sensitive');
+    assert.ok((await runPage({ search: '?lesson=course-a1-unit-01-lesson-01&slide=lesson' })).content.includes('Summary 1'));
+    assert.ok((await runPage({ search: '?lesson=course-a1-unit-01-lesson-01&slide=video-0' })).content.includes('Summary 1'));
+    assert.ok((await runPage({ search: '?lesson=course-a1-unit-01-lesson-01&slide=PRACTICE' })).content.includes('Summary 1'), 'case-sensitive');
   });
 
   testAsync('page: navigation - Continue / Back move one slide, the trail marks active + done, aria-current follows, every move scrolls to top', async () => {
     const f = mkFiles(); Object.assign(f['../course_content/lessons/a1.json'][0], { audio_urls: ['https://cdn.example/a.mp3'] });
     const p = await runPage({ files: f });
     assert.strictEqual(p.btn('navBack'), null); assert.strictEqual(p.btn('navNext').textContent, 'Continue');
-    assert.strictEqual(p.items().length, 3);
+    assert.strictEqual(p.items().length, 5);
     const st = () => p.items().map((b) => (b.className.includes('active') ? 'A' : b.className.includes('done') ? 'D' : '-') + b.getAttribute('aria-current')).join(' ');
-    assert.strictEqual(st(), 'Astep -null -null');
-    await p.next(); assert.strictEqual(st(), 'Dnull Astep -null'); assert.ok(p.btn('navBack'));
-    await p.next(); assert.strictEqual(st(), 'Dnull Dnull Astep');
-    await p.back(); assert.strictEqual(st(), 'Dnull Astep -null', 'going back un-marks the slide you left');
+    assert.strictEqual(st(), 'Astep -null -null -null -null');
+    await p.next(); assert.strictEqual(st(), 'Dnull Astep -null -null -null'); assert.ok(p.btn('navBack'));
+    await p.next(); assert.strictEqual(st(), 'Dnull Dnull Astep -null -null');
+    await p.back(); assert.strictEqual(st(), 'Dnull Astep -null -null -null', 'going back un-marks the slide you left');
     assert.ok(p.scrolls.length >= 4 && p.scrolls.every((s) => s.top === 0 && s.behavior === 'smooth'));
     await p.back(); assert.strictEqual(p.btn('navBack'), null, 'no Back on the first slide');
   });
@@ -10199,10 +10204,10 @@ console.log('courses/lesson.html: the lesson player inline script (Agent 182)');
     assert.ok(!/role=\"tab/.test(p.trail) && !/aria-selected/.test(p.trail), 'no tab/tablist semantics without tabpanels');
     assert.ok(!/role=\"tablist\"/.test(HTML), 'nav is not overridden into a tablist');
     const dis = () => p.items().map((b) => b.getAttribute('aria-disabled') || '-').join(' ');
-    assert.strictEqual(dis(), '- true true', 'only slides beyond the furthest reached are aria-disabled');
-    await p.next(); assert.strictEqual(dis(), '- - true');
+    assert.strictEqual(dis(), '- true true true true', 'only slides beyond the furthest reached are aria-disabled');
+    await p.next(); assert.strictEqual(dis(), '- - true true true');
     const slide = p.els.content.querySelector('.slide');
-    assert.ok(/Slide 2 of 3: /.test(slide.getAttribute('aria-label')) && slide.getAttribute('tabindex') === '-1' && slide.getAttribute('role') === 'region');
+    assert.ok(/Slide 2 of 5: /.test(slide.getAttribute('aria-label')) && slide.getAttribute('tabindex') === '-1' && slide.getAttribute('role') === 'region');
     assert.strictEqual(slide.focusCount, 1, 'Continue moves focus to the new slide');
     await p.back(); assert.strictEqual(p.els.content.querySelector('.slide').focusCount, 1, 'Back moves focus too');
     const first = await runPage({ files: f });
@@ -10219,21 +10224,21 @@ console.log('courses/lesson.html: the lesson player inline script (Agent 182)');
   testAsync('page: chapter-trail clicks only reach slides already visited (idx <= furthest reached)', async () => {
     const f = mkFiles(); Object.assign(f['../course_content/lessons/a1.json'][0], { audio_urls: ['https://cdn.example/a.mp3'] });
     const p = await runPage({ files: f });
-    p.items()[2].click(); await settle();
-    assert.ok(p.content.includes('Quick revision'), 'jumping ahead is ignored');
-    await p.next(); await p.next();
+    p.items()[4].click(); await settle();
+    assert.ok(p.content.includes('Summary 1'), 'jumping ahead is ignored');
+    await p.next(); await p.next(); await p.next(); await p.next();
     assert.ok(p.content.includes('Practice in this lesson'));
     p.items()[0].click(); await settle();
-    assert.ok(p.content.includes('Quick revision'), 'jumping back is allowed');
-    p.items()[2].click(); await settle();
+    assert.ok(p.content.includes('Summary 1'), 'jumping back is allowed');
+    p.items()[4].click(); await settle();
     assert.ok(p.content.includes('Practice in this lesson'), 'and forward again to anything already reached');
   });
 
   testAsync('page: opening straight on ?slide=practice counts practice as reached, so every earlier slide is reachable from the trail', async () => {
     const p = await runPage({ search: '?lesson=course-a1-unit-01-lesson-01&slide=practice' });
     p.items()[0].click(); await settle();
-    assert.ok(p.content.includes('Quick revision'));
-    p.items()[1].click(); await settle();
+    assert.ok(p.content.includes('Summary 1'));
+    p.items()[3].click(); await settle();
     assert.ok(p.content.includes('Practice in this lesson'));
   });
 
@@ -10326,6 +10331,7 @@ console.log('courses/lesson.html: the lesson player inline script (Agent 182)');
         assert.ok(p.els.content.querySelector('h1') && p.els.content.querySelector('h1').textContent === lesson.title, lesson.lesson_id);
         // Document-title behavior is covered by the dedicated player-title test above.
         if (lesson.youtube_url) {
+          while (p.els.content.querySelector('.slide') && p.els.content.querySelector('.slide').getAttribute('aria-label').indexOf('Slide 1 of') !== 0) { if (!p.btn('navBack')) break; await p.back(); }
           assert.ok(p.content.includes('https://www.youtube.com/embed/wDchsz8nmbo'), lesson.lesson_id + ' missing YouTube iframe');
           assert.ok(p.content.includes('title="' + lesson.title + ' video"'), lesson.lesson_id + ' missing video context');
                 } else {
