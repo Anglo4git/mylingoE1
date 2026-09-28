@@ -120,8 +120,8 @@ main{max-width:920px;margin:auto;padding:20px 16px 32px}
 @keyframes overlayIn{from{opacity:0}to{opacity:1}}
 @keyframes modalIn{from{opacity:0;transform:scale(.94) translateY(8px)}to{opacity:1;transform:scale(1) translateY(0)}}
 .modal{text-align:center;max-width:420px;width:100%}
-.modal .stack{display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:4px}.modal .stack.actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch}.modal .stack.actions>.reco,.modal .stack.actions>.suggest,.modal .stack.actions>.small{grid-column:1/-1;width:100%}.modal .stack.actions>.primary,.modal .stack.actions>.secondary{width:100%;min-width:0;margin:0;white-space:normal;line-height:1.2}
-@media(max-width:620px){.modal .stack.actions{grid-template-columns:repeat(2,minmax(0,1fr))}.modal .stack.actions>.reco,.modal .stack.actions>.suggest,.modal .stack.actions>.small{grid-column:1/-1}}
+.modal .stack{display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:4px}.modal .stack.actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch}.modal .stack.actions>.reco,.modal .stack.actions>.suggest,.modal .stack.actions>.lesson-complete,.modal .stack.actions>.small{grid-column:1/-1;width:100%}.modal .stack.actions>.primary,.modal .stack.actions>.secondary{width:100%;min-width:0;margin:0;white-space:normal;line-height:1.2}
+@media(max-width:620px){.modal .stack.actions{grid-template-columns:repeat(2,minmax(0,1fr))}.modal .stack.actions>.reco,.modal .stack.actions>.suggest,.modal .stack.actions>.lesson-complete,.modal .stack.actions>.small{grid-column:1/-1}}
 @media(min-width:621px){.modal .stack.actions{grid-template-columns:repeat(3,minmax(0,1fr))}}
 .logo{width:64px;height:64px;border-radius:20px;margin:0 auto 16px;box-shadow:0 8px 0 var(--brand-dark)}
 .logo img{width:100%;height:100%;display:block;border-radius:20px}
@@ -137,6 +137,14 @@ main{max-width:920px;margin:auto;padding:20px 16px 32px}
 .suggest-grid{display:flex;flex-direction:column;gap:8px}
 .suggest-grid a{display:block;border:1px solid var(--line);border-radius:14px;padding:12px 14px;text-decoration:none;color:inherit;font-weight:800;font-size:14px;background:#fff}
 .suggest-grid a:hover{border-color:#c9d0d8}
+.lesson-complete{margin-top:4px;padding:16px;border-radius:16px;background:var(--success-soft);color:#347800;font-weight:700;text-align:center;width:100%;display:flex;flex-direction:column;align-items:center;gap:8px}
+.lesson-complete-icon{width:26px;height:26px;flex:0 0 auto}
+.lesson-complete-icon circle,.lesson-complete-icon path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+#end .modal{position:relative}
+.confetti{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:5;border-radius:inherit}
+.confetti span{position:absolute;top:-12px;width:7px;height:13px;border-radius:2px;opacity:0;animation:confetti-fall 1300ms ease-in forwards}
+@keyframes confetti-fall{0%{opacity:1;transform:translateY(0) rotate(0deg)}100%{opacity:0;transform:translateY(220px) rotate(340deg)}}
+@media(prefers-reduced-motion:reduce){.confetti{display:none}}
 .spinner{width:34px;height:34px;border-radius:50%;border:4px solid var(--line);border-top-color:var(--brand);animation:spin .8s linear infinite;margin:0 auto 14px}
 @keyframes spin{to{transform:rotate(360deg)}}
 .errbox{color:#a52626}
@@ -159,7 +167,7 @@ main{max-width:920px;margin:auto;padding:20px 16px 32px}
 <a href="#main-content" class="skip-link">Skip to question</a>
 <header class="header"><div class="header-inner">
   <button class="icon-btn" id="exitBtn" aria-label="Exit quiz" type="button"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
-  <div class="brand"><img class="brand-logo-sm" src="./brand/logo-horizontal.svg" alt="Mylingo" width="62" height="20"> · <span id="titleTop"></span></div>
+  <div class="brand"><picture><source media="(prefers-color-scheme: dark)" srcset="./brand/logo-horizontal-dark.svg"><img class="brand-logo-sm" src="./brand/logo-horizontal.svg" alt="Mylingo" width="62" height="20"></picture> · <span id="titleTop"></span></div>
   <div class="counter" id="counter" aria-live="polite"></div>
 </div>
 <div class="progress" role="progressbar" aria-label="Quiz progress" aria-valuemin="0" aria-valuemax="100" id="progressWrap" aria-valuenow="0"><i id="bar"></i></div>
@@ -215,19 +223,23 @@ main{max-width:920px;margin:auto;padding:20px 16px 32px}
 </div></section>
 
 <section class="overlay" id="end" style="display:none" aria-labelledby="result"><div class="modal">
+  <div class="confetti" id="confetti" aria-hidden="true"></div>
   <div class="result-ring"><span id="finalPct">0%</span></div>
   <h1 id="result" tabindex="-1"></h1><p class="small" id="message"></p>
   <div class="badges" id="gamifyBadges" style="display:none;justify-content:center;margin:4px 0 10px"></div><div id="placementProfile" style="text-align:left;margin:12px 0;display:none"></div>
   <div class="stack actions">
     <div class="reco" id="reco" style="display:none"></div>
     <div class="suggest" id="suggest" style="display:none"><h2>More <span id="suggestCat"></span> practice</h2><div class="suggest-grid" id="suggestGrid"></div></div>
+    <div class="lesson-complete" id="lessonComplete" style="display:none"><svg class="lesson-complete-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m8 12 2.5 2.5L16 9"></path></svg><p style="margin:0">Lesson complete — every quiz passed.</p></div>
+    <div class="suggest" id="lessonSuggest" style="display:none"><h2>Quizzes left in this lesson</h2><div class="suggest-grid" id="lessonSuggestGrid"></div></div>
     <button class="primary" id="continueBtn" style="display:none"></button>
+    <button class="primary" id="returnQuizzesBtn" style="display:none">Return to quizzes</button>
     <button class="primary" id="again">Try again</button>
     <div class="small">Your results are saved automatically.</div>
   </div>
 </div></section>
 
-<script src="./js/safe-url.js"></script><script src="./js/gamification.js"></script><script src="./js/placement.js"></script><script src="./js/recommendations.js"></script><script src="./js/skill-mastery.js"></script><script src="./js/review-scheduler.js"></script><script src="./js/canonical-metadata.js"></script><script src="./js/runtime-v2-adapter.js"></script><script src="./js/runtime-content-loader.js"></script><script src="./js/app-shell.js"></script>
+<script src="./js/safe-url.js"></script><script src="./js/gamification.js"></script><script src="./js/placement.js"></script><script src="./js/recommendations.js"></script><script src="./js/skill-mastery.js"></script><script src="./js/review-scheduler.js"></script><script src="./js/canonical-metadata.js"></script><script src="./js/runtime-v2-adapter.js"></script><script src="./js/runtime-content-loader.js"></script><script src="./js/course-progress.js"></script><script src="./js/app-shell.js"></script>
 <script>
 (function(){
 'use strict';
@@ -1035,7 +1047,33 @@ function finishAnswer(ok,correctText,input){
   $('next').style.display='inline-block';requestAnimationFrame(()=>requestAnimationFrame(()=>$('next').classList.add('show')));$('next').focus();save(false);
 }
 function next(){
-  if(i<data.questions.length-1){i++;render();saveSession()}else end();
+  // Guards against next() being dispatched a second time before the first call has
+  // finished (a fast double-tap, or another handler triggering it in the same tick).
+  // Kept as a property on next() itself, rather than a module-level variable, so this
+  // function stays a single self-contained unit.
+  if(next._busy)return;
+  next._busy=true;
+  const prevI=i;
+  try{
+    if(i<data.questions.length-1){i++;render();saveSession()}else end();
+  }catch(e){
+    // render()/end() touch a lot of per-question-type DOM and data-shape assumptions; an
+    // edge case either doesn't expect can throw here, which used to leave the Next button
+    // looking like it silently did nothing (the error only ever reached the console).
+    // Roll the pointer back to where it was before this attempt (so retrying re-renders
+    // the same question rather than skipping past it or double-advancing), surface a
+    // visible message in the existing feedback area instead of failing silently, and
+    // leave the Next button up so tapping it retries -- this doesn't reload the quiz or
+    // touch the score, and turns a silent failure into a reproducible one (same question,
+    // same error in the console) if it happens again.
+    try{console.error('[mylingo] next() failed',e)}catch(_){}
+    i=prevI;
+    const f=$('feedback');f.className='feedback show bad';
+    f.innerHTML='<strong>Something went wrong.</strong> Tap Continue to try again.';
+    $('next').style.display='inline-block';$('next').classList.add('show');
+  }finally{
+    next._busy=false;
+  }
 }
 
 function recommendation(pct){
@@ -1075,6 +1113,68 @@ function renderSuggestions(){
   grid.innerHTML=picks.map(item=>'<a href="./quiz.html?quiz='+encodeURIComponent(item.id)+'&level='+level+'&recommended=1">'+esc(item.title)+'</a>').join('');
   $('suggestCat').textContent=data.category;
   box.style.display='block';
+}
+
+// Agent 242 (TASK A): renders the lesson-backed quiz ending card.
+//  - 1-quiz lesson: no continue, no suggestion links — just a way back.
+//  - 2+ quiz lesson: no continue; "Return to quizzes" plus links to the
+//    quizzes in *this* lesson that aren't passed yet. Once every quiz in
+//    the lesson is passed, the suggestion list is replaced by a
+//    completion state.
+// isMastered() mirrors course-progress.js's MASTERY_THRESHOLD (60%) so a
+// missing/old MylingoCourseProgress load can't silently under-report.
+function lessonMasteryCheck(rec){
+  if(window.MylingoCourseProgress) return window.MylingoCourseProgress.isMastered(rec);
+  return !!(rec&&rec.status==='completed'&&(rec.best==null||rec.best>=60));
+}
+function renderLessonEndingCard(){
+  const returnBtn=$('returnQuizzesBtn');
+  returnBtn.style.display='inline-flex';
+  returnBtn.textContent='Return to quizzes';
+  returnBtn.onclick=()=>{stopAllSounds();location.href=backTarget()};
+
+  getLevelLessons().then(lessons=>{
+    const owner=lessons.find(l=>l.lesson_id===lessonParam);
+    const ids=(owner&&Array.isArray(owner.exercise_quiz_ids))?owner.exercise_quiz_ids.slice():[];
+    if(ids.length<2) return; // A1: single-quiz (or unresolvable) lesson — the return button above is enough.
+
+    const store=window.MylingoCourseProgress?window.MylingoCourseProgress.readProgress():gp();
+    const remainingIds=ids.filter(qid=>qid!==data.id&&!lessonMasteryCheck(store[qid]));
+    const allMastered=ids.every(qid=>lessonMasteryCheck(qid===data.id?store[data.id]:store[qid]));
+
+    if(allMastered){ $('lessonComplete').style.display='flex'; return; }
+    if(!remainingIds.length) return; // this quiz not yet passed and nothing else outstanding to suggest
+
+    getManifest().then(list=>{
+      const byId=Array.isArray(list)?new Map(list.map(item=>[item.id,item])):new Map();
+      const items=remainingIds.map(qid=>({id:qid,title:(byId.get(qid)||{}).title||qid}));
+      $('lessonSuggestGrid').innerHTML=items.map(item=>'<a href="./quiz.html?quiz='+encodeURIComponent(item.id)+'&level='+encodeURIComponent(level)+'&lesson='+encodeURIComponent(lessonParam)+'&redirect='+encodeURIComponent(backTarget())+'">'+esc(item.title)+'</a>').join('');
+      $('lessonSuggest').style.display='block';
+    }).catch(()=>{});
+  }).catch(()=>{}); // network/parse failure — the return button already covers "a way back"
+}
+
+// Agent 242 (TASK B): lightweight, dependency-free confetti burst for a
+// passed quiz. Fully additive — a failure here must never touch the
+// result screen, and prefers-reduced-motion skips it entirely.
+function fireConfetti(){
+  try{
+    if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const host=$('confetti'); if(!host) return;
+    const colors=['#ff5a5f','#ffc93c','#3ea6ff','#4cd137','#a66bff'];
+    const frag=document.createDocumentFragment();
+    for(let n=0;n<22;n++){
+      const s=document.createElement('span');
+      s.style.left=(Math.random()*100)+'%';
+      s.style.background=colors[n%colors.length];
+      s.style.animationDelay=Math.round(Math.random()*180)+'ms';
+      s.style.animationDuration=(1100+Math.round(Math.random()*500))+'ms';
+      frag.appendChild(s);
+    }
+    host.innerHTML='';
+    host.appendChild(frag);
+    setTimeout(()=>{ if(host) host.innerHTML=''; },2000);
+  }catch(e){ /* purely decorative — never break the results screen */ }
 }
 
 function orientationEstimate(){
@@ -1249,22 +1349,13 @@ function end(){
     }
   }catch(e){ /* review storage must never break the results screen */ }
 
-  // Lesson-owned assessment: only a passed quiz may expose Continue.
-  // Quiz mastery uses the shared 60% threshold; failed attempts keep the
-  // completion card to its single Try again action.
-  if(lessonParam && mode!=='placement' && pct>=60){
-    getLevelLessons().then(lessons=>{
-      const ordered=lessons.filter(l=>l.status==='published').sort((a,b)=>String(a.unit_id).localeCompare(String(b.unit_id)) || ((a.order||0)-(b.order||0)));
-      const pos=ordered.findIndex(l=>l.lesson_id===lessonParam);
-      const next=pos>=0?ordered[pos+1]:null;
-      const btn=$('continueBtn');
-      if(btn){
-        btn.style.display='inline-flex';
-        btn.textContent=next?'Continue':'Back to lesson practice';
-        btn.onclick=()=>{stopAllSounds();location.href=next?'../courses/lesson.html?lesson='+encodeURIComponent(next.lesson_id)+'&level='+encodeURIComponent(level)+'&slide=lesson':backTarget()};
-      }
-    }).catch(()=>{});
-  }
+  // Lesson-owned assessment ending card (Agent 242 / TASK A): the quiz
+  // ending card never exposes "Continue" for a lesson-backed quiz — that
+  // affordance now lives on the lesson player's own slides (see
+  // courses/lesson.html). Here we only ever offer a way back to the
+  // lesson's quiz list, plus — for lessons with 2+ quizzes — the quizzes
+  // in this lesson the learner hasn't passed yet.
+  if(pct>=60) fireConfetti();
 
   if(mode==='placement'){
     const profile=saveAssessmentResult(pct);
@@ -1286,6 +1377,11 @@ function end(){
     // No "more Placement practice" suggestions exist (placement quizzes
     // aren't listed in a level's manifest), so don't call renderSuggestions()
     // here — see the guard in renderSuggestions() for why this used to spin.
+  }else if(lessonParam){
+    $('reco').style.display='none';
+    $('suggest').style.display='none';
+    $('continueBtn').style.display='none';
+    renderLessonEndingCard();
   }else{
     $('reco').style.display='none';
     $('continueBtn').style.display='none';

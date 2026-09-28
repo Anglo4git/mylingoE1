@@ -30,16 +30,9 @@ function inlineScriptHashes(root) {
   return { hashes: [...set].sort(), perFile };
 }
 
-// script-src carries the YouTube IFrame API loader (https://www.youtube.com/iframe_api), required by the
-// video-first lesson player for onReady/progress-poll wiring; frame-src carries the actual
-// https://www.youtube.com/embed/... player iframe. Both are added AFTER the inline-script hashes so
-// scriptSrc still starts with "'self' 'sha256-" (see tests/run.js "CSP (Agent 17)"). No other third-party
-// origin is permitted anywhere in the policy. (Agent 240 fix — see CHANGELOG.md.)
-const YOUTUBE_ORIGIN = 'https://www.youtube.com';
-
 function policy(hashes) {
-  return "default-src 'self'; script-src 'self' " + hashes.map((h) => "'" + h + "'").join(' ') + ' ' + YOUTUBE_ORIGIN +
-    "; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; media-src 'self'; connect-src 'self'; frame-src " + YOUTUBE_ORIGIN + "; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'";
+  return "default-src 'self'; script-src 'self' https://www.youtube.com " + hashes.map((h) => "'" + h + "'").join(' ') +
+    "; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; media-src 'self'; connect-src 'self'; frame-src https://www.youtube.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'";
 }
 
 const LINE = /^(\s*Content-Security-Policy = )"[^"\n]*"\s*$/m;

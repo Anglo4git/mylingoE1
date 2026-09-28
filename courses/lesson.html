@@ -34,7 +34,7 @@ a{color:inherit}
 .chapter-trail{max-width:820px;margin:auto;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 0 12px}
 .chapter-trail::-webkit-scrollbar{display:none}
 .trail-item{flex:1 1 0;min-width:96px;display:flex;align-items:center;gap:8px;touch-action:manipulation;background:transparent;border:none;border-bottom:3px solid var(--line);color:var(--muted);font-size:12px;font-weight:800;padding:0 4px 10px;cursor:pointer;white-space:nowrap;transition:color .2s var(--ease-micro),border-color .2s var(--ease-micro)}
-.trail-item .num{width:22px;height:22px;border-radius:50%;background:var(--line);color:var(--muted);display:grid;place-items:center;font-size:10px;font-weight:900;flex:0 0 auto;transition:background .2s,color .2s}.trail-item .type-icon{font-size:12px;line-height:1;opacity:.95}.trail-item.active .type-icon{opacity:1}
+.trail-item .num{width:22px;height:22px;border-radius:50%;background:var(--line);color:var(--muted);display:grid;place-items:center;font-size:10px;font-weight:900;flex:0 0 auto;transition:background .2s,color .2s}.trail-item .type-icon{font-size:12px;line-height:1;opacity:.95;display:inline-flex;align-items:center}.trail-item .type-icon svg{width:14px;height:14px;display:block;flex:0 0 auto}.trail-item.active .type-icon{opacity:1}
 .trail-item.done .num{background:var(--success);color:#0b0c0d}
 .trail-item .kind{font-size:12px;line-height:1}.trail-item.active{color:var(--brand);border-color:var(--brand)}
 .trail-item.active .num{background:var(--brand);color:#fff}
@@ -86,13 +86,13 @@ h1{margin:6px 0 8px;font-size:24px;color:var(--ink)}
 .lesson-content blockquote,.lesson-content .tutor-notice-box{margin:12px 0;padding:12px 14px;border-left:3px solid var(--brand);background:var(--panel);border-radius:0 10px 10px 0;color:var(--muted)}
 .lesson-content img{max-width:100%;border-radius:12px;display:block;margin:12px 0}
 
-/* ---- Video wrapper: cinema-style 16:9 canvas (spotlight aesthetic) ---- */
+/* ---- Video wrapper: standard YouTube 16:9 player ---- */
 .video-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:14px;background:#000;box-shadow:0 12px 34px rgba(0,0,0,.5)}
 .video-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.video-slide .video-wrap{position:fixed;inset:0;width:100vw;height:100dvh;padding:0;border-radius:0;z-index:50;box-shadow:none}
-.video-slide .video-wrap iframe{width:100%;height:100%;pointer-events:none;user-select:none;-webkit-user-select:none}
-.video-lock{position:absolute;left:12px;bottom:12px;padding:7px 10px;border-radius:999px;background:rgba(0,0,0,.72);color:#fff;font-size:11px;font-weight:800;pointer-events:none}
-.video-progress{position:fixed;left:50%;bottom:calc(22px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:60;margin:0;padding:9px 14px;border-radius:999px;background:rgba(0,0,0,.78);color:#fff;font-size:12px;font-weight:800;white-space:nowrap}
+.video-slide .video-wrap{position:relative}
+.video-slide .video-wrap iframe{width:100%;height:100%;user-select:auto;-webkit-user-select:auto}
+.video-lock{display:none}
+.video-progress{margin:10px 0 0;padding:0;color:var(--muted);font-size:12px;font-weight:800}
 .video-next-locked{display:block;flex:1 1 auto;text-align:center;padding:14px 18px;border-radius:999px;background:#e5e7eb;color:#4b5563;font-size:14px;font-weight:900;min-height:48px}
 .video-slide + *{}
 .video-fallback{background:var(--panel);border:1px dashed var(--line);border-radius:12px;padding:16px;color:var(--muted);font-size:13px;text-align:center}
@@ -104,13 +104,13 @@ h1{margin:6px 0 8px;font-size:24px;color:var(--ink)}
 .exlist .meta{flex:1;min-width:0;font-size:13px}
 .exlist .meta b{display:block;font-size:14px}
 .exlist a{flex:0 0 auto;text-decoration:none;font-weight:800;font-size:12px;color:var(--brand);border:1px solid var(--brand-soft);background:var(--brand-soft);border-radius:99px;padding:8px 12px;min-height:36px;display:inline-flex;align-items:center}
-.exercise-cards{display:grid;gap:10px}
+.exercise-cards{display:grid;gap:10px;grid-template-columns:minmax(0,1fr)}
 .exercise-card{display:flex;align-items:center;gap:12px;padding:16px;border:1px solid var(--line);border-radius:16px;background:var(--panel);text-decoration:none;color:inherit;transition:transform 220ms var(--ease-release),background 150ms var(--ease-micro)}
 .exercise-card:active{transform:scale(.98);background:var(--brand-soft)}
 .exercise-card.passed{border-color:rgba(88,204,2,.55);background:var(--success-soft)}
-.exercise-card.passed .chev{color:var(--success-dark)}
+.exercise-card.passed .chev{color:#2f6d06}
 .exercise-card .status{flex:0 0 auto;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);color:var(--muted);font-size:14px;font-weight:900}
-.exercise-card.passed .status{background:var(--success);border-color:var(--success);color:#fff}
+.exercise-card.passed .status{background:var(--success);border-color:var(--success);color:#0b0c0d}
 .exercise-card>div{flex:1 1 auto;min-width:0}
 .exercise-card h3{margin:0;font-size:15px;font-weight:800;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .exercise-card small{color:var(--muted);font-size:12px}
@@ -142,7 +142,7 @@ h1{margin:6px 0 8px;font-size:24px;color:var(--ink)}
 @keyframes page-out{to{opacity:0;transform:scale(.96)}}
 @keyframes page-in{from{opacity:0;transform:scale(1.04)}}
 @media(prefers-reduced-motion:reduce){@view-transition{navigation:none}}
-/* No app-shell.css: the fullscreen player intentionally carries no
+/* No app-shell.css: the lesson player intentionally carries no
    branded site header and no bottom app tab bar (see .player-top /
    .chapter-trail below and the removed app-shell.js include).
    Also intentionally NOT loading shared/css/theme.css here: that
@@ -178,6 +178,12 @@ var redirectParam=params.get('redirect');
 var requestedSlide=params.get('slide');
 
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(m){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]})}
+
+// ---- Chapter-trail slide-type icons (Task C, + audio asset supplied after Agent 243). ----
+var TRAIL_ICON_TEXT='<svg viewBox="0 0 56 56" fill="currentColor" aria-hidden="true"><path d="M 15.5547 53.125 L 40.4453 53.125 C 45.2969 53.125 47.7109 50.6875 47.7109 45.7890 L 47.7109 10.2344 C 47.7109 5.3594 45.2969 2.8750 40.4453 2.8750 L 15.5547 2.8750 C 10.7266 2.8750 8.2891 5.3594 8.2891 10.2344 L 8.2891 45.7890 C 8.2891 50.6875 10.7266 53.125 15.5547 53.125 Z M 15.7422 49.3515 C 13.3281 49.3515 12.0625 48.0625 12.0625 45.7187 L 12.0625 10.3047 C 12.0625 7.9844 13.3281 6.6484 15.7656 6.6484 L 40.2578 6.6484 C 42.6953 6.6484 43.9375 7.9609 43.9375 10.3047 L 43.9375 45.7187 C 43.9375 48.0625 42.6953 49.3515 40.2813 49.3515 Z M 19.1406 16.4453 L 36.9062 16.4453 C 37.7266 16.4453 38.3594 15.7891 38.3594 14.9687 C 38.3594 14.1718 37.7266 13.5625 36.9062 13.5625 L 19.1406 13.5625 C 18.2734 13.5625 17.6640 14.1718 17.6640 14.9687 C 17.6640 15.7891 18.2734 16.4453 19.1406 16.4453 Z M 19.1406 24.625 L 36.9062 24.625 C 37.7266 24.625 38.3594 23.9687 38.3594 23.1484 C 38.3594 22.3515 37.7266 21.7422 36.9062 21.7422 L 19.1406 21.7422 C 18.2734 21.7422 17.6640 22.3515 17.6640 23.1484 C 17.6640 23.9687 18.2734 24.625 19.1406 24.625 Z M 19.1406 32.8047 L 27.5547 32.8047 C 28.375 32.8047 29.0078 32.1718 29.0078 31.3750 C 29.0078 30.5547 28.375 29.9218 27.5547 29.9218 L 19.1406 29.9218 C 18.2734 29.9218 17.6640 30.5547 17.6640 31.3750 C 17.6640 32.1718 18.2734 32.8047 19.1406 32.8047 Z"/></svg>';
+var TRAIL_ICON_QUIZ='<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M10.125 8.875C10.125 7.83947 10.9645 7 12 7C13.0355 7 13.875 7.83947 13.875 8.875C13.875 9.56245 13.505 10.1635 12.9534 10.4899C12.478 10.7711 12 11.1977 12 11.75V13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="16" r="1" fill="currentColor"/><path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>';
+var TRAIL_ICON_VIDEO='<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20,24H4c-2.2,0-4-1.8-4-4V4c0-2.2,1.8-4,4-4h16c2.2,0,4,1.8,4,4v16C24,22.2,22.2,24,20,24z M4,2C2.9,2,2,2.9,2,4v16c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V4c0-1.1-0.9-2-2-2H4z"/><path d="M9,17c-0.2,0-0.3,0-0.5-0.1C8.2,16.7,8,16.4,8,16V8c0-0.4,0.2-0.7,0.5-0.9c0.3-0.2,0.7-0.2,1,0l7,4c0.3,0.2,0.5,0.5,0.5,0.9s-0.2,0.7-0.5,0.9l-7,4C9.3,17,9.2,17,9,17z M10,9.7v4.6l4-2.3L10,9.7z"/></svg>';
+var TRAIL_ICON_AUDIO='<svg viewBox="-1.5 0 19 19" fill="currentColor" aria-hidden="true"><path d="M7.098 4.769v9.63c0 .61-.353.756-.784.325L3.42 11.828H1.442A1.112 1.112 0 0 1 .333 10.72V8.448A1.112 1.112 0 0 1 1.442 7.34h1.977l2.895-2.896c.431-.43.784-.285.784.325zm2.076 7.474a.553.553 0 0 0 .392-.163 3.53 3.53 0 0 0 0-4.992.554.554 0 1 0-.784.784 2.422 2.422 0 0 1 0 3.425.554.554 0 0 0 .392.946zm2.184 1.629a6.059 6.059 0 0 0 0-8.575.554.554 0 0 0-.784.783 4.955 4.955 0 0 1 0 7.008.554.554 0 0 0 .784.784zm1.79 1.79a8.59 8.59 0 0 0 0-12.157.554.554 0 0 0-.783.784 7.481 7.481 0 0 1 0 10.59.554.554 0 1 0 .784.784z"/></svg>';
 
 // Sanitizes lesson JSON's rich-text body_content before it hits innerHTML.
 // This is a client-side allowlist safety net (defense in depth) — content
@@ -233,11 +239,12 @@ function youtubeId(url){
 }
 
 // Builds the embeddable YouTube src URL for a given video id. Centralized
-// here so player-chrome params (rel, modestbranding, playsinline) stay
-// consistent everywhere a video is embedded.
+// here so the standard YouTube player/fullscreen parameters stay
+// consistent everywhere a video is embedded. YouTube controls remain native
+// so learners can use the normal YouTube fullscreen mode without cropping.
 function youtubeEmbedSrc(vid){
   if(!vid) return '';
-  var origin=(typeof location!=='undefined'&&location.origin)||''; return 'https://www.youtube.com/embed/'+encodeURIComponent(vid)+'?autoplay=1&mute=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&rel=0&modestbranding=1&playsinline=0&enablejsapi=1'+(origin?'&origin='+encodeURIComponent(origin):'');
+  var origin=(typeof location!=='undefined'&&location.origin)||''; return 'https://www.youtube.com/embed/'+encodeURIComponent(vid)+'?autoplay=1&mute=1&controls=1&disablekb=0&fs=1&iv_load_policy=3&rel=0&playsinline=1&enablejsapi=1'+(origin?'&origin='+encodeURIComponent(origin):'');
 }
 
 function splitIntoThreeTextSlides(html,revision){
@@ -296,7 +303,7 @@ function renderMediaItem(entry,kind,title,isOnline,index){
   if(!isOnline) return '<div class="card"><h2>'+esc(kind==='video'?'Video':'Audio')+'</h2><div class="video-fallback">Media unavailable offline. Continue with the lesson text.</div></div>';
   if(kind==='video'){
     var vid=youtubeId(entry.url);
-    if(vid) return '<div class="card video-card"><h2>'+esc(entry.title||'Video')+'</h2><div class="video-wrap"><iframe id="youtube-player-'+String(index||0)+'" src="'+esc(youtubeEmbedSrc(vid))+'" title="'+esc(entry.title||title)+' video" loading="eager" allow="autoplay; fullscreen; encrypted-media" allowfullscreen tabindex="-1"></iframe><div class="video-lock" aria-hidden="true">Learning mode · external YouTube controls hidden</div></div><p class="video-progress" id="video-progress">Watch 90% to unlock Continue.</p></div>';
+    if(vid) return '<div class="card video-card"><h2>'+esc(entry.title||'Video')+'</h2><div class="video-wrap"><iframe id="youtube-player-'+String(index||0)+'" src="'+esc(youtubeEmbedSrc(vid))+'" title="'+esc(entry.title||title)+' video" loading="eager" allow="autoplay; fullscreen; encrypted-media" allowfullscreen tabindex="0"></iframe><div class="video-lock" aria-hidden="true">Learning mode · YouTube player controls available</div></div><p class="video-progress" id="video-progress">Watch 90% to unlock Continue.</p></div>';
     return '<div class="card"><h2>'+esc(entry.title||'Video')+'</h2><video controls playsinline preload="metadata" style="width:100%;border-radius:14px;background:#000" src="'+esc(entry.url)+'"></video></div>';
   }
   return '<div class="card"><h2>'+esc(entry.title||'Audio lesson')+'</h2><audio controls preload="metadata" style="width:100%" src="'+esc(entry.url)+'"></audio></div>';
@@ -429,7 +436,7 @@ lessonsFetch.catch(function(){
     var savedProgress=window.MylingoCourseProgress?window.MylingoCourseProgress.readProgress():{};
     if(exerciseIds.length){ exercisesHtml='<div class="card"><h2>Practice in this lesson</h2><p class="small" style="margin:0 0 12px;color:var(--muted)">Pass '+(window.MylingoCourseProgress&&window.MylingoCourseProgress.LESSON_COMPLETION_THRESHOLD||90)+'% of these quizzes to unlock the next lesson.</p><div class="exercise-cards">'+exerciseIds.map(function(id){var q=quizMap[id]||{};var title=q.title||id;var count=q.questions?String(q.questions)+' question'+(q.questions===1?'':'s'):'';var passed=window.MylingoCourseProgress&&window.MylingoCourseProgress.isMastered(savedProgress[id]);return '<a class="exercise-card'+(passed?' passed':'')+'" href="'+quizUrl(id,level,practiceReturnUrl,course.title,unit.title,lesson.lesson_id)+'"><div><h3>'+esc(title)+'</h3>'+(count?'<small>'+esc(count)+'</small>':'')+'</div><span class="status" aria-label="'+(passed?'Passed':'Not passed')+'">'+(passed?'✓':'○')+'</span><span class="chev" aria-hidden="true">→</span></a>';}).join('')+'</div></div>'; }
     else { exercisesHtml='<div class="card"><p class="summary">No exercises are linked to this lesson yet.</p></div>'; }
-    slides.push({key:'practice',label:'Practice',kind:'practice',html:exercisesHtml});
+    slides.push({key:'practice',label:'Practice',kind:'practice',html:'<h1 class="sr-only">'+esc(lesson.title)+'</h1>'+exercisesHtml});
 
     var currentIndex=0;
     var maxReached=0; // furthest slide index reached so far; gates chapter-trail clicks below
@@ -460,30 +467,44 @@ lessonsFetch.catch(function(){
       var p=document.getElementById('video-progress'); if(p)p.textContent='90% watched · Continue unlocked.';
       renderNav();
     }
-    function enterFullscreen(iframe){
-      if(!iframe)return;
-      var target=iframe;
-      try{if(document.fullscreenElement)return; var fn=target.requestFullscreen||target.webkitRequestFullscreen||target.webkitEnterFullscreen; if(fn){var r=fn.call(target); if(r&&r.catch)r.catch(function(){})}}catch(e){}
-    }
     function setupVideoSlide(slide){
       stopVideoTracking(); videoWatchReady=false;
       if(slide.kind!=='video')return;
       var iframe=document.querySelector('iframe');
       if(!iframe){unlockVideoNext();return;}
       if(('onLine' in navigator) && !navigator.onLine){unlockVideoNext();return;}
-      // Autoplay is muted so modern browser autoplay policies permit it. Fullscreen
-      // is attempted immediately and again from the first player-ready callback;
-      // browsers may reject it on an initial page load because fullscreen requires
-      // a user gesture. Once the learner taps Continue into a video slide, the same
-      // call is within the navigation gesture path and normally succeeds.
-      enterFullscreen(iframe);
       var vid=youtubeId((media.videos[Number(slide.key.split('-')[1])]||{}).url);
       if(!vid)return;
+      var watchedSeconds=0;
+      var lastTime=null;
+      var lastPoll=Date.now();
       var init=function(){
         if(!window.YT||!window.YT.Player)return;
-        activeYoutubePlayer=new window.YT.Player(iframe.id,{videoId:vid,playerVars:{autoplay:1,mute:1,controls:0,disablekb:1,fs:0,rel:0,modestbranding:1,iv_load_policy:3,playsinline:0},events:{onReady:function(e){try{e.target.mute();e.target.playVideo()}catch(x){} enterFullscreen(iframe); videoPollStartedAt=Date.now(); videoPollTimer=setInterval(function(){
-          try{var d=Number(e.target.getDuration()),t=Number(e.target.getCurrentTime()); if(d>0&&t/d>=.9)unlockVideoNext();}catch(x){}
-        },500);},onStateChange:function(e){if(e.data===0){unlockVideoNext();}}}});
+        activeYoutubePlayer=new window.YT.Player(iframe.id,{videoId:vid,playerVars:{autoplay:1,mute:1,controls:1,disablekb:0,fs:1,iv_load_policy:3,rel:0,playsinline:1},events:{onReady:function(e){
+          try{e.target.mute(); e.target.playVideo()}catch(x){}
+          lastTime=Number(e.target.getCurrentTime())||0; lastPoll=Date.now();
+          videoPollTimer=setInterval(function(){
+            try{
+              var now=Date.now(), elapsed=Math.min(1.25,Math.max(0,(now-lastPoll)/1000));
+              var t=Number(e.target.getCurrentTime()), d=Number(e.target.getDuration());
+              var state=Number(e.target.getPlayerState());
+              if(d>0 && state===1 && Number.isFinite(t)){
+                var delta=t-(lastTime==null?t:lastTime);
+                // Credit only normal forward playback. Large jumps are seeks and
+                // therefore do not count toward the 90% watch requirement.
+                if(delta>0 && delta<=1.5) watchedSeconds=Math.min(d,watchedSeconds+Math.min(delta,elapsed*1.5));
+                lastTime=t;
+                if(watchedSeconds/d>=.9)unlockVideoNext();
+              }else if(Number.isFinite(t)){
+                lastTime=t;
+              }
+              lastPoll=now;
+            }catch(x){}
+          },250);
+        },onStateChange:function(e){
+          if(e.data===0)unlockVideoNext();
+          if(e.data===1){try{lastTime=Number(e.target.getCurrentTime())||lastTime}catch(x){}}
+        }}});
       };
       whenYouTubeReady(init);
     }
@@ -505,10 +526,16 @@ lessonsFetch.catch(function(){
         lastCtaLabel=next?'Pass lesson & continue':'Finish lesson';
       }).catch(function(){lastCtaHref=courseBack;lastCtaLabel='Finish lesson';}).then(function(){renderNav();});
     }
+    function trailIcon(kind){
+      if(kind==='video')return TRAIL_ICON_VIDEO;
+      if(kind==='practice')return TRAIL_ICON_QUIZ;
+      if(kind==='audio')return TRAIL_ICON_AUDIO;
+      return TRAIL_ICON_TEXT;
+    }
     function renderTrail(){
       $('chapterTrail').innerHTML=slides.map(function(s,i){
         var cls='trail-item'+(i===currentIndex?' active':'')+(i<currentIndex?' done':'');
-        var icon=s.kind==='video'?'▶':(s.kind==='audio'?'◖':(s.kind==='practice'?'✓':'T')); return '<button type="button" class="'+cls+'" data-idx="'+i+'"'+(i===currentIndex?' aria-current="step"':'')+(i>maxReached?' aria-disabled="true"':'')+' aria-label="Slide '+(i+1)+' of '+slides.length+': '+esc(s.label)+'"><span class="num">'+(i+1)+'</span><span class="type-icon" aria-hidden="true">'+icon+'</span><span>'+esc(s.label)+'</span></button>';
+        var icon=trailIcon(s.kind); return '<button type="button" class="'+cls+'" data-idx="'+i+'"'+(i===currentIndex?' aria-current="step"':'')+(i>maxReached?' aria-disabled="true"':'')+' aria-label="Slide '+(i+1)+' of '+slides.length+': '+esc(s.label)+'"><span class="num">'+(i+1)+'</span><span class="type-icon" aria-hidden="true">'+icon+'</span><span>'+esc(s.label)+'</span></button>';
       }).join('');
       Array.prototype.forEach.call($('chapterTrail').querySelectorAll('.trail-item'),function(btn){
         btn.addEventListener('click',function(){
@@ -542,7 +569,6 @@ lessonsFetch.catch(function(){
       idx=Math.max(0,Math.min(slides.length-1,idx));
       currentIndex=idx;
       if(idx>maxReached) maxReached=idx;
-      if(document.body&&document.body.classList&&document.body.classList.toggle) document.body.classList.toggle('video-immersive', slides[idx].kind==='video');
       stopVideoTracking();
       $('content').innerHTML='<div class="slide '+(slides[idx].kind==='video'?'video-slide':'')+'" tabindex="-1" role="region" aria-label="Slide '+(idx+1)+' of '+slides.length+': '+esc(slides[idx].label)+'">'+slides[idx].html+'</div>';
       renderTrail();

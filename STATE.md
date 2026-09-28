@@ -1,8 +1,32 @@
 # STATE.md — Production Readiness Protocol
 
 ## Current position
-- AGENT: 27
-- STEP: Deploy work still ON HOLD by the person's instruction. Applied the person's revised brand SVGs (icon, logo-horizontal, logo-stacked) and regenerated the raster icons derived from icon.svg; bumped the service-worker cache to v28 so installed clients drop the old cached logos. 970/970 tests; full gate PASS (dist 240 files byte-identical; sweep 108 loads / 54 offline 200 / 0 problems). Egress not re-probed (closed at Agent 23). Remaining: deploy-gated (repo, Netlify, domain, devices; ON HOLD), egress-gated (axe-core + Lighthouse), real screen-reader/device pass, unaudited pages listed in HANDOFF_PACKAGE_AGENT27.md, optional style-src hardening (declined).
+- AGENT: 255 — lesson audit fixed (was only checking slide 0) and, once it reached the Practice slide, 4 real defects fixed (contrast x2, missing h1, 320px overflow); 16-run sample clean; 977/977.
+
+## Agent 254 position
+- AGENT: 254 — added `tools/video-gate-verify.js` (real CSP + stubbed YouTube network; gate lock/unlock/seek + zero violations all pass; mutation-checked against old CSP). No app changes; 977/977.
+
+## Agent 253 position
+- AGENT: 253
+- STEP: Found and fixed a real production bug: the shipped CSP's `script-src` never allowlisted `youtube.com`, so `courses/lesson.html`'s own `<script src="https://www.youtube.com/iframe_api">` was CSP-blocked on every load — meaning `window.YT` never loaded and the "Continue" button on every video slide would stay locked forever for any online learner, site-wide. `frame-src` was also `'none'`, which would separately have blocked the actual video `<iframe>` embed. Fixed both in `tools/build-csp.js`'s policy template + regenerated `netlify.toml`; also fixed `tools/csp-sweep.js`'s stale test lesson id (was silently testing the "lesson not available" error page, never the real video slide) so the sweep now has real signal. Full (non-`--quick`) `tools/csp-sweep.js` sweep run for the first time in this sandbox: 0 problem pages (was 4). Also fixed `tools/a11y/forced-colors-verify.js`'s slide-navigation stall (video slides have no `<button>` until 90% watched) using the app's own real `navigator.onLine` offline fallback; live-checked 10 lessons and confirmed `.term{border:1px solid CanvasText}` is currently unreachable dead code with real content (not a bug — documented, not overclaimed). 977/977 tests; `verify-all --quick` ALL GATES PASSED (CSP up to date, dist byte-identical 711 files, unchanged since only netlify.toml/tools/tests were touched).
+
+## Agent 251 (superseded) position
+- AGENT: 252
+- STEP: All four person-gated items from AUDIT_AGENT_244 closed in one turn. (1) Audio icon: person supplied the SVG; wired into `trailIcon('audio')` as `TRAIL_ICON_AUDIO`, replacing the `◖` glyph. (2) Dark-mode logo: person supplied logo-horizontal/logo-stacked/icon dark SVGs; added to `shared/brand/` and wired via `<picture><source media="(prefers-color-scheme: dark)">` on all 19 pages' header logo + quiz.html's small header logo. (3) offline/core.zip stray top-level duplicate: person confirmed deletion; removed. (4) Forced-colors device verification: discovered this sandbox actually has a working Chromium via the pre-installed Playwright package (prior "no browser reachable" conclusion, repeated since Agent 19/241, was wrong) — ran a real `forcedColors:'active'` browser check confirming the trail's active-item outline genuinely renders under forced-colors on 3 real shipped lessons. Also restored `.gitignore` and `.github/workflows/deploy.yml`, absent from the uploaded handoff zip (a packaging gap, not a code regression) — reconstructed from the test suite's own spec. 977/977 tests; `verify-all --quick` ALL GATES PASSED (CSP up to date, dist byte-identical **711 files**).
+
+## Agent 252 — audio icon, dark-mode logo, core.zip cleanup, real forced-colors verification, dotfile restore
+- Full detail in `CHANGELOG.md`'s 2026-09-27 Agent 252 entry and `HANDOFF_AGENT_252.md`.
+- Still open / not claimed: the `.term{border:1px solid CanvasText}` half of the forced-colors CSS was not live-browser-verified this turn (nav-button selector didn't advance the sampled lessons past slide 1) — statically asserted only. `main/placement.html`'s manual `data-theme` toggle does not override the new OS-only dark-logo swap (pre-existing architectural gap per Agent 248, not new). No real iOS/Android/screen-reader device was used.
+
+## Agent 243 — Task C: lesson player chapter-trail icons
+
+**Changed:** `courses/lesson.html` — new `TRAIL_ICON_TEXT`/`TRAIL_ICON_QUIZ`/`TRAIL_ICON_VIDEO` inline SVG constants (currentColor-based, from the user-supplied assets) and a `trailIcon(kind)` helper; `renderTrail()`'s icon selection now calls it. `video`/`practice` (quiz)/`text` slide kinds get the matching SVG; `audio` is unchanged (`◖`, no asset provided). CSS: `.trail-item .type-icon` given `display:inline-flex` + a `svg{width:14px;height:14px}` rule so the icon sits sized correctly next to the slide label. `tests/run.js`: the one test asserting the trail icon by literal glyph text was updated to assert by icon kind (svg viewBox/stroke fingerprint), since an `<svg>` node has no `textContent`. `node tools/build-csp.js` re-run (16 hashes; `courses/lesson.html`'s inline script content changed); `offline/packs/core.zip`'s `courses/lesson.html` entry replaced in place.
+
+**Scope note:** `courses/course.html` and `courses/journey.html` have their own, separate lesson-list `type-icon` (video/audio/text only — no quiz concept, since it's per-lesson not per-slide). Left untouched: not named in the task, and no distinct asset set was implied for it.
+
+**Tool-run verification:** `node tests/run.js` — 977 passed, 0 failed. `node tools/verify-all.js --quick` — ALL GATES PASSED.
+
+**Not changed / not claimed:** no browser/device screenshot check of the new icons (no Playwright/Chromium reachable in this sandbox — same limitation Agent 241/242 hit). `offline/core.zip` (a top-level, unreferenced duplicate zip distinct from `offline/packs/core.zip`) was left as-is — nothing in tooling, `sw.js`, or `core-manifest.json` reads it.
 
 ## Agent 27 — revised brand logos
 

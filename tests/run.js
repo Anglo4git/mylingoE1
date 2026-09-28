@@ -5175,7 +5175,7 @@ console.log('quiz.html end(): results-screen orchestration, isolated with stubbe
   function endSandbox(opts) {
     opts = opts || {};
     const els = { bar: makeEl(), progressWrap: makeEl(), finalPct: makeEl(), result: makeEl(), message: makeEl(),
-      gamifyBadges: makeEl(), reco: makeEl(), continueBtn: makeEl(), end: makeEl() };
+      gamifyBadges: makeEl(), reco: makeEl(), suggest: makeEl(), continueBtn: makeEl(), returnQuizzesBtn: makeEl(), end: makeEl() };
     const ring = makeEl();
     els.end.querySelector = (sel) => (sel === '.result-ring' ? ring : null);
     const calls = [];
@@ -5213,6 +5213,8 @@ console.log('quiz.html end(): results-screen orchestration, isolated with stubbe
       renderPlacementRecommendations: spy('renderPlacementRecommendations'),
       placementContinue: spy('placementContinue'),
       renderSuggestions: spy('renderSuggestions'),
+      renderLessonEndingCard: spy('renderLessonEndingCard'),
+      fireConfetti: spy('fireConfetti'),
       stopAllSounds: spy('stopAllSounds'),
       location: { href: '' },
     };
@@ -5324,34 +5326,48 @@ console.log('quiz.html end(): results-screen orchestration, isolated with stubbe
     assert.strictEqual(s.call('renderPlacementResult').length, 1, 'rendering still proceeds after the swallowed throw');
   });
 
-  testAsync('lesson-continue branch: only offered for a passed (>=60%) NON-placement quiz tied to a lessonParam; next lesson -> "Continue", none left -> "Back to lesson practice"', async () => {
-    const lessons = [
-      { lesson_id: 'l1', unit_id: 'u1', status: 'published', order: 1 },
-      { lesson_id: 'l2', unit_id: 'u1', status: 'published', order: 2 },
-      { lesson_id: 'l3', unit_id: 'u1', status: 'draft', order: 3 },
-    ];
-    const s = endSandbox({ mode: 'quiz', lessonParam: 'l1', score: 8, graded: 10, level: 'a2', lessons });
+  testAsync('lesson-backed ending card (Agent 242 TASK A): renderLessonEndingCard is called for ANY non-placement quiz with a lessonParam — pass or fail — and continueBtn/reco/suggest are all hidden (no more in-card "Continue")', async () => {
+    const s = endSandbox({ mode: 'quiz', lessonParam: 'l1', score: 8, graded: 10, level: 'a2' });
     s.run();
-    await new Promise((r) => setImmediate(r));
-    await new Promise((r) => setImmediate(r));
-    assert.strictEqual(s.els.continueBtn.style.display, 'inline-flex');
-    assert.strictEqual(s.els.continueBtn.textContent, 'Continue', 'l2 is the next published lesson after l1');
+    assert.strictEqual(s.call('renderLessonEndingCard').length, 1);
+    assert.strictEqual(s.call('renderSuggestions').length, 0, 'the old category-suggestions path is not used for lesson-backed quizzes');
+    assert.strictEqual(s.els.continueBtn.style.display, 'none');
+    assert.strictEqual(s.els.reco.style.display, 'none');
+    assert.strictEqual(s.els.suggest.style.display, 'none');
 
-    const s2 = endSandbox({ mode: 'quiz', lessonParam: 'l2', score: 8, graded: 10, level: 'a2', lessons });
-    s2.run();
-    await new Promise((r) => setImmediate(r));
-    await new Promise((r) => setImmediate(r));
-    assert.strictEqual(s2.els.continueBtn.textContent, 'Back to lesson practice', 'l3 is unpublished, so there is no next lesson');
+    const failed = endSandbox({ mode: 'quiz', lessonParam: 'l1', score: 3, graded: 10 });
+    failed.run();
+    assert.strictEqual(failed.call('renderLessonEndingCard').length, 1, 'called on a failed attempt too — the ending card always offers a way back');
+    assert.strictEqual(failed.els.continueBtn.style.display, 'none');
   });
 
-  test('lesson-continue branch does NOT fire on a failed attempt (<60%) or in placement mode, even with a lessonParam', () => {
-    const lessons = [{ lesson_id: 'l1', unit_id: 'u1', status: 'published', order: 1 }, { lesson_id: 'l2', unit_id: 'u1', status: 'published', order: 2 }];
-    const failed = endSandbox({ mode: 'quiz', lessonParam: 'l1', score: 3, graded: 10, lessons });
-    failed.run();
-    assert.strictEqual(failed.call('getLevelLessons').length, 0, 'no lesson lookup at all below 60%');
-    const placement = endSandbox({ mode: 'placement', lessonParam: 'l1', score: 8, graded: 10, lessons });
+  test('renderLessonEndingCard is NOT called for placement mode or a standalone (no lessonParam) quiz; those keep their existing continueBtn/renderSuggestions paths untouched', () => {
+    const standalone = endSandbox({ mode: 'quiz', lessonParam: null, score: 8, graded: 10 });
+    standalone.run();
+    assert.strictEqual(standalone.call('renderLessonEndingCard').length, 0);
+    assert.strictEqual(standalone.call('renderSuggestions').length, 1);
+
+    const placement = endSandbox({ mode: 'placement', lessonParam: 'l1', score: 8, graded: 10 });
     placement.run();
-    assert.strictEqual(placement.call('getLevelLessons').length, 0, 'lesson-continue is a non-placement-only path');
+    assert.strictEqual(placement.call('renderLessonEndingCard').length, 0, 'placement keeps its own results panels, never the lesson ending card');
+  });
+
+  test('fireConfetti (Agent 242 TASK B) fires once pct>=60 is known, before the mode branch, for every mode; never fires below 60%', () => {
+    const passedQuiz = endSandbox({ mode: 'quiz', score: 8, graded: 10 });
+    passedQuiz.run();
+    assert.strictEqual(passedQuiz.call('fireConfetti').length, 1);
+
+    const passedPlacement = endSandbox({ mode: 'placement', score: 8, graded: 10 });
+    passedPlacement.run();
+    assert.strictEqual(passedPlacement.call('fireConfetti').length, 1, 'confetti is not placement-gated');
+
+    const failedQuiz = endSandbox({ mode: 'quiz', score: 3, graded: 10 });
+    failedQuiz.run();
+    assert.strictEqual(failedQuiz.call('fireConfetti').length, 0);
+
+    const exactlyThreshold = endSandbox({ mode: 'quiz', score: 6, graded: 10 });
+    exactlyThreshold.run();
+    assert.strictEqual(exactlyThreshold.call('fireConfetti').length, 1, '60% exactly still counts as passed');
   });
 
   test('outer try/finally: an uncaught throw from a non-additive step (e.g. congratsTitle) still runs the finally — show("end") fires and the heading is focused — before end() re-throws (Agent 102\'s original bug class)', () => {
@@ -9716,18 +9732,21 @@ console.log('courses/lesson.html: the lesson player inline script (Agent 182)');
 
   test('youtubeEmbedSrc: falsy -> "", fixed host + player params, the id is URI-encoded', () => {
     assert.strictEqual(H.youtubeEmbedSrc(''), ''); assert.strictEqual(H.youtubeEmbedSrc(null), ''); assert.strictEqual(H.youtubeEmbedSrc(undefined), '');
-    assert.strictEqual(H.youtubeEmbedSrc('abcdef1'), 'https://www.youtube.com/embed/abcdef1?autoplay=1&mute=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&rel=0&modestbranding=1&playsinline=0&enablejsapi=1');
-    assert.strictEqual(H.youtubeEmbedSrc('a/b?c"d'), 'https://www.youtube.com/embed/a%2Fb%3Fc%22d?autoplay=1&mute=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&rel=0&modestbranding=1&playsinline=0&enablejsapi=1');
+    assert.strictEqual(H.youtubeEmbedSrc('abcdef1'), 'https://www.youtube.com/embed/abcdef1?autoplay=1&mute=1&controls=1&disablekb=0&fs=1&iv_load_policy=3&rel=0&playsinline=1&enablejsapi=1');
+    assert.strictEqual(H.youtubeEmbedSrc('a/b?c"d'), 'https://www.youtube.com/embed/a%2Fb%3Fc%22d?autoplay=1&mute=1&controls=1&disablekb=0&fs=1&iv_load_policy=3&rel=0&playsinline=1&enablejsapi=1');
   });
 
-  test('video lesson contract: videos precede text, exactly three text labels exist, YouTube controls are locked, and Continue is gated at 90%', () => {
+  test('video lesson contract: videos precede text, exactly three text labels exist, standard YouTube controls/fullscreen are enabled, and Continue is gated at 90%', () => {
     assert.ok(/media\.videos\.forEach[\s\S]*splitIntoThreeTextSlides/.test(SCRIPT), 'video slides are created before the three text slides');
     assert.ok(/labels=\['1 · Intro & explanation','2 · Usage & examples','3 · More details'\]/.test(SCRIPT));
-    assert.ok(/controls:0,disablekb:1,fs:0/.test(SCRIPT));
+    assert.ok(/controls:1,disablekb:0,fs:1/.test(SCRIPT));
     assert.ok(/autoplay:1,mute:1/.test(SCRIPT));
-    assert.ok(/t\/d>=\.9/.test(SCRIPT));
+    assert.ok(/watchedSeconds\/d>=\.9/.test(SCRIPT));
+    assert.ok(/delta>0 && delta<=1\.5/.test(SCRIPT), 'seek jumps are not credited as watched time');
     assert.ok(/slides\[currentIndex\]\.kind==='video' && !videoWatchReady/.test(SCRIPT));
-    assert.ok(/requestFullscreen|webkitRequestFullscreen/.test(SCRIPT));
+    assert.ok(!/requestFullscreen|webkitRequestFullscreen/.test(SCRIPT), 'custom fullscreen is removed; use native YouTube fullscreen');
+    assert.ok(!/video-immersive/.test(SCRIPT), 'custom immersive video mode is removed');
+    assert.ok(!/picture-in-picture/.test(SCRIPT), 'PiP permission remains suppressed');
     assert.ok(/https:\/\/www\.youtube\.com\/iframe_api/.test(HTML));
   });
 
@@ -9780,8 +9799,8 @@ console.log('courses/lesson.html: the lesson player inline script (Agent 182)');
     assert.ok(H.renderMediaItem(ent('https://a/v.mp3'), 'audio', 'L', false).includes(OFF));
     assert.ok(H.renderMediaItem(ent('javascript:x'), 'audio', 'L', false).includes(NA), 'unsafe wins over offline');
     const yt = H.renderMediaItem(ent('https://youtu.be/abcdef1', 'Intro <b>'), 'video', 'Lesson "1"', true);
-    assert.ok(yt.includes('<iframe id="youtube-player-0" src="https://www.youtube.com/embed/abcdef1?autoplay=1&amp;mute=1&amp;controls=0&amp;disablekb=1&amp;fs=0&amp;iv_load_policy=3&amp;rel=0&amp;modestbranding=1&amp;playsinline=0&amp;enablejsapi=1"'), yt);
-    assert.ok(yt.includes('<h2>Intro &lt;b&gt;</h2>') && yt.includes('title="Intro &lt;b&gt; video"') && yt.includes('loading="eager"') && yt.includes('allow="autoplay; fullscreen; encrypted-media"') && yt.includes('allowfullscreen') && yt.includes('tabindex="-1"'));
+    assert.ok(yt.includes('<iframe id="youtube-player-0" src="https://www.youtube.com/embed/abcdef1?autoplay=1&amp;mute=1&amp;controls=1&amp;disablekb=0&amp;fs=1&amp;iv_load_policy=3&amp;rel=0&amp;playsinline=1&amp;enablejsapi=1"'), yt);
+    assert.ok(yt.includes('<h2>Intro &lt;b&gt;</h2>') && yt.includes('title="Intro &lt;b&gt; video"') && yt.includes('loading="eager"') && yt.includes('allow="autoplay; fullscreen; encrypted-media"') && yt.includes('allowfullscreen') && yt.includes('tabindex="0"'));
     assert.ok(H.renderMediaItem(ent('https://youtu.be/abcdef1'), 'video', 'Lesson "1"', true).includes('title="Lesson &quot;1&quot; video"'), 'falls back to the lesson title');
     assert.ok(H.renderMediaItem(ent('https://youtu.be/abcdef1'), 'video', 'L', true).includes('<h2>Video</h2>'));
     const v = H.renderMediaItem(ent('https://cdn.example/a.mp4?x=1&y="2"'), 'video', 'L', true);
@@ -10125,7 +10144,20 @@ console.log('courses/lesson.html: the lesson player inline script (Agent 182)');
     Object.assign(f['../course_content/lessons/a1.json'][0], { video_urls: ['https://youtu.be/abcdef1', { url: 'https://cdn.example/v.mp4', title: 'Clip' }], audio_urls: ['https://cdn.example/a.mp3'] });
     const p = await runPage({ files: f });
     const its = p.items();
-    assert.deepStrictEqual(its.map((b) => b.querySelectorAll('span')[1].textContent), ['▶', '▶', 'T', 'T', 'T', '◖', '✓']);
+    // Agent 243 (Task C) + audio asset supplied afterward: video/text/practice/audio type-icons
+    // are all inline SVGs now — assert by icon *kind* via the svg viewBox each icon carries, not
+    // by literal glyph text (an svg node has no textContent).
+    const iconKind = (b) => {
+      const span = b.querySelectorAll('span')[1];
+      const svg = span.querySelector('svg');
+      if (!svg) return span.textContent;
+      const vb = svg.getAttribute('viewbox') || svg.getAttribute('viewBox');
+      if (vb === '0 0 56 56') return 'TEXT_SVG';
+      if (vb === '-1.5 0 19 19') return 'AUDIO_SVG';
+      if (vb === '0 0 24 24' && span.innerHTML.indexOf('stroke=') >= 0) return 'QUIZ_SVG';
+      return 'VIDEO_SVG';
+    };
+    assert.deepStrictEqual(its.map(iconKind), ['VIDEO_SVG', 'VIDEO_SVG', 'TEXT_SVG', 'TEXT_SVG', 'TEXT_SVG', 'AUDIO_SVG', 'QUIZ_SVG']);
     assert.deepStrictEqual(its.map((b) => b.querySelectorAll('span')[2].textContent), ['Video 1', 'Clip', '1 · Intro & explanation', '2 · Usage & examples', '3 · More details', 'Audio 1', 'Practice']);
     assert.ok(p.els.content.querySelector('.video-progress') && p.els.content.querySelector('.video-progress').textContent === 'Watch 90% to unlock Continue.');
   });
@@ -10309,10 +10341,24 @@ console.log('courses/lesson.html: the lesson player inline script (Agent 182)');
     assert.ok(!p.content.includes('quiz=lq1'));
   });
 
-  testAsync('page: EVERY shipped lesson renders (all six levels): heading, escaped title, practice cards, required YouTube video slide, correct gate + completion link', async () => {
+  testAsync('page: EVERY shipped lesson renders (all six levels): heading, escaped title, practice cards, required YouTube video slide, correct gate + completion link, chapter-trail item count matches the built slide deck', async () => {
     let seen = 0;
     const lv = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'];
     const courses = JSON.parse(read('course_content', 'courses.json')), units = JSON.parse(read('course_content', 'units.json'));
+    // Mirrors lesson.html's own mediaEntries() normalize(): a video/audio entry only counts if it
+    // resolves to a non-blank url, with the singular *_url field used as a fallback when the plural
+    // list is absent/empty. Used below to derive each lesson's expected slide count independently of
+    // the page's own slide array, so a construction bug (e.g. a malformed media entry silently
+    // dropped, or double-counted) shows up as a trail-count mismatch instead of passing unnoticed.
+    const mediaCount = (list, fallback) => {
+      let arr = Array.isArray(list) ? list : [];
+      if (!arr.length && fallback) arr = [fallback];
+      return arr.map((item) => {
+        if (typeof item === 'string') return item;
+        if (item && typeof item === 'object') return item.url || item.src || '';
+        return '';
+      }).filter(Boolean).length;
+    };
     for (const l of lv) {
       const lessons = JSON.parse(read('course_content', 'lessons', l + '.json'));
       const quizzes = JSON.parse(read(l, 'quizzes.json')), qids = new Set(quizzes.map((q) => q.id));
@@ -10327,6 +10373,12 @@ console.log('courses/lesson.html: the lesson player inline script (Agent 182)');
         assert.strictEqual(cards.length, (lesson.exercise_quiz_ids || []).length, lesson.lesson_id);
         (lesson.exercise_quiz_ids || []).forEach((id) => assert.ok(qids.has(id), lesson.lesson_id + ' links to unknown quiz ' + id));
         cards.forEach((c) => assert.ok(/^\.\.\/shared\/quiz\.html\?quiz=[^&]+&level=/.test(c.getAttribute('href'))));
+        // AUDIT_AGENT_244.md item 5: the chapter-trail's rendered item count must equal videos + the
+        // fixed 3 text slides + audios + the 1 practice slide, cross-checked from the lesson's OWN raw
+        // fields rather than anything the page itself computed -- confirms the slide array (and the
+        // trail built from it) neither dropped nor duplicated a slide for this lesson.
+        const expectedSlides = mediaCount(lesson.video_urls || lesson.videos, lesson.youtube_url) + 3 + mediaCount(lesson.audio_urls || lesson.audios, lesson.audio_url) + 1;
+        assert.strictEqual(p.items().length, expectedSlides, lesson.lesson_id + ': chapter-trail item count != built slide count');
         await p.back();
         assert.ok(p.els.content.querySelector('h1') && p.els.content.querySelector('h1').textContent === lesson.title, lesson.lesson_id);
         // Document-title behavior is covered by the dedicated player-title test above.
@@ -11615,8 +11667,8 @@ console.log('main/placement.html: page rendering (Agent 186)');
     const pol = csp.current(rootx);
     const scriptSrc = /script-src ([^;]*);/.exec(pol)[1];
     assert.ok(scriptSrc.indexOf('unsafe-inline') < 0 && scriptSrc.indexOf('unsafe-eval') < 0 && scriptSrc.indexOf('unsafe-hashes') < 0, 'script-src: ' + scriptSrc.slice(0, 60));
-    assert.ok(scriptSrc.startsWith("'self' 'sha256-"), 'script-src is self + hashes');
-    assert.ok(/style-src 'self' 'unsafe-inline'/.test(pol) && /default-src 'self'/.test(pol) && /frame-ancestors 'none'/.test(pol) && /object-src 'none'/.test(pol));
+    assert.ok(scriptSrc.startsWith("'self' https://www.youtube.com 'sha256-"), 'script-src is self + youtube.com (iframe_api, Agent 253) + hashes');
+    assert.ok(/style-src 'self' 'unsafe-inline'/.test(pol) && /default-src 'self'/.test(pol) && /frame-ancestors 'none'/.test(pol) && /object-src 'none'/.test(pol) && /frame-src https:\/\/www\.youtube\.com/.test(pol), 'frame-src allows the youtube.com video embed (Agent 253 — was \'none\', which blocked the embed itself)');
     // independent recomputation for one page (guards the tool itself)
     const idx = fsx.readFileSync(pathx.join(rootx, 'index.html'), 'utf8'); const m = /<script>([\s\S]*?)<\/script>/.exec(idx);
     assert.ok(m && pol.indexOf("'sha256-" + cryptox.createHash('sha256').update(m[1], 'utf8').digest('base64') + "'") > 0, 'index.html inline script hash is in the policy');
@@ -12617,7 +12669,8 @@ console.log('quiz.html: sound/overlay UI helpers, course strip, the start/resume
   }).join('\n');
   const NAMES189 = ['gp', 'sessionShardKey', 'readSessionIndex', 'writeSessionIndex', 'migrateSessionShards', 'readSessionStore', 'sanitizeSession', 'readSession', 'sessionForCurrentQuiz', 'writeSession', 'clearSession', 'saveSession', 'gradedTotal', 'rawType', 'normalizeText', 'updateRanks',
     'setTextSmooth', 'updateSpeedBtn', 'updateSoundIcon', 'setBackgroundInert', 'escStrip', 'renderCourseStrip', 'show', 'configureStart', 'startFresh', 'resumeSession', 'applyResponseToUI',
-    'getManifest', 'lessonSuggestionIds', 'loadSuggestions', 'categorySuggestions', 'getLevelLessons'];
+    'getManifest', 'lessonSuggestionIds', 'loadSuggestions', 'categorySuggestions', 'getLevelLessons',
+    'esc', 'homeUrl', 'isSafeRedirect', 'backTarget', 'lessonMasteryCheck', 'renderLessonEndingCard'];
   const source189 = consts189 + '\n' +
     'let data,i=0,score=0,locked=false,sessionStartedAt=0,restoringSessionAnswer=false,answerCorrect={},suggestPool=[],qGlobalTolerance=0,soundOn=true,audioSpeed=1,_levelLessonsPromise=null;\n' +
     NAMES189.map((n) => extractFn(html, n)).join('\n');
@@ -12630,7 +12683,7 @@ console.log('quiz.html: sound/overlay UI helpers, course strip, the start/resume
     const calls = [];
     const ls = makeFakeStorage();
     const els = {};
-    ['loading', 'start', 'error', 'end', 'courseStrip', 'soundIcon', 'soundBtn', 'speedBtn', 'resumeBtn', 'startBtn', 'score', 'options', 'choiceSelect', 'answerInput'].forEach((id) => { els[id] = new QEl(); });
+    ['loading', 'start', 'error', 'end', 'courseStrip', 'soundIcon', 'soundBtn', 'speedBtn', 'resumeBtn', 'startBtn', 'score', 'options', 'choiceSelect', 'answerInput', 'returnQuizzesBtn', 'lessonComplete', 'lessonSuggest', 'lessonSuggestGrid'].forEach((id) => { els[id] = new QEl(); });
     const $el = (id) => { if (!els[id]) throw new Error('no el ' + id); return els[id]; };
     const headerEl = new QEl(), mainEl = new QEl();
     const overlayEls = [els.loading, els.start, els.error, els.end];
@@ -12649,6 +12702,7 @@ console.log('quiz.html: sound/overlay UI helpers, course strip, the start/resume
       finishAnswer: (...a) => calls.push(['finishAnswer', ...a]),
       stopAllSounds: (...a) => calls.push(['stopAllSounds', ...a]),
       fetch: over.fetch || ((url) => Promise.reject(new Error('no fetch: ' + url))),
+      location: over.location || { href: '' },
       Date, JSON, Math, String, Array, Object, Set, Map, RegExp, Number, encodeURIComponent, console, Promise,
     }, over.ctx || {});
     vm.createContext(ctx);
@@ -12925,6 +12979,78 @@ console.log('quiz.html: sound/overlay UI helpers, course strip, the start/resume
     e4.ev('data={id:"q1",category:"Grammar",questions:[]}'); // no lessonParam at all
     assert.deepStrictEqual(clone189(await e4.ev('loadSuggestions()')), [{ id: 'q9', category: 'Grammar' }]);
   });
+
+  // ---------- Agent 242 (TASK A): renderLessonEndingCard against real getLevelLessons/getManifest/course-progress ----------
+  function progressWin(store) { return { win: { MylingoCourseProgress: { isMastered: (rec) => !!(rec && rec.status === 'completed' && (rec.best == null || rec.best >= 60)), readProgress: () => store } } }; }
+
+  testAsync('renderLessonEndingCard A1: a 1-quiz lesson only shows "Return to quizzes" — no lessonSuggest, no lessonComplete', async () => {
+    const lessons = [{ lesson_id: 'lA', unit_id: 'u1', exercise_quiz_ids: ['q1'] }];
+    const e = env189(Object.assign({ lessonParam: 'lA', redirect: '../courses/lesson.html?lesson=lA&slide=practice',
+      fetch: () => Promise.resolve({ ok: true, json: () => Promise.resolve(lessons) }) }, progressWin({ q1: { status: 'completed', best: 80 } })));
+    e.ev('data={id:"q1",questions:[]}');
+    await e.ev('renderLessonEndingCard()');
+    await new Promise((r) => setImmediate(r)); await new Promise((r) => setImmediate(r));
+    assert.strictEqual(e.els.returnQuizzesBtn.style.display, 'inline-flex');
+    assert.strictEqual(e.els.returnQuizzesBtn.textContent, 'Return to quizzes');
+    assert.strictEqual(e.els.lessonSuggest.style.display, '', 'never shown for a single-quiz lesson');
+    assert.strictEqual(e.els.lessonComplete.style.display, '', 'never shown for a single-quiz lesson');
+  });
+
+  testAsync('renderLessonEndingCard A2: a 2+ quiz lesson lists only the un-passed quizzes, excluding the current one', async () => {
+    const lessons = [{ lesson_id: 'lA', unit_id: 'u1', exercise_quiz_ids: ['q1', 'q2', 'q3'] }];
+    const manifest = [{ id: 'q2', title: 'Quiz Two' }, { id: 'q3', title: 'Quiz Three' }];
+    const e = env189(Object.assign({ lessonParam: 'lA', level: 'a2',
+      fetch: () => Promise.resolve({ ok: true, json: () => Promise.resolve(lessons) }),
+      win: { MylingoRuntimeContentLoader: { loadManifest: () => Promise.resolve(manifest) }, MylingoRuntimeV2: { normalizeManifest: (l) => l },
+        MylingoCourseProgress: { isMastered: (rec) => !!(rec && rec.status === 'completed' && (rec.best == null || rec.best >= 60)), readProgress: () => ({ q1: { status: 'completed', best: 80 }, q3: { status: 'completed', best: 90 } }) } } }));
+    e.ev('data={id:"q1",questions:[]}'); // q1 (current) passed, q2 not attempted, q3 already passed
+    await e.ev('renderLessonEndingCard()');
+    await new Promise((r) => setImmediate(r)); await new Promise((r) => setImmediate(r)); await new Promise((r) => setImmediate(r));
+    assert.strictEqual(e.els.lessonComplete.style.display, '', 'not complete — q2 is still outstanding');
+    assert.strictEqual(e.els.lessonSuggest.style.display, 'block');
+    assert.ok(e.els.lessonSuggestGrid.innerHTML.includes('quiz=q2'), 'only the un-passed quiz (q2) is suggested: ' + e.els.lessonSuggestGrid.innerHTML);
+    assert.ok(!e.els.lessonSuggestGrid.innerHTML.includes('quiz=q3'), 'q3 is already passed and must not be suggested');
+    assert.ok(!e.els.lessonSuggestGrid.innerHTML.includes('quiz=q1'), 'the current quiz never suggests itself');
+    assert.strictEqual(e.els.returnQuizzesBtn.style.display, 'inline-flex');
+  });
+
+  testAsync('renderLessonEndingCard A2: once every quiz in the lesson is passed, the suggestion list is replaced by a completion state', async () => {
+    const lessons = [{ lesson_id: 'lA', unit_id: 'u1', exercise_quiz_ids: ['q1', 'q2'] }];
+    const e = env189(Object.assign({ lessonParam: 'lA',
+      fetch: () => Promise.resolve({ ok: true, json: () => Promise.resolve(lessons) }) },
+      progressWin({ q1: { status: 'completed', best: 70 }, q2: { status: 'completed', best: 65 } })));
+    e.ev('data={id:"q2",questions:[]}'); // finishing q2 makes both mastered
+    await e.ev('renderLessonEndingCard()');
+    await new Promise((r) => setImmediate(r)); await new Promise((r) => setImmediate(r));
+    assert.strictEqual(e.els.lessonComplete.style.display, 'flex');
+    assert.strictEqual(e.els.lessonSuggest.style.display, '', 'suggestions are replaced by the completion state, not shown alongside it');
+    assert.strictEqual(e.els.returnQuizzesBtn.style.display, 'inline-flex', 'a way back is still offered on the completion state');
+  });
+
+  testAsync('renderLessonEndingCard: a failed attempt with nothing else outstanding shows no suggestions and no completion state — just the return button', async () => {
+    const lessons = [{ lesson_id: 'lA', unit_id: 'u1', exercise_quiz_ids: ['q1', 'q2'] }];
+    const e = env189(Object.assign({ lessonParam: 'lA',
+      fetch: () => Promise.resolve({ ok: true, json: () => Promise.resolve(lessons) }) },
+      progressWin({ q2: { status: 'completed', best: 90 } })));
+    e.ev('data={id:"q1",questions:[]}'); // q1 (current) just failed; q2 already passed
+    await e.ev('renderLessonEndingCard()');
+    await new Promise((r) => setImmediate(r)); await new Promise((r) => setImmediate(r));
+    assert.strictEqual(e.els.lessonComplete.style.display, '');
+    assert.strictEqual(e.els.lessonSuggest.style.display, '');
+    assert.strictEqual(e.els.returnQuizzesBtn.style.display, 'inline-flex');
+  });
+
+  test('lessonMasteryCheck mirrors the 60% mastery threshold, with and without MylingoCourseProgress present', () => {
+    const withModule = env189({ win: { MylingoCourseProgress: { isMastered: (rec) => rec && rec.tag === 'yes' } } });
+    assert.strictEqual(withModule.ev("lessonMasteryCheck({tag:'yes'})"), true);
+    assert.strictEqual(withModule.ev("lessonMasteryCheck({tag:'no'})"), false);
+    const withoutModule = env189({ win: {} });
+    assert.strictEqual(withoutModule.ev("lessonMasteryCheck({status:'completed',best:60})"), true, '60% exactly passes');
+    assert.strictEqual(withoutModule.ev("lessonMasteryCheck({status:'completed',best:59})"), false);
+    assert.strictEqual(withoutModule.ev("lessonMasteryCheck({status:'completed'})"), true, 'no best score on a completed record is grandfathered as passing');
+    assert.strictEqual(withoutModule.ev("lessonMasteryCheck({status:'in-progress',best:100})"), false);
+    assert.strictEqual(withoutModule.ev('lessonMasteryCheck(null)'), false);
+  });
 })();
 
 // ============================================================
@@ -12971,6 +13097,7 @@ console.log('index.html vs main/index.html: normalised-diff drift guard (Agent 1
     ['href="./shared/css/theme.css"', 'href="{{SHARED}}/css/theme.css"', 1],
     ['src="./shared/js/splash.js"', 'src="{{SHARED}}/js/splash.js"', 1],
     ['src="./shared/brand/logo-horizontal.svg"', 'src="{{SHARED}}/brand/logo-horizontal.svg"', 1],
+    ['srcset="./shared/brand/logo-horizontal-dark.svg"', 'srcset="{{SHARED}}/brand/logo-horizontal-dark.svg"', 1],
     ['href="./main/placement.html"', 'href="{{PLACEMENT}}"', 3], // nav link + hero CTA + empty-state CTA
     ['href="./courses/index.html">Explore courses</a>', 'href="{{COURSES}}/index.html">Explore courses</a>', 1],
     ['href="./courses/lesson.html?lesson=\'', 'href="{{COURSES}}/lesson.html?lesson=\'', 1],
@@ -12989,6 +13116,7 @@ console.log('index.html vs main/index.html: normalised-diff drift guard (Agent 1
     ['href="../shared/css/theme.css"', 'href="{{SHARED}}/css/theme.css"', 1],
     ['src="../shared/js/splash.js"', 'src="{{SHARED}}/js/splash.js"', 1],
     ['src="../shared/brand/logo-horizontal.svg"', 'src="{{SHARED}}/brand/logo-horizontal.svg"', 1],
+    ['srcset="../shared/brand/logo-horizontal-dark.svg"', 'srcset="{{SHARED}}/brand/logo-horizontal-dark.svg"', 1],
     ['href="./placement.html"', 'href="{{PLACEMENT}}"', 3],
     ['href="../courses/index.html">Explore courses</a>', 'href="{{COURSES}}/index.html">Explore courses</a>', 1],
     ['href="../courses/lesson.html?lesson=\'', 'href="{{COURSES}}/lesson.html?lesson=\'', 1],

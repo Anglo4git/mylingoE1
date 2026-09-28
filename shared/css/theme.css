@@ -20,14 +20,14 @@
 @media (prefers-color-scheme:dark){
   html,body{background:var(--my-dark-bg)!important;color:var(--my-dark-ink)!important}
   body{--brand:var(--my-dark-brand)!important;--brand-dark:var(--my-dark-brand-dark)!important;--brand-soft:var(--my-dark-soft)!important;--ink:var(--my-dark-ink)!important;--muted:var(--my-dark-muted)!important;--line:var(--my-dark-line)!important;--bg:var(--my-dark-bg)!important;--card:var(--my-dark-card)!important;--success:var(--my-dark-success)!important;--success-soft:var(--my-dark-success-soft)!important}
-  header,.card,.section-card,.hero-card,.level,.goal,.step,.statcard,.unit,.overlay,.suggest-grid a,.input-card,.match-card,.ranking-card,.match-left,.rank-item,.option,.answer-input,.answer-select,.media-audio,.qimg-wrap,.mylingo-appshell,.course-card{background:var(--my-dark-card)!important;color:var(--my-dark-ink)!important;border-color:var(--my-dark-line)!important}
+  header,.card,.section-card,.level,.goal,.step,.statcard,.unit,.overlay,.suggest-grid a,.input-card,.match-card,.ranking-card,.match-left,.rank-item,.option,.answer-input,.answer-select,.media-audio,.qimg-wrap,.mylingo-appshell,.course-card{background:var(--my-dark-card)!important;color:var(--my-dark-ink)!important;border-color:var(--my-dark-line)!important}
   input,select,textarea{background:var(--my-dark-input)!important;color:var(--my-dark-ink)!important;border-color:var(--my-dark-line)!important}
   .course-card:hover,.goal:hover,.step:hover,.suggest-grid a:hover{background:var(--my-dark-hover)!important;border-color:var(--my-dark-brand)!important}
   .card h1,.card h2,.card h3,.course-card h2,.lesson b,.lesson-link .meta b,.question,.modal h1{color:var(--my-dark-ink)!important}
   .btn.primary,.primary,.next{color:#07111f!important}
   .btn.secondary,.secondary{box-shadow:none!important}
   .mylingo-appshell{background:rgba(18,28,45,.96)!important}
-  .btn.secondary,.secondary,.more,.chip,.key,.mini-flow div{background:var(--my-dark-card-2)!important;color:var(--my-dark-ink)!important;border-color:var(--my-dark-line)!important}
+  .btn.secondary,.secondary,.more,.chip,.key{background:var(--my-dark-card-2)!important;color:var(--my-dark-ink)!important;border-color:var(--my-dark-line)!important}
   .hero p,.card p,.desc,.sub,.lead,.muted,.small,.footer-note,footer,.stat .l,.lesson small,.lesson .meta small,.qstatus,.section-head p,.empty,.err,.readtime,.crumb,.headrow nav a{color:var(--my-dark-muted)!important}
   .brand-soft,.tagrow .chip,.lvl,.continue .level,.course-id .lvl-badge{background:var(--my-dark-soft)!important;color:#d2e5ff!important}
   .success-soft,.best,.status.completed{background:var(--my-dark-success-soft)!important;color:#c9f7b5!important}
@@ -70,6 +70,30 @@ html[data-theme="dark"],html[data-theme="dark"] body{background:var(--my-dark-bg
   .blank.filled{color:var(--my-dark-success)!important}
   /* white-on-brand in light mode; brand is light blue in dark mode, so the label must be dark */
   .check-answer,.lesson.current .node,.navlinks a.primary,.skip-link,.skip,.answer.selected .num{color:#07111f!important}
+}
+
+/* Agent 248 (AUDIT_AGENT_244.md item 6.2 — theme.css class-drift audit): cross-checked every page's own
+   <style> block and dynamic className assignments against every selector this file already darkens.
+   These components hardcode a light background/color in their light-mode CSS and were not reached by
+   any existing rule above, so today they render as light-on-dark leftovers in dark mode. Scoped with
+   :not(.completed)/:not(.current)/:not(.selected) where a state variant already flips correctly via a
+   CSS custom property, so this doesn't clobber that. Audit also found three selectors that matched no
+   element anywhere in the shipped app — this file's own `.hero-card` and `.mini-flow` (now removed from
+   the lists above, Agent 249) and courses/index.html's `.card.is-level-locked .btn` (removed, Agent 249). */
+@media (prefers-color-scheme:dark){
+  .level-lock-overlay{background:rgba(11,18,32,.62)!important}
+  .lesson:not(.completed):not(.current) .node{background:var(--my-dark-card-2)!important;border-color:var(--my-dark-line)!important;color:var(--my-dark-muted)!important}
+  .unit:not(.completed):not(.current) .unit-icon{background:var(--my-dark-card-2)!important;color:var(--my-dark-muted)!important}
+  .unit-bar{background:#223149!important}
+  .video-next-locked{background:var(--my-dark-card-2)!important;color:var(--my-dark-muted)!important}
+  .btn.ghost{background:var(--my-dark-card-2)!important;color:var(--my-dark-ink)!important}
+  .answer:not(.selected){background:var(--my-dark-card)!important;color:var(--my-dark-ink)!important;border-color:var(--my-dark-line)!important}
+  .answer:not(.selected) .num{background:var(--my-dark-card-2)!important}
+  .levels a{background:var(--my-dark-card)!important;color:var(--my-dark-ink)!important;border-color:var(--my-dark-line)!important}
+  .myl-theme-toggle{background:var(--my-dark-card)!important;color:var(--my-dark-ink)!important;border-color:var(--my-dark-line)!important}
+  .rank-item .rank-move{background:var(--my-dark-card-2)!important;color:var(--my-dark-ink)!important}
+  .rank-item .rank-num{background:var(--my-dark-card-2)!important}
+  .lesson-complete{color:#c9f7b5!important}
 }
 
 /* Agent 13 (Step 10 leftovers): Windows High Contrast / forced-colors. The UA replaces every background-color with Canvas,
