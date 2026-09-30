@@ -1,0 +1,91 @@
+{
+  "id": "lesson-course-b1-unit-05-lesson-06",
+  "title": "Lesson: Listening: Phone Calls",
+  "description": "Practice Listening: Phone Calls.",
+  "brand": "Mylingo",
+  "category": "Listening",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Listening: Phone Calls.",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Listening: Phone Calls",
+      "explanation": "Practice Listening: Phone Calls."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Listening: Phone Calls",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "In Script 1, when is the appointment?",
+      "category": "Listening",
+      "tags": "Listening,B1,QuickCheck",
+      "explanation": "The caller chooses Friday and the receptionist offers 11:30.",
+      "correctIndex": 3,
+      "answers": [
+        "Thursday at 11:30",
+        "Thursday at 10:00",
+        "Friday at 11:30",
+        "Friday at 10:30"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "What does \"I'm afraid he's in a meeting\" mean?",
+      "category": "Listening",
+      "tags": "Listening,B1,QuickCheck",
+      "explanation": "I'm afraid is a polite way to give bad news.",
+      "correctIndex": 4,
+      "answers": [
+        "He is late",
+        "He is scared of the meeting",
+        "He is on holiday",
+        "He is not available now"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "How do Americans usually say \"mobile\"?",
+      "category": "Listening",
+      "tags": "Listening,B1,QuickCheck",
+      "explanation": "Americans say cell phone.",
+      "correctIndex": 1,
+      "answers": [
+        "cell phone",
+        "portable",
+        "ring",
+        "handset"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

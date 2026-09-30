@@ -1,0 +1,91 @@
+{
+  "id": "lesson-course-a1-unit-04-lesson-03",
+  "title": "Lesson: Listening: Greetings and Numbers",
+  "description": "Practice Listening: Greetings and Numbers.",
+  "brand": "Mylingo",
+  "category": "Listening",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Listening: Greetings and Numbers.",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Listening: Greetings and Numbers",
+      "explanation": "Practice Listening: Greetings and Numbers."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Listening: Greetings and Numbers",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "In a British phone number, what does \"double five\" mean?",
+      "category": "Listening",
+      "tags": "Listening,A1,QuickCheck",
+      "explanation": "Double five means the digit 5 twice: 5-5.",
+      "correctIndex": 1,
+      "answers": [
+        "5-5",
+        "55 pounds",
+        "5 + 5",
+        "Fifty"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "Which number has the stress on the FIRST syllable?",
+      "category": "Listening",
+      "tags": "Listening,A1,QuickCheck",
+      "explanation": "Thirty has the stress at the start. In thirteen the stress is at the end.",
+      "correctIndex": 4,
+      "answers": [
+        "fifteen",
+        "thirteen",
+        "fourteen",
+        "thirty"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "You hear \"Good evening\". When do people say this?",
+      "category": "Listening",
+      "tags": "Listening,A1,QuickCheck",
+      "explanation": "Good evening is a greeting used in the evening.",
+      "correctIndex": 4,
+      "answers": [
+        "In the middle of the night to go to bed",
+        "Before lunch",
+        "Only when leaving",
+        "In the evening"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

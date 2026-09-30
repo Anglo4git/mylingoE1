@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-c1-unit-06-lesson-01",
+  "title": "Lesson: Rhythm and Chunking",
+  "description": "Practice Rhythm and Chunking.",
+  "brand": "Mylingo",
+  "category": "Pronunciation",
+  "tags": "Lesson,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Rhythm and Chunking.",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,C1",
+      "media": {},
+      "subprompt": "Rhythm and Chunking",
+      "explanation": "Practice Rhythm and Chunking."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Rhythm and Chunking",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,C1"
+    },
+    {
+      "question": "In stress-timed English rhythm, which words usually carry the beat?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,C1,QuickCheck",
+      "explanation": "Content words carry the beat; function words are weak and short.",
+      "correctIndex": 2,
+      "answers": [
+        "Function words such as the, of and to",
+        "Content words such as nouns and main verbs",
+        "Every syllable equally",
+        "Only the first word of a sentence"
+      ]
+    },
+    {
+      "question": "What is a chunk (thought group)?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,C1,QuickCheck",
+      "explanation": "A chunk is a short meaningful group of words delivered as one unit.",
+      "correctIndex": 3,
+      "answers": [
+        "A single stressed syllable",
+        "A written paragraph",
+        "A short group of words spoken together, then a pause or pitch change",
+        "A word with a weak vowel"
+      ]
+    },
+    {
+      "question": "Where does the nuclear stress usually fall in a chunk?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,C1,QuickCheck",
+      "explanation": "Nuclear stress usually falls on the last content word of the chunk, unless you move it for contrast.",
+      "correctIndex": 1,
+      "answers": [
+        "On the last content word",
+        "On the first word",
+        "On a pronoun",
+        "On the pause"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,C1"
+    }
+  ]
+}

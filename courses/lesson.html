@@ -53,6 +53,7 @@ main{max-width:820px;margin:auto;padding:20px 16px calc(90px + env(safe-area-ins
 h1{margin:6px 0 8px;font-size:24px;color:var(--ink)}
 .readtime{color:var(--muted);font-size:13px;margin:0 0 20px;display:flex;align-items:center;gap:6px}
 .readtime svg{flex:0 0 auto}
+.lesson-tags{margin:-12px 0 20px;display:flex;flex-wrap:wrap;gap:6px}
 
 /* ---- Slide viewport: exactly one slide of content at a time ---- */
 .slide-viewport{position:relative}
@@ -85,6 +86,11 @@ h1{margin:6px 0 8px;font-size:24px;color:var(--ink)}
 .lesson-content a{color:var(--brand);font-weight:700}
 .lesson-content blockquote,.lesson-content .tutor-notice-box{margin:12px 0;padding:12px 14px;border-left:3px solid var(--brand);background:var(--panel);border-radius:0 10px 10px 0;color:var(--muted)}
 .lesson-content img{max-width:100%;border-radius:12px;display:block;margin:12px 0}
+/* Agent 295: UK | US side-by-side comparison (docs: CURRICULUM_DECISIONS.md). Authoring: <div class="uk-us"><div class="uk"><span class="uk-us-tag">UK</span>...</div><div class="us"><span class="uk-us-tag">US</span>...</div></div> — uses only sanitizer-allowed DIV/SPAN + class. */
+.lesson-content .uk-us{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:12px 0}
+.lesson-content .uk-us>.uk,.lesson-content .uk-us>.us{padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--panel);overflow-wrap:anywhere}
+.lesson-content .uk-us-tag{display:block;font-size:12px;font-weight:800;letter-spacing:.04em;color:var(--muted);margin:0 0 4px}
+@media (max-width:340px){.lesson-content .uk-us{grid-template-columns:minmax(0,1fr)}}
 
 /* ---- Video wrapper: standard YouTube 16:9 player ---- */
 .video-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:14px;background:#000;box-shadow:0 12px 34px rgba(0,0,0,.5)}
@@ -230,6 +236,19 @@ function estimateMinutes(revision){
     .filter(Boolean).join(' ');
   var words=text.trim().length ? text.trim().split(/\s+/).length : 0;
   return Math.max(1, Math.ceil(words/200));
+}
+
+// Agent 296: optional lesson metadata (CURRICULUM_DECISIONS.md decisions 2-4). Unknown/absent values are ignored.
+var LESSON_LENGTH_LABELS={short:'Short lesson',long:'Deep lesson'};
+var LESSON_TYPE_LABELS={standalone_skill:'Skill lesson',embedded_skill:'Skill practice',exam:'Exam prep',fluency:'Real-life fluency'};
+function lessonTagLabels(lesson){
+  var out=[];
+  if(!lesson || typeof lesson!=='object') return out;
+  var len=typeof lesson.lesson_length==='string' ? lesson.lesson_length : '';
+  var type=typeof lesson.lesson_type==='string' ? lesson.lesson_type : '';
+  if(Object.prototype.hasOwnProperty.call(LESSON_LENGTH_LABELS,len)) out.push(LESSON_LENGTH_LABELS[len]);
+  if(Object.prototype.hasOwnProperty.call(LESSON_TYPE_LABELS,type)) out.push(LESSON_TYPE_LABELS[type]);
+  return out;
 }
 
 function youtubeId(url){
@@ -416,7 +435,8 @@ lessonsFetch.catch(function(){
         (startUrl?'<a class="skipbtn" href="'+startUrl+'">Skip revision</a>':'')+
       '</div>'+
       '<h1>'+esc(lesson.title)+'</h1>'+
-      '<p class="readtime"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg> ~'+minutes+' min read</p>';
+      '<p class="readtime"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg> ~'+minutes+' min read</p>'+
+      (lessonTagLabels(lesson).length?'<p class="lesson-tags">'+lessonTagLabels(lesson).map(function(t){return '<span class="chip">'+esc(t)+'</span>'}).join(' ')+'</p>':'');
 
     // ---- Slide deck: videos -> exactly three text slides -> audio -> practice.
     // Every published lesson gets a predictable three-part text sequence:

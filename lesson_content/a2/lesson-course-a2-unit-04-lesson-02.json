@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-a2-unit-04-lesson-02",
+  "title": "Lesson: Past Endings: -ed",
+  "description": "Practice Past Endings: -ed.",
+  "brand": "Mylingo",
+  "category": "Pronunciation",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Past Endings: -ed.",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Past Endings: -ed",
+      "explanation": "Practice Past Endings: -ed."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Past Endings: -ed",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "Which ending sound does \"wanted\" have?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,A2,QuickCheck",
+      "explanation": "Wanted ends in /t/, so -ed is pronounced /ɪd/ and adds a syllable.",
+      "correctIndex": 1,
+      "answers": [
+        "/ɪd/",
+        "No ending sound",
+        "/d/",
+        "/t/"
+      ]
+    },
+    {
+      "question": "How many syllables does \"walked\" have?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,A2,QuickCheck",
+      "explanation": "Walked ends with /t/ and stays one syllable.",
+      "correctIndex": 4,
+      "answers": [
+        "Three",
+        "Two",
+        "It depends on the accent",
+        "One"
+      ]
+    },
+    {
+      "question": "Which past form is usual in American English?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,A2,QuickCheck",
+      "explanation": "Americans usually say and write learned. British English also uses learnt.",
+      "correctIndex": 2,
+      "answers": [
+        "learnt",
+        "learned",
+        "learnd",
+        "learnet"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

@@ -15,7 +15,14 @@
     ],
     "version": 1,
     "status": "published",
-    "lesson_quiz_id": "lesson-course-c2-unit-01-lesson-01"
+    "lesson_quiz_id": "lesson-course-c2-unit-01-lesson-01",
+    "body_content": "<p>Practice Nuanced Modality.</p><h3>Say it: stress and modal nuance</h3><p>Stressing the modal signals doubt or contrast: <em>He COULD do it</em> (but will he?). Stressing the main verb states the action: <em>He could DO it.</em> Weak forms: <strong>could have</strong> /kʊd əv/, <strong>might have</strong> /maɪt əv/.</p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>shan't</strong>, <strong>needn't</strong></div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>won't</strong>, <strong>don't need to</strong></div></div><blockquote>Say it: \"He could do it. He might have left. She must have known.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: stress and modal nuance"
+      }
+    ]
   },
   {
     "lesson_id": "course-c2-unit-01-lesson-02",
@@ -51,7 +58,14 @@
     ],
     "version": 1,
     "status": "published",
-    "lesson_quiz_id": "lesson-course-c2-unit-01-lesson-03"
+    "lesson_quiz_id": "lesson-course-c2-unit-01-lesson-03",
+    "body_content": "<p>Practice Fronting.</p><h3>Say it: fronting and stress</h3><p>Fronted words get the stress and often a slight pause: <strong>Never before have I SEEN it.</strong> <strong>Rich, she was not.</strong> <strong>Into the room walked a STRANGer.</strong> Read the fronted phrase, pause, then deliver the rest.</p><blockquote>Say it: \"Never before had she seen such a view. Into the room walked a stranger.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: fronting and stress"
+      }
+    ]
   },
   {
     "lesson_id": "course-c2-unit-01-lesson-04",
@@ -106,7 +120,14 @@
     ],
     "version": 1,
     "status": "published",
-    "lesson_quiz_id": "lesson-course-c2-unit-02-lesson-01"
+    "lesson_quiz_id": "lesson-course-c2-unit-02-lesson-01",
+    "body_content": "<p>Practice Semantic Nuance.</p><h3>Listen for: shades of meaning in stress</h3><p>Stress shows the shade of meaning: <em>I didn't say she STOLE it</em> (someone else did); <em>I didn't say she stole IT</em> (something else). Listen for the stressed word to find the speaker's exact point.</p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>quite</strong> (moderately)</div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>quite</strong> (very)</div></div><blockquote>Listen for: \"I didn't say she stole it.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Listen for: shades of meaning in stress"
+      }
+    ]
   },
   {
     "lesson_id": "course-c2-unit-02-lesson-02",
@@ -124,7 +145,14 @@
     ],
     "version": 1,
     "status": "published",
-    "lesson_quiz_id": "lesson-course-c2-unit-02-lesson-02"
+    "lesson_quiz_id": "lesson-course-c2-unit-02-lesson-02",
+    "body_content": "<p>Practice Pragmatics.</p><h3>Listen for: implied meaning</h3><p>Listen for what is not said. <em>Well, it's ↘↗interesting</em> may mean disagreement. <strong>I'll think about it</strong> can mean no. A pause before answering, a hedge (<strong>well, sort of</strong>) or a lowered voice signals an answer the speaker would rather avoid. Ask: what did the speaker avoid saying?</p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>Quite good</strong> (may be weak praise)</div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>Pretty good</strong></div></div><blockquote>Listen for: \"Well, it's interesting. I'll think about it.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Listen for: implied meaning"
+      }
+    ]
   },
   {
     "lesson_id": "course-c2-unit-02-lesson-03",
@@ -160,7 +188,14 @@
     ],
     "version": 1,
     "status": "published",
-    "lesson_quiz_id": "lesson-course-c2-unit-03-lesson-01"
+    "lesson_quiz_id": "lesson-course-c2-unit-03-lesson-01",
+    "body_content": "<p>Practice Register and Tone.</p><h3>Say it: register in speech</h3><p>Formal speech uses fuller forms and careful articulation: <strong>I am unable to attend.</strong> Informal speech uses contractions and reductions: <strong>I can't make it.</strong> Say a formal sentence, then re-say it informally, changing the words and the speed.</p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>Dear Sir or Madam</strong>, <strong>Yours faithfully</strong></div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>To whom it may concern</strong>, <strong>Sincerely</strong></div></div><blockquote>Say it: \"I am unable to attend. / I can't make it.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: register in speech"
+      }
+    ]
   },
   {
     "lesson_id": "course-c2-unit-04-lesson-01",
@@ -179,5 +214,87 @@
     "version": 1,
     "status": "published",
     "lesson_quiz_id": "lesson-course-c2-unit-04-lesson-01"
+  },
+  {
+    "lesson_id": "course-c2-unit-05-lesson-01",
+    "unit_id": "course-c2-unit-05",
+    "title": "Intonation: Attitude and Nuance",
+    "category": "Pronunciation",
+    "order": 1,
+    "revision": {
+      "summary": "Use pitch range, tone and stress to signal irony, politeness, doubt, enthusiasm and detachment, and to recognise the attitude behind what a speaker says.",
+      "examples": [
+        "Oh, ↘GREAT. (sarcasm: narrow, flat, low pitch)",
+        "Really? ↗ (surprise) versus Really? ↘ (flat, uninterested)",
+        "I suppose ↘↗so. (reluctant agreement)"
+      ],
+      "key_terms": [
+        "attitude",
+        "pitch range",
+        "sarcasm",
+        "understatement"
+      ],
+      "estimated_minutes": 24
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "lesson-course-c2-unit-05-lesson-01"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c2-unit-05-lesson-01",
+    "body_content": "<h2>Intonation: Attitude and Nuance</h2><p>At C2 the words are often the smaller part of the message. The same sentence can be warm, polite, ironic or dismissive depending on <strong>pitch range</strong>, <strong>tone</strong> and <strong>stress</strong>.</p><h3>1. Wide or narrow pitch</h3><p>A <strong>wide</strong> range (big jumps up and down) sounds engaged and enthusiastic: <em>That's a ↗FANtastic idea!</em> A <strong>narrow, flat</strong> range sounds bored, cold or sarcastic: <em>Oh, great.</em> Same words, opposite meaning.</p><h3>2. Tone changes meaning</h3><blockquote>A: I've booked the 6 a.m. train.<br>B: Really? ↗ (surprised, interested)<br>B: Really. ↘ (flat: I am not pleased)</blockquote><p>A <strong>fall-rise</strong> can soften disagreement or show reluctance: <em>I suppose ↘↗so.</em></p><h3>3. Stress and understatement</h3><p>Stress can hint at what is not said: <em>It was a ↘BIT expensive</em> (= very expensive). Understatement plus a flat tone is a marker of irony, especially in British English.</p><h3>4. Where accents differ</h3><p>Norms of pitch and directness vary:</p><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span>Understatement and a flat tone often mean the opposite: <strong>Not bad</strong> can be high praise<br><strong>Quite good</strong> may be lukewarm<br>Polite disagreement: <strong>I'm not sure that's quite right</strong></div><div class=\"us\"><span class=\"uk-us-tag\">US</span>A wider pitch range and stronger enthusiasm are common: <strong>That's great!</strong> may be simple politeness<br><strong>Pretty good</strong> is usually positive<br>Disagreement is often more direct: <strong>I don't think so</strong></div></div><blockquote>Practice tip: choose one neutral sentence and say it four ways: enthusiastic, bored, sarcastic, doubtful. Record yourself and check that a listener could name each attitude.</blockquote>",
+    "lesson_length": "long",
+    "lesson_type": "standalone_skill",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Sample audio (UK)"
+      },
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Sample audio (US)"
+      }
+    ]
+  },
+  {
+    "lesson_id": "course-c2-unit-05-lesson-02",
+    "unit_id": "course-c2-unit-05",
+    "title": "Listening: Implication, Irony and Accents",
+    "category": "Listening",
+    "order": 2,
+    "revision": {
+      "summary": "Follow what speakers imply rather than say, recognise irony and understatement, and cope with a range of native and non-native accents using context and attitude cues.",
+      "examples": [
+        "That went well. (after a disaster: irony)",
+        "I don't suppose you could... (an indirect request)",
+        "Not the brightest idea. (understatement = a bad idea)"
+      ],
+      "key_terms": [
+        "implication",
+        "irony",
+        "understatement",
+        "accent variation"
+      ],
+      "estimated_minutes": 26
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "lesson-course-c2-unit-05-lesson-02"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c2-unit-05-lesson-02",
+    "body_content": "<h2>Listening: Implication, Irony and Accents</h2><p>At the highest level you must hear what the speaker <strong>means</strong>, not only what they say. Listen for mismatches between the words, the tone and the situation.</p><h3>1. Script 1: irony</h3><blockquote>A: How was the presentation?<br>B: Oh, it went brilliantly. The projector died, the slides were in the wrong order, and I forgot the client's name.</blockquote><p>The words say <em>brilliantly</em>, but the facts show the opposite. The listener concludes: <strong>it went badly</strong>.</p><h3>2. Script 2: implication and indirect requests</h3><blockquote>A: It's getting rather warm in here.<br>B: I'll open a window.</blockquote><p>A does not ask, but implies a request. Other indirect forms: <strong>I don't suppose you could...</strong>, <strong>Would it be a problem if...</strong>, <strong>It would be great if...</strong></p><h3>3. Understatement</h3><ul><li><strong>Not the brightest idea</strong> = a very bad idea.</li><li><strong>A slight problem</strong> = a serious problem.</li><li><strong>Not exactly cheap</strong> = expensive.</li></ul><h3>4. Listening to different accents</h3><p>Do not expect the accent in your practice recordings. Listen for stressed words and repeated patterns, and adjust after the first few sentences. Familiar text is easier: read the transcript afterwards, then listen again.</p><h3>5. Where UK and US differ</h3><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span>Irony is often dry and delivered with a straight face<br><strong>Quite</strong> can weaken (<em>quite good</em> = fairly good)<br><strong>brilliant</strong>, <strong>cheers</strong>, <strong>rubbish</strong></div><div class=\"us\"><span class=\"uk-us-tag\">US</span>Irony is often marked by exaggerated tone<br><strong>Quite</strong> is rare; <strong>pretty</strong> is used instead<br><strong>awesome</strong>, <strong>thanks</strong>, <strong>garbage</strong></div></div><blockquote>Practice tip: listen to a two-minute interview and note one thing said directly and one thing only implied. Then check the transcript.</blockquote>",
+    "lesson_length": "long",
+    "lesson_type": "standalone_skill",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Listen: Implication, Irony and Accents"
+      }
+    ]
   }
 ]

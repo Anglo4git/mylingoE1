@@ -1,0 +1,91 @@
+{
+  "id": "lesson-course-c1-unit-06-lesson-03",
+  "title": "Lesson: Listening: Fast Speech",
+  "description": "Practice Listening: Fast Speech.",
+  "brand": "Mylingo",
+  "category": "Listening",
+  "tags": "Lesson,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Listening: Fast Speech.",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,C1",
+      "media": {},
+      "subprompt": "Listening: Fast Speech",
+      "explanation": "Practice Listening: Fast Speech."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Listening: Fast Speech",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,C1"
+    },
+    {
+      "question": "In \"What are you gonna do?\", what does \"gonna\" stand for?",
+      "category": "Listening",
+      "tags": "Listening,C1,QuickCheck",
+      "explanation": "Gonna is the informal, reduced form of going to.",
+      "correctIndex": 1,
+      "answers": [
+        "going to",
+        "gone to",
+        "got to",
+        "gun to"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "What is the best strategy when you miss a word in fast speech?",
+      "category": "Listening",
+      "tags": "Listening,C1,QuickCheck",
+      "explanation": "Keep going: stressed words and context usually give the meaning.",
+      "correctIndex": 2,
+      "answers": [
+        "Stop the recording and translate",
+        "Keep listening and use context and stressed words",
+        "Ignore the whole sentence",
+        "Ask for a slower recording every time"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "What does \"D'you wanna\" stand for?",
+      "category": "Listening",
+      "tags": "Listening,C1,QuickCheck",
+      "explanation": "D'you wanna is the fast form of Do you want to.",
+      "correctIndex": 2,
+      "answers": [
+        "Did you want",
+        "Do you want to",
+        "Does you want",
+        "Would you win"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,C1"
+    }
+  ]
+}

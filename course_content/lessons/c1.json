@@ -15,7 +15,14 @@
     ],
     "version": 1,
     "status": "published",
-    "lesson_quiz_id": "lesson-course-c1-unit-01-lesson-01"
+    "lesson_quiz_id": "lesson-course-c1-unit-01-lesson-01",
+    "body_content": "<p>Practice Advanced Conditionals.</p><h3>Say it: inverted conditionals</h3><p><strong>Were it not for</strong> your help, we would have failed. Pause after the fronted clause and stress <strong>HELP</strong>. With <strong>Had I known</strong> the tone rises before the pause: <em>Had I KNOWN ↗ | I would have CALLED.</em></p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>Should you need anything, please ring.</strong></div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>Should you need anything, please call.</strong></div></div><blockquote>Say it: \"Were it not for your help, we would have failed.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: inverted conditionals"
+      }
+    ]
   },
   {
     "lesson_id": "course-c1-unit-01-lesson-02",
@@ -33,7 +40,14 @@
     ],
     "version": 1,
     "status": "published",
-    "lesson_quiz_id": "lesson-course-c1-unit-01-lesson-02"
+    "lesson_quiz_id": "lesson-course-c1-unit-01-lesson-02",
+    "body_content": "<p>Practice Subjunctive.</p><h3>Say it: the mandative subjunctive</h3><p>After verbs like <strong>suggest</strong>, <strong>insist</strong> and <strong>recommend</strong> the bare form is used: <strong>I suggest that he BE early.</strong> The bare verb carries the stress. Also: <strong>If I WERE you</strong>.</p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>I suggest that he should be early.</strong> (with <em>should</em>)</div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>I suggest that he be early.</strong> (bare form preferred)</div></div><blockquote>Say it: \"I insist that she be told. I recommend that he leave early.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: the mandative subjunctive"
+      }
+    ]
   },
   {
     "lesson_id": "course-c1-unit-01-lesson-03",
@@ -51,7 +65,14 @@
     ],
     "version": 1,
     "status": "published",
-    "lesson_quiz_id": "lesson-course-c1-unit-01-lesson-03"
+    "lesson_quiz_id": "lesson-course-c1-unit-01-lesson-03",
+    "body_content": "<p>Practice Cleft Sentences.</p><h3>Say it: focus stress in cleft sentences</h3><p>In a cleft the focus takes the nuclear stress: <strong>It was JOHN who broke it.</strong> <strong>What I need is a HOLiday.</strong> The first part is quick and weak. The stress tells the listener what is new or corrected.</p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>What I need is a holiday.</strong></div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>What I need is a vacation.</strong></div></div><blockquote>Say it: \"It was John who broke it. What I need is a rest.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: focus stress in cleft sentences"
+      }
+    ]
   },
   {
     "lesson_id": "course-c1-unit-01-lesson-04",
@@ -87,7 +108,14 @@
     ],
     "version": 1,
     "status": "published",
-    "lesson_quiz_id": "lesson-course-c1-unit-01-lesson-05"
+    "lesson_quiz_id": "lesson-course-c1-unit-01-lesson-05",
+    "body_content": "<p>Practice Inversion after Only.</p><h3>Say it: the pause after Only</h3><p>Keep <strong>only then</strong> as one chunk, stress <strong>THEN</strong>, pause briefly, then return to normal rhythm: <em>Only THEN | did I realISE.</em> The same works for <strong>Only after</strong>, <strong>Only when</strong> and <strong>Only by</strong>.</p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>realise</strong> /ˈrɪəlaɪz/</div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>realize</strong> /ˈriːəlaɪz/</div></div><blockquote>Say it: \"Only then did I realise. Only after the storm did we leave.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: the pause after Only"
+      }
+    ]
   },
   {
     "lesson_id": "course-c1-unit-02-lesson-01",
@@ -160,7 +188,14 @@
     ],
     "version": 1,
     "status": "published",
-    "lesson_quiz_id": "lesson-course-c1-unit-04-lesson-01"
+    "lesson_quiz_id": "lesson-course-c1-unit-04-lesson-01",
+    "body_content": "<p>Practice Nominalisation.</p><h3>Say it: stress in nominalisation</h3><p>Two-syllable words: verbs often take stress on the second syllable, nouns on the first: <strong>a REcord / to reCORD</strong>, <strong>an INcrease / to inCREASE</strong>. Suffixes move stress: <strong>deCIDE</strong> → <strong>deCIsion</strong>; <strong>imPROVE</strong> → <strong>imPROVEment</strong>.</p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>organisation</strong> /ˌɔːɡənaɪˈzeɪʃn/</div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>organization</strong> /ˌɔːrɡənəˈzeɪʃn/</div></div><blockquote>Say it: \"There was an increase. Prices increase. A record; to record.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: stress in nominalisation"
+      }
+    ]
   },
   {
     "lesson_id": "course-c1-unit-04-lesson-02",
@@ -178,7 +213,14 @@
     ],
     "version": 1,
     "status": "published",
-    "lesson_quiz_id": "lesson-course-c1-unit-04-lesson-02"
+    "lesson_quiz_id": "lesson-course-c1-unit-04-lesson-02",
+    "body_content": "<p>Practice Academic Stance.</p><h3>Listen for: stance and hedging in tone</h3><p>Speakers signal stance with tone and hedges: <strong>It could be argued that...</strong>, <strong>The evidence suggests...</strong>, <strong>arguably</strong>. A fall-rise marks caution: <em>This is ↘↗arguably the strongest case.</em> Strong stance uses clear stress: <em>It clearly DOES.</em></p><blockquote>Listen for: \"This is arguably the strongest case. The evidence suggests otherwise.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Listen for: stance and hedging in tone"
+      }
+    ]
   },
   {
     "lesson_id": "course-c1-unit-04-lesson-03",
@@ -208,7 +250,14 @@
     ],
     "version": 1,
     "status": "published",
-    "lesson_quiz_id": "lesson-course-c1-unit-04-lesson-03"
+    "lesson_quiz_id": "lesson-course-c1-unit-04-lesson-03",
+    "body_content": "<p>An integrative revision lesson combining nominalisation, academic stance, and discourse markers for learners consolidating academic writing skills.</p><h3>Examples</h3><ul><li>Turning verbs into nouns can make writing sound more formal and academic.</li><li>Discourse markers like &#x27;however&#x27; and &#x27;furthermore&#x27; help structure an argument.</li></ul><h3>Key terms</h3><ul><li>nominalisation</li><li>academic stance</li><li>discourse markers</li></ul><h3>Say it: reading discourse markers aloud</h3><p>Read your paragraph aloud: a signpost like <strong>however</strong> or <strong>furthermore</strong> gets a short pause and a small rise before the new idea. If it sounds awkward aloud, it may read awkwardly.</p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>whilst</strong>, <strong>amongst</strong></div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>while</strong>, <strong>among</strong></div></div><blockquote>Say it: \"However, the data suggest otherwise. Furthermore, the sample was small.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: reading discourse markers aloud"
+      }
+    ]
   },
   {
     "lesson_id": "course-c1-unit-01-lesson-06",
@@ -276,7 +325,14 @@
       "c1-014"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Past Perfect.</p><h3>Listen for: 'd had or 'd would</h3><p>In fast speech <strong>had</strong> becomes <strong>'d</strong>, easy to confuse with <strong>would</strong>: <strong>I'd finished</strong> vs <strong>I'd finish</strong>. Listen to what follows: a past participle means <em>had</em>, a base verb means <em>would</em>. <strong>She'd already gone</strong> /ʃiːd ɔːlˈredi ɡɒn/.</p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>I'd not seen him for years.</strong></div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>I hadn't seen him in years.</strong></div></div><blockquote>Listen for: \"I'd finished before she'd arrived. I'd finish it if I could.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Listen for: 'd had or 'd would"
+      }
+    ]
   },
   {
     "lesson_id": "course-c1-unit-01-lesson-10",
@@ -344,7 +400,14 @@
       "c1-018"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Modal verbs.</p><h3>Say it: can and can't</h3><p>The vowel and stress separate <strong>can</strong> from <strong>can't</strong>. Positive <strong>can</strong> is weak /kən/: <em>I can COME.</em> Negative <strong>can't</strong> is strong /kɑːnt/ (UK) and the verb is weak: <em>I CAN'T come.</em> In US speech the /t/ may vanish, so listen to the vowel and context.</p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>can't</strong> /kɑːnt/</div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>can't</strong> /kænt/</div></div><blockquote>Say it: \"I can come on Friday. I can't come on Saturday.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: can and can't"
+      }
+    ]
   },
   {
     "lesson_id": "course-c1-unit-01-lesson-14",
@@ -361,7 +424,14 @@
       "c1-019"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Ellipsis and elision.</p><h3>Listen for: elision and ellipsis</h3><p>Elision drops sounds: <strong>next day</strong> /neks deɪ/, <strong>friendship</strong> /ˈfrenʃɪp/. Ellipsis drops words: <em>(Have you) got a minute?</em> <em>(I'm) sorry.</em> Listen for the stressed words; the missing ones can be inferred.</p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>Fancy a cuppa?</strong> (Do you fancy a...)</div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>Want some coffee?</strong> (Do you want...)</div></div><blockquote>Listen for: \"Got a minute? Sorry, can't stop.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Listen for: elision and ellipsis"
+      }
+    ]
   },
   {
     "lesson_id": "course-c1-unit-01-lesson-15",
@@ -378,7 +448,14 @@
       "c1-020"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Question tags.</p><h3>Say it: rising and falling tags</h3><p>A <strong>falling</strong> tag asks for agreement: <strong>It's cold, isn't it ↘</strong>. A <strong>rising</strong> tag is a real question: <strong>You've got the keys, haven't you ↗?</strong> Keep the tag light: /ˈɪznt ɪt/. A positive-positive tag shows surprise or suspicion: <strong>So you're leaving, are you?</strong></p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>You're coming, aren't you?</strong></div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>You're coming, right?</strong></div></div><blockquote>Say it: \"It's cold, isn't it? You've got the keys, haven't you?\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: rising and falling tags"
+      }
+    ]
   },
   {
     "lesson_id": "course-c1-unit-01-lesson-16",
@@ -412,7 +489,14 @@
       "c1-022"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Relative clauses.</p><h3>Listen for: defining and non-defining pauses</h3><p>Non-defining clauses are marked by pauses and a lower voice: <em>My car, | which I bought last year, | keeps breaking down.</em> Defining clauses flow: <em>The car that I bought last year keeps breaking down.</em> Listen for which speakers use a pause to add extra information.</p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>The man whom I met</strong> (formal)</div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>The man that I met</strong> (usual)</div></div><blockquote>Listen for: \"My sister, who lives in Rome, is a nurse. The sister who lives in Rome is a nurse.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Listen for: defining and non-defining pauses"
+      }
+    ]
   },
   {
     "lesson_id": "course-c1-unit-01-lesson-18",
@@ -514,7 +598,14 @@
       "c1-028"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Nostalgia.</p><h3>Listen for: tone in nostalgic speech</h3><p>Nostalgic speech is slower, with longer pauses and a softer, falling tone: <em>Those were the days.</em> Listen for <strong>used to</strong> /ˈjuːst tə/ and <strong>would</strong> for habit: <em>We'd spend hours by the RIVer.</em> Signal words: <strong>back then</strong>, <strong>in those days</strong>, <strong>I remember</strong>.</p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>We used to buy sweets after school.</strong></div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>We used to buy candy after school.</strong></div></div><blockquote>Listen for: \"Back then, we'd spend hours by the river. Those were the days.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Listen for: tone in nostalgic speech"
+      }
+    ]
   },
   {
     "lesson_id": "course-c1-unit-02-lesson-05",
@@ -599,7 +690,14 @@
       "c1-033"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Age and cultural differences.</p><h3>Listen for: tone across cultures</h3><p>Intonation can be read differently across cultures: a rise at the end of a statement may be politeness, uncertainty or a check, not always a question. Listen to the pattern and the context. Notice how direct requests sound (<strong>Could you...?</strong> vs <strong>Would you mind...?</strong>).</p><blockquote>Listen for: \"Would you mind waiting a moment? Could you send it today?\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Listen for: tone across cultures"
+      }
+    ]
   },
   {
     "lesson_id": "course-c1-unit-02-lesson-10",
@@ -633,7 +731,14 @@
       "c1-035"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Current affairs.</p><h3>Listen for: the style of news reports</h3><p>News reports are fast, with stress on names, numbers and verbs: <em>The GOVernment has ANnounced a NEW tax.</em> Listen for reporting verbs and hedges: <strong>allegedly</strong>, <strong>is expected to</strong>, <strong>sources say</strong>.</p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>MP</strong>, <strong>Prime Minister</strong>, <strong>the Commons</strong></div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>Congress</strong>, <strong>the President</strong>, <strong>the White House</strong></div></div><blockquote>Listen for: \"The government has announced a new tax, which is expected to rise next year.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Listen for: the style of news reports"
+      }
+    ]
   },
   {
     "lesson_id": "course-c1-unit-02-lesson-12",
@@ -684,7 +789,14 @@
       "c1-038"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Moral and personal dilemmas.</p><h3>Say it: weighing options aloud</h3><p>Dilemmas use balanced phrases with stress on the contrast: <strong>On the ONE hand... | on the OTHer...</strong> Raise your pitch on the first option and fall on the second. Hedges soften: <strong>I suppose</strong>, <strong>it depends</strong>, <strong>I'm torn</strong>.</p><blockquote>Say it: \"On the one hand, it's honest. On the other, it could hurt her.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: weighing options aloud"
+      }
+    ]
   },
   {
     "lesson_id": "course-c1-unit-02-lesson-15",
@@ -718,7 +830,14 @@
       "c1-040"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Environmental issues.</p><h3>Say it: word stress in environmental vocabulary</h3><p>Stress in long words: <strong>enVIronment</strong>, <strong>susTAINable</strong>, <strong>deforeSTAtion</strong>, <strong>bioDIVersity</strong>. Say the stressed syllable longer and louder and reduce the others.</p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>aluminium</strong> /ˌæljəˈmɪniəm/<br><strong>rubbish</strong>, <strong>bin</strong></div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>aluminum</strong> /əˈluːmɪnəm/<br><strong>trash</strong>, <strong>garbage can</strong></div></div><blockquote>Say it: \"Deforestation threatens biodiversity. We need sustainable energy.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: word stress in environmental vocabulary"
+      }
+    ]
   },
   {
     "lesson_id": "course-c1-unit-02-lesson-17",
@@ -769,7 +888,14 @@
       "c1-043"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Architecture.</p><h3>Say it: stress in architecture words</h3><p>Stress moves: <strong>ARchitect</strong>, <strong>archiTECture</strong>, <strong>archiTECtural</strong>. <strong>Façade</strong> /fəˈsɑːd/, <strong>Gothic</strong> /ˈɡɒθɪk/.</p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>baroque</strong> /bəˈrɒk/<br><strong>lift</strong>, <strong>ground floor</strong></div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>baroque</strong> /bəˈroʊk/<br><strong>elevator</strong>, <strong>first floor</strong></div></div><blockquote>Say it: \"The architect designed a Gothic façade. Architecture shapes a city.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: stress in architecture words"
+      }
+    ]
   },
   {
     "lesson_id": "course-c1-unit-05-lesson-01",
@@ -837,7 +963,14 @@
       "c1-047"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Advising.</p><h3>Say it: softening advice</h3><p>Soften advice with modals and a gentle tone: <strong>You might want to...</strong>, <strong>If I were you, I'd...</strong>, <strong>Have you thought of...?</strong> A rise-fall sounds friendly; a flat fall can sound like an order.</p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>Why don't you speak to her?</strong></div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>You may want to speak to her.</strong></div></div><blockquote>Say it: \"If I were you, I'd speak to her. Have you thought of asking?\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: softening advice"
+      }
+    ]
   },
   {
     "lesson_id": "course-c1-unit-05-lesson-05",
@@ -956,7 +1089,14 @@
       "c1-054"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Expressing annoyance.</p><h3>Say it: annoyance and control</h3><p>Annoyance shows in wider pitch and extra stress on the emphasised word: <strong>How MANy times do I have to TELL you?</strong> <strong>You're ALways leaving the door open!</strong> At C1, keep it controlled: a low, level tone can sound colder than a loud one.</p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>It's driving me mad.</strong></div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>It's driving me crazy.</strong></div></div><blockquote>Say it: \"How many times do I have to tell you? You're always late!\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: annoyance and control"
+      }
+    ]
   },
   {
     "lesson_id": "course-c1-unit-05-lesson-12",
@@ -1008,5 +1148,170 @@
     ],
     "version": 1,
     "status": "published"
+  },
+  {
+    "lesson_id": "course-c1-unit-06-lesson-01",
+    "unit_id": "course-c1-unit-06",
+    "title": "Rhythm and Chunking",
+    "category": "Pronunciation",
+    "order": 1,
+    "revision": {
+      "summary": "Control English stress-timed rhythm and split speech into meaningful chunks (thought groups) with a clear main stress, so you sound fluent and are easy to follow.",
+      "examples": [
+        "I'd like to talk about | the results | of the survey.",
+        "Content words carry the beat; function words shrink.",
+        "laboratory: UK /ləˈbɒrətri/, US /ˈlæbrətɔːri/"
+      ],
+      "key_terms": [
+        "stress-timed rhythm",
+        "chunk",
+        "thought group",
+        "nuclear stress"
+      ],
+      "estimated_minutes": 22
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "lesson-course-c1-unit-06-lesson-01"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c1-unit-06-lesson-01",
+    "body_content": "<h2>Rhythm and Chunking</h2><p>Advanced speakers are often understood or misunderstood because of rhythm, not single sounds. English is <strong>stress-timed</strong>: stressed syllables come at fairly regular beats, and the syllables between them are squeezed together.</p><h3>1. Beat and weak words</h3><p>Content words (nouns, main verbs, adjectives, adverbs) carry the beat. Function words (<strong>the, of, and, to, can</strong>) are weak. Compare: <strong>The RESULTS of the SURvey were SURprising</strong>. Four beats, even though the number of syllables changes.</p><h3>2. Chunking</h3><p>Fluent speech is delivered in <strong>chunks</strong> (thought groups) of about three to seven words, each with a short pause or a change of pitch at the end:</p><blockquote>I'd like to talk about | the results | of the survey | we ran in March.</blockquote><p>Pausing inside a chunk (for example between <em>of</em> and <em>the survey</em>) sounds hesitant and can confuse the listener.</p><h3>3. Nuclear stress</h3><p>Each chunk has one <strong>nuclear</strong> (main) stress, usually on the <strong>last content word</strong>: <em>the reSULTS</em>, <em>we ran in MARCH</em>. Move it to show contrast: <em>I said the RESULTS, not the method.</em></p><h3>4. Where accents differ</h3><p>Word stress and vowel reduction change the rhythm of the same word:</p><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>laboratory</strong> /ləˈbɒrətri/ (4 syllables)<br><strong>secretary</strong> /ˈsekrətri/<br><strong>schedule</strong> /ˈʃedjuːl/</div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>laboratory</strong> /ˈlæbrətɔːri/ (5 syllables)<br><strong>secretary</strong> /ˈsekrəteri/<br><strong>schedule</strong> /ˈskedʒuːl/</div></div><blockquote>Practice tip: mark a paragraph with | for chunk boundaries and underline the nuclear stress in each chunk. Read it aloud, tapping the beat.</blockquote>",
+    "lesson_length": "long",
+    "lesson_type": "standalone_skill",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Sample audio (UK)"
+      },
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Sample audio (US)"
+      }
+    ]
+  },
+  {
+    "lesson_id": "course-c1-unit-06-lesson-02",
+    "unit_id": "course-c1-unit-06",
+    "title": "Discourse Intonation",
+    "category": "Pronunciation",
+    "order": 2,
+    "revision": {
+      "summary": "Use pitch to signal new versus shared information, contrast, reservations and topic changes, and read the attitude behind other speakers' intonation.",
+      "examples": [
+        "fall = telling new information",
+        "fall-rise = shared information or a reservation (\"Well, it's interesting...\")",
+        "higher key = contrast or a new topic"
+      ],
+      "key_terms": [
+        "tone",
+        "fall",
+        "fall-rise",
+        "key",
+        "shared information"
+      ],
+      "estimated_minutes": 24
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "lesson-course-c1-unit-06-lesson-02"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c1-unit-06-lesson-02",
+    "body_content": "<h2>Discourse Intonation</h2><p>At C1 intonation does more than mark statements and questions. Pitch shows how a speaker treats information and how they feel about it.</p><h3>1. Falling tone: telling</h3><p>A <strong>fall</strong> on the nuclear syllable presents <em>new</em> information: <em>The meeting is on ↘FRIday.</em> It sounds certain and complete.</p><h3>2. Fall-rise: shared ground or a reservation</h3><p>A <strong>fall-rise</strong> (↘↗) marks information the listener already knows, or a point the speaker is not fully committed to:</p><blockquote>A: What did you think of the proposal?<br>B: Well, it's ↘↗interesting... (but I have doubts)</blockquote><p>A flat, polite reply with a fall-rise on <em>interesting</em> often means <em>I am not convinced</em>.</p><h3>3. Key: starting high or low</h3><p>Starting a chunk <strong>higher</strong> than the previous one signals a new topic or contrast (<em>Now, on a DIFFerent note...</em>). A <strong>lower</strong> start signals an aside or something less important.</p><h3>4. Where accents differ</h3><p>The same patterns exist, but frequency and use vary:</p><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span>The <strong>fall-rise</strong> for polite reservations is very common (<em>Well, it's ↘↗interesting</em>)<br>Statements usually end with a fall<br><strong>Sorry?</strong> with a rise to ask for repetition</div><div class=\"us\"><span class=\"uk-us-tag\">US</span>A rising end on statements (<strong>uptalk</strong>) is common in some varieties and does not always mean a question<br>Reservations are often stated more directly<br><strong>Excuse me?</strong> / <strong>Pardon?</strong> to ask for repetition</div></div><blockquote>Practice tip: listen to one speaker for two minutes. Note three falls, one fall-rise and one high start, and decide what each one signals.</blockquote>",
+    "lesson_length": "long",
+    "lesson_type": "standalone_skill",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Sample audio (UK)"
+      },
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Sample audio (US)"
+      }
+    ]
+  },
+  {
+    "lesson_id": "course-c1-unit-06-lesson-03",
+    "unit_id": "course-c1-unit-06",
+    "title": "Listening: Fast Speech",
+    "category": "Listening",
+    "order": 3,
+    "revision": {
+      "summary": "Practise following fast, informal speech with reductions, weak forms and blurred word boundaries, using context and stressed words rather than trying to catch every word.",
+      "examples": [
+        "D'you wanna grab a coffee?",
+        "I've gotta finish this first.",
+        "I dunno, it's kinda far."
+      ],
+      "key_terms": [
+        "reduction",
+        "weak form",
+        "gonna / wanna / gotta",
+        "context"
+      ],
+      "estimated_minutes": 22
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "lesson-course-c1-unit-06-lesson-03"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c1-unit-06-lesson-03",
+    "body_content": "<h2>Listening: Fast Speech</h2><p>Native speakers do not pronounce every word. In fast speech, function words shrink, words join together and some sounds disappear. Successful listeners rely on stressed words and context.</p><h3>1. Script 1: making plans</h3><blockquote>A: D'you wanna grab a coffee after work?<br>B: I've gotta finish this report first, but I should be done by six.<br>A: Kinda late for coffee, though. Wanna get dinner instead?<br>B: Sure, I dunno anywhere good near here, though.</blockquote><p>Decode: <strong>D'you wanna</strong> = Do you want to; <strong>gotta</strong> = (have) got to; <strong>kinda</strong> = kind of; <strong>dunno</strong> = I don't know.</p><h3>2. Strategies</h3><ul><li>Listen for the <strong>stressed content words</strong> first: coffee, report, six, dinner.</li><li>Expect <strong>weak forms</strong> and contractions: <em>could've, should've, whatcha</em>.</li><li>If you miss a word, <strong>keep listening</strong> and use context. Do not stop to translate.</li><li>Listen again and compare what you heard with the full forms.</li></ul><h3>3. Script 2: a voicemail</h3><blockquote>Hey, it's me. Listen, I'm gonna be a bit late, so don't wait for me. I'll grab something on the way. See ya in a bit.</blockquote><p>Main idea: the speaker will arrive late and will bring food or a snack.</p><h3>4. Where UK and US differ</h3><p>Reductions exist in both, but some forms are more typical of one:</p><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>innit</strong> (isn't it), <strong>ta</strong> (thanks)<br><strong>I've got to</strong> = <strong>I've gotta</strong><br>The /t/ in <strong>a lot of</strong> is often clear</div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>whaddaya</strong> (what do you), <strong>lemme</strong> (let me)<br><strong>I gotta</strong> (without <em>have</em>)<br>The /t/ in <strong>a lot of</strong> often sounds like /d/: \"a lodda\"</div></div><blockquote>Practice tip: play ten seconds of a casual conversation three times. First for the topic, then for the stressed words, then write what you heard and check it.</blockquote>",
+    "lesson_length": "long",
+    "lesson_type": "standalone_skill",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Listen: Fast Speech"
+      }
+    ]
+  },
+  {
+    "lesson_id": "course-c1-unit-06-lesson-04",
+    "unit_id": "course-c1-unit-06",
+    "title": "Listening: Academic Lectures",
+    "category": "Listening",
+    "order": 4,
+    "revision": {
+      "summary": "Follow the structure of an academic lecture using signposting language and stressed key terms, take effective notes, and recognise UK and US university vocabulary.",
+      "examples": [
+        "Today I'll focus on three causes.",
+        "Turning to the second point...",
+        "To sum up, the evidence suggests..."
+      ],
+      "key_terms": [
+        "signposting",
+        "key term",
+        "lecture",
+        "note-taking"
+      ],
+      "estimated_minutes": 25
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "lesson-course-c1-unit-06-lesson-04"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-c1-unit-06-lesson-04",
+    "body_content": "<h2>Listening: Academic Lectures</h2><p>Lectures are long and dense, but they are organised. The lecturer tells you the structure with <strong>signposting language</strong> and stresses the key terms. Your job is to catch the structure, not every word.</p><h3>1. Script 1: opening a lecture</h3><blockquote>Good morning. Today I'll focus on three causes of urban migration: economic opportunity, education and family networks. I'll begin with the economic factors, and then, turning to education, I'll explain why cities attract younger people.</blockquote><p>Notes: <strong>Urban migration: 3 causes = 1 economic, 2 education, 3 family.</strong></p><h3>2. Signposting language</h3><ul><li><strong>Today I'll focus on / There are three main...</strong> = overview.</li><li><strong>Turning to / Moving on to</strong> = a new point.</li><li><strong>In contrast / However</strong> = a different or opposite idea.</li><li><strong>For instance / Take, for example</strong> = an example.</li><li><strong>To sum up / In conclusion</strong> = the end.</li></ul><h3>3. Script 2: a contrast</h3><blockquote>Early studies suggested that migration was driven by wages alone. In contrast, more recent research shows that family ties matter just as much. For instance, in one survey, more than half of migrants moved to join relatives.</blockquote><p>Notes: <strong>Early: wages only. Recent: family ties too (survey: over 50% joined relatives).</strong></p><h3>4. Note-taking tips</h3><p>Write key terms and numbers, use symbols (<strong>→ cause, ≠ different, ↑ increase</strong>) and leave space to add details later.</p><h3>5. Where UK and US differ</h3><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>lecture</strong>, <strong>seminar</strong>, <strong>tutor</strong><br><strong>module</strong> (a unit of a course)<br><strong>timetable</strong>, <strong>revision</strong></div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>class</strong>, <strong>lecture</strong>, <strong>professor</strong><br><strong>course</strong> (a unit of study)<br><strong>schedule</strong>, <strong>review</strong></div></div><blockquote>Practice tip: play a two-minute lecture extract. Write only the signposting words you hear, then use them to reconstruct the structure.</blockquote>",
+    "lesson_length": "long",
+    "lesson_type": "standalone_skill",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Listen: Academic Lectures"
+      }
+    ]
   }
 ]

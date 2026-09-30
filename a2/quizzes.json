@@ -1294,5 +1294,77 @@
     "level": "A2",
     "questions": 5,
     "version": 1
+  },
+  {
+    "file": "lesson_content/a2/lesson-course-a2-unit-04-lesson-01.json",
+    "id": "lesson-course-a2-unit-04-lesson-01",
+    "title": "Lesson: Sounds: /ɪ/ and /iː/",
+    "topic": "Sounds: /ɪ/ and /iː/",
+    "description": "Practice Sounds: /ɪ/ and /iː/.",
+    "category": "Pronunciation",
+    "tags": "Lesson,A2",
+    "level": "A2",
+    "questions": 3,
+    "version": 1
+  },
+  {
+    "file": "lesson_content/a2/lesson-course-a2-unit-04-lesson-02.json",
+    "id": "lesson-course-a2-unit-04-lesson-02",
+    "title": "Lesson: Past Endings: -ed",
+    "topic": "Past Endings: -ed",
+    "description": "Practice Past Endings: -ed.",
+    "category": "Pronunciation",
+    "tags": "Lesson,A2",
+    "level": "A2",
+    "questions": 3,
+    "version": 1
+  },
+  {
+    "file": "lesson_content/a2/lesson-course-a2-unit-04-lesson-03.json",
+    "id": "lesson-course-a2-unit-04-lesson-03",
+    "title": "Lesson: Weak Forms: to and can",
+    "topic": "Weak Forms: to and can",
+    "description": "Practice Weak Forms: to and can.",
+    "category": "Pronunciation",
+    "tags": "Lesson,A2",
+    "level": "A2",
+    "questions": 3,
+    "version": 1
+  },
+  {
+    "file": "lesson_content/a2/lesson-course-a2-unit-04-lesson-04.json",
+    "id": "lesson-course-a2-unit-04-lesson-04",
+    "title": "Lesson: Listening: Daily Routines",
+    "topic": "Listening: Daily Routines",
+    "description": "Practice Listening: Daily Routines.",
+    "category": "Listening",
+    "tags": "Lesson,A2",
+    "level": "A2",
+    "questions": 3,
+    "version": 1
+  },
+  {
+    "file": "lesson_content/a2/lesson-course-a2-unit-04-lesson-05.json",
+    "id": "lesson-course-a2-unit-04-lesson-05",
+    "title": "Lesson: Listening: Shopping",
+    "topic": "Listening: Shopping",
+    "description": "Practice Listening: Shopping.",
+    "category": "Listening",
+    "tags": "Lesson,A2",
+    "level": "A2",
+    "questions": 3,
+    "version": 1
+  },
+  {
+    "file": "lesson_content/a2/lesson-course-a2-unit-04-lesson-06.json",
+    "id": "lesson-course-a2-unit-04-lesson-06",
+    "title": "Lesson: Listening: Voicemail and Announcements",
+    "topic": "Listening: Voicemail and Announcements",
+    "description": "Practice Listening: Voicemail and Announcements.",
+    "category": "Listening",
+    "tags": "Lesson,A2",
+    "level": "A2",
+    "questions": 3,
+    "version": 1
   }
 ]

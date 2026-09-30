@@ -1,0 +1,91 @@
+{
+  "id": "lesson-course-c2-unit-05-lesson-02",
+  "title": "Lesson: Listening: Implication, Irony and Accents",
+  "description": "Practice Listening: Implication, Irony and Accents.",
+  "brand": "Mylingo",
+  "category": "Listening",
+  "tags": "Lesson,C2",
+  "level": "C2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Listening: Implication, Irony and Accents.",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,C2",
+      "media": {},
+      "subprompt": "Listening: Implication, Irony and Accents",
+      "explanation": "Practice Listening: Implication, Irony and Accents."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Listening: Implication, Irony and Accents",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,C2"
+    },
+    {
+      "question": "A says \"How was the trip?\" B says \"Oh, it went brilliantly. The train was cancelled twice.\" What does B imply?",
+      "category": "Listening",
+      "tags": "Listening,C2,QuickCheck",
+      "explanation": "The facts contradict \"brilliantly\", so B is being ironic: the trip went badly.",
+      "correctIndex": 2,
+      "answers": [
+        "The trip was excellent",
+        "The trip went badly",
+        "B did not travel",
+        "B wants a train"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "What is \"It's getting rather warm in here\" often used to imply?",
+      "category": "Listening",
+      "tags": "Listening,C2,QuickCheck",
+      "explanation": "It is an indirect request to make the room cooler.",
+      "correctIndex": 1,
+      "answers": [
+        "A request to open a window or lower the heat",
+        "A weather forecast",
+        "A complaint about the price",
+        "A joke about winter"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "What does \"Not the brightest idea\" usually mean?",
+      "category": "Listening",
+      "tags": "Listening,C2,QuickCheck",
+      "explanation": "It is an understatement meaning a very bad idea.",
+      "correctIndex": 2,
+      "answers": [
+        "A clever idea",
+        "A very bad idea",
+        "A colourful idea",
+        "A new idea"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,C2"
+    }
+  ]
+}

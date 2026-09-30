@@ -850,5 +850,77 @@
     "level": "B2",
     "questions": 5,
     "version": 1
+  },
+  {
+    "file": "lesson_content/b2/lesson-course-b2-unit-06-lesson-01.json",
+    "id": "lesson-course-b2-unit-06-lesson-01",
+    "title": "Lesson: Connected Speech",
+    "topic": "Connected Speech",
+    "description": "Practice Connected Speech.",
+    "category": "Pronunciation",
+    "tags": "Lesson,B2",
+    "level": "B2",
+    "questions": 3,
+    "version": 1
+  },
+  {
+    "file": "lesson_content/b2/lesson-course-b2-unit-06-lesson-02.json",
+    "id": "lesson-course-b2-unit-06-lesson-02",
+    "title": "Lesson: Contrastive Stress",
+    "topic": "Contrastive Stress",
+    "description": "Practice Contrastive Stress.",
+    "category": "Pronunciation",
+    "tags": "Lesson,B2",
+    "level": "B2",
+    "questions": 3,
+    "version": 1
+  },
+  {
+    "file": "lesson_content/b2/lesson-course-b2-unit-06-lesson-03.json",
+    "id": "lesson-course-b2-unit-06-lesson-03",
+    "title": "Lesson: UK and US: /r/ and /t/",
+    "topic": "UK and US: /r/ and /t/",
+    "description": "Practice UK and US: /r/ and /t/.",
+    "category": "Pronunciation",
+    "tags": "Lesson,B2",
+    "level": "B2",
+    "questions": 3,
+    "version": 1
+  },
+  {
+    "file": "lesson_content/b2/lesson-course-b2-unit-06-lesson-04.json",
+    "id": "lesson-course-b2-unit-06-lesson-04",
+    "title": "Lesson: Listening: Podcasts",
+    "topic": "Listening: Podcasts",
+    "description": "Practice Listening: Podcasts.",
+    "category": "Listening",
+    "tags": "Lesson,B2",
+    "level": "B2",
+    "questions": 3,
+    "version": 1
+  },
+  {
+    "file": "lesson_content/b2/lesson-course-b2-unit-06-lesson-05.json",
+    "id": "lesson-course-b2-unit-06-lesson-05",
+    "title": "Lesson: Listening: Lectures and Note-taking",
+    "topic": "Listening: Lectures and Note-taking",
+    "description": "Practice Listening: Lectures and Note-taking.",
+    "category": "Listening",
+    "tags": "Lesson,B2",
+    "level": "B2",
+    "questions": 3,
+    "version": 1
+  },
+  {
+    "file": "lesson_content/b2/lesson-course-b2-unit-06-lesson-06.json",
+    "id": "lesson-course-b2-unit-06-lesson-06",
+    "title": "Lesson: Listening: Accents",
+    "topic": "Listening: Accents",
+    "description": "Practice Listening: Accents.",
+    "category": "Listening",
+    "tags": "Lesson,B2",
+    "level": "B2",
+    "questions": 3,
+    "version": 1
   }
 ]

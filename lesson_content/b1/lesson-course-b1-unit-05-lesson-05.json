@@ -1,0 +1,91 @@
+{
+  "id": "lesson-course-b1-unit-05-lesson-05",
+  "title": "Lesson: Listening: Short Talks",
+  "description": "Practice Listening: Short Talks.",
+  "brand": "Mylingo",
+  "category": "Listening",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Listening: Short Talks.",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Listening: Short Talks",
+      "explanation": "Practice Listening: Short Talks."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Listening: Short Talks",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "In Script 1, how many hours of sleep do most adults need?",
+      "category": "Listening",
+      "tags": "Listening,B1,QuickCheck",
+      "explanation": "The speaker says most adults need seven to eight hours.",
+      "correctIndex": 3,
+      "answers": [
+        "Five to six",
+        "Four",
+        "Seven to eight",
+        "Nine to ten"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "Which word signals a contrast?",
+      "category": "Listening",
+      "tags": "Listening,B1,QuickCheck",
+      "explanation": "However introduces a contrast.",
+      "correctIndex": 1,
+      "answers": [
+        "however",
+        "first",
+        "finally",
+        "then"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "What do Americans call the season British people call \"autumn\"?",
+      "category": "Listening",
+      "tags": "Listening,B1,QuickCheck",
+      "explanation": "Americans say fall for autumn.",
+      "correctIndex": 1,
+      "answers": [
+        "fall",
+        "spring",
+        "harvest",
+        "winter"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

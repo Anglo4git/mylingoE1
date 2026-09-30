@@ -1,0 +1,91 @@
+{
+  "id": "lesson-course-a1-unit-04-lesson-04",
+  "title": "Lesson: Listening: Short Dialogues",
+  "description": "Practice Listening: Short Dialogues.",
+  "brand": "Mylingo",
+  "category": "Listening",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Listening: Short Dialogues.",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Listening: Short Dialogues",
+      "explanation": "Practice Listening: Short Dialogues."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Listening: Short Dialogues",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "In Script 1, how much is the small tea?",
+      "category": "Listening",
+      "tags": "Listening,A1,QuickCheck",
+      "explanation": "The server says two pounds twenty, which is £2.20.",
+      "correctIndex": 1,
+      "answers": [
+        "£2.20",
+        "£2.02",
+        "£12",
+        "£3.20"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "Which phrase politely asks someone to repeat?",
+      "category": "Listening",
+      "tags": "Listening,A1,QuickCheck",
+      "explanation": "Could you say that again, please? is polite and clear.",
+      "correctIndex": 3,
+      "answers": [
+        "See you later.",
+        "Give me that again.",
+        "Could you say that again, please?",
+        "I do not care."
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "What does an American ask for when they want hot fried potatoes?",
+      "category": "Listening",
+      "tags": "Listening,A1,QuickCheck",
+      "explanation": "Americans say fries. In American English chips are thin snacks in a bag.",
+      "correctIndex": 1,
+      "answers": [
+        "fries",
+        "takeaway",
+        "crisps",
+        "chips (thin snack)"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

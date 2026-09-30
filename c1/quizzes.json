@@ -826,5 +826,53 @@
     "level": "C1",
     "questions": 5,
     "version": 1
+  },
+  {
+    "file": "lesson_content/c1/lesson-course-c1-unit-06-lesson-01.json",
+    "id": "lesson-course-c1-unit-06-lesson-01",
+    "title": "Lesson: Rhythm and Chunking",
+    "topic": "Rhythm and Chunking",
+    "description": "Practice Rhythm and Chunking.",
+    "category": "Pronunciation",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "questions": 3,
+    "version": 1
+  },
+  {
+    "file": "lesson_content/c1/lesson-course-c1-unit-06-lesson-02.json",
+    "id": "lesson-course-c1-unit-06-lesson-02",
+    "title": "Lesson: Discourse Intonation",
+    "topic": "Discourse Intonation",
+    "description": "Practice Discourse Intonation.",
+    "category": "Pronunciation",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "questions": 3,
+    "version": 1
+  },
+  {
+    "file": "lesson_content/c1/lesson-course-c1-unit-06-lesson-03.json",
+    "id": "lesson-course-c1-unit-06-lesson-03",
+    "title": "Lesson: Listening: Fast Speech",
+    "topic": "Listening: Fast Speech",
+    "description": "Practice Listening: Fast Speech.",
+    "category": "Listening",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "questions": 3,
+    "version": 1
+  },
+  {
+    "file": "lesson_content/c1/lesson-course-c1-unit-06-lesson-04.json",
+    "id": "lesson-course-c1-unit-06-lesson-04",
+    "title": "Lesson: Listening: Academic Lectures",
+    "topic": "Listening: Academic Lectures",
+    "description": "Practice Listening: Academic Lectures.",
+    "category": "Listening",
+    "tags": "Lesson,C1",
+    "level": "C1",
+    "questions": 3,
+    "version": 1
   }
 ]

@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-a1-unit-04-lesson-02",
+  "title": "Lesson: Plural and -s Endings",
+  "description": "Practice Plural and -s Endings.",
+  "brand": "Mylingo",
+  "category": "Pronunciation",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Plural and -s Endings.",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Plural and -s Endings",
+      "explanation": "Practice Plural and -s Endings."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Plural and -s Endings",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "Which ending sound does \"dogs\" have?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,A1,QuickCheck",
+      "explanation": "Dogs ends with /z/ because g is a voiced sound.",
+      "correctIndex": 4,
+      "answers": [
+        "/s/",
+        "No ending sound",
+        "/ɪz/",
+        "/z/"
+      ]
+    },
+    {
+      "question": "Which word adds an extra syllable in the plural?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,A1,QuickCheck",
+      "explanation": "Buses ends with /ɪz/, so it has two syllables: bus-es.",
+      "correctIndex": 4,
+      "answers": [
+        "pens",
+        "cats",
+        "books",
+        "buses"
+      ]
+    },
+    {
+      "question": "How do British and American speakers say the h in \"herbs\"?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,A1,QuickCheck",
+      "explanation": "British English says /hɜːbz/ and American English says /ɜːrbz/. The ending is /z/ in both.",
+      "correctIndex": 4,
+      "answers": [
+        "Both pronounce it",
+        "Both keep it silent",
+        "UK: silent; US: pronounced",
+        "UK: pronounced; US: silent"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

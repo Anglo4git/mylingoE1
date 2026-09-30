@@ -2906,6 +2906,31 @@ console.log('runtime-v2-adapter.js: question / quiz / hierarchy / manifest (Agen
     assert.ok(!('media' in A.normalizeQuestion({ question: 'q', answers: ['a'], correctIndex: 1, media: { image: { alt: 'no src' } } })));
   });
 
+  test('media: audio with only a tts string survives normalizeQuestion (Agent 313: TTS-only Listening questions were losing their Play audio button)', () => {
+    const q = A.normalizeQuestion({ question: 'q', answers: ['a', 'b'], correctIndex: 1, media: { audio: { tts: ' I read a book. ', label: 'Listen to the sentence' } } });
+    assert.deepStrictEqual(q.media, { audio: { src: '', alt: 'Listen to the sentence', label: 'Listen to the sentence', tts: 'I read a book.' } });
+    const both = A.normalizeQuestion({ question: 'q', answers: ['a', 'b'], correctIndex: 1, media: { audio: { src: 'a.mp3', tts: 'Hi' } } }).media;
+    assert.strictEqual(both.audio.src, 'a.mp3'); assert.strictEqual(both.audio.tts, 'Hi');
+    assert.ok(!('media' in A.normalizeQuestion({ question: 'q', answers: ['a', 'b'], correctIndex: 1, media: { audio: { tts: '   ' } } })), 'blank tts and no src is still dropped');
+  });
+
+  test('media: every shipped quiz question with media.image/audio keeps it (src or tts) through normalizeQuiz (Agent 314)', () => {
+    const glob = [];
+    (function walk(d) { fs.readdirSync(d, { withFileTypes: true }).forEach((e) => { const p = path.join(d, e.name); if (e.isDirectory()) { if (!/^(node_modules|dist|\.git|offline)$/.test(e.name)) walk(p); } else if (/-media-\d+\.json$/.test(e.name)) glob.push(p); }); })(path.join(__dirname, '..', 'vocabulary'));
+    assert.ok(glob.length >= 6, 'expected the six *-media-01 quizzes');
+    let withAudio = 0, withImage = 0;
+    glob.forEach((f) => {
+      const raw = JSON.parse(fs.readFileSync(f, 'utf8'));
+      const n = A.normalizeQuiz(raw, { level: raw.level || 'a1' });
+      raw.questions.forEach((rq, i) => {
+        const rm = rq.media || {}, nm = (n.questions[i] || {}).media || {};
+        if (rm.audio) { withAudio++; assert.ok(nm.audio && (nm.audio.src || nm.audio.tts), f + ' q' + i + ' lost audio'); if (rm.audio.tts) assert.strictEqual(nm.audio.tts, rm.audio.tts.trim()); }
+        if (rm.image) { withImage++; assert.ok(nm.image && nm.image.src, f + ' q' + i + ' lost image'); }
+      });
+    });
+    assert.ok(withAudio >= 12 && withImage >= 24, 'audio ' + withAudio + ' image ' + withImage);
+  });
+
   test('questions with structured payloads (pairs, correctIndices, correctOrder, subprompt) pass through', () => {
     const q = A.normalizeQuestion({ question: 'q', question_type: 'matching', pairs: [['a', '1']], subprompt: 'sp', correctOrder: [2, 1] });
     assert.deepStrictEqual(q.pairs, [['a', '1']]);
@@ -5030,7 +5055,7 @@ console.log('sw.js: install/activate lifecycle + fetch routing strategies (Agent
   testAsync('activate: deletes only OUR previous mylingo-v* shell caches — never a PACK_CACHE_PREFIX cache (even an old one), never an unrelated cache, never the current version', async () => {
     const s = makeSandbox({
       cacheKeys: [
-        'mylingo-v28-static', 'mylingo-v28-runtime', // current version: keep
+        'mylingo-v47-static', 'mylingo-v47-runtime', // current version: keep
         'mylingo-v26-static', 'mylingo-v3-runtime', // old shell versions: delete
         'mylingo-offline-pack-v1-a1', 'mylingo-offline-pack-v1-core', // learner's installed packs: NEVER delete
         'some-other-app-cache-v9', // unrelated cache: leave alone
@@ -5087,9 +5112,39 @@ console.log('sw.js: install/activate lifecycle + fetch routing strategies (Agent
     assert.strictEqual(s2.putCalls.length, 0, 'cache-first must not cache a non-ok response either');
   });
 
+  testAsync('fetch: Range request for a cached mp3 gets a 206 slice with Content-Range (Safari audio); open-ended, suffix and out-of-range forms; no range -> plain cache-first (Agent 315)', async () => {
+    const bytes = new Uint8Array(100).map((_, i) => i);
+    const cached = { ok: true, status: 200, headers: { get: (k) => (k === 'Content-Type' ? 'audio/mpeg' : null) }, arrayBuffer: () => Promise.resolve(bytes.buffer.slice(0)) };
+    const url = 'https://app.test/shared/audio/sample.mp3';
+    const s = makeSandbox({ fetch: () => Promise.reject(new TypeError('offline')), seed: { 'mylingo-v47-runtime': { [url]: cached } } });
+    const req = (range) => ({ method: 'GET', url, mode: 'no-cors', destination: 'audio', headers: { get: (k) => (k.toLowerCase() === 'range' ? range : null) } });
+    const r1 = await fireFetch(s.handlers, req('bytes=0-9'));
+    assert.strictEqual(r1.status, 206); assert.strictEqual(r1.headers['Content-Range'], 'bytes 0-9/100'); assert.strictEqual(r1.headers['Content-Length'], '10'); assert.strictEqual(r1.headers['Content-Type'], 'audio/mpeg');
+    assert.deepStrictEqual(Array.from(new Uint8Array(r1.body)), Array.from(bytes.slice(0, 10)));
+    const r2 = await fireFetch(s.handlers, req('bytes=90-'));
+    assert.strictEqual(r2.headers['Content-Range'], 'bytes 90-99/100');
+    const r3 = await fireFetch(s.handlers, req('bytes=-5'));
+    assert.strictEqual(r3.headers['Content-Range'], 'bytes 95-99/100');
+    const r4 = await fireFetch(s.handlers, req('bytes=500-600'));
+    assert.strictEqual(r4.status, 416);
+    const r5 = await fireFetch(s.handlers, req(null));
+    assert.strictEqual(r5, cached, 'no Range header -> unchanged cache-first');
+    assert.strictEqual(s.putCalls.length, 0);
+  });
+
+  testAsync('fetch: Range request with nothing cached goes to the network and a 206 is never cache.put() (Agent 315)', async () => {
+    const part = { ok: true, status: 206 }; part.clone = () => part;
+    const s = makeSandbox({ fetch: () => Promise.resolve(part) });
+    const r = await fireFetch(s.handlers, { method: 'GET', url: 'https://app.test/shared/audio/sample.mp3', mode: 'no-cors', destination: 'audio', headers: { get: () => 'bytes=0-1' } });
+    assert.strictEqual(r, part); assert.strictEqual(s.putCalls.length, 0);
+    const s2 = makeSandbox({ fetch: () => Promise.resolve(part) });
+    const r2 = await fireFetch(s2.handlers, { method: 'GET', url: 'https://app.test/shared/audio/sample.mp3', mode: 'no-cors', destination: 'audio' });
+    assert.strictEqual(r2, part); assert.strictEqual(s2.putCalls.length, 0, 'cache-first must not cache a 206 either');
+  });
+
   testAsync('fetch: a navigation offline WITH a previously-cached copy serves that copy instead of the synthetic fallback', async () => {
     const cachedPage = { sentinel: 'cached-index' };
-    const s = makeSandbox({ fetch: () => Promise.reject(new TypeError('offline')), seed: { 'mylingo-v28-runtime': { 'https://app.test/main/index.html': cachedPage } } });
+    const s = makeSandbox({ fetch: () => Promise.reject(new TypeError('offline')), seed: { 'mylingo-v47-runtime': { 'https://app.test/main/index.html': cachedPage } } });
     const r = await fireFetch(s.handlers, { method: 'GET', url: 'https://app.test/main/index.html', mode: 'navigate', destination: '' });
     assert.strictEqual(r, cachedPage);
   });
@@ -5115,7 +5170,7 @@ console.log('sw.js: install/activate lifecycle + fetch routing strategies (Agent
     let fetchWasCalled = false;
     const s = makeSandbox({
       fetch: () => { fetchWasCalled = true; return Promise.resolve({ ok: true }); },
-      seed: { 'mylingo-v28-runtime': { 'https://app.test/shared/sfx/correct.mp3': cachedAudio } },
+      seed: { 'mylingo-v47-runtime': { 'https://app.test/shared/sfx/correct.mp3': cachedAudio } },
     });
     const r = await fireFetch(s.handlers, { method: 'GET', url: 'https://app.test/shared/sfx/correct.mp3', mode: 'no-cors', destination: 'audio' });
     assert.strictEqual(r, cachedAudio, 'the cached copy wins immediately, cache-first');
@@ -13149,8 +13204,34 @@ console.log('quiz.html dead-code removal pin + cache bump (Agent 191, HANDOFF_AG
     assert.ok(!/\bqGlobalTolerance\b/.test(quizSrc), 'qGlobalTolerance is back in quiz.html');
     assert.ok(/function submitAnswer\(input\)/.test(quizSrc), 'submitAnswer must still exist');
   });
-  test('sw.js CACHE_VERSION is mylingo-v28 (v27 -> v28 Agent 27: revised brand logos + regenerated favicons; v26 -> v27 Agent 205: gamification.js; v25 -> v26 Agent 204: runtime-v2-adapter.js + canonical-metadata.js; v24 -> v25 Agent 203: placement.js, safe-url.js, orientation.js; v16 -> v17 Agent 191, v17 -> v18 Agent 194, v18 -> v19 Agent 195, v19 -> v20 Agent 196, v20 -> v21 Agent 199: course-progress.js; v21 -> v22 Agent 200: gamification.js; v22 -> v23 Agent 201: skill-mastery.js + review-scheduler.js; v23 -> v24 Agent 202: recommendations.js + mastery-review-ui.js; core-pack files changed)', () => {
-    assert.ok(/var CACHE_VERSION = 'mylingo-v28';/.test(swSrc));
+  test('every local audio_urls entry in the lesson catalogs exists on disk and is precached by the core manifest and the core pack list (Agent 317)', () => {
+    const fsn = require('fs'), root = path.join(__dirname, '..');
+    const man = JSON.parse(fsn.readFileSync(path.join(root, 'offline/core-manifest.json'), 'utf8'));
+    const manFiles = new Set(Array.isArray(man) ? man : man.files);
+    const packs = JSON.parse(fsn.readFileSync(path.join(root, 'offline/packs.json'), 'utf8'));
+    const coreFiles = new Set(packs.packs.find((p) => p.id === 'core').files);
+    let n = 0;
+    ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'].forEach((L) => JSON.parse(fsn.readFileSync(path.join(root, 'course_content/lessons', L + '.json'), 'utf8')).forEach((l) => {
+      (Array.isArray(l.audio_urls) ? l.audio_urls : []).forEach((a) => {
+        const u = typeof a === 'string' ? a : (a && (a.url || a.src)) || '';
+        if (!u || /^https?:/i.test(u)) return;
+        n++;
+        const rel = path.posix.normalize(path.posix.join('courses', u));
+        assert.ok(fsn.existsSync(path.join(root, rel)), l.id + ' audio missing on disk: ' + rel);
+        assert.ok(manFiles.has(rel), l.id + ' audio not in core-manifest: ' + rel);
+        assert.ok(coreFiles.has(rel), l.id + ' audio not in packs.json core list: ' + rel);
+      });
+    }));
+    assert.ok(n >= 136, 'expected the 136 placeholder audio references, saw ' + n);
+  });
+  test('theme.css dark mode restyles the quiz TTS button (idle + playing) so both states pass 4.5:1 (Agent 318)', () => {
+    const css = require('fs').readFileSync(path.join(__dirname, '..', 'shared/css/theme.css'), 'utf8');
+    const dark = css.slice(css.indexOf('@media (prefers-color-scheme:dark)'));
+    assert.ok(/\.tts-play\{background:var\(--my-dark-soft\)!important;color:#d2e5ff!important/.test(dark), 'idle state rule');
+    assert.ok(/\.tts-play\[aria-pressed="true"\]\{background:var\(--my-dark-brand\)!important;color:#07111f!important/.test(dark), 'playing state rule');
+  });
+  test('sw.js CACHE_VERSION is mylingo-v47 (v46 -> v47 Agent 318: shared/css/theme.css dark .tts-play contrast; v45 -> v46 Agent 315: sw.js Range/206 for cached audio (Safari); v44 -> v45 Agent 313: shared/js/runtime-v2-adapter.js keeps media.audio.tts; v43 -> v44 Agent 311: core.zip data (B2/C1/C2 embedded skill segments, batch 6); v42 -> v43 Agent 310: core.zip data (B2/C1/C2 embedded skill segments); v41 -> v42 Agent 309: core.zip data (B1 embedded skill segments); v40 -> v41 Agent 308: core.zip data (A2 embedded skill segments); v39 -> v40 Agent 307: core.zip data (A1 unit-02/03 embedded skill segments); v38 -> v39 Agent 306: core.zip data (A1 unit-01 embedded skill segments); v37 -> v38 Agent 305: core.zip data (c2 skills unit: 2 lessons with audio structure); v36 -> v37 Agent 304: core.zip data (c1 skills unit: 4 lessons with audio structure); v35 -> v36 Agent 303: core.zip data + shared/audio/sample.mp3 (placeholder audio wiring); v34 -> v35 Agent 302: core.zip data (b2 skills unit: 6 lessons); v33 -> v34 Agent 301: core.zip data (b1 skills unit: 6 lessons); v32 -> v33 Agent 300: core.zip data (a2 skills unit: 6 lessons); v31 -> v32 Agent 299: core.zip data (a1 skills unit: 4 more lessons); v30 -> v31 Agent 298: core.zip data (a1 pronunciation pilot lesson + unit); v29 -> v30 Agent 296: courses/lesson.html lesson_length/lesson_type tags; v28 -> v29 Agent 295: courses/lesson.html UK|US comparison styles; v27 -> v28 Agent 27: revised brand logos + regenerated favicons; v26 -> v27 Agent 205: gamification.js; v25 -> v26 Agent 204: runtime-v2-adapter.js + canonical-metadata.js; v24 -> v25 Agent 203: placement.js, safe-url.js, orientation.js; v16 -> v17 Agent 191, v17 -> v18 Agent 194, v18 -> v19 Agent 195, v19 -> v20 Agent 196, v20 -> v21 Agent 199: course-progress.js; v21 -> v22 Agent 200: gamification.js; v22 -> v23 Agent 201: skill-mastery.js + review-scheduler.js; v23 -> v24 Agent 202: recommendations.js + mastery-review-ui.js; core-pack files changed)', () => {
+    assert.ok(/var CACHE_VERSION = 'mylingo-v47';/.test(swSrc));
   });
 })();
 
@@ -13916,5 +13997,318 @@ console.log('offline-packs.js + offline-packs-ui.js: untrusted shapes (packs.jso
     assert.ok(/mkdtempSync/.test(src) && /verify-all\.js', '--quick'/.test(src), 'verifies from a fresh unzip');
     const bd = fs.readFileSync(path.join(__dirname, '..', 'tools', 'build-dist.js'), 'utf8');
     assert.ok(!/package\.js/.test(bd), 'not a runtime file');
+  });
+})();
+
+// ============================================================
+console.log('lesson.html UK | US side-by-side comparison styles (Agent 295, CURRICULUM_DECISIONS.md decision 1)');
+// ============================================================
+(function () {
+  const fs = require('fs');
+  const html = fs.readFileSync(path.join(__dirname, '..', 'courses', 'lesson.html'), 'utf8');
+  test('lesson.html ships scoped .uk-us comparison styles (two columns, one column under 340px)', () => {
+    assert.ok(/\.lesson-content \.uk-us\{display:grid;grid-template-columns:repeat\(2,minmax\(0,1fr\)\)/.test(html));
+    assert.ok(/\.lesson-content \.uk-us-tag\{/.test(html));
+    assert.ok(/@media \(max-width:340px\)\{\.lesson-content \.uk-us\{grid-template-columns:minmax\(0,1fr\)\}\}/.test(html));
+  });
+  test('the lesson sanitizer already allows the .uk-us markup (DIV/SPAN + class only) — no sanitizer change was needed', () => {
+    assert.ok(/var ALLOWED_TAGS=\{[^}]*DIV:1[^}]*SPAN:1/.test(html));
+    assert.ok(/DIV:\['class'\],SPAN:\['class'\]/.test(html));
+  });
+})();
+
+// ============================================================
+console.log('lesson.html optional lesson_length / lesson_type tags (Agent 296, CURRICULUM_DECISIONS.md decisions 2-4)');
+// ============================================================
+(function () {
+  const fs = require('fs'), vm = require('vm');
+  const html = fs.readFileSync(path.join(__dirname, '..', 'courses', 'lesson.html'), 'utf8');
+  const m = html.match(/var LESSON_LENGTH_LABELS=[\s\S]*?\nfunction lessonTagLabels\(lesson\)\{[\s\S]*?\n\}\n/);
+  const fn = m ? vm.runInNewContext(m[0] + '\nlessonTagLabels;') : null;
+  test('lessonTagLabels: present in lesson.html and maps only whitelisted values (short/long; standalone_skill/embedded_skill/exam/fluency)', () => {
+    assert.ok(fn, 'helper block not found');
+    assert.deepStrictEqual(Array.from(fn({ lesson_length: 'short', lesson_type: 'exam' })), ['Short lesson', 'Exam prep']);
+    assert.deepStrictEqual(Array.from(fn({ lesson_length: 'long', lesson_type: 'standalone_skill' })), ['Deep lesson', 'Skill lesson']);
+    assert.deepStrictEqual(Array.from(fn({ lesson_type: 'embedded_skill' })), ['Skill practice']);
+    assert.deepStrictEqual(Array.from(fn({ lesson_type: 'fluency' })), ['Real-life fluency']);
+  });
+  test('lessonTagLabels: absent, unknown, non-string and prototype-key values are ignored (never throws)', () => {
+    assert.deepStrictEqual(Array.from(fn({})), []);
+    assert.deepStrictEqual(Array.from(fn(null)), []);
+    assert.deepStrictEqual(Array.from(fn({ lesson_length: 'medium', lesson_type: 'toString' })), []);
+    assert.deepStrictEqual(Array.from(fn({ lesson_length: '__proto__', lesson_type: 7 })), []);
+  });
+  test('lesson.html renders the tags only when present, escaped, and ships .lesson-tags style', () => {
+    assert.ok(/lessonTagLabels\(lesson\)\.length\?'<p class=\"lesson-tags\">'/.test(html));
+    assert.ok(html.indexOf('lessonTagLabels(lesson).map(function(t){return ') >= 0 && html.indexOf("'+esc(t)+'</span>'}).join(' ')") >= 0, 'each tag is passed through esc()');
+    assert.ok(/\.lesson-tags\{/.test(html));
+  });
+  test('every shipped lesson that sets lesson_length / lesson_type uses an allowed value', () => {
+    const okLen = ['short', 'long'], okType = ['standalone_skill', 'embedded_skill', 'exam', 'fluency'];
+    ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'].forEach((lv) => {
+      JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'course_content', 'lessons', lv + '.json'), 'utf8')).forEach((l) => {
+        if (l.lesson_length !== undefined) assert.ok(okLen.indexOf(l.lesson_length) >= 0, l.lesson_id);
+        if (l.lesson_type !== undefined) assert.ok(okType.indexOf(l.lesson_type) >= 0, l.lesson_id);
+      });
+    });
+  });
+})();
+
+// ============================================================
+console.log('A1 pronunciation pilot lesson wiring (Agent 298, SKILLS_LESSON_PLAN.md build step 1)');
+// ============================================================
+(function () {
+  const fs = require('fs');
+  const rd = (...a) => JSON.parse(fs.readFileSync(path.join(__dirname, '..', ...a), 'utf8'));
+  const LID = 'course-a1-unit-04-lesson-01', UID = 'course-a1-unit-04', QID = 'lesson-' + LID;
+  test('pilot lesson is present and identical in the per-level file and the monolithic catalog, tagged standalone_skill/long, and shows a UK | US block', () => {
+    const a = rd('course_content', 'lessons', 'a1.json').find((l) => l.lesson_id === LID);
+    const b = rd('course_content', 'lessons.json').find((l) => l.lesson_id === LID);
+    assert.ok(a && b);
+    assert.deepStrictEqual(a, b);
+    assert.strictEqual(a.lesson_type, 'standalone_skill');
+    assert.strictEqual(a.lesson_length, 'long');
+    assert.strictEqual(a.category, 'Pronunciation');
+    assert.ok(a.body_content.indexOf('class="uk-us"') >= 0);
+    assert.strictEqual(a.lesson_quiz_id, QID);
+    assert.deepStrictEqual(a.exercise_quiz_ids, [QID]);
+  });
+  test('pilot unit is registered in units.json and courses.json (appended, existing units untouched) and its quiz is in the a1 manifest and offline pack list', () => {
+    const u = rd('course_content', 'units.json').find((x) => x.unit_id === UID);
+    assert.ok(u && u.course_id === 'course-a1' && u.order === 4);
+    assert.deepStrictEqual(u.lesson_ids, [1, 2, 3, 4, 5].map((n) => UID + '-lesson-0' + n));
+    const c = rd('course_content', 'courses.json').find((x) => x.course_id === 'course-a1');
+    assert.deepStrictEqual(c.unit_ids, ['course-a1-unit-01', 'course-a1-unit-02', 'course-a1-unit-03', UID]);
+    assert.ok(rd('a1', 'quizzes.json').some((x) => x.id === QID && x.file === 'lesson_content/a1/' + QID + '.json'));
+    const pk = rd('offline', 'packs.json').packs.find((p) => p.id === 'a1');
+    assert.ok(pk.files.indexOf('lesson_content/a1/' + QID + '.json') >= 0);
+  });
+  test('A1 skills unit (Agent 299): lessons 02-05 are standalone_skill/long, mirrored in per-level + monolithic catalogs, have a 3-question lesson quiz with 1-based correctIndex, a UK | US block, and are in the a1 pack and audit list', () => {
+    const per = rd('course_content', 'lessons', 'a1.json'), mono = rd('course_content', 'lessons.json');
+    const cats = { 2: 'Pronunciation', 3: 'Listening', 4: 'Listening', 5: 'Listening' };
+    [2, 3, 4, 5].forEach((n) => {
+      const id = UID + '-lesson-0' + n, qid = 'lesson-' + id;
+      const a = per.find((l) => l.lesson_id === id), b = mono.find((l) => l.lesson_id === id);
+      assert.ok(a && b); assert.deepStrictEqual(a, b);
+      assert.strictEqual(a.lesson_type, 'standalone_skill'); assert.strictEqual(a.lesson_length, 'long');
+      assert.strictEqual(a.category, cats[n]); assert.strictEqual(a.order, n);
+      assert.ok(a.body_content.indexOf('class="uk-us"') >= 0);
+      const q = rd('lesson_content', 'a1', qid + '.json');
+      const checks = q.questions.filter((x) => x.answers);
+      assert.strictEqual(checks.length, 3);
+      checks.forEach((x) => assert.ok(x.correctIndex >= 1 && x.correctIndex <= x.answers.length));
+      assert.strictEqual(rd('a1', 'quizzes.json').find((x) => x.id === qid).questions, 3);
+      assert.ok(rd('offline', 'packs.json').packs.find((p) => p.id === 'a1').files.indexOf('lesson_content/a1/' + qid + '.json') >= 0);
+      assert.ok(rd('tools', 'a11y', 'audited-lessons.json').indexOf(id) >= 0);
+    });
+    assert.strictEqual(mono.length, 337);
+  });
+  test('A2 skills unit (Agent 300): unit 04 is appended (existing units untouched), 6 standalone_skill/long lessons mirrored in per-level + monolithic catalogs with 3-question quizzes (1-based correctIndex), UK | US block, a2 pack + audit list', () => {
+    const UID2 = 'course-a2-unit-04';
+    const per = rd('course_content', 'lessons', 'a2.json'), mono = rd('course_content', 'lessons.json');
+    const u = rd('course_content', 'units.json').find((x) => x.unit_id === UID2);
+    assert.ok(u && u.course_id === 'course-a2' && u.order === 4);
+    assert.strictEqual(u.lesson_ids.length, 6);
+    const c = rd('course_content', 'courses.json').find((x) => x.course_id === 'course-a2');
+    assert.deepStrictEqual(c.unit_ids, ['course-a2-unit-01', 'course-a2-unit-02', 'course-a2-unit-03', UID2]);
+    const cats = ['Pronunciation', 'Pronunciation', 'Pronunciation', 'Listening', 'Listening', 'Listening'];
+    u.lesson_ids.forEach((id, i) => {
+      const qid = 'lesson-' + id;
+      const a = per.find((l) => l.lesson_id === id), b = mono.find((l) => l.lesson_id === id);
+      assert.ok(a && b); assert.deepStrictEqual(a, b);
+      assert.strictEqual(a.lesson_type, 'standalone_skill'); assert.strictEqual(a.lesson_length, 'long');
+      assert.strictEqual(a.category, cats[i]); assert.strictEqual(a.order, i + 1);
+      assert.ok(a.body_content.indexOf('class="uk-us"') >= 0);
+      const checks = rd('lesson_content', 'a2', qid + '.json').questions.filter((x) => x.answers);
+      assert.strictEqual(checks.length, 3);
+      checks.forEach((x) => assert.ok(x.correctIndex >= 1 && x.correctIndex <= x.answers.length));
+      assert.strictEqual(rd('a2', 'quizzes.json').find((x) => x.id === qid).questions, 3);
+      assert.ok(rd('offline', 'packs.json').packs.find((p) => p.id === 'a2').files.indexOf('lesson_content/a2/' + qid + '.json') >= 0);
+      assert.ok(rd('tools', 'a11y', 'audited-lessons.json').indexOf(id) >= 0);
+    });
+  });
+  test('B1 skills unit (Agent 301): unit 05 is appended (existing units untouched), 6 standalone_skill/long lessons mirrored in per-level + monolithic catalogs with 3-question quizzes (1-based correctIndex), UK | US block, b1 pack + audit list', () => {
+    const UID3 = 'course-b1-unit-05';
+    const per = rd('course_content', 'lessons', 'b1.json'), mono = rd('course_content', 'lessons.json');
+    const u = rd('course_content', 'units.json').find((x) => x.unit_id === UID3);
+    assert.ok(u && u.course_id === 'course-b1' && u.order === 5);
+    assert.strictEqual(u.lesson_ids.length, 6);
+    const c = rd('course_content', 'courses.json').find((x) => x.course_id === 'course-b1');
+    assert.deepStrictEqual(c.unit_ids, ['course-b1-unit-01', 'course-b1-unit-02', 'course-b1-unit-03', 'course-b1-unit-04', UID3]);
+    const cats = ['Pronunciation', 'Pronunciation', 'Pronunciation', 'Listening', 'Listening', 'Listening'];
+    u.lesson_ids.forEach((id, i) => {
+      const qid = 'lesson-' + id;
+      const a = per.find((l) => l.lesson_id === id), b = mono.find((l) => l.lesson_id === id);
+      assert.ok(a && b); assert.deepStrictEqual(a, b);
+      assert.strictEqual(a.lesson_type, 'standalone_skill'); assert.strictEqual(a.lesson_length, 'long');
+      assert.strictEqual(a.category, cats[i]); assert.strictEqual(a.order, i + 1);
+      assert.ok(a.body_content.indexOf('class="uk-us"') >= 0);
+      const checks = rd('lesson_content', 'b1', qid + '.json').questions.filter((x) => x.answers);
+      assert.strictEqual(checks.length, 3);
+      checks.forEach((x) => assert.ok(x.correctIndex >= 1 && x.correctIndex <= x.answers.length));
+      assert.strictEqual(rd('b1', 'quizzes.json').find((x) => x.id === qid).questions, 3);
+      assert.ok(rd('offline', 'packs.json').packs.find((p) => p.id === 'b1').files.indexOf('lesson_content/b1/' + qid + '.json') >= 0);
+      assert.ok(rd('tools', 'a11y', 'audited-lessons.json').indexOf(id) >= 0);
+    });
+  });
+  test('B2 skills unit (Agent 302): unit 06 is appended (existing units untouched), 6 standalone_skill/long lessons mirrored in per-level + monolithic catalogs with 3-question quizzes (1-based correctIndex), UK | US block, b2 pack + audit list', () => {
+    const UID4 = 'course-b2-unit-06';
+    const per = rd('course_content', 'lessons', 'b2.json'), mono = rd('course_content', 'lessons.json');
+    const u = rd('course_content', 'units.json').find((x) => x.unit_id === UID4);
+    assert.ok(u && u.course_id === 'course-b2' && u.order === 6);
+    assert.strictEqual(u.lesson_ids.length, 6);
+    const c = rd('course_content', 'courses.json').find((x) => x.course_id === 'course-b2');
+    assert.deepStrictEqual(c.unit_ids, ['course-b2-unit-01', 'course-b2-unit-02', 'course-b2-unit-03', 'course-b2-unit-04', 'course-b2-unit-05', UID4]);
+    const cats = ['Pronunciation', 'Pronunciation', 'Pronunciation', 'Listening', 'Listening', 'Listening'];
+    u.lesson_ids.forEach((id, i) => {
+      const qid = 'lesson-' + id;
+      const a = per.find((l) => l.lesson_id === id), b = mono.find((l) => l.lesson_id === id);
+      assert.ok(a && b); assert.deepStrictEqual(a, b);
+      assert.strictEqual(a.lesson_type, 'standalone_skill'); assert.strictEqual(a.lesson_length, 'long');
+      assert.strictEqual(a.category, cats[i]); assert.strictEqual(a.order, i + 1);
+      assert.ok(a.body_content.indexOf('class="uk-us"') >= 0);
+      const checks = rd('lesson_content', 'b2', qid + '.json').questions.filter((x) => x.answers);
+      assert.strictEqual(checks.length, 3);
+      checks.forEach((x) => assert.ok(x.correctIndex >= 1 && x.correctIndex <= x.answers.length));
+      assert.strictEqual(rd('b2', 'quizzes.json').find((x) => x.id === qid).questions, 3);
+      assert.ok(rd('offline', 'packs.json').packs.find((p) => p.id === 'b2').files.indexOf('lesson_content/b2/' + qid + '.json') >= 0);
+      assert.ok(rd('tools', 'a11y', 'audited-lessons.json').indexOf(id) >= 0);
+    });
+  });
+  test('C1 skills unit (Agent 304): unit 06 is appended (existing units untouched), 4 standalone_skill/long lessons with audio_urls (../shared/audio/sample.mp3) mirrored in per-level + monolithic catalogs, 3-question quizzes (1-based correctIndex; Listening checks carry media.audio), UK | US block, c1 pack + audit list', () => {
+    const UID5 = 'course-c1-unit-06';
+    const per = rd('course_content', 'lessons', 'c1.json'), mono = rd('course_content', 'lessons.json');
+    const u = rd('course_content', 'units.json').find((x) => x.unit_id === UID5);
+    assert.ok(u && u.course_id === 'course-c1' && u.order === 6);
+    assert.strictEqual(u.lesson_ids.length, 4);
+    const c = rd('course_content', 'courses.json').find((x) => x.course_id === 'course-c1');
+    assert.deepStrictEqual(c.unit_ids, ['course-c1-unit-01', 'course-c1-unit-02', 'course-c1-unit-03', 'course-c1-unit-04', 'course-c1-unit-05', UID5]);
+    const cats = ['Pronunciation', 'Pronunciation', 'Listening', 'Listening'];
+    u.lesson_ids.forEach((id, i) => {
+      const qid = 'lesson-' + id;
+      const a = per.find((l) => l.lesson_id === id), b = mono.find((l) => l.lesson_id === id);
+      assert.ok(a && b); assert.deepStrictEqual(a, b);
+      assert.strictEqual(a.lesson_type, 'standalone_skill'); assert.strictEqual(a.lesson_length, 'long');
+      assert.strictEqual(a.category, cats[i]); assert.strictEqual(a.order, i + 1);
+      assert.ok(a.body_content.indexOf('class="uk-us"') >= 0);
+      assert.ok(a.audio_urls.length >= 1); a.audio_urls.forEach((x) => assert.strictEqual(x.url, '../shared/audio/sample.mp3'));
+      const checks = rd('lesson_content', 'c1', qid + '.json').questions.filter((x) => x.answers);
+      assert.strictEqual(checks.length, 3);
+      checks.forEach((x) => { assert.ok(x.correctIndex >= 1 && x.correctIndex <= x.answers.length); if (a.category === 'Listening') assert.strictEqual(x.media.audio.src, 'audio/sample.mp3'); });
+      assert.strictEqual(rd('c1', 'quizzes.json').find((x) => x.id === qid).questions, 3);
+      assert.ok(rd('offline', 'packs.json').packs.find((p) => p.id === 'c1').files.indexOf('lesson_content/c1/' + qid + '.json') >= 0);
+      assert.ok(rd('tools', 'a11y', 'audited-lessons.json').indexOf(id) >= 0);
+    });
+  });
+  test('C2 skills unit (Agent 305): unit 05 is appended (existing units untouched), 2 standalone_skill/long lessons with audio_urls (../shared/audio/sample.mp3) mirrored in per-level + monolithic catalogs, 3-question quizzes (1-based correctIndex; Listening checks carry media.audio), UK | US block, c2 pack + audit list', () => {
+    const UID6 = 'course-c2-unit-05';
+    const per = rd('course_content', 'lessons', 'c2.json'), mono = rd('course_content', 'lessons.json');
+    const u = rd('course_content', 'units.json').find((x) => x.unit_id === UID6);
+    assert.ok(u && u.course_id === 'course-c2' && u.order === 5);
+    assert.strictEqual(u.lesson_ids.length, 2);
+    const c = rd('course_content', 'courses.json').find((x) => x.course_id === 'course-c2');
+    assert.deepStrictEqual(c.unit_ids, ['course-c2-unit-01', 'course-c2-unit-02', 'course-c2-unit-03', 'course-c2-unit-04', UID6]);
+    const cats = ['Pronunciation', 'Listening'];
+    u.lesson_ids.forEach((id, i) => {
+      const qid = 'lesson-' + id;
+      const a = per.find((l) => l.lesson_id === id), b = mono.find((l) => l.lesson_id === id);
+      assert.ok(a && b); assert.deepStrictEqual(a, b);
+      assert.strictEqual(a.lesson_type, 'standalone_skill'); assert.strictEqual(a.lesson_length, 'long');
+      assert.strictEqual(a.category, cats[i]); assert.strictEqual(a.order, i + 1);
+      assert.ok(a.body_content.indexOf('class="uk-us"') >= 0);
+      assert.ok(a.audio_urls.length >= 1); a.audio_urls.forEach((x) => assert.strictEqual(x.url, '../shared/audio/sample.mp3'));
+      const checks = rd('lesson_content', 'c2', qid + '.json').questions.filter((x) => x.answers);
+      assert.strictEqual(checks.length, 3);
+      checks.forEach((x) => { assert.ok(x.correctIndex >= 1 && x.correctIndex <= x.answers.length); if (a.category === 'Listening') assert.strictEqual(x.media.audio.src, 'audio/sample.mp3'); });
+      assert.strictEqual(rd('c2', 'quizzes.json').find((x) => x.id === qid).questions, 3);
+      assert.ok(rd('offline', 'packs.json').packs.find((p) => p.id === 'c2').files.indexOf('lesson_content/c2/' + qid + '.json') >= 0);
+      assert.ok(rd('tools', 'a11y', 'audited-lessons.json').indexOf(id) >= 0);
+    });
+  });
+  test('Embedded skill segments (Agent 306): A1 unit-01 lessons 01, 02, 10, 14, 17, 21 end with a "Say it" / "Listen for" chapter and a placeholder audio_urls item, keep their original type (no lesson_type), and are identical in per-level + monolithic catalogs', () => {
+    const per = rd('course_content', 'lessons', 'a1.json'), mono = rd('course_content', 'lessons.json');
+    [1, 2, 10, 14, 17, 21].forEach((n) => {
+      const id = 'course-a1-unit-01-lesson-' + (n < 10 ? '0' : '') + n;
+      const a = per.find((l) => l.lesson_id === id), b = mono.find((l) => l.lesson_id === id);
+      assert.ok(a && b); assert.deepStrictEqual(a, b);
+      assert.ok(/<h3>(Say it|Listen for):/.test(a.body_content), id);
+      assert.strictEqual(a.lesson_type, undefined);
+      assert.strictEqual(a.audio_urls.length, 1); assert.strictEqual(a.audio_urls[0].url, '../shared/audio/sample.mp3');
+    });
+  });
+  test('Embedded skill segments batch 2 (Agent 307): 9 A1 unit-02/03 lessons end with a "Say it" / "Listen for" chapter and a placeholder audio_urls item, keep their original type, and are identical in per-level + monolithic catalogs', () => {
+    const per = rd('course_content', 'lessons', 'a1.json'), mono = rd('course_content', 'lessons.json');
+    ['course-a1-unit-02-lesson-02', 'course-a1-unit-02-lesson-05', 'course-a1-unit-02-lesson-10', 'course-a1-unit-02-lesson-14', 'course-a1-unit-02-lesson-17', 'course-a1-unit-03-lesson-01', 'course-a1-unit-03-lesson-03', 'course-a1-unit-03-lesson-09', 'course-a1-unit-03-lesson-10'].forEach((id) => {
+      const a = per.find((l) => l.lesson_id === id), b = mono.find((l) => l.lesson_id === id);
+      assert.ok(a && b); assert.deepStrictEqual(a, b);
+      assert.ok(/<h3>(Say it|Listen for):/.test(a.body_content), id);
+      assert.strictEqual(a.lesson_type, undefined);
+      assert.strictEqual(a.audio_urls.length, 1); assert.strictEqual(a.audio_urls[0].url, '../shared/audio/sample.mp3');
+    });
+  });
+  test('Embedded skill segments batch 3 (Agent 308): 16 A2 unit-01/02/03 lessons end with a "Say it" / "Listen for" chapter and a placeholder audio_urls item, keep their original type, are identical in per-level + monolithic catalogs; no lesson body in any level uses a tag outside the lesson.html sanitizer whitelist', () => {
+    const per = rd('course_content', 'lessons', 'a2.json'), mono = rd('course_content', 'lessons.json');
+    ['course-a2-unit-01-lesson-04', 'course-a2-unit-01-lesson-08', 'course-a2-unit-01-lesson-11', 'course-a2-unit-01-lesson-14', 'course-a2-unit-01-lesson-17', 'course-a2-unit-01-lesson-21', 'course-a2-unit-02-lesson-04', 'course-a2-unit-02-lesson-08', 'course-a2-unit-02-lesson-10', 'course-a2-unit-02-lesson-14', 'course-a2-unit-02-lesson-20', 'course-a2-unit-03-lesson-01', 'course-a2-unit-03-lesson-03', 'course-a2-unit-03-lesson-06', 'course-a2-unit-03-lesson-10', 'course-a2-unit-03-lesson-12'].forEach((id) => {
+      const a = per.find((l) => l.lesson_id === id), b = mono.find((l) => l.lesson_id === id);
+      assert.ok(a && b); assert.deepStrictEqual(a, b);
+      assert.ok(/<h3>(Say it|Listen for):/.test(a.body_content), id);
+      assert.strictEqual(a.lesson_type, undefined);
+      assert.strictEqual(a.audio_urls.length, 1); assert.strictEqual(a.audio_urls[0].url, '../shared/audio/sample.mp3');
+    });
+    const OK = /^(p|h2|h3|h4|strong|em|b|i|ul|ol|li|br|a|blockquote|img|div|span|code|pre)$/i;
+    mono.forEach((l) => (String(l.body_content || '').match(/<\/?[a-zA-Z][a-zA-Z0-9]*/g) || []).forEach((t) => assert.ok(OK.test(t.replace(/^<\/?/, '')), l.lesson_id + ' ' + t)));
+  });
+  test('Embedded skill segments batch 4 (Agent 309): 16 B1 lessons (formerly no body) now have their revision summary + a "Say it" / "Listen for" chapter and a placeholder audio_urls item, keep their original type, and are identical in per-level + monolithic catalogs', () => {
+    const per = rd('course_content', 'lessons', 'b1.json'), mono = rd('course_content', 'lessons.json');
+    ['course-b1-unit-01-lesson-01', 'course-b1-unit-01-lesson-02', 'course-b1-unit-01-lesson-04', 'course-b1-unit-01-lesson-07', 'course-b1-unit-01-lesson-10', 'course-b1-unit-01-lesson-13', 'course-b1-unit-01-lesson-16', 'course-b1-unit-01-lesson-20', 'course-b1-unit-01-lesson-21', 'course-b1-unit-02-lesson-04', 'course-b1-unit-02-lesson-08', 'course-b1-unit-02-lesson-12', 'course-b1-unit-02-lesson-15', 'course-b1-unit-04-lesson-02', 'course-b1-unit-04-lesson-05', 'course-b1-unit-04-lesson-09'].forEach((id) => {
+      const a = per.find((l) => l.lesson_id === id), b = mono.find((l) => l.lesson_id === id);
+      assert.ok(a && b); assert.deepStrictEqual(a, b);
+      assert.ok(/<h3>(Say it|Listen for):/.test(a.body_content), id);
+      assert.ok(a.body_content.indexOf('<p>') === 0, id);
+      assert.strictEqual(a.lesson_type, undefined);
+      assert.strictEqual(a.audio_urls.length, 1); assert.strictEqual(a.audio_urls[0].url, '../shared/audio/sample.mp3');
+    });
+  });
+  test('Embedded skill segments batch 5 (Agent 310): 35 B2/C1/C2 lessons (formerly no body) now have their revision summary (+ examples/key terms where present) + a "Say it" / "Listen for" chapter and a placeholder audio_urls item, keep their original type, and are identical in per-level + monolithic catalogs', () => {
+    const mono = rd('course_content', 'lessons.json');
+    const ids = ["course-b2-unit-01-lesson-01", "course-b2-unit-01-lesson-02", "course-b2-unit-01-lesson-04", "course-b2-unit-01-lesson-07", "course-b2-unit-01-lesson-10", "course-b2-unit-01-lesson-13", "course-b2-unit-01-lesson-16", "course-b2-unit-01-lesson-20", "course-b2-unit-01-lesson-21", "course-b2-unit-02-lesson-02", "course-b2-unit-02-lesson-08", "course-b2-unit-02-lesson-12", "course-b2-unit-02-lesson-15", "course-b2-unit-05-lesson-03", "course-b2-unit-05-lesson-09", "course-b2-unit-05-lesson-13", "course-c1-unit-01-lesson-01", "course-c1-unit-01-lesson-02", "course-c1-unit-01-lesson-03", "course-c1-unit-01-lesson-05", "course-c1-unit-01-lesson-09", "course-c1-unit-01-lesson-14", "course-c1-unit-01-lesson-15", "course-c1-unit-02-lesson-04", "course-c1-unit-02-lesson-11", "course-c1-unit-02-lesson-16", "course-c1-unit-02-lesson-19", "course-c1-unit-04-lesson-01", "course-c1-unit-04-lesson-02", "course-c1-unit-04-lesson-03", "course-c1-unit-05-lesson-04", "course-c1-unit-05-lesson-11", "course-c2-unit-01-lesson-01", "course-c2-unit-02-lesson-02", "course-c2-unit-03-lesson-01"];
+    ids.forEach((id) => {
+      const lv = id.split('-')[1], per = rd('course_content', 'lessons', lv + '.json');
+      const a = per.find((l) => l.lesson_id === id), b = mono.find((l) => l.lesson_id === id);
+      assert.ok(a && b); assert.deepStrictEqual(a, b);
+      assert.ok(/<h3>(Say it|Listen for):/.test(a.body_content), id);
+      assert.ok(a.body_content.indexOf('<p>') === 0, id);
+      assert.strictEqual(a.lesson_type, undefined);
+      assert.strictEqual(a.audio_urls.length, 1); assert.strictEqual(a.audio_urls[0].url, '../shared/audio/sample.mp3');
+    });
+  });
+  test('Embedded skill segments batch 6 (Agent 311): 11 more B2/C1/C2 lessons have their revision summary + a "Say it" / "Listen for" chapter and a placeholder audio_urls item, keep their original type, and are identical in per-level + monolithic catalogs', () => {
+    const mono = rd('course_content', 'lessons.json');
+    ["course-b2-unit-01-lesson-03", "course-b2-unit-01-lesson-08", "course-b2-unit-01-lesson-11", "course-b2-unit-01-lesson-12", "course-b2-unit-02-lesson-09", "course-c1-unit-01-lesson-13", "course-c1-unit-01-lesson-17", "course-c1-unit-02-lesson-09", "course-c1-unit-02-lesson-14", "course-c2-unit-01-lesson-03", "course-c2-unit-02-lesson-01"].forEach((id) => {
+      const lv = id.split('-')[1], per = rd('course_content', 'lessons', lv + '.json');
+      const a = per.find((l) => l.lesson_id === id), b = mono.find((l) => l.lesson_id === id);
+      assert.ok(a && b); assert.deepStrictEqual(a, b);
+      assert.ok(/<h3>(Say it|Listen for):/.test(a.body_content), id);
+      assert.ok(a.body_content.indexOf('<p>') === 0, id);
+      assert.strictEqual(a.lesson_type, undefined);
+      assert.strictEqual(a.audio_urls.length, 1); assert.strictEqual(a.audio_urls[0].url, '../shared/audio/sample.mp3');
+    });
+  });
+  test('Skill lessons audio structure (Agent 303): every standalone_skill lesson has audio_urls pointing at the shared placeholder (../shared/audio/sample.mp3), identical in per-level + monolithic catalogs; Listening quick checks carry media.audio; the placeholder file is in the core manifest and core pack list', () => {
+    const fs2 = require('fs');
+    assert.ok(fs2.existsSync(path.join(__dirname, '..', 'shared', 'audio', 'sample.mp3')));
+    assert.ok(rd('offline', 'core-manifest.json').files.indexOf('shared/audio/sample.mp3') >= 0);
+    assert.ok(rd('offline', 'packs.json').packs.find((p) => p.id === 'core').files.indexOf('shared/audio/sample.mp3') >= 0);
+    const mono = rd('course_content', 'lessons.json');
+    ['a1', 'a2', 'b1', 'b2'].forEach((lv) => {
+      rd('course_content', 'lessons', lv + '.json').filter((l) => l.lesson_type === 'standalone_skill').forEach((l) => {
+        assert.ok(Array.isArray(l.audio_urls) && l.audio_urls.length >= 1, l.lesson_id);
+        l.audio_urls.forEach((a) => assert.strictEqual(a.url, '../shared/audio/sample.mp3'));
+        assert.deepStrictEqual(mono.find((m) => m.lesson_id === l.lesson_id), l);
+        if (l.category === 'Listening') {
+          rd('lesson_content', lv, 'lesson-' + l.lesson_id + '.json').questions.filter((x) => x.answers).forEach((x) => assert.strictEqual(x.media.audio.src, 'audio/sample.mp3'));
+        }
+      });
+    });
   });
 })();

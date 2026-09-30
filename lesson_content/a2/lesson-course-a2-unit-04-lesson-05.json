@@ -1,0 +1,91 @@
+{
+  "id": "lesson-course-a2-unit-04-lesson-05",
+  "title": "Lesson: Listening: Shopping",
+  "description": "Practice Listening: Shopping.",
+  "brand": "Mylingo",
+  "category": "Listening",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Listening: Shopping.",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Listening: Shopping",
+      "explanation": "Practice Listening: Shopping."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Listening: Shopping",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "In Script 2, how much do the fruits cost?",
+      "category": "Listening",
+      "tags": "Listening,A2,QuickCheck",
+      "explanation": "The seller says six fifty, which is 6.50.",
+      "correctIndex": 4,
+      "answers": [
+        "16.50",
+        "6.15",
+        "2.50",
+        "6.50"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "How do Americans say \"trainers\"?",
+      "category": "Listening",
+      "tags": "Listening,A2,QuickCheck",
+      "explanation": "Americans say sneakers for sports shoes.",
+      "correctIndex": 3,
+      "answers": [
+        "jumpers",
+        "sandals",
+        "sneakers",
+        "boots"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "Which number has the stress on the last syllable?",
+      "category": "Listening",
+      "tags": "Listening,A2,QuickCheck",
+      "explanation": "In fifteen the stress is on -teen. Fifty, forty and thirty are stressed first.",
+      "correctIndex": 2,
+      "answers": [
+        "thirty",
+        "fifteen",
+        "forty",
+        "fifty"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

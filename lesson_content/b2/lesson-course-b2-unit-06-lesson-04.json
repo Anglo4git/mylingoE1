@@ -1,0 +1,91 @@
+{
+  "id": "lesson-course-b2-unit-06-lesson-04",
+  "title": "Lesson: Listening: Podcasts",
+  "description": "Practice Listening: Podcasts.",
+  "brand": "Mylingo",
+  "category": "Listening",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Listening: Podcasts.",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Listening: Podcasts",
+      "explanation": "Practice Listening: Podcasts."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Listening: Podcasts",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "In Script 1, what does B eventually think of the bikes?",
+      "category": "Listening",
+      "tags": "Listening,B2,QuickCheck",
+      "explanation": "B was not convinced at first but after a week was hooked.",
+      "correctIndex": 2,
+      "answers": [
+        "B prefers the bus",
+        "B enjoys them",
+        "B never tried them",
+        "B hates them"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "What does \"Anyway\" usually show?",
+      "category": "Listening",
+      "tags": "Listening,B2,QuickCheck",
+      "explanation": "Anyway often marks a change of topic or return to the main topic.",
+      "correctIndex": 2,
+      "answers": [
+        "A joke only",
+        "A change or return of topic",
+        "Strong disagreement",
+        "A question"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "What do Americans say for \"lorry\"?",
+      "category": "Listening",
+      "tags": "Listening,B2,QuickCheck",
+      "explanation": "Americans say truck for lorry.",
+      "correctIndex": 1,
+      "answers": [
+        "truck",
+        "van only",
+        "car",
+        "train"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

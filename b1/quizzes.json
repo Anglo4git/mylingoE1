@@ -730,5 +730,77 @@
     "level": "B1",
     "questions": 5,
     "version": 1
+  },
+  {
+    "file": "lesson_content/b1/lesson-course-b1-unit-05-lesson-01.json",
+    "id": "lesson-course-b1-unit-05-lesson-01",
+    "title": "Lesson: Sentence Stress",
+    "topic": "Sentence Stress",
+    "description": "Practice Sentence Stress.",
+    "category": "Pronunciation",
+    "tags": "Lesson,B1",
+    "level": "B1",
+    "questions": 3,
+    "version": 1
+  },
+  {
+    "file": "lesson_content/b1/lesson-course-b1-unit-05-lesson-02.json",
+    "id": "lesson-course-b1-unit-05-lesson-02",
+    "title": "Lesson: Linking Words in Speech",
+    "topic": "Linking Words in Speech",
+    "description": "Practice Linking Words in Speech.",
+    "category": "Pronunciation",
+    "tags": "Lesson,B1",
+    "level": "B1",
+    "questions": 3,
+    "version": 1
+  },
+  {
+    "file": "lesson_content/b1/lesson-course-b1-unit-05-lesson-03.json",
+    "id": "lesson-course-b1-unit-05-lesson-03",
+    "title": "Lesson: Intonation in Questions",
+    "topic": "Intonation in Questions",
+    "description": "Practice Intonation in Questions.",
+    "category": "Pronunciation",
+    "tags": "Lesson,B1",
+    "level": "B1",
+    "questions": 3,
+    "version": 1
+  },
+  {
+    "file": "lesson_content/b1/lesson-course-b1-unit-05-lesson-04.json",
+    "id": "lesson-course-b1-unit-05-lesson-04",
+    "title": "Lesson: Listening: Interviews",
+    "topic": "Listening: Interviews",
+    "description": "Practice Listening: Interviews.",
+    "category": "Listening",
+    "tags": "Lesson,B1",
+    "level": "B1",
+    "questions": 3,
+    "version": 1
+  },
+  {
+    "file": "lesson_content/b1/lesson-course-b1-unit-05-lesson-05.json",
+    "id": "lesson-course-b1-unit-05-lesson-05",
+    "title": "Lesson: Listening: Short Talks",
+    "topic": "Listening: Short Talks",
+    "description": "Practice Listening: Short Talks.",
+    "category": "Listening",
+    "tags": "Lesson,B1",
+    "level": "B1",
+    "questions": 3,
+    "version": 1
+  },
+  {
+    "file": "lesson_content/b1/lesson-course-b1-unit-05-lesson-06.json",
+    "id": "lesson-course-b1-unit-05-lesson-06",
+    "title": "Lesson: Listening: Phone Calls",
+    "topic": "Listening: Phone Calls",
+    "description": "Practice Listening: Phone Calls.",
+    "category": "Listening",
+    "tags": "Lesson,B1",
+    "level": "B1",
+    "questions": 3,
+    "version": 1
   }
 ]

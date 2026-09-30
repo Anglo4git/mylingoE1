@@ -89,6 +89,7 @@
     "shared/sfx/great_job.mp3",
     "shared/sfx/try_again_2.mp3",
     "shared/sfx/win.mp3",
+    "shared/audio/sample.mp3",
     "shared/sfx/wrong_answer.mp3",
     "sw.js"
   ]

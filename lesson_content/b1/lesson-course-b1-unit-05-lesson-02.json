@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-b1-unit-05-lesson-02",
+  "title": "Lesson: Linking Words in Speech",
+  "description": "Practice Linking Words in Speech.",
+  "brand": "Mylingo",
+  "category": "Pronunciation",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Linking Words in Speech.",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Linking Words in Speech",
+      "explanation": "Practice Linking Words in Speech."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Linking Words in Speech",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "How does \"turn off\" usually sound in fast speech?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,B1,QuickCheck",
+      "explanation": "The final /n/ links to the vowel: tur-noff.",
+      "correctIndex": 3,
+      "answers": [
+        "tun-of",
+        "turn-off with a pause",
+        "tur-noff",
+        "tur-noh"
+      ]
+    },
+    {
+      "question": "What sound often joins \"go on\"?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,B1,QuickCheck",
+      "explanation": "After a rounded vowel like /əʊ/ we often add /w/: go-w-on.",
+      "correctIndex": 1,
+      "answers": [
+        "/w/",
+        "/t/",
+        "/r/",
+        "/j/"
+      ]
+    },
+    {
+      "question": "Where does a British speaker pronounce the \"r\" in \"far away\"?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,B1,QuickCheck",
+      "explanation": "In British English, r is pronounced when a vowel follows, so far-r-away.",
+      "correctIndex": 4,
+      "answers": [
+        "Twice",
+        "At the end of the word only",
+        "Never",
+        "Before the vowel of \"away\""
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

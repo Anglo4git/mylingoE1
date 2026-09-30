@@ -1,0 +1,91 @@
+{
+  "id": "lesson-course-c1-unit-06-lesson-04",
+  "title": "Lesson: Listening: Academic Lectures",
+  "description": "Practice Listening: Academic Lectures.",
+  "brand": "Mylingo",
+  "category": "Listening",
+  "tags": "Lesson,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Listening: Academic Lectures.",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,C1",
+      "media": {},
+      "subprompt": "Listening: Academic Lectures",
+      "explanation": "Practice Listening: Academic Lectures."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Listening: Academic Lectures",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,C1"
+    },
+    {
+      "question": "In a lecture, what does \"Turning to...\" usually introduce?",
+      "category": "Listening",
+      "tags": "Listening,C1,QuickCheck",
+      "explanation": "Turning to signals a move to a new point.",
+      "correctIndex": 3,
+      "answers": [
+        "The conclusion only",
+        "An example only",
+        "A new point or topic",
+        "A question from the audience"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "What does \"To sum up\" usually signal?",
+      "category": "Listening",
+      "tags": "Listening,C1,QuickCheck",
+      "explanation": "To sum up signals that the lecturer is concluding.",
+      "correctIndex": 2,
+      "answers": [
+        "The start of the lecture",
+        "The conclusion",
+        "A contrast",
+        "A new example"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "What do Americans usually call a UK \"timetable\"?",
+      "category": "Listening",
+      "tags": "Listening,C1,QuickCheck",
+      "explanation": "Americans say schedule for a UK timetable.",
+      "correctIndex": 1,
+      "answers": [
+        "A schedule",
+        "A syllabus only",
+        "A calendar only",
+        "A tutorial"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,C1"
+    }
+  ]
+}

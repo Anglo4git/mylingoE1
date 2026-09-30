@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-a2-unit-04-lesson-01",
+  "title": "Lesson: Sounds: /ɪ/ and /iː/",
+  "description": "Practice Sounds: /ɪ/ and /iː/.",
+  "brand": "Mylingo",
+  "category": "Pronunciation",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Sounds: /ɪ/ and /iː/.",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Sounds: /ɪ/ and /iː/",
+      "explanation": "Practice Sounds: /ɪ/ and /iː/."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Sounds: /ɪ/ and /iː/",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "Which word has the long vowel /iː/?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,A2,QuickCheck",
+      "explanation": "Sheep has the long vowel /iː/. Ship, sit and bit have /ɪ/.",
+      "correctIndex": 1,
+      "answers": [
+        "sheep",
+        "ship",
+        "bit",
+        "sit"
+      ]
+    },
+    {
+      "question": "Which pair is a minimal pair?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,A2,QuickCheck",
+      "explanation": "Live /lɪv/ and leave /liːv/ differ only in the vowel.",
+      "correctIndex": 2,
+      "answers": [
+        "leave / lift",
+        "live / leave",
+        "sit / set-up",
+        "live / love"
+      ]
+    },
+    {
+      "question": "How do most Americans say \"been\"?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,A2,QuickCheck",
+      "explanation": "American English usually says /bɪn/. British English says /biːn/.",
+      "correctIndex": 1,
+      "answers": [
+        "/bɪn/",
+        "/bɛn/ only",
+        "/biːn/",
+        "/beɪn/"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

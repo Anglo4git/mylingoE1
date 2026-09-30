@@ -15,7 +15,14 @@
     ],
     "version": 1,
     "status": "published",
-    "lesson_quiz_id": "lesson-course-b2-unit-01-lesson-01"
+    "lesson_quiz_id": "lesson-course-b2-unit-01-lesson-01",
+    "body_content": "<p>Practice Mixed Conditionals.</p><h3>Say it: 'd have and 'd in mixed conditionals</h3><p>In mixed conditionals the contracted forms blur: <strong>I'd have</strong> /aɪd əv/ and <strong>I'd</strong> /aɪd/ sound almost the same. <strong>Have</strong> is reduced to /əv/. Stress the two key verbs: <strong>If I'd STUDied law, I'd be a LAWyer now.</strong></p><blockquote>Say it: \"If I'd taken that job, I'd be living abroad now.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: 'd have and 'd in mixed conditionals"
+      }
+    ]
   },
   {
     "lesson_id": "course-b2-unit-01-lesson-02",
@@ -33,7 +40,14 @@
     ],
     "version": 1,
     "status": "published",
-    "lesson_quiz_id": "lesson-course-b2-unit-01-lesson-02"
+    "lesson_quiz_id": "lesson-course-b2-unit-01-lesson-02",
+    "body_content": "<p>Practice Inversion.</p><h3>Say it: stress in negative inversion</h3><p>After a fronted negative adverbial the auxiliary comes before the subject, and the fronted phrase takes the stress: <strong>NEVer have I SEEN</strong> such a mess. Pause briefly after the fronted phrase, then keep the rest smooth: <strong>Not ONly did she WIN | but she broke the RECord.</strong></p><blockquote>Say it: \"Under no circumstances should you open this door.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: stress in negative inversion"
+      }
+    ]
   },
   {
     "lesson_id": "course-b2-unit-01-lesson-03",
@@ -51,7 +65,14 @@
     ],
     "version": 1,
     "status": "published",
-    "lesson_quiz_id": "lesson-course-b2-unit-01-lesson-03"
+    "lesson_quiz_id": "lesson-course-b2-unit-01-lesson-03",
+    "body_content": "<p>Practice Modal Perfect.</p><h3>Say it: modal perfect: have is weak</h3><p>In modal perfects <strong>have</strong> is reduced to /əv/ and often sounds like <em>of</em>: <strong>should have</strong> /ʃʊd əv/, <strong>might have</strong> /maɪt əv/. Write <em>have</em>, never <em>of</em>. Stress the modal for judgement and the participle for content: <strong>You SHOULD have TOLD me.</strong></p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>needn't have gone</strong></div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>didn't need to go</strong> (more common)</div></div><blockquote>Say it: \"She must have left. He can't have known. You should have told me.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: modal perfect: have is weak"
+      }
+    ]
   },
   {
     "lesson_id": "course-b2-unit-01-lesson-04",
@@ -69,7 +90,14 @@
     ],
     "version": 1,
     "status": "published",
-    "lesson_quiz_id": "lesson-course-b2-unit-01-lesson-04"
+    "lesson_quiz_id": "lesson-course-b2-unit-01-lesson-04",
+    "body_content": "<p>Practice Causative.</p><h3>Say it: have / get something done</h3><p>Stress the thing done and the participle: <strong>I had my HAIR CUT.</strong> <strong>I'm getting the CAR serviced.</strong> <strong>Have</strong> is usually weak: <strong>I'll have it fixed</strong> /aɪl həv ɪt fɪkst/.</p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>I'm having the boiler serviced.</strong><br><strong>I had my flat repainted.</strong></div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>I'm getting the furnace serviced.</strong><br><strong>I got my apartment painted.</strong></div></div><blockquote>Say it: \"She had her passport renewed. We're getting the roof repaired.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: have / get something done"
+      }
+    ]
   },
   {
     "lesson_id": "course-b2-unit-01-lesson-05",
@@ -123,7 +151,14 @@
     ],
     "version": 1,
     "status": "published",
-    "lesson_quiz_id": "lesson-course-b2-unit-01-lesson-07"
+    "lesson_quiz_id": "lesson-course-b2-unit-01-lesson-07",
+    "body_content": "<p>Practice Concession.</p><h3>Listen for: concession in speech</h3><p><strong>Though</strong> at the end of a sentence is a common spoken concession, often with a fall-rise: <em>It was expensive. Worth it, though.</em> <strong>However</strong> is usually followed by a pause. After <strong>although</strong>, listen for the stressed contrast: <em>Although it was RAINing, we went OUT.</em></p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>All the same</strong>, <strong>even so</strong><br><strong>Mind you</strong> (informal): <em>Mind you, it was cheap.</em></div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>Still</strong>, <strong>even so</strong><br><strong>Then again</strong>: <em>Then again, it was cheap.</em></div></div><blockquote>Listen for: \"Nice hotel. Noisy, though. Even so, we'd go back.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Listen for: concession in speech"
+      }
+    ]
   },
   {
     "lesson_id": "course-b2-unit-02-lesson-01",
@@ -195,7 +230,14 @@
       "b2-011"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Habit in the Present and the Past.</p><h3>Listen for: used to and would for habits</h3><p><strong>Used to</strong> is /ˈjuːst tə/ (the d disappears): <em>We used to LIVE there.</em> <strong>Would</strong> for past habits is contracted: <em>We'd go every SUMmer.</em> Listen for time words such as <strong>every</strong>, <strong>always</strong> and <strong>when I was young</strong>.</p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>I used not to</strong> (formal)<br><strong>I usedn't to</strong> (rare)</div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>I didn't use to</strong><br><strong>I never used to</strong></div></div><blockquote>Listen for: \"We used to go every summer. We'd swim before breakfast.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Listen for: used to and would for habits"
+      }
+    ]
   },
   {
     "lesson_id": "course-b2-unit-01-lesson-09",
@@ -229,7 +271,14 @@
       "b2-013"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Past Simple, Past Continuous, Past Perfect.</p><h3>Say it: -ed endings and 'd had</h3><p>The past simple -ed has three sounds: /t/ after voiceless sounds (<strong>worked</strong>), /d/ after voiced sounds (<strong>played</strong> /pleɪd/), /ɪd/ after /t/ or /d/ (<strong>wanted</strong>). In the past perfect, <strong>had</strong> is weak or contracted: <strong>She'd already left</strong> /ʃiːd ɔːlˈredi left/.</p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>worked</strong> /wɜːkt/<br><strong>wanted</strong> /ˈwɒntɪd/</div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>worked</strong> /wɜːrkt/<br><strong>wanted</strong> /ˈwɑːntɪd/</div></div><blockquote>Say it: \"I worked all day. I'd already finished when she arrived.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: -ed endings and 'd had"
+      }
+    ]
   },
   {
     "lesson_id": "course-b2-unit-01-lesson-11",
@@ -246,7 +295,14 @@
       "b2-014"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Question tags.</p><h3>Say it: question tags: agree or ask</h3><p>A <strong>falling</strong> tag seeks agreement: <strong>Nice day, isn't it ↘</strong>. A <strong>rising</strong> tag is a real question: <strong>You're coming, aren't you ↗?</strong> Keep the tag short and light: /ˈɪznt ɪt/.</p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>I'm late, aren't I?</strong><br><strong>Let's go, shall we?</strong></div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>I'm late, aren't I?</strong><br><strong>Let's go, okay?</strong></div></div><blockquote>Say it: \"It's cold, isn't it? You haven't seen it, have you?\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: question tags: agree or ask"
+      }
+    ]
   },
   {
     "lesson_id": "course-b2-unit-01-lesson-12",
@@ -263,7 +319,14 @@
       "b2-015"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Future forms.</p><h3>Say it: 'll, going to and present continuous</h3><p><strong>Going to</strong> often sounds like <strong>gonna</strong> /ˈɡʌnə/ in speech. <strong>I'll</strong> /aɪl/ is quick and light: <em>I'll call you.</em> The present continuous for plans stresses the time: <em>I'm meeting her on FRIday.</em> Write <em>going to</em> in formal writing.</p><blockquote>Say it: \"I'll call you later. I'm going to study. We're meeting on Friday.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: 'll, going to and present continuous"
+      }
+    ]
   },
   {
     "lesson_id": "course-b2-unit-01-lesson-13",
@@ -280,7 +343,14 @@
       "b2-016"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Future Perfect.</p><h3>Say it: 'll have in the future perfect</h3><p><strong>Will have</strong> shrinks to <strong>'ll have</strong> /əl əv/: <strong>By June I'll have finished</strong> /baɪ dʒuːn aɪl əv ˈfɪnɪʃt/. Stress the time expression and the participle: <strong>By FRIday, they'll have FINished.</strong></p><blockquote>Say it: \"By this time next year, she'll have graduated.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: 'll have in the future perfect"
+      }
+    ]
   },
   {
     "lesson_id": "course-b2-unit-01-lesson-14",
@@ -331,7 +401,14 @@
       "b2-019"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Wish and if only.</p><h3>Say it: I wish I were / was</h3><p>Both <strong>I wish I were</strong> and <strong>I wish I was</strong> are used; <em>were</em> is more formal. Reduce <strong>I wish I</strong> and stress the wished-for idea. <strong>If only</strong> is stressed strongly: <strong>If ONly I had more TIME.</strong></p><blockquote>Say it: \"I wish I were taller. If only I had listened.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: I wish I were / was"
+      }
+    ]
   },
   {
     "lesson_id": "course-b2-unit-01-lesson-17",
@@ -399,7 +476,14 @@
       "b2-023"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Relative clauses.</p><h3>Listen for: pauses in relative clauses</h3><p>Non-defining clauses are set off by pauses (commas in writing): <em>My brother, | who lives in Leeds, | is a nurse.</em> Defining clauses have no pauses: <em>The man who lives next door is a nurse.</em> The pauses change the meaning: the first suggests I have only one brother.</p><blockquote>Listen for: \"My sister, who lives in Rome, is a doctor. The sister who lives in Rome is a doctor.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Listen for: pauses in relative clauses"
+      }
+    ]
   },
   {
     "lesson_id": "course-b2-unit-01-lesson-21",
@@ -416,7 +500,14 @@
       "b2-024"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Conjunctions: although, despite, in spite of, otherwise, unless.</p><h3>Listen for: although, despite, unless</h3><p><strong>Although</strong> is stressed on the second syllable: <em>alTHOUGH it was late</em>. <strong>Despite</strong> and <strong>in spite of</strong> are followed by a noun or -ing: <em>despite the RAIN</em>. <strong>Unless</strong> /ənˈles/ is weak at the start.</p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>although</strong> /ɔːlˈðəʊ/<br><strong>whilst</strong> (formal)</div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>although</strong> /ɔːlˈðoʊ/<br><strong>while</strong></div></div><blockquote>Listen for: \"Although it was late, we stayed. Unless it rains, we'll go.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Listen for: although, despite, unless"
+      }
+    ]
   },
   {
     "lesson_id": "course-b2-unit-01-lesson-22",
@@ -501,7 +592,14 @@
       "b2-029"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Affixes.</p><h3>Say it: stress with suffixes</h3><p>Some suffixes move stress: <strong>PHOtograph</strong> → <strong>phoTOGrapher</strong> → <strong>photoGRAPHic</strong>. <strong>-tion</strong> and <strong>-ic</strong> put stress on the syllable before: <strong>eduCAtion</strong>, <strong>ecoNOMic</strong>. Prefixes like <strong>un-</strong>, <strong>re-</strong>, <strong>dis-</strong> usually keep the stress: <strong>HAPpy</strong> → <strong>unHAPpy</strong>.</p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>secretary</strong> /ˈsekrətri/<br><strong>missile</strong> /ˈmɪsaɪl/</div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>secretary</strong> /ˈsekrəteri/<br><strong>missile</strong> /ˈmɪsl/</div></div><blockquote>Say it: \"photograph, photographer, photographic; economy, economic.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: stress with suffixes"
+      }
+    ]
   },
   {
     "lesson_id": "course-b2-unit-02-lesson-03",
@@ -603,7 +701,14 @@
       "b2-035"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Relationships.</p><h3>Listen for: closeness in tone</h3><p>The same words can sound close or distant. <em>We're just friends.</em> with a fall sounds final; with a fall-rise it leaves doubt. Listen for stress on <strong>just</strong> and <strong>really</strong>: <em>We're JUST friends.</em></p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>get on with</strong> someone<br><strong>fancy</strong> someone</div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>get along with</strong> someone<br><strong>have a crush on</strong> someone</div></div><blockquote>Listen for: \"We get on really well. We're just friends.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Listen for: closeness in tone"
+      }
+    ]
   },
   {
     "lesson_id": "course-b2-unit-02-lesson-09",
@@ -620,7 +725,14 @@
       "b2-036"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Festivals and celebrations.</p><h3>Listen for: festival vocabulary and stress</h3><p>Stress in festival words: <strong>CELebrate</strong>, <strong>celeBRAtion</strong>, <strong>FEStival</strong>, <strong>TRAdition</strong>, <strong>fireworks</strong> /ˈfaɪəwɜːks/. Listen for stress on the event name and the day in invitations: <em>See you at the PARty on SAturday.</em></p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>Bonfire Night</strong>, <strong>Boxing Day</strong></div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>Fourth of July</strong>, <strong>Thanksgiving</strong></div></div><blockquote>Listen for: \"The festival starts on Friday. Fireworks begin at nine.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Listen for: festival vocabulary and stress"
+      }
+    ]
   },
   {
     "lesson_id": "course-b2-unit-02-lesson-10",
@@ -671,7 +783,14 @@
       "b2-039"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Idiomatic expressions.</p><h3>Listen for: idioms in connected speech</h3><p>Idioms are often said as one chunk, with the stress on the last content word: <em>it's a piece of CAKE</em>, <em>let's call it a DAY</em>. Expect reductions: <em>a piece of</em> /ə ˈpiːs əv/. Listen for the chunk, not the individual words.</p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>a storm in a teacup</strong><br><strong>bob's your uncle</strong></div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>a tempest in a teapot</strong><br><strong>hit a home run</strong></div></div><blockquote>Listen for: \"It's a piece of cake. Let's call it a day.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Listen for: idioms in connected speech"
+      }
+    ]
   },
   {
     "lesson_id": "course-b2-unit-02-lesson-13",
@@ -722,7 +841,14 @@
       "b2-042"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Geography and climate.</p><h3>Say it: place names and climate words</h3><p>English place names often break spelling rules: <strong>Thames</strong> /temz/, <strong>Worcester</strong> /ˈwʊstə/, <strong>Arctic</strong> /ˈɑːktɪk/ (say the first c). Learn stress for climate words: <strong>CLImate</strong>, <strong>TROpical</strong>, <strong>TEMperature</strong>.</p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>tropical</strong> /ˈtrɒpɪkl/<br><strong>temperature</strong> /ˈtemprətʃə/</div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>tropical</strong> /ˈtrɑːpɪkl/<br><strong>temperature</strong> /ˈtemprətʃər/</div></div><blockquote>Say it: \"The Thames is cold. The Arctic climate is harsh.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: place names and climate words"
+      }
+    ]
   },
   {
     "lesson_id": "course-b2-unit-02-lesson-16",
@@ -807,7 +933,14 @@
       "b2-047"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Expressing regret.</p><h3>Say it: regret in your voice</h3><p>Regret uses a falling tone and stress on the key word: <strong>I WISH I'd said something.</strong> <strong>If only I'd LISTened.</strong> <strong>Have</strong> is weak: <strong>I should have called</strong> /aɪ ʃʊd əv kɔːld/. A slower pace and lower pitch sound sincere.</p><blockquote>Say it: \"I should have called. I wish I'd listened.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: regret in your voice"
+      }
+    ]
   },
   {
     "lesson_id": "course-b2-unit-05-lesson-04",
@@ -909,7 +1042,14 @@
       "b2-053"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Stating contrast — conversational.</p><h3>Listen for: contrast in conversation</h3><p>Spoken contrast: <strong>Yeah, but...</strong> starts a disagreement, <strong>Still,...</strong> accepts a point then reverses it. Listen for a fall-rise on the first idea and a fall on the contrast: <em>It's ↘↗cheap, but it's ↘slow.</em></p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>Mind you, it's cheap.</strong></div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>Then again, it's cheap.</strong></div></div><blockquote>Listen for: \"It's cheap, but it's slow. Still, it works.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Listen for: contrast in conversation"
+      }
+    ]
   },
   {
     "lesson_id": "course-b2-unit-05-lesson-10",
@@ -977,7 +1117,14 @@
       "b2-057"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Clarifying.</p><h3>Say it: checking and clarifying</h3><p>To check you understood, use a rising tone: <strong>So you mean the FIRST one?</strong> To ask for repetition politely: <strong>Sorry, could you say that again?</strong> To correct, stress the changed word: <strong>Not Tuesday, THURSday.</strong></p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>Sorry?</strong> / <strong>Pardon?</strong></div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>Excuse me?</strong> / <strong>Come again?</strong> (informal)</div></div><blockquote>Say it: \"Sorry, do you mean the first one? Not Tuesday, Thursday.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: checking and clarifying"
+      }
+    ]
   },
   {
     "lesson_id": "course-b2-unit-05-lesson-14",
@@ -1029,5 +1176,251 @@
     ],
     "version": 1,
     "status": "published"
+  },
+  {
+    "lesson_id": "course-b2-unit-06-lesson-01",
+    "unit_id": "course-b2-unit-06",
+    "title": "Connected Speech",
+    "category": "Pronunciation",
+    "order": 1,
+    "revision": {
+      "summary": "Learn how sounds change, disappear or join in fast speech (assimilation, elision, weak forms) so you can speak fluently and understand native speakers.",
+      "examples": [
+        "handbag /ˈhæmbæɡ/",
+        "next day /neks deɪ/",
+        "want to = wanna (informal)"
+      ],
+      "key_terms": [
+        "connected speech",
+        "assimilation",
+        "elision",
+        "weak form"
+      ],
+      "estimated_minutes": 20
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "lesson-course-b2-unit-06-lesson-01"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b2-unit-06-lesson-01",
+    "body_content": "<h2>Connected Speech</h2><p>In careful speech every word is separate. In real speech, sounds change to make speaking easier. Learning these patterns helps you understand fast speakers and sound more natural.</p><h3>1. Elision: sounds disappear</h3><p>A /t/ or /d/ between two consonants often disappears: <strong>next day</strong> = \"nex day\", <strong>old man</strong> = \"ol man\", <strong>last night</strong> = \"las night\". Also inside words: <strong>friendship</strong> = \"frenship\".</p><h3>2. Assimilation: sounds change</h3><p>A sound becomes more like the next one: <strong>handbag</strong> = \"hambag\", <strong>ten pounds</strong> = \"tem pounds\", <strong>good boy</strong> = \"goob boy\", <strong>this shop</strong> = \"thish shop\".</p><h3>3. Weak forms and contractions</h3><p>Grammar words shrink: <strong>and</strong> = /ən/, <strong>of</strong> = /əv/, <strong>have</strong> = /əv/ in <strong>should have</strong> = \"should've\". Informal spelling shows this: <strong>gonna, wanna, gotta</strong>. Use them to understand, and be careful in formal writing.</p><h3>4. Where accents differ</h3><p>Both accents connect speech, but the patterns are not the same:</p><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>a lot of</strong> = \"a lot ov\" (t is clear)<br><strong>Have you got...?</strong> is common<br><strong>Shall we?</strong></div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>a lot of</strong> = \"a lodda\" (t sounds like d)<br><strong>Do you have...?</strong> is common<br><strong>Should we?</strong></div></div><blockquote>Practice tip: record a short sentence at natural speed and compare it with the written words. Note which sounds disappear.</blockquote>",
+    "lesson_length": "long",
+    "lesson_type": "standalone_skill",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Sample audio (UK)"
+      },
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Sample audio (US)"
+      }
+    ]
+  },
+  {
+    "lesson_id": "course-b2-unit-06-lesson-02",
+    "unit_id": "course-b2-unit-06",
+    "title": "Contrastive Stress",
+    "category": "Pronunciation",
+    "order": 2,
+    "revision": {
+      "summary": "Learn to move the main stress to a word to correct, contrast or emphasise information, and to hear the speaker's meaning from where the stress falls.",
+      "examples": [
+        "I said TEN, not TEN-teen.",
+        "She likes TEA, not COFFEE.",
+        "I didn't say HE stole it."
+      ],
+      "key_terms": [
+        "contrastive stress",
+        "emphasis",
+        "focus",
+        "correction"
+      ],
+      "estimated_minutes": 20
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "lesson-course-b2-unit-06-lesson-02"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b2-unit-06-lesson-02",
+    "body_content": "<h2>Contrastive Stress</h2><p>Normally the main stress falls on the last content word: <strong>I bought a new CAR.</strong> With contrastive stress you move it to show a contrast, a correction or a surprise.</p><h3>1. Correcting information</h3><p>A: <em>Is the meeting on Monday?</em> B: <em>No, it's on TUESday.</em> The stressed word is the new information.</p><h3>2. Showing a contrast</h3><p><strong>I like TEA, but she likes COFFEE.</strong> Both stressed words are the pair being compared.</p><h3>3. One sentence, different meanings</h3><p>Say \"I didn't say he stole it\" seven times, stressing a different word each time. Each version means something different: <strong>I</strong> didn't say it (someone else did); I didn't <strong>say</strong> it (I wrote it); he <strong>stole</strong> (he borrowed).</p><h3>4. Numbers and letters</h3><p>Stress the part that is different: <strong>fifTEEN</strong> or <strong>FIFty</strong>; <strong>B as in Bravo</strong>, not <strong>P</strong>. This is very useful on the phone.</p><h3>5. Where accents differ</h3><p>Contrastive stress works the same in both accents. Some words that you contrast may differ:</p><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>fortnight</strong> (two weeks) not <strong>week</strong><br><strong>flat</strong>, not <strong>house</strong><br><strong>autumn</strong>, not <strong>summer</strong></div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>two weeks</strong>, not <strong>one week</strong><br><strong>apartment</strong>, not <strong>house</strong><br><strong>fall</strong>, not <strong>summer</strong></div></div><blockquote>Practice tip: correct a false statement out loud. \"It's in Paris.\" \"No, it's in ROME.\"</blockquote>",
+    "lesson_length": "long",
+    "lesson_type": "standalone_skill",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Sample audio (UK)"
+      },
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Sample audio (US)"
+      }
+    ]
+  },
+  {
+    "lesson_id": "course-b2-unit-06-lesson-03",
+    "unit_id": "course-b2-unit-06",
+    "title": "UK and US: /r/ and /t/",
+    "category": "Pronunciation",
+    "order": 3,
+    "revision": {
+      "summary": "Compare how British and American English say /r/ after vowels and /t/ between vowels (flapping, glottal stops), so you can recognise both and choose one to use.",
+      "examples": [
+        "car: UK /kɑː/, US /kɑːr/",
+        "water: UK /ˈwɔːtə/, US /ˈwɔːɾər/",
+        "better: UK /ˈbetə/, US /ˈbeɾər/"
+      ],
+      "key_terms": [
+        "rhotic",
+        "flap t",
+        "glottal stop",
+        "accent"
+      ],
+      "estimated_minutes": 20
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "lesson-course-b2-unit-06-lesson-03"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b2-unit-06-lesson-03",
+    "body_content": "<h2>UK and US: /r/ and /t/</h2><p>The two biggest differences between standard British and American pronunciation are the letter <strong>r</strong> and the letter <strong>t</strong>. Knowing the rules makes both accents easy to understand.</p><h3>1. The letter r</h3><p>American English is <strong>rhotic</strong>: r is always pronounced. Standard British English is <strong>non-rhotic</strong>: r is pronounced only before a vowel.</p><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>car</strong> = /kɑː/<br><strong>park</strong> = /pɑːk/<br><strong>teacher</strong> = /ˈtiːtʃə/<br><strong>car alarm</strong> = /kɑːr əˈlɑːm/ (linking r)</div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>car</strong> = /kɑːr/<br><strong>park</strong> = /pɑːrk/<br><strong>teacher</strong> = /ˈtiːtʃər/<br><strong>car alarm</strong> = /kɑːr əˈlɑːrm/</div></div><h3>2. The letter t between vowels</h3><p>In American English /t/ between two vowels (when the second is unstressed) becomes a quick <strong>flap</strong> like a soft /d/: <strong>water</strong>, <strong>better</strong>, <strong>city</strong>. So <strong>latter</strong> and <strong>ladder</strong> sound almost the same.</p><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>water</strong> = /ˈwɔːtə/ (clear t)<br><strong>better</strong> = /ˈbetə/<br><strong>bottle</strong> = often /ˈbɒʔl/ (glottal stop in informal speech)</div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>water</strong> = /ˈwɔːɾər/ (flap)<br><strong>better</strong> = /ˈbeɾər/<br><strong>bottle</strong> = /ˈbɑːɾl/</div></div><h3>3. Which to learn?</h3><p>Choose one accent as your model and stay consistent. Practise recognising the other by listening to films, podcasts and news from both countries.</p><blockquote>Practice tip: say \"better butter\" in both ways: with a clear t (UK) and a flap (US).</blockquote>",
+    "lesson_length": "long",
+    "lesson_type": "standalone_skill",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Sample audio (UK)"
+      },
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Sample audio (US)"
+      }
+    ]
+  },
+  {
+    "lesson_id": "course-b2-unit-06-lesson-04",
+    "unit_id": "course-b2-unit-06",
+    "title": "Listening: Podcasts",
+    "category": "Listening",
+    "order": 4,
+    "revision": {
+      "summary": "Practise listening to conversational podcasts, following opinions, informal language and jumps in topic, with UK and US vocabulary differences.",
+      "examples": [
+        "To be honest, I wasn't convinced.",
+        "Anyway, going back to what I said...",
+        "lorry (UK) / truck (US)"
+      ],
+      "key_terms": [
+        "podcast",
+        "opinion",
+        "discourse marker",
+        "informal language"
+      ],
+      "estimated_minutes": 22
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "lesson-course-b2-unit-06-lesson-04"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b2-unit-06-lesson-04",
+    "body_content": "<h2>Listening: Podcasts</h2><p>Podcasts are natural and informal. Speakers interrupt, change topic and use fillers. To follow them, listen for the topic, each speaker's opinion and the discourse markers that show the structure.</p><h3>1. Script 1: two hosts</h3><blockquote>A: So, what did you think of the new city bike scheme?<br>B: To be honest, I wasn't convinced at first. I mean, the bikes are heavy. But actually, after a week I was hooked.<br>A: Really? Anyway, the price is what surprised me. A pound for thirty minutes!<br>B: Right, which is cheaper than the bus.</blockquote><p>Opinions: B changes from <strong>not convinced</strong> to <strong>hooked</strong>. A is surprised by the <strong>price</strong>.</p><h3>2. Discourse markers</h3><ul><li><strong>To be honest, I mean, actually</strong> = the speaker gives an opinion or correction.</li><li><strong>Anyway</strong> = change topic or return to the topic.</li><li><strong>Right, exactly, I know</strong> = agreement.</li><li><strong>By the way</strong> = a side comment.</li></ul><h3>3. Script 2: a story</h3><blockquote>So last week I was driving to work, and, you won't believe this, a lorry stopped in front of me and the driver got out to buy a sandwich! I mean, in the middle of the road!</blockquote><p>Notice <strong>So</strong> (start of a story) and <strong>you won't believe this</strong> (something surprising). The listener does not need to catch every word.</p><h3>4. Where UK and US differ</h3><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>lorry</strong>, <strong>flat</strong>, <strong>mate</strong><br><strong>I reckon</strong><br><strong>quite good</strong> = fairly good</div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>truck</strong>, <strong>apartment</strong>, <strong>buddy</strong><br><strong>I guess</strong><br><strong>pretty good</strong> = fairly good</div></div><blockquote>Practice tip: play a podcast for two minutes, then write the topic, one opinion and the discourse markers you noticed.</blockquote>",
+    "lesson_length": "long",
+    "lesson_type": "standalone_skill",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Listen: Podcasts"
+      }
+    ]
+  },
+  {
+    "lesson_id": "course-b2-unit-06-lesson-05",
+    "unit_id": "course-b2-unit-06",
+    "title": "Listening: Lectures and Note-taking",
+    "category": "Listening",
+    "order": 5,
+    "revision": {
+      "summary": "Practise listening to short lectures and taking notes: catching the main idea, signposts, key terms and examples, and writing them down with abbreviations.",
+      "examples": [
+        "There are three main causes...",
+        "This means that...",
+        "e.g. = for example; i.e. = that is"
+      ],
+      "key_terms": [
+        "lecture",
+        "signpost",
+        "note-taking",
+        "abbreviation"
+      ],
+      "estimated_minutes": 22
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "lesson-course-b2-unit-06-lesson-05"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b2-unit-06-lesson-05",
+    "body_content": "<h2>Listening: Lectures and Note-taking</h2><p>Lecturers give a lot of information in a short time. You cannot write every word. You need to listen for structure and write only key words.</p><h3>1. Listen for signposts</h3><ul><li><strong>Today I'll talk about...</strong> = topic.</li><li><strong>There are three main causes</strong> = number of points.</li><li><strong>First, second, finally</strong> = order.</li><li><strong>This means that, in other words</strong> = an explanation.</li><li><strong>For example</strong> = an example.</li><li><strong>To sum up</strong> = the conclusion.</li></ul><h3>2. Script: a short lecture</h3><blockquote>Today I'll talk about urban heat islands. Cities are often hotter than the countryside, and there are two main causes. First, dark surfaces like roads absorb heat. Second, there are fewer trees, which means less shade and less cooling. For example, some cities are up to five degrees warmer at night. To sum up, planting trees and using lighter materials can help.</blockquote><h3>3. Model notes</h3><p><strong>Topic:</strong> urban heat islands (cities hotter)<br><strong>Causes:</strong> 1) dark surfaces absorb heat 2) fewer trees = less shade<br><strong>Ex:</strong> up to 5° warmer at night<br><strong>Solution:</strong> trees + light materials</p><h3>4. Abbreviations and symbols</h3><p><strong>e.g.</strong> = for example; <strong>i.e.</strong> = that is; <strong>=</strong> = means; <strong>&rarr;</strong> = leads to; <strong>w/</strong> = with; <strong>&amp;</strong> = and. Use numbers instead of words and keep only nouns, verbs and numbers.</p><h3>5. Where UK and US differ</h3><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>lecturer</strong>, <strong>module</strong>, <strong>revise</strong> for an exam<br><strong>Uni</strong> / <strong>university</strong><br><strong>maths</strong></div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>professor</strong>, <strong>course</strong>, <strong>review</strong> for a test<br><strong>college</strong> / <strong>school</strong> (university)<br><strong>math</strong></div></div><blockquote>Practice tip: after each lecture, rewrite your notes in a clear format and cover them to see what you remember.</blockquote>",
+    "lesson_length": "long",
+    "lesson_type": "standalone_skill",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Listen: Lectures and Note-taking"
+      }
+    ]
+  },
+  {
+    "lesson_id": "course-b2-unit-06-lesson-06",
+    "unit_id": "course-b2-unit-06",
+    "title": "Listening: Accents",
+    "category": "Listening",
+    "order": 6,
+    "revision": {
+      "summary": "Practise understanding different accents (British, American, Australian, Indian and others) by listening for stress and key words, with strategies for when speech is unfamiliar.",
+      "examples": [
+        "Could you say that again, please?",
+        "Sorry, I didn't catch that.",
+        "No worries! (Australian)"
+      ],
+      "key_terms": [
+        "accent",
+        "dialect",
+        "vowel change",
+        "strategy"
+      ],
+      "estimated_minutes": 22
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "lesson-course-b2-unit-06-lesson-06"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b2-unit-06-lesson-06",
+    "body_content": "<h2>Listening: Accents</h2><p>English is spoken by more people as a second language than as a first language. You will hear many accents at work, on trips and online. Every accent is different, but the grammar and stressed words are similar.</p><h3>1. Strategies</h3><ul><li>Focus on stressed words.</li><li>Use context: topic, situation, gestures.</li><li>Expect the same word to sound different: a different vowel, a different r, a different t.</li><li>Ask politely: <strong>Sorry, I didn't catch that. Could you say it again, please?</strong></li></ul><h3>2. Some typical patterns</h3><ul><li><strong>Scottish and Irish English:</strong> r is often rolled or clear; vowels are often shorter.</li><li><strong>Australian English:</strong> \"day\" sounds nearer to \"die\"; the rising tone is common on statements.</li><li><strong>Indian English:</strong> syllables have similar length, and t and d are often made with the tongue touching the teeth.</li><li><strong>General American:</strong> r is clear, t between vowels is a flap.</li></ul><h3>3. Script: a conversation between two accents</h3><blockquote>A (Australian): G'day! Are you free at three?<br>B (American): Three? Sorry, I didn't catch that. Did you say three or thirty?<br>A: Three. No worries, I'll say it again: at three o'clock.<br>B: Got it. See you then.</blockquote><p>Note: B checks the number and A repeats it clearly. This is a good real-life strategy.</p><h3>4. Where UK and US differ</h3><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>Sorry?</strong> or <strong>Pardon?</strong><br><strong>Cheers</strong> = thanks / goodbye<br><strong>How do you do?</strong></div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>Excuse me?</strong> or <strong>What was that?</strong><br><strong>Thanks</strong><br><strong>How are you doing?</strong></div></div><blockquote>Practice tip: each week watch a short video from a different English-speaking country and note two sounds that are different.</blockquote>",
+    "lesson_length": "long",
+    "lesson_type": "standalone_skill",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Listen: Accents"
+      }
+    ]
   }
 ]

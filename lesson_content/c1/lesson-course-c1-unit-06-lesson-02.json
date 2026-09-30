@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-c1-unit-06-lesson-02",
+  "title": "Lesson: Discourse Intonation",
+  "description": "Practice Discourse Intonation.",
+  "brand": "Mylingo",
+  "category": "Pronunciation",
+  "tags": "Lesson,C1",
+  "level": "C1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Discourse Intonation.",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,C1",
+      "media": {},
+      "subprompt": "Discourse Intonation",
+      "explanation": "Practice Discourse Intonation."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Discourse Intonation",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,C1"
+    },
+    {
+      "question": "Which tone usually presents new information the speaker is telling you?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,C1,QuickCheck",
+      "explanation": "A falling tone usually presents new information as complete and certain.",
+      "correctIndex": 1,
+      "answers": [
+        "A fall",
+        "A fall-rise",
+        "A flat tone",
+        "A rise on every word"
+      ]
+    },
+    {
+      "question": "A speaker says \"Well, it's interesting...\" with a fall-rise. What may they mean?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,C1,QuickCheck",
+      "explanation": "A fall-rise often signals a reservation or something left unsaid.",
+      "correctIndex": 2,
+      "answers": [
+        "They are completely convinced",
+        "They have a reservation, perhaps a \"but\" to follow",
+        "They did not hear the question",
+        "They want to change the subject"
+      ]
+    },
+    {
+      "question": "Starting a chunk at a higher pitch than the previous chunk usually signals...",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,C1,QuickCheck",
+      "explanation": "A higher key marks a new topic or contrast; a lower key marks an aside.",
+      "correctIndex": 3,
+      "answers": [
+        "A quiet aside",
+        "A grammar mistake",
+        "A new topic or a contrast",
+        "The end of the conversation"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,C1"
+    }
+  ]
+}

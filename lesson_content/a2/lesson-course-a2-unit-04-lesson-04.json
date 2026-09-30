@@ -1,0 +1,91 @@
+{
+  "id": "lesson-course-a2-unit-04-lesson-04",
+  "title": "Lesson: Listening: Daily Routines",
+  "description": "Practice Listening: Daily Routines.",
+  "brand": "Mylingo",
+  "category": "Listening",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Listening: Daily Routines.",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Listening: Daily Routines",
+      "explanation": "Practice Listening: Daily Routines."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Listening: Daily Routines",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "In Script 1, what time does the speaker leave home?",
+      "category": "Listening",
+      "tags": "Listening,A2,QuickCheck",
+      "explanation": "Quarter to eight is 7:45.",
+      "correctIndex": 2,
+      "answers": [
+        "8:15",
+        "7:45",
+        "7:15",
+        "6:45"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "Which word means the highest frequency?",
+      "category": "Listening",
+      "tags": "Listening,A2,QuickCheck",
+      "explanation": "Always means 100% of the time.",
+      "correctIndex": 4,
+      "answers": [
+        "usually",
+        "never",
+        "sometimes",
+        "always"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "How does an American write the date 9/29?",
+      "category": "Listening",
+      "tags": "Listening,A2,QuickCheck",
+      "explanation": "In the US the month comes first: 9/29 is September 29.",
+      "correctIndex": 4,
+      "answers": [
+        "29 September only in the UK",
+        "9 February",
+        "2 September",
+        "September 29"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

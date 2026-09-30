@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-b1-unit-05-lesson-03",
+  "title": "Lesson: Intonation in Questions",
+  "description": "Practice Intonation in Questions.",
+  "brand": "Mylingo",
+  "category": "Pronunciation",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Intonation in Questions.",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Intonation in Questions",
+      "explanation": "Practice Intonation in Questions."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Intonation in Questions",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "Which intonation is usual at the end of \"Do you like coffee?\"",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,B1,QuickCheck",
+      "explanation": "Yes/no questions usually rise.",
+      "correctIndex": 2,
+      "answers": [
+        "Falling",
+        "Rising",
+        "Flat",
+        "Falling then rising"
+      ]
+    },
+    {
+      "question": "What does a falling tag in \"Nice day, isn't it?\" mean?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,B1,QuickCheck",
+      "explanation": "A falling question tag usually expects agreement.",
+      "correctIndex": 4,
+      "answers": [
+        "The speaker does not know",
+        "The speaker is angry",
+        "It is a real question",
+        "The speaker expects agreement"
+      ]
+    },
+    {
+      "question": "How does the voice usually move in a list of items?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,B1,QuickCheck",
+      "explanation": "In lists the voice rises on each item and falls on the final one.",
+      "correctIndex": 3,
+      "answers": [
+        "Rises on the last item only",
+        "Stays flat",
+        "Rises on each item, falls on the last",
+        "Falls on every item"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

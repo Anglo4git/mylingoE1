@@ -3,13 +3,14 @@
     "course_id": "course-a1",
     "level": "A1",
     "title": "English A1",
-    "description": "A guided A1+ path through grammar, vocabulary and functional English, organized into three units.",
+    "description": "A guided A1+ path through grammar, vocabulary, functional English, pronunciation and listening, organized into four units.",
     "version": 2,
     "status": "published",
     "unit_ids": [
       "course-a1-unit-01",
       "course-a1-unit-02",
-      "course-a1-unit-03"
+      "course-a1-unit-03",
+      "course-a1-unit-04"
     ]
   },
   {
@@ -22,7 +23,8 @@
     "unit_ids": [
       "course-a2-unit-01",
       "course-a2-unit-02",
-      "course-a2-unit-03"
+      "course-a2-unit-03",
+      "course-a2-unit-04"
     ]
   },
   {
@@ -36,7 +38,8 @@
       "course-b1-unit-01",
       "course-b1-unit-02",
       "course-b1-unit-03",
-      "course-b1-unit-04"
+      "course-b1-unit-04",
+      "course-b1-unit-05"
     ]
   },
   {
@@ -51,7 +54,8 @@
       "course-b2-unit-02",
       "course-b2-unit-03",
       "course-b2-unit-04",
-      "course-b2-unit-05"
+      "course-b2-unit-05",
+      "course-b2-unit-06"
     ]
   },
   {
@@ -66,7 +70,8 @@
       "course-c1-unit-02",
       "course-c1-unit-03",
       "course-c1-unit-04",
-      "course-c1-unit-05"
+      "course-c1-unit-05",
+      "course-c1-unit-06"
     ]
   },
   {
@@ -80,7 +85,8 @@
       "course-c2-unit-01",
       "course-c2-unit-02",
       "course-c2-unit-03",
-      "course-c2-unit-04"
+      "course-c2-unit-04",
+      "course-c2-unit-05"
     ]
   }
 ]

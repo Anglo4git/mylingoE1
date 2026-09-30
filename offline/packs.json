@@ -99,6 +99,7 @@
         "shared/sfx/great_job.mp3",
         "shared/sfx/try_again_2.mp3",
         "shared/sfx/win.mp3",
+        "shared/audio/sample.mp3",
         "shared/sfx/wrong_answer.mp3",
         "sw.js"
       ]
@@ -245,7 +246,12 @@
         "lesson_content/a1/lesson-course-a1-unit-03-lesson-18.json",
         "lesson_content/a1/lesson-course-a1-unit-03-lesson-19.json",
         "lesson_content/a1/lesson-course-a1-unit-03-lesson-20.json",
-        "lesson_content/a1/lesson-course-a1-unit-03-lesson-21.json"
+        "lesson_content/a1/lesson-course-a1-unit-03-lesson-21.json",
+        "lesson_content/a1/lesson-course-a1-unit-04-lesson-01.json",
+        "lesson_content/a1/lesson-course-a1-unit-04-lesson-02.json",
+        "lesson_content/a1/lesson-course-a1-unit-04-lesson-03.json",
+        "lesson_content/a1/lesson-course-a1-unit-04-lesson-04.json",
+        "lesson_content/a1/lesson-course-a1-unit-04-lesson-05.json"
       ]
     },
     {
@@ -324,7 +330,13 @@
         "lesson_content/a2/lesson-course-a2-unit-03-lesson-09.json",
         "lesson_content/a2/lesson-course-a2-unit-03-lesson-10.json",
         "lesson_content/a2/lesson-course-a2-unit-03-lesson-11.json",
-        "lesson_content/a2/lesson-course-a2-unit-03-lesson-12.json"
+        "lesson_content/a2/lesson-course-a2-unit-03-lesson-12.json",
+        "lesson_content/a2/lesson-course-a2-unit-04-lesson-01.json",
+        "lesson_content/a2/lesson-course-a2-unit-04-lesson-02.json",
+        "lesson_content/a2/lesson-course-a2-unit-04-lesson-03.json",
+        "lesson_content/a2/lesson-course-a2-unit-04-lesson-04.json",
+        "lesson_content/a2/lesson-course-a2-unit-04-lesson-05.json",
+        "lesson_content/a2/lesson-course-a2-unit-04-lesson-06.json"
       ]
     },
     {
@@ -399,7 +411,13 @@
         "lesson_content/b1/lesson-course-b1-unit-04-lesson-07.json",
         "lesson_content/b1/lesson-course-b1-unit-04-lesson-08.json",
         "lesson_content/b1/lesson-course-b1-unit-04-lesson-09.json",
-        "lesson_content/b1/lesson-course-b1-unit-04-lesson-10.json"
+        "lesson_content/b1/lesson-course-b1-unit-04-lesson-10.json",
+        "lesson_content/b1/lesson-course-b1-unit-05-lesson-01.json",
+        "lesson_content/b1/lesson-course-b1-unit-05-lesson-02.json",
+        "lesson_content/b1/lesson-course-b1-unit-05-lesson-03.json",
+        "lesson_content/b1/lesson-course-b1-unit-05-lesson-04.json",
+        "lesson_content/b1/lesson-course-b1-unit-05-lesson-05.json",
+        "lesson_content/b1/lesson-course-b1-unit-05-lesson-06.json"
       ]
     },
     {
@@ -484,7 +502,13 @@
         "lesson_content/b2/lesson-course-b2-unit-05-lesson-13.json",
         "lesson_content/b2/lesson-course-b2-unit-05-lesson-14.json",
         "lesson_content/b2/lesson-course-b2-unit-05-lesson-15.json",
-        "lesson_content/b2/lesson-course-b2-unit-05-lesson-16.json"
+        "lesson_content/b2/lesson-course-b2-unit-05-lesson-16.json",
+        "lesson_content/b2/lesson-course-b2-unit-06-lesson-01.json",
+        "lesson_content/b2/lesson-course-b2-unit-06-lesson-02.json",
+        "lesson_content/b2/lesson-course-b2-unit-06-lesson-03.json",
+        "lesson_content/b2/lesson-course-b2-unit-06-lesson-04.json",
+        "lesson_content/b2/lesson-course-b2-unit-06-lesson-05.json",
+        "lesson_content/b2/lesson-course-b2-unit-06-lesson-06.json"
       ]
     },
     {
@@ -594,6 +618,10 @@
         "lesson_content/c1/lesson-course-c1-unit-05-lesson-12.json",
         "lesson_content/c1/lesson-course-c1-unit-05-lesson-13.json",
         "lesson_content/c1/lesson-course-c1-unit-05-lesson-14.json",
+        "lesson_content/c1/lesson-course-c1-unit-06-lesson-01.json",
+        "lesson_content/c1/lesson-course-c1-unit-06-lesson-02.json",
+        "lesson_content/c1/lesson-course-c1-unit-06-lesson-03.json",
+        "lesson_content/c1/lesson-course-c1-unit-06-lesson-04.json",
         "vocabulary/c1/c1-007.json",
         "vocabulary/c1/c1-010.json",
         "vocabulary/c1/c1-027.json",
@@ -649,7 +677,9 @@
         "lesson_content/c2/lesson-course-c2-unit-02-lesson-02.json",
         "lesson_content/c2/lesson-course-c2-unit-02-lesson-03.json",
         "lesson_content/c2/lesson-course-c2-unit-03-lesson-01.json",
-        "lesson_content/c2/lesson-course-c2-unit-04-lesson-01.json"
+        "lesson_content/c2/lesson-course-c2-unit-04-lesson-01.json",
+        "lesson_content/c2/lesson-course-c2-unit-05-lesson-01.json",
+        "lesson_content/c2/lesson-course-c2-unit-05-lesson-02.json"
       ]
     }
   ]

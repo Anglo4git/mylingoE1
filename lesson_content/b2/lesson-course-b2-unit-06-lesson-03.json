@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-b2-unit-06-lesson-03",
+  "title": "Lesson: UK and US: /r/ and /t/",
+  "description": "Practice UK and US: /r/ and /t/.",
+  "brand": "Mylingo",
+  "category": "Pronunciation",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice UK and US: /r/ and /t/.",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "UK and US: /r/ and /t/",
+      "explanation": "Practice UK and US: /r/ and /t/."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "UK and US: /r/ and /t/",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "What does \"rhotic\" mean?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,B2,QuickCheck",
+      "explanation": "Rhotic accents pronounce r after vowels, as most American accents do.",
+      "correctIndex": 1,
+      "answers": [
+        "The r is always pronounced",
+        "The r is silent",
+        "The t is a flap",
+        "The vowel is long"
+      ]
+    },
+    {
+      "question": "How is the t in \"water\" often pronounced in American English?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,B2,QuickCheck",
+      "explanation": "Between vowels American English often uses a flap.",
+      "correctIndex": 4,
+      "answers": [
+        "As a glottal stop",
+        "It is silent",
+        "As a clear strong t",
+        "As a quick flap like a soft d"
+      ]
+    },
+    {
+      "question": "In standard British English, when is r pronounced?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,B2,QuickCheck",
+      "explanation": "British English pronounces r only when a vowel follows.",
+      "correctIndex": 2,
+      "answers": [
+        "At the end of every word",
+        "Before a vowel sound",
+        "Only in stressed syllables",
+        "Never"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

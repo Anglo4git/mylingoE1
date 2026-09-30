@@ -1,6 +1,167 @@
+## Agent 320 position
+- AGENT: 320 — full-coverage run of `lesson-audio-contrast.js` (STEP=1): all 122 lessons that carry audio (136 audio refs) x light/dark at 390 px = 244 runs, 0 contrast failures, 0 errors. No file changed except docs; sw.js v47, core.zip untouched. 1004/0. See HANDOFF_AGENT_320.md.
+
+## Agent 319 position
+- AGENT: 319 — lesson-page contrast on every slide of 31 audio lessons (every 4th of 136 audio lessons, all levels) in light + dark at 390 px: 62 runs, 0 contrast failures, 0 errors. Tool-only change: sw.js stays v47, core.zip untouched. 1004/0, verify-all ALL GATES PASSED. See HANDOFF_AGENT_319.md.
+
+## Agent 318 position
+- AGENT: 318 — quiz audio contrast probe found a real dark-mode defect: the TTS "Play audio" button was 3.1:1 idle and 2.12:1 while playing (needs 4.5:1). Fixed in `shared/css/theme.css`; probe now 12/12 clean (6 quizzes x light/dark). sw.js v47, core.zip rebuilt (91). 1004/0, verify-all ALL GATES PASSED. See HANDOFF_AGENT_318.md.
+
+## Agent 317 position
+- AGENT: 317 — audio reference integrity guard: new test asserts every local `audio_urls` entry in a1..c2 catalogs (136, all `../shared/audio/sample.mp3`) exists on disk and is in core-manifest + packs.json core list. Test-only: sw.js stays v46, core.zip untouched. 1003/0, verify-all ALL GATES PASSED. See HANDOFF_AGENT_317.md.
+
+## Agent 316 position
+- AGENT: 316 — CSP-enforced audio probe: dist served with the real netlify.toml CSP (`media-src 'self'`) + Range support; 5 lessons (A1/B1/C1 embedded, A1 skill, C2 skill) x SW blocked/allowed = 10 runs: audio loads (4 s), 0 CSP violations, 0 errors. Tool-only change: sw.js stays v46, core.zip untouched. 1002/0, verify-all ALL GATES PASSED. See HANDOFF_AGENT_316.md.
+
+## Agent 315 position
+- AGENT: 315 — sw.js now answers `Range:` requests for cached immutable assets (mp3) with a proper 206 slice (Safari/iOS refuses a full 200 to an audio Range request), and never cache.put()s a 206. sw.js v46, core.zip rebuilt (91). 1002/0, verify-all ALL GATES PASSED; real-Chromium probe PASS. See HANDOFF_AGENT_315.md.
+
+## Agent 314 position
+- AGENT: 314 — surveyed media in all shipped quizzes (only `image` {src,alt} x24 and `audio` {tts,label} x12, all in the six `*-media-01` quizzes); added regression test that each survives `normalizeQuiz`. Test-only change: sw.js stays v45, core.zip untouched. 1000/0, verify-all ALL GATES PASSED. See HANDOFF_AGENT_314.md.
+
+## Agent 313 position
+- AGENT: 313 — probed quiz.html audio (6 `*-media-01` quizzes; audio is `media.audio.tts`, no files). FOUND + FIXED: `shared/js/runtime-v2-adapter.js` `normalizeMedia` dropped src-less audio, so the "Play audio" TTS button never rendered and Listening questions were unanswerable. sw.js v45, core.zip rebuilt (91). 999/0, verify-all ALL GATES PASSED. See HANDOFF_AGENT_313.md.
+
+## Agent 312 position
+- AGENT: 312 — real-browser probe of all 93 embedded lessons (audio loads/plays metadata, focusable, no overflow, visible focus, spacing OK): 186 runs, 0 problems. New tool tools/a11y/embedded-audio-keyboard.js. No content change; sw.js still v44. 998/0, verify-all ALL GATES PASSED. See HANDOFF_AGENT_312.md.
+
+## Agent 311 position
+- AGENT: 311 — embedded skill segments batch 6: 11 lessons; embedded total 93 (target 90-100 met). 337 lessons. 998/0, verify-all ALL GATES PASSED, batch 5+6 audit 46/46 clean. sw.js v44. See HANDOFF_AGENT_311.md.
+
+## Agent 310 position
+- AGENT: 310 — embedded skill segments batch 5: 35 lessons (B2 16, C1 16, C2 3); embedded total 82 (target 90-100). 337 lessons. 997/0, verify-all ALL GATES PASSED. sw.js v43. See HANDOFF_AGENT_310.md.
+
+## Agent 309 position
+- AGENT: 309 — embedded skill segments batch 4: 16 B1 lessons (embedded total 47). B1-C2 regular lessons have no body_content; segments are added after the revision summary paragraph. 337 lessons. 996/0, verify-all ALL GATES PASSED. Pending: batches B2, C1, C2, exam/fluency tags (rule unconfirmed), real-browser audio check.
+
+## Agent 308 position
+- AGENT: 308 — embedded skill segments batch 3: 16 A2 lessons (embedded total 31); sanitizer-tag whitelist test added. 337 lessons. 995/0, verify-all ALL GATES PASSED. Pending: embedded batches B1, B2, C1, C2, exam/fluency tags (rule unconfirmed), real-browser audio check.
+
+## Agent 307 position
+- AGENT: 307 — embedded skill segments batch 2: 9 A1 unit-02/03 lessons (embedded total 15) + `<u>` sanitizer fix in a1-unit-04-lesson-03. 337 lessons. 994/0, verify-all ALL GATES PASSED. Pending: embedded batches A2..C2, exam/fluency tags (rule unconfirmed), real-browser audio check.
+
+## Agent 306 position
+- AGENT: 306 — embedded skill segments batch 1: 6 A1 unit-01 lessons (01, 02, 10, 14, 17, 21). 337 lessons unchanged. 993/0, verify-all ALL GATES PASSED. Pending: more embedded batches (A1 unit-02/03, A2..C2), exam/fluency tags (rule unconfirmed), real-browser audio check.
+
+## Agent 305 position
+- AGENT: 305 — C2 skills unit `course-c2-unit-05` (2 lessons, audio structure) added; 337 lessons (A1 81, A2 60, B1 56, B2 66, C1 62, C2 12). All 29 planned standalone skill lessons done (A1 5, A2 6, B1 6, B2 6, C1 4, C2 2). 992/0, verify-all ALL GATES PASSED. Pending: embedded segments, exam/fluency tags (rule unconfirmed), real-browser audio check.
+
+## Agent 304 position
+- AGENT: 304 — C1 skills unit `course-c1-unit-06` (4 lessons, audio structure) added; 335 lessons (A1 81, A2 60, B1 56, B2 66, C1 62, C2 10). 991/0, verify-all ALL GATES PASSED. Pending: C2 skills (2 lessons), embedded segments, exam/fluency tags (rule unconfirmed), real-browser audio check.
+
+<!-- Agent 303: placeholder audio wired into 23 skill lessons. See HANDOFF_AGENT_303.md. -->
+<!-- Agent 302: B2 skills unit added (331 lessons total). See HANDOFF_AGENT_302.md. -->
+<!-- Agent 301: B1 skills unit added (325 lessons total). See HANDOFF_AGENT_301.md. -->
+<!-- Agent 300: A2 skills unit added (319 lessons total). See HANDOFF_AGENT_300.md. -->
+<!-- Agent 299: A1 skills unit now 5 lessons (313 lessons total). See HANDOFF_AGENT_299.md. -->
 # STATE.md — Production Readiness Protocol
 
 ## Current position
+- AGENT: 290 — quiz-result-contrast sample (`PER_LEVEL=3 STEP_CAP=400`): 38 runs (6 levels x 3 quizzes + placement-120, light/dark, 390px), all reached result screen, 0 contrast/overflow/error issues. `verify-all.js` ALL GATES PASSED. No app/content/CSP changes.
+
+## Agent 289 position
+- AGENT: 289 — IFRAME focus flag reviewed (static): lesson video iframe has a `title`, `tabindex=0`, `allowfullscreen`; it is a cross-origin YouTube embed so focus moves into the player, which draws its own focus UI — the flag is a measurement artifact of checking the iframe element's own outline. Deliberately NOT changed (adding `.video-wrap:focus-within` would edit lesson.html -> CSP hashes/dist/offline packs for no verified gain; sandbox can't load YouTube to verify). `verify-all.js` ALL GATES PASSED. No app/content/CSP changes.
+
+## Agent 288 position
+- AGENT: 288 — post-audit regression gate: `tools/verify-all.js` ALL GATES PASSED (977/0, CSP current, dist byte-identical 711 files, offline sweep 108 loads/0 problem). Sampled keyboard/text-spacing audit (every 20th lesson, 390px): 0 spacing issues; only focus flags are `IFRAME` (video embed, no visible outline measured on the element itself; not investigated further). No app/content/CSP changes.
+
+## Agent 287 position
+- AGENT: 287 — lesson audit COMPLETE: final batch 30 (11 a1 lessons, 44 runs, 0 issues; 308/308 audited). No app/content/CSP changes; 977/977.
+
+## Agent 286 position
+- AGENT: 286 — lesson audit batch 29 (4 lessons, 16 runs, 0 issues; 297/308 audited). No app/content/CSP changes; 977/977. Packaging regression fixed (offline/packs/*.zip must ship).
+
+## Agent 285 position
+- AGENT: 285 — lesson audit batch 28 (6 lessons, 24 runs, 0 issues; 293/308 audited). No app/content/CSP changes; 977/977.
+
+## Agent 284 position
+- AGENT: 284 — lesson audit batch 27 (6 lessons, 24 runs, 0 issues; 287/308 audited). No app/content/CSP changes; 977/977.
+
+## Agent 283 position
+- AGENT: 283 — lesson audit batch 26 (6 lessons, 24 runs, 0 issues; 281/308 audited). No app/content/CSP changes; 977/977.
+
+## Agent 282 position
+- AGENT: 282 — lesson audit batch 25 (6 lessons, 24 runs, 0 issues; 275/308 audited). No app/content/CSP changes; 977/977.
+
+## Agent 281 position
+- AGENT: 281 — lesson audit batch 24 (9 lessons, 36 runs, 0 issues; 269/308 audited). No app/content/CSP changes; 977/977.
+
+## Agent 280 position
+- AGENT: 280 — lesson audit batch 23 (10 lessons, 40 runs, 0 issues; 260/308 audited). No app/content/CSP changes; 977/977.
+
+## Agent 279 position
+- AGENT: 279 — lesson audit batch 22 (10 lessons, 40 runs, 0 issues; 250/308 audited). No app/content/CSP changes; 977/977.
+
+## Agent 278 position
+- AGENT: 278 — lesson audit batch 21 (10 lessons, 40 runs, 0 issues; 240/308 audited). No app/content/CSP changes; 977/977.
+
+## Agent 277 position
+- AGENT: 277 — lesson audit batch 20 (10 lessons, 40 runs, 0 issues; 230/308 audited). No app/content/CSP changes; 977/977.
+
+## Agent 276 position
+- AGENT: 276 — lesson audit batch 19 (10 lessons, 40 runs, 0 issues; 220/308 audited). No app/content/CSP changes; 977/977.
+
+## Agent 275 position
+- AGENT: 275 — lesson audit batch 18 (10 lessons, 40 runs, 0 issues; 210/308 audited). No app/content/CSP changes; 977/977.
+
+## Agent 274 position
+- AGENT: 274 — lesson audit batch 17 (10 lessons, 40 runs, 0 issues; 200/308 audited). No app/content/CSP changes; 977/977.
+
+## Agent 273 position
+- AGENT: 273 — lesson audit batch 16 (10 lessons, 40 runs, 0 issues; 190/308 audited). No app/content/CSP changes; 977/977.
+
+## Agent 272 position
+- AGENT: 272 — lesson audit batch 15 (10 lessons, 40 runs, 0 issues; 180/308 audited). No app/content/CSP changes; 977/977.
+
+## Agent 271 position
+- AGENT: 271 — lesson audit batch 14 (10 lessons, 40 runs, 0 issues; 170/308 audited). No app/content/CSP changes; 977/977.
+
+## Agent 270 position
+- AGENT: 270 — lesson audit batch 13 (10 lessons, 40 runs, 0 issues; 160/308 audited). No app/content/CSP changes; 977/977.
+
+## Agent 269 position
+- AGENT: 269 — lesson audit batch 12 (10 lessons, 40 runs, 0 issues; 150/308 audited). No app/content/CSP changes; 977/977.
+
+## Agent 268 position
+- AGENT: 268 — lesson audit batch 11 (10 lessons, 40 runs, 0 issues; 140/308 audited). No app/content/CSP changes; 977/977.
+
+## Agent 267 position
+- AGENT: 267 — lesson audit batch 10 (10 lessons, 40 runs, 0 issues; 130/308 audited). No app/content/CSP changes; 977/977.
+
+## Agent 266 position
+- AGENT: 266 — lesson audit batch 9 (10 lessons, 40 runs, 0 issues; 120/308 audited). No app/content/CSP changes; 977/977.
+
+## Agent 265 position
+- AGENT: 265 — lesson audit batch 8 (10 lessons, 40 runs, 0 issues; 110/308 audited). No app/content/CSP changes; 977/977.
+
+## Agent 264 position
+- AGENT: 264 — lesson audit batch 7 (10 lessons, 40 runs, 0 issues; 100/308 audited). No app/content/CSP changes; 977/977.
+
+## Agent 263 position
+- AGENT: 263 — lesson audit batch 6 (10 lessons, 40 runs, 0 issues; 90/308 audited). No app/content/CSP changes; 977/977.
+
+## Agent 262 position
+- AGENT: 262 — lesson audit batch 5 (10 lessons, 40 runs, 0 issues; 80/308 audited; c2 lesson pool now exhausted for perLevel=2 picks). No app/content/CSP changes; 977/977.
+
+## Agent 261 position
+- AGENT: 261 — lesson audit batch 4 (12 lessons, 48 runs, 0 issues; 70/308 audited). No app/content/CSP changes; 977/977.
+
+## Agent 260 position
+- AGENT: 260 — lesson audit batch 3 (12 lessons, 48 runs, 0 issues; 58/308 audited) via pick-lesson-sample.js; extended pages-contrast.js with a2/b1/b2/c1/c2 per-level index.html (20 new runs, 0 issues; full sweep 68 prior + 20 new all clean). No app/content/CSP changes; 977/977.
+
+## Agent 259 position
+- AGENT: 259 — added persistent lesson-audit tracking (audited-lessons.json + pick-lesson-sample.js) and a new quiz mid-answer feedback-state audit (found+fixed the audit script itself was silently a no-op). 12 more lessons audited (46 total), 24 feedback-state runs, all clean. No app changes; 977/977. Also reconstructed Agent 258's CHANGELOG.md entry, which never landed last turn (see CHANGELOG housekeeping note).
+
+## Agent 258 position
+- AGENT: 258 — extended pages-contrast.js (a2/b2/c2 dashboards, practice.html, mid-quiz states); found and fixed a false-positive bug in the shared namesFn checker itself (own-element display/visibility missed ancestor-hidden elements on quiz.html's always-in-DOM screens) rather than an app bug. All audits clean after the fix (68/68 pages, 48 more lessons). 977/977, no app/content changes.
+
+## Agent 257 position
+- AGENT: 257 — new tools/a11y/pages-contrast.js (dashboard/course/journey/progress pages, mixed-progress seeding) found+fixed 2 real bugs on courses/journey.html (light+dark contrast on completed-lesson node/state, same class Agent 255 fixed on lesson.html); placement-120 quiz-result audit now completes (raised STEP_CAP). offline/packs/core.zip rebuilt (theme.css + journey.html). 977/977.
+
+## Agent 256 position
+- AGENT: 256 — 48-run lesson audit clean; quiz-result-contrast.js repaired and run (0 issues); no app changes; 977/977.
+
+## Agent 255 position
 - AGENT: 255 — lesson audit fixed (was only checking slide 0) and, once it reached the Practice slide, 4 real defects fixed (contrast x2, missing h1, 320px overflow); 16-run sample clean; 977/977.
 
 ## Agent 254 position
@@ -471,3 +632,27 @@ Agent 17 left "not tested with the service worker active under the new CSP" open
 
 ## Artifacts this turn
 - `STATE.md` (this file) — created.
+
+## Agent 291 update (2026-09-29)
+- Quiz-result contrast PER_LEVEL=6 (74 runs) clean; verify-all ALL GATES PASSED. No app changes. See HANDOFF_AGENT_291.md.
+
+## Agent 292 update (2026-09-29)
+- Quiz-result contrast at 320px (38 runs) clean; verify-all ALL GATES PASSED. No app changes. See HANDOFF_AGENT_292.md.
+
+## Agent 293 update (2026-09-29)
+- Verification-only checkpoint; verify-all ALL GATES PASSED. No app changes. Awaiting human input. See HANDOFF_AGENT_293.md.
+
+## Agent 294 update (2026-09-29)
+- Four curriculum decisions RESOLVED by human; see CURRICULUM_DECISIONS.md. Docs only. C2 text still needs re-supply. See HANDOFF_AGENT_294.md.
+
+## Agent 295 update (2026-09-29)
+- UK|US side-by-side component shipped (lesson.html styles + schema doc + tests); SW cache v29; core.zip rebuilt; ALL GATES PASSED. See HANDOFF_AGENT_295.md.
+
+## Agent 296 update (2026-09-29)
+- Optional lesson_length/lesson_type metadata + player chips shipped; CSP regenerated; SW cache v30; core.zip rebuilt; ALL GATES PASSED. See HANDOFF_AGENT_296.md.
+
+## Agent 297 update (2026-09-29)
+- Skills lesson plan written (SKILLS_LESSON_PLAN.md); docs only. See HANDOFF_AGENT_297.md.
+
+## Agent 298 update (2026-09-29)
+- A1 pronunciation pilot lesson + unit 04 shipped (309 lessons); SW cache v31; a1.zip/core.zip rebuilt; lesson audit 309/309; ALL GATES PASSED. See HANDOFF_AGENT_298.md.

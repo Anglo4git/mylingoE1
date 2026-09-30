@@ -1,0 +1,13 @@
+cd /home/claude/app; export NODE_PATH=$(npm root -g)
+python3 -m http.server 8765 >/dev/null 2>&1 & SP=$!; sleep 1
+python3 - <<'P' > /home/claude/tmp/emb.txt
+import json
+m=json.load(open('/home/claude/app/course_content/lessons.json'))
+print('\n'.join(l['lesson_id'] for l in m if l.get('audio_urls') and l.get('lesson_type')!='standalone_skill'))
+P
+: > /home/claude/tmp/brow.log
+split -l 8 /home/claude/tmp/emb.txt /home/claude/tmp/chunk_
+for c in /home/claude/tmp/chunk_*; do
+  ONLY=$(paste -sd, $c) OUT=/tmp/brow_$(basename $c).json timeout 250 node /home/claude/tmp/brow.js >> /home/claude/tmp/brow.log 2>&1; echo >> /home/claude/tmp/brow.log
+done
+echo DONE >> /home/claude/tmp/brow.log; kill $SP

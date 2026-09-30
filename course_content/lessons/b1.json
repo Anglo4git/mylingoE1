@@ -15,7 +15,14 @@
     ],
     "version": 1,
     "status": "published",
-    "lesson_quiz_id": "lesson-course-b1-unit-01-lesson-01"
+    "lesson_quiz_id": "lesson-course-b1-unit-01-lesson-01",
+    "body_content": "<p>Practice Present Perfect vs Past Simple.</p><h3>Say it: have and has</h3><p>In the present perfect <strong>have</strong> and <strong>has</strong> are weak: <strong>I've been</strong> /aɪv biːn/, <strong>she's seen</strong>. Stress the past participle: <strong>I've SEEN it.</strong></p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>Have you eaten yet?</strong><br><strong>I've already had lunch.</strong><br><strong>been</strong> /biːn/</div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>Did you eat yet?</strong> (also common)<br><strong>I already had lunch.</strong><br><strong>been</strong> /bɪn/</div></div><blockquote>Say it: \"I've lived here for years. She's never been to Rome.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: have / has in the present perfect"
+      }
+    ]
   },
   {
     "lesson_id": "course-b1-unit-01-lesson-02",
@@ -33,7 +40,14 @@
     ],
     "version": 1,
     "status": "published",
-    "lesson_quiz_id": "lesson-course-b1-unit-01-lesson-02"
+    "lesson_quiz_id": "lesson-course-b1-unit-01-lesson-02",
+    "body_content": "<p>Practice Second Conditional.</p><h3>Say it: would</h3><p>In the second conditional <strong>would</strong> is short: <strong>I'd</strong> /aɪd/, <strong>she'd</strong>. Stress the idea: <strong>If I had more TIME, I'd TRAVEL.</strong> A rise on the <em>if</em>-clause and a fall at the end sound natural.</p><blockquote>Say it: \"If I won the lottery, I'd buy a house.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: would in conditionals"
+      }
+    ]
   },
   {
     "lesson_id": "course-b1-unit-01-lesson-03",
@@ -69,7 +83,14 @@
     ],
     "version": 1,
     "status": "published",
-    "lesson_quiz_id": "lesson-course-b1-unit-01-lesson-04"
+    "lesson_quiz_id": "lesson-course-b1-unit-01-lesson-04",
+    "body_content": "<p>Practice Reported Speech.</p><h3>Listen for: reported speech</h3><p>In speech reporting verbs are quick and the reported words carry the stress: <strong>She said she was TIRED.</strong> <strong>He told me he'd CALL.</strong> Listen for <strong>said</strong>, <strong>told</strong>, <strong>asked</strong>, then the stressed content.</p><blockquote>Listen: who said it, and what was the main news?</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Listen for: reported speech"
+      }
+    ]
   },
   {
     "lesson_id": "course-b1-unit-01-lesson-05",
@@ -123,7 +144,14 @@
     ],
     "version": 1,
     "status": "published",
-    "lesson_quiz_id": "lesson-course-b1-unit-01-lesson-07"
+    "lesson_quiz_id": "lesson-course-b1-unit-01-lesson-07",
+    "body_content": "<p>Practice Passive Voice.</p><h3>Say it: passive voice</h3><p>In passives the auxiliary is weak and the participle is stressed: <strong>It was BUILT in 1990.</strong> <strong>English is SPOKEN here.</strong> <strong>Was</strong> is /wəz/ and <strong>were</strong> is /wə/.</p><blockquote>Say it: \"The bridge was built in 1990. These cars are made in Spain.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: passive voice"
+      }
+    ]
   },
   {
     "lesson_id": "course-b1-unit-01-lesson-08",
@@ -212,7 +240,14 @@
       "b1-012"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice First vs Second Conditional (Contrast).</p><h3>Say it: contrast stress</h3><p>To contrast two ideas, stress the different word: <strong>If I HAVE time, I'll go. If I HAD time, I'd go.</strong> Say the contrasting words louder and longer.</p><blockquote>Say it: \"If it rains, we'll stay. If it rained, we'd stay.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: contrast stress"
+      }
+    ]
   },
   {
     "lesson_id": "course-b1-unit-01-lesson-11",
@@ -263,7 +298,14 @@
       "b1-015"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Present Perfect Continuous.</p><h3>Say it: been</h3><p>In <strong>have been</strong> the word <strong>been</strong> is weak. Keep the stress on the <strong>-ing</strong> verb: <strong>I've been WAITing for an hour.</strong></p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>been</strong> /biːn/ (strong) or /bɪn/ (weak)</div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>been</strong> /bɪn/</div></div><blockquote>Say it: \"I've been working here since May.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: been"
+      }
+    ]
   },
   {
     "lesson_id": "course-b1-unit-01-lesson-14",
@@ -314,7 +356,14 @@
       "b1-018"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Past Perfect Simple.</p><h3>Say it: had</h3><p>In the past perfect <strong>had</strong> is short: <strong>She'd left</strong> /ʃiːd left/, <strong>they'd arrived</strong>. Do not stress <strong>had</strong>. Stress the participle: <strong>I'd already LEFT.</strong></p><blockquote>Say it: \"When I arrived, the film had started.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: had"
+      }
+    ]
   },
   {
     "lesson_id": "course-b1-unit-01-lesson-17",
@@ -382,7 +431,14 @@
       "b1-022"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Although / in spite of / despite.</p><h3>Say it: linking contrast</h3><p>After a contrast word, pause for a short chunk boundary: <strong>Although it was late, | we went out.</strong> Use a fall on the first chunk and a fall at the end.</p><blockquote>Say it: \"Despite the rain, we had a great time.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: linking contrast"
+      }
+    ]
   },
   {
     "lesson_id": "course-b1-unit-01-lesson-21",
@@ -399,7 +455,14 @@
       "b1-023"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Question tags.</p><h3>Say it: question tags</h3><p>With a <strong>falling</strong> tag you expect agreement: <strong>It's cold, isn't it? ↘</strong> With a <strong>rising</strong> tag you are really asking: <strong>You're coming, aren't you? ↗</strong> The intonation changes the meaning.</p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>It's lovely, isn't it?</strong> is very common</div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>It's nice, right?</strong> is common and informal</div></div><blockquote>Say it: \"It's a nice day, isn't it?\" (agree) / \"You're coming, aren't you?\" (ask)</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: question tags"
+      }
+    ]
   },
   {
     "lesson_id": "course-b1-unit-01-lesson-22",
@@ -467,7 +530,14 @@
       "b1-027"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Clothes.</p><h3>Listen for: clothes words</h3><p>Clothes words differ between British and American English. Listen for both in shops and films.</p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>jumper</strong>, <strong>trousers</strong>, <strong>trainers</strong><br><strong>waistcoat</strong></div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>sweater</strong>, <strong>pants</strong>, <strong>sneakers</strong><br><strong>vest</strong></div></div><blockquote>Listen: which word does the speaker use for trousers?</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Listen for: clothes words"
+      }
+    ]
   },
   {
     "lesson_id": "course-b1-unit-02-lesson-05",
@@ -535,7 +605,14 @@
       "b1-031"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Holidays and travel brochures.</p><h3>Listen for: holiday words</h3><p>Holiday and travel words differ. Listen for both when you read brochures or listen to announcements.</p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>holiday</strong><br><strong>flat</strong><br><strong>luggage</strong></div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>vacation</strong><br><strong>apartment</strong><br><strong>baggage</strong></div></div><blockquote>Listen: which word does the speaker use, holiday or vacation?</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Listen for: holiday words"
+      }
+    ]
   },
   {
     "lesson_id": "course-b1-unit-02-lesson-09",
@@ -603,7 +680,14 @@
       "b1-035"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Furniture and appliances.</p><h3>Listen for: home appliances</h3><p>Home words differ between accents. Learn both so you understand instructions and adverts.</p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>cooker</strong><br><strong>hoover</strong> (vacuum cleaner)<br><strong>tap</strong></div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>stove</strong><br><strong>vacuum</strong><br><strong>faucet</strong></div></div><blockquote>Listen: which word does the speaker use for tap?</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Listen for: home appliances"
+      }
+    ]
   },
   {
     "lesson_id": "course-b1-unit-02-lesson-13",
@@ -654,7 +738,14 @@
       "b1-038"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Political Systems.</p><h3>Say it: word stress</h3><p>Long words have one main stress: <strong>deMOcracy</strong>, <strong>goVERNment</strong>, <strong>ELection</strong>, <strong>poliTIcian</strong>. Stress shifts in related words: <strong>POLitics</strong> but <strong>poLITical</strong>.</p><blockquote>Say it: \"democracy, government, election, politician.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: word stress in politics"
+      }
+    ]
   },
   {
     "lesson_id": "course-b1-unit-02-lesson-16",
@@ -722,7 +813,14 @@
       "b1-042"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Stating preferences and opinions.</p><h3>Say it: opinions</h3><p>Softening an opinion needs gentle stress and a fall-rise: <strong>I'm not SURE that's right.</strong> <strong>In my OPINion...</strong> <strong>I THINK so.</strong> Stress the opinion word, not <em>I</em>.</p><blockquote>Say it: \"I prefer tea to coffee. In my opinion, it's better.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: opinions"
+      }
+    ]
   },
   {
     "lesson_id": "course-b1-unit-04-lesson-03",
@@ -773,7 +871,14 @@
       "b1-045"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Advising.</p><h3>Say it: giving advice</h3><p>Advice sounds kind with a falling voice and a soft tone: <strong>You should REST.</strong> <strong>Why don't you TRY it?</strong> <strong>If I were YOU, I'd...</strong> A rising tone can sound unsure.</p><blockquote>Say it: \"You should see a doctor. If I were you, I'd wait.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: giving advice"
+      }
+    ]
   },
   {
     "lesson_id": "course-b1-unit-04-lesson-06",
@@ -841,7 +946,14 @@
       "b1-049"
     ],
     "version": 1,
-    "status": "published"
+    "status": "published",
+    "body_content": "<p>Practice Refusing.</p><h3>Say it: refusing politely</h3><p>Soften a refusal with a fall-rise and a warm tone: <strong>I'm afraid I can't. ↘↗</strong> <strong>That's very kind, but no, thanks.</strong> A flat, fast <em>No.</em> can sound rude.</p><h4>Where accents differ</h4><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>I'm afraid I can't</strong> /kɑːnt/</div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>I'm afraid I can't</strong> /kænt/ (a shorter vowel)</div></div><blockquote>Say it: \"I'm afraid I can't come. Thank you for asking.\"</blockquote>",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Say it: refusing politely"
+      }
+    ]
   },
   {
     "lesson_id": "course-b1-unit-04-lesson-10",
@@ -859,5 +971,251 @@
     ],
     "version": 1,
     "status": "published"
+  },
+  {
+    "lesson_id": "course-b1-unit-05-lesson-01",
+    "unit_id": "course-b1-unit-05",
+    "title": "Sentence Stress",
+    "category": "Pronunciation",
+    "order": 1,
+    "revision": {
+      "summary": "Learn to stress the content words in a sentence (nouns, main verbs, adjectives, negatives) and reduce the small words, so your English sounds natural and clear.",
+      "examples": [
+        "I WANT to BUY a new PHONE.",
+        "She DIDN'T say ANYthing.",
+        "a REcord (noun) / to reCORD (verb)"
+      ],
+      "key_terms": [
+        "sentence stress",
+        "content word",
+        "function word",
+        "rhythm"
+      ],
+      "estimated_minutes": 18
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "lesson-course-b1-unit-05-lesson-01"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b1-unit-05-lesson-01",
+    "body_content": "<h2>Sentence Stress</h2><p>English is a stress-timed language: some words are long and clear, others are short and quiet. Stressed words carry the meaning. If you stress every word equally, listeners find it hard to follow you.</p><h3>1. Content words and function words</h3><ul><li><strong>Content words</strong> are stressed: nouns, main verbs, adjectives, adverbs, negatives, question words.</li><li><strong>Function words</strong> are usually weak: articles, prepositions, auxiliaries, pronouns.</li></ul><p>Example: <strong>I WANT to BUY a new PHONE.</strong> Read it and clap on the capital words only.</p><h3>2. Rhythm</h3><p>The time between stressed words stays about the same. So \"Cats eat fish\" and \"The cats are eating the fish\" take almost the same time. In the second sentence the small words are squeezed together.</p><h3>3. Changing the meaning</h3><p>Stress can show what is important or new. Listen: <strong>I didn't take your book.</strong> (someone else did) / I didn't TAKE your book. (I borrowed it) / I didn't take YOUR book. (I took another one).</p><h3>4. Word stress in noun and verb pairs</h3><p>Some two-syllable words change stress: a <strong>REcord</strong> (noun) and to <strong>reCORD</strong> (verb); a <strong>PREsent</strong> and to <strong>preSENT</strong>.</p><h3>5. Where accents differ</h3><p>Sentence stress works the same way in both accents. Some individual words are stressed differently:</p><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>adVERtisement</strong> = /ədˈvɜːtɪsmənt/<br><strong>garage</strong> = /ˈɡærɑːʒ/ or /ˈɡærɪdʒ/<br><strong>laboratory</strong> = /ləˈbɒrətri/</div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>advertISEment</strong> = /ˌædvərˈtaɪzmənt/<br><strong>garage</strong> = /ɡəˈrɑːʒ/<br><strong>laboratory</strong> = /ˈlæbrətɔːri/</div></div><blockquote>Practice tip: take any sentence, underline the content words, and say only those words. Then add the small words quickly between them.</blockquote>",
+    "lesson_length": "long",
+    "lesson_type": "standalone_skill",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Sample audio (UK)"
+      },
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Sample audio (US)"
+      }
+    ]
+  },
+  {
+    "lesson_id": "course-b1-unit-05-lesson-02",
+    "unit_id": "course-b1-unit-05",
+    "title": "Linking Words in Speech",
+    "category": "Pronunciation",
+    "order": 2,
+    "revision": {
+      "summary": "Learn how English speakers link the end of one word to the start of the next (consonant-vowel, vowel-vowel, same consonant) so you can say and understand fast speech.",
+      "examples": [
+        "turn off = /tɜː nɒf/",
+        "go on = go-w-on",
+        "black cat = one k sound"
+      ],
+      "key_terms": [
+        "linking",
+        "consonant",
+        "vowel",
+        "connected speech"
+      ],
+      "estimated_minutes": 18
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "lesson-course-b1-unit-05-lesson-02"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b1-unit-05-lesson-02",
+    "body_content": "<h2>Linking Words in Speech</h2><p>In natural speech there are no gaps between words. The end of one word joins the start of the next. Learning the main links helps you speak smoothly and understand fast speakers.</p><h3>1. Consonant + vowel</h3><p>When a word ends in a consonant sound and the next word starts with a vowel, the consonant moves across: <strong>turn off</strong> sounds like \"tur-noff\", <strong>check in</strong> sounds like \"che-kin\", <strong>pick it up</strong> sounds like \"pi-ki-tup\".</p><h3>2. Vowel + vowel</h3><p>A small sound joins two vowels. After /iː/, /aɪ/, /eɪ/ it is /j/: <strong>I am</strong> = \"I-y-am\", <strong>she asked</strong> = \"she-y-asked\". After /uː/, /əʊ/ it is /w/: <strong>go on</strong> = \"go-w-on\", <strong>do it</strong> = \"do-w-it\".</p><h3>3. Same consonant twice</h3><p>When the same consonant sound ends one word and starts the next, say it once but a little longer: <strong>black cat</strong>, <strong>big game</strong>, <strong>some more</strong>.</p><h3>4. Where accents differ</h3><p>Linking is common in both accents. The difference is the \"r\":</p><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>far away</strong> = \"fah-r-away\" (r appears only before a vowel)<br><strong>car park</strong> = \"cah park\" (no r)<br><strong>here it is</strong> = \"here-r-it is\" (linking r)</div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>far away</strong> = \"far away\" (r is always pronounced)<br><strong>car park</strong> = \"car park\" (r pronounced)<br><strong>here it is</strong> = \"here it is\" (r already there)</div></div><blockquote>Practice tip: write a sentence, draw a small line under each link, and say it without stops.</blockquote>",
+    "lesson_length": "long",
+    "lesson_type": "standalone_skill",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Sample audio (UK)"
+      },
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Sample audio (US)"
+      }
+    ]
+  },
+  {
+    "lesson_id": "course-b1-unit-05-lesson-03",
+    "unit_id": "course-b1-unit-05",
+    "title": "Intonation in Questions",
+    "category": "Pronunciation",
+    "order": 3,
+    "revision": {
+      "summary": "Learn the rising and falling intonation of yes/no questions, wh- questions, question tags and lists, and how it shows meaning and attitude.",
+      "examples": [
+        "Are you ready? (rising)",
+        "Where do you live? (falling)",
+        "You're coming, aren't you? (rising = asking, falling = checking)"
+      ],
+      "key_terms": [
+        "intonation",
+        "rising",
+        "falling",
+        "question tag"
+      ],
+      "estimated_minutes": 18
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "lesson-course-b1-unit-05-lesson-03"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b1-unit-05-lesson-03",
+    "body_content": "<h2>Intonation in Questions</h2><p>Intonation is the music of your voice: it goes up and down. It shows if you are asking, checking, or being polite or bored. Listen for the pitch on the last stressed word.</p><h3>1. Yes/no questions</h3><p>The voice usually rises at the end: <strong>Are you ready?</strong> <strong>Do you like it?</strong> The rise shows you are waiting for an answer.</p><h3>2. Wh- questions</h3><p>The voice usually falls at the end: <strong>Where do you live?</strong> <strong>What time is it?</strong> A rising voice on a wh- question sounds more friendly or is used to ask for repetition: \"You live WHERE?\"</p><h3>3. Question tags</h3><p>With a rising tag you really ask: <strong>You're coming, aren't you?</strong> (I do not know.) With a falling tag you expect agreement: <strong>Nice day, isn't it?</strong></p><h3>4. Lists</h3><p>In a list the voice rises on each item and falls on the last: \"We need eggs (↗), milk (↗), bread (↗) and butter (↘).\"</p><h3>5. Where accents differ</h3><p>Both accents use the patterns above. Some differences in everyday speech:</p><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>Right?</strong> and <strong>Yeah?</strong> at the end for checking<br>Polite questions often have a bigger rise<br>Many statements can end with a small rise in regions such as Northern Ireland</div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>Right?</strong> and <strong>OK?</strong> at the end for checking<br>Some speakers use a rising tone on statements (\"uptalk\")<br>Wh- questions usually fall</div></div><blockquote>Practice tip: ask the same question two ways, rising and falling, and notice how the meaning changes.</blockquote>",
+    "lesson_length": "long",
+    "lesson_type": "standalone_skill",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Sample audio (UK)"
+      },
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Sample audio (US)"
+      }
+    ]
+  },
+  {
+    "lesson_id": "course-b1-unit-05-lesson-04",
+    "unit_id": "course-b1-unit-05",
+    "title": "Listening: Interviews",
+    "category": "Listening",
+    "order": 4,
+    "revision": {
+      "summary": "Practise listening to job and news interviews, catching questions, main answers and examples, with UK and US vocabulary differences.",
+      "examples": [
+        "Tell me about your last job.",
+        "I've worked as a nurse for five years.",
+        "CV (UK) / resume (US)"
+      ],
+      "key_terms": [
+        "interview",
+        "question",
+        "answer",
+        "example"
+      ],
+      "estimated_minutes": 20
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "lesson-course-b1-unit-05-lesson-04"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b1-unit-05-lesson-04",
+    "body_content": "<h2>Listening: Interviews</h2><p>Interviews follow a pattern: a question, a main answer and often an example. If you follow this pattern, you can understand long answers.</p><h3>1. Listening strategy</h3><ul><li>First listen for the question (what does the speaker want to know?).</li><li>Then find the main answer (it is usually in the first sentence).</li><li>Finally catch an example (signalled by <strong>for example, for instance, when I</strong>).</li></ul><h3>2. Script 1: a job interview</h3><blockquote>A: Tell me about your last job.<br>B: I've worked as a nurse for five years at a city hospital. For example, I trained new staff and organised the night shifts.<br>A: Why do you want to change?<br>B: I'd like more responsibility and to learn new skills.</blockquote><p>Main answers: <strong>nurse, five years</strong> and <strong>more responsibility</strong>. Example: <strong>trained new staff</strong>.</p><h3>3. Script 2: a radio interview</h3><blockquote>A: You've just opened a bakery. How is business?<br>B: Better than expected. We were busy from the first day, mainly because people heard about us online.<br>A: What is your plan for next year?<br>B: We hope to open a second shop.</blockquote><p>Key details: <strong>better than expected</strong>, <strong>online</strong>, <strong>second shop</strong>.</p><h3>4. Signal phrases</h3><ul><li><strong>Mainly, mostly</strong> = the biggest reason.</li><li><strong>However, but</strong> = a contrast is coming.</li><li><strong>In the future, next year</strong> = a plan.</li></ul><h3>5. Where UK and US differ</h3><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>CV</strong> = document about your career<br><strong>notice period</strong> for leaving a job<br><strong>holiday</strong> = time off</div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>resume</strong> = document about your career<br><strong>two weeks' notice</strong> for leaving a job<br><strong>vacation</strong> = time off</div></div><blockquote>Practice tip: listen to a short interview and write the question, the main answer and one example.</blockquote>",
+    "lesson_length": "long",
+    "lesson_type": "standalone_skill",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Listen: Interviews"
+      }
+    ]
+  },
+  {
+    "lesson_id": "course-b1-unit-05-lesson-05",
+    "unit_id": "course-b1-unit-05",
+    "title": "Listening: Short Talks",
+    "category": "Listening",
+    "order": 5,
+    "revision": {
+      "summary": "Practise following short talks by catching the topic, the order of ideas (first, then, finally) and the main message, with UK and US differences.",
+      "examples": [
+        "Today I'm going to talk about...",
+        "First..., then..., finally...",
+        "The main point is..."
+      ],
+      "key_terms": [
+        "talk",
+        "topic",
+        "order",
+        "main message"
+      ],
+      "estimated_minutes": 20
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "lesson-course-b1-unit-05-lesson-05"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b1-unit-05-lesson-05",
+    "body_content": "<h2>Listening: Short Talks</h2><p>A short talk has a beginning, a middle and an end. The speaker usually tells you the topic first and uses signal words to show the order of ideas.</p><h3>1. Script 1: a talk about sleep</h3><blockquote>Today I'm going to talk about sleep. First, most adults need seven to eight hours a night. Second, screens before bed make it harder to fall asleep. Finally, a regular routine really helps. So, the main point is simple: go to bed at the same time every night.</blockquote><p>Topic: <strong>sleep</strong>. Ideas: <strong>7-8 hours</strong>, <strong>screens</strong>, <strong>routine</strong>. Main message: <strong>same time every night</strong>.</p><h3>2. Script 2: a talk about a town</h3><blockquote>I'd like to tell you about my home town. It is small, but it has a beautiful old market. Many visitors come in summer. However, in winter it is very quiet, and that is why I love it.</blockquote><p>Contrast word: <strong>however</strong>. The speaker's feeling: <strong>loves the quiet winter</strong>.</p><h3>3. Signal words for order and contrast</h3><ul><li><strong>First, second, then, next, finally</strong> = order.</li><li><strong>However, but, although</strong> = contrast.</li><li><strong>So, in short, the main point is</strong> = the conclusion.</li></ul><h3>4. Where UK and US differ</h3><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>at the weekend</strong><br><strong>autumn</strong><br><strong>fortnight</strong> = two weeks<br><strong>maths</strong></div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>on the weekend</strong><br><strong>fall</strong><br><strong>two weeks</strong><br><strong>math</strong></div></div><blockquote>Practice tip: after listening to a talk, say the topic and three main ideas in your own words.</blockquote>",
+    "lesson_length": "long",
+    "lesson_type": "standalone_skill",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Listen: Short Talks"
+      }
+    ]
+  },
+  {
+    "lesson_id": "course-b1-unit-05-lesson-06",
+    "unit_id": "course-b1-unit-05",
+    "title": "Listening: Phone Calls",
+    "category": "Listening",
+    "order": 6,
+    "revision": {
+      "summary": "Practise listening to phone calls, catching the reason for the call, spelled names, numbers and next steps, with UK and US phone language.",
+      "examples": [
+        "Could I speak to Ms Brown, please?",
+        "Can I take a message?",
+        "I'll call you back. (UK also: ring)"
+      ],
+      "key_terms": [
+        "phone call",
+        "message",
+        "spelling",
+        "next step"
+      ],
+      "estimated_minutes": 20
+    },
+    "presentation_url": null,
+    "youtube_url": "https://youtu.be/wDchsz8nmbo?si=YRm1-glIjaKnE0MG",
+    "exercise_quiz_ids": [
+      "lesson-course-b1-unit-05-lesson-06"
+    ],
+    "version": 1,
+    "status": "published",
+    "lesson_quiz_id": "lesson-course-b1-unit-05-lesson-06",
+    "body_content": "<h2>Listening: Phone Calls</h2><p>On the phone you cannot see faces, so you must listen carefully. Follow four steps: <strong>who</strong> is calling, <strong>why</strong>, the <strong>key details</strong> (names, numbers, times) and the <strong>next step</strong>.</p><h3>1. Script 1: making an appointment</h3><blockquote>A: Good morning, Riverside Dental.<br>B: Hello, I'd like to make an appointment for a check-up.<br>A: Certainly. Is Thursday at ten possible?<br>B: Could we do Friday? I'm working on Thursday.<br>A: Friday at eleven thirty is free.<br>B: Perfect. It's Carla Nunez. That's N-U-N-E-Z.</blockquote><p>Why: check-up. Details: <strong>Friday, 11:30</strong>, name <strong>Nunez</strong>.</p><h3>2. Script 2: leaving a message</h3><blockquote>A: Could I speak to Mr Hall, please?<br>B: I'm afraid he's in a meeting. Can I take a message?<br>A: Yes, please tell him Ann called about the report. My number is 0161 555 0123.<br>B: I'll pass that on.</blockquote><p>Next step: Mr Hall will get the message.</p><h3>3. Useful phrases</h3><ul><li><strong>Speaking.</strong> = I am the person you want.</li><li><strong>Hold on. / Hold the line.</strong> = wait.</li><li><strong>Could you spell that, please?</strong> = ask for the spelling.</li><li><strong>I'm afraid...</strong> = polite bad news.</li></ul><h3>4. Where UK and US differ</h3><div class=\"uk-us\"><div class=\"uk\"><span class=\"uk-us-tag\">UK</span><strong>Mr Hall</strong> (no full stop)<br><strong>ring</strong> / <strong>call</strong> someone<br><strong>Who's calling?</strong><br><strong>mobile</strong></div><div class=\"us\"><span class=\"uk-us-tag\">US</span><strong>Mr. Hall</strong> (with a full stop)<br><strong>call</strong> someone<br><strong>Who's this?</strong><br><strong>cell phone</strong></div></div><blockquote>Practice tip: ask a friend to spell a name to you over the phone and write it down before you check.</blockquote>",
+    "lesson_length": "long",
+    "lesson_type": "standalone_skill",
+    "audio_urls": [
+      {
+        "url": "../shared/audio/sample.mp3",
+        "title": "Listen: Phone Calls"
+      }
+    ]
   }
 ]

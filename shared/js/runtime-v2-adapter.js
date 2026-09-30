@@ -191,11 +191,15 @@
       var value = media[key];
       if (typeof value === 'string') return { src: value.trim() };
       if (isObject(value)) {
-        return {
+        var normalized = {
           src: sourceOf(value, ['src', 'url']),
           alt: stringValue(firstDefined(value, ['alt', 'label'], '')),
           label: stringValue(value.label || '')
         };
+        // Agent 313: keep a spoken-text fallback (media.audio.tts) so audio questions
+        // without a recorded file still get the client-side "Play audio" button.
+        if (key === 'audio' && typeof value.tts === 'string' && value.tts.trim()) normalized.tts = value.tts.trim();
+        return normalized;
       }
       return undefined;
     }
@@ -204,7 +208,7 @@
     var image = one('image');
     var audio = one('audio');
     if (image && image.src) out.image = image;
-    if (audio && audio.src) out.audio = audio;
+    if (audio && (audio.src || audio.tts)) out.audio = audio;
     return Object.keys(out).length ? out : undefined;
   }
 

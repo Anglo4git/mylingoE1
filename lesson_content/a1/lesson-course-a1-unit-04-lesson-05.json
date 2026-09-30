@@ -1,0 +1,91 @@
+{
+  "id": "lesson-course-a1-unit-04-lesson-05",
+  "title": "Lesson: Listening: Directions",
+  "description": "Practice Listening: Directions.",
+  "brand": "Mylingo",
+  "category": "Listening",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Listening: Directions.",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Listening: Directions",
+      "explanation": "Practice Listening: Directions."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Listening: Directions",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "\"Take the second street on the right.\" Which street do you take?",
+      "category": "Listening",
+      "tags": "Listening,A1,QuickCheck",
+      "explanation": "You count two streets and turn right.",
+      "correctIndex": 3,
+      "answers": [
+        "Straight on for five minutes",
+        "The first street on the left",
+        "The second street on the right",
+        "The second street on the left"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "Which word means the path beside a road in American English?",
+      "category": "Listening",
+      "tags": "Listening,A1,QuickCheck",
+      "explanation": "Americans say sidewalk. Pavement is the British word.",
+      "correctIndex": 1,
+      "answers": [
+        "sidewalk",
+        "roundabout",
+        "pavement",
+        "corner"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "What is a good way to check you understood directions?",
+      "category": "Listening",
+      "tags": "Listening,A1,QuickCheck",
+      "explanation": "Repeating the route lets the speaker correct you if needed.",
+      "correctIndex": 1,
+      "answers": [
+        "Repeat the route back to the speaker",
+        "Only nod",
+        "Ask about the weather",
+        "Say nothing and walk away"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

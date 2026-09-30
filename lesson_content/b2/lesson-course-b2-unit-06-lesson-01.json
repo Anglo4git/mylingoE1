@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-b2-unit-06-lesson-01",
+  "title": "Lesson: Connected Speech",
+  "description": "Practice Connected Speech.",
+  "brand": "Mylingo",
+  "category": "Pronunciation",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Connected Speech.",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Connected Speech",
+      "explanation": "Practice Connected Speech."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Connected Speech",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "What happens to /t/ in \"next day\" in fast speech?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,B2,QuickCheck",
+      "explanation": "Elision: /t/ between two consonants is often dropped, so next day sounds like nex day.",
+      "correctIndex": 4,
+      "answers": [
+        "It becomes /k/",
+        "It is pronounced twice",
+        "It becomes /z/",
+        "It often disappears"
+      ]
+    },
+    {
+      "question": "How does \"handbag\" often sound in fast speech?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,B2,QuickCheck",
+      "explanation": "The /d/ drops and /n/ becomes /m/ before /b/: hambag.",
+      "correctIndex": 1,
+      "answers": [
+        "hambag",
+        "hanbag",
+        "hanbang",
+        "handbak"
+      ]
+    },
+    {
+      "question": "How is \"a lot of\" often said in American English?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,B2,QuickCheck",
+      "explanation": "In American English the t often sounds like d: a lodda.",
+      "correctIndex": 4,
+      "answers": [
+        "a lotta only in UK",
+        "a laughter",
+        "a lot ov",
+        "a lodda"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

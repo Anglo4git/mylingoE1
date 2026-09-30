@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-a1-unit-04-lesson-01",
+  "title": "Lesson: Alphabet and Sounds",
+  "description": "Practice Alphabet and Sounds.",
+  "brand": "Mylingo",
+  "category": "Pronunciation",
+  "tags": "Lesson,A1",
+  "level": "A1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Alphabet and Sounds.",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,A1",
+      "media": {},
+      "subprompt": "Alphabet and Sounds",
+      "explanation": "Practice Alphabet and Sounds."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Alphabet and Sounds",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,A1"
+    },
+    {
+      "question": "Which letter is called \"zed\" in British English and \"zee\" in American English?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,A1,QuickCheck",
+      "explanation": "Z is zed in British English and zee in American English.",
+      "correctIndex": 1,
+      "answers": [
+        "Z",
+        "S",
+        "C",
+        "X"
+      ]
+    },
+    {
+      "question": "Which word has the plural ending /z/?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,A1,QuickCheck",
+      "explanation": "Dogs ends with the /z/ sound. Cats has /s/ and buses has /ɪz/.",
+      "correctIndex": 1,
+      "answers": [
+        "dogs",
+        "cats",
+        "buses",
+        "books"
+      ]
+    },
+    {
+      "question": "Where is the stress in the word \"teacher\"?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,A1,QuickCheck",
+      "explanation": "Most two-syllable nouns, like teacher, are stressed on the first syllable.",
+      "correctIndex": 1,
+      "answers": [
+        "On the first syllable",
+        "On the second syllable",
+        "On both syllables equally",
+        "There is no stress"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,A1"
+    }
+  ]
+}

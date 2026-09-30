@@ -1,0 +1,91 @@
+{
+  "id": "lesson-course-b1-unit-05-lesson-04",
+  "title": "Lesson: Listening: Interviews",
+  "description": "Practice Listening: Interviews.",
+  "brand": "Mylingo",
+  "category": "Listening",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Listening: Interviews.",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Listening: Interviews",
+      "explanation": "Practice Listening: Interviews."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Listening: Interviews",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "In Script 1, how long has the speaker worked as a nurse?",
+      "category": "Listening",
+      "tags": "Listening,B1,QuickCheck",
+      "explanation": "She says she has worked as a nurse for five years.",
+      "correctIndex": 4,
+      "answers": [
+        "Fifteen years",
+        "Two years",
+        "Five months",
+        "Five years"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "Which phrase introduces an example?",
+      "category": "Listening",
+      "tags": "Listening,B1,QuickCheck",
+      "explanation": "For instance and for example introduce examples.",
+      "correctIndex": 4,
+      "answers": [
+        "Mainly",
+        "In the future",
+        "However",
+        "For instance"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "What do Americans call a CV?",
+      "category": "Listening",
+      "tags": "Listening,B1,QuickCheck",
+      "explanation": "Americans use resume for a CV.",
+      "correctIndex": 3,
+      "answers": [
+        "letter",
+        "diploma",
+        "resume",
+        "reference book"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

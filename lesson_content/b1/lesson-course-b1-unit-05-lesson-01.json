@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-b1-unit-05-lesson-01",
+  "title": "Lesson: Sentence Stress",
+  "description": "Practice Sentence Stress.",
+  "brand": "Mylingo",
+  "category": "Pronunciation",
+  "tags": "Lesson,B1",
+  "level": "B1",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Sentence Stress.",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,B1",
+      "media": {},
+      "subprompt": "Sentence Stress",
+      "explanation": "Practice Sentence Stress."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Sentence Stress",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,B1"
+    },
+    {
+      "question": "Which kind of word is usually stressed?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,B1,QuickCheck",
+      "explanation": "Content words such as nouns and main verbs carry the meaning and are stressed.",
+      "correctIndex": 2,
+      "answers": [
+        "Auxiliaries",
+        "Main verbs and nouns",
+        "Prepositions",
+        "Articles"
+      ]
+    },
+    {
+      "question": "Which noun / verb pair is stressed correctly?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,B1,QuickCheck",
+      "explanation": "The noun is stressed on the first syllable and the verb on the second.",
+      "correctIndex": 3,
+      "answers": [
+        "REcord / REcord",
+        "reCORD / reCORD",
+        "REcord (noun) / reCORD (verb)",
+        "reCORD (noun) / REcord (verb)"
+      ]
+    },
+    {
+      "question": "Which word is stressed on the first syllable in British English but not in American English?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,B1,QuickCheck",
+      "explanation": "British English says adVERtisement; American English says advertISEment.",
+      "correctIndex": 1,
+      "answers": [
+        "advertisement",
+        "table",
+        "teacher",
+        "photo"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,B1"
+    }
+  ]
+}

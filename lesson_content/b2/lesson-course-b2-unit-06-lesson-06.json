@@ -1,0 +1,91 @@
+{
+  "id": "lesson-course-b2-unit-06-lesson-06",
+  "title": "Lesson: Listening: Accents",
+  "description": "Practice Listening: Accents.",
+  "brand": "Mylingo",
+  "category": "Listening",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Listening: Accents.",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Listening: Accents",
+      "explanation": "Practice Listening: Accents."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Listening: Accents",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "What is the best first strategy when you hear an unfamiliar accent?",
+      "category": "Listening",
+      "tags": "Listening,B2,QuickCheck",
+      "explanation": "Stressed words carry the meaning in every accent.",
+      "correctIndex": 1,
+      "answers": [
+        "Focus on stressed words",
+        "Pretend to understand",
+        "Translate every word",
+        "Stop listening"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "How does B check the number in the script?",
+      "category": "Listening",
+      "tags": "Listening,B2,QuickCheck",
+      "explanation": "B asks Did you say three or thirty? to confirm.",
+      "correctIndex": 2,
+      "answers": [
+        "By writing it",
+        "By asking three or thirty",
+        "By laughing",
+        "By ignoring it"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "What is a polite British way to ask someone to repeat?",
+      "category": "Listening",
+      "tags": "Listening,B2,QuickCheck",
+      "explanation": "Pardon? and Sorry? are polite ways to ask for repetition.",
+      "correctIndex": 3,
+      "answers": [
+        "Too fast.",
+        "What?!",
+        "Pardon?",
+        "Say it again."
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

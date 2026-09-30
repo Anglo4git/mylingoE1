@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-a2-unit-04-lesson-03",
+  "title": "Lesson: Weak Forms: to and can",
+  "description": "Practice Weak Forms: to and can.",
+  "brand": "Mylingo",
+  "category": "Pronunciation",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Weak Forms: to and can.",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Weak Forms: to and can",
+      "explanation": "Practice Weak Forms: to and can."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Weak Forms: to and can",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "How is \"to\" usually pronounced in \"I want to go\"?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,A2,QuickCheck",
+      "explanation": "To is weak before a verb and sounds like /tə/.",
+      "correctIndex": 2,
+      "answers": [
+        "/tuː/",
+        "/tə/",
+        "/toʊ/",
+        "It is silent"
+      ]
+    },
+    {
+      "question": "In which sentence is \"can\" strong?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,A2,QuickCheck",
+      "explanation": "In a short answer at the end of a sentence, can is strong: /kæn/.",
+      "correctIndex": 2,
+      "answers": [
+        "I can swim.",
+        "Yes, I can.",
+        "We can go.",
+        "She can dance."
+      ]
+    },
+    {
+      "question": "How do British speakers say \"can't\"?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,A2,QuickCheck",
+      "explanation": "British English uses a long vowel /kɑːnt/. Americans use /kænt/.",
+      "correctIndex": 4,
+      "answers": [
+        "/kɪnt/",
+        "/kɔːnt/",
+        "/kænt/",
+        "/kɑːnt/"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

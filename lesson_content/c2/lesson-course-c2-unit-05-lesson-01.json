@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-c2-unit-05-lesson-01",
+  "title": "Lesson: Intonation: Attitude and Nuance",
+  "description": "Practice Intonation: Attitude and Nuance.",
+  "brand": "Mylingo",
+  "category": "Pronunciation",
+  "tags": "Lesson,C2",
+  "level": "C2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Intonation: Attitude and Nuance.",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,C2",
+      "media": {},
+      "subprompt": "Intonation: Attitude and Nuance",
+      "explanation": "Practice Intonation: Attitude and Nuance."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Intonation: Attitude and Nuance",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,C2"
+    },
+    {
+      "question": "A speaker says \"Oh, great.\" in a flat, narrow pitch after bad news. What is the likely attitude?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,C2,QuickCheck",
+      "explanation": "A flat, narrow pitch with positive words usually signals sarcasm.",
+      "correctIndex": 2,
+      "answers": [
+        "Sincere enthusiasm",
+        "Sarcasm",
+        "Confusion about the words",
+        "A polite question"
+      ]
+    },
+    {
+      "question": "What usually signals enthusiasm in intonation?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,C2,QuickCheck",
+      "explanation": "A wide pitch range with clear peaks sounds engaged and enthusiastic.",
+      "correctIndex": 1,
+      "answers": [
+        "A wide pitch range",
+        "A monotone voice",
+        "Speaking very quietly",
+        "No stress at all"
+      ]
+    },
+    {
+      "question": "In British English, what may \"It was a bit expensive\" mean with a flat tone?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,C2,QuickCheck",
+      "explanation": "British understatement often means the opposite: a bit can mean very.",
+      "correctIndex": 3,
+      "answers": [
+        "It was cheap",
+        "It was slightly costly",
+        "It was very expensive",
+        "It was free"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,C2"
+    }
+  ]
+}

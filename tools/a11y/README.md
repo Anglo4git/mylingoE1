@@ -8,3 +8,8 @@ Playwright (global install) scripts, no axe-core needed. Edit ROOT (tree path) a
 
 ## Note (Agent 254)
 See `tools/video-gate-verify.js` (in `tools/`): end-to-end video "Continue" gate check under the shipped CSP with a stubbed YouTube network.
+- quiz-audio-probe.js — Agent 313: the six `*-media-01` quizzes (TTS Listening questions) x 390/320 x speechSynthesis stub/absent: button size/focus/click/fallback, overflow, page errors. Needs the static server on :8765.
+- sw-audio-range-probe.js — Agent 315: registers /sw.js in Chromium and checks Range fetches on sample.mp3 return 206/416 slices and that <audio> loads. Needs the static server on :8765.
+- csp-audio-probe.js — Agent 316: serves dist/ with the real netlify.toml CSP + Range support, loads the audio slide of 5 lessons with the SW blocked/allowed; checks audio loads and no CSP violations. Run `node tools/build-dist.js` first.
+- quiz-audio-contrast.js — Agent 318: contrast/focus/overflow of the quiz TTS audio question (idle, playing, after answer) for the six *-media-01 quizzes in light/dark. Needs the static server on :8765.
+- lesson-audio-contrast.js — Agent 319: contrast on every slide of audio lessons (STEP=n sampling, ONLY=ids) in light/dark at 390 px; seeds all level quizzes as passed to bypass lesson gating. Needs the static server on :8765.

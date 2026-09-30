@@ -29,7 +29,7 @@
  */
 'use strict';
 
-var CACHE_VERSION = 'mylingo-v28';
+var CACHE_VERSION = 'mylingo-v47';
 var STATIC_CACHE = CACHE_VERSION + '-static';
 var RUNTIME_CACHE = CACHE_VERSION + '-runtime';
 // Must match CACHE_PREFIX in shared/js/offline-packs.js.
@@ -152,7 +152,7 @@ function cacheFirst(request, fallbackKind) {
   return caches.match(request).then(function (cached) {
     var networkFetch = fetch(request)
       .then(function (response) {
-        if (response && response.ok) {
+        if (response && response.ok && response.status !== 206) {
           var copy = response.clone();
           caches.open(RUNTIME_CACHE).then(function (cache) { cache.put(request, copy); });
         }
@@ -166,6 +166,31 @@ function cacheFirst(request, fallbackKind) {
     // Cache-first: return the cached copy immediately if we have one, but
     // still revalidate in the background so the cache doesn't go stale.
     return cached || networkFetch;
+  });
+}
+
+// Agent 315: Safari/iOS requests <audio> with `Range: bytes=...` and refuses a
+// full 200 answer to it, so a cache-served mp3 would not play (or seek) there.
+// Serve a proper 206 slice from the cached full copy; with no cached copy pass
+// the request to the network untouched (a 206 must never be cache.put()).
+function rangeResponse(request, rangeHeader) {
+  return caches.match(request).then(function (cached) {
+    if (!cached || cached.status === 206 || typeof cached.arrayBuffer !== 'function') {
+      return fetch(request).catch(function () { return offlineFallbackResponse('asset'); });
+    }
+    return cached.arrayBuffer().then(function (buf) {
+      var size = buf.byteLength;
+      var m = /^bytes=(\d*)-(\d*)$/.exec(String(rangeHeader).trim());
+      var start, end;
+      if (m && (m[1] !== '' || m[2] !== '')) {
+        if (m[1] === '') { start = Math.max(0, size - parseInt(m[2], 10)); end = size - 1; }
+        else { start = parseInt(m[1], 10); end = m[2] === '' ? size - 1 : Math.min(parseInt(m[2], 10), size - 1); }
+      }
+      var type = (cached.headers && cached.headers.get && cached.headers.get('Content-Type')) || 'audio/mpeg';
+      if (start === undefined) return new Response(buf, { status: 200, headers: { 'Content-Type': type, 'Content-Length': String(size), 'Accept-Ranges': 'bytes' } });
+      if (start >= size || start > end) return new Response('', { status: 416, headers: { 'Content-Range': 'bytes */' + size } });
+      return new Response(buf.slice(start, end + 1), { status: 206, statusText: 'Partial Content', headers: { 'Content-Type': type, 'Content-Length': String(end - start + 1), 'Content-Range': 'bytes ' + start + '-' + end + '/' + size, 'Accept-Ranges': 'bytes' } });
+    });
   });
 }
 
@@ -204,6 +229,12 @@ self.addEventListener('fetch', function (event) {
 
   if (isShellCode(url)) {
     event.respondWith(networkFirst(request, 'asset'));
+    return;
+  }
+
+  var rangeHeader = request.headers && typeof request.headers.get === 'function' ? request.headers.get('range') : null;
+  if (rangeHeader && isImmutableAsset(url)) {
+    event.respondWith(rangeResponse(request, rangeHeader));
     return;
   }
 

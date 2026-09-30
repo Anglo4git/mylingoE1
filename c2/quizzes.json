@@ -250,5 +250,29 @@
     "level": "C2",
     "questions": 4,
     "version": 1
+  },
+  {
+    "file": "lesson_content/c2/lesson-course-c2-unit-05-lesson-01.json",
+    "id": "lesson-course-c2-unit-05-lesson-01",
+    "title": "Lesson: Intonation: Attitude and Nuance",
+    "topic": "Intonation: Attitude and Nuance",
+    "description": "Practice Intonation: Attitude and Nuance.",
+    "category": "Pronunciation",
+    "tags": "Lesson,C2",
+    "level": "C2",
+    "questions": 3,
+    "version": 1
+  },
+  {
+    "file": "lesson_content/c2/lesson-course-c2-unit-05-lesson-02.json",
+    "id": "lesson-course-c2-unit-05-lesson-02",
+    "title": "Lesson: Listening: Implication, Irony and Accents",
+    "topic": "Listening: Implication, Irony and Accents",
+    "description": "Practice Listening: Implication, Irony and Accents.",
+    "category": "Listening",
+    "tags": "Lesson,C2",
+    "level": "C2",
+    "questions": 3,
+    "version": 1
   }
 ]

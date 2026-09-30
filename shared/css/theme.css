@@ -29,8 +29,10 @@
   .mylingo-appshell{background:rgba(18,28,45,.96)!important}
   .btn.secondary,.secondary,.more,.chip,.key{background:var(--my-dark-card-2)!important;color:var(--my-dark-ink)!important;border-color:var(--my-dark-line)!important}
   .hero p,.card p,.desc,.sub,.lead,.muted,.small,.footer-note,footer,.stat .l,.lesson small,.lesson .meta small,.qstatus,.section-head p,.empty,.err,.readtime,.crumb,.headrow nav a{color:var(--my-dark-muted)!important}
+  .tts-play{background:var(--my-dark-soft)!important;color:#d2e5ff!important;border-color:var(--my-dark-brand)!important}
+  .tts-play[aria-pressed="true"]{background:var(--my-dark-brand)!important;color:#07111f!important}
   .brand-soft,.tagrow .chip,.lvl,.continue .level,.course-id .lvl-badge{background:var(--my-dark-soft)!important;color:#d2e5ff!important}
-  .success-soft,.best,.status.completed{background:var(--my-dark-success-soft)!important;color:#c9f7b5!important}
+  .success-soft,.best,.status.completed,.state.completed{background:var(--my-dark-success-soft)!important;color:#c9f7b5!important}
   .status.in-progress,.reco.down{background:#3b3017!important;color:#ffe9a8!important}
   .bar,.ubar,.progress,.bar i,.result-ring::before{background:#223149!important}
   .result-ring{background:conic-gradient(var(--my-dark-brand) var(--score-angle),var(--my-dark-soft) 0deg)!important}

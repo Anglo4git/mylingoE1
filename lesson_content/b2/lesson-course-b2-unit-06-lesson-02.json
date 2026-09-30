@@ -1,0 +1,73 @@
+{
+  "id": "lesson-course-b2-unit-06-lesson-02",
+  "title": "Lesson: Contrastive Stress",
+  "description": "Practice Contrastive Stress.",
+  "brand": "Mylingo",
+  "category": "Pronunciation",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Contrastive Stress.",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Contrastive Stress",
+      "explanation": "Practice Contrastive Stress."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Contrastive Stress",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "Where does the main stress fall in \"No, it's on TUESday\" and why?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,B2,QuickCheck",
+      "explanation": "The corrected word carries the contrastive stress.",
+      "correctIndex": 3,
+      "answers": [
+        "On No, the first word",
+        "On on, the preposition",
+        "On Tuesday, the corrected information",
+        "It does not matter"
+      ]
+    },
+    {
+      "question": "What does \"I didn't SAY he stole it\" imply?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,B2,QuickCheck",
+      "explanation": "Stress on say suggests I communicated it another way, for example in writing.",
+      "correctIndex": 2,
+      "answers": [
+        "He did not steal it",
+        "I did not say it aloud",
+        "Someone else stole it",
+        "I said it twice"
+      ]
+    },
+    {
+      "question": "Which pair is British / American for the same thing?",
+      "category": "Pronunciation",
+      "tags": "Pronunciation,B2,QuickCheck",
+      "explanation": "British English says flat; American English says apartment.",
+      "correctIndex": 1,
+      "answers": [
+        "flat / apartment",
+        "shop / store only in UK",
+        "lift / lift",
+        "house / home"
+      ]
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Pronunciation",
+      "tags": "Lesson,B2"
+    }
+  ]
+}

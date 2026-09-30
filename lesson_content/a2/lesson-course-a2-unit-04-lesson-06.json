@@ -1,0 +1,91 @@
+{
+  "id": "lesson-course-a2-unit-04-lesson-06",
+  "title": "Lesson: Listening: Voicemail and Announcements",
+  "description": "Practice Listening: Voicemail and Announcements.",
+  "brand": "Mylingo",
+  "category": "Listening",
+  "tags": "Lesson,A2",
+  "level": "A2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Listening: Voicemail and Announcements.",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,A2",
+      "media": {},
+      "subprompt": "Listening: Voicemail and Announcements",
+      "explanation": "Practice Listening: Voicemail and Announcements."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Listening: Voicemail and Announcements",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,A2"
+    },
+    {
+      "question": "What is the party time in Script 1?",
+      "category": "Listening",
+      "tags": "Listening,A2,QuickCheck",
+      "explanation": "Mia corrects the time: eight, not seven.",
+      "correctIndex": 4,
+      "answers": [
+        "9:00",
+        "7:00",
+        "6:00",
+        "8:00"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "Which platform does the Leeds train now use?",
+      "category": "Listening",
+      "tags": "Listening,A2,QuickCheck",
+      "explanation": "The announcement says it will now leave from platform four.",
+      "correctIndex": 3,
+      "answers": [
+        "Platform 20",
+        "Platform 10",
+        "Platform 4",
+        "Platform 15"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "How do Americans say \"platform\" for a train?",
+      "category": "Listening",
+      "tags": "Listening,A2,QuickCheck",
+      "explanation": "Americans usually say track for the place where a train stops.",
+      "correctIndex": 3,
+      "answers": [
+        "street",
+        "line",
+        "track",
+        "tunnel"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,A2"
+    }
+  ]
+}

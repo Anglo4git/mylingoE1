@@ -1,0 +1,91 @@
+{
+  "id": "lesson-course-b2-unit-06-lesson-05",
+  "title": "Lesson: Listening: Lectures and Note-taking",
+  "description": "Practice Listening: Lectures and Note-taking.",
+  "brand": "Mylingo",
+  "category": "Listening",
+  "tags": "Lesson,B2",
+  "level": "B2",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Practice Listening: Lectures and Note-taking.",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,B2",
+      "media": {},
+      "subprompt": "Listening: Lectures and Note-taking",
+      "explanation": "Practice Listening: Lectures and Note-taking."
+    },
+    {
+      "question": "What you'll practice",
+      "subprompt": "Listening: Lectures and Note-taking",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,B2"
+    },
+    {
+      "question": "In the lecture, how many main causes of urban heat islands are given?",
+      "category": "Listening",
+      "tags": "Listening,B2,QuickCheck",
+      "explanation": "The lecturer says there are two main causes.",
+      "correctIndex": 4,
+      "answers": [
+        "One",
+        "Three",
+        "Four",
+        "Two"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "Which phrase introduces a summary?",
+      "category": "Listening",
+      "tags": "Listening,B2,QuickCheck",
+      "explanation": "To sum up signals the conclusion.",
+      "correctIndex": 1,
+      "answers": [
+        "To sum up",
+        "This means that",
+        "First",
+        "For example"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "What does \"i.e.\" mean?",
+      "category": "Listening",
+      "tags": "Listening,B2,QuickCheck",
+      "explanation": "i.e. means that is; e.g. means for example.",
+      "correctIndex": 1,
+      "answers": [
+        "that is",
+        "for example",
+        "and so on",
+        "with"
+      ],
+      "media": {
+        "audio": {
+          "src": "audio/sample.mp3",
+          "label": "Listen"
+        }
+      }
+    },
+    {
+      "question": "Nice work! Ready for the full exercises?",
+      "question_type": "banner",
+      "category": "Listening",
+      "tags": "Lesson,B2"
+    }
+  ]
+}
