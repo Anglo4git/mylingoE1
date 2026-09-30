@@ -19,6 +19,10 @@
   var LEVEL_LABEL = { a1: 'Beginner', a2: 'Elementary', b1: 'Intermediate', b2: 'Upper-intermediate', c1: 'Advanced', c2: 'Proficiency' };
   var KEY = 'mylingo.chosenLevel.v1';
 
+  // TEST MODE (temporary): keep all CEFR levels accessible while QA/testing.
+  // This bypasses locking only; learner progress and completion records remain intact.
+  var TEST_UNLOCK_ALL = true;
+
   function normalize(level) {
     level = String(level || '').toLowerCase();
     return LEVELS.indexOf(level) >= 0 ? level : null;
@@ -69,6 +73,7 @@
 
   // Nothing chosen yet -> nothing is locked (learner hasn't started).
   function isLocked(level) {
+    if (TEST_UNLOCK_ALL) return false;
     var lvl = normalize(level);
     if (!lvl) return false;
     var ceiling = ceilingIndex();
@@ -169,6 +174,7 @@
     clear: clear,
     ceilingIndex: ceilingIndex,
     isLocked: isLocked,
+    TEST_UNLOCK_ALL: TEST_UNLOCK_ALL,
     renderLockedState: renderLockedState,
     decorateLevelLinks: decorateLevelLinks
   };

@@ -396,7 +396,9 @@ lessonsFetch.catch(function(){
     var au=String(a.unit_id),bu=String(b.unit_id); if(au===bu)return (a.order||0)-(b.order||0); return au.localeCompare(bu);
   });
   var lessonPos=ordered.findIndex(function(l){return l.lesson_id===lesson.lesson_id});
-  if(lessonPos>0){
+  // TEST MODE: all published lessons are directly accessible for QA.
+  // Normal sequential completion rules remain unchanged when test mode is disabled.
+  if(!(window.MylingoLevelLock&&window.MylingoLevelLock.TEST_UNLOCK_ALL) && lessonPos>0){
     var previousLesson=ordered[lessonPos-1], progressNow=window.MylingoCourseProgress?window.MylingoCourseProgress.readProgress():{};
     var previousComplete=window.MylingoCourseProgress?window.MylingoCourseProgress.lessonIsComplete(previousLesson,progressNow):false;
     if(!previousComplete){ renderError('Finish the previous lesson first. Complete and pass “'+previousLesson.title+'” to unlock this lesson.'); return; }

@@ -225,7 +225,7 @@ Promise.all([
       var globalIndex=allLessonsFlat.findIndex(function(x){return x.lesson.lesson_id===l.lesson_id});
       var previous=globalIndex>0?allLessonsFlat[globalIndex-1].lesson:null;
       var previousDone=previous?statusFor(previous,progress)==='completed':true;
-      var unlocked=(st==='completed')||previousDone;
+      var unlocked=(window.MylingoLevelLock&&window.MylingoLevelLock.TEST_UNLOCK_ALL)?true:((st==='completed')||previousDone);
       var href=unlocked&&ids.length?lessonUrl(l.lesson_id,level,backUrl+'&unit='+encodeURIComponent(u.unit_id)):null;
       var typeIcon=(Array.isArray(l.videos)&&l.videos.length||Array.isArray(l.video_urls)&&l.video_urls.length||l.youtube_url)?'▶':((Array.isArray(l.audios)&&l.audios.length||Array.isArray(l.audio_urls)&&l.audio_urls.length)?'◖':'T');
       var titleBlock='<div class="meta"><b>'+esc(l.title)+'</b><small>'+esc(l.category)+' · '+ids.length+' exercise'+(ids.length===1?'':'s')+(exCount?' · '+exCount+' question'+(exCount===1?'':'s'):'')+'</small></div>';
