@@ -1,0 +1,86 @@
+# ================================
+# MYLINGO — Git Ignore
+# ================================
+
+# Node / npm
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build / generated output
+dist/
+build/
+.cache/
+.parcel-cache/
+.vite/
+
+# Test / coverage
+coverage/
+playwright-report/
+test-results/
+
+# Local environment / secrets
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Local development
+.local/
+.tmp/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Archives / local packages
+*.zip
+*.tar
+*.tar.gz
+
+# Deployment/local tooling
+.vercel/
+.netlify/
+
+# Secrets / credentials
+*.pem
+*.key
+credentials.json
+service-account*.json
+
+# ================================
+# IMPORTANT
+# ================================
+# Keep MYLINGO application source/content tracked:
+# site/
+# index.html
+# manifest.json
+# sw.js
+# courses/
+# lessons/
+# quizzes/
+# shared/
+#
+# GitHub Actions must remain tracked:
+# .github/workflows/
